@@ -74,6 +74,11 @@ public class ApiExportDoclet implements Doclet {
                     public boolean process(String option,
                                            List<String> arguments) {
                         outputFile = Path.of(arguments.getFirst());
+                        try {
+                            Files.createDirectories(outputFile.getParent());
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                         return true;
                     }
                 });
