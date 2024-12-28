@@ -1,0 +1,52 @@
+{
+  "packagesAdded": [],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "org.bukkit",
+    "org.bukkit.command",
+    "org.bukkit.conversations",
+    "org.bukkit.entity",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event.entity"
+  ],
+  "classesAdded": [
+    "org.bukkit.Fluid"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "org.bukkit.Bukkit",
+    "org.bukkit.Registry",
+    "org.bukkit.Server",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.command.CommandSender",
+    "org.bukkit.command.MessageCommandSender",
+    "org.bukkit.conversations.Conversable",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.TNTPrimed",
+    "org.bukkit.entity.minecart.PoweredMinecart",
+    "org.bukkit.event.entity.ArrowBodyCountChangeEvent"
+  ],
+  "membersAdded": [
+    "getOfflinePlayerIfCached(java.lang.@org.jetbrains.annotations.NotNull String)",
+    "FLOWING_LAVA",
+    "FLOWING_WATER",
+    "Fluid()",
+    "FLUID",
+    "FLUIDS_LAVA",
+    "FLUIDS_WATER",
+    "REGISTRY_FLUIDS",
+    "nextEntityId()",
+    "sendMessage(java.util.@org.jetbrains.annotations.Nullable UUID,java.lang.@org.jetbrains.annotations.NotNull String)",
+    "sendMessage(java.util.@org.jetbrains.annotations.Nullable UUID,java.lang.@org.jetbrains.annotations.NotNull String[])",
+    "sendRawMessage(java.util.@org.jetbrains.annotations.Nullable UUID,java.lang.@org.jetbrains.annotations.NotNull String)",
+    "isTicking()",
+    "boostElytra(org.bukkit.inventory.@org.jetbrains.annotations.NotNull ItemStack)",
+    "setSource(org.bukkit.entity.@org.jetbrains.annotations.Nullable Entity)",
+    "setFuel(int)"
+  ],
+  "membersRemoved": [],
+  "membersChanged": []
+}

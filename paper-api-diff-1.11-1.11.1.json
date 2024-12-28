@@ -1,0 +1,24 @@
+{
+  "packagesAdded": [],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "org.bukkit",
+    "org.bukkit.enchantments"
+  ],
+  "classesAdded": [],
+  "classesRemoved": [],
+  "classesChanged": [
+    "org.bukkit.Material",
+    "org.bukkit.Statistic",
+    "org.bukkit.enchantments.Enchantment"
+  ],
+  "membersAdded": [
+    "IRON_NUGGET",
+    "SWEEPING_EDGE"
+  ],
+  "membersRemoved": [
+    "JUNK_FISHED",
+    "TREASURE_FISHED"
+  ],
+  "membersChanged": []
+}
