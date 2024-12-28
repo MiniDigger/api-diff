@@ -1,0 +1,12 @@
+*.iml
+.idea
+
+.gradle
+build
+
+sources
+output
+
+test
+test2
+test3
