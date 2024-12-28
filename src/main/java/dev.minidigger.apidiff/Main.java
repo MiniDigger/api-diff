@@ -38,12 +38,12 @@ public class Main {
 
         // download all sources jars
         for (String version : versions) {
-//            main.fetchSourcesJar(version);
+            main.fetchSourcesJar(version);
         }
 
         // generate api-export json
         for (String version : versions) {
-//            main.generateApiExport(version);
+            main.generateApiExport(version);
         }
 
         for (int i = 0; i < versions.size() - 1; i++) {
@@ -51,7 +51,7 @@ public class Main {
         }
 
 //        main.generateApiExport("1.21.4");
-        new ApiDiff(Path.of("output/paper-api-1.21.3.json"), Path.of("output/paper-api-1.21.4.json"), Path.of("output/paper-api-diff-1.21.3-1.21.4.json"));
+//        new ApiDiff(Path.of("output/paper-api-1.21.3.json"), Path.of("output/paper-api-1.21.4.json"), Path.of("output/paper-api-diff-1.21.3-1.21.4.json"));
 
         // TODO generate some kinda visual representation of the diff and maybe at the tip a way to list @since for all memembers
     }
