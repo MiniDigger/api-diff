@@ -42,23 +42,23 @@ public class Main {
 
         // download all sources jars
         for (String version : versions) {
-//            main.fetchSourcesJar(version);
+            main.fetchSourcesJar(version);
         }
 
         // generate api-export json
         for (String version : versions) {
-//            main.generateApiExport(version);
+            main.generateApiExport(version);
         }
 
         for (int i = 0; i < versions.size() - 1; i++) {
-//            apiDiffer.diff(versions.get(i), versions.get(i + 1), Path.of("output/raw/paper-api-diff-" + versions.get(i) + "-" + versions.get(i + 1) + ".json"));
-//            htmlGenerator.generateDiff(versions.get(i), versions.get(i + 1));
+            apiDiffer.diff(versions.get(i), versions.get(i + 1), Path.of("output/raw/paper-api-diff-" + versions.get(i) + "-" + versions.get(i + 1) + ".json"));
+            htmlGenerator.generateDiff(versions.get(i), versions.get(i + 1));
         }
 
 //        main.generateApiExport("1.21.3");
 //        main.generateApiExport("1.21.4");
-        apiDiffer.diff("1.21.3", "1.21.4", Path.of("output/raw/paper-api-diff-1.21.3-1.21.4.json"));
-        htmlGenerator.generateDiff("1.21.3", "1.21.4");
+//        apiDiffer.diff("1.21.3", "1.21.4", Path.of("output/raw/paper-api-diff-1.21.3-1.21.4.json"));
+//        htmlGenerator.generateDiff("1.21.3", "1.21.4");
 
         htmlGenerator.generateIndex();
         htmlGenerator.generateSince();
