@@ -1,0 +1,1041 @@
+{
+  "versionA": "1.16.4",
+  "versionB": "1.16.5",
+  "packagesAdded": [
+    "io.papermc.paper.chat",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.world",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.Completion",
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.CompletionImpl",
+    "io.papermc.paper.chat.ChatComposer",
+    "io.papermc.paper.chat.ChatFormatter",
+    "io.papermc.paper.chat.ChatRenderer",
+    "io.papermc.paper.chat.ChatRenderer.ViewerUnaware",
+    "io.papermc.paper.datapack.Datapack",
+    "io.papermc.paper.datapack.Datapack.Compatibility",
+    "io.papermc.paper.datapack.DatapackManager",
+    "io.papermc.paper.enchantments.EnchantmentRarity",
+    "io.papermc.paper.event.block.BeaconActivatedEvent",
+    "io.papermc.paper.event.block.BeaconDeactivatedEvent",
+    "io.papermc.paper.event.block.BellRevealRaiderEvent",
+    "io.papermc.paper.event.block.BlockPreDispenseEvent",
+    "io.papermc.paper.event.block.DragonEggFormEvent",
+    "io.papermc.paper.event.entity.ElderGuardianAppearanceEvent",
+    "io.papermc.paper.event.entity.EntityInsideBlockEvent",
+    "io.papermc.paper.event.entity.EntityMoveEvent",
+    "io.papermc.paper.event.entity.PufferFishStateChangeEvent",
+    "io.papermc.paper.event.player.AbstractChatEvent",
+    "io.papermc.paper.event.player.AsyncChatEvent",
+    "io.papermc.paper.event.player.ChatEvent",
+    "io.papermc.paper.event.player.PlayerArmSwingEvent",
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent",
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent.FailReason",
+    "io.papermc.paper.event.player.PlayerChangeBeaconEffectEvent",
+    "io.papermc.paper.event.player.PlayerDeepSleepEvent",
+    "io.papermc.paper.event.player.PlayerNameEntityEvent",
+    "io.papermc.paper.event.player.PlayerPurchaseEvent",
+    "io.papermc.paper.event.player.PlayerSignCommandPreprocessEvent",
+    "io.papermc.paper.event.player.PlayerStonecutterRecipeSelectEvent",
+    "io.papermc.paper.event.world.StructureLocateEvent",
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent",
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent.Type",
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeFinishEvent",
+    "io.papermc.paper.event.world.border.WorldBorderCenterChangeEvent",
+    "io.papermc.paper.event.world.border.WorldBorderEvent",
+    "io.papermc.paper.inventory.ItemRarity",
+    "io.papermc.paper.text.PaperComponents",
+    "io.papermc.paper.util.TransformingRandomAccessList",
+    "io.papermc.paper.util.TransformingRandomAccessList.TransformedListIterator",
+    "org.bukkit.entity.FishHook.HookState",
+    "org.bukkit.event.entity.EntityExhaustionEvent",
+    "org.bukkit.event.entity.EntityExhaustionEvent.ExhaustionReason",
+    "org.bukkit.event.entity.PiglinBarterEvent",
+    "org.bukkit.event.inventory.SmithItemEvent",
+    "org.bukkit.event.player.PlayerBucketEntityEvent",
+    "org.bukkit.event.player.PlayerBucketFishEvent",
+    "org.bukkit.event.player.PlayerGameModeChangeEvent.Cause",
+    "org.bukkit.event.player.PlayerKickEvent.Cause",
+    "org.bukkit.event.player.PlayerRespawnEvent.RespawnFlag",
+    "org.bukkit.event.weather.ThunderChangeEvent.Cause",
+    "org.bukkit.event.weather.WeatherChangeEvent.Cause",
+    "org.bukkit.inventory.meta.BookMeta.BookMetaBuilder",
+    "org.bukkit.plugin.java.LibraryLoader"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.event.player.PlayerHandshakeEvent",
+    "com.destroystokyo.paper.event.profile.ProfileWhitelistVerifyEvent",
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent",
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent",
+    "io.papermc.paper.event.player.PlayerTradeEvent",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Effect",
+    "org.bukkit.Material",
+    "org.bukkit.Nameable",
+    "org.bukkit.NamespacedKey",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.World.Environment",
+    "org.bukkit.WorldCreator",
+    "org.bukkit.attribute.Attributable",
+    "org.bukkit.block.Biome",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.BlockFace",
+    "org.bukkit.block.EntityBlockStorage",
+    "org.bukkit.block.Lidded",
+    "org.bukkit.block.Sign",
+    "org.bukkit.command.CommandSender",
+    "org.bukkit.command.ProxiedCommandSender",
+    "org.bukkit.command.defaults.VersionCommand",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.entity.Creeper",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.FishHook",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Mob",
+    "org.bukkit.entity.Phantom",
+    "org.bukkit.entity.Piglin",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Shulker",
+    "org.bukkit.entity.Skeleton",
+    "org.bukkit.entity.WanderingTrader",
+    "org.bukkit.entity.Witch",
+    "org.bukkit.entity.Wither",
+    "org.bukkit.event.block.BlockCookEvent",
+    "org.bukkit.event.block.SignChangeEvent",
+    "org.bukkit.event.command.UnknownCommandEvent",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.EntityTransformEvent.TransformReason",
+    "org.bukkit.event.entity.EntityUnleashEvent",
+    "org.bukkit.event.entity.PlayerDeathEvent",
+    "org.bukkit.event.entity.ProjectileHitEvent",
+    "org.bukkit.event.inventory.FurnaceBurnEvent",
+    "org.bukkit.event.inventory.FurnaceSmeltEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerAdvancementDoneEvent",
+    "org.bukkit.event.player.PlayerAnimationEvent",
+    "org.bukkit.event.player.PlayerBedLeaveEvent",
+    "org.bukkit.event.player.PlayerGameModeChangeEvent",
+    "org.bukkit.event.player.PlayerJoinEvent",
+    "org.bukkit.event.player.PlayerKickEvent",
+    "org.bukkit.event.player.PlayerLocaleChangeEvent",
+    "org.bukkit.event.player.PlayerLoginEvent",
+    "org.bukkit.event.player.PlayerMoveEvent",
+    "org.bukkit.event.player.PlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerQuitEvent",
+    "org.bukkit.event.player.PlayerRespawnEvent",
+    "org.bukkit.event.player.PlayerUnleashEntityEvent",
+    "org.bukkit.event.server.BroadcastMessageEvent",
+    "org.bukkit.event.server.ServerListPingEvent",
+    "org.bukkit.event.weather.ThunderChangeEvent",
+    "org.bukkit.event.weather.WeatherChangeEvent",
+    "org.bukkit.inventory.EntityEquipment",
+    "org.bukkit.inventory.Inventory",
+    "org.bukkit.inventory.InventoryView",
+    "org.bukkit.inventory.ItemFactory",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.SmithingInventory",
+    "org.bukkit.inventory.meta.BookMeta",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.loot.LootTables",
+    "org.bukkit.map.MapCursor",
+    "org.bukkit.map.MapCursorCollection",
+    "org.bukkit.plugin.PluginDescriptionFile",
+    "org.bukkit.plugin.SimplePluginManager",
+    "org.bukkit.plugin.UnknownDependencyException",
+    "org.bukkit.plugin.java.JavaPluginLoader",
+    "org.bukkit.plugin.java.PluginClassLoader",
+    "org.bukkit.scheduler.BukkitScheduler",
+    "org.bukkit.scoreboard.Objective",
+    "org.bukkit.scoreboard.Scoreboard",
+    "org.bukkit.scoreboard.Team"
+  ],
+  "membersAdded": {
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.Completion": [
+      "completion(String)",
+      "completion(String,Component)",
+      "examinableProperties()"
+    ],
+    "org.bukkit.plugin.java.LibraryLoader": [
+      "LibraryLoader(Logger)",
+      "createLoader(PluginDescriptionFile)",
+      "repositories",
+      "repository",
+      "session"
+    ],
+    "org.bukkit.event.entity.EntityUnleashEvent": [
+      "EntityUnleashEvent(Entity,UnleashReason,boolean)",
+      "dropLeash",
+      "isDropLeash()",
+      "setDropLeash(boolean)"
+    ],
+    "io.papermc.paper.chat.ChatRenderer.ViewerUnaware": [
+      "render(Player,Component,Component)"
+    ],
+    "io.papermc.paper.event.entity.PufferFishStateChangeEvent": [
+      "PufferFishStateChangeEvent(PufferFish,int)",
+      "getNewPuffState()",
+      "isDeflating()",
+      "isInflating()",
+      "newPuffState"
+    ],
+    "io.papermc.paper.datapack.DatapackManager": [
+      "getEnabledPacks()",
+      "getPacks()"
+    ],
+    "org.bukkit.event.player.PlayerMoveEvent": [
+      "hasChangedBlock()",
+      "hasChangedOrientation()",
+      "hasChangedPosition()",
+      "hasExplicitlyChangedBlock()",
+      "hasExplicitlyChangedPosition()"
+    ],
+    "org.bukkit.event.player.PlayerUnleashEntityEvent": [
+      "PlayerUnleashEntityEvent(Entity,Player,boolean)"
+    ],
+    "org.bukkit.entity.Piglin": [
+      "addBarterMaterial(Material)",
+      "addMaterialOfInterest(Material)",
+      "getBarterList()",
+      "getInterestList()",
+      "removeBarterMaterial(Material)",
+      "removeMaterialOfInterest(Material)"
+    ],
+    "org.bukkit.event.inventory.FurnaceBurnEvent": [
+      "consumeFuel",
+      "setConsumeFuel(boolean)",
+      "willConsumeFuel()"
+    ],
+    "io.papermc.paper.event.player.PlayerSignCommandPreprocessEvent": [
+      "PlayerSignCommandPreprocessEvent(Player,String,Set,Sign)",
+      "getSign()",
+      "sign"
+    ],
+    "io.papermc.paper.enchantments.EnchantmentRarity": [
+      "EnchantmentRarity(int)",
+      "VERY_RARE",
+      "getWeight()",
+      "weight"
+    ],
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
+      "AsyncPlayerPreLoginEvent(String,InetAddress,InetAddress,UUID,PlayerProfile)",
+      "rawAddress"
+    ],
+    "org.bukkit.event.command.UnknownCommandEvent": [
+      "UnknownCommandEvent(CommandSender,String,Component)"
+    ],
+    "org.bukkit.World": [
+      "audiences()",
+      "doesBedWork()",
+      "doesRespawnAnchorWork()",
+      "dropItem(Location,ItemStack,Consumer)",
+      "dropItemNaturally(Location,ItemStack,Consumer)",
+      "getCoordinateScale()",
+      "getGameTime()",
+      "getInfiniburn()",
+      "getMinHeight()",
+      "hasBedrockCeiling()",
+      "hasRaids()",
+      "hasSkylight()",
+      "isFixedTime()",
+      "isNatural()",
+      "isPiglinSafe()",
+      "isUltrawarm()",
+      "lineOfSightExists(Location,Location)",
+      "locateNearestBiome(Location,Biome,int)",
+      "locateNearestBiome(Location,Biome,int,int)"
+    ],
+    "org.bukkit.entity.WanderingTrader": [
+      "canDrinkMilk()",
+      "canDrinkPotion()",
+      "getDespawnDelay()",
+      "setCanDrinkMilk(boolean)",
+      "setCanDrinkPotion(boolean)",
+      "setDespawnDelay(int)"
+    ],
+    "org.bukkit.Material": [
+      "getEquipmentSlot()",
+      "getItemAttributes(EquipmentSlot)",
+      "getItemRarity()",
+      "isBlock",
+      "isBlock0()"
+    ],
+    "org.bukkit.event.entity.EntityExhaustionEvent": [
+      "EntityExhaustionEvent(HumanEntity,ExhaustionReason,float)",
+      "exhaustion",
+      "exhaustionReason",
+      "getExhaustionReason()"
+    ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "PlayerLoginEvent(Player,String,InetAddress,Result,Component,InetAddress)"
+    ],
+    "io.papermc.paper.chat.ChatComposer": [
+      "composeChat(Player,Component,Component)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEntityEvent": [
+      "PlayerBucketEntityEvent(Player,Entity,ItemStack,ItemStack)",
+      "entityBucket",
+      "getEntityBucket()",
+      "getOriginalBucket()",
+      "originalBucket"
+    ],
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent": [
+      "AsyncTabCompleteEvent(CommandSender,String,boolean,Location)",
+      "completions()",
+      "completions(List)",
+      "fromStrings(List)",
+      "stringCompletions"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "getRarity()",
+      "asHoverEvent(UnaryOperator)",
+      "canRepair(ItemStack)",
+      "editMeta(Consumer)",
+      "isRepairableBy(ItemStack)"
+    ],
+    "org.bukkit.map.MapCursor": [
+      "MapCursor(byte,byte,byte,Type,boolean,Component)",
+      "MapCursor(byte,byte,byte,byte,boolean,Component)",
+      "caption()",
+      "caption(Component)"
+    ],
+    "org.bukkit.command.defaults.VersionCommand": [
+      "setVersionMessage(Component)"
+    ],
+    "org.bukkit.plugin.java.JavaPluginLoader": [
+      "getClassByName(String,boolean,PluginDescriptionFile)",
+      "getClassByName(String,boolean,PluginDescriptionFile,PluginClassLoader)",
+      "removeClass(Class)"
+    ],
+    "org.bukkit.event.player.PlayerQuitEvent": [
+      "PlayerQuitEvent(Player,Component)",
+      "PlayerQuitEvent(Player,Component,QuitReason)",
+      "quitMessage()",
+      "quitMessage(Component)"
+    ],
+    "org.bukkit.entity.FishHook": [
+      "getHookedEntity()",
+      "isInOpenWater()",
+      "pullHookedEntity()",
+      "setHookedEntity(Entity)"
+    ],
+    "io.papermc.paper.event.player.PlayerNameEntityEvent": [
+      "PlayerNameEntityEvent(Player,LivingEntity,Component,boolean)",
+      "persistent",
+      "setEntity(LivingEntity)",
+      "setName(Component)"
+    ],
+    "io.papermc.paper.chat.ChatFormatter": [
+      "chat(Component,Component)"
+    ],
+    "org.bukkit.inventory.meta.BookMeta.BookMetaBuilder": [
+      "author(Component)",
+      "addPage(Component)",
+      "pages(Collection)",
+      "pages(Component...)"
+    ],
+    "org.bukkit.Tag": [
+      "BEEHIVE_INHABITORS",
+      "IMPACT_PROJECTILES",
+      "RAIDERS",
+      "REGISTRY_ENTITIES",
+      "SKELETONS"
+    ],
+    "io.papermc.paper.event.player.AsyncChatEvent": [
+      "AsyncChatEvent(boolean,Player,Set,ChatComposer,Component)",
+      "AsyncChatEvent(boolean,Player,Set,ChatFormatter,Component)",
+      "AsyncChatEvent(boolean,Player,Set,ChatRenderer,Component)",
+      "AsyncChatEvent(boolean,Player,Set,ChatRenderer,Component,Component)",
+      "AsyncChatEvent(boolean,Player,Set,Set,ChatRenderer,Component)",
+      "AsyncChatEvent(boolean,Player,Set,Set,ChatRenderer,Component,Component)"
+    ],
+    "org.bukkit.entity.Mob": [
+      "getHeadRotationSpeed()",
+      "getMaxHeadPitch()",
+      "lookAt(Entity)",
+      "lookAt(Entity,float,float)",
+      "lookAt(Location)",
+      "lookAt(Location,float,float)",
+      "lookAt(double,double,double)",
+      "lookAt(double,double,double,float,float)"
+    ],
+    "org.bukkit.entity.Wither": [
+      "canTravelThroughPortals()",
+      "getInvulnerableTicks()",
+      "setCanTravelThroughPortals(boolean)",
+      "setInvulnerableTicks(int)"
+    ],
+    "org.bukkit.command.ProxiedCommandSender": [
+      "sendMessage(Identity,Component,MessageType)",
+      "audience()"
+    ],
+    "io.papermc.paper.datapack.Datapack": [
+      "getCompatibility()"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,Builder)",
+      "getRespawnFlags()",
+      "respawnFlags"
+    ],
+    "org.bukkit.event.player.PlayerBucketFishEvent": [
+      "PlayerBucketFishEvent(Player,Fish,ItemStack,ItemStack)",
+      "getFishBucket()",
+      "getWaterBucket()"
+    ],
+    "org.bukkit.event.entity.PiglinBarterEvent": [
+      "PiglinBarterEvent(Piglin,ItemStack,List)",
+      "getOutcome()",
+      "input",
+      "outcome"
+    ],
+    "org.bukkit.event.block.SignChangeEvent": [
+      "line(int)",
+      "line(int,Component)",
+      "lines()",
+      "SignChangeEvent(Block,Player,List)",
+      "adventure$lines"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "motd()",
+      "ServerListPingEvent(InetAddress,Component,int)",
+      "ServerListPingEvent(InetAddress,Component,int,int)",
+      "motd(Component)"
+    ],
+    "io.papermc.paper.inventory.ItemRarity": [
+      "COMMON",
+      "RARE",
+      "UNCOMMON",
+      "EPIC",
+      "ItemRarity(TextColor)"
+    ],
+    "org.bukkit.Server": [
+      "broadcast(Component)",
+      "broadcast(Component,String)",
+      "createInventory(InventoryHolder,InventoryType,Component)",
+      "createInventory(InventoryHolder,int,Component)",
+      "createMerchant(Component)",
+      "getDatapackManager()",
+      "getWorld(NamespacedKey)",
+      "shutdownMessage()"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent.RespawnFlag": [
+      "ANCHOR_SPAWN",
+      "BED_SPAWN",
+      "RespawnFlag()"
+    ],
+    "org.bukkit.event.player.PlayerLocaleChangeEvent": [
+      "locale()",
+      "adventure$locale"
+    ],
+    "io.papermc.paper.event.player.PlayerArmSwingEvent": [
+      "PlayerArmSwingEvent(Player,EquipmentSlot)",
+      "equipmentSlot"
+    ],
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent.FailReason": [
+      "FailReason()",
+      "VALUES"
+    ],
+    "org.bukkit.scheduler.BukkitScheduler": [
+      "getMainThreadExecutor(Plugin)"
+    ],
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent": [
+      "PlayerBedFailEnterEvent(Player,FailReason,Block,boolean,Component)",
+      "failReason",
+      "getFailReason()",
+      "getWillExplode()",
+      "setMessage(Component)",
+      "setWillExplode(boolean)",
+      "willExplode"
+    ],
+    "org.bukkit.enchantments.EnchantmentWrapper": [
+      "displayName(int)",
+      "getActiveSlots()",
+      "getDamageIncrease(int,EntityCategory)",
+      "isDiscoverable()",
+      "isTradeable()"
+    ],
+    "org.bukkit.event.block.BlockCookEvent": [
+      "BlockCookEvent(Block,ItemStack,ItemStack,CookingRecipe)"
+    ],
+    "io.papermc.paper.event.player.ChatEvent": [
+      "ChatEvent(Player,Set,ChatComposer,Component)",
+      "ChatEvent(Player,Set,ChatFormatter,Component)",
+      "ChatEvent(Player,Set,ChatRenderer,Component)",
+      "ChatEvent(Player,Set,ChatRenderer,Component,Component)",
+      "ChatEvent(Player,Set,Set,ChatRenderer,Component,Component)"
+    ],
+    "org.bukkit.entity.Shulker": [
+      "getPeek()",
+      "setAttachedFace(BlockFace)",
+      "setPeek(float)"
+    ],
+    "org.bukkit.event.entity.EntityExhaustionEvent.ExhaustionReason": [
+      "BLOCK_MINED",
+      "CROUCH",
+      "ExhaustionReason()",
+      "HUNGER_EFFECT",
+      "JUMP_SPRINT",
+      "SPRINT",
+      "SWIM",
+      "WALK",
+      "WALK_ON_WATER",
+      "WALK_UNDERWATER"
+    ],
+    "io.papermc.paper.event.entity.ElderGuardianAppearanceEvent": [
+      "ElderGuardianAppearanceEvent(Entity,Player)",
+      "affectedPlayer",
+      "getAffectedPlayer()"
+    ],
+    "io.papermc.paper.event.player.PlayerChangeBeaconEffectEvent": [
+      "getBeacon()",
+      "PlayerChangeBeaconEffectEvent(Player,PotionEffectType,PotionEffectType,Block)",
+      "beacon",
+      "getPrimary()",
+      "secondary",
+      "setPrimary(PotionEffectType)",
+      "setSecondary(PotionEffectType)",
+      "willConsumeItem()"
+    ],
+    "org.bukkit.event.player.PlayerPreLoginEvent": [
+      "kickMessage()",
+      "kickMessage(Component)",
+      "disallow(Result,Component)"
+    ],
+    "io.papermc.paper.event.entity.EntityInsideBlockEvent": [
+      "EntityInsideBlockEvent(Entity,Block)"
+    ],
+    "org.bukkit.block.EntityBlockStorage": [
+      "clearEntities()"
+    ],
+    "org.bukkit.plugin.PluginDescriptionFile": [
+      "getLibraries()",
+      "libraries"
+    ],
+    "com.destroystokyo.paper.event.profile.ProfileWhitelistVerifyEvent": [
+      "ProfileWhitelistVerifyEvent(PlayerProfile,boolean,boolean,boolean,Component)"
+    ],
+    "org.bukkit.event.entity.EntityTransformEvent.TransformReason": [
+      "PIGLIN_ZOMBIFIED"
+    ],
+    "io.papermc.paper.event.block.DragonEggFormEvent": [
+      "DragonEggFormEvent(Block,BlockState,DragonBattle)",
+      "dragonBattle"
+    ],
+    "org.bukkit.entity.Player": [
+      "getTrackedPlayers()",
+      "identity()",
+      "kick(Component)",
+      "kick(Component,Cause)",
+      "playerListFooter()",
+      "playerListHeader()",
+      "playerListName()",
+      "playerListName(Component)",
+      "sendBlockDamage(Location,float)",
+      "sendOpLevel(byte)",
+      "sendSignChange(Location,List)",
+      "sendSignChange(Location,List,DyeColor)"
+    ],
+    "org.bukkit.block.BlockFace": [
+      "isCartesian()"
+    ],
+    "org.bukkit.scoreboard.Scoreboard": [
+      "registerNewObjective(String,String,Component)",
+      "registerNewObjective(String,String,Component,RenderType)"
+    ],
+    "org.bukkit.block.Block": [
+      "getDestroySpeed(ItemStack,boolean)",
+      "isPreferredTool(ItemStack)",
+      "isValidTool(ItemStack)"
+    ],
+    "io.papermc.paper.event.block.BlockPreDispenseEvent": [
+      "BlockPreDispenseEvent(Block,ItemStack,int)"
+    ],
+    "io.papermc.paper.datapack.Datapack.Compatibility": [
+      "COMPATIBLE",
+      "Compatibility()",
+      "TOO_NEW",
+      "TOO_OLD"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "colorDownsamplingGsonComponentSerializer()",
+      "componentFlattener()",
+      "getItemAttributes(Material,EquipmentSlot)",
+      "getItemRarity(Material)",
+      "getItemStackRarity(ItemStack)",
+      "getTranslationKey(ItemStack)",
+      "gsonComponentSerializer()",
+      "isValidRepairItemStack(ItemStack,ItemStack)",
+      "legacyComponentSerializer()",
+      "plainComponentSerializer()"
+    ],
+    "io.papermc.paper.event.entity.EntityMoveEvent": [
+      "EntityMoveEvent(LivingEntity,Location,Location)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent.Type": [
+      "INSTANT_MOVE",
+      "STARTED_MOVE"
+    ],
+    "org.bukkit.event.player.PlayerJoinEvent": [
+      "PlayerJoinEvent(Player,Component)",
+      "joinMessage()",
+      "joinMessage(Component)"
+    ],
+    "org.bukkit.attribute.Attributable": [
+      "registerAttribute(Attribute)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderEvent": [
+      "WorldBorderEvent(World,WorldBorder)",
+      "worldBorder"
+    ],
+    "org.bukkit.inventory.ItemFactory": [
+      "asHoverEvent(ItemStack,UnaryOperator)",
+      "displayName(ItemStack)"
+    ],
+    "io.papermc.paper.event.block.BellRevealRaiderEvent": [
+      "BellRevealRaiderEvent(Block,Entity)",
+      "raider"
+    ],
+    "org.bukkit.event.inventory.SmithItemEvent": [
+      "SmithItemEvent(InventoryView,SlotType,int,ClickType,InventoryAction)",
+      "SmithItemEvent(InventoryView,SlotType,int,ClickType,InventoryAction,int)"
+    ],
+    "org.bukkit.event.inventory.FurnaceSmeltEvent": [
+      "FurnaceSmeltEvent(Block,ItemStack,ItemStack,CookingRecipe)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeFinishEvent": [
+      "getNewSize()",
+      "getOldSize()",
+      "newSize",
+      "oldSize",
+      "WorldBorderBoundsChangeFinishEvent(World,WorldBorder,double,double,double)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getHandRaised()",
+      "hasLineOfSight(Location)"
+    ],
+    "io.papermc.paper.event.block.BeaconDeactivatedEvent": [
+      "BeaconDeactivatedEvent(Block)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent.Cause": [
+      "BANNED",
+      "DUPLICATE_LOGIN",
+      "FLYING_PLAYER",
+      "FLYING_VEHICLE",
+      "IDLING",
+      "ILLEGAL_ACTION",
+      "ILLEGAL_CHARACTERS",
+      "INVALID_ENTITY_ATTACKED",
+      "INVALID_PAYLOAD",
+      "INVALID_PLAYER_MOVEMENT",
+      "INVALID_VEHICLE_MOVEMENT",
+      "IP_BANNED",
+      "KICK_COMMAND",
+      "RESTART_COMMAND",
+      "SELF_INTERACTION",
+      "SPAM",
+      "WHITELIST"
+    ],
+    "org.bukkit.Nameable": [
+      "customName()",
+      "customName(Component)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,List,int,Component)",
+      "PlayerDeathEvent(Player,List,int,int,Component,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,Component,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,Component,String,boolean)",
+      "adventure$deathMessage",
+      "deathMessage()",
+      "deathMessage(Component)",
+      "getDeathMessageString(Component)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderCenterChangeEvent": [
+      "WorldBorderCenterChangeEvent(World,WorldBorder,Location,Location)",
+      "getNewCenter()",
+      "getOldCenter()",
+      "newCenter",
+      "oldCenter",
+      "setNewCenter(Location)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent": [
+      "PlayerKickEvent(Player,Component,Component)",
+      "PlayerKickEvent(Player,Component,Component,Cause)",
+      "leaveMessage()",
+      "leaveMessage(Component)",
+      "reason(Component)"
+    ],
+    "org.bukkit.event.player.PlayerGameModeChangeEvent.Cause": [
+      "DEFAULT_GAMEMODE",
+      "HARDCORE_DEATH"
+    ],
+    "org.bukkit.event.player.PlayerGameModeChangeEvent": [
+      "PlayerGameModeChangeEvent(Player,GameMode,Cause,Component)",
+      "cancelMessage",
+      "cancelMessage()",
+      "cancelMessage(Component)"
+    ],
+    "org.bukkit.event.player.PlayerAdvancementDoneEvent": [
+      "PlayerAdvancementDoneEvent(Player,Advancement,Component)"
+    ],
+    "io.papermc.paper.event.player.PlayerDeepSleepEvent": [
+      "PlayerDeepSleepEvent(Player)"
+    ],
+    "org.bukkit.event.weather.ThunderChangeEvent": [
+      "ThunderChangeEvent(World,boolean,Cause)"
+    ],
+    "org.bukkit.map.MapCursorCollection": [
+      "addCursor(int,int,byte,byte,boolean,Component)"
+    ],
+    "io.papermc.paper.chat.ChatRenderer": [
+      "defaultRenderer()",
+      "render(Player,Component,Component,Audience)",
+      "viewerUnaware(ViewerUnaware)"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "lore()",
+      "lore(List)"
+    ],
+    "org.bukkit.inventory.meta.BookMeta": [
+      "title()",
+      "addPages(Component...)",
+      "author()",
+      "title(Component)",
+      "page(int)",
+      "page(int,Component)"
+    ],
+    "org.bukkit.event.player.PlayerAnimationEvent": [
+      "PlayerAnimationEvent(Player,PlayerAnimationType)"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "loadPlugins(File,List)",
+      "pluginsDirectory",
+      "pluginsDirectory()"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent": [
+      "PaperServerListPingEvent(StatusClient,Component,int,int,String,int,CachedServerIcon)"
+    ],
+    "org.bukkit.event.weather.WeatherChangeEvent": [
+      "WeatherChangeEvent(World,boolean,Cause)"
+    ],
+    "org.bukkit.event.weather.WeatherChangeEvent.Cause": [
+      "SLEEP"
+    ],
+    "org.bukkit.WorldCreator": [
+      "key()",
+      "WorldCreator(NamespacedKey)",
+      "WorldCreator(String,NamespacedKey)",
+      "ofKey(NamespacedKey)",
+      "ofNameAndKey(String,NamespacedKey)"
+    ],
+    "org.bukkit.plugin.UnknownDependencyException": [
+      "UnknownDependencyException(Collection,String)"
+    ],
+    "org.bukkit.Effect": [
+      "BOOK_PAGE_TURNED",
+      "COMPOSTER_COMPOSTS",
+      "ENDER_DRAGON_DEATH",
+      "ENDER_DRAGON_DESTROYS_BLOCK",
+      "ENDER_EYE_PLACED",
+      "END_PORTAL_CREATED_IN_OVERWORLD",
+      "GRINDSTONE_USED",
+      "HUSK_CONVERTS_TO_ZOMBIE",
+      "LAVA_CONVERTS_BLOCK",
+      "PHANTOM_BITES",
+      "REDSTONE_TORCH_BURNS_OUT",
+      "WET_SPONGE_VAPORIZES_IN_NETHER",
+      "WITHER_SPAWNED",
+      "ZOMBIE_CONVERTS_TO_DROWNED"
+    ],
+    "io.papermc.paper.event.player.PlayerPurchaseEvent": [
+      "PlayerPurchaseEvent(Player,MerchantRecipe,boolean,boolean)"
+    ],
+    "io.papermc.paper.util.TransformingRandomAccessList": [
+      "TransformingRandomAccessList(List,Function,Function)",
+      "add(int,T)",
+      "fromFunction",
+      "fromList",
+      "get(int)",
+      "listIterator(int)",
+      "remove(int)",
+      "removeIf(Predicate)",
+      "set(int,T)",
+      "toFunction"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent": [
+      "WorldBorderBoundsChangeEvent(World,WorldBorder,Type,double,double,long)",
+      "setDuration(long)",
+      "setNewSize(double)"
+    ],
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.CompletionImpl": [
+      "suggestion()",
+      "tooltip()",
+      "CompletionImpl(String,Component)",
+      "suggestion",
+      "tooltip"
+    ],
+    "io.papermc.paper.event.player.AbstractChatEvent": [
+      "AbstractChatEvent(boolean,Player,Set,ChatComposer,Component)",
+      "AbstractChatEvent(boolean,Player,Set,ChatFormatter,Component)",
+      "AbstractChatEvent(boolean,Player,Set,ChatRenderer,Component)",
+      "AbstractChatEvent(boolean,Player,Set,ChatRenderer,Component,Component)",
+      "AbstractChatEvent(boolean,Player,Set,Set,ChatRenderer,Component)",
+      "AbstractChatEvent(boolean,Player,Set,Set,ChatRenderer,Component,Component)",
+      "composer",
+      "composer()",
+      "composer(ChatComposer)",
+      "formatter",
+      "formatter()",
+      "formatter(ChatFormatter)",
+      "legacyForwardingAudience()",
+      "originalMessage",
+      "originalMessage()",
+      "recipients()",
+      "renderer",
+      "renderer()",
+      "renderer(ChatRenderer)",
+      "viewers",
+      "viewers()"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "getSaturatedRegenRate()",
+      "getStarvationRate()",
+      "getUnsaturatedRegenRate()",
+      "isDeeplySleeping()",
+      "setSaturatedRegenRate(int)",
+      "setStarvationRate(int)",
+      "setUnsaturatedRegenRate(int)"
+    ],
+    "io.papermc.paper.event.player.PlayerStonecutterRecipeSelectEvent": [
+      "PlayerStonecutterRecipeSelectEvent(Player,StonecutterInventory,StonecuttingRecipe)",
+      "getStonecutterInventory()",
+      "getStonecuttingRecipe()",
+      "setStonecuttingRecipe(StonecuttingRecipe)",
+      "stonecutterInventory",
+      "stonecuttingRecipe"
+    ],
+    "org.bukkit.scoreboard.Team": [
+      "displayName()",
+      "displayName(Component)",
+      "color()",
+      "color(NamedTextColor)",
+      "prefix()",
+      "prefix(Component)",
+      "suffix()",
+      "suffix(Component)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "defaultTitle()",
+      "defaultTitleComponent"
+    ],
+    "org.bukkit.NamespacedKey": [
+      "fromString(String)",
+      "fromString(String,Plugin)",
+      "namespace()"
+    ],
+    "io.papermc.paper.event.block.BeaconActivatedEvent": [
+      "BeaconActivatedEvent(Block)"
+    ],
+    "org.bukkit.event.server.BroadcastMessageEvent": [
+      "message()",
+      "message(Component)",
+      "BroadcastMessageEvent(Component,Set)",
+      "BroadcastMessageEvent(boolean,Component,Set)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerHandshakeEvent": [
+      "PlayerHandshakeEvent(String,String,boolean)",
+      "failMessage()",
+      "failMessage(Component)",
+      "getOriginalSocketAddressHostname()",
+      "originalSocketAddressHostname"
+    ],
+    "org.bukkit.plugin.java.PluginClassLoader": [
+      "libraryLoader",
+      "PluginClassLoader(JavaPluginLoader,ClassLoader,PluginDescriptionFile,File,File,ClassLoader)",
+      "loadClass(String,boolean)",
+      "loadClass0(String,boolean,boolean,boolean)"
+    ],
+    "org.bukkit.entity.FishHook.HookState": [
+      "BOBBING",
+      "HOOKED_ENTITY",
+      "HookState()",
+      "UNHOOKED"
+    ],
+    "io.papermc.paper.event.world.StructureLocateEvent": [
+      "StructureLocateEvent(World,Location,StructureType,int,boolean)",
+      "findUnexplored",
+      "origin",
+      "setFindUnexplored(boolean)",
+      "setRadius(int)",
+      "setResult(Location)",
+      "setType(StructureType)",
+      "shouldFindUnexplored()"
+    ],
+    "io.papermc.paper.text.PaperComponents": [
+      "PaperComponents()",
+      "colorDownsamplingGsonSerializer()",
+      "flattener()",
+      "gsonSerializer()",
+      "legacySectionSerializer()",
+      "plainSerializer()"
+    ],
+    "io.papermc.paper.util.TransformingRandomAccessList.TransformedListIterator": [
+      "\u003cA\u003ecast(Iterator)",
+      "TransformedListIterator(ListIterator)",
+      "add(T)",
+      "backingIterator",
+      "backingIterator()",
+      "hasPrevious()",
+      "nextIndex()",
+      "previous()",
+      "previousIndex()",
+      "set(T)",
+      "transform(F)",
+      "transformBack(T)"
+    ],
+    "org.bukkit.inventory.EntityEquipment": [
+      "getDropChance(EquipmentSlot)",
+      "setDropChance(EquipmentSlot,float)"
+    ],
+    "org.bukkit.entity.Witch": [
+      "setPotionUseTimeLeft(int)"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.loot.LootTables": [
+      "ZOMBIE_PIGMAN"
+    ],
+    "org.bukkit.command.defaults.VersionCommand": [
+      "sendMessages(String,CommandSender)",
+      "setVersionMessage(String)"
+    ],
+    "org.bukkit.plugin.java.JavaPluginLoader": [
+      "getClassByName(String)",
+      "getClassByName(String,PluginClassLoader)",
+      "removeClass(String)"
+    ],
+    "org.bukkit.plugin.java.PluginClassLoader": [
+      "PluginClassLoader(JavaPluginLoader,ClassLoader,PluginDescriptionFile,File,File)",
+      "findClass(String,boolean)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.loot.LootTables": [
+      "ZOMBIE_PIGMAN"
+    ],
+    "org.bukkit.command.defaults.VersionCommand": [
+      "sendMessages(String,CommandSender)",
+      "setVersionMessage(String)"
+    ],
+    "org.bukkit.plugin.java.JavaPluginLoader": [
+      "getClassByName(String)",
+      "getClassByName(String,PluginClassLoader)",
+      "removeClass(String)"
+    ],
+    "org.bukkit.plugin.java.PluginClassLoader": [
+      "PluginClassLoader(JavaPluginLoader,ClassLoader,PluginDescriptionFile,File,File)",
+      "findClass(String,boolean)"
+    ]
+  }
+}

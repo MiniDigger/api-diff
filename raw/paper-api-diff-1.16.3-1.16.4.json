@@ -1,0 +1,440 @@
+{
+  "versionA": "1.16.3",
+  "versionB": "1.16.4",
+  "packagesAdded": [
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.tag"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.world",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.event.block.BlockFailedDispenseEvent",
+    "io.papermc.paper.event.block.PlayerShearBlockEvent",
+    "io.papermc.paper.event.block.TargetHitEvent",
+    "io.papermc.paper.event.entity.EntityLoadCrossbowEvent",
+    "io.papermc.paper.event.packet.PlayerChunkLoadEvent",
+    "io.papermc.paper.event.packet.PlayerChunkUnloadEvent",
+    "io.papermc.paper.event.player.PlayerFlowerPotManipulateEvent",
+    "io.papermc.paper.event.player.PlayerItemCooldownEvent",
+    "io.papermc.paper.event.player.PlayerLecternPageChangeEvent",
+    "io.papermc.paper.event.player.PlayerLecternPageChangeEvent.PageChangeDirection",
+    "io.papermc.paper.event.player.PlayerLoomPatternSelectEvent",
+    "io.papermc.paper.event.player.PlayerTradeEvent",
+    "io.papermc.paper.event.server.ServerResourcesReloadedEvent",
+    "io.papermc.paper.event.server.ServerResourcesReloadedEvent.Cause",
+    "io.papermc.paper.event.world.WorldGameRuleChangeEvent",
+    "io.papermc.paper.tag.BaseTag",
+    "io.papermc.paper.tag.EntitySetTag",
+    "io.papermc.paper.tag.EntityTags",
+    "org.bukkit.SoundGroup",
+    "org.bukkit.event.player.PlayerQuitEvent.QuitReason"
+  ],
+  "classesRemoved": [
+    "com.destroystokyo.paper.utils.UnsafeUtils"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.MaterialSetTag",
+    "com.destroystokyo.paper.MaterialTags",
+    "com.destroystokyo.paper.Title",
+    "com.destroystokyo.paper.event.entity.SkeletonHorseTrapEvent",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Chunk",
+    "org.bukkit.Location",
+    "org.bukkit.Registry",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.World",
+    "org.bukkit.block.Beacon",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.CreatureSpawner",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.command.CommandSender.Spigot",
+    "org.bukkit.entity.AbstractVillager",
+    "org.bukkit.entity.Boat",
+    "org.bukkit.entity.FishHook",
+    "org.bukkit.entity.Item",
+    "org.bukkit.entity.ItemFrame",
+    "org.bukkit.entity.LightningStrike",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Minecart",
+    "org.bukkit.entity.Player.Spigot",
+    "org.bukkit.entity.Zombie",
+    "org.bukkit.event.player.PlayerBedEnterEvent.BedEnterResult",
+    "org.bukkit.event.player.PlayerInteractEvent",
+    "org.bukkit.event.player.PlayerQuitEvent",
+    "org.bukkit.inventory.EntityEquipment",
+    "org.bukkit.inventory.MerchantRecipe"
+  ],
+  "membersAdded": {
+    "org.bukkit.entity.Player.Spigot": [
+      "sendMessage(ChatMessageType,UUID,BaseComponent)",
+      "sendMessage(ChatMessageType,UUID,BaseComponent...)"
+    ],
+    "io.papermc.paper.event.server.ServerResourcesReloadedEvent": [
+      "ServerResourcesReloadedEvent(Cause)"
+    ],
+    "org.bukkit.event.player.PlayerBedEnterEvent.BedEnterResult": [
+      "OBSTRUCTED"
+    ],
+    "com.destroystokyo.paper.Title": [
+      "broadcast()",
+      "send(Collection)",
+      "send(Player)",
+      "send(Player...)"
+    ],
+    "org.bukkit.entity.Item": [
+      "canPlayerPickup()",
+      "setCanPlayerPickup(boolean)",
+      "setWillAge(boolean)",
+      "willAge()"
+    ],
+    "org.bukkit.entity.Zombie": [
+      "canBreakDoors()",
+      "setCanBreakDoors(boolean)"
+    ],
+    "io.papermc.paper.event.player.PlayerLoomPatternSelectEvent": [
+      "PlayerLoomPatternSelectEvent(Player,LoomInventory,PatternType)",
+      "getLoomInventory()",
+      "getPatternType()",
+      "loomInventory",
+      "patternType",
+      "setPatternType(PatternType)"
+    ],
+    "io.papermc.paper.event.player.PlayerTradeEvent": [
+      "PlayerTradeEvent(Player,AbstractVillager,MerchantRecipe,boolean,boolean)",
+      "getTrade()",
+      "getVillager()",
+      "increaseTradeUses",
+      "isRewardingExp()",
+      "rewardExp",
+      "setIncreaseTradeUses(boolean)",
+      "setRewardExp(boolean)",
+      "setTrade(MerchantRecipe)",
+      "trade",
+      "villager",
+      "willIncreaseTradeUses()"
+    ],
+    "org.bukkit.command.CommandSender.Spigot": [
+      "sendMessage(UUID,BaseComponent)",
+      "sendMessage(UUID,BaseComponent...)"
+    ],
+    "io.papermc.paper.tag.EntitySetTag": [
+      "getAllPossibleValues()",
+      "EntitySetTag(NamespacedKey,Collection)",
+      "EntitySetTag(NamespacedKey,Collection,Predicate...)",
+      "EntitySetTag(NamespacedKey,EntityType...)",
+      "EntitySetTag(NamespacedKey,Predicate)",
+      "getName(EntityType)"
+    ],
+    "org.bukkit.block.Beacon": [
+      "getEffectRange()",
+      "resetEffectRange()",
+      "setEffectRange(double)"
+    ],
+    "io.papermc.paper.event.player.PlayerFlowerPotManipulateEvent": [
+      "PlayerFlowerPotManipulateEvent(Player,Block,ItemStack,boolean)",
+      "flowerpot",
+      "getFlowerpot()",
+      "isPlacing()",
+      "placing"
+    ],
+    "org.bukkit.entity.LightningStrike": [
+      "getFlashCount()",
+      "getLifeTicks()",
+      "setFlashCount(int)",
+      "setLifeTicks(int)"
+    ],
+    "org.bukkit.block.Block": [
+      "getDestroySpeed(ItemStack)",
+      "isReplaceable()"
+    ],
+    "org.bukkit.entity.AbstractVillager": [
+      "resetOffers()"
+    ],
+    "org.bukkit.Location": [
+      "toHighestLocation(HeightMap)"
+    ],
+    "org.bukkit.entity.ItemFrame": [
+      "getItemDropChance()",
+      "setItemDropChance(float)"
+    ],
+    "org.bukkit.World": [
+      "getClearWeatherDuration()",
+      "isClearWeather()",
+      "setClearWeatherDuration(int)"
+    ],
+    "org.bukkit.Server": [
+      "getMaxWorldSize()"
+    ],
+    "org.bukkit.inventory.MerchantRecipe": [
+      "MerchantRecipe(ItemStack,int,int,boolean,int,float,boolean)",
+      "ignoreDiscounts",
+      "setIgnoreDiscounts(boolean)",
+      "shouldIgnoreDiscounts()"
+    ],
+    "org.bukkit.Chunk": [
+      "getTileEntities(Predicate,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerInteractEvent": [
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot,Location)",
+      "getInteractionPoint()",
+      "interactionPoint"
+    ],
+    "org.bukkit.entity.Boat": [
+      "getBoatMaterial()"
+    ],
+    "io.papermc.paper.event.player.PlayerLecternPageChangeEvent.PageChangeDirection": [
+      "PageChangeDirection()"
+    ],
+    "org.bukkit.entity.Minecart": [
+      "getMinecartMaterial()"
+    ],
+    "io.papermc.paper.event.block.PlayerShearBlockEvent": [
+      "PlayerShearBlockEvent(Player,Block,ItemStack,EquipmentSlot,List)"
+    ],
+    "org.bukkit.block.CreatureSpawner": [
+      "setSpawnedItem(ItemStack)"
+    ],
+    "io.papermc.paper.event.block.BlockFailedDispenseEvent": [
+      "BlockFailedDispenseEvent(Block)",
+      "shouldPlayEffect",
+      "shouldPlayEffect()",
+      "shouldPlayEffect(boolean)"
+    ],
+    "io.papermc.paper.event.entity.EntityLoadCrossbowEvent": [
+      "EntityLoadCrossbowEvent(LivingEntity,ItemStack,EquipmentSlot)",
+      "crossbow",
+      "getCrossbow()"
+    ],
+    "com.destroystokyo.paper.MaterialTags": [
+      "CORAL",
+      "CORAL_FANS",
+      "ENCHANTABLE"
+    ],
+    "io.papermc.paper.event.block.TargetHitEvent": [
+      "TargetHitEvent(Projectile,Block,BlockFace,int)",
+      "getSignalStrength()",
+      "setSignalStrength(int)",
+      "signalStrength"
+    ],
+    "io.papermc.paper.event.packet.PlayerChunkUnloadEvent": [
+      "PlayerChunkUnloadEvent(Chunk,Player)"
+    ],
+    "com.destroystokyo.paper.MaterialSetTag": [
+      "MaterialSetTag(NamespacedKey,Collection,Predicate...)",
+      "getName(Material)"
+    ],
+    "io.papermc.paper.event.world.WorldGameRuleChangeEvent": [
+      "HANDLER_LIST",
+      "WorldGameRuleChangeEvent(World,CommandSender,GameRule,String)",
+      "gameRule",
+      "getGameRule()",
+      "setValue(String)"
+    ],
+    "org.bukkit.Sound": [
+      "Sound(String)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "clearActiveItem()",
+      "getHurtDirection()",
+      "setHurtDirection(float)"
+    ],
+    "com.destroystokyo.paper.event.entity.SkeletonHorseTrapEvent": [
+      "SkeletonHorseTrapEvent(SkeletonHorse,List)",
+      "eligibleHumans",
+      "getEligibleHumans()"
+    ],
+    "io.papermc.paper.event.player.PlayerLecternPageChangeEvent": [
+      "PlayerLecternPageChangeEvent(Player,Lectern,ItemStack,PageChangeDirection,int,int)",
+      "book",
+      "getNewPage()",
+      "getOldPage()",
+      "getPageChangeDirection()",
+      "newPage",
+      "oldPage",
+      "pageChangeDirection",
+      "setNewPage(int)"
+    ],
+    "io.papermc.paper.tag.BaseTag": [
+      "\u003cE\u003ecreateEnumSet(Class)",
+      "BaseTag(Class,NamespacedKey,Collection)",
+      "BaseTag(Class,NamespacedKey,Collection,Predicate...)",
+      "BaseTag(Class,NamespacedKey,Predicate)",
+      "BaseTag(Class,NamespacedKey,T...)",
+      "add(T...)",
+      "getName(T)",
+      "globalPredicates",
+      "not(T...)",
+      "not(Tag...)",
+      "notContains(String)",
+      "tagged"
+    ],
+    "io.papermc.paper.event.player.PlayerItemCooldownEvent": [
+      "PlayerItemCooldownEvent(Player,Material,int)",
+      "cooldown",
+      "getCooldown()",
+      "setCooldown(int)"
+    ],
+    "org.bukkit.event.player.PlayerQuitEvent": [
+      "PlayerQuitEvent(Player,String,QuitReason)"
+    ],
+    "org.bukkit.entity.FishHook": [
+      "getApplyLure()",
+      "getMaxWaitTime()",
+      "getMinWaitTime()",
+      "setApplyLure(boolean)",
+      "setMaxWaitTime(int)",
+      "setMinWaitTime(int)"
+    ],
+    "io.papermc.paper.event.packet.PlayerChunkLoadEvent": [
+      "PlayerChunkLoadEvent(Chunk,Player)"
+    ],
+    "org.bukkit.event.player.PlayerQuitEvent.QuitReason": [
+      "DISCONNECTED",
+      "ERRONEOUS_STATE",
+      "KICKED",
+      "QuitReason()",
+      "TIMED_OUT"
+    ],
+    "org.bukkit.inventory.EntityEquipment": [
+      "setBoots(ItemStack,boolean)",
+      "setChestplate(ItemStack,boolean)",
+      "setHelmet(ItemStack,boolean)",
+      "setItem(EquipmentSlot,ItemStack,boolean)",
+      "setItemInMainHand(ItemStack,boolean)",
+      "setItemInOffHand(ItemStack,boolean)",
+      "setLeggings(ItemStack,boolean)"
+    ],
+    "io.papermc.paper.tag.EntityTags": [
+      "EntityTags()",
+      "HORSES",
+      "MINECARTS",
+      "SPLITTING_MOBS",
+      "UNDEADS",
+      "WATER_BASED"
+    ],
+    "org.bukkit.Registry": [
+      "SOUNDS"
+    ]
+  },
+  "membersRemoved": {
+    "com.destroystokyo.paper.MaterialSetTag": [
+      "add(Material...)",
+      "add(MaterialSetTag...)",
+      "materials",
+      "not(Material...)",
+      "not(MaterialSetTag)"
+    ],
+    "org.bukkit.Sound": [
+      "Sound()"
+    ],
+    "com.destroystokyo.paper.utils.UnsafeUtils": [
+      "UNSAFE",
+      "UnsafeUtils()",
+      "isUnsafeSupported()"
+    ]
+  },
+  "membersChanged": {
+    "com.destroystokyo.paper.MaterialSetTag": [
+      "add(Material...)",
+      "add(MaterialSetTag...)",
+      "materials",
+      "not(Material...)",
+      "not(MaterialSetTag)"
+    ],
+    "org.bukkit.Sound": [
+      "Sound()"
+    ],
+    "com.destroystokyo.paper.utils.UnsafeUtils": [
+      "UNSAFE",
+      "UnsafeUtils()",
+      "isUnsafeSupported()"
+    ]
+  }
+}

@@ -1,0 +1,901 @@
+{
+  "versionA": "1.19.3",
+  "versionB": "1.19.4",
+  "packagesAdded": [
+    "org.bukkit.block.sign",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.packs"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.block",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.math",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.entity.Shearable",
+    "io.papermc.paper.plugin.bootstrap.BootstrapContext",
+    "org.bukkit.Chunk.LoadLevel",
+    "org.bukkit.FeatureFlag",
+    "org.bukkit.block.DecoratedPot",
+    "org.bukkit.block.SuspiciousSand",
+    "org.bukkit.block.data.type.DecoratedPot",
+    "org.bukkit.block.data.type.PinkPetals",
+    "org.bukkit.block.data.type.SuspiciousSand",
+    "org.bukkit.block.sign.Side",
+    "org.bukkit.block.sign.SignSide",
+    "org.bukkit.entity.BlockDisplay",
+    "org.bukkit.entity.Display",
+    "org.bukkit.entity.Display.Billboard",
+    "org.bukkit.entity.Display.Brightness",
+    "org.bukkit.entity.Interaction",
+    "org.bukkit.entity.Interaction.PreviousInteraction",
+    "org.bukkit.entity.ItemDisplay",
+    "org.bukkit.entity.ItemDisplay.ItemDisplayTransform",
+    "org.bukkit.entity.Sniffer",
+    "org.bukkit.entity.Sniffer.State",
+    "org.bukkit.entity.TextDisplay",
+    "org.bukkit.entity.TextDisplay.TextAlignment",
+    "org.bukkit.event.block.BellResonateEvent",
+    "org.bukkit.event.block.BellRingEvent",
+    "org.bukkit.event.block.TNTPrimeEvent",
+    "org.bukkit.event.block.TNTPrimeEvent.PrimeCause",
+    "org.bukkit.event.inventory.HopperInventorySearchEvent",
+    "org.bukkit.event.inventory.HopperInventorySearchEvent.ContainerType",
+    "org.bukkit.event.player.PlayerExpCooldownChangeEvent",
+    "org.bukkit.event.player.PlayerExpCooldownChangeEvent.ChangeReason",
+    "org.bukkit.event.player.PlayerRespawnEvent.RespawnReason",
+    "org.bukkit.event.player.PlayerSpawnChangeEvent",
+    "org.bukkit.event.player.PlayerSpawnChangeEvent.Cause",
+    "org.bukkit.event.world.AsyncStructureSpawnEvent",
+    "org.bukkit.inventory.JukeboxInventory",
+    "org.bukkit.inventory.SmithingTransformRecipe",
+    "org.bukkit.inventory.SmithingTrimRecipe",
+    "org.bukkit.inventory.meta.ArmorMeta",
+    "org.bukkit.inventory.meta.ColorableArmorMeta",
+    "org.bukkit.inventory.meta.trim.ArmorTrim",
+    "org.bukkit.inventory.meta.trim.TrimMaterial",
+    "org.bukkit.inventory.meta.trim.TrimPattern",
+    "org.bukkit.packs.DataPack",
+    "org.bukkit.packs.DataPack.Compatibility",
+    "org.bukkit.packs.DataPack.Source",
+    "org.bukkit.packs.DataPackManager",
+    "org.bukkit.persistence.PersistentDataType.BooleanPersistentDataType",
+    "org.bukkit.util.Transformation"
+  ],
+  "classesRemoved": [
+    "org.bukkit.UndefinedNullability"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "io.papermc.paper.event.block.BellRingEvent",
+    "io.papermc.paper.event.player.AsyncChatDecorateEvent",
+    "io.papermc.paper.plugin.bootstrap.PluginBootstrap",
+    "io.papermc.paper.plugin.bootstrap.PluginProviderContext",
+    "org.bukkit.Bukkit",
+    "org.bukkit.ChatColor",
+    "org.bukkit.Chunk",
+    "org.bukkit.Color",
+    "org.bukkit.Effect",
+    "org.bukkit.GameEvent",
+    "org.bukkit.GameRule",
+    "org.bukkit.Location",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.RegionAccessor",
+    "org.bukkit.Registry",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.TreeType",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.WorldBorder",
+    "org.bukkit.attribute.AttributeInstance",
+    "org.bukkit.block.Bell",
+    "org.bukkit.block.Biome",
+    "org.bukkit.block.Jukebox",
+    "org.bukkit.block.Sign",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.command.CommandSender",
+    "org.bukkit.configuration.file.YamlConstructor",
+    "org.bukkit.configuration.file.YamlRepresenter",
+    "org.bukkit.conversations.Conversable",
+    "org.bukkit.entity.Boat.Type",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.FallingBlock",
+    "org.bukkit.entity.FishHook",
+    "org.bukkit.entity.Guardian",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.Mob",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Projectile",
+    "org.bukkit.entity.Wither",
+    "org.bukkit.entity.memory.MemoryKey",
+    "org.bukkit.event.block.SignChangeEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.inventory.PrepareAnvilEvent",
+    "org.bukkit.event.player.PlayerItemMendEvent",
+    "org.bukkit.event.player.PlayerRespawnEvent",
+    "org.bukkit.event.player.PlayerTeleportEvent",
+    "org.bukkit.inventory.InventoryView",
+    "org.bukkit.inventory.ItemFlag",
+    "org.bukkit.inventory.meta.SpawnEggMeta",
+    "org.bukkit.persistence.PersistentDataType",
+    "org.bukkit.plugin.java.JavaPlugin",
+    "org.bukkit.potion.PotionEffect",
+    "org.bukkit.util.Vector"
+  ],
+  "membersAdded": {
+    "org.bukkit.inventory.ItemFlag": [
+      "HIDE_ARMOR_TRIM"
+    ],
+    "org.bukkit.event.player.PlayerSpawnChangeEvent": [
+      "PlayerSpawnChangeEvent(Player,Location,boolean,Cause)",
+      "getNewSpawn()",
+      "newSpawn",
+      "setNewSpawn(Location)"
+    ],
+    "org.bukkit.entity.ItemDisplay.ItemDisplayTransform": [
+      "FIXED",
+      "FIRSTPERSON_LEFTHAND",
+      "FIRSTPERSON_RIGHTHAND",
+      "GROUND",
+      "GUI",
+      "ItemDisplayTransform()",
+      "THIRDPERSON_LEFTHAND",
+      "THIRDPERSON_RIGHTHAND"
+    ],
+    "org.bukkit.attribute.AttributeInstance": [
+      "addTransientModifier(AttributeModifier)"
+    ],
+    "org.bukkit.util.Transformation": [
+      "Transformation(Vector3f,AxisAngle4f,Vector3f,AxisAngle4f)",
+      "Transformation(Vector3f,Quaternionf,Vector3f,Quaternionf)",
+      "getLeftRotation()",
+      "getRightRotation()",
+      "getTranslation()",
+      "leftRotation",
+      "rightRotation",
+      "scale",
+      "translation"
+    ],
+    "org.bukkit.block.Jukebox": [
+      "startPlaying()"
+    ],
+    "org.bukkit.entity.Player": [
+      "addCustomChatCompletions(Collection)",
+      "getExpCooldown()",
+      "openSign(Sign,Side)",
+      "removeCustomChatCompletions(Collection)",
+      "sendBlockDamage(Location,float,Entity)",
+      "sendHurtAnimation(float)",
+      "setCustomChatCompletions(Collection)",
+      "setExpCooldown(int)"
+    ],
+    "org.bukkit.event.block.TNTPrimeEvent": [
+      "TNTPrimeEvent(Block,PrimeCause,Entity,Block)",
+      "getPrimingBlock()",
+      "getPrimingEntity()",
+      "igniteCause",
+      "primingBlock",
+      "primingEntity"
+    ],
+    "org.bukkit.block.Biome": [
+      "CHERRY_GROVE"
+    ],
+    "org.bukkit.Chunk.LoadLevel": [
+      "ENTITY_TICKING",
+      "INACCESSIBLE",
+      "LoadLevel()",
+      "TICKING"
+    ],
+    "org.bukkit.entity.Display": [
+      "getBillboard()",
+      "getBrightness()",
+      "getDisplayHeight()",
+      "getDisplayWidth()",
+      "getGlowColorOverride()",
+      "getInterpolationDelay()",
+      "getInterpolationDuration()",
+      "getShadowRadius()",
+      "getShadowStrength()",
+      "getTransformation()",
+      "getViewRange()",
+      "setBillboard(Billboard)",
+      "setBrightness(Brightness)",
+      "setDisplayHeight(float)",
+      "setDisplayWidth(float)",
+      "setGlowColorOverride(Color)",
+      "setInterpolationDelay(int)",
+      "setInterpolationDuration(int)",
+      "setShadowRadius(float)",
+      "setShadowStrength(float)",
+      "setTransformation(Transformation)",
+      "setTransformationMatrix(Matrix4f)",
+      "setViewRange(float)"
+    ],
+    "org.bukkit.entity.ItemDisplay": [
+      "getItemDisplayTransform()",
+      "setItemDisplayTransform(ItemDisplayTransform)"
+    ],
+    "org.bukkit.configuration.file.YamlRepresenter": [
+      "YamlRepresenter(DumperOptions)"
+    ],
+    "org.bukkit.block.Bell": [
+      "getResonatingTicks()",
+      "getShakingTicks()",
+      "isResonating()",
+      "isShaking()",
+      "ring()",
+      "ring(BlockFace)",
+      "ring(Entity)",
+      "ring(Entity,BlockFace)"
+    ],
+    "org.bukkit.World": [
+      "getChunkAt(int,int,boolean)",
+      "getFeatureFlags()"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getFeatureFlag(NamespacedKey)"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent.RespawnReason": [
+      "RespawnReason()"
+    ],
+    "org.bukkit.inventory.meta.SpawnEggMeta": [
+      "getCustomSpawnedType()",
+      "setCustomSpawnedType(EntityType)"
+    ],
+    "org.bukkit.persistence.PersistentDataType.BooleanPersistentDataType": [
+      "BooleanPersistentDataType()",
+      "fromPrimitive(Byte,PersistentDataAdapterContext)",
+      "toPrimitive(Boolean,PersistentDataAdapterContext)"
+    ],
+    "org.bukkit.block.sign.Side": [
+      "FRONT",
+      "Side()"
+    ],
+    "org.bukkit.Chunk": [
+      "getLoadLevel()"
+    ],
+    "org.bukkit.entity.Display.Billboard": [
+      "Billboard()",
+      "HORIZONTAL",
+      "VERTICAL"
+    ],
+    "org.bukkit.Material": [
+      "BRUSH",
+      "CHERRY_BOAT",
+      "CHERRY_BUTTON",
+      "CHERRY_CHEST_BOAT",
+      "CHERRY_DOOR",
+      "CHERRY_FENCE",
+      "CHERRY_FENCE_GATE",
+      "CHERRY_HANGING_SIGN",
+      "CHERRY_LEAVES",
+      "CHERRY_LOG",
+      "CHERRY_PLANKS",
+      "CHERRY_PRESSURE_PLATE",
+      "CHERRY_SAPLING",
+      "CHERRY_SIGN",
+      "CHERRY_SLAB",
+      "CHERRY_STAIRS",
+      "CHERRY_TRAPDOOR",
+      "CHERRY_WALL_HANGING_SIGN",
+      "CHERRY_WALL_SIGN",
+      "CHERRY_WOOD",
+      "COAST_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "DECORATED_POT",
+      "DUNE_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "EYE_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "NETHERITE_UPGRADE_SMITHING_TEMPLATE",
+      "PINK_PETALS",
+      "POTTED_CHERRY_SAPLING",
+      "POTTED_TORCHFLOWER",
+      "POTTERY_SHARD_ARCHER",
+      "POTTERY_SHARD_ARMS_UP",
+      "POTTERY_SHARD_PRIZE",
+      "POTTERY_SHARD_SKULL",
+      "RIB_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "SNIFFER_SPAWN_EGG",
+      "SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "STRIPPED_CHERRY_LOG",
+      "STRIPPED_CHERRY_WOOD",
+      "SUSPICIOUS_SAND",
+      "TIDE_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "TORCHFLOWER",
+      "TORCHFLOWER_CROP",
+      "TORCHFLOWER_SEEDS",
+      "VEX_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "WARD_ARMOR_TRIM_SMITHING_TEMPLATE",
+      "WILD_ARMOR_TRIM_SMITHING_TEMPLATE"
+    ],
+    "org.bukkit.block.Sign": [
+      "getSide(Side)"
+    ],
+    "io.papermc.paper.entity.Shearable": [
+      "readyToBeSheared()",
+      "shear()",
+      "shear(Source)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "isVisibleByDefault()",
+      "setVisibleByDefault(boolean)"
+    ],
+    "org.bukkit.block.data.BlockData": [
+      "getPlacementMaterial()",
+      "mirror(Mirror)",
+      "rotate(StructureRotation)"
+    ],
+    "org.bukkit.packs.DataPack.Compatibility": [
+      "NEW",
+      "OLD"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_CHERRY_LEAVES_BREAK",
+      "BLOCK_CHERRY_LEAVES_FALL",
+      "BLOCK_CHERRY_LEAVES_HIT",
+      "BLOCK_CHERRY_LEAVES_PLACE",
+      "BLOCK_CHERRY_LEAVES_STEP",
+      "BLOCK_CHERRY_SAPLING_BREAK",
+      "BLOCK_CHERRY_SAPLING_FALL",
+      "BLOCK_CHERRY_SAPLING_HIT",
+      "BLOCK_CHERRY_SAPLING_PLACE",
+      "BLOCK_CHERRY_SAPLING_STEP",
+      "BLOCK_CHERRY_WOOD_BREAK",
+      "BLOCK_CHERRY_WOOD_BUTTON_CLICK_OFF",
+      "BLOCK_CHERRY_WOOD_BUTTON_CLICK_ON",
+      "BLOCK_CHERRY_WOOD_DOOR_CLOSE",
+      "BLOCK_CHERRY_WOOD_DOOR_OPEN",
+      "BLOCK_CHERRY_WOOD_FALL",
+      "BLOCK_CHERRY_WOOD_FENCE_GATE_CLOSE",
+      "BLOCK_CHERRY_WOOD_FENCE_GATE_OPEN",
+      "BLOCK_CHERRY_WOOD_HANGING_SIGN_BREAK",
+      "BLOCK_CHERRY_WOOD_HANGING_SIGN_FALL",
+      "BLOCK_CHERRY_WOOD_HANGING_SIGN_HIT",
+      "BLOCK_CHERRY_WOOD_HANGING_SIGN_PLACE",
+      "BLOCK_CHERRY_WOOD_HANGING_SIGN_STEP",
+      "BLOCK_CHERRY_WOOD_HIT",
+      "BLOCK_CHERRY_WOOD_PLACE",
+      "BLOCK_CHERRY_WOOD_PRESSURE_PLATE_CLICK_OFF",
+      "BLOCK_CHERRY_WOOD_PRESSURE_PLATE_CLICK_ON",
+      "BLOCK_CHERRY_WOOD_STEP",
+      "BLOCK_CHERRY_WOOD_TRAPDOOR_CLOSE",
+      "BLOCK_CHERRY_WOOD_TRAPDOOR_OPEN",
+      "BLOCK_DECORATED_POT_BREAK",
+      "BLOCK_DECORATED_POT_FALL",
+      "BLOCK_DECORATED_POT_HIT",
+      "BLOCK_DECORATED_POT_PLACE",
+      "BLOCK_DECORATED_POT_SHATTER",
+      "BLOCK_DECORATED_POT_STEP",
+      "BLOCK_PINK_PETALS_BREAK",
+      "BLOCK_PINK_PETALS_FALL",
+      "BLOCK_PINK_PETALS_HIT",
+      "BLOCK_PINK_PETALS_PLACE",
+      "BLOCK_PINK_PETALS_STEP",
+      "BLOCK_SUSPICIOUS_SAND_BREAK",
+      "BLOCK_SUSPICIOUS_SAND_FALL",
+      "BLOCK_SUSPICIOUS_SAND_HIT",
+      "BLOCK_SUSPICIOUS_SAND_PLACE",
+      "BLOCK_SUSPICIOUS_SAND_STEP",
+      "ENTITY_SNIFFER_DEATH",
+      "ENTITY_SNIFFER_DIGGING",
+      "ENTITY_SNIFFER_DIGGING_STOP",
+      "ENTITY_SNIFFER_DROP_SEED",
+      "ENTITY_SNIFFER_EAT",
+      "ENTITY_SNIFFER_HAPPY",
+      "ENTITY_SNIFFER_HURT",
+      "ENTITY_SNIFFER_IDLE",
+      "ENTITY_SNIFFER_SCENTING",
+      "ENTITY_SNIFFER_SEARCHING",
+      "ENTITY_SNIFFER_SNIFFING",
+      "ENTITY_SNIFFER_STEP",
+      "INTENTIONALLY_EMPTY",
+      "ITEM_BRUSH_BRUSHING",
+      "ITEM_BRUSH_BRUSH_SAND_COMPLETED",
+      "MUSIC_OVERWORLD_CHERRY_GROVE"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "isEnabledByFeature(World)",
+      "BLOCK_DISPLAY",
+      "INTERACTION",
+      "ITEM_DISPLAY",
+      "SNIFFER",
+      "TEXT_DISPLAY"
+    ],
+    "org.bukkit.event.block.TNTPrimeEvent.PrimeCause": [
+      "PrimeCause()"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "init(Server,PluginDescriptionFile,File,File,ClassLoader,PluginMeta,Logger)"
+    ],
+    "org.bukkit.inventory.InventoryView": [
+      "getOriginalTitle()"
+    ],
+    "org.bukkit.entity.Sniffer": [
+      "addExploredLocation(Location)",
+      "canDig()",
+      "findPossibleDigLocation()",
+      "getExploredLocations()",
+      "removeExploredLocation(Location)",
+      "setState(State)"
+    ],
+    "org.bukkit.event.world.AsyncStructureSpawnEvent": [
+      "AsyncStructureSpawnEvent(World,Structure,BoundingBox,int,int)",
+      "boundingBox",
+      "chunkX",
+      "chunkZ",
+      "getChunkX()",
+      "getChunkZ()"
+    ],
+    "org.bukkit.event.inventory.HopperInventorySearchEvent": [
+      "HopperInventorySearchEvent(Inventory,ContainerType,Block,Block)",
+      "containerType",
+      "getContainerType()",
+      "getSearchBlock()",
+      "searchBlock",
+      "setInventory(Inventory)"
+    ],
+    "org.bukkit.entity.Guardian": [
+      "getLaserDuration()",
+      "getLaserTicks()",
+      "isMoving()",
+      "setLaserTicks(int)"
+    ],
+    "org.bukkit.block.DecoratedPot": [
+      "addShard(Material)",
+      "getShards()",
+      "setShards(List)"
+    ],
+    "org.bukkit.packs.DataPack.Source": [
+      "BUILT_IN",
+      "FEATURE",
+      "SERVER",
+      "Source()",
+      "WORLD"
+    ],
+    "org.bukkit.FeatureFlag": [
+      "UPDATE_1_20",
+      "VANILLA"
+    ],
+    "org.bukkit.event.player.PlayerItemMendEvent": [
+      "durabilityToXpOp",
+      "getConsumedExperience()",
+      "getDurabilityToXpOperation()",
+      "setDurabilityToXpOperation(IntUnaryOperator)"
+    ],
+    "org.bukkit.entity.Boat.Type": [
+      "CHERRY"
+    ],
+    "org.bukkit.entity.FishHook": [
+      "getMaxLureAngle()",
+      "getMaxLureTime()",
+      "getMinLureAngle()",
+      "getMinLureTime()",
+      "isRainInfluenced()",
+      "isSkyInfluenced()",
+      "setLureAngle(float,float)",
+      "setLureTime(int,int)",
+      "setMaxLureAngle(float)",
+      "setMaxLureTime(int)",
+      "setMinLureAngle(float)",
+      "setMinLureTime(int)",
+      "setRainInfluenced(boolean)",
+      "setSkyInfluenced(boolean)",
+      "setWaitTime(int,int)"
+    ],
+    "org.bukkit.inventory.meta.trim.TrimMaterial": [
+      "AMETHYST",
+      "COPPER",
+      "IRON",
+      "LAPIS",
+      "NETHERITE"
+    ],
+    "org.bukkit.entity.FallingBlock": [
+      "getDamagePerBlock()",
+      "getMaxDamage()",
+      "setDamagePerBlock(float)",
+      "setMaxDamage(int)"
+    ],
+    "org.bukkit.inventory.meta.trim.ArmorTrim": [
+      "ArmorTrim(TrimMaterial,TrimPattern)"
+    ],
+    "org.bukkit.configuration.file.YamlConstructor": [
+      "YamlConstructor(LoaderOptions)"
+    ],
+    "org.bukkit.persistence.PersistentDataType": [
+      "BOOLEAN"
+    ],
+    "org.bukkit.packs.DataPack": [
+      "getPackFormat()",
+      "getRequestedFeatures()",
+      "isRequired()"
+    ],
+    "org.bukkit.Registry": [
+      "TRIM_MATERIAL",
+      "TRIM_PATTERN"
+    ],
+    "org.bukkit.GameRule": [
+      "COMMAND_MODIFICATION_BLOCK_LIMIT",
+      "DO_VINES_SPREAD"
+    ],
+    "org.bukkit.Tag": [
+      "CHERRY_LOGS",
+      "ENTITY_TYPES_DISMOUNTS_UNDERWATER",
+      "ENTITY_TYPES_FALL_DAMAGE_IMMUNE",
+      "GAME_EVENT_ALLAY_CAN_LISTEN",
+      "ITEMS_AXES",
+      "ITEMS_BREAKS_DECORATED_POTS",
+      "ITEMS_DECORATED_POT_SHARDS",
+      "ITEMS_HOES",
+      "ITEMS_NOTE_BLOCK_TOP_INSTRUMENTS",
+      "ITEMS_PICKAXES",
+      "ITEMS_SHOVELS",
+      "ITEMS_SNIFFER_FOOD",
+      "ITEMS_SWORDS",
+      "ITEMS_TOOLS",
+      "ITEMS_TRIMMABLE_ARMOR",
+      "ITEMS_TRIM_MATERIALS",
+      "ITEMS_TRIM_TEMPLATES",
+      "SMELTS_TO_GLASS",
+      "SNIFFER_DIGGABLE_BLOCK"
+    ],
+    "org.bukkit.entity.Mob": [
+      "getPossibleExperienceReward()"
+    ],
+    "org.bukkit.entity.Wither": [
+      "enterInvulnerabilityPhase()",
+      "getInvulnerabilityTicks()",
+      "setInvulnerabilityTicks(int)"
+    ],
+    "org.bukkit.inventory.meta.trim.TrimPattern": [
+      "COAST",
+      "DUNE",
+      "EYE",
+      "RIB",
+      "SENTRY",
+      "SNOUT",
+      "SPIRE",
+      "TIDE",
+      "WARD"
+    ],
+    "org.bukkit.inventory.meta.ArmorMeta": [
+      "getTrim()",
+      "hasTrim()",
+      "setTrim(ArmorTrim)"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,RespawnReason)",
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,RespawnReason,Builder)",
+      "getRespawnReason()",
+      "respawnReason"
+    ],
+    "org.bukkit.event.block.SignChangeEvent": [
+      "SignChangeEvent(Block,Player,Array,Side)",
+      "SignChangeEvent(Block,Player,List,Side)",
+      "getSide()",
+      "side"
+    ],
+    "org.bukkit.entity.TextDisplay": [
+      "getAlignment()",
+      "getBackgroundColor()",
+      "getLineWidth()",
+      "getText()",
+      "getTextOpacity()",
+      "isDefaultBackground()",
+      "isSeeThrough()",
+      "isShadowed()",
+      "setAlignment(TextAlignment)",
+      "setBackgroundColor(Color)",
+      "setDefaultBackground(boolean)",
+      "setLineWidth(int)",
+      "setSeeThrough(boolean)",
+      "setShadowed(boolean)",
+      "setText(String)",
+      "setTextOpacity(byte)",
+      "text()",
+      "text(Component)"
+    ],
+    "org.bukkit.block.data.type.SuspiciousSand": [
+      "getDusted()",
+      "getMaximumDusted()",
+      "setDusted(int)"
+    ],
+    "org.bukkit.entity.Sniffer.State": [
+      "FEELING_HAPPY",
+      "RISING",
+      "SCENTING",
+      "SEARCHING"
+    ],
+    "org.bukkit.packs.DataPackManager": [
+      "getDataPack(NamespacedKey)",
+      "getDataPacks()",
+      "getDisabledDataPacks(World)",
+      "getEnabledDataPacks(World)",
+      "isEnabledByFeature(EntityType,World)",
+      "isEnabledByFeature(Material,World)"
+    ],
+    "org.bukkit.Server": [
+      "getDataPackManager()",
+      "getInitialDisabledPacks()",
+      "getInitialEnabledPacks()"
+    ],
+    "org.bukkit.entity.Interaction": [
+      "getInteractionHeight()",
+      "getInteractionWidth()",
+      "getLastAttack()",
+      "getLastInteraction()",
+      "isResponsive()",
+      "setInteractionHeight(float)",
+      "setInteractionWidth(float)",
+      "setResponsive(boolean)"
+    ],
+    "org.bukkit.block.data.type.PinkPetals": [
+      "getFlowerAmount()",
+      "getMaximumFlowerAmount()",
+      "setFlowerAmount(int)"
+    ],
+    "org.bukkit.GameEvent": [
+      "ENTITY_DISMOUNT",
+      "ENTITY_MOUNT"
+    ],
+    "org.bukkit.inventory.SmithingTransformRecipe": [
+      "SmithingTransformRecipe(NamespacedKey,ItemStack,RecipeChoice,RecipeChoice,RecipeChoice)"
+    ],
+    "org.bukkit.event.player.PlayerExpCooldownChangeEvent.ChangeReason": [
+      "PICKUP_ORB"
+    ],
+    "org.bukkit.Color": [
+      "Color(int,int,int,int)",
+      "DEFAULT_ALPHA",
+      "alpha",
+      "asARGB()",
+      "asInt(String,Map,Object)",
+      "fromARGB(int)",
+      "fromARGB(int,int,int,int)",
+      "getAlpha()",
+      "setAlpha(int)"
+    ],
+    "org.bukkit.entity.TextDisplay.TextAlignment": [
+      "TextAlignment()"
+    ],
+    "io.papermc.paper.plugin.bootstrap.PluginBootstrap": [
+      "bootstrap(BootstrapContext)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "SMITHING_NEW"
+    ],
+    "org.bukkit.entity.memory.MemoryKey": [
+      "SNIFFER_EXPLORED_POSITIONS"
+    ],
+    "org.bukkit.event.player.PlayerExpCooldownChangeEvent": [
+      "PlayerExpCooldownChangeEvent(Player,int,ChangeReason)",
+      "getNewCooldown()",
+      "newCooldown",
+      "setNewCooldown(int)"
+    ],
+    "org.bukkit.entity.BlockDisplay": [
+      "setBlock(BlockData)"
+    ],
+    "org.bukkit.entity.Display.Brightness": [
+      "Brightness(int,int)",
+      "blockLight",
+      "getBlockLight()",
+      "getSkyLight()",
+      "skyLight"
+    ],
+    "org.bukkit.potion.PotionEffect": [
+      "INFINITE_DURATION",
+      "isInfinite()",
+      "isShorterThan(PotionEffect)"
+    ],
+    "org.bukkit.util.Vector": [
+      "fromJOML(Vector3d)",
+      "fromJOML(Vector3f)",
+      "fromJOML(Vector3i)",
+      "toVector3d()",
+      "toVector3f()",
+      "toVector3i()",
+      "toVector3i(int)"
+    ],
+    "org.bukkit.event.block.BellResonateEvent": [
+      "BellResonateEvent(Block,List)",
+      "getResonatedEntities()",
+      "resonatedEntities"
+    ],
+    "org.bukkit.Particle": [
+      "DRIPPING_CHERRY_LEAVES",
+      "FALLING_CHERRY_LEAVES",
+      "LANDING_CHERRY_LEAVES"
+    ],
+    "org.bukkit.inventory.SmithingTrimRecipe": [
+      "getTemplate()",
+      "template",
+      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice)"
+    ],
+    "org.bukkit.event.inventory.HopperInventorySearchEvent.ContainerType": [
+      "ContainerType()",
+      "DESTINATION",
+      "SOURCE"
+    ],
+    "io.papermc.paper.plugin.bootstrap.PluginProviderContext": [
+      "getPluginSource()"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "PlayerTeleportEvent(Player,Location,Location,TeleportCause,Set)"
+    ],
+    "org.bukkit.ChatColor": [
+      "getHexColor(String,int)"
+    ],
+    "org.bukkit.event.block.BellRingEvent": [
+      "BellRingEvent(Block,BlockFace,Entity)"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "init(Server,PluginDescriptionFile,File,File,ClassLoader,PluginMeta)"
+    ],
+    "io.papermc.paper.plugin.bootstrap.PluginBootstrap": [
+      "bootstrap(PluginProviderContext)"
+    ],
+    "org.bukkit.Tag": [
+      "BEEHIVE_INHABITORS",
+      "IMPACT_PROJECTILES",
+      "RAIDERS",
+      "REGISTRY_ENTITIES",
+      "SKELETONS"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "PlayerTeleportEvent(Player,Location,Location,TeleportCause,boolean,Set)"
+    ],
+    "org.bukkit.ChatColor": [
+      "HEX_COLOR_PATTERN"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,Builder)"
+    ],
+    "io.papermc.paper.event.block.BellRingEvent": [
+      "BellRingEvent(Block,Entity)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "init(Server,PluginDescriptionFile,File,File,ClassLoader,PluginMeta)"
+    ],
+    "io.papermc.paper.plugin.bootstrap.PluginBootstrap": [
+      "bootstrap(PluginProviderContext)"
+    ],
+    "org.bukkit.Tag": [
+      "BEEHIVE_INHABITORS",
+      "IMPACT_PROJECTILES",
+      "RAIDERS",
+      "REGISTRY_ENTITIES",
+      "SKELETONS"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "PlayerTeleportEvent(Player,Location,Location,TeleportCause,boolean,Set)"
+    ],
+    "org.bukkit.ChatColor": [
+      "HEX_COLOR_PATTERN"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,Builder)"
+    ],
+    "io.papermc.paper.event.block.BellRingEvent": [
+      "BellRingEvent(Block,Entity)"
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "versionA": "1.14",
+  "versionB": "1.14.1",
+  "packagesAdded": [
+    "org.bukkit.entity.memory"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.util.VersionFetcher",
+    "com.destroystokyo.paper.util.VersionFetcher.DummyVersionFetcher",
+    "org.bukkit.entity.memory.MemoryKey",
+    "org.bukkit.event.entity.VillagerCareerChangeEvent",
+    "org.bukkit.event.entity.VillagerCareerChangeEvent.ChangeReason",
+    "org.bukkit.event.player.PlayerTakeLecternBookEvent"
+  ],
+  "classesRemoved": [
+    "com.destroystokyo.paper.VersionHistoryManager",
+    "com.destroystokyo.paper.VersionHistoryManager.VersionData"
+  ],
+  "classesChanged": [
+    "org.bukkit.Registry",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.command.defaults.VersionCommand",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.ZombieVillager",
+    "org.bukkit.event.block.BlockDropItemEvent",
+    "org.bukkit.event.world.PortalCreateEvent",
+    "org.bukkit.map.MapView",
+    "org.bukkit.potion.Potion",
+    "org.bukkit.potion.PotionType"
+  ],
+  "membersAdded": {
+    "com.destroystokyo.paper.util.VersionFetcher.DummyVersionFetcher": [
+      "DummyVersionFetcher()"
+    ],
+    "org.bukkit.command.defaults.VersionCommand": [
+      "getVersionFetcher()",
+      "sendMessages(String,CommandSender)",
+      "versionFetcher"
+    ],
+    "org.bukkit.entity.memory.MemoryKey": [
+      "HOME",
+      "JOB_SITE",
+      "MEETING_POINT",
+      "MEMORY_KEYS",
+      "MemoryKey(NamespacedKey,Class)",
+      "getMemoryClass()",
+      "namespacedKey",
+      "tClass"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(List,World,Entity,CreateReason)"
+    ],
+    "org.bukkit.event.entity.VillagerCareerChangeEvent.ChangeReason": [
+      "EMPLOYED",
+      "LOSING_JOB"
+    ],
+    "org.bukkit.event.entity.VillagerCareerChangeEvent": [
+      "VillagerCareerChangeEvent(Villager,Profession,ChangeReason)",
+      "profession"
+    ],
+    "org.bukkit.map.MapView": [
+      "isTrackingPosition()",
+      "setTrackingPosition(boolean)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "\u003cT\u003egetMemory(MemoryKey)",
+      "\u003cT\u003esetMemory(MemoryKey,T)"
+    ],
+    "org.bukkit.event.player.PlayerTakeLecternBookEvent": [
+      "PlayerTakeLecternBookEvent(Player,Lectern)",
+      "getBook()",
+      "getLectern()",
+      "lectern"
+    ],
+    "org.bukkit.entity.ZombieVillager": [
+      "getConversionPlayer()",
+      "setConversionPlayer(OfflinePlayer)"
+    ],
+    "com.destroystokyo.paper.util.VersionFetcher": [
+      "getCacheTime()",
+      "getVersionMessage(String)"
+    ],
+    "org.bukkit.Registry": [
+      "MEMORY_MODULE_TYPE"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.command.defaults.VersionCommand": [
+      "getFromJenkins(int)",
+      "getFromRepo(String,String,String)",
+      "tellHistory(CommandSender)"
+    ],
+    "org.bukkit.potion.PotionType": [
+      "getByDamageValue(int)",
+      "getDamageValue()"
+    ],
+    "org.bukkit.potion.Potion": [
+      "Potion(int)"
+    ],
+    "com.destroystokyo.paper.VersionHistoryManager.VersionData": [
+      "VersionData()",
+      "currentVersion",
+      "getCurrentVersion()",
+      "getOldVersion()",
+      "oldVersion",
+      "setCurrentVersion(String)",
+      "setOldVersion(String)"
+    ],
+    "com.destroystokyo.paper.VersionHistoryManager": [
+      "VersionHistoryManager()",
+      "currentData",
+      "getVersionData()",
+      "gson",
+      "writeFile(Path)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.command.defaults.VersionCommand": [
+      "getFromJenkins(int)",
+      "getFromRepo(String,String,String)",
+      "tellHistory(CommandSender)"
+    ],
+    "org.bukkit.potion.PotionType": [
+      "getByDamageValue(int)",
+      "getDamageValue()"
+    ],
+    "org.bukkit.potion.Potion": [
+      "Potion(int)"
+    ],
+    "com.destroystokyo.paper.VersionHistoryManager.VersionData": [
+      "VersionData()",
+      "currentVersion",
+      "getCurrentVersion()",
+      "getOldVersion()",
+      "oldVersion",
+      "setCurrentVersion(String)",
+      "setOldVersion(String)"
+    ],
+    "com.destroystokyo.paper.VersionHistoryManager": [
+      "VersionHistoryManager()",
+      "currentData",
+      "getVersionData()",
+      "gson",
+      "writeFile(Path)"
+    ]
+  }
+}

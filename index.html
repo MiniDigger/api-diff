@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <title>ApiDiff</title>
+    <style>
+html {
+    color-scheme: dark light;
+}
+[index] {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+    padding: 0;
+}
+[nested] {
+    list-style-type: none;
+    padding-left: 1em;
+}
+[diff] {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 60ch);
+    padding-left: 1em;
+}
+h2:has(+ ul[empty]) {
+    display: none;
+}
+a, a:visited {
+    color: unset;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+<h1>ApiDiff</h1>
+<h2>Diffs</h2>
+  <ul index>
+    <li><a href="diff-1.09.4-1.10.2.html">1.09.4-1.10.2</a></li>
+    <li><a href="diff-1.10.2-1.11.html">1.10.2-1.11</a></li>
+    <li><a href="diff-1.11-1.11.1.html">1.11-1.11.1</a></li>
+    <li><a href="diff-1.11.1-1.11.2.html">1.11.1-1.11.2</a></li>
+    <li><a href="diff-1.11.2-1.12.html">1.11.2-1.12</a></li>
+    <li><a href="diff-1.12-1.12.1.html">1.12-1.12.1</a></li>
+    <li><a href="diff-1.12.1-1.12.2.html">1.12.1-1.12.2</a></li>
+    <li><a href="diff-1.12.2-1.13.html">1.12.2-1.13</a></li>
+    <li><a href="diff-1.13-1.13.1.html">1.13-1.13.1</a></li>
+    <li><a href="diff-1.13.1-1.13.2.html">1.13.1-1.13.2</a></li>
+    <li><a href="diff-1.13.2-1.14.html">1.13.2-1.14</a></li>
+    <li><a href="diff-1.14-1.14.1.html">1.14-1.14.1</a></li>
+    <li><a href="diff-1.14.1-1.14.2.html">1.14.1-1.14.2</a></li>
+    <li><a href="diff-1.14.2-1.14.3.html">1.14.2-1.14.3</a></li>
+    <li><a href="diff-1.14.3-1.14.4.html">1.14.3-1.14.4</a></li>
+    <li><a href="diff-1.14.4-1.15.html">1.14.4-1.15</a></li>
+    <li><a href="diff-1.15-1.15.2.html">1.15-1.15.2</a></li>
+    <li><a href="diff-1.15.2-1.16.1.html">1.15.2-1.16.1</a></li>
+    <li><a href="diff-1.16.1-1.16.2.html">1.16.1-1.16.2</a></li>
+    <li><a href="diff-1.16.2-1.16.3.html">1.16.2-1.16.3</a></li>
+    <li><a href="diff-1.16.3-1.16.4.html">1.16.3-1.16.4</a></li>
+    <li><a href="diff-1.16.4-1.16.5.html">1.16.4-1.16.5</a></li>
+    <li><a href="diff-1.16.5-1.17.html">1.16.5-1.17</a></li>
+    <li><a href="diff-1.17-1.17.1.html">1.17-1.17.1</a></li>
+    <li><a href="diff-1.17.1-1.18.html">1.17.1-1.18</a></li>
+    <li><a href="diff-1.18-1.18.1.html">1.18-1.18.1</a></li>
+    <li><a href="diff-1.18.1-1.18.2.html">1.18.1-1.18.2</a></li>
+    <li><a href="diff-1.18.2-1.19.html">1.18.2-1.19</a></li>
+    <li><a href="diff-1.19-1.19.1.html">1.19-1.19.1</a></li>
+    <li><a href="diff-1.19.1-1.19.2.html">1.19.1-1.19.2</a></li>
+    <li><a href="diff-1.19.2-1.19.3.html">1.19.2-1.19.3</a></li>
+    <li><a href="diff-1.19.3-1.19.4.html">1.19.3-1.19.4</a></li>
+    <li><a href="diff-1.19.4-1.20.html">1.19.4-1.20</a></li>
+    <li><a href="diff-1.20-1.20.1.html">1.20-1.20.1</a></li>
+    <li><a href="diff-1.20.1-1.20.2.html">1.20.1-1.20.2</a></li>
+    <li><a href="diff-1.20.2-1.20.3.html">1.20.2-1.20.3</a></li>
+    <li><a href="diff-1.20.3-1.20.4.html">1.20.3-1.20.4</a></li>
+    <li><a href="diff-1.20.4-1.20.5.html">1.20.4-1.20.5</a></li>
+    <li><a href="diff-1.20.5-1.20.6.html">1.20.5-1.20.6</a></li>
+    <li><a href="diff-1.20.6-1.21.1.html">1.20.6-1.21.1</a></li>
+    <li><a href="diff-1.21.1-1.21.3.html">1.21.1-1.21.3</a></li>
+    <li><a href="diff-1.21.3-1.21.4.html">1.21.3-1.21.4</a></li>
+  </ul>
+<h2>Raw data</h2>
+  <ul index>
+    <li><a href="raw/paper-api-1.09.4.json">paper-api-1.09.4.json</a></li>
+    <li><a href="raw/paper-api-1.10.2.json">paper-api-1.10.2.json</a></li>
+    <li><a href="raw/paper-api-1.11.1.json">paper-api-1.11.1.json</a></li>
+    <li><a href="raw/paper-api-1.11.2.json">paper-api-1.11.2.json</a></li>
+    <li><a href="raw/paper-api-1.11.json">paper-api-1.11.json</a></li>
+    <li><a href="raw/paper-api-1.12.1.json">paper-api-1.12.1.json</a></li>
+    <li><a href="raw/paper-api-1.12.2.json">paper-api-1.12.2.json</a></li>
+    <li><a href="raw/paper-api-1.12.json">paper-api-1.12.json</a></li>
+    <li><a href="raw/paper-api-1.13.1.json">paper-api-1.13.1.json</a></li>
+    <li><a href="raw/paper-api-1.13.2.json">paper-api-1.13.2.json</a></li>
+    <li><a href="raw/paper-api-1.13.json">paper-api-1.13.json</a></li>
+    <li><a href="raw/paper-api-1.14.1.json">paper-api-1.14.1.json</a></li>
+    <li><a href="raw/paper-api-1.14.2.json">paper-api-1.14.2.json</a></li>
+    <li><a href="raw/paper-api-1.14.3.json">paper-api-1.14.3.json</a></li>
+    <li><a href="raw/paper-api-1.14.4.json">paper-api-1.14.4.json</a></li>
+    <li><a href="raw/paper-api-1.14.json">paper-api-1.14.json</a></li>
+    <li><a href="raw/paper-api-1.15.2.json">paper-api-1.15.2.json</a></li>
+    <li><a href="raw/paper-api-1.15.json">paper-api-1.15.json</a></li>
+    <li><a href="raw/paper-api-1.16.1.json">paper-api-1.16.1.json</a></li>
+    <li><a href="raw/paper-api-1.16.2.json">paper-api-1.16.2.json</a></li>
+    <li><a href="raw/paper-api-1.16.3.json">paper-api-1.16.3.json</a></li>
+    <li><a href="raw/paper-api-1.16.4.json">paper-api-1.16.4.json</a></li>
+    <li><a href="raw/paper-api-1.16.5.json">paper-api-1.16.5.json</a></li>
+    <li><a href="raw/paper-api-1.17.1.json">paper-api-1.17.1.json</a></li>
+    <li><a href="raw/paper-api-1.17.json">paper-api-1.17.json</a></li>
+    <li><a href="raw/paper-api-1.18.1.json">paper-api-1.18.1.json</a></li>
+    <li><a href="raw/paper-api-1.18.2.json">paper-api-1.18.2.json</a></li>
+    <li><a href="raw/paper-api-1.18.json">paper-api-1.18.json</a></li>
+    <li><a href="raw/paper-api-1.19.1.json">paper-api-1.19.1.json</a></li>
+    <li><a href="raw/paper-api-1.19.2.json">paper-api-1.19.2.json</a></li>
+    <li><a href="raw/paper-api-1.19.3.json">paper-api-1.19.3.json</a></li>
+    <li><a href="raw/paper-api-1.19.4.json">paper-api-1.19.4.json</a></li>
+    <li><a href="raw/paper-api-1.19.json">paper-api-1.19.json</a></li>
+    <li><a href="raw/paper-api-1.20.1.json">paper-api-1.20.1.json</a></li>
+    <li><a href="raw/paper-api-1.20.2.json">paper-api-1.20.2.json</a></li>
+    <li><a href="raw/paper-api-1.20.3.json">paper-api-1.20.3.json</a></li>
+    <li><a href="raw/paper-api-1.20.4.json">paper-api-1.20.4.json</a></li>
+    <li><a href="raw/paper-api-1.20.5.json">paper-api-1.20.5.json</a></li>
+    <li><a href="raw/paper-api-1.20.6.json">paper-api-1.20.6.json</a></li>
+    <li><a href="raw/paper-api-1.20.json">paper-api-1.20.json</a></li>
+    <li><a href="raw/paper-api-1.21.1.json">paper-api-1.21.1.json</a></li>
+    <li><a href="raw/paper-api-1.21.3.json">paper-api-1.21.3.json</a></li>
+    <li><a href="raw/paper-api-1.21.4.json">paper-api-1.21.4.json</a></li>
+    <li><a href="raw/paper-api-diff-1.09.4-1.10.2.json">paper-api-diff-1.09.4-1.10.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.10.2-1.11.json">paper-api-diff-1.10.2-1.11.json</a></li>
+    <li><a href="raw/paper-api-diff-1.11-1.11.1.json">paper-api-diff-1.11-1.11.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.11.1-1.11.2.json">paper-api-diff-1.11.1-1.11.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.11.2-1.12.json">paper-api-diff-1.11.2-1.12.json</a></li>
+    <li><a href="raw/paper-api-diff-1.12-1.12.1.json">paper-api-diff-1.12-1.12.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.12.1-1.12.2.json">paper-api-diff-1.12.1-1.12.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.12.2-1.13.json">paper-api-diff-1.12.2-1.13.json</a></li>
+    <li><a href="raw/paper-api-diff-1.13-1.13.1.json">paper-api-diff-1.13-1.13.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.13.1-1.13.2.json">paper-api-diff-1.13.1-1.13.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.13.2-1.14.json">paper-api-diff-1.13.2-1.14.json</a></li>
+    <li><a href="raw/paper-api-diff-1.14-1.14.1.json">paper-api-diff-1.14-1.14.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.14.1-1.14.2.json">paper-api-diff-1.14.1-1.14.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.14.2-1.14.3.json">paper-api-diff-1.14.2-1.14.3.json</a></li>
+    <li><a href="raw/paper-api-diff-1.14.3-1.14.4.json">paper-api-diff-1.14.3-1.14.4.json</a></li>
+    <li><a href="raw/paper-api-diff-1.14.4-1.15.json">paper-api-diff-1.14.4-1.15.json</a></li>
+    <li><a href="raw/paper-api-diff-1.15-1.15.2.json">paper-api-diff-1.15-1.15.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.15.2-1.16.1.json">paper-api-diff-1.15.2-1.16.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.16.1-1.16.2.json">paper-api-diff-1.16.1-1.16.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.16.2-1.16.3.json">paper-api-diff-1.16.2-1.16.3.json</a></li>
+    <li><a href="raw/paper-api-diff-1.16.3-1.16.4.json">paper-api-diff-1.16.3-1.16.4.json</a></li>
+    <li><a href="raw/paper-api-diff-1.16.4-1.16.5.json">paper-api-diff-1.16.4-1.16.5.json</a></li>
+    <li><a href="raw/paper-api-diff-1.16.5-1.17.json">paper-api-diff-1.16.5-1.17.json</a></li>
+    <li><a href="raw/paper-api-diff-1.17-1.17.1.json">paper-api-diff-1.17-1.17.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.17.1-1.18.json">paper-api-diff-1.17.1-1.18.json</a></li>
+    <li><a href="raw/paper-api-diff-1.18-1.18.1.json">paper-api-diff-1.18-1.18.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.18.1-1.18.2.json">paper-api-diff-1.18.1-1.18.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.18.2-1.19.json">paper-api-diff-1.18.2-1.19.json</a></li>
+    <li><a href="raw/paper-api-diff-1.19-1.19.1.json">paper-api-diff-1.19-1.19.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.19.1-1.19.2.json">paper-api-diff-1.19.1-1.19.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.19.2-1.19.3.json">paper-api-diff-1.19.2-1.19.3.json</a></li>
+    <li><a href="raw/paper-api-diff-1.19.3-1.19.4.json">paper-api-diff-1.19.3-1.19.4.json</a></li>
+    <li><a href="raw/paper-api-diff-1.19.4-1.20.json">paper-api-diff-1.19.4-1.20.json</a></li>
+    <li><a href="raw/paper-api-diff-1.20-1.20.1.json">paper-api-diff-1.20-1.20.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.20.1-1.20.2.json">paper-api-diff-1.20.1-1.20.2.json</a></li>
+    <li><a href="raw/paper-api-diff-1.20.2-1.20.3.json">paper-api-diff-1.20.2-1.20.3.json</a></li>
+    <li><a href="raw/paper-api-diff-1.20.3-1.20.4.json">paper-api-diff-1.20.3-1.20.4.json</a></li>
+    <li><a href="raw/paper-api-diff-1.20.4-1.20.5.json">paper-api-diff-1.20.4-1.20.5.json</a></li>
+    <li><a href="raw/paper-api-diff-1.20.5-1.20.6.json">paper-api-diff-1.20.5-1.20.6.json</a></li>
+    <li><a href="raw/paper-api-diff-1.20.6-1.21.1.json">paper-api-diff-1.20.6-1.21.1.json</a></li>
+    <li><a href="raw/paper-api-diff-1.21.1-1.21.3.json">paper-api-diff-1.21.1-1.21.3.json</a></li>
+    <li><a href="raw/paper-api-diff-1.21.3-1.21.4.json">paper-api-diff-1.21.3-1.21.4.json</a></li>
+  </ul>
+</body>
+</html>

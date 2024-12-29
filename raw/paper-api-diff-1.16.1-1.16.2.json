@@ -1,0 +1,277 @@
+{
+  "versionA": "1.16.1",
+  "versionB": "1.16.2",
+  "packagesAdded": [
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.world"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.event.block.BellRingEvent",
+    "io.papermc.paper.world.MoonPhase",
+    "org.bukkit.block.data.type.Chain",
+    "org.bukkit.entity.ArmorStand.LockType",
+    "org.bukkit.entity.Breedable",
+    "org.bukkit.entity.EntityCategory",
+    "org.bukkit.entity.PiglinAbstract",
+    "org.bukkit.entity.PiglinBrute",
+    "org.bukkit.event.entity.ArrowBodyCountChangeEvent",
+    "org.bukkit.event.entity.EntitySpellCastEvent"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Material",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.block.Block",
+    "org.bukkit.command.defaults.PluginsCommand",
+    "org.bukkit.entity.ArmorStand",
+    "org.bukkit.entity.EnderSignal",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.Evoker",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Piglin",
+    "org.bukkit.entity.memory.MemoryKey",
+    "org.bukkit.event.entity.EntityShootBowEvent",
+    "org.bukkit.event.entity.EntityTransformEvent.TransformReason",
+    "org.bukkit.inventory.Inventory",
+    "org.bukkit.inventory.ItemFactory",
+    "org.bukkit.inventory.ItemFlag",
+    "org.bukkit.inventory.SmithingInventory"
+  ],
+  "membersAdded": {
+    "org.bukkit.inventory.ItemFlag": [
+      "HIDE_DYE"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "dropItem(boolean)",
+      "openAnvil(Location,boolean)",
+      "openCartographyTable(Location,boolean)",
+      "openGrindstone(Location,boolean)",
+      "openLoom(Location,boolean)",
+      "openSmithingTable(Location,boolean)",
+      "openStonecutter(Location,boolean)"
+    ],
+    "org.bukkit.entity.EntityCategory": [
+      "ARTHROPOD",
+      "EntityCategory()",
+      "ILLAGER",
+      "UNDEAD"
+    ],
+    "org.bukkit.inventory.ItemFactory": [
+      "hoverContentOf(Entity)",
+      "hoverContentOf(Entity,BaseComponent)",
+      "hoverContentOf(Entity,BaseComponent...)",
+      "hoverContentOf(Entity,String)",
+      "hoverContentOf(ItemStack)"
+    ],
+    "org.bukkit.entity.Evoker": [
+      "getWololoTarget()",
+      "setWololoTarget(Sheep)"
+    ],
+    "org.bukkit.entity.memory.MemoryKey": [
+      "GOLEM_DETECTED_RECENTLY"
+    ],
+    "org.bukkit.inventory.SmithingInventory": [
+      "getInputEquipment()",
+      "getInputMineral()",
+      "setInputEquipment(ItemStack)",
+      "setInputMineral(ItemStack)"
+    ],
+    "org.bukkit.Sound": [
+      "ENTITY_PARROT_IMITATE_PIGLIN_BRUTE",
+      "ENTITY_PIGLIN_BRUTE_AMBIENT",
+      "ENTITY_PIGLIN_BRUTE_ANGRY",
+      "ENTITY_PIGLIN_BRUTE_CONVERTED_TO_ZOMBIFIED",
+      "ENTITY_PIGLIN_BRUTE_DEATH",
+      "ENTITY_PIGLIN_BRUTE_HURT",
+      "ENTITY_PIGLIN_BRUTE_STEP"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getArrowCooldown()",
+      "getArrowsInBody()",
+      "getCategory()",
+      "playPickupItemAnimation(Item)",
+      "playPickupItemAnimation(Item,int)",
+      "setArrowCooldown(int)",
+      "setArrowsInBody(int)"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "getTranslationKey()",
+      "PIGLIN_BRUTE"
+    ],
+    "io.papermc.paper.world.MoonPhase": [
+      "BY_DAY",
+      "FIRST_QUARTER",
+      "FULL_MOON",
+      "LAST_QUARTER",
+      "MoonPhase(long)",
+      "NEW_MOON",
+      "WANING_CRESCENT",
+      "WANING_GIBBOUS",
+      "WAXING_CRESCENT",
+      "WAXING_GIBBOUS",
+      "day",
+      "getPhase(long)"
+    ],
+    "io.papermc.paper.event.block.BellRingEvent": [
+      "BellRingEvent(Block,Entity)"
+    ],
+    "org.bukkit.event.entity.EntitySpellCastEvent": [
+      "EntitySpellCastEvent(Spellcaster,Spell)",
+      "spell"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "STRIDER_GO_TO_LAVA"
+    ],
+    "org.bukkit.entity.ArmorStand.LockType": [
+      "ADDING",
+      "ADDING_OR_CHANGING",
+      "LockType()",
+      "REMOVING_OR_CHANGING"
+    ],
+    "org.bukkit.block.Block": [
+      "applyBoneMeal(BlockFace)"
+    ],
+    "org.bukkit.World": [
+      "getMoonPhase()",
+      "setSpawnLocation(int,int,int,float)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getTranslationKey(Block)",
+      "getTranslationKey(EntityType)",
+      "getTranslationKey(Material)"
+    ],
+    "org.bukkit.event.entity.ArrowBodyCountChangeEvent": [
+      "ArrowBodyCountChangeEvent(LivingEntity,int,int,boolean)",
+      "getNewAmount()",
+      "getOldAmount()",
+      "isReset",
+      "isReset()",
+      "newAmount",
+      "oldAmount",
+      "setNewAmount(int)"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,EquipmentSlot,float,boolean)",
+      "consumable",
+      "getConsumable()",
+      "setConsumeItem(boolean)",
+      "shouldConsumeItem()"
+    ],
+    "org.bukkit.entity.ArmorStand": [
+      "addEquipmentLock(EquipmentSlot,LockType)",
+      "hasEquipmentLock(EquipmentSlot,LockType)",
+      "removeEquipmentLock(EquipmentSlot,LockType)"
+    ],
+    "org.bukkit.Material": [
+      "PIGLIN_BRUTE_SPAWN_EGG"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "arrowItem",
+      "consumeArrow"
+    ],
+    "org.bukkit.command.defaults.PluginsCommand": [
+      "getAuthors(PluginDescriptionFile)",
+      "getPluginListSpigot()"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "arrowItem",
+      "consumeArrow"
+    ],
+    "org.bukkit.command.defaults.PluginsCommand": [
+      "getAuthors(PluginDescriptionFile)",
+      "getPluginListSpigot()"
+    ]
+  }
+}

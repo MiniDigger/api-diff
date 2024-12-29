@@ -1,0 +1,631 @@
+{
+  "versionA": "1.20",
+  "versionB": "1.20.1",
+  "packagesAdded": [
+    "io.papermc.paper.threadedregions.scheduler",
+    "org.bukkit.ban"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.block",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.math",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.event.player.PlayerFailMoveEvent",
+    "io.papermc.paper.event.player.PlayerFailMoveEvent.FailReason",
+    "io.papermc.paper.event.player.PlayerOpenSignEvent",
+    "io.papermc.paper.event.player.PlayerOpenSignEvent.Cause",
+    "io.papermc.paper.event.player.PlayerPickItemEvent",
+    "io.papermc.paper.event.server.WhitelistStateUpdateEvent",
+    "io.papermc.paper.event.server.WhitelistStateUpdateEvent.WhitelistStatus",
+    "io.papermc.paper.threadedregions.scheduler.AsyncScheduler",
+    "io.papermc.paper.threadedregions.scheduler.EntityScheduler",
+    "io.papermc.paper.threadedregions.scheduler.GlobalRegionScheduler",
+    "io.papermc.paper.threadedregions.scheduler.RegionScheduler",
+    "io.papermc.paper.threadedregions.scheduler.ScheduledTask",
+    "io.papermc.paper.threadedregions.scheduler.ScheduledTask.CancelledState",
+    "io.papermc.paper.threadedregions.scheduler.ScheduledTask.ExecutionState",
+    "org.bukkit.ban.IpBanList",
+    "org.bukkit.ban.ProfileBanList",
+    "org.bukkit.block.DecoratedPot.Side",
+    "org.bukkit.event.block.SculkBloomEvent",
+    "org.bukkit.event.player.PlayerRecipeBookClickEvent",
+    "org.bukkit.event.player.PlayerSignOpenEvent",
+    "org.bukkit.event.player.PlayerSignOpenEvent.Cause",
+    "org.bukkit.inventory.CraftingRecipe",
+    "org.bukkit.plugin.PluginDescriptionResolver"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.event.block.AnvilDamagedEvent",
+    "com.destroystokyo.paper.event.entity.EnderDragonFireballHitEvent",
+    "com.destroystokyo.paper.event.entity.PhantomPreSpawnEvent",
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent",
+    "com.destroystokyo.paper.event.player.PlayerUseUnknownEntityEvent",
+    "com.destroystokyo.paper.loottable.LootableInventory",
+    "io.papermc.paper.event.entity.EntityLoadCrossbowEvent",
+    "io.papermc.paper.event.entity.WardenAngerChangeEvent",
+    "io.papermc.paper.event.player.AsyncChatEvent",
+    "io.papermc.paper.event.player.ChatEvent",
+    "io.papermc.paper.event.player.PlayerChangeBeaconEffectEvent",
+    "io.papermc.paper.event.player.PlayerTrackEntityEvent",
+    "org.bukkit.BanEntry",
+    "org.bukkit.BanList",
+    "org.bukkit.BanList.Type",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Effect",
+    "org.bukkit.GameEvent",
+    "org.bukkit.MusicInstrument",
+    "org.bukkit.OfflinePlayer",
+    "org.bukkit.Registry",
+    "org.bukkit.Registry.SimpleRegistry",
+    "org.bukkit.Server",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.block.ChiseledBookshelf",
+    "org.bukkit.block.DecoratedPot",
+    "org.bukkit.block.SculkCatalyst",
+    "org.bukkit.block.SculkShrieker",
+    "org.bukkit.block.Sign",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.boss.DragonBattle",
+    "org.bukkit.command.CommandSender",
+    "org.bukkit.command.RemoteConsoleCommandSender",
+    "org.bukkit.entity.AreaEffectCloud",
+    "org.bukkit.entity.Boat.Status",
+    "org.bukkit.entity.Enderman",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.FallingBlock",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Piglin",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Raider",
+    "org.bukkit.entity.Trident",
+    "org.bukkit.event.block.BlockCanBuildEvent",
+    "org.bukkit.event.block.BlockDamageEvent",
+    "org.bukkit.event.block.BlockExplodeEvent",
+    "org.bukkit.event.entity.EntityBreakDoorEvent",
+    "org.bukkit.event.entity.EntityDamageByBlockEvent",
+    "org.bukkit.event.inventory.ClickType",
+    "org.bukkit.event.inventory.InventoryOpenEvent",
+    "org.bukkit.event.player.PlayerInteractEvent",
+    "org.bukkit.event.player.PlayerTeleportEvent.TeleportCause",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.MerchantRecipe",
+    "org.bukkit.inventory.ShapedRecipe",
+    "org.bukkit.inventory.ShapelessRecipe"
+  ],
+  "membersAdded": {
+    "io.papermc.paper.threadedregions.scheduler.ScheduledTask.CancelledState": [
+      "ALREADY_EXECUTED",
+      "CANCELLED_ALREADY",
+      "CANCELLED_BY_CALLER",
+      "CancelledState()",
+      "NEXT_RUNS_CANCELLED",
+      "NEXT_RUNS_CANCELLED_ALREADY"
+    ],
+    "org.bukkit.entity.Raider": [
+      "getTicksOutsideRaid()",
+      "getWave()",
+      "setRaid(Raid)",
+      "setTicksOutsideRaid(int)",
+      "setWave(int)"
+    ],
+    "org.bukkit.boss.DragonBattle": [
+      "getGatewayCount()",
+      "getHealingCrystals()",
+      "getRespawnCrystals()",
+      "initiateRespawn(Collection)",
+      "spawnNewGateway()",
+      "spawnNewGateway(Position)"
+    ],
+    "org.bukkit.event.player.PlayerRecipeBookClickEvent": [
+      "PlayerRecipeBookClickEvent(Player,Recipe,boolean)",
+      "getOriginalRecipe()",
+      "originalRecipe",
+      "setRecipe(Recipe)",
+      "setShiftClick(boolean)",
+      "shiftClick"
+    ],
+    "org.bukkit.entity.Player": [
+      "\u003cE\u003eban(String,Date,String,boolean)",
+      "\u003cE\u003eban(String,Duration,String,boolean)",
+      "\u003cE\u003eban(String,Instant,String,boolean)",
+      "banIp(String,Date,String,boolean)",
+      "banIp(String,Duration,String,boolean)",
+      "banIp(String,Instant,String,boolean)",
+      "isListed(Player)",
+      "listPlayer(Player)",
+      "sendBlockUpdate(Location,TileState)",
+      "unlistPlayer(Player)"
+    ],
+    "com.destroystokyo.paper.loottable.LootableInventory": [
+      "canPlayerLoot(UUID)"
+    ],
+    "org.bukkit.entity.Piglin": [
+      "setDancing(boolean)",
+      "setDancing(long)"
+    ],
+    "org.bukkit.entity.AreaEffectCloud": [
+      "setOwnerUniqueId(UUID)"
+    ],
+    "org.bukkit.entity.Enderman": [
+      "teleport()",
+      "teleportTowards(Entity)"
+    ],
+    "org.bukkit.World": [
+      "getChunkAt(long,boolean)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getStatisticCriteriaKey(Statistic)"
+    ],
+    "org.bukkit.event.entity.EntityBreakDoorEvent": [
+      "EntityBreakDoorEvent(LivingEntity,Block,BlockData)"
+    ],
+    "io.papermc.paper.event.player.PlayerFailMoveEvent.FailReason": [
+      "CLIPPED_INTO_BLOCK",
+      "MOVED_INTO_UNLOADED_CHUNK",
+      "MOVED_TOO_QUICKLY",
+      "MOVED_WRONGLY"
+    ],
+    "org.bukkit.block.ChiseledBookshelf": [
+      "getSlot(Vector)"
+    ],
+    "io.papermc.paper.threadedregions.scheduler.GlobalRegionScheduler": [
+      "execute(Plugin,Runnable)",
+      "run(Plugin,Consumer)",
+      "runAtFixedRate(Plugin,Consumer,long,long)",
+      "runDelayed(Plugin,Consumer,long)"
+    ],
+    "org.bukkit.inventory.CraftingRecipe": [
+      "CraftingRecipe(NamespacedKey,ItemStack)"
+    ],
+    "org.bukkit.block.Sign": [
+      "getInteractableSideFor(Entity)",
+      "getInteractableSideFor(Position)",
+      "getInteractableSideFor(double,double)"
+    ],
+    "org.bukkit.block.SculkCatalyst": [
+      "bloom(Block,int)",
+      "bloom(Position,int)"
+    ],
+    "org.bukkit.command.CommandSender": [
+      "sendRichMessage(String,TagResolver...)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "getScoreboardEntryName()",
+      "hasFixedPose()",
+      "setPose(Pose)",
+      "setPose(Pose,boolean)"
+    ],
+    "org.bukkit.block.data.BlockData": [
+      "createBlockState()"
+    ],
+    "org.bukkit.block.SculkShrieker": [
+      "tryShriek(Player)"
+    ],
+    "org.bukkit.ban.ProfileBanList": [
+      "\u003cE\u003eaddBan(PlayerProfile,String,Date,String)",
+      "\u003cE\u003eaddBan(PlayerProfile,String,Duration,String)",
+      "\u003cE\u003eaddBan(PlayerProfile,String,Instant,String)",
+      "\u003cE\u003egetBanEntry(PlayerProfile)",
+      "addBan(PlayerProfile,String,Date,String)",
+      "isBanned(PlayerProfile)",
+      "pardon(PlayerProfile)"
+    ],
+    "io.papermc.paper.threadedregions.scheduler.EntityScheduler": [
+      "execute(Plugin,Runnable,Runnable,long)",
+      "run(Plugin,Consumer,Runnable)",
+      "runAtFixedRate(Plugin,Consumer,Runnable,long,long)",
+      "runDelayed(Plugin,Consumer,Runnable,long)"
+    ],
+    "org.bukkit.BanList": [
+      "\u003cE\u003eaddBan(String,String,Date,String)",
+      "\u003cE\u003egetBanEntry(String)",
+      "\u003cE\u003egetEntries()",
+      "addBan(T,String,Date,String)",
+      "addBan(T,String,Duration,String)",
+      "addBan(T,String,Instant,String)",
+      "getBanEntry(T)",
+      "isBanned(T)",
+      "pardon(T)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "clearActivePotionEffects()",
+      "getNoActionTicks()",
+      "playHurtAnimation(float)",
+      "setNoActionTicks(int)"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "empty()"
+    ],
+    "org.bukkit.OfflinePlayer": [
+      "\u003cE\u003eban(String,Date,String)",
+      "\u003cE\u003eban(String,Duration,String)",
+      "\u003cE\u003eban(String,Instant,String)"
+    ],
+    "io.papermc.paper.threadedregions.scheduler.ScheduledTask.ExecutionState": [
+      "RUNNING",
+      "CANCELLED",
+      "CANCELLED_RUNNING",
+      "ExecutionState()",
+      "IDLE"
+    ],
+    "org.bukkit.block.DecoratedPot": [
+      "getSherd(Side)",
+      "getSherds()",
+      "setSherd(Side,Material)"
+    ],
+    "org.bukkit.event.inventory.InventoryOpenEvent": [
+      "titleOverride",
+      "titleOverride()",
+      "titleOverride(Component)"
+    ],
+    "org.bukkit.entity.FallingBlock": [
+      "getCancelDrop()",
+      "setCancelDrop(boolean)"
+    ],
+    "org.bukkit.Registry": [
+      "INSTRUMENT",
+      "stream()"
+    ],
+    "org.bukkit.event.inventory.ClickType": [
+      "isMouseClick()"
+    ],
+    "io.papermc.paper.event.server.WhitelistStateUpdateEvent": [
+      "WhitelistStateUpdateEvent(PlayerProfile,WhitelistStatus)",
+      "playerProfile"
+    ],
+    "org.bukkit.plugin.PluginDescriptionResolver": [
+      "PluginDescriptionResolver()",
+      "addImplicitResolvers()"
+    ],
+    "org.bukkit.MusicInstrument": [
+      "MusicInstrument()"
+    ],
+    "org.bukkit.event.block.SculkBloomEvent": [
+      "SculkBloomEvent(Block,int)",
+      "charge",
+      "getCharge()",
+      "setCharge(int)"
+    ],
+    "org.bukkit.Effect": [
+      "Effect(int,Type,Class...)",
+      "PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE",
+      "PARTICLES_EGG_CRACK",
+      "PARTICLES_SCULK_CHARGE",
+      "PARTICLES_SCULK_SHRIEK",
+      "SOUND_STOP_JUKEBOX_SONG"
+    ],
+    "org.bukkit.BanList.Type": [
+      "PROFILE"
+    ],
+    "org.bukkit.Server": [
+      "\u003cT\u003egetBanList(Type)",
+      "addRecipe(Recipe,boolean)",
+      "banIP(InetAddress)",
+      "createExplorerMap(World,Location,StructureType,Type)",
+      "createExplorerMap(World,Location,StructureType,Type,int,boolean)",
+      "getAsyncScheduler()",
+      "getGlobalRegionScheduler()",
+      "getRegionScheduler()",
+      "isOwnedByCurrentRegion(Block)",
+      "isOwnedByCurrentRegion(Entity)",
+      "isOwnedByCurrentRegion(Location)",
+      "isOwnedByCurrentRegion(Location,int)",
+      "isOwnedByCurrentRegion(World,Position)",
+      "isOwnedByCurrentRegion(World,Position,int)",
+      "isOwnedByCurrentRegion(World,int,int)",
+      "isOwnedByCurrentRegion(World,int,int,int)",
+      "removeRecipe(NamespacedKey,boolean)",
+      "unbanIP(InetAddress)",
+      "updateRecipes()",
+      "updateResources()"
+    ],
+    "io.papermc.paper.threadedregions.scheduler.AsyncScheduler": [
+      "runAtFixedRate(Plugin,Consumer,long,long,TimeUnit)",
+      "runDelayed(Plugin,Consumer,long,TimeUnit)",
+      "runNow(Plugin,Consumer)"
+    ],
+    "org.bukkit.inventory.MerchantRecipe": [
+      "MerchantRecipe(MerchantRecipe)"
+    ],
+    "io.papermc.paper.event.player.PlayerFailMoveEvent": [
+      "PlayerFailMoveEvent(Player,FailReason,boolean,boolean,Location,Location)",
+      "allowed",
+      "getLogWarning()",
+      "isAllowed()",
+      "logWarning",
+      "setAllowed(boolean)",
+      "setLogWarning(boolean)"
+    ],
+    "org.bukkit.GameEvent": [
+      "GameEvent()"
+    ],
+    "org.bukkit.event.player.PlayerInteractEvent": [
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot,Vector)",
+      "clickedPosistion"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerUseUnknownEntityEvent": [
+      "PlayerUseUnknownEntityEvent(Player,int,boolean,EquipmentSlot,Vector)",
+      "clickedPosition",
+      "getClickedRelativePosition()"
+    ],
+    "org.bukkit.entity.Boat.Status": [
+      "NOT_IN_WORLD"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent.TeleportCause": [
+      "EXIT_BED"
+    ],
+    "io.papermc.paper.threadedregions.scheduler.RegionScheduler": [
+      "execute(Plugin,Location,Runnable)",
+      "execute(Plugin,World,int,int,Runnable)",
+      "run(Plugin,Location,Consumer)",
+      "run(Plugin,World,int,int,Consumer)",
+      "runAtFixedRate(Plugin,Location,Consumer,long,long)",
+      "runAtFixedRate(Plugin,World,int,int,Consumer,long,long)",
+      "runDelayed(Plugin,Location,Consumer,long)",
+      "runDelayed(Plugin,World,int,int,Consumer,long)"
+    ],
+    "io.papermc.paper.threadedregions.scheduler.ScheduledTask": [
+      "getExecutionState()",
+      "isRepeatingTask()"
+    ],
+    "org.bukkit.BanEntry": [
+      "getBanTarget()"
+    ],
+    "org.bukkit.event.player.PlayerSignOpenEvent": [
+      "PlayerSignOpenEvent(Player,Sign,Side,Cause)"
+    ],
+    "io.papermc.paper.event.player.PlayerPickItemEvent": [
+      "PlayerPickItemEvent(Player,int,int)",
+      "getSourceSlot()",
+      "getTargetSlot()",
+      "setSourceSlot(int)",
+      "setTargetSlot(int)",
+      "sourceSlot",
+      "targetSlot"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "damagerBlockState",
+      "getDamagerBlockState()"
+    ],
+    "io.papermc.paper.event.server.WhitelistStateUpdateEvent.WhitelistStatus": [
+      "WhitelistStatus()"
+    ]
+  },
+  "membersRemoved": {
+    "com.destroystokyo.paper.event.player.PlayerUseUnknownEntityEvent": [
+      "PlayerUseUnknownEntityEvent(Player,int,boolean,EquipmentSlot)"
+    ],
+    "io.papermc.paper.event.entity.WardenAngerChangeEvent": [
+      "WardenAngerChangeEvent(Warden,Entity,int,int)"
+    ],
+    "org.bukkit.MusicInstrument": [
+      "INSTRUMENTS",
+      "MusicInstrument(NamespacedKey)"
+    ],
+    "io.papermc.paper.event.player.AsyncChatEvent": [
+      "AsyncChatEvent(boolean,Player,Set,ChatRenderer,Component,Component,SignedMessage)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent": [
+      "PlayerArmorChangeEvent(Player,SlotType,ItemStack,ItemStack)"
+    ],
+    "io.papermc.paper.event.entity.EntityLoadCrossbowEvent": [
+      "EntityLoadCrossbowEvent(LivingEntity,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.BanList": [
+      "addBan(String,String,Date,String)",
+      "getBanEntry(String)"
+    ],
+    "com.destroystokyo.paper.event.entity.EnderDragonFireballHitEvent": [
+      "EnderDragonFireballHitEvent(DragonFireball,Collection,AreaEffectCloud)"
+    ],
+    "com.destroystokyo.paper.event.block.AnvilDamagedEvent": [
+      "AnvilDamagedEvent(InventoryView,BlockData)"
+    ],
+    "io.papermc.paper.event.player.ChatEvent": [
+      "ChatEvent(Player,Set,ChatRenderer,Component,Component,SignedMessage)"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "BlockExplodeEvent(Block,List,float,BlockState)"
+    ],
+    "org.bukkit.Effect": [
+      "Effect(int,Type,Class)"
+    ],
+    "com.destroystokyo.paper.event.entity.PhantomPreSpawnEvent": [
+      "PhantomPreSpawnEvent(Location,Entity,SpawnReason)"
+    ],
+    "io.papermc.paper.event.player.PlayerChangeBeaconEffectEvent": [
+      "PlayerChangeBeaconEffectEvent(Player,PotionEffectType,PotionEffectType,Block)"
+    ],
+    "org.bukkit.Server": [
+      "getBanList(Type)"
+    ],
+    "org.bukkit.event.entity.EntityBreakDoorEvent": [
+      "EntityBreakDoorEvent(LivingEntity,Block)"
+    ],
+    "org.bukkit.GameEvent": [
+      "GAME_EVENTS",
+      "GameEvent(NamespacedKey)"
+    ],
+    "org.bukkit.event.player.PlayerInteractEvent": [
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot,Location)",
+      "interactionPoint"
+    ]
+  },
+  "membersChanged": {
+    "com.destroystokyo.paper.event.player.PlayerUseUnknownEntityEvent": [
+      "PlayerUseUnknownEntityEvent(Player,int,boolean,EquipmentSlot)"
+    ],
+    "io.papermc.paper.event.entity.WardenAngerChangeEvent": [
+      "WardenAngerChangeEvent(Warden,Entity,int,int)"
+    ],
+    "org.bukkit.MusicInstrument": [
+      "INSTRUMENTS",
+      "MusicInstrument(NamespacedKey)"
+    ],
+    "io.papermc.paper.event.player.AsyncChatEvent": [
+      "AsyncChatEvent(boolean,Player,Set,ChatRenderer,Component,Component,SignedMessage)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent": [
+      "PlayerArmorChangeEvent(Player,SlotType,ItemStack,ItemStack)"
+    ],
+    "io.papermc.paper.event.entity.EntityLoadCrossbowEvent": [
+      "EntityLoadCrossbowEvent(LivingEntity,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.BanList": [
+      "addBan(String,String,Date,String)",
+      "getBanEntry(String)"
+    ],
+    "com.destroystokyo.paper.event.entity.EnderDragonFireballHitEvent": [
+      "EnderDragonFireballHitEvent(DragonFireball,Collection,AreaEffectCloud)"
+    ],
+    "com.destroystokyo.paper.event.block.AnvilDamagedEvent": [
+      "AnvilDamagedEvent(InventoryView,BlockData)"
+    ],
+    "io.papermc.paper.event.player.ChatEvent": [
+      "ChatEvent(Player,Set,ChatRenderer,Component,Component,SignedMessage)"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "BlockExplodeEvent(Block,List,float,BlockState)"
+    ],
+    "org.bukkit.Effect": [
+      "Effect(int,Type,Class)"
+    ],
+    "com.destroystokyo.paper.event.entity.PhantomPreSpawnEvent": [
+      "PhantomPreSpawnEvent(Location,Entity,SpawnReason)"
+    ],
+    "io.papermc.paper.event.player.PlayerChangeBeaconEffectEvent": [
+      "PlayerChangeBeaconEffectEvent(Player,PotionEffectType,PotionEffectType,Block)"
+    ],
+    "org.bukkit.Server": [
+      "getBanList(Type)"
+    ],
+    "org.bukkit.event.entity.EntityBreakDoorEvent": [
+      "EntityBreakDoorEvent(LivingEntity,Block)"
+    ],
+    "org.bukkit.GameEvent": [
+      "GAME_EVENTS",
+      "GameEvent(NamespacedKey)"
+    ],
+    "org.bukkit.event.player.PlayerInteractEvent": [
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot,Location)",
+      "interactionPoint"
+    ]
+  }
+}

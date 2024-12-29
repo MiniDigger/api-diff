@@ -1,0 +1,401 @@
+{
+  "versionA": "1.18.1",
+  "versionB": "1.18.2",
+  "packagesAdded": [
+    "io.papermc.paper.registry",
+    "io.papermc.paper.world.structure"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.entity.CollarColorable",
+    "io.papermc.paper.event.entity.EntityDyeEvent",
+    "io.papermc.paper.event.entity.TameableDeathMessageEvent",
+    "io.papermc.paper.event.player.PlayerStopUsingItemEvent",
+    "io.papermc.paper.event.world.StructuresLocateEvent",
+    "io.papermc.paper.event.world.StructuresLocateEvent.Result",
+    "io.papermc.paper.registry.Reference",
+    "io.papermc.paper.registry.ReferenceImpl",
+    "io.papermc.paper.world.structure.ConfiguredStructure",
+    "org.bukkit.advancement.AdvancementDisplay",
+    "org.bukkit.advancement.AdvancementDisplayType",
+    "org.bukkit.entity.Wither.Head",
+    "org.bukkit.inventory.CreativeCategory"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.MaterialTags",
+    "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "org.bukkit.Bukkit",
+    "org.bukkit.GameMode",
+    "org.bukkit.Material",
+    "org.bukkit.RegionAccessor",
+    "org.bukkit.Registry",
+    "org.bukkit.Server",
+    "org.bukkit.StructureType",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.WorldBorder",
+    "org.bukkit.WorldCreator",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.TileState",
+    "org.bukkit.command.Command",
+    "org.bukkit.entity.AbstractArrow",
+    "org.bukkit.entity.Bee",
+    "org.bukkit.entity.EnderDragon",
+    "org.bukkit.entity.Enderman",
+    "org.bukkit.entity.FallingBlock",
+    "org.bukkit.entity.Firework",
+    "org.bukkit.entity.FishHook",
+    "org.bukkit.entity.Ghast",
+    "org.bukkit.entity.Item",
+    "org.bukkit.entity.Piglin",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.PolarBear",
+    "org.bukkit.entity.Raider",
+    "org.bukkit.entity.ThrownPotion",
+    "org.bukkit.entity.Trident",
+    "org.bukkit.entity.Turtle",
+    "org.bukkit.entity.Vex",
+    "org.bukkit.entity.Villager",
+    "org.bukkit.entity.Wither",
+    "org.bukkit.entity.Wolf",
+    "org.bukkit.entity.minecart.PoweredMinecart",
+    "org.bukkit.event.entity.SheepDyeWoolEvent",
+    "org.bukkit.event.player.PlayerItemDamageEvent",
+    "org.bukkit.inventory.ItemFactory",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.plugin.Plugin",
+    "org.bukkit.plugin.SimplePluginManager",
+    "org.bukkit.scoreboard.Team"
+  ],
+  "membersAdded": {
+    "org.bukkit.plugin.Plugin": [
+      "getComponentLogger()"
+    ],
+    "io.papermc.paper.event.entity.EntityDyeEvent": [
+      "EntityDyeEvent(Entity,DyeColor,Player)",
+      "dyeColor"
+    ],
+    "org.bukkit.entity.Firework": [
+      "getTicksFlown()",
+      "getTicksToDetonate()",
+      "setTicksFlown(int)",
+      "setTicksToDetonate(int)"
+    ],
+    "org.bukkit.entity.Bee": [
+      "getRollingOverride()",
+      "setRollingOverride(TriState)"
+    ],
+    "org.bukkit.entity.Raider": [
+      "isCelebrating()",
+      "setCelebrating(boolean)"
+    ],
+    "org.bukkit.Tag": [
+      "FALL_DAMAGE_RESETTING"
+    ],
+    "org.bukkit.entity.ThrownPotion": [
+      "getPotionMeta()",
+      "setPotionMeta(PotionMeta)"
+    ],
+    "org.bukkit.inventory.CreativeCategory": [
+      "translationKey",
+      "BUILDING_BLOCKS",
+      "COMBAT",
+      "CreativeCategory(String)",
+      "DECORATIONS",
+      "TOOLS",
+      "TRANSPORTATION"
+    ],
+    "org.bukkit.entity.Wither": [
+      "getTarget(Head)",
+      "setTarget(Head,LivingEntity)"
+    ],
+    "org.bukkit.entity.Item": [
+      "isUnlimitedLifetime()",
+      "setUnlimitedLifetime(boolean)"
+    ],
+    "org.bukkit.entity.Turtle": [
+      "isLayingEgg()"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "getPluginLoader(File)"
+    ],
+    "org.bukkit.entity.Player": [
+      "kick()",
+      "setWorldBorder(WorldBorder)"
+    ],
+    "org.bukkit.WorldCreator": [
+      "getWorldKey(String)",
+      "keepSpawnLoaded",
+      "keepSpawnLoaded()",
+      "keepSpawnLoaded(TriState)"
+    ],
+    "org.bukkit.entity.Trident": [
+      "getLoyaltyLevel()",
+      "hasGlint()",
+      "setGlint(boolean)",
+      "setLoyaltyLevel(int)"
+    ],
+    "org.bukkit.entity.Piglin": [
+      "isChargingCrossbow()",
+      "setChargingCrossbow(boolean)"
+    ],
+    "org.bukkit.entity.minecart.PoweredMinecart": [
+      "getPushX()",
+      "getPushZ()",
+      "setPushX(double)",
+      "setPushZ(double)"
+    ],
+    "io.papermc.paper.event.player.PlayerStopUsingItemEvent": [
+      "PlayerStopUsingItemEvent(Player,ItemStack,int)",
+      "getTicksHeldFor()",
+      "ticksHeldFor"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "CLIMB_ON_TOP_OF_POWDER_SNOW",
+      "WOLF_PANIC"
+    ],
+    "org.bukkit.entity.Enderman": [
+      "hasBeenStaredAt()",
+      "setHasBeenStaredAt(boolean)"
+    ],
+    "org.bukkit.block.TileState": [
+      "isSnapshot()"
+    ],
+    "org.bukkit.block.Block": [
+      "getBlockSoundGroup()",
+      "getComputedBiome()"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "\u003cT\u003eregistryFor(Class)",
+      "getCreativeCategory(Material)",
+      "getMainLevelName()"
+    ],
+    "org.bukkit.Server": [
+      "createProfileExact(UUID,String)",
+      "createWorldBorder()"
+    ],
+    "org.bukkit.Material": [
+      "getCreativeCategory()"
+    ],
+    "org.bukkit.entity.AbstractArrow": [
+      "hasNoPhysics()",
+      "setNoPhysics(boolean)"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent": [
+      "StructuresLocateEvent(World,Location,List,int,boolean)",
+      "configuredStructures",
+      "getConfiguredStructures()",
+      "setConfiguredStructures(List)"
+    ],
+    "org.bukkit.event.player.PlayerItemDamageEvent": [
+      "PlayerItemDamageEvent(Player,ItemStack,int,int)",
+      "getOriginalDamage()",
+      "originalDamage"
+    ],
+    "org.bukkit.inventory.ItemFactory": [
+      "createItemStack(String)",
+      "enchantWithLevels(ItemStack,int,boolean,Random)"
+    ],
+    "org.bukkit.entity.Vex": [
+      "getBound()",
+      "getLimitedLifetimeTicks()",
+      "hasLimitedLife()",
+      "hasLimitedLifetime()",
+      "setBound(Location)",
+      "setLimitedLifetime(boolean)",
+      "setLimitedLifetimeTicks(int)"
+    ],
+    "org.bukkit.entity.Ghast": [
+      "getExplosionPower()",
+      "setExplosionPower(int)"
+    ],
+    "org.bukkit.entity.PolarBear": [
+      "isStanding()",
+      "setStanding(boolean)"
+    ],
+    "org.bukkit.advancement.AdvancementDisplay": [
+      "getIcon()",
+      "shouldAnnounceChat()",
+      "shouldShowToast()"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "enchantWithLevels(int,boolean,Random)"
+    ],
+    "org.bukkit.entity.Villager": [
+      "zombify()"
+    ],
+    "io.papermc.paper.registry.ReferenceImpl": [
+      "valueOrNull()",
+      "ReferenceImpl(Registry,NamespacedKey)",
+      "registry",
+      "registry()"
+    ],
+    "org.bukkit.RegionAccessor": [
+      "getComputedBiome(int,int,int)"
+    ],
+    "org.bukkit.advancement.AdvancementDisplayType": [
+      "AdvancementDisplayType(ChatColor)"
+    ],
+    "io.papermc.paper.registry.Reference": [
+      "\u003cT\u003ecreate(Registry,NamespacedKey)"
+    ],
+    "org.bukkit.entity.Wither.Head": [
+      "CENTER",
+      "Head()"
+    ],
+    "io.papermc.paper.world.structure.ConfiguredStructure": [
+      "ConfiguredStructure(NamespacedKey,StructureType)",
+      "FORTRESS",
+      "MINESHAFT_MESA",
+      "OCEAN_RUIN_COLD",
+      "OCEAN_RUIN_WARM",
+      "RUINED_PORTAL_DESERT",
+      "RUINED_PORTAL_JUNGLE",
+      "RUINED_PORTAL_MOUNTAIN",
+      "RUINED_PORTAL_NETHER",
+      "RUINED_PORTAL_OCEAN",
+      "RUINED_PORTAL_STANDARD",
+      "RUINED_PORTAL_SWAMP",
+      "SHIPWRECK_BEACHED",
+      "VILLAGE_DESERT",
+      "VILLAGE_PLAINS",
+      "VILLAGE_SAVANNA",
+      "VILLAGE_SNOWY",
+      "VILLAGE_TAIGA",
+      "create(String)",
+      "getStructureType()",
+      "structureType"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent.Result": [
+      "Result(Location,ConfiguredStructure)",
+      "configuredStructure",
+      "configuredStructure()",
+      "position()"
+    ],
+    "org.bukkit.entity.EnderDragon": [
+      "getPodium()",
+      "setPodium(Location)"
+    ],
+    "org.bukkit.command.Command": [
+      "broadcastCommandMessage(CommandSender,Component)",
+      "broadcastCommandMessage(CommandSender,Component,boolean)"
+    ],
+    "org.bukkit.entity.FallingBlock": [
+      "doesAutoExpire()",
+      "shouldAutoExpire(boolean)"
+    ],
+    "io.papermc.paper.event.entity.TameableDeathMessageEvent": [
+      "TameableDeathMessageEvent(Tameable,Component)"
+    ],
+    "org.bukkit.Registry": [
+      "CONFIGURED_STRUCTURE"
+    ]
+  },
+  "membersRemoved": {},
+  "membersChanged": {}
+}

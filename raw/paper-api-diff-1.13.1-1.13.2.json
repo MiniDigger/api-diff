@@ -1,0 +1,674 @@
+{
+  "versionA": "1.13.1",
+  "versionB": "1.13.2",
+  "packagesAdded": [
+    "com.destroystokyo.paper.util",
+    "org.bukkit.inventory.meta.tags"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.HeightmapType",
+    "com.destroystokyo.paper.Namespaced",
+    "com.destroystokyo.paper.NamespacedTag",
+    "com.destroystokyo.paper.event.block.BlockDestroyEvent",
+    "com.destroystokyo.paper.event.player.PlayerConnectionCloseEvent",
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent",
+    "com.destroystokyo.paper.event.server.GS4QueryEvent",
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryResponse",
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryResponse.Builder",
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryResponse.PluginInformation",
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryType",
+    "com.destroystokyo.paper.event.server.ServerTickEndEvent",
+    "com.destroystokyo.paper.event.server.ServerTickStartEvent",
+    "com.destroystokyo.paper.event.server.WhitelistToggleEvent",
+    "com.destroystokyo.paper.util.SneakyThrow",
+    "org.bukkit.FluidCollisionMode",
+    "org.bukkit.UndefinedNullability",
+    "org.bukkit.boss.KeyedBossBar",
+    "org.bukkit.entity.Boss",
+    "org.bukkit.event.block.BlockDropItemEvent",
+    "org.bukkit.event.block.FluidLevelChangeEvent",
+    "org.bukkit.event.entity.EntityPlaceEvent",
+    "org.bukkit.event.entity.EntityTransformEvent",
+    "org.bukkit.event.entity.EntityTransformEvent.TransformReason",
+    "org.bukkit.event.player.PlayerBedEnterEvent.BedEnterResult",
+    "org.bukkit.inventory.RecipeChoice.ExactChoice",
+    "org.bukkit.inventory.meta.tags.CustomItemTagContainer",
+    "org.bukkit.inventory.meta.tags.ItemTagAdapterContext",
+    "org.bukkit.inventory.meta.tags.ItemTagType",
+    "org.bukkit.inventory.meta.tags.ItemTagType.PrimitiveTagType",
+    "org.bukkit.scoreboard.RenderType",
+    "org.bukkit.util.BoundingBox",
+    "org.bukkit.util.RayTraceResult"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.MaterialSetTag",
+    "com.destroystokyo.paper.MaterialTags",
+    "com.destroystokyo.paper.event.entity.EntityZapEvent",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Location",
+    "org.bukkit.OfflinePlayer",
+    "org.bukkit.Server",
+    "org.bukkit.Tag",
+    "org.bukkit.World",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.BlockFace",
+    "org.bukkit.block.CreatureSpawner",
+    "org.bukkit.block.EndGateway",
+    "org.bukkit.block.Furnace",
+    "org.bukkit.block.Jukebox",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.command.SimpleCommandMap",
+    "org.bukkit.configuration.ConfigurationSection",
+    "org.bukkit.configuration.MemorySection",
+    "org.bukkit.entity.Animals",
+    "org.bukkit.entity.Arrow",
+    "org.bukkit.entity.Endermite",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.Husk",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.PigZombie",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Vex",
+    "org.bukkit.entity.Zombie",
+    "org.bukkit.entity.ZombieVillager",
+    "org.bukkit.event.block.BlockCanBuildEvent",
+    "org.bukkit.event.block.BlockPhysicsEvent",
+    "org.bukkit.event.entity.AreaEffectCloudApplyEvent",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.PlayerDeathEvent",
+    "org.bukkit.event.entity.ProjectileHitEvent",
+    "org.bukkit.event.entity.ProjectileLaunchEvent",
+    "org.bukkit.event.inventory.InventoryClickEvent",
+    "org.bukkit.event.player.PlayerBedEnterEvent",
+    "org.bukkit.event.player.PlayerFishEvent.State",
+    "org.bukkit.event.vehicle.VehicleExitEvent",
+    "org.bukkit.inventory.FurnaceRecipe",
+    "org.bukkit.inventory.InventoryView",
+    "org.bukkit.inventory.RecipeChoice",
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice",
+    "org.bukkit.inventory.ShapedRecipe",
+    "org.bukkit.inventory.ShapelessRecipe",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.MapMeta",
+    "org.bukkit.scheduler.BukkitScheduler",
+    "org.bukkit.scoreboard.Objective",
+    "org.bukkit.scoreboard.Scoreboard",
+    "org.bukkit.util.Vector",
+    "org.spigotmc.event.entity.EntityDismountEvent"
+  ],
+  "membersAdded": {
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice": [
+      "MaterialChoice(Material)",
+      "MaterialChoice(Material...)"
+    ],
+    "org.bukkit.event.entity.EntityTransformEvent.TransformReason": [
+      "SPLIT",
+      "TransformReason()"
+    ],
+    "org.bukkit.event.player.PlayerFishEvent.State": [
+      "REEL_IN"
+    ],
+    "com.destroystokyo.paper.event.server.WhitelistToggleEvent": [
+      "WhitelistToggleEvent(boolean)",
+      "enabled"
+    ],
+    "org.bukkit.entity.Zombie": [
+      "isArmsRaised()",
+      "isDrowning()",
+      "setArmsRaised(boolean)",
+      "setShouldBurnInDay(boolean)",
+      "shouldBurnInDay()",
+      "startDrowning(int)",
+      "stopDrowning()"
+    ],
+    "org.bukkit.entity.Animals": [
+      "getLoveModeTicks()",
+      "isLoveMode()",
+      "setLoveModeTicks(int)"
+    ],
+    "org.bukkit.event.player.PlayerBedEnterEvent": [
+      "PlayerBedEnterEvent(Player,Block,BedEnterResult)",
+      "bedEnterResult",
+      "getBedEnterResult()",
+      "setUseBed(Result)",
+      "useBed",
+      "useBed()"
+    ],
+    "org.bukkit.configuration.MemorySection": [
+      "\u003cT\u003egetObject(String,Class)",
+      "\u003cT\u003egetObject(String,Class,T)"
+    ],
+    "org.bukkit.block.Jukebox": [
+      "getRecord()",
+      "setRecord(ItemStack)"
+    ],
+    "org.bukkit.inventory.ShapelessRecipe": [
+      "addIngredient(int,ItemStack)",
+      "removeIngredient(ItemStack)",
+      "removeIngredient(int,ItemStack)"
+    ],
+    "org.bukkit.entity.Player": [
+      "getClientViewDistance()"
+    ],
+    "org.bukkit.inventory.RecipeChoice.ExactChoice": [
+      "ExactChoice(ItemStack)",
+      "ExactChoice(ItemStack...)",
+      "ExactChoice(List)"
+    ],
+    "org.bukkit.scoreboard.Objective": [
+      "getRenderType()",
+      "setRenderType(RenderType)"
+    ],
+    "org.bukkit.scoreboard.Scoreboard": [
+      "registerNewObjective(String,String,String,RenderType)"
+    ],
+    "org.bukkit.block.Block": [
+      "getBlockKey(int,int,int)",
+      "getBlockKeyX(long)",
+      "getBlockKeyY(long)",
+      "getBlockKeyZ(long)",
+      "rayTrace(Location,Vector,double,FluidCollisionMode)"
+    ],
+    "org.bukkit.Location": [
+      "normalizePitch(float)",
+      "normalizeYaw(float)",
+      "toHighestLocation()",
+      "toHighestLocation(HeightmapType)"
+    ],
+    "org.bukkit.block.EndGateway": [
+      "setAge(long)"
+    ],
+    "org.bukkit.World": [
+      "getForceLoadedChunks()",
+      "getHighestBlockAt(Location,HeightmapType)",
+      "getHighestBlockAt(int,int,HeightmapType)",
+      "getHighestBlockYAt(Location,HeightmapType)",
+      "getHighestBlockYAt(int,int,HeightmapType)",
+      "getNearbyEntities(BoundingBox)",
+      "getNearbyEntities(BoundingBox,Predicate)",
+      "getNearbyEntities(Location,double,double,double,Predicate)",
+      "rayTrace(Location,Vector,double,FluidCollisionMode,boolean,double,Predicate)",
+      "rayTraceBlocks(Location,Vector,double)",
+      "rayTraceBlocks(Location,Vector,double,FluidCollisionMode)",
+      "rayTraceBlocks(Location,Vector,double,FluidCollisionMode,boolean)",
+      "rayTraceEntities(Location,Vector,double)",
+      "rayTraceEntities(Location,Vector,double,Predicate)",
+      "rayTraceEntities(Location,Vector,double,double)",
+      "rayTraceEntities(Location,Vector,double,double,Predicate)",
+      "setChunkForceLoaded(int,int,boolean)"
+    ],
+    "org.bukkit.event.block.BlockPhysicsEvent": [
+      "BlockPhysicsEvent(Block,BlockData,Block)"
+    ],
+    "org.bukkit.entity.Vex": [
+      "isCharging()",
+      "setCharging(boolean)"
+    ],
+    "org.bukkit.block.data.BlockData": [
+      "getAsString(boolean)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "getBoundingBox()",
+      "getEntitySpawnReason()",
+      "setRotation(float,float)"
+    ],
+    "com.destroystokyo.paper.event.server.ServerTickEndEvent": [
+      "ServerTickEndEvent(int,double,long)",
+      "getTickDuration()",
+      "getTimeRemaining()",
+      "tickDuration",
+      "timeEnd"
+    ],
+    "com.destroystokyo.paper.MaterialTags": [
+      "keyFor(String)"
+    ],
+    "org.bukkit.inventory.meta.MapMeta": [
+      "hasMapView()",
+      "setMapView(MapView)"
+    ],
+    "org.bukkit.entity.Boss": [
+      "getBossBar()"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getTargetBlockExact(int)",
+      "getTargetBlockExact(int,FluidCollisionMode)",
+      "rayTraceBlocks(double)",
+      "rayTraceBlocks(double,FluidCollisionMode)"
+    ],
+    "org.bukkit.entity.ZombieVillager": [
+      "getConversionTime()",
+      "isConverting()",
+      "setConversionTime(int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent": [
+      "PlayerPostRespawnEvent(Player,Location,boolean)",
+      "getRespawnedLocation()",
+      "respawnedLocation"
+    ],
+    "org.bukkit.OfflinePlayer": [
+      "getLastLogin()",
+      "getLastSeen()"
+    ],
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryType": [
+      "BASIC",
+      "QueryType()"
+    ],
+    "com.destroystokyo.paper.event.server.ServerTickStartEvent": [
+      "getTickNumber()",
+      "tickNumber",
+      "ServerTickStartEvent(int)"
+    ],
+    "org.bukkit.inventory.InventoryView": [
+      "getInventory(int)",
+      "getSlotType(int)"
+    ],
+    "org.bukkit.event.block.FluidLevelChangeEvent": [
+      "FluidLevelChangeEvent(Block,BlockData)",
+      "getNewData()",
+      "newData",
+      "setNewData(BlockData)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "getItemsToKeep()",
+      "itemsToKeep"
+    ],
+    "org.bukkit.inventory.meta.tags.ItemTagType.PrimitiveTagType": [
+      "fromPrimitive(T,ItemTagAdapterContext)",
+      "getComplexType()",
+      "getPrimitiveType()",
+      "PrimitiveTagType(Class)",
+      "primitiveType",
+      "toPrimitive(T,ItemTagAdapterContext)"
+    ],
+    "org.bukkit.inventory.meta.tags.CustomItemTagContainer": [
+      "\u003cT,Z\u003egetCustomTag(NamespacedKey,ItemTagType)",
+      "\u003cT,Z\u003ehasCustomTag(NamespacedKey,ItemTagType)",
+      "\u003cT,Z\u003esetCustomTag(NamespacedKey,ItemTagType,Z)",
+      "getAdapterContext()",
+      "removeCustomTag(NamespacedKey)"
+    ],
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryResponse.Builder": [
+      "clearPlayers()",
+      "currentPlayers(int)",
+      "gameVersion(String)",
+      "hostname(String)",
+      "map(String)",
+      "maxPlayers(int)",
+      "motd(String)",
+      "players(Collection)",
+      "players(String...)",
+      "plugins(Collection)",
+      "plugins(PluginInformation...)",
+      "port(int)",
+      "serverVersion(String)"
+    ],
+    "org.bukkit.event.block.BlockDropItemEvent": [
+      "BlockDropItemEvent(Block,BlockState,Player,List)",
+      "blockState",
+      "getItems()",
+      "items"
+    ],
+    "org.bukkit.event.vehicle.VehicleExitEvent": [
+      "VehicleExitEvent(Vehicle,LivingEntity,boolean)"
+    ],
+    "org.bukkit.FluidCollisionMode": [
+      "FluidCollisionMode()"
+    ],
+    "org.bukkit.scoreboard.RenderType": [
+      "INTEGER",
+      "HEARTS",
+      "RenderType()"
+    ],
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryResponse": [
+      "QueryResponse(String,String,String,int,int,String,int,Collection,String,Collection)",
+      "currentPlayers",
+      "gameVersion",
+      "port",
+      "serverVersion",
+      "getCurrentPlayers()",
+      "getGameVersion()",
+      "getServerVersion()",
+      "toBuilder()"
+    ],
+    "org.bukkit.event.player.PlayerBedEnterEvent.BedEnterResult": [
+      "BedEnterResult()",
+      "NOT_POSSIBLE_HERE",
+      "NOT_POSSIBLE_NOW",
+      "NOT_SAFE",
+      "OK",
+      "OTHER_PROBLEM",
+      "TOO_FAR_AWAY"
+    ],
+    "org.bukkit.Tag": [
+      "CORAL_PLANTS",
+      "UNDERWATER_BONEMEALS"
+    ],
+    "org.bukkit.util.BoundingBox": [
+      "BoundingBox()",
+      "BoundingBox(double,double,double,double,double,double)",
+      "contains(BoundingBox)",
+      "contains(Vector)",
+      "contains(Vector,Vector)",
+      "contains(double,double,double)",
+      "contains(double,double,double,double,double,double)",
+      "copy(BoundingBox)",
+      "expand(BlockFace,double)",
+      "expand(Vector)",
+      "expand(Vector,double)",
+      "expand(double)",
+      "expand(double,double,double)",
+      "expand(double,double,double,double)",
+      "expand(double,double,double,double,double,double)",
+      "expandDirectional(Vector)",
+      "expandDirectional(double,double,double)",
+      "getCenterY()",
+      "getMax()",
+      "getMaxX()",
+      "getMaxY()",
+      "getMaxZ()",
+      "getMin()",
+      "getMinX()",
+      "getMinY()",
+      "getMinZ()",
+      "getVolume()",
+      "getWidthX()",
+      "getWidthZ()",
+      "intersection(BoundingBox)",
+      "maxX",
+      "maxY",
+      "maxZ",
+      "minX",
+      "minY",
+      "minZ",
+      "of(Block)",
+      "of(Block,Block)",
+      "of(Location,Location)",
+      "of(Location,double,double,double)",
+      "of(Vector,Vector)",
+      "of(Vector,double,double,double)",
+      "overlaps(BoundingBox)",
+      "overlaps(Vector,Vector)",
+      "overlaps(double,double,double,double,double,double)",
+      "rayTrace(Vector,Vector,double)",
+      "resize(double,double,double,double,double,double)",
+      "shift(Location)",
+      "shift(Vector)",
+      "shift(double,double,double)",
+      "union(BoundingBox)",
+      "union(Location)",
+      "union(Vector)",
+      "union(double,double,double)"
+    ],
+    "org.bukkit.inventory.meta.tags.ItemTagType": [
+      "BYTE",
+      "BYTE_ARRAY",
+      "FLOAT",
+      "INTEGER_ARRAY",
+      "LONG",
+      "LONG_ARRAY",
+      "SHORT",
+      "TAG_CONTAINER",
+      "toPrimitive(Z,ItemTagAdapterContext)"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getCustomTagContainer()",
+      "getDestroyableKeys()",
+      "getPlaceableKeys()",
+      "hasDestroyableKeys()",
+      "hasPlaceableKeys()",
+      "setDestroyableKeys(Collection)",
+      "setPlaceableKeys(Collection)"
+    ],
+    "com.destroystokyo.paper.util.SneakyThrow": [
+      "\u003cT\u003ethrowSneaky(Throwable)",
+      "SneakyThrow()",
+      "sneaky(Throwable)"
+    ],
+    "org.bukkit.event.entity.EntityTransformEvent": [
+      "EntityTransformEvent(Entity,List,TransformReason)",
+      "converted",
+      "convertedList",
+      "getTransformReason()",
+      "getTransformedEntities()",
+      "getTransformedEntity()",
+      "transformReason"
+    ],
+    "org.spigotmc.event.entity.EntityDismountEvent": [
+      "isCancellable",
+      "isCancellable()",
+      "EntityDismountEvent(Entity,Entity,boolean)"
+    ],
+    "org.bukkit.block.Furnace": [
+      "getCookTimeTotal()",
+      "setCookTimeTotal(int)"
+    ],
+    "org.bukkit.event.entity.EntityPlaceEvent": [
+      "EntityPlaceEvent(Entity,Player,Block,BlockFace)"
+    ],
+    "org.bukkit.entity.Endermite": [
+      "isPlayerSpawned()",
+      "setPlayerSpawned(boolean)"
+    ],
+    "org.bukkit.Server": [
+      "\u003cT\u003egetTags(String,Class)",
+      "createBossBar(NamespacedKey,String,BarColor,BarStyle,BarFlag...)",
+      "getBossBar(NamespacedKey)",
+      "getBossBars()",
+      "getCurrentTick()",
+      "getMap(int)",
+      "removeBossBar(NamespacedKey)",
+      "selectEntities(CommandSender,String)"
+    ],
+    "org.bukkit.inventory.ShapedRecipe": [
+      "setIngredient(char,ItemStack)"
+    ],
+    "com.destroystokyo.paper.NamespacedTag": [
+      "NamespacedTag(Plugin,String)",
+      "NamespacedTag(String,String)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerConnectionCloseEvent": [
+      "PlayerConnectionCloseEvent(UUID,String,InetAddress,boolean)",
+      "getIpAddress()",
+      "getPlayerName()",
+      "getPlayerUniqueId()",
+      "playerName",
+      "playerUniqueId"
+    ],
+    "org.bukkit.inventory.FurnaceRecipe": [
+      "FurnaceRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)",
+      "getInputChoice()",
+      "setInputChoice(RecipeChoice)"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "getBedLocation()",
+      "sleep(Location,boolean)",
+      "wakeup(boolean)"
+    ],
+    "org.bukkit.scheduler.BukkitScheduler": [
+      "runTask(Plugin,Consumer)",
+      "runTaskAsynchronously(Plugin,Consumer)",
+      "runTaskLater(Plugin,Consumer,long)",
+      "runTaskLaterAsynchronously(Plugin,Consumer,long)",
+      "runTaskTimer(Plugin,Consumer,long,long)",
+      "runTaskTimerAsynchronously(Plugin,Consumer,long,long)"
+    ],
+    "org.bukkit.block.CreatureSpawner": [
+      "resetTimer()"
+    ],
+    "com.destroystokyo.paper.HeightmapType": [
+      "ANY",
+      "HeightmapType()",
+      "LIGHT_BLOCKING",
+      "SOLID_OR_LIQUID",
+      "SOLID_OR_LIQUID_NO_LEAVES"
+    ],
+    "com.destroystokyo.paper.MaterialSetTag": [
+      "MaterialSetTag(NamespacedKey,Collection)",
+      "MaterialSetTag(NamespacedKey,Material...)",
+      "MaterialSetTag(NamespacedKey,Predicate)"
+    ],
+    "com.destroystokyo.paper.event.server.GS4QueryEvent.QueryResponse.PluginInformation": [
+      "PluginInformation(String,String)",
+      "of(String,String)"
+    ],
+    "org.bukkit.inventory.meta.tags.ItemTagAdapterContext": [
+      "newTagContainer()"
+    ],
+    "org.bukkit.util.Vector": [
+      "isNormalized()",
+      "rotateAroundAxis(Vector,double)",
+      "rotateAroundNonUnitAxis(Vector,double)",
+      "rotateAroundX(double)",
+      "rotateAroundY(double)",
+      "rotateAroundZ(double)"
+    ],
+    "org.bukkit.util.RayTraceResult": [
+      "RayTraceResult(Vector)",
+      "RayTraceResult(Vector,Block,BlockFace)",
+      "RayTraceResult(Vector,Block,BlockFace,Entity)",
+      "RayTraceResult(Vector,BlockFace)",
+      "RayTraceResult(Vector,Entity)",
+      "RayTraceResult(Vector,Entity,BlockFace)",
+      "getHitPosition()",
+      "hitPosition"
+    ],
+    "com.destroystokyo.paper.event.server.GS4QueryEvent": [
+      "GS4QueryEvent(QueryType,InetAddress,QueryResponse)",
+      "getQuerierAddress()",
+      "getQueryType()",
+      "getResponse()",
+      "querierAddress",
+      "queryType",
+      "response",
+      "setResponse(QueryResponse)"
+    ],
+    "com.destroystokyo.paper.event.block.BlockDestroyEvent": [
+      "BlockDestroyEvent(Block,BlockData,boolean)",
+      "playEffect",
+      "playEffect()",
+      "setPlayEffect(boolean)",
+      "willDrop",
+      "willDrop()"
+    ],
+    "org.bukkit.event.block.BlockCanBuildEvent": [
+      "BlockCanBuildEvent(Block,Player,BlockData,boolean)"
+    ],
+    "org.bukkit.event.entity.ProjectileHitEvent": [
+      "hitFace"
+    ]
+  },
+  "membersRemoved": {
+    "com.destroystokyo.paper.event.entity.EntityZapEvent": [
+      "replacementEntity"
+    ],
+    "org.bukkit.Server": [
+      "getMap(short)"
+    ],
+    "org.bukkit.event.inventory.InventoryClickEvent": [
+      "clickedInventory"
+    ],
+    "org.bukkit.command.SimpleCommandMap": [
+      "PATTERN_ON_SPACE"
+    ],
+    "org.bukkit.event.block.BlockPhysicsEvent": [
+      "sourceX",
+      "sourceY",
+      "sourceZ"
+    ]
+  },
+  "membersChanged": {
+    "com.destroystokyo.paper.event.entity.EntityZapEvent": [
+      "replacementEntity"
+    ],
+    "org.bukkit.Server": [
+      "getMap(short)"
+    ],
+    "org.bukkit.event.inventory.InventoryClickEvent": [
+      "clickedInventory"
+    ],
+    "org.bukkit.command.SimpleCommandMap": [
+      "PATTERN_ON_SPACE"
+    ],
+    "org.bukkit.event.block.BlockPhysicsEvent": [
+      "sourceX",
+      "sourceY",
+      "sourceZ"
+    ]
+  }
+}

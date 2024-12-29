@@ -1,0 +1,1727 @@
+{
+  "versionA": "1.20.3",
+  "versionB": "1.20.4",
+  "packagesAdded": [
+    "io.papermc.paper.ban",
+    "io.papermc.paper.block.fluid",
+    "io.papermc.paper.block.fluid.type",
+    "io.papermc.paper.inventory.tooltip",
+    "io.papermc.paper.plugin.lifecycle.event",
+    "io.papermc.paper.plugin.lifecycle.event.handler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar",
+    "io.papermc.paper.plugin.lifecycle.event.types",
+    "io.papermc.paper.scoreboard.numbers",
+    "org.bukkit.damage"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.block",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.math",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.spawner",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.ban.BanListType",
+    "io.papermc.paper.block.fluid.FluidData",
+    "io.papermc.paper.block.fluid.type.FallingFluidData",
+    "io.papermc.paper.block.fluid.type.FlowingFluidData",
+    "io.papermc.paper.event.block.BlockBreakProgressUpdateEvent",
+    "io.papermc.paper.event.entity.ShulkerDuplicateEvent",
+    "io.papermc.paper.event.player.CartographyItemEvent",
+    "io.papermc.paper.event.player.PlayerShieldDisableEvent",
+    "io.papermc.paper.inventory.tooltip.TooltipContext",
+    "io.papermc.paper.inventory.tooltip.TooltipContextImpl",
+    "io.papermc.paper.plugin.lifecycle.event.LifecycleEvent",
+    "io.papermc.paper.plugin.lifecycle.event.LifecycleEventManager",
+    "io.papermc.paper.plugin.lifecycle.event.LifecycleEventOwner",
+    "io.papermc.paper.plugin.lifecycle.event.handler.LifecycleEventHandler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration.LifecycleEventHandlerConfiguration",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration.MonitorLifecycleEventHandlerConfiguration",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration.PrioritizedLifecycleEventHandlerConfiguration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar.Registrar",
+    "io.papermc.paper.plugin.lifecycle.event.registrar.RegistrarEvent",
+    "io.papermc.paper.plugin.lifecycle.event.registrar.ReloadableRegistrarEvent",
+    "io.papermc.paper.plugin.lifecycle.event.registrar.ReloadableRegistrarEvent.Cause",
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEventType",
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEventType.Monitorable",
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEventType.Prioritizable",
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents",
+    "io.papermc.paper.registry.keys.StructureKeys",
+    "io.papermc.paper.scoreboard.numbers.BlankFormatImpl",
+    "io.papermc.paper.scoreboard.numbers.FixedFormat",
+    "io.papermc.paper.scoreboard.numbers.FixedFormatImpl",
+    "io.papermc.paper.scoreboard.numbers.NumberFormat",
+    "io.papermc.paper.scoreboard.numbers.StyledFormat",
+    "io.papermc.paper.scoreboard.numbers.StyledFormatImpl",
+    "org.bukkit.ServerTickManager",
+    "org.bukkit.damage.DamageEffect",
+    "org.bukkit.damage.DamageScaling",
+    "org.bukkit.damage.DamageSource",
+    "org.bukkit.damage.DamageSource.Builder",
+    "org.bukkit.damage.DamageType",
+    "org.bukkit.damage.DeathMessageType",
+    "org.bukkit.event.entity.EntityDismountEvent",
+    "org.bukkit.event.entity.EntityKnockbackByEntityEvent",
+    "org.bukkit.event.entity.EntityKnockbackEvent",
+    "org.bukkit.event.entity.EntityKnockbackEvent.KnockbackCause",
+    "org.bukkit.event.entity.EntityMountEvent",
+    "org.bukkit.event.entity.EntityRemoveEvent",
+    "org.bukkit.event.entity.EntityRemoveEvent.Cause",
+    "org.bukkit.generator.structure.GeneratedStructure",
+    "org.bukkit.generator.structure.StructurePiece",
+    "org.bukkit.inventory.DecoratedPotInventory",
+    "org.bukkit.packs.ResourcePack",
+    "org.bukkit.persistence.ListPersistentDataType",
+    "org.bukkit.persistence.ListPersistentDataTypeProvider",
+    "org.bukkit.persistence.ListPersistentDataTypeProvider.ListPersistentDataTypeImpl"
+  ],
+  "classesRemoved": [
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.CompletionImpl",
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent.PlayerIterator"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.ParticleBuilder",
+    "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "com.destroystokyo.paper.event.block.AnvilDamagedEvent",
+    "com.destroystokyo.paper.event.block.BeaconEffectEvent",
+    "com.destroystokyo.paper.event.block.BlockDestroyEvent",
+    "com.destroystokyo.paper.event.block.TNTPrimeEvent",
+    "com.destroystokyo.paper.event.entity.CreeperIgniteEvent",
+    "com.destroystokyo.paper.event.entity.EnderDragonFlameEvent",
+    "com.destroystokyo.paper.event.entity.EnderDragonShootFireballEvent",
+    "com.destroystokyo.paper.event.entity.EndermanAttackPlayerEvent",
+    "com.destroystokyo.paper.event.entity.EndermanEscapeEvent",
+    "com.destroystokyo.paper.event.entity.EntityAddToWorldEvent",
+    "com.destroystokyo.paper.event.entity.EntityJumpEvent",
+    "com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent",
+    "com.destroystokyo.paper.event.entity.EntityPathfindEvent",
+    "com.destroystokyo.paper.event.entity.EntityRemoveFromWorldEvent",
+    "com.destroystokyo.paper.event.entity.EntityTeleportEndGatewayEvent",
+    "com.destroystokyo.paper.event.entity.EntityTransformedEvent",
+    "com.destroystokyo.paper.event.entity.EntityZapEvent",
+    "com.destroystokyo.paper.event.entity.ExperienceOrbMergeEvent",
+    "com.destroystokyo.paper.event.entity.PlayerNaturallySpawnCreaturesEvent",
+    "com.destroystokyo.paper.event.entity.PreCreatureSpawnEvent",
+    "com.destroystokyo.paper.event.entity.PreSpawnerSpawnEvent",
+    "com.destroystokyo.paper.event.entity.ProjectileCollideEvent",
+    "com.destroystokyo.paper.event.entity.SkeletonHorseTrapEvent",
+    "com.destroystokyo.paper.event.entity.SlimeChangeDirectionEvent",
+    "com.destroystokyo.paper.event.entity.SlimePathfindEvent",
+    "com.destroystokyo.paper.event.entity.SlimeSwimEvent",
+    "com.destroystokyo.paper.event.entity.SlimeTargetLivingEntityEvent",
+    "com.destroystokyo.paper.event.entity.SlimeWanderEvent",
+    "com.destroystokyo.paper.event.entity.ThrownEggHatchEvent",
+    "com.destroystokyo.paper.event.entity.TurtleGoHomeEvent",
+    "com.destroystokyo.paper.event.entity.TurtleLayEggEvent",
+    "com.destroystokyo.paper.event.entity.TurtleStartDiggingEvent",
+    "com.destroystokyo.paper.event.entity.WitchConsumePotionEvent",
+    "com.destroystokyo.paper.event.entity.WitchReadyPotionEvent",
+    "com.destroystokyo.paper.event.entity.WitchThrowPotionEvent",
+    "com.destroystokyo.paper.event.inventory.PrepareGrindstoneEvent",
+    "com.destroystokyo.paper.event.inventory.PrepareResultEvent",
+    "com.destroystokyo.paper.event.player.IllegalPacketEvent",
+    "com.destroystokyo.paper.event.player.PlayerAdvancementCriterionGrantEvent",
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent",
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent.SlotType",
+    "com.destroystokyo.paper.event.player.PlayerAttackEntityCooldownResetEvent",
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent",
+    "com.destroystokyo.paper.event.player.PlayerConnectionCloseEvent",
+    "com.destroystokyo.paper.event.player.PlayerElytraBoostEvent",
+    "com.destroystokyo.paper.event.player.PlayerHandshakeEvent",
+    "com.destroystokyo.paper.event.player.PlayerInitialSpawnEvent",
+    "com.destroystokyo.paper.event.player.PlayerJumpEvent",
+    "com.destroystokyo.paper.event.player.PlayerLaunchProjectileEvent",
+    "com.destroystokyo.paper.event.player.PlayerLocaleChangeEvent",
+    "com.destroystokyo.paper.event.player.PlayerPickupExperienceEvent",
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent",
+    "com.destroystokyo.paper.event.player.PlayerReadyArrowEvent",
+    "com.destroystokyo.paper.event.player.PlayerRecipeBookClickEvent",
+    "com.destroystokyo.paper.event.player.PlayerSetSpawnEvent",
+    "com.destroystokyo.paper.event.player.PlayerStartSpectatingEntityEvent",
+    "com.destroystokyo.paper.event.player.PlayerStopSpectatingEntityEvent",
+    "com.destroystokyo.paper.event.player.PlayerTeleportEndGatewayEvent",
+    "com.destroystokyo.paper.event.player.PlayerUseUnknownEntityEvent",
+    "com.destroystokyo.paper.event.profile.FillProfileEvent",
+    "com.destroystokyo.paper.event.profile.LookupProfileEvent",
+    "com.destroystokyo.paper.event.profile.PreFillProfileEvent",
+    "com.destroystokyo.paper.event.profile.PreLookupProfileEvent",
+    "com.destroystokyo.paper.event.profile.ProfileWhitelistVerifyEvent",
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent",
+    "com.destroystokyo.paper.event.server.GS4QueryEvent",
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent",
+    "com.destroystokyo.paper.event.server.ServerExceptionEvent",
+    "com.destroystokyo.paper.event.server.ServerTickEndEvent",
+    "com.destroystokyo.paper.event.server.ServerTickStartEvent",
+    "com.destroystokyo.paper.event.server.WhitelistToggleEvent",
+    "com.destroystokyo.paper.loottable.LootableInventoryReplenishEvent",
+    "io.papermc.paper.event.block.BeaconActivatedEvent",
+    "io.papermc.paper.event.block.BeaconDeactivatedEvent",
+    "io.papermc.paper.event.block.BellRevealRaiderEvent",
+    "io.papermc.paper.event.block.BellRingEvent",
+    "io.papermc.paper.event.block.BlockBreakBlockEvent",
+    "io.papermc.paper.event.block.BlockFailedDispenseEvent",
+    "io.papermc.paper.event.block.BlockLockCheckEvent",
+    "io.papermc.paper.event.block.BlockPreDispenseEvent",
+    "io.papermc.paper.event.block.CompostItemEvent",
+    "io.papermc.paper.event.block.DragonEggFormEvent",
+    "io.papermc.paper.event.block.PlayerShearBlockEvent",
+    "io.papermc.paper.event.block.TargetHitEvent",
+    "io.papermc.paper.event.entity.ElderGuardianAppearanceEvent",
+    "io.papermc.paper.event.entity.EntityCompostItemEvent",
+    "io.papermc.paper.event.entity.EntityDamageItemEvent",
+    "io.papermc.paper.event.entity.EntityDyeEvent",
+    "io.papermc.paper.event.entity.EntityFertilizeEggEvent",
+    "io.papermc.paper.event.entity.EntityInsideBlockEvent",
+    "io.papermc.paper.event.entity.EntityMoveEvent",
+    "io.papermc.paper.event.entity.EntityPortalReadyEvent",
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent",
+    "io.papermc.paper.event.entity.EntityToggleSitEvent",
+    "io.papermc.paper.event.entity.PufferFishStateChangeEvent",
+    "io.papermc.paper.event.entity.TameableDeathMessageEvent",
+    "io.papermc.paper.event.entity.WaterBottleSplashEvent",
+    "io.papermc.paper.event.packet.PlayerChunkLoadEvent",
+    "io.papermc.paper.event.packet.PlayerChunkUnloadEvent",
+    "io.papermc.paper.event.player.AsyncChatEvent",
+    "io.papermc.paper.event.player.ChatEvent",
+    "io.papermc.paper.event.player.PlayerArmSwingEvent",
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent",
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent.FailReason",
+    "io.papermc.paper.event.player.PlayerChangeBeaconEffectEvent",
+    "io.papermc.paper.event.player.PlayerDeepSleepEvent",
+    "io.papermc.paper.event.player.PlayerFailMoveEvent",
+    "io.papermc.paper.event.player.PlayerFlowerPotManipulateEvent",
+    "io.papermc.paper.event.player.PlayerInventorySlotChangeEvent",
+    "io.papermc.paper.event.player.PlayerItemCooldownEvent",
+    "io.papermc.paper.event.player.PlayerItemFrameChangeEvent",
+    "io.papermc.paper.event.player.PlayerLecternPageChangeEvent",
+    "io.papermc.paper.event.player.PlayerLoomPatternSelectEvent",
+    "io.papermc.paper.event.player.PlayerNameEntityEvent",
+    "io.papermc.paper.event.player.PlayerOpenSignEvent",
+    "io.papermc.paper.event.player.PlayerPickItemEvent",
+    "io.papermc.paper.event.player.PlayerPurchaseEvent",
+    "io.papermc.paper.event.player.PlayerStopUsingItemEvent",
+    "io.papermc.paper.event.player.PlayerTrackEntityEvent",
+    "io.papermc.paper.event.player.PlayerTradeEvent",
+    "io.papermc.paper.event.player.PlayerUntrackEntityEvent",
+    "io.papermc.paper.event.player.PrePlayerAttackEntityEvent",
+    "io.papermc.paper.event.server.ServerResourcesReloadedEvent",
+    "io.papermc.paper.event.server.WhitelistStateUpdateEvent",
+    "io.papermc.paper.event.world.StructureLocateEvent",
+    "io.papermc.paper.event.world.StructuresLocateEvent",
+    "io.papermc.paper.event.world.WorldGameRuleChangeEvent",
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent",
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeFinishEvent",
+    "io.papermc.paper.event.world.border.WorldBorderCenterChangeEvent",
+    "io.papermc.paper.event.world.border.WorldBorderEvent",
+    "io.papermc.paper.plugin.bootstrap.BootstrapContext",
+    "io.papermc.paper.registry.RegistryKey",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Chunk",
+    "org.bukkit.Effect",
+    "org.bukkit.FeatureFlag",
+    "org.bukkit.Material",
+    "org.bukkit.MusicInstrument",
+    "org.bukkit.OfflinePlayer",
+    "org.bukkit.Particle",
+    "org.bukkit.Raid",
+    "org.bukkit.RegionAccessor",
+    "org.bukkit.Registry",
+    "org.bukkit.Registry.SimpleRegistry",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.attribute.Attribute",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.Conduit",
+    "org.bukkit.block.DecoratedPot",
+    "org.bukkit.block.Hopper",
+    "org.bukkit.block.Sign",
+    "org.bukkit.block.banner.PatternType",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.block.data.type.PinkPetals",
+    "org.bukkit.boss.DragonBattle",
+    "org.bukkit.configuration.ConfigurationSection",
+    "org.bukkit.entity.AbstractArrow",
+    "org.bukkit.entity.Cat.Type",
+    "org.bukkit.entity.Damageable",
+    "org.bukkit.entity.Enderman",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.Fireball",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.MushroomCow",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.TNTPrimed",
+    "org.bukkit.entity.WindCharge",
+    "org.bukkit.event.block.BlockShearEntityEvent",
+    "org.bukkit.event.command.UnknownCommandEvent",
+    "org.bukkit.event.enchantment.EnchantItemEvent",
+    "org.bukkit.event.entity.EntityDamageByBlockEvent",
+    "org.bukkit.event.entity.EntityDamageByEntityEvent",
+    "org.bukkit.event.entity.EntityDamageEvent",
+    "org.bukkit.event.entity.PlayerDeathEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.player.PlayerAttemptPickupItemEvent",
+    "org.bukkit.event.player.PlayerKickEvent",
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent",
+    "org.bukkit.event.player.PlayerRiptideEvent",
+    "org.bukkit.event.player.PlayerShearEntityEvent",
+    "org.bukkit.generator.structure.Structure",
+    "org.bukkit.inventory.CartographyInventory",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.meta.BlockStateMeta",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.SuspiciousStewMeta",
+    "org.bukkit.inventory.meta.trim.TrimMaterial",
+    "org.bukkit.inventory.meta.trim.TrimPattern",
+    "org.bukkit.loot.LootTables",
+    "org.bukkit.persistence.PersistentDataContainer",
+    "org.bukkit.persistence.PersistentDataType",
+    "org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType",
+    "org.bukkit.plugin.Plugin",
+    "org.bukkit.plugin.java.JavaPlugin",
+    "org.bukkit.potion.PotionEffect",
+    "org.bukkit.scoreboard.Objective",
+    "org.bukkit.scoreboard.Score",
+    "org.bukkit.structure.Structure",
+    "org.bukkit.util.Vector"
+  ],
+  "membersAdded": {
+    "io.papermc.paper.scoreboard.numbers.BlankFormatImpl": [
+      "BlankFormatImpl()"
+    ],
+    "io.papermc.paper.event.block.BlockBreakProgressUpdateEvent": [
+      "progress"
+    ],
+    "org.bukkit.block.banner.PatternType": [
+      "PatternType(String,String)"
+    ],
+    "io.papermc.paper.ban.BanListType": [
+      "typeClass()"
+    ],
+    "org.bukkit.boss.DragonBattle": [
+      "setPreviouslyKilled(boolean)"
+    ],
+    "org.bukkit.configuration.ConfigurationSection": [
+      "\u003cC\u003egetComponent(String,ComponentDecoder)",
+      "\u003cC\u003egetComponent(String,ComponentDecoder,C)",
+      "\u003cC\u003esetComponent(String,ComponentEncoder,C)",
+      "getRichMessage(String)",
+      "getRichMessage(String,Component)",
+      "setRichMessage(String,Component)"
+    ],
+    "io.papermc.paper.block.fluid.FluidData": [
+      "computeFlowDirection(Location)",
+      "computeHeight(Location)",
+      "getFluidType()",
+      "isSource()"
+    ],
+    "org.bukkit.scoreboard.Score": [
+      "numberFormat()",
+      "numberFormat(NumberFormat)",
+      "isTriggerable()",
+      "setTriggerable(boolean)"
+    ],
+    "org.bukkit.entity.Player": [
+      "addResourcePack(UUID,String,Array,String,boolean)",
+      "calculateTotalExperiencePoints()",
+      "getExperiencePointsNeededForNextLevel()",
+      "getSentChunkKeys()",
+      "getSentChunks()",
+      "isChunkSent(Chunk)",
+      "isChunkSent(long)",
+      "removeResourcePack(UUID)",
+      "removeResourcePacks()",
+      "sendPotionEffectChange(LivingEntity,PotionEffect)",
+      "sendPotionEffectChangeRemove(LivingEntity,PotionEffectType)",
+      "setExperienceLevelAndProgress(int)",
+      "setResourcePack(UUID,String,Array,Component,boolean)",
+      "setResourcePack(UUID,String,String,Component,boolean)",
+      "setRespawnLocation(Location,boolean)"
+    ],
+    "org.bukkit.damage.DamageSource.Builder": [
+      "withCausingEntity(Entity)",
+      "withDamageLocation(Location)",
+      "withDirectEntity(Entity)"
+    ],
+    "org.bukkit.scoreboard.Objective": [
+      "setAutoUpdateDisplay(boolean)",
+      "willAutoUpdateDisplay()"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.registrar.RegistrarEvent": [
+      "registrar()"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "ABSTRACT_SKELETON_MELEE",
+      "create(String,Class)"
+    ],
+    "org.bukkit.event.player.PlayerRiptideEvent": [
+      "PlayerRiptideEvent(Player,ItemStack,Vector)"
+    ],
+    "org.bukkit.block.Block": [
+      "fluidTick()"
+    ],
+    "io.papermc.paper.scoreboard.numbers.NumberFormat": [
+      "blank()",
+      "fixed(ComponentLike)",
+      "noStyle()",
+      "styled(Style)",
+      "styled(StyleBuilderApplicable...)"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents": [
+      "LifecycleEvents()"
+    ],
+    "org.bukkit.World": [
+      "\u003cT\u003espawn(Location,Class,SpawnReason,boolean,Consumer)",
+      "getIntersectingChunks(BoundingBox)",
+      "getRaid(int)",
+      "getStructures(int,int)",
+      "getStructures(int,int,Structure)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "computeTooltipLines(ItemStack,TooltipContext,Player)",
+      "getSpawnEggLayerColor(EntityType,int)",
+      "getTranslationKey(Attribute)"
+    ],
+    "org.bukkit.Registry.SimpleRegistry": [
+      "getKey(T)"
+    ],
+    "org.bukkit.structure.Structure": [
+      "place(Location,boolean,StructureRotation,Mirror,int,float,Random,Collection,Collection)",
+      "place(RegionAccessor,BlockVector,boolean,StructureRotation,Mirror,int,float,Random,Collection,Collection)"
+    ],
+    "org.bukkit.Chunk": [
+      "getChunkSnapshot(boolean,boolean,boolean,boolean)",
+      "getStructures(Structure)"
+    ],
+    "org.bukkit.event.entity.EntityRemoveEvent": [
+      "EntityRemoveEvent(Entity,Cause)"
+    ],
+    "org.bukkit.inventory.meta.BlockStateMeta": [
+      "clearBlockState()"
+    ],
+    "org.bukkit.event.entity.EntityDamageByEntityEvent": [
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,DamageSource,double)"
+    ],
+    "org.bukkit.damage.DamageEffect": [
+      "BURNING",
+      "FREEZING",
+      "POKING",
+      "getDamageEffect(String)"
+    ],
+    "org.bukkit.persistence.PersistentDataContainer": [
+      "\u003cP,C\u003eget(NamespacedKey,PersistentDataType)",
+      "\u003cP,C\u003egetOrDefault(NamespacedKey,PersistentDataType,C)",
+      "\u003cP,C\u003ehas(NamespacedKey,PersistentDataType)",
+      "\u003cP,C\u003eset(NamespacedKey,PersistentDataType,C)",
+      "copyTo(PersistentDataContainer,boolean)"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "TRIAL_CHAMBER_CONSUMABLES"
+    ],
+    "org.bukkit.block.Sign": [
+      "getAllowedEditor()",
+      "getTargetSide(Player)"
+    ],
+    "org.bukkit.block.Conduit": [
+      "getRange()"
+    ],
+    "org.bukkit.packs.ResourcePack": [
+      "getPrompt()",
+      "getUrl()"
+    ],
+    "org.bukkit.entity.Entity": [
+      "teleportAsync(Location,TeleportCause,TeleportFlag...)"
+    ],
+    "org.bukkit.block.data.BlockData": [
+      "copyTo(BlockData)",
+      "getMapColor()"
+    ],
+    "org.bukkit.event.player.PlayerShearEntityEvent": [
+      "setDrops(List)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "completeUsingActiveItem()",
+      "getActiveItemHand()",
+      "getActiveItemRemainingTime()",
+      "getActiveItemUsedTime()",
+      "getItemInUseTicks()",
+      "getNextArrowRemoval()",
+      "getNextBeeStingerRemoval()",
+      "hasActiveItem()",
+      "setActiveItemRemainingTime(int)",
+      "setItemInUseTicks(int)",
+      "setNextArrowRemoval(int)",
+      "setNextBeeStingerRemoval(int)",
+      "startUsingItem(EquipmentSlot)"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "computeTooltipLines(TooltipContext,Player)",
+      "withType(Material)"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "getLifecycleManager()",
+      "allowsLifecycleRegistration",
+      "lifecycleEventManager"
+    ],
+    "org.bukkit.RegionAccessor": [
+      "getFluidData(Location)",
+      "getFluidData(Position)",
+      "getFluidData(int,int,int)"
+    ],
+    "org.bukkit.event.entity.EntityKnockbackByEntityEvent": [
+      "EntityKnockbackByEntityEvent(LivingEntity,Entity,KnockbackCause,double,Vector,Vector)",
+      "getSourceEntity()"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration.PrioritizedLifecycleEventHandlerConfiguration": [
+      "monitor()",
+      "priority(int)"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.handler.LifecycleEventHandler": [
+      "run(E)"
+    ],
+    "com.destroystokyo.paper.event.player.IllegalPacketEvent": [
+      "exceptionMessage"
+    ],
+    "org.bukkit.damage.DamageType": [
+      "BAD_RESPAWN_POINT",
+      "DRY_OUT",
+      "FALLING_ANVIL",
+      "FALLING_STALACTITE",
+      "FIREWORKS",
+      "GENERIC_KILL",
+      "INDIRECT_MAGIC",
+      "IN_FIRE",
+      "IN_WALL",
+      "LIGHTNING_BOLT",
+      "MOB_ATTACK",
+      "MOB_ATTACK_NO_AGGRO",
+      "MOB_PROJECTILE",
+      "ON_FIRE",
+      "OUTSIDE_BORDER",
+      "PLAYER_ATTACK",
+      "PLAYER_EXPLOSION",
+      "STALAGMITE",
+      "STARVE",
+      "STING",
+      "THROWN",
+      "UNATTRIBUTED_FIREBALL",
+      "getDamageEffect()",
+      "getDamageScaling()",
+      "getDamageType(String)",
+      "getDeathMessageType()"
+    ],
+    "org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType": [
+      "fromPrimitive(P,PersistentDataAdapterContext)",
+      "toPrimitive(P,PersistentDataAdapterContext)"
+    ],
+    "io.papermc.paper.scoreboard.numbers.FixedFormatImpl": [
+      "component()",
+      "FixedFormatImpl(Component)",
+      "asComponent()",
+      "component"
+    ],
+    "org.bukkit.persistence.PersistentDataType": [
+      "LIST",
+      "toPrimitive(C,PersistentDataAdapterContext)"
+    ],
+    "org.bukkit.Registry": [
+      "BANNER_PATTERN",
+      "CAT_VARIANT",
+      "DAMAGE_TYPE",
+      "getKeyOrThrow(T)"
+    ],
+    "org.bukkit.generator.structure.GeneratedStructure": [
+      "getPieces()"
+    ],
+    "io.papermc.paper.inventory.tooltip.TooltipContextImpl": [
+      "asAdvanced()",
+      "asCreative()",
+      "isAdvanced()",
+      "isCreative()",
+      "TooltipContextImpl(boolean,boolean)",
+      "isAdvanced",
+      "isCreative"
+    ],
+    "org.bukkit.entity.Damageable": [
+      "damage(double,DamageSource)"
+    ],
+    "io.papermc.paper.scoreboard.numbers.StyledFormatImpl": [
+      "style()",
+      "NO_STYLE",
+      "StyledFormatImpl(Style)",
+      "styleApply(Builder)"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "removeEnchantments()"
+    ],
+    "com.destroystokyo.paper.ParticleBuilder": [
+      "color(int)",
+      "colorTransition(Color,Color)",
+      "colorTransition(Color,Color,float)",
+      "colorTransition(int,int)",
+      "colorTransition(int,int,int,int,int,int)"
+    ],
+    "org.bukkit.event.entity.EntityKnockbackEvent.KnockbackCause": [
+      "DAMAGE",
+      "KnockbackCause()"
+    ],
+    "org.bukkit.block.Hopper": [
+      "getTransferCooldown()",
+      "setTransferCooldown(int)"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.registrar.ReloadableRegistrarEvent": [
+      "cause()"
+    ],
+    "org.bukkit.damage.DamageSource": [
+      "builder(DamageType)",
+      "getDamageLocation()",
+      "getDamageType()",
+      "getDirectEntity()",
+      "getFoodExhaustion()",
+      "getSourceLocation()",
+      "isIndirect()",
+      "scalesWithDifficulty()"
+    ],
+    "org.bukkit.Effect": [
+      "CRAFTER_CRAFT",
+      "CRAFTER_FAIL",
+      "SHOOT_WHITE_SMOKE",
+      "TRIAL_SPAWNER_DETECT_PLAYER",
+      "TRIAL_SPAWNER_EJECT_ITEM",
+      "TRIAL_SPAWNER_SPAWN",
+      "TRIAL_SPAWNER_SPAWN_MOB_AT"
+    ],
+    "io.papermc.paper.registry.keys.StructureKeys": [
+      "StructureKeys()"
+    ],
+    "org.bukkit.Server": [
+      "\u003cB,E\u003egetBanList(BanListType)",
+      "getServerResourcePack()",
+      "getServerTickManager()",
+      "isLoggingIPs()"
+    ],
+    "io.papermc.paper.inventory.tooltip.TooltipContext": [
+      "create()",
+      "create(boolean,boolean)"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.registrar.ReloadableRegistrarEvent.Cause": [
+      "INITIAL"
+    ],
+    "org.bukkit.event.entity.EntityKnockbackEvent": [
+      "EntityKnockbackEvent(LivingEntity,KnockbackCause,double,Vector,Vector)",
+      "getFinalKnockback()",
+      "getKnockback()",
+      "knockback",
+      "rawKnockback",
+      "setFinalKnockback(Vector)"
+    ],
+    "org.bukkit.entity.MushroomCow": [
+      "addEffectToNextStew(PotionEffect,boolean)",
+      "addEffectToNextStew(SuspiciousEffectEntry,boolean)",
+      "clearEffectsForNextStew()",
+      "getEffectsForNextStew()",
+      "hasEffectForNextStew(PotionEffectType)",
+      "hasEffectsForNextStew()",
+      "removeEffectFromNextStew(PotionEffectType)"
+    ],
+    "org.bukkit.block.data.type.PinkPetals": [
+      "getMinimumFlowerAmount()"
+    ],
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": [
+      "setAcceleration(Vector)"
+    ],
+    "org.bukkit.persistence.ListPersistentDataTypeProvider": [
+      "\u003cP,C\u003elistTypeFrom(PersistentDataType)",
+      "DATA_CONTAINER",
+      "ListPersistentDataTypeProvider()",
+      "booleans()",
+      "byteArrays()",
+      "bytes()",
+      "dataContainers()",
+      "doubles()",
+      "floats()",
+      "integerArrays()",
+      "integers()",
+      "longArrays()",
+      "longs()",
+      "shorts()",
+      "strings()"
+    ],
+    "org.bukkit.event.entity.EntityRemoveEvent.Cause": [
+      "OUT_OF_WORLD",
+      "DESPAWN",
+      "DISCARD",
+      "ENTER_BLOCK",
+      "HIT",
+      "MERGE",
+      "PLAYER_QUIT",
+      "TRANSFORMATION",
+      "UNLOAD"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent": [
+      "getDamageSource()",
+      "EntityDamageEvent(Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageEvent(Entity,DamageCause,DamageSource,double)",
+      "damageSource"
+    ],
+    "io.papermc.paper.block.fluid.type.FallingFluidData": [
+      "isFalling()"
+    ],
+    "org.bukkit.damage.DeathMessageType": [
+      "DeathMessageType()",
+      "FALL_VARIANTS",
+      "INTENTIONAL_GAME_DESIGN"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.LifecycleEventManager": [
+      "\u003cE\u003eregisterEventHandler(LifecycleEventType,LifecycleEventHandler)",
+      "registerEventHandler(LifecycleEventHandlerConfiguration)"
+    ],
+    "org.bukkit.damage.DamageScaling": [
+      "DamageScaling()",
+      "WHEN_CAUSED_BY_LIVING_NON_PLAYER"
+    ],
+    "org.bukkit.persistence.ListPersistentDataTypeProvider.ListPersistentDataTypeImpl": [
+      "elementType()",
+      "ListPersistentDataTypeImpl(PersistentDataType)",
+      "fromPrimitive(List,PersistentDataAdapterContext)",
+      "innerType",
+      "toPrimitive(List,PersistentDataAdapterContext)"
+    ],
+    "org.bukkit.potion.PotionEffect": [
+      "HIDDEN_EFFECT",
+      "getHiddenPotionEffect()",
+      "hiddenEffect"
+    ],
+    "org.bukkit.util.Vector": [
+      "fromJOML(Vector3dc)",
+      "fromJOML(Vector3fc)",
+      "fromJOML(Vector3ic)"
+    ],
+    "org.bukkit.inventory.meta.SuspiciousStewMeta": [
+      "addCustomEffect(SuspiciousEffectEntry,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,DamageSource,Map,Map,BlockState)",
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,DamageSource,double,BlockState)"
+    ],
+    "org.bukkit.entity.Fireball": [
+      "setPower(Vector)"
+    ],
+    "com.destroystokyo.paper.event.block.BlockDestroyEvent": [
+      "effectBlock",
+      "getEffectBlock()",
+      "setEffectBlock(BlockData)"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEventType": [
+      "newHandler(LifecycleEventHandler)"
+    ],
+    "org.bukkit.ServerTickManager": [
+      "getFrozenTicksToRun()",
+      "getTickRate()",
+      "isFrozen(Entity)",
+      "isRunningNormally()",
+      "isStepping()",
+      "requestGameToSprint(int)",
+      "setFrozen(boolean)",
+      "setTickRate(float)",
+      "stepGameIfFrozen(int)",
+      "stopSprinting()",
+      "stopStepping()"
+    ]
+  },
+  "membersRemoved": {
+    "io.papermc.paper.event.server.ServerResourcesReloadedEvent": [
+      "ServerResourcesReloadedEvent(Cause)"
+    ],
+    "org.bukkit.block.banner.PatternType": [
+      "PatternType(String)"
+    ],
+    "com.destroystokyo.paper.event.entity.EndermanEscapeEvent": [
+      "EndermanEscapeEvent(Enderman,Reason)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerElytraBoostEvent": [
+      "PlayerElytraBoostEvent(Player,ItemStack,Firework)"
+    ],
+    "io.papermc.paper.event.entity.PufferFishStateChangeEvent": [
+      "PufferFishStateChangeEvent(PufferFish,int)"
+    ],
+    "io.papermc.paper.event.entity.EntityFertilizeEggEvent": [
+      "EntityFertilizeEggEvent(LivingEntity,LivingEntity,Player,ItemStack,int)"
+    ],
+    "org.bukkit.event.command.UnknownCommandEvent": [
+      "UnknownCommandEvent(CommandSender,String,Component)"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "SKELETON_MELEE"
+    ],
+    "com.destroystokyo.paper.event.entity.ProjectileCollideEvent": [
+      "ProjectileCollideEvent(Projectile,Entity)",
+      "handlerList"
+    ],
+    "com.destroystokyo.paper.event.entity.EnderDragonFlameEvent": [
+      "EnderDragonFlameEvent(EnderDragon,AreaEffectCloud)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerPickupExperienceEvent": [
+      "PlayerPickupExperienceEvent(Player,ExperienceOrb)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent": [
+      "EntityKnockbackByEntityEvent(LivingEntity,Entity,float,Vector)"
+    ],
+    "org.bukkit.persistence.PersistentDataContainer": [
+      "\u003cT,Z\u003eget(NamespacedKey,PersistentDataType)",
+      "\u003cT,Z\u003egetOrDefault(NamespacedKey,PersistentDataType,Z)",
+      "\u003cT,Z\u003ehas(NamespacedKey,PersistentDataType)",
+      "\u003cT,Z\u003eset(NamespacedKey,PersistentDataType,Z)"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent": [
+      "StructuresLocateEvent(World,Location,List,int,boolean)"
+    ],
+    "com.destroystokyo.paper.event.server.ServerTickEndEvent": [
+      "ServerTickEndEvent(int,double,long)"
+    ],
+    "com.destroystokyo.paper.loottable.LootableInventoryReplenishEvent": [
+      "LootableInventoryReplenishEvent(Player,LootableInventory)"
+    ],
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent": [
+      "AsyncTabCompleteEvent(CommandSender,List,String,boolean,Location)",
+      "AsyncTabCompleteEvent(CommandSender,String,boolean,Location)",
+      "fireSyncHandler"
+    ],
+    "com.destroystokyo.paper.event.server.ServerTickStartEvent": [
+      "ServerTickStartEvent(int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerJumpEvent": [
+      "PlayerJumpEvent(Player,Location,Location)"
+    ],
+    "io.papermc.paper.event.entity.EntityDamageItemEvent": [
+      "EntityDamageItemEvent(Entity,ItemStack,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerTrackEntityEvent": [
+      "PlayerTrackEntityEvent(Player,Entity)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerTeleportEndGatewayEvent": [
+      "PlayerTeleportEndGatewayEvent(Player,Location,Location,EndGateway)"
+    ],
+    "com.destroystokyo.paper.event.entity.WitchThrowPotionEvent": [
+      "WitchThrowPotionEvent(Witch,LivingEntity,ItemStack)"
+    ],
+    "io.papermc.paper.event.player.PlayerNameEntityEvent": [
+      "PlayerNameEntityEvent(Player,LivingEntity,Component,boolean)"
+    ],
+    "com.destroystokyo.paper.event.server.ServerExceptionEvent": [
+      "ServerExceptionEvent(ServerException)"
+    ],
+    "com.destroystokyo.paper.event.entity.ThrownEggHatchEvent": [
+      "ThrownEggHatchEvent(Egg,boolean,byte,EntityType)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeWanderEvent": [
+      "SlimeWanderEvent(Slime)"
+    ],
+    "com.destroystokyo.paper.event.player.IllegalPacketEvent": [
+      "IllegalPacketEvent(Player,String,String,Exception)",
+      "ex",
+      "process(Player,String,String,Exception)"
+    ],
+    "com.destroystokyo.paper.event.block.TNTPrimeEvent": [
+      "TNTPrimeEvent(Block,PrimeReason,Entity)"
+    ],
+    "org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType": [
+      "fromPrimitive(T,PersistentDataAdapterContext)",
+      "toPrimitive(T,PersistentDataAdapterContext)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerAdvancementCriterionGrantEvent": [
+      "PlayerAdvancementCriterionGrantEvent(Player,Advancement,String)"
+    ],
+    "org.bukkit.persistence.PersistentDataType": [
+      "toPrimitive(Z,PersistentDataAdapterContext)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerInitialSpawnEvent": [
+      "PlayerInitialSpawnEvent(Player,Location)"
+    ],
+    "io.papermc.paper.event.server.WhitelistStateUpdateEvent": [
+      "WhitelistStateUpdateEvent(PlayerProfile,WhitelistStatus)"
+    ],
+    "com.destroystokyo.paper.event.entity.TurtleGoHomeEvent": [
+      "TurtleGoHomeEvent(Turtle)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent": [
+      "PlayerClientOptionsChangeEvent(Player,Map)"
+    ],
+    "com.destroystokyo.paper.event.entity.EndermanAttackPlayerEvent": [
+      "EndermanAttackPlayerEvent(Enderman,Player)"
+    ],
+    "io.papermc.paper.event.player.PlayerItemFrameChangeEvent": [
+      "HANDLERS",
+      "PlayerItemFrameChangeEvent(Player,ItemFrame,ItemStack,ItemFrameChangeAction)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityTransformedEvent": [
+      "EntityTransformedEvent(Entity,Entity,TransformedReason)"
+    ],
+    "org.bukkit.event.player.PlayerAttemptPickupItemEvent": [
+      "PlayerAttemptPickupItemEvent(Player,Item)",
+      "PlayerAttemptPickupItemEvent(Player,Item,int)"
+    ],
+    "io.papermc.paper.event.entity.EntityCompostItemEvent": [
+      "EntityCompostItemEvent(Entity,Block,ItemStack,boolean)",
+      "who"
+    ],
+    "com.destroystokyo.paper.event.entity.CreeperIgniteEvent": [
+      "CreeperIgniteEvent(Creeper,boolean)"
+    ],
+    "com.destroystokyo.paper.event.entity.ExperienceOrbMergeEvent": [
+      "ExperienceOrbMergeEvent(ExperienceOrb,ExperienceOrb)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityZapEvent": [
+      "EntityZapEvent(Entity,LightningStrike,Entity)"
+    ],
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": [
+      "EntityPushedByEntityAttackEvent(Entity,Entity,Vector)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerLocaleChangeEvent": [
+      "PlayerLocaleChangeEvent(Player,String,String)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerConnectionCloseEvent": [
+      "PlayerConnectionCloseEvent(UUID,String,InetAddress,boolean)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityRemoveFromWorldEvent": [
+      "EntityRemoveFromWorldEvent(Entity)"
+    ],
+    "io.papermc.paper.event.player.PlayerArmSwingEvent": [
+      "PlayerArmSwingEvent(Player,EquipmentSlot)"
+    ],
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent.FailReason": [
+      "VALUES"
+    ],
+    "com.destroystokyo.paper.event.entity.PreCreatureSpawnEvent": [
+      "PreCreatureSpawnEvent(Location,EntityType,SpawnReason)"
+    ],
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent": [
+      "PlayerBedFailEnterEvent(Player,FailReason,Block,boolean,Component)"
+    ],
+    "io.papermc.paper.event.block.BlockFailedDispenseEvent": [
+      "BlockFailedDispenseEvent(Block)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityPathfindEvent": [
+      "EntityPathfindEvent(Entity,Location,Entity)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerAttackEntityCooldownResetEvent": [
+      "PlayerAttackEntityCooldownResetEvent(Player,Entity,float)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityTeleportEndGatewayEvent": [
+      "EntityTeleportEndGatewayEvent(Entity,Location,Location,EndGateway)"
+    ],
+    "com.destroystokyo.paper.event.entity.TurtleStartDiggingEvent": [
+      "TurtleStartDiggingEvent(Turtle,Location)"
+    ],
+    "io.papermc.paper.event.entity.ElderGuardianAppearanceEvent": [
+      "ElderGuardianAppearanceEvent(Entity,Player)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent": [
+      "PlayerResourcePackStatusEvent(Player,UUID,Status,String)",
+      "hash"
+    ],
+    "com.destroystokyo.paper.event.server.GS4QueryEvent": [
+      "GS4QueryEvent(QueryType,InetAddress,QueryResponse)"
+    ],
+    "com.destroystokyo.paper.event.profile.FillProfileEvent": [
+      "FillProfileEvent(PlayerProfile)"
+    ],
+    "com.destroystokyo.paper.event.entity.PlayerNaturallySpawnCreaturesEvent": [
+      "PlayerNaturallySpawnCreaturesEvent(Player,byte)"
+    ],
+    "org.bukkit.event.block.BlockShearEntityEvent": [
+      "BlockShearEntityEvent(Block,Entity,ItemStack)"
+    ],
+    "io.papermc.paper.event.entity.EntityInsideBlockEvent": [
+      "EntityInsideBlockEvent(Entity,Block)"
+    ],
+    "io.papermc.paper.event.entity.TameableDeathMessageEvent": [
+      "TameableDeathMessageEvent(Tameable,Component)"
+    ],
+    "com.destroystokyo.paper.event.profile.ProfileWhitelistVerifyEvent": [
+      "ProfileWhitelistVerifyEvent(PlayerProfile,boolean,boolean,boolean,Component)",
+      "ProfileWhitelistVerifyEvent(PlayerProfile,boolean,boolean,boolean,String)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerLaunchProjectileEvent": [
+      "PlayerLaunchProjectileEvent(Player,ItemStack,Projectile)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerStopSpectatingEntityEvent": [
+      "PlayerStopSpectatingEntityEvent(Player,Entity)"
+    ],
+    "com.destroystokyo.paper.event.server.WhitelistToggleEvent": [
+      "WhitelistToggleEvent(boolean)"
+    ],
+    "io.papermc.paper.event.block.DragonEggFormEvent": [
+      "DragonEggFormEvent(Block,BlockState,DragonBattle)"
+    ],
+    "com.destroystokyo.paper.event.entity.TurtleLayEggEvent": [
+      "TurtleLayEggEvent(Turtle,Location,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerLoomPatternSelectEvent": [
+      "PlayerLoomPatternSelectEvent(Player,LoomInventory,PatternType)"
+    ],
+    "io.papermc.paper.event.entity.EntityPortalReadyEvent": [
+      "EntityPortalReadyEvent(Entity,World,PortalType)"
+    ],
+    "io.papermc.paper.event.block.BlockPreDispenseEvent": [
+      "BlockPreDispenseEvent(Block,ItemStack,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerUntrackEntityEvent": [
+      "PlayerUntrackEntityEvent(Player,Entity)"
+    ],
+    "io.papermc.paper.event.entity.EntityMoveEvent": [
+      "EntityMoveEvent(LivingEntity,Location,Location)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByEntityEvent": [
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,Map,Map,boolean)"
+    ],
+    "com.destroystokyo.paper.event.inventory.PrepareResultEvent": [
+      "PrepareResultEvent(InventoryView,ItemStack)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeChangeDirectionEvent": [
+      "SlimeChangeDirectionEvent(Slime,float)"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "RIAL_CHAMBER_CONSUMABLES"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeTargetLivingEntityEvent": [
+      "SlimeTargetLivingEntityEvent(Slime,LivingEntity)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderEvent": [
+      "WorldBorderEvent(World,WorldBorder)"
+    ],
+    "io.papermc.paper.event.block.BellRevealRaiderEvent": [
+      "BellRevealRaiderEvent(Block,Entity)"
+    ],
+    "io.papermc.paper.event.packet.PlayerChunkUnloadEvent": [
+      "PlayerChunkUnloadEvent(Chunk,Player)"
+    ],
+    "org.bukkit.event.player.PlayerShearEntityEvent": [
+      "PlayerShearEntityEvent(Player,Entity,ItemStack,EquipmentSlot)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeFinishEvent": [
+      "WorldBorderBoundsChangeFinishEvent(World,WorldBorder,double,double,double)"
+    ],
+    "com.destroystokyo.paper.event.entity.WitchReadyPotionEvent": [
+      "WitchReadyPotionEvent(Witch,ItemStack)",
+      "process(Witch,ItemStack)"
+    ],
+    "com.destroystokyo.paper.event.entity.EnderDragonShootFireballEvent": [
+      "EnderDragonShootFireballEvent(EnderDragon,DragonFireball)"
+    ],
+    "io.papermc.paper.event.block.BeaconDeactivatedEvent": [
+      "BeaconDeactivatedEvent(Block)"
+    ],
+    "com.destroystokyo.paper.event.entity.SkeletonHorseTrapEvent": [
+      "SkeletonHorseTrapEvent(SkeletonHorse)",
+      "SkeletonHorseTrapEvent(SkeletonHorse,List)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent": [
+      "PlayerPostRespawnEvent(Player,Location,boolean)"
+    ],
+    "com.destroystokyo.paper.event.profile.LookupProfileEvent": [
+      "LookupProfileEvent(PlayerProfile)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,List,int,Component)",
+      "PlayerDeathEvent(Player,List,int,int,Component,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,Component,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,Component,String,boolean)",
+      "adventure$deathMessage",
+      "getDeathMessageString(Component)"
+    ],
+    "com.destroystokyo.paper.event.profile.PreLookupProfileEvent": [
+      "PreLookupProfileEvent(String)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderCenterChangeEvent": [
+      "WorldBorderCenterChangeEvent(World,WorldBorder,Location,Location)"
+    ],
+    "io.papermc.paper.event.player.PlayerItemCooldownEvent": [
+      "PlayerItemCooldownEvent(Player,Material,int)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent": [
+      "PlayerKickEvent(Player,Component,Component,Cause)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimePathfindEvent": [
+      "SlimePathfindEvent(Slime)"
+    ],
+    "com.destroystokyo.paper.event.entity.WitchConsumePotionEvent": [
+      "WitchConsumePotionEvent(Witch,ItemStack)"
+    ],
+    "io.papermc.paper.event.entity.EntityDyeEvent": [
+      "EntityDyeEvent(Entity,DyeColor,Player)"
+    ],
+    "io.papermc.paper.event.player.PlayerDeepSleepEvent": [
+      "PlayerDeepSleepEvent(Player)"
+    ],
+    "com.destroystokyo.paper.event.entity.PreSpawnerSpawnEvent": [
+      "PreSpawnerSpawnEvent(Location,EntityType,Location)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityJumpEvent": [
+      "EntityJumpEvent(LivingEntity)"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent.PlayerIterator": [
+      "PlayerIterator()",
+      "next"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityAddToWorldEvent": [
+      "EntityAddToWorldEvent(Entity)"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent": [
+      "PaperServerListPingEvent(StatusClient,Component,int,int,String,int,CachedServerIcon)",
+      "PaperServerListPingEvent(StatusClient,String,int,int,String,int,CachedServerIcon)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeSwimEvent": [
+      "SlimeSwimEvent(Slime)"
+    ],
+    "io.papermc.paper.event.block.CompostItemEvent": [
+      "CompostItemEvent(Block,ItemStack,boolean)"
+    ],
+    "io.papermc.paper.event.player.PlayerTradeEvent": [
+      "PlayerTradeEvent(Player,AbstractVillager,MerchantRecipe,boolean,boolean)"
+    ],
+    "io.papermc.paper.event.player.PlayerFlowerPotManipulateEvent": [
+      "PlayerFlowerPotManipulateEvent(Player,Block,ItemStack,boolean)"
+    ],
+    "io.papermc.paper.event.player.PlayerPurchaseEvent": [
+      "PlayerPurchaseEvent(Player,MerchantRecipe,boolean,boolean)"
+    ],
+    "com.destroystokyo.paper.event.block.BeaconEffectEvent": [
+      "BeaconEffectEvent(Block,PotionEffect,Player,boolean)"
+    ],
+    "io.papermc.paper.event.player.PrePlayerAttackEntityEvent": [
+      "PrePlayerAttackEntityEvent(Player,Entity,boolean)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent": [
+      "WorldBorderBoundsChangeEvent(World,WorldBorder,Type,double,double,long)"
+    ],
+    "io.papermc.paper.event.player.PlayerFailMoveEvent": [
+      "PlayerFailMoveEvent(Player,FailReason,boolean,boolean,Location,Location)"
+    ],
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.CompletionImpl": [
+      "CompletionImpl(String,Component)",
+      "suggestion",
+      "tooltip"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerRecipeBookClickEvent": [
+      "PlayerRecipeBookClickEvent(Player,NamespacedKey,boolean)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerUseUnknownEntityEvent": [
+      "PlayerUseUnknownEntityEvent(Player,int,boolean,EquipmentSlot,Vector)"
+    ],
+    "io.papermc.paper.event.block.PlayerShearBlockEvent": [
+      "PlayerShearBlockEvent(Player,Block,ItemStack,EquipmentSlot,List)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerStartSpectatingEntityEvent": [
+      "PlayerStartSpectatingEntityEvent(Player,Entity,Entity)"
+    ],
+    "io.papermc.paper.event.entity.EntityToggleSitEvent": [
+      "EntityToggleSitEvent(Entity,boolean)"
+    ],
+    "io.papermc.paper.event.block.TargetHitEvent": [
+      "TargetHitEvent(Projectile,Block,BlockFace,int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent.SlotType": [
+      "immutableTypes",
+      "mutableTypes"
+    ],
+    "io.papermc.paper.event.entity.WaterBottleSplashEvent": [
+      "WaterBottleSplashEvent(ThrownPotion,Map,Set,Set)"
+    ],
+    "io.papermc.paper.event.block.BeaconActivatedEvent": [
+      "BeaconActivatedEvent(Block)"
+    ],
+    "io.papermc.paper.event.world.WorldGameRuleChangeEvent": [
+      "WorldGameRuleChangeEvent(World,CommandSender,GameRule,String)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerHandshakeEvent": [
+      "PlayerHandshakeEvent(String,String,boolean)",
+      "PlayerHandshakeEvent(String,boolean)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerSetSpawnEvent": [
+      "PlayerSetSpawnEvent(Player,Cause,Location,boolean,boolean,Component)"
+    ],
+    "io.papermc.paper.event.player.PlayerLecternPageChangeEvent": [
+      "PlayerLecternPageChangeEvent(Player,Lectern,ItemStack,PageChangeDirection,int,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerPickItemEvent": [
+      "PlayerPickItemEvent(Player,int,int)"
+    ],
+    "io.papermc.paper.event.world.StructureLocateEvent": [
+      "StructureLocateEvent(World,Location,StructureType,int,boolean)"
+    ],
+    "io.papermc.paper.event.packet.PlayerChunkLoadEvent": [
+      "PlayerChunkLoadEvent(Chunk,Player)"
+    ],
+    "io.papermc.paper.event.block.BlockLockCheckEvent": [
+      "BlockLockCheckEvent(Block,LockableTileState,Player,Component,Sound)"
+    ],
+    "com.destroystokyo.paper.event.block.BlockDestroyEvent": [
+      "BlockDestroyEvent(Block,BlockData,boolean)"
+    ],
+    "io.papermc.paper.event.block.BlockBreakBlockEvent": [
+      "BlockBreakBlockEvent(Block,Block,List)"
+    ],
+    "com.destroystokyo.paper.event.profile.PreFillProfileEvent": [
+      "PreFillProfileEvent(PlayerProfile)"
+    ]
+  },
+  "membersChanged": {
+    "io.papermc.paper.event.server.ServerResourcesReloadedEvent": [
+      "ServerResourcesReloadedEvent(Cause)"
+    ],
+    "org.bukkit.block.banner.PatternType": [
+      "PatternType(String)"
+    ],
+    "com.destroystokyo.paper.event.entity.EndermanEscapeEvent": [
+      "EndermanEscapeEvent(Enderman,Reason)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerElytraBoostEvent": [
+      "PlayerElytraBoostEvent(Player,ItemStack,Firework)"
+    ],
+    "io.papermc.paper.event.entity.PufferFishStateChangeEvent": [
+      "PufferFishStateChangeEvent(PufferFish,int)"
+    ],
+    "io.papermc.paper.event.entity.EntityFertilizeEggEvent": [
+      "EntityFertilizeEggEvent(LivingEntity,LivingEntity,Player,ItemStack,int)"
+    ],
+    "org.bukkit.event.command.UnknownCommandEvent": [
+      "UnknownCommandEvent(CommandSender,String,Component)"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "SKELETON_MELEE"
+    ],
+    "com.destroystokyo.paper.event.entity.ProjectileCollideEvent": [
+      "ProjectileCollideEvent(Projectile,Entity)",
+      "handlerList"
+    ],
+    "com.destroystokyo.paper.event.entity.EnderDragonFlameEvent": [
+      "EnderDragonFlameEvent(EnderDragon,AreaEffectCloud)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerPickupExperienceEvent": [
+      "PlayerPickupExperienceEvent(Player,ExperienceOrb)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent": [
+      "EntityKnockbackByEntityEvent(LivingEntity,Entity,float,Vector)"
+    ],
+    "org.bukkit.persistence.PersistentDataContainer": [
+      "\u003cT,Z\u003eget(NamespacedKey,PersistentDataType)",
+      "\u003cT,Z\u003egetOrDefault(NamespacedKey,PersistentDataType,Z)",
+      "\u003cT,Z\u003ehas(NamespacedKey,PersistentDataType)",
+      "\u003cT,Z\u003eset(NamespacedKey,PersistentDataType,Z)"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent": [
+      "StructuresLocateEvent(World,Location,List,int,boolean)"
+    ],
+    "com.destroystokyo.paper.event.server.ServerTickEndEvent": [
+      "ServerTickEndEvent(int,double,long)"
+    ],
+    "com.destroystokyo.paper.loottable.LootableInventoryReplenishEvent": [
+      "LootableInventoryReplenishEvent(Player,LootableInventory)"
+    ],
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent": [
+      "AsyncTabCompleteEvent(CommandSender,List,String,boolean,Location)",
+      "AsyncTabCompleteEvent(CommandSender,String,boolean,Location)",
+      "fireSyncHandler"
+    ],
+    "com.destroystokyo.paper.event.server.ServerTickStartEvent": [
+      "ServerTickStartEvent(int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerJumpEvent": [
+      "PlayerJumpEvent(Player,Location,Location)"
+    ],
+    "io.papermc.paper.event.entity.EntityDamageItemEvent": [
+      "EntityDamageItemEvent(Entity,ItemStack,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerTrackEntityEvent": [
+      "PlayerTrackEntityEvent(Player,Entity)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerTeleportEndGatewayEvent": [
+      "PlayerTeleportEndGatewayEvent(Player,Location,Location,EndGateway)"
+    ],
+    "com.destroystokyo.paper.event.entity.WitchThrowPotionEvent": [
+      "WitchThrowPotionEvent(Witch,LivingEntity,ItemStack)"
+    ],
+    "io.papermc.paper.event.player.PlayerNameEntityEvent": [
+      "PlayerNameEntityEvent(Player,LivingEntity,Component,boolean)"
+    ],
+    "com.destroystokyo.paper.event.server.ServerExceptionEvent": [
+      "ServerExceptionEvent(ServerException)"
+    ],
+    "com.destroystokyo.paper.event.entity.ThrownEggHatchEvent": [
+      "ThrownEggHatchEvent(Egg,boolean,byte,EntityType)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeWanderEvent": [
+      "SlimeWanderEvent(Slime)"
+    ],
+    "com.destroystokyo.paper.event.player.IllegalPacketEvent": [
+      "IllegalPacketEvent(Player,String,String,Exception)",
+      "ex",
+      "process(Player,String,String,Exception)"
+    ],
+    "com.destroystokyo.paper.event.block.TNTPrimeEvent": [
+      "TNTPrimeEvent(Block,PrimeReason,Entity)"
+    ],
+    "org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType": [
+      "fromPrimitive(T,PersistentDataAdapterContext)",
+      "toPrimitive(T,PersistentDataAdapterContext)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerAdvancementCriterionGrantEvent": [
+      "PlayerAdvancementCriterionGrantEvent(Player,Advancement,String)"
+    ],
+    "org.bukkit.persistence.PersistentDataType": [
+      "toPrimitive(Z,PersistentDataAdapterContext)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerInitialSpawnEvent": [
+      "PlayerInitialSpawnEvent(Player,Location)"
+    ],
+    "io.papermc.paper.event.server.WhitelistStateUpdateEvent": [
+      "WhitelistStateUpdateEvent(PlayerProfile,WhitelistStatus)"
+    ],
+    "com.destroystokyo.paper.event.entity.TurtleGoHomeEvent": [
+      "TurtleGoHomeEvent(Turtle)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent": [
+      "PlayerClientOptionsChangeEvent(Player,Map)"
+    ],
+    "com.destroystokyo.paper.event.entity.EndermanAttackPlayerEvent": [
+      "EndermanAttackPlayerEvent(Enderman,Player)"
+    ],
+    "io.papermc.paper.event.player.PlayerItemFrameChangeEvent": [
+      "HANDLERS",
+      "PlayerItemFrameChangeEvent(Player,ItemFrame,ItemStack,ItemFrameChangeAction)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityTransformedEvent": [
+      "EntityTransformedEvent(Entity,Entity,TransformedReason)"
+    ],
+    "org.bukkit.event.player.PlayerAttemptPickupItemEvent": [
+      "PlayerAttemptPickupItemEvent(Player,Item)",
+      "PlayerAttemptPickupItemEvent(Player,Item,int)"
+    ],
+    "io.papermc.paper.event.entity.EntityCompostItemEvent": [
+      "EntityCompostItemEvent(Entity,Block,ItemStack,boolean)",
+      "who"
+    ],
+    "com.destroystokyo.paper.event.entity.CreeperIgniteEvent": [
+      "CreeperIgniteEvent(Creeper,boolean)"
+    ],
+    "com.destroystokyo.paper.event.entity.ExperienceOrbMergeEvent": [
+      "ExperienceOrbMergeEvent(ExperienceOrb,ExperienceOrb)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityZapEvent": [
+      "EntityZapEvent(Entity,LightningStrike,Entity)"
+    ],
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": [
+      "EntityPushedByEntityAttackEvent(Entity,Entity,Vector)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerLocaleChangeEvent": [
+      "PlayerLocaleChangeEvent(Player,String,String)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerConnectionCloseEvent": [
+      "PlayerConnectionCloseEvent(UUID,String,InetAddress,boolean)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityRemoveFromWorldEvent": [
+      "EntityRemoveFromWorldEvent(Entity)"
+    ],
+    "io.papermc.paper.event.player.PlayerArmSwingEvent": [
+      "PlayerArmSwingEvent(Player,EquipmentSlot)"
+    ],
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent.FailReason": [
+      "VALUES"
+    ],
+    "com.destroystokyo.paper.event.entity.PreCreatureSpawnEvent": [
+      "PreCreatureSpawnEvent(Location,EntityType,SpawnReason)"
+    ],
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent": [
+      "PlayerBedFailEnterEvent(Player,FailReason,Block,boolean,Component)"
+    ],
+    "io.papermc.paper.event.block.BlockFailedDispenseEvent": [
+      "BlockFailedDispenseEvent(Block)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityPathfindEvent": [
+      "EntityPathfindEvent(Entity,Location,Entity)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerAttackEntityCooldownResetEvent": [
+      "PlayerAttackEntityCooldownResetEvent(Player,Entity,float)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityTeleportEndGatewayEvent": [
+      "EntityTeleportEndGatewayEvent(Entity,Location,Location,EndGateway)"
+    ],
+    "com.destroystokyo.paper.event.entity.TurtleStartDiggingEvent": [
+      "TurtleStartDiggingEvent(Turtle,Location)"
+    ],
+    "io.papermc.paper.event.entity.ElderGuardianAppearanceEvent": [
+      "ElderGuardianAppearanceEvent(Entity,Player)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent": [
+      "PlayerResourcePackStatusEvent(Player,UUID,Status,String)",
+      "hash"
+    ],
+    "com.destroystokyo.paper.event.server.GS4QueryEvent": [
+      "GS4QueryEvent(QueryType,InetAddress,QueryResponse)"
+    ],
+    "com.destroystokyo.paper.event.profile.FillProfileEvent": [
+      "FillProfileEvent(PlayerProfile)"
+    ],
+    "com.destroystokyo.paper.event.entity.PlayerNaturallySpawnCreaturesEvent": [
+      "PlayerNaturallySpawnCreaturesEvent(Player,byte)"
+    ],
+    "org.bukkit.event.block.BlockShearEntityEvent": [
+      "BlockShearEntityEvent(Block,Entity,ItemStack)"
+    ],
+    "io.papermc.paper.event.entity.EntityInsideBlockEvent": [
+      "EntityInsideBlockEvent(Entity,Block)"
+    ],
+    "io.papermc.paper.event.entity.TameableDeathMessageEvent": [
+      "TameableDeathMessageEvent(Tameable,Component)"
+    ],
+    "com.destroystokyo.paper.event.profile.ProfileWhitelistVerifyEvent": [
+      "ProfileWhitelistVerifyEvent(PlayerProfile,boolean,boolean,boolean,Component)",
+      "ProfileWhitelistVerifyEvent(PlayerProfile,boolean,boolean,boolean,String)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerLaunchProjectileEvent": [
+      "PlayerLaunchProjectileEvent(Player,ItemStack,Projectile)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerStopSpectatingEntityEvent": [
+      "PlayerStopSpectatingEntityEvent(Player,Entity)"
+    ],
+    "com.destroystokyo.paper.event.server.WhitelistToggleEvent": [
+      "WhitelistToggleEvent(boolean)"
+    ],
+    "io.papermc.paper.event.block.DragonEggFormEvent": [
+      "DragonEggFormEvent(Block,BlockState,DragonBattle)"
+    ],
+    "com.destroystokyo.paper.event.entity.TurtleLayEggEvent": [
+      "TurtleLayEggEvent(Turtle,Location,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerLoomPatternSelectEvent": [
+      "PlayerLoomPatternSelectEvent(Player,LoomInventory,PatternType)"
+    ],
+    "io.papermc.paper.event.entity.EntityPortalReadyEvent": [
+      "EntityPortalReadyEvent(Entity,World,PortalType)"
+    ],
+    "io.papermc.paper.event.block.BlockPreDispenseEvent": [
+      "BlockPreDispenseEvent(Block,ItemStack,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerUntrackEntityEvent": [
+      "PlayerUntrackEntityEvent(Player,Entity)"
+    ],
+    "io.papermc.paper.event.entity.EntityMoveEvent": [
+      "EntityMoveEvent(LivingEntity,Location,Location)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByEntityEvent": [
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,Map,Map,boolean)"
+    ],
+    "com.destroystokyo.paper.event.inventory.PrepareResultEvent": [
+      "PrepareResultEvent(InventoryView,ItemStack)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeChangeDirectionEvent": [
+      "SlimeChangeDirectionEvent(Slime,float)"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "RIAL_CHAMBER_CONSUMABLES"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeTargetLivingEntityEvent": [
+      "SlimeTargetLivingEntityEvent(Slime,LivingEntity)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderEvent": [
+      "WorldBorderEvent(World,WorldBorder)"
+    ],
+    "io.papermc.paper.event.block.BellRevealRaiderEvent": [
+      "BellRevealRaiderEvent(Block,Entity)"
+    ],
+    "io.papermc.paper.event.packet.PlayerChunkUnloadEvent": [
+      "PlayerChunkUnloadEvent(Chunk,Player)"
+    ],
+    "org.bukkit.event.player.PlayerShearEntityEvent": [
+      "PlayerShearEntityEvent(Player,Entity,ItemStack,EquipmentSlot)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeFinishEvent": [
+      "WorldBorderBoundsChangeFinishEvent(World,WorldBorder,double,double,double)"
+    ],
+    "com.destroystokyo.paper.event.entity.WitchReadyPotionEvent": [
+      "WitchReadyPotionEvent(Witch,ItemStack)",
+      "process(Witch,ItemStack)"
+    ],
+    "com.destroystokyo.paper.event.entity.EnderDragonShootFireballEvent": [
+      "EnderDragonShootFireballEvent(EnderDragon,DragonFireball)"
+    ],
+    "io.papermc.paper.event.block.BeaconDeactivatedEvent": [
+      "BeaconDeactivatedEvent(Block)"
+    ],
+    "com.destroystokyo.paper.event.entity.SkeletonHorseTrapEvent": [
+      "SkeletonHorseTrapEvent(SkeletonHorse)",
+      "SkeletonHorseTrapEvent(SkeletonHorse,List)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent": [
+      "PlayerPostRespawnEvent(Player,Location,boolean)"
+    ],
+    "com.destroystokyo.paper.event.profile.LookupProfileEvent": [
+      "LookupProfileEvent(PlayerProfile)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,List,int,Component)",
+      "PlayerDeathEvent(Player,List,int,int,Component,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,Component,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,Component,String,boolean)",
+      "adventure$deathMessage",
+      "getDeathMessageString(Component)"
+    ],
+    "com.destroystokyo.paper.event.profile.PreLookupProfileEvent": [
+      "PreLookupProfileEvent(String)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderCenterChangeEvent": [
+      "WorldBorderCenterChangeEvent(World,WorldBorder,Location,Location)"
+    ],
+    "io.papermc.paper.event.player.PlayerItemCooldownEvent": [
+      "PlayerItemCooldownEvent(Player,Material,int)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent": [
+      "PlayerKickEvent(Player,Component,Component,Cause)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimePathfindEvent": [
+      "SlimePathfindEvent(Slime)"
+    ],
+    "com.destroystokyo.paper.event.entity.WitchConsumePotionEvent": [
+      "WitchConsumePotionEvent(Witch,ItemStack)"
+    ],
+    "io.papermc.paper.event.entity.EntityDyeEvent": [
+      "EntityDyeEvent(Entity,DyeColor,Player)"
+    ],
+    "io.papermc.paper.event.player.PlayerDeepSleepEvent": [
+      "PlayerDeepSleepEvent(Player)"
+    ],
+    "com.destroystokyo.paper.event.entity.PreSpawnerSpawnEvent": [
+      "PreSpawnerSpawnEvent(Location,EntityType,Location)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityJumpEvent": [
+      "EntityJumpEvent(LivingEntity)"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent.PlayerIterator": [
+      "PlayerIterator()",
+      "next"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityAddToWorldEvent": [
+      "EntityAddToWorldEvent(Entity)"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent": [
+      "PaperServerListPingEvent(StatusClient,Component,int,int,String,int,CachedServerIcon)",
+      "PaperServerListPingEvent(StatusClient,String,int,int,String,int,CachedServerIcon)"
+    ],
+    "com.destroystokyo.paper.event.entity.SlimeSwimEvent": [
+      "SlimeSwimEvent(Slime)"
+    ],
+    "io.papermc.paper.event.block.CompostItemEvent": [
+      "CompostItemEvent(Block,ItemStack,boolean)"
+    ],
+    "io.papermc.paper.event.player.PlayerTradeEvent": [
+      "PlayerTradeEvent(Player,AbstractVillager,MerchantRecipe,boolean,boolean)"
+    ],
+    "io.papermc.paper.event.player.PlayerFlowerPotManipulateEvent": [
+      "PlayerFlowerPotManipulateEvent(Player,Block,ItemStack,boolean)"
+    ],
+    "io.papermc.paper.event.player.PlayerPurchaseEvent": [
+      "PlayerPurchaseEvent(Player,MerchantRecipe,boolean,boolean)"
+    ],
+    "com.destroystokyo.paper.event.block.BeaconEffectEvent": [
+      "BeaconEffectEvent(Block,PotionEffect,Player,boolean)"
+    ],
+    "io.papermc.paper.event.player.PrePlayerAttackEntityEvent": [
+      "PrePlayerAttackEntityEvent(Player,Entity,boolean)"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent": [
+      "WorldBorderBoundsChangeEvent(World,WorldBorder,Type,double,double,long)"
+    ],
+    "io.papermc.paper.event.player.PlayerFailMoveEvent": [
+      "PlayerFailMoveEvent(Player,FailReason,boolean,boolean,Location,Location)"
+    ],
+    "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.CompletionImpl": [
+      "CompletionImpl(String,Component)",
+      "suggestion",
+      "tooltip"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerRecipeBookClickEvent": [
+      "PlayerRecipeBookClickEvent(Player,NamespacedKey,boolean)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerUseUnknownEntityEvent": [
+      "PlayerUseUnknownEntityEvent(Player,int,boolean,EquipmentSlot,Vector)"
+    ],
+    "io.papermc.paper.event.block.PlayerShearBlockEvent": [
+      "PlayerShearBlockEvent(Player,Block,ItemStack,EquipmentSlot,List)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerStartSpectatingEntityEvent": [
+      "PlayerStartSpectatingEntityEvent(Player,Entity,Entity)"
+    ],
+    "io.papermc.paper.event.entity.EntityToggleSitEvent": [
+      "EntityToggleSitEvent(Entity,boolean)"
+    ],
+    "io.papermc.paper.event.block.TargetHitEvent": [
+      "TargetHitEvent(Projectile,Block,BlockFace,int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent.SlotType": [
+      "immutableTypes",
+      "mutableTypes"
+    ],
+    "io.papermc.paper.event.entity.WaterBottleSplashEvent": [
+      "WaterBottleSplashEvent(ThrownPotion,Map,Set,Set)"
+    ],
+    "io.papermc.paper.event.block.BeaconActivatedEvent": [
+      "BeaconActivatedEvent(Block)"
+    ],
+    "io.papermc.paper.event.world.WorldGameRuleChangeEvent": [
+      "WorldGameRuleChangeEvent(World,CommandSender,GameRule,String)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerHandshakeEvent": [
+      "PlayerHandshakeEvent(String,String,boolean)",
+      "PlayerHandshakeEvent(String,boolean)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerSetSpawnEvent": [
+      "PlayerSetSpawnEvent(Player,Cause,Location,boolean,boolean,Component)"
+    ],
+    "io.papermc.paper.event.player.PlayerLecternPageChangeEvent": [
+      "PlayerLecternPageChangeEvent(Player,Lectern,ItemStack,PageChangeDirection,int,int)"
+    ],
+    "io.papermc.paper.event.player.PlayerPickItemEvent": [
+      "PlayerPickItemEvent(Player,int,int)"
+    ],
+    "io.papermc.paper.event.world.StructureLocateEvent": [
+      "StructureLocateEvent(World,Location,StructureType,int,boolean)"
+    ],
+    "io.papermc.paper.event.packet.PlayerChunkLoadEvent": [
+      "PlayerChunkLoadEvent(Chunk,Player)"
+    ],
+    "io.papermc.paper.event.block.BlockLockCheckEvent": [
+      "BlockLockCheckEvent(Block,LockableTileState,Player,Component,Sound)"
+    ],
+    "com.destroystokyo.paper.event.block.BlockDestroyEvent": [
+      "BlockDestroyEvent(Block,BlockData,boolean)"
+    ],
+    "io.papermc.paper.event.block.BlockBreakBlockEvent": [
+      "BlockBreakBlockEvent(Block,Block,List)"
+    ],
+    "com.destroystokyo.paper.event.profile.PreFillProfileEvent": [
+      "PreFillProfileEvent(PlayerProfile)"
+    ]
+  }
+}

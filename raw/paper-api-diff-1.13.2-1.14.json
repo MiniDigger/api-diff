@@ -1,0 +1,990 @@
+{
+  "versionA": "1.13.2",
+  "versionB": "1.14",
+  "packagesAdded": [
+    "org.bukkit.persistence"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "org.bukkit.Registry",
+    "org.bukkit.Registry.SimpleRegistry",
+    "org.bukkit.block.Barrel",
+    "org.bukkit.block.Bell",
+    "org.bukkit.block.BlastFurnace",
+    "org.bukkit.block.Campfire",
+    "org.bukkit.block.Jigsaw",
+    "org.bukkit.block.Lectern",
+    "org.bukkit.block.Smoker",
+    "org.bukkit.block.TileState",
+    "org.bukkit.block.data.type.Bamboo",
+    "org.bukkit.block.data.type.Bamboo.Leaves",
+    "org.bukkit.block.data.type.Bell",
+    "org.bukkit.block.data.type.Bell.Attachment",
+    "org.bukkit.block.data.type.Campfire",
+    "org.bukkit.block.data.type.Lantern",
+    "org.bukkit.block.data.type.Lectern",
+    "org.bukkit.block.data.type.Scaffolding",
+    "org.bukkit.entity.AbstractArrow",
+    "org.bukkit.entity.AbstractArrow.PickupRule",
+    "org.bukkit.entity.AbstractArrow.PickupStatus",
+    "org.bukkit.entity.AbstractVillager",
+    "org.bukkit.entity.Cat",
+    "org.bukkit.entity.Cat.Type",
+    "org.bukkit.entity.Fox",
+    "org.bukkit.entity.Fox.Type",
+    "org.bukkit.entity.MushroomCow.Variant",
+    "org.bukkit.entity.Panda",
+    "org.bukkit.entity.Panda.Gene",
+    "org.bukkit.entity.Pillager",
+    "org.bukkit.entity.Pose",
+    "org.bukkit.entity.Raider",
+    "org.bukkit.entity.Ravager",
+    "org.bukkit.entity.TraderLlama",
+    "org.bukkit.entity.Villager.Type",
+    "org.bukkit.entity.WanderingTrader",
+    "org.bukkit.event.block.BlockCookEvent",
+    "org.bukkit.event.block.BlockShearEntityEvent",
+    "org.bukkit.event.entity.EntityPoseChangeEvent",
+    "org.bukkit.event.inventory.TradeSelectEvent",
+    "org.bukkit.inventory.BlastingRecipe",
+    "org.bukkit.inventory.BlockInventoryHolder",
+    "org.bukkit.inventory.CampfireRecipe",
+    "org.bukkit.inventory.CartographyInventory",
+    "org.bukkit.inventory.CookingRecipe",
+    "org.bukkit.inventory.GrindstoneInventory",
+    "org.bukkit.inventory.LecternInventory",
+    "org.bukkit.inventory.LoomInventory",
+    "org.bukkit.inventory.SmokingRecipe",
+    "org.bukkit.inventory.StonecutterInventory",
+    "org.bukkit.inventory.StonecuttingRecipe",
+    "org.bukkit.inventory.meta.BlockDataMeta",
+    "org.bukkit.inventory.meta.CrossbowMeta",
+    "org.bukkit.persistence.PersistentDataAdapterContext",
+    "org.bukkit.persistence.PersistentDataContainer",
+    "org.bukkit.persistence.PersistentDataHolder",
+    "org.bukkit.persistence.PersistentDataType",
+    "org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType"
+  ],
+  "classesRemoved": [
+    "org.bukkit.TravelAgent",
+    "org.bukkit.entity.Arrow.PickupRule",
+    "org.bukkit.entity.Arrow.PickupStatus",
+    "org.bukkit.entity.Arrow.Spigot",
+    "org.bukkit.entity.Villager.Career",
+    "org.bukkit.entity.Weather"
+  ],
+  "classesChanged": [
+    "org.bukkit.Art",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Chunk",
+    "org.bukkit.Instrument",
+    "org.bukkit.Location",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Statistic",
+    "org.bukkit.StructureType",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.block.Beacon",
+    "org.bukkit.block.Biome",
+    "org.bukkit.block.banner.PatternType",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.enchantments.EnchantmentTarget",
+    "org.bukkit.entity.Arrow",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.ExperienceOrb.SpawnReason",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.MushroomCow",
+    "org.bukkit.entity.TippedArrow",
+    "org.bukkit.entity.Villager",
+    "org.bukkit.entity.Villager.Profession",
+    "org.bukkit.event.entity.EntityPortalEvent",
+    "org.bukkit.event.entity.EntityShootBowEvent",
+    "org.bukkit.event.entity.EntityTargetEvent.TargetReason",
+    "org.bukkit.event.entity.VillagerAcquireTradeEvent",
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent",
+    "org.bukkit.event.inventory.FurnaceSmeltEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.player.PlayerPickupArrowEvent",
+    "org.bukkit.event.player.PlayerPortalEvent",
+    "org.bukkit.event.server.BroadcastMessageEvent",
+    "org.bukkit.event.world.ChunkUnloadEvent",
+    "org.bukkit.event.world.PortalCreateEvent",
+    "org.bukkit.event.world.PortalCreateEvent.CreateReason",
+    "org.bukkit.generator.ChunkGenerator",
+    "org.bukkit.inventory.FurnaceRecipe",
+    "org.bukkit.inventory.Inventory",
+    "org.bukkit.inventory.InventoryView.Property",
+    "org.bukkit.inventory.MerchantInventory",
+    "org.bukkit.inventory.MerchantRecipe",
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.loot.LootTables",
+    "org.bukkit.map.MapView",
+    "org.bukkit.potion.PotionEffectType"
+  ],
+  "membersAdded": {
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice": [
+      "MaterialChoice(Tag)"
+    ],
+    "org.bukkit.event.entity.EntityPoseChangeEvent": [
+      "getPose()",
+      "EntityPoseChangeEvent(Entity,Pose)",
+      "pose"
+    ],
+    "org.bukkit.block.banner.PatternType": [
+      "GLOBE"
+    ],
+    "org.bukkit.event.entity.EntityTargetEvent.TargetReason": [
+      "FOLLOW_LEADER"
+    ],
+    "org.bukkit.entity.Raider": [
+      "getPatrolTarget()",
+      "isPatrolLeader()",
+      "setPatrolLeader(boolean)",
+      "setPatrolTarget(Block)"
+    ],
+    "org.bukkit.event.player.PlayerPortalEvent": [
+      "PlayerPortalEvent(Player,Location,Location)",
+      "PlayerPortalEvent(Player,Location,Location,TeleportCause)"
+    ],
+    "org.bukkit.event.inventory.TradeSelectEvent": [
+      "TradeSelectEvent(InventoryView,int)",
+      "getIndex()",
+      "index"
+    ],
+    "org.bukkit.enchantments.Enchantment": [
+      "MULTISHOT",
+      "PIERCING",
+      "QUICK_CHARGE"
+    ],
+    "org.bukkit.block.data.type.Bell": [
+      "setAttachment(Attachment)"
+    ],
+    "org.bukkit.persistence.PersistentDataHolder": [
+      "getPersistentDataContainer()"
+    ],
+    "org.bukkit.Statistic": [
+      "BELL_RING",
+      "INTERACT_WITH_BLAST_FURNACE",
+      "INTERACT_WITH_CAMPFIRE",
+      "INTERACT_WITH_CARTOGRAPHY_TABLE",
+      "INTERACT_WITH_LECTERN",
+      "INTERACT_WITH_LOOM",
+      "INTERACT_WITH_SMOKER",
+      "INTERACT_WITH_STONECUTTER",
+      "OPEN_BARREL",
+      "RAID_TRIGGER",
+      "RAID_WIN"
+    ],
+    "org.bukkit.entity.Panda.Gene": [
+      "AGGRESSIVE",
+      "Gene(boolean)",
+      "LAZY",
+      "PLAYFUL",
+      "WEAK",
+      "WORRIED",
+      "isRecessive()",
+      "recessive"
+    ],
+    "org.bukkit.block.Biome": [
+      "BAMBOO_JUNGLE",
+      "BAMBOO_JUNGLE_HILLS"
+    ],
+    "org.bukkit.generator.ChunkGenerator": [
+      "isParallelCapable()"
+    ],
+    "org.bukkit.enchantments.EnchantmentTarget": [
+      "CROSSBOW"
+    ],
+    "org.bukkit.Location": [
+      "isWorldLoaded()"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getMaterial(String,int)",
+      "getTimingsServerName()"
+    ],
+    "org.bukkit.Instrument": [
+      "BANJO",
+      "BIT",
+      "COW_BELL",
+      "DIDGERIDOO",
+      "IRON_XYLOPHONE",
+      "PLING"
+    ],
+    "org.bukkit.Registry.SimpleRegistry": [
+      "get(NamespacedKey)",
+      "SimpleRegistry(Class)",
+      "SimpleRegistry(Class,Predicate)"
+    ],
+    "org.bukkit.block.data.type.Campfire": [
+      "isSignalFire()",
+      "setSignalFire(boolean)"
+    ],
+    "org.bukkit.Material": [
+      "ACACIA_SIGN",
+      "ACACIA_WALL_SIGN",
+      "ANDESITE_SLAB",
+      "ANDESITE_STAIRS",
+      "ANDESITE_WALL",
+      "BAMBOO",
+      "BAMBOO_SAPLING",
+      "BIRCH_SIGN",
+      "BIRCH_WALL_SIGN",
+      "BLACK_DYE",
+      "BLUE_DYE",
+      "BRICK_WALL",
+      "BROWN_DYE",
+      "CAMPFIRE",
+      "CARTOGRAPHY_TABLE",
+      "CAT_SPAWN_EGG",
+      "CORNFLOWER",
+      "CREEPER_BANNER_PATTERN",
+      "CUT_RED_SANDSTONE_SLAB",
+      "CUT_SANDSTONE_SLAB",
+      "DARK_OAK_SIGN",
+      "DARK_OAK_WALL_SIGN",
+      "DIORITE_SLAB",
+      "DIORITE_STAIRS",
+      "DIORITE_WALL",
+      "END_STONE_BRICK_SLAB",
+      "END_STONE_BRICK_STAIRS",
+      "END_STONE_BRICK_WALL",
+      "FLETCHING_TABLE",
+      "FLOWER_BANNER_PATTERN",
+      "FOX_SPAWN_EGG",
+      "GLOBE_BANNER_PATTERN",
+      "GRANITE_SLAB",
+      "GRANITE_STAIRS",
+      "GRANITE_WALL",
+      "GREEN_DYE",
+      "JIGSAW",
+      "JUNGLE_SIGN",
+      "JUNGLE_WALL_SIGN",
+      "LANTERN",
+      "LEATHER_HORSE_ARMOR",
+      "LILY_OF_THE_VALLEY",
+      "MOJANG_BANNER_PATTERN",
+      "MOSSY_COBBLESTONE_SLAB",
+      "MOSSY_COBBLESTONE_STAIRS",
+      "MOSSY_STONE_BRICK_SLAB",
+      "MOSSY_STONE_BRICK_STAIRS",
+      "MOSSY_STONE_BRICK_WALL",
+      "NETHER_BRICK_WALL",
+      "OAK_SIGN",
+      "OAK_WALL_SIGN",
+      "PANDA_SPAWN_EGG",
+      "PILLAGER_SPAWN_EGG",
+      "POLISHED_ANDESITE_SLAB",
+      "POLISHED_ANDESITE_STAIRS",
+      "POLISHED_DIORITE_SLAB",
+      "POLISHED_DIORITE_STAIRS",
+      "POLISHED_GRANITE_SLAB",
+      "POLISHED_GRANITE_STAIRS",
+      "POTTED_BAMBOO",
+      "POTTED_CORNFLOWER",
+      "POTTED_LILY_OF_THE_VALLEY",
+      "POTTED_WITHER_ROSE",
+      "PRISMARINE_WALL",
+      "RAVAGER_SPAWN_EGG",
+      "RED_DYE",
+      "RED_NETHER_BRICK_SLAB",
+      "RED_NETHER_BRICK_STAIRS",
+      "RED_NETHER_BRICK_WALL",
+      "RED_SANDSTONE_WALL",
+      "SANDSTONE_WALL",
+      "SCAFFOLDING",
+      "SKULL_BANNER_PATTERN",
+      "SMITHING_TABLE",
+      "SMOOTH_QUARTZ_SLAB",
+      "SMOOTH_QUARTZ_STAIRS",
+      "SMOOTH_RED_SANDSTONE_SLAB",
+      "SMOOTH_RED_SANDSTONE_STAIRS",
+      "SMOOTH_SANDSTONE_SLAB",
+      "SMOOTH_SANDSTONE_STAIRS",
+      "SMOOTH_STONE_SLAB",
+      "SPRUCE_SIGN",
+      "SPRUCE_WALL_SIGN",
+      "STONE_BRICK_WALL",
+      "STONE_STAIRS",
+      "SUSPICIOUS_STEW",
+      "SWEET_BERRIES",
+      "SWEET_BERRY_BUSH",
+      "TRADER_LLAMA_SPAWN_EGG",
+      "WANDERING_TRADER_SPAWN_EGG",
+      "WHITE_DYE",
+      "WITHER_ROSE",
+      "YELLOW_DYE"
+    ],
+    "org.bukkit.persistence.PersistentDataContainer": [
+      "\u003cT,Z\u003eget(NamespacedKey,PersistentDataType)",
+      "\u003cT,Z\u003egetOrDefault(NamespacedKey,PersistentDataType,Z)",
+      "\u003cT,Z\u003ehas(NamespacedKey,PersistentDataType)",
+      "\u003cT,Z\u003eset(NamespacedKey,PersistentDataType,Z)",
+      "remove(NamespacedKey)"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "PILLAGER_OUTPOST",
+      "CAT",
+      "FOX",
+      "PANDA",
+      "PILLAGER",
+      "RAVAGER",
+      "TRADER_LLAMA",
+      "WANDERING_TRADER",
+      "ARMORER_GIFT",
+      "BUTCHER_GIFT",
+      "CARTOGRAPHER_GIFT",
+      "CAT_MORNING_GIFT",
+      "CLERIC_GIFT",
+      "FARMER_GIFT",
+      "FISHERMAN_GIFT",
+      "FLETCHER_GIFT",
+      "LEATHERWORKER_GIFT",
+      "LIBRARIAN_GIFT",
+      "MASON_GIFT",
+      "MOOSHROOM",
+      "SHEEP_LIGHT_GRAY",
+      "SHEPHERD_GIFT",
+      "TOOLSMITH_GIFT",
+      "VILLAGE_ARMORER",
+      "VILLAGE_BUTCHER",
+      "VILLAGE_CARTOGRAPHER",
+      "VILLAGE_DESERT_HOUSE",
+      "VILLAGE_FISHER",
+      "VILLAGE_FLETCHER",
+      "VILLAGE_MASON",
+      "VILLAGE_PLAINS_HOUSE",
+      "VILLAGE_SAVANNA_HOUSE",
+      "VILLAGE_SHEPHERD",
+      "VILLAGE_SNOWY_HOUSE",
+      "VILLAGE_TAIGA_HOUSE",
+      "VILLAGE_TANNERY",
+      "VILLAGE_TEMPLE",
+      "VILLAGE_TOOLSMITH",
+      "VILLAGE_WEAPONSMITH",
+      "WEAPONSMITH_GIFT"
+    ],
+    "org.bukkit.entity.Villager.Profession": [
+      "MASON",
+      "Profession()",
+      "TOOLSMITH",
+      "WEAPONSMITH"
+    ],
+    "org.bukkit.inventory.CampfireRecipe": [
+      "CampfireRecipe(NamespacedKey,ItemStack,Material,float,int)",
+      "CampfireRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)"
+    ],
+    "org.bukkit.inventory.InventoryView.Property": [
+      "BOOK_PAGE"
+    ],
+    "org.bukkit.block.data.type.Lectern": [
+      "hasBook()"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_BAMBOO_BREAK",
+      "BLOCK_BAMBOO_FALL",
+      "BLOCK_BAMBOO_HIT",
+      "BLOCK_BAMBOO_PLACE",
+      "BLOCK_BAMBOO_SAPLING_BREAK",
+      "BLOCK_BAMBOO_SAPLING_HIT",
+      "BLOCK_BAMBOO_SAPLING_PLACE",
+      "BLOCK_BAMBOO_STEP",
+      "BLOCK_BARREL_CLOSE",
+      "BLOCK_BARREL_OPEN",
+      "BLOCK_BELL_RESONATE",
+      "BLOCK_BELL_USE",
+      "BLOCK_BLASTFURNACE_FIRE_CRACKLE",
+      "BLOCK_CAMPFIRE_CRACKLE",
+      "BLOCK_COMPOSTER_EMPTY",
+      "BLOCK_COMPOSTER_FILL",
+      "BLOCK_COMPOSTER_FILL_SUCCESS",
+      "BLOCK_COMPOSTER_READY",
+      "BLOCK_CROP_BREAK",
+      "BLOCK_GRINDSTONE_USE",
+      "BLOCK_LANTERN_BREAK",
+      "BLOCK_LANTERN_FALL",
+      "BLOCK_LANTERN_HIT",
+      "BLOCK_LANTERN_PLACE",
+      "BLOCK_LANTERN_STEP",
+      "BLOCK_NETHER_WART_BREAK",
+      "BLOCK_NOTE_BLOCK_BANJO",
+      "BLOCK_NOTE_BLOCK_BIT",
+      "BLOCK_NOTE_BLOCK_COW_BELL",
+      "BLOCK_NOTE_BLOCK_DIDGERIDOO",
+      "BLOCK_NOTE_BLOCK_IRON_XYLOPHONE",
+      "BLOCK_SCAFFOLDING_BREAK",
+      "BLOCK_SCAFFOLDING_FALL",
+      "BLOCK_SCAFFOLDING_HIT",
+      "BLOCK_SCAFFOLDING_PLACE",
+      "BLOCK_SCAFFOLDING_STEP",
+      "BLOCK_SMOKER_SMOKE",
+      "BLOCK_SWEET_BERRY_BUSH_BREAK",
+      "BLOCK_SWEET_BERRY_BUSH_PLACE",
+      "ENTITY_CAT_BEG_FOR_FOOD",
+      "ENTITY_CAT_EAT",
+      "ENTITY_CAT_STRAY_AMBIENT",
+      "ENTITY_EVOKER_CELEBRATE",
+      "ENTITY_FOX_AGGRO",
+      "ENTITY_FOX_AMBIENT",
+      "ENTITY_FOX_BITE",
+      "ENTITY_FOX_DEATH",
+      "ENTITY_FOX_EAT",
+      "ENTITY_FOX_HURT",
+      "ENTITY_FOX_SCREECH",
+      "ENTITY_FOX_SLEEP",
+      "ENTITY_FOX_SNIFF",
+      "ENTITY_FOX_SPIT",
+      "ENTITY_MOOSHROOM_CONVERT",
+      "ENTITY_MOOSHROOM_EAT",
+      "ENTITY_MOOSHROOM_MILK",
+      "ENTITY_MOOSHROOM_SUSPICIOUS_MILK",
+      "ENTITY_OCELOT_AMBIENT",
+      "ENTITY_OCELOT_DEATH",
+      "ENTITY_OCELOT_HURT",
+      "ENTITY_PANDA_AGGRESSIVE_AMBIENT",
+      "ENTITY_PANDA_AMBIENT",
+      "ENTITY_PANDA_BITE",
+      "ENTITY_PANDA_CANT_BREED",
+      "ENTITY_PANDA_DEATH",
+      "ENTITY_PANDA_EAT",
+      "ENTITY_PANDA_HURT",
+      "ENTITY_PANDA_PRE_SNEEZE",
+      "ENTITY_PANDA_SNEEZE",
+      "ENTITY_PANDA_STEP",
+      "ENTITY_PANDA_WORRIED_AMBIENT",
+      "ENTITY_PARROT_IMITATE_GUARDIAN",
+      "ENTITY_PARROT_IMITATE_PANDA",
+      "ENTITY_PARROT_IMITATE_PILLAGER",
+      "ENTITY_PARROT_IMITATE_RAVAGER",
+      "ENTITY_PILLAGER_AMBIENT",
+      "ENTITY_PILLAGER_CELEBRATE",
+      "ENTITY_PILLAGER_DEATH",
+      "ENTITY_PILLAGER_HURT",
+      "ENTITY_PLAYER_HURT_SWEET_BERRY_BUSH",
+      "ENTITY_RAVAGER_AMBIENT",
+      "ENTITY_RAVAGER_ATTACK",
+      "ENTITY_RAVAGER_CELEBRATE",
+      "ENTITY_RAVAGER_DEATH",
+      "ENTITY_RAVAGER_HURT",
+      "ENTITY_RAVAGER_ROAR",
+      "ENTITY_RAVAGER_STEP",
+      "ENTITY_RAVAGER_STUNNED",
+      "ENTITY_VILLAGER_CELEBRATE",
+      "ENTITY_VILLAGER_WORK_ARMORER",
+      "ENTITY_VILLAGER_WORK_BUTCHER",
+      "ENTITY_VILLAGER_WORK_CARTOGRAPHER",
+      "ENTITY_VILLAGER_WORK_CLERIC",
+      "ENTITY_VILLAGER_WORK_FARMER",
+      "ENTITY_VILLAGER_WORK_FISHERMAN",
+      "ENTITY_VILLAGER_WORK_FLETCHER",
+      "ENTITY_VILLAGER_WORK_LEATHERWORKER",
+      "ENTITY_VILLAGER_WORK_LIBRARIAN",
+      "ENTITY_VILLAGER_WORK_MASON",
+      "ENTITY_VILLAGER_WORK_SHEPHERD",
+      "ENTITY_VILLAGER_WORK_TOOLSMITH",
+      "ENTITY_VILLAGER_WORK_WEAPONSMITH",
+      "ENTITY_VINDICATOR_CELEBRATE",
+      "ENTITY_WANDERING_TRADER_AMBIENT",
+      "ENTITY_WANDERING_TRADER_DEATH",
+      "ENTITY_WANDERING_TRADER_DISAPPEARED",
+      "ENTITY_WANDERING_TRADER_DRINK_MILK",
+      "ENTITY_WANDERING_TRADER_DRINK_POTION",
+      "ENTITY_WANDERING_TRADER_HURT",
+      "ENTITY_WANDERING_TRADER_NO",
+      "ENTITY_WANDERING_TRADER_REAPPEARED",
+      "ENTITY_WANDERING_TRADER_TRADE",
+      "ENTITY_WANDERING_TRADER_YES",
+      "ENTITY_WITCH_CELEBRATE",
+      "EVENT_RAID_HORN",
+      "ITEM_BOOK_PAGE_TURN",
+      "ITEM_BOOK_PUT",
+      "ITEM_CROP_PLANT",
+      "ITEM_CROSSBOW_HIT",
+      "ITEM_CROSSBOW_LOADING_END",
+      "ITEM_CROSSBOW_LOADING_MIDDLE",
+      "ITEM_CROSSBOW_LOADING_START",
+      "ITEM_CROSSBOW_QUICK_CHARGE_1",
+      "ITEM_CROSSBOW_QUICK_CHARGE_2",
+      "ITEM_CROSSBOW_QUICK_CHARGE_3",
+      "ITEM_CROSSBOW_SHOOT",
+      "ITEM_NETHER_WART_PLANT",
+      "ITEM_SWEET_BERRIES_PICK_FROM_BUSH",
+      "UI_CARTOGRAPHY_TABLE_TAKE_RESULT",
+      "UI_LOOM_SELECT_PATTERN",
+      "UI_LOOM_TAKE_RESULT",
+      "UI_STONECUTTER_SELECT_RECIPE",
+      "UI_STONECUTTER_TAKE_RESULT"
+    ],
+    "org.bukkit.entity.Villager": [
+      "getVillagerLevel()",
+      "getVillagerType()",
+      "setVillagerLevel(int)",
+      "setVillagerType(Type)"
+    ],
+    "org.bukkit.inventory.meta.BlockDataMeta": [
+      "getBlockData(Material)",
+      "hasBlockData()"
+    ],
+    "org.bukkit.block.Campfire": [
+      "getCookTime(int)",
+      "getCookTimeTotal(int)",
+      "setCookTime(int,int)",
+      "setCookTimeTotal(int,int)"
+    ],
+    "org.bukkit.inventory.BlastingRecipe": [
+      "BlastingRecipe(NamespacedKey,ItemStack,Material,float,int)",
+      "BlastingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)"
+    ],
+    "org.bukkit.entity.Fox": [
+      "getFoxType()",
+      "isCrouching()",
+      "setCrouching(boolean)",
+      "setFoxType(Type)",
+      "setSleeping(boolean)"
+    ],
+    "org.bukkit.block.Lectern": [
+      "getPage()",
+      "setPage(int)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent.CreateReason": [
+      "END_PLATFORM",
+      "NETHER_PAIR"
+    ],
+    "org.bukkit.inventory.meta.CrossbowMeta": [
+      "addChargedProjectile(ItemStack)",
+      "getChargedProjectiles()",
+      "hasChargedProjectiles()",
+      "setChargedProjectiles(List)"
+    ],
+    "org.bukkit.entity.Cat.Type": [
+      "ALL_BLACK",
+      "BRITISH_SHORTHAIR",
+      "CALICO",
+      "JELLIE",
+      "PERSIAN",
+      "RAGDOLL",
+      "SIAMESE",
+      "TABBY"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "BAD_OMEN",
+      "HERO_OF_THE_VILLAGE"
+    ],
+    "org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType": [
+      "fromPrimitive(T,PersistentDataAdapterContext)",
+      "PrimitivePersistentDataType(Class)",
+      "toPrimitive(T,PersistentDataAdapterContext)"
+    ],
+    "org.bukkit.persistence.PersistentDataType": [
+      "toPrimitive(Z,PersistentDataAdapterContext)"
+    ],
+    "org.bukkit.Registry": [
+      "ADVANCEMENT",
+      "ART",
+      "BIOME",
+      "BOSS_BARS",
+      "ENCHANTMENT",
+      "ENTITY_TYPE",
+      "LOOT_TABLES",
+      "MATERIAL",
+      "STATISTIC",
+      "VILLAGER_PROFESSION",
+      "VILLAGER_TYPE"
+    ],
+    "org.bukkit.entity.Panda": [
+      "getHiddenGene()",
+      "getMainGene()",
+      "setHiddenGene(Gene)",
+      "setMainGene(Gene)"
+    ],
+    "org.bukkit.Tag": [
+      "BAMBOO_PLANTABLE_ON",
+      "DIRT_LIKE",
+      "ITEMS_ARROWS",
+      "ITEMS_COALS",
+      "ITEMS_MUSIC_DISCS",
+      "SMALL_FLOWERS",
+      "STANDING_SIGNS",
+      "WALLS",
+      "WALL_SIGNS"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getCustomModelData()",
+      "hasCustomModelData()",
+      "setCustomModelData(Integer)",
+      "setVersion(int)"
+    ],
+    "org.bukkit.inventory.StonecuttingRecipe": [
+      "StonecuttingRecipe(NamespacedKey,ItemStack,Material)",
+      "StonecuttingRecipe(NamespacedKey,ItemStack,RecipeChoice)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(List,World,CreateReason)"
+    ],
+    "org.bukkit.event.entity.VillagerAcquireTradeEvent": [
+      "VillagerAcquireTradeEvent(AbstractVillager,MerchantRecipe)"
+    ],
+    "org.bukkit.block.data.type.Bell.Attachment": [
+      "Attachment()",
+      "DOUBLE_WALL",
+      "SINGLE_WALL"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,Entity,float)",
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,float)"
+    ],
+    "org.bukkit.inventory.MerchantRecipe": [
+      "getVillagerExperience()",
+      "setVillagerExperience(int)",
+      "MerchantRecipe(ItemStack,int,int,boolean,int,float)",
+      "getPriceMultiplier()",
+      "priceMultiplier",
+      "setPriceMultiplier(float)",
+      "villagerExperience"
+    ],
+    "org.bukkit.event.player.PlayerPickupArrowEvent": [
+      "PlayerPickupArrowEvent(Player,Item,AbstractArrow)"
+    ],
+    "org.bukkit.block.data.type.Bamboo": [
+      "getLeaves()",
+      "setLeaves(Leaves)"
+    ],
+    "org.bukkit.inventory.SmokingRecipe": [
+      "SmokingRecipe(NamespacedKey,ItemStack,Material,float,int)",
+      "SmokingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)"
+    ],
+    "org.bukkit.inventory.CookingRecipe": [
+      "CookingRecipe(NamespacedKey,ItemStack,Material,float,int)",
+      "CookingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)"
+    ],
+    "org.bukkit.event.entity.EntityPortalEvent": [
+      "EntityPortalEvent(Entity,Location,Location)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "BARREL",
+      "BLAST_FURNACE",
+      "GRINDSTONE",
+      "LECTERN",
+      "LOOM",
+      "SMOKER",
+      "STONECUTTER",
+      "CARTOGRAPHY"
+    ],
+    "org.bukkit.event.block.BlockCookEvent": [
+      "BlockCookEvent(Block,ItemStack,ItemStack)"
+    ],
+    "org.bukkit.event.server.BroadcastMessageEvent": [
+      "BroadcastMessageEvent(boolean,String,Set)"
+    ],
+    "org.bukkit.Particle": [
+      "COMPOSTER",
+      "CAMPFIRE_COSY_SMOKE",
+      "CAMPFIRE_SIGNAL_SMOKE",
+      "FALLING_LAVA",
+      "FALLING_WATER",
+      "FLASH",
+      "LANDING_LAVA",
+      "SNEEZE"
+    ],
+    "org.bukkit.entity.Pose": [
+      "FALL_FLYING",
+      "Pose()",
+      "SLEEPING",
+      "SNEAKING",
+      "SPIN_ATTACK",
+      "STANDING",
+      "SWIMMING"
+    ],
+    "org.bukkit.block.data.type.Scaffolding": [
+      "getMaximumDistance()",
+      "isBottom()",
+      "setBottom(boolean)"
+    ],
+    "org.bukkit.event.block.BlockShearEntityEvent": [
+      "BlockShearEntityEvent(Block,Entity,ItemStack)",
+      "getTool()",
+      "sheared",
+      "tool"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe,int)"
+    ],
+    "org.bukkit.persistence.PersistentDataAdapterContext": [
+      "newPersistentDataContainer()"
+    ],
+    "org.bukkit.inventory.MerchantInventory": [
+      "getMerchant()"
+    ],
+    "org.bukkit.block.data.type.Lantern": [
+      "isHanging()",
+      "setHanging(boolean)"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.loot.LootTables": [
+      "VILLAGE_BLACKSMITH"
+    ],
+    "org.bukkit.event.player.PlayerPortalEvent": [
+      "getPortalTravelAgent()",
+      "setPortalTravelAgent(TravelAgent)",
+      "travelAgent",
+      "useTravelAgent",
+      "useTravelAgent()",
+      "useTravelAgent(boolean)",
+      "PlayerPortalEvent(Player,Location,Location,TravelAgent)",
+      "PlayerPortalEvent(Player,Location,Location,TravelAgent,TeleportCause)"
+    ],
+    "org.bukkit.event.entity.EntityPortalEvent": [
+      "EntityPortalEvent(Entity,Location,Location,TravelAgent)"
+    ],
+    "org.bukkit.entity.Villager.Profession": [
+      "BLACKSMITH",
+      "PRIEST",
+      "Profession(boolean)",
+      "getCareers()",
+      "isZombie()",
+      "zombie"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(Collection,World,CreateReason)"
+    ],
+    "org.bukkit.entity.Villager.Career": [
+      "Career(Profession)",
+      "TOOL_SMITH",
+      "WEAPON_SMITH",
+      "careerMap",
+      "getCareers(Profession)",
+      "profession"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "COMPLEX_PART"
+    ],
+    "org.bukkit.event.entity.VillagerAcquireTradeEvent": [
+      "VillagerAcquireTradeEvent(Villager,MerchantRecipe)"
+    ],
+    "org.bukkit.entity.Villager": [
+      "getCareer()",
+      "getRiches()",
+      "setCareer(Career)",
+      "setCareer(Career,boolean)",
+      "setRiches(int)"
+    ],
+    "org.bukkit.World": [
+      "unloadChunk(int,int,boolean,boolean)",
+      "unloadChunkRequest(int,int,boolean)"
+    ],
+    "org.bukkit.Server": [
+      "getCurrentTick()",
+      "getServerId()",
+      "getServerName()"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Projectile,float)",
+      "EntityShootBowEvent(LivingEntity,ItemStack,Projectile,float)"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(Villager,MerchantRecipe,int)"
+    ],
+    "org.bukkit.Chunk": [
+      "unload(boolean,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerPickupArrowEvent": [
+      "PlayerPickupArrowEvent(Player,Item,Arrow)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent.CreateReason": [
+      "OBC_DESTINATION"
+    ],
+    "org.bukkit.TravelAgent": [
+      "createPortal(Location)",
+      "findOrCreate(Location)",
+      "findPortal(Location)",
+      "getCanCreatePortal()",
+      "getCreationRadius()",
+      "getSearchRadius()",
+      "setCanCreatePortal(boolean)",
+      "setCreationRadius(int)",
+      "setSearchRadius(int)"
+    ],
+    "org.bukkit.Material": [
+      "CACTUS_GREEN",
+      "DANDELION_YELLOW",
+      "ROSE_RED",
+      "SIGN",
+      "WALL_SIGN"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.loot.LootTables": [
+      "VILLAGE_BLACKSMITH"
+    ],
+    "org.bukkit.event.player.PlayerPortalEvent": [
+      "getPortalTravelAgent()",
+      "setPortalTravelAgent(TravelAgent)",
+      "travelAgent",
+      "useTravelAgent",
+      "useTravelAgent()",
+      "useTravelAgent(boolean)",
+      "PlayerPortalEvent(Player,Location,Location,TravelAgent)",
+      "PlayerPortalEvent(Player,Location,Location,TravelAgent,TeleportCause)"
+    ],
+    "org.bukkit.event.entity.EntityPortalEvent": [
+      "EntityPortalEvent(Entity,Location,Location,TravelAgent)"
+    ],
+    "org.bukkit.entity.Villager.Profession": [
+      "BLACKSMITH",
+      "PRIEST",
+      "Profession(boolean)",
+      "getCareers()",
+      "isZombie()",
+      "zombie"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(Collection,World,CreateReason)"
+    ],
+    "org.bukkit.entity.Villager.Career": [
+      "Career(Profession)",
+      "TOOL_SMITH",
+      "WEAPON_SMITH",
+      "careerMap",
+      "getCareers(Profession)",
+      "profession"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "COMPLEX_PART"
+    ],
+    "org.bukkit.event.entity.VillagerAcquireTradeEvent": [
+      "VillagerAcquireTradeEvent(Villager,MerchantRecipe)"
+    ],
+    "org.bukkit.entity.Villager": [
+      "getCareer()",
+      "getRiches()",
+      "setCareer(Career)",
+      "setCareer(Career,boolean)",
+      "setRiches(int)"
+    ],
+    "org.bukkit.World": [
+      "unloadChunk(int,int,boolean,boolean)",
+      "unloadChunkRequest(int,int,boolean)"
+    ],
+    "org.bukkit.Server": [
+      "getCurrentTick()",
+      "getServerId()",
+      "getServerName()"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Projectile,float)",
+      "EntityShootBowEvent(LivingEntity,ItemStack,Projectile,float)"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(Villager,MerchantRecipe,int)"
+    ],
+    "org.bukkit.Chunk": [
+      "unload(boolean,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerPickupArrowEvent": [
+      "PlayerPickupArrowEvent(Player,Item,Arrow)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent.CreateReason": [
+      "OBC_DESTINATION"
+    ],
+    "org.bukkit.TravelAgent": [
+      "createPortal(Location)",
+      "findOrCreate(Location)",
+      "findPortal(Location)",
+      "getCanCreatePortal()",
+      "getCreationRadius()",
+      "getSearchRadius()",
+      "setCanCreatePortal(boolean)",
+      "setCreationRadius(int)",
+      "setSearchRadius(int)"
+    ],
+    "org.bukkit.Material": [
+      "CACTUS_GREEN",
+      "DANDELION_YELLOW",
+      "ROSE_RED",
+      "SIGN",
+      "WALL_SIGN"
+    ]
+  }
+}

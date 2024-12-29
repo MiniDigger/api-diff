@@ -1,0 +1,219 @@
+{
+  "versionA": "1.14.3",
+  "versionB": "1.14.4",
+  "packagesAdded": [
+    "org.bukkit.event.raid"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "org.bukkit.Raid",
+    "org.bukkit.Raid.RaidStatus",
+    "org.bukkit.event.raid.RaidEvent",
+    "org.bukkit.event.raid.RaidFinishEvent",
+    "org.bukkit.event.raid.RaidSpawnWaveEvent",
+    "org.bukkit.event.raid.RaidStopEvent",
+    "org.bukkit.event.raid.RaidStopEvent.Reason",
+    "org.bukkit.event.raid.RaidTriggerEvent",
+    "org.bukkit.inventory.meta.SuspiciousStewMeta"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "org.bukkit.Bukkit",
+    "org.bukkit.Chunk",
+    "org.bukkit.ChunkSnapshot",
+    "org.bukkit.Material",
+    "org.bukkit.Server",
+    "org.bukkit.World",
+    "org.bukkit.configuration.ConfigurationSection",
+    "org.bukkit.configuration.MemorySection",
+    "org.bukkit.entity.Damageable",
+    "org.bukkit.entity.Firework",
+    "org.bukkit.entity.Villager",
+    "org.bukkit.event.block.BlockIgniteEvent.IgniteCause",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.player.PlayerBucketEmptyEvent",
+    "org.bukkit.event.player.PlayerBucketEvent",
+    "org.bukkit.event.player.PlayerBucketFillEvent"
+  ],
+  "membersAdded": {
+    "org.bukkit.entity.Firework": [
+      "isShotAtAngle()",
+      "setShotAtAngle(boolean)"
+    ],
+    "org.bukkit.entity.Damageable": [
+      "getAbsorptionAmount()",
+      "setAbsorptionAmount(double)"
+    ],
+    "org.bukkit.Raid.RaidStatus": [
+      "LOSS",
+      "ONGOING",
+      "RaidStatus()",
+      "STOPPED",
+      "VICTORY"
+    ],
+    "org.bukkit.ChunkSnapshot": [
+      "contains(BlockData)"
+    ],
+    "org.bukkit.configuration.MemorySection": [
+      "getLocation(String)",
+      "getLocation(String,Location)",
+      "isLocation(String)"
+    ],
+    "org.bukkit.event.raid.RaidTriggerEvent": [
+      "RaidTriggerEvent(Raid,World,Player)"
+    ],
+    "org.bukkit.event.player.PlayerBucketFillEvent": [
+      "PlayerBucketFillEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketFillEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.entity.Villager": [
+      "sleep(Location)",
+      "wakeup()"
+    ],
+    "org.bukkit.event.player.PlayerBucketEmptyEvent": [
+      "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.raid.RaidStopEvent.Reason": [
+      "FINISHED",
+      "NOT_IN_VILLAGE",
+      "PEACE",
+      "TIMEOUT",
+      "UNSPAWNABLE"
+    ],
+    "org.bukkit.World": [
+      "createExplosion(Location,float,boolean,boolean,Entity)",
+      "createExplosion(double,double,double,float,boolean,boolean,Entity)",
+      "getRaids()",
+      "locateNearestRaid(Location,int)"
+    ],
+    "org.bukkit.Server": [
+      "getCurrentTick()"
+    ],
+    "org.bukkit.event.raid.RaidStopEvent": [
+      "RaidStopEvent(Raid,World,Reason)"
+    ],
+    "org.bukkit.event.raid.RaidEvent": [
+      "RaidEvent(Raid,World)",
+      "getRaid()",
+      "raid"
+    ],
+    "org.bukkit.Chunk": [
+      "getInhabitedTime()",
+      "setInhabitedTime(long)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEvent": [
+      "PlayerBucketEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason": [
+      "PATROL",
+      "RAID"
+    ],
+    "org.bukkit.event.raid.RaidFinishEvent": [
+      "RaidFinishEvent(Raid,World,List)",
+      "getWinners()",
+      "winners"
+    ],
+    "org.bukkit.event.raid.RaidSpawnWaveEvent": [
+      "getRaiders()",
+      "RaidSpawnWaveEvent(Raid,World,Raider,List)",
+      "getPatrolLeader()",
+      "leader",
+      "raiders"
+    ],
+    "org.bukkit.Raid": [
+      "getActiveTicks()",
+      "getBadOmenLevel()",
+      "getHeroes()",
+      "getSpawnedGroups()",
+      "getTotalGroups()",
+      "getTotalHealth()",
+      "getTotalWaves()",
+      "isStarted()",
+      "setBadOmenLevel(int)"
+    ],
+    "org.bukkit.Material": [
+      "isAir()"
+    ]
+  },
+  "membersRemoved": {},
+  "membersChanged": {}
+}

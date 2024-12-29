@@ -1,0 +1,190 @@
+{
+  "versionA": "1.19",
+  "versionB": "1.19.1",
+  "packagesAdded": [],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.chat.ViewerUnawareImpl",
+    "io.papermc.paper.chat.ViewerUnawareImpl.Default",
+    "io.papermc.paper.event.player.AsyncChatCommandDecorateEvent",
+    "io.papermc.paper.event.player.AsyncChatDecorateEvent",
+    "org.bukkit.event.player.AsyncPlayerChatPreviewEvent"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "org.bukkit.GameEvent",
+    "org.bukkit.RegionAccessor",
+    "org.bukkit.WorldBorder",
+    "org.bukkit.block.Bed",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.event.player.PlayerKickEvent.Cause",
+    "org.bukkit.map.MapPalette"
+  ],
+  "membersAdded": {
+    "io.papermc.paper.chat.ViewerUnawareImpl": [
+      "ViewerUnawareImpl(ViewerUnaware)",
+      "unaware"
+    ],
+    "io.papermc.paper.chat.ViewerUnawareImpl.Default": [
+      "Default(ViewerUnaware)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "collidesAt(Location)",
+      "wouldCollideUsing(BoundingBox)"
+    ],
+    "org.bukkit.block.data.BlockData": [
+      "isRandomlyTicked()"
+    ],
+    "org.bukkit.entity.Player": [
+      "addAdditionalChatCompletions(Collection)",
+      "removeAdditionalChatCompletions(Collection)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent.Cause": [
+      "CHAT_VALIDATION_FAILED",
+      "OUT_OF_ORDER_CHAT",
+      "TOO_MANY_PENDING_CHATS",
+      "UNSIGNED_CHAT"
+    ],
+    "io.papermc.paper.event.player.AsyncChatCommandDecorateEvent": [
+      "AsyncChatCommandDecorateEvent(boolean,Player,Component,boolean,Component)"
+    ],
+    "org.bukkit.WorldBorder": [
+      "getMaxCenterCoordinate()",
+      "getMaxSize()",
+      "setSize(double,TimeUnit,long)"
+    ],
+    "org.bukkit.RegionAccessor": [
+      "hasCollisionsIn(BoundingBox)"
+    ],
+    "org.bukkit.block.Block": [
+      "randomTick()"
+    ],
+    "io.papermc.paper.event.player.AsyncChatDecorateEvent": [
+      "isPreview",
+      "isPreview()",
+      "player()",
+      "result()",
+      "result(Component)"
+    ],
+    "org.bukkit.map.MapPalette": [
+      "c(int,int,int,int)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerChatPreviewEvent": [
+      "AsyncPlayerChatPreviewEvent(boolean,Player,String,Set)"
+    ],
+    "org.bukkit.GameEvent": [
+      "JUKEBOX_PLAY",
+      "JUKEBOX_STOP_PLAY"
+    ]
+  },
+  "membersRemoved": {},
+  "membersChanged": {}
+}

@@ -1,0 +1,623 @@
+{
+  "versionA": "1.20.5",
+  "versionB": "1.20.6",
+  "packagesAdded": [
+    "com.destroystokyo.paper.brigadier",
+    "com.destroystokyo.paper.event.brigadier",
+    "io.papermc.paper",
+    "io.papermc.paper.brigadier",
+    "io.papermc.paper.command.brigadier",
+    "io.papermc.paper.command.brigadier.argument",
+    "io.papermc.paper.command.brigadier.argument.predicate",
+    "io.papermc.paper.command.brigadier.argument.range",
+    "io.papermc.paper.command.brigadier.argument.resolvers",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.ban",
+    "io.papermc.paper.block",
+    "io.papermc.paper.block.fluid",
+    "io.papermc.paper.block.fluid.type",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.inventory.tooltip",
+    "io.papermc.paper.math",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.lifecycle.event",
+    "io.papermc.paper.plugin.lifecycle.event.handler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar",
+    "io.papermc.paper.plugin.lifecycle.event.types",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.scoreboard.numbers",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.spawner",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.damage",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.components",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.brigadier.BukkitBrigadierCommand",
+    "com.destroystokyo.paper.brigadier.BukkitBrigadierCommandSource",
+    "com.destroystokyo.paper.event.brigadier.AsyncPlayerSendCommandsEvent",
+    "com.destroystokyo.paper.event.brigadier.AsyncPlayerSendSuggestionsEvent",
+    "com.destroystokyo.paper.event.brigadier.CommandRegisteredEvent",
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent.ListedPlayerInfo",
+    "io.papermc.paper.ServerBuildInfo",
+    "io.papermc.paper.ServerBuildInfo.StringRepresentation",
+    "io.papermc.paper.brigadier.PaperBrigadier",
+    "io.papermc.paper.command.brigadier.BasicCommand",
+    "io.papermc.paper.command.brigadier.CommandSourceStack",
+    "io.papermc.paper.command.brigadier.Commands",
+    "io.papermc.paper.command.brigadier.MessageComponentSerializer",
+    "io.papermc.paper.command.brigadier.argument.ArgumentTypes",
+    "io.papermc.paper.command.brigadier.argument.CustomArgumentType",
+    "io.papermc.paper.command.brigadier.argument.CustomArgumentType.Converted",
+    "io.papermc.paper.command.brigadier.argument.RegistryArgumentExtractor",
+    "io.papermc.paper.command.brigadier.argument.SignedMessageResolver",
+    "io.papermc.paper.command.brigadier.argument.predicate.ItemStackPredicate",
+    "io.papermc.paper.command.brigadier.argument.range.DoubleRangeProvider",
+    "io.papermc.paper.command.brigadier.argument.range.IntegerRangeProvider",
+    "io.papermc.paper.command.brigadier.argument.range.RangeProvider",
+    "io.papermc.paper.command.brigadier.argument.resolvers.ArgumentResolver",
+    "io.papermc.paper.command.brigadier.argument.resolvers.BlockPositionResolver",
+    "io.papermc.paper.command.brigadier.argument.resolvers.PlayerProfileListResolver",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector.EntitySelectorArgumentResolver",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector.PlayerSelectorArgumentResolver",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector.SelectorArgumentResolver",
+    "io.papermc.paper.event.entity.EntityKnockbackEvent",
+    "io.papermc.paper.event.entity.EntityKnockbackEvent.Cause",
+    "io.papermc.paper.registry.RegistryAccess",
+    "io.papermc.paper.registry.RegistryAccessHolder",
+    "io.papermc.paper.registry.keys.DamageTypeKeys",
+    "io.papermc.paper.registry.keys.EnchantmentKeys",
+    "io.papermc.paper.registry.keys.InstrumentKeys",
+    "io.papermc.paper.registry.keys.MobEffectKeys",
+    "io.papermc.paper.registry.keys.WolfVariantKeys",
+    "org.bukkit.inventory.meta.components.ToolComponent",
+    "org.bukkit.inventory.meta.components.ToolComponent.ToolRule",
+    "org.bukkit.potion.PotionData",
+    "org.bukkit.potion.PotionEffectTypeCategory"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.MaterialSetTag",
+    "com.destroystokyo.paper.entity.Pathfinder.PathResult",
+    "com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent",
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent",
+    "io.papermc.paper.event.block.BlockLockCheckEvent",
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent",
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents",
+    "io.papermc.paper.registry.RegistryKey",
+    "io.papermc.paper.registry.RegistryKeyImpl",
+    "io.papermc.paper.registry.keys.GameEventKeys",
+    "io.papermc.paper.tag.BaseTag",
+    "org.bukkit.Chunk",
+    "org.bukkit.GameMode",
+    "org.bukkit.Material",
+    "org.bukkit.Registry",
+    "org.bukkit.Registry.SimpleRegistry",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.TreeType",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.block.Chest",
+    "org.bukkit.block.EnderChest",
+    "org.bukkit.block.banner.PatternType",
+    "org.bukkit.command.SimpleCommandMap",
+    "org.bukkit.damage.DamageType",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.entity.AbstractArrow",
+    "org.bukkit.entity.AreaEffectCloud",
+    "org.bukkit.entity.Arrow",
+    "org.bukkit.entity.Damageable",
+    "org.bukkit.entity.ExperienceOrb",
+    "org.bukkit.entity.Fireball",
+    "org.bukkit.entity.FishHook",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Mob",
+    "org.bukkit.entity.Player",
+    "org.bukkit.event.block.BlockExplodeEvent",
+    "org.bukkit.event.entity.EntityDamageByBlockEvent",
+    "org.bukkit.event.entity.EntityDeathEvent",
+    "org.bukkit.event.entity.PlayerDeathEvent",
+    "org.bukkit.event.player.PlayerFishEvent.State",
+    "org.bukkit.inventory.EquipmentSlot",
+    "org.bukkit.inventory.EquipmentSlotGroup",
+    "org.bukkit.inventory.RecipeChoice",
+    "org.bukkit.inventory.RecipeChoice.ExactChoice",
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.LeatherArmorMeta",
+    "org.bukkit.inventory.meta.PotionMeta",
+    "org.bukkit.inventory.meta.trim.TrimPattern",
+    "org.bukkit.map.MapCursor.Type",
+    "org.bukkit.plugin.PluginDescriptionFile",
+    "org.bukkit.potion.PotionEffectType"
+  ],
+  "membersAdded": {
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice": [
+      "validate(boolean)"
+    ],
+    "org.bukkit.event.player.PlayerFishEvent.State": [
+      "LURED"
+    ],
+    "org.bukkit.TreeType": [
+      "MEGA_PINE"
+    ],
+    "org.bukkit.enchantments.Enchantment": [
+      "getAnvilCost()"
+    ],
+    "org.bukkit.entity.Player": [
+      "getHAProxyAddress()"
+    ],
+    "io.papermc.paper.event.entity.EntityKnockbackEvent.Cause": [
+      "PUSH"
+    ],
+    "org.bukkit.block.EnderChest": [
+      "isBlocked()"
+    ],
+    "io.papermc.paper.registry.keys.WolfVariantKeys": [
+      "WolfVariantKeys()"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents": [
+      "COMMANDS"
+    ],
+    "org.bukkit.World": [
+      "getPlayersSeeingChunk(Chunk)",
+      "getPlayersSeeingChunk(int,int)"
+    ],
+    "org.bukkit.Chunk": [
+      "getPlayersSeeingChunk()"
+    ],
+    "io.papermc.paper.ServerBuildInfo.StringRepresentation": [
+      "StringRepresentation()",
+      "VERSION_FULL",
+      "VERSION_SIMPLE"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent.ListedPlayerInfo": [
+      "ListedPlayerInfo(String,UUID)",
+      "id()"
+    ],
+    "org.bukkit.inventory.EquipmentSlot": [
+      "getOppositeHand()"
+    ],
+    "org.bukkit.Material": [
+      "getCompostChance()",
+      "getDefaultAttributeModifiers()",
+      "isCompostable()"
+    ],
+    "io.papermc.paper.command.brigadier.Commands": [
+      "\u003cT\u003eargument(String,ArgumentType)",
+      "getDispatcher()",
+      "literal(String)",
+      "register(LiteralCommandNode)",
+      "register(LiteralCommandNode,Collection)",
+      "register(LiteralCommandNode,String)",
+      "register(LiteralCommandNode,String,Collection)",
+      "register(PluginMeta,LiteralCommandNode,String,Collection)",
+      "register(PluginMeta,String,String,Collection,BasicCommand)",
+      "register(String,BasicCommand)",
+      "register(String,Collection,BasicCommand)",
+      "register(String,String,BasicCommand)",
+      "register(String,String,Collection,BasicCommand)"
+    ],
+    "org.bukkit.map.MapCursor.Type": [
+      "UPPER_MAP_CURSOR_TYPE_BOUND"
+    ],
+    "io.papermc.paper.command.brigadier.argument.CustomArgumentType.Converted": [
+      "convert(N)"
+    ],
+    "io.papermc.paper.registry.keys.InstrumentKeys": [
+      "InstrumentKeys()"
+    ],
+    "io.papermc.paper.command.brigadier.argument.CustomArgumentType": [
+      "\u003cS\u003elistSuggestions(CommandContext,SuggestionsBuilder)",
+      "getExamples()",
+      "getNativeType()",
+      "parse(StringReader)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "canUseEquipmentSlot(EquipmentSlot)"
+    ],
+    "org.bukkit.potion.PotionEffectTypeCategory": [
+      "PotionEffectTypeCategory()"
+    ],
+    "io.papermc.paper.command.brigadier.BasicCommand": [
+      "execute(CommandSourceStack,String...)",
+      "suggest(CommandSourceStack,String...)"
+    ],
+    "io.papermc.paper.registry.RegistryKey": [
+      "MAP_DECORATION_TYPE",
+      "MOB_EFFECT",
+      "PAINTING_VARIANT",
+      "SOUND_EVENT"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,DamageSource,List,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,int,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,int,int,String,boolean)"
+    ],
+    "org.bukkit.inventory.meta.LeatherArmorMeta": [
+      "isDyed()"
+    ],
+    "org.bukkit.inventory.meta.components.ToolComponent.ToolRule": [
+      "getSpeed()",
+      "isCorrectForDrops()",
+      "setBlocks(Collection)",
+      "setBlocks(Material)",
+      "setBlocks(Tag)",
+      "setCorrectForDrops(Boolean)",
+      "setSpeed(Float)"
+    ],
+    "org.bukkit.entity.FishHook": [
+      "getTimeUntilBite()",
+      "resetFishingState()",
+      "setTimeUntilBite(int)"
+    ],
+    "com.destroystokyo.paper.brigadier.BukkitBrigadierCommandSource": [
+      "getBukkitEntity()",
+      "getBukkitLocation()",
+      "getBukkitSender()",
+      "getBukkitWorld()"
+    ],
+    "io.papermc.paper.command.brigadier.argument.resolvers.ArgumentResolver": [
+      "resolve(CommandSourceStack)"
+    ],
+    "org.bukkit.damage.DamageType": [
+      "getExperimentalDamageType(String)"
+    ],
+    "org.bukkit.entity.Damageable": [
+      "heal(double)",
+      "heal(double,RegainReason)"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getAsComponentString()",
+      "hasTool()",
+      "setTool(ToolComponent)"
+    ],
+    "io.papermc.paper.registry.keys.DamageTypeKeys": [
+      "DamageTypeKeys()"
+    ],
+    "io.papermc.paper.ServerBuildInfo": [
+      "BRAND_PAPER_ID",
+      "asString(StringRepresentation)",
+      "brandId()",
+      "brandName()",
+      "buildInfo()",
+      "buildNumber()",
+      "buildTime()",
+      "gitBranch()",
+      "gitCommit()",
+      "isBrandCompatible(Key)",
+      "minecraftVersionId()",
+      "minecraftVersionName()"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent": [
+      "getListedPlayers()",
+      "listedPlayers"
+    ],
+    "io.papermc.paper.command.brigadier.argument.ArgumentTypes": [
+      "\u003cT\u003eresource(RegistryKey)",
+      "\u003cT\u003eresourceKey(RegistryKey)",
+      "ArgumentTypes()",
+      "blockPosition()",
+      "blockState()",
+      "doubleRange()",
+      "entities()",
+      "entity()",
+      "entityAnchor()",
+      "gameMode()",
+      "heightMap()",
+      "integerRange()",
+      "itemPredicate()",
+      "itemStack()",
+      "namedColor()",
+      "namespacedKey()",
+      "objectiveCriteria()",
+      "playerProfiles()",
+      "players()",
+      "scoreboardDisplaySlot()",
+      "templateMirror()",
+      "templateRotation()",
+      "time()",
+      "time(int)",
+      "uuid()",
+      "world()"
+    ],
+    "io.papermc.paper.registry.RegistryAccess": [
+      "\u003cT\u003egetRegistry(RegistryKey)",
+      "registryAccess()"
+    ],
+    "org.bukkit.event.entity.EntityDeathEvent": [
+      "EntityDeathEvent(LivingEntity,DamageSource,List)",
+      "EntityDeathEvent(LivingEntity,DamageSource,List,int)"
+    ],
+    "io.papermc.paper.registry.keys.MobEffectKeys": [
+      "MobEffectKeys()"
+    ],
+    "org.bukkit.inventory.meta.PotionMeta": [
+      "getBasePotionData()",
+      "setBasePotionData(PotionData)"
+    ],
+    "io.papermc.paper.brigadier.PaperBrigadier": [
+      "PaperBrigadier()",
+      "componentFromMessage(Message)",
+      "message(ComponentLike)"
+    ],
+    "com.destroystokyo.paper.event.brigadier.CommandRegisteredEvent": [
+      "CommandRegisteredEvent(String,BukkitBrigadierCommand,Command,RootCommandNode,LiteralCommandNode,ArgumentCommandNode)",
+      "brigadierCommand",
+      "commandLabel",
+      "defaultArgs",
+      "getBrigadierCommand()",
+      "getCommandLabel()",
+      "getDefaultArgs()",
+      "getLiteral()",
+      "isRawCommand()",
+      "literal",
+      "rawCommand",
+      "setLiteral(LiteralCommandNode)",
+      "setRawCommand(boolean)"
+    ],
+    "com.destroystokyo.paper.event.brigadier.AsyncPlayerSendCommandsEvent": [
+      "getCommandNode()",
+      "hasFiredAsync",
+      "hasFiredAsync()",
+      "node"
+    ],
+    "io.papermc.paper.registry.keys.EnchantmentKeys": [
+      "EnchantmentKeys()"
+    ],
+    "io.papermc.paper.registry.RegistryAccessHolder": [
+      "RegistryAccessHolder()"
+    ],
+    "com.destroystokyo.paper.event.brigadier.AsyncPlayerSendSuggestionsEvent": [
+      "getSuggestions()",
+      "setSuggestions(Suggestions)",
+      "suggestions"
+    ],
+    "io.papermc.paper.command.brigadier.argument.RegistryArgumentExtractor": [
+      "\u003cT,S\u003egetTypedKey(CommandContext,RegistryKey,String)",
+      "RegistryArgumentExtractor()"
+    ],
+    "org.bukkit.potion.PotionData": [
+      "PotionData(PotionType)",
+      "PotionData(PotionType,boolean,boolean)",
+      "extended",
+      "isUpgraded()",
+      "upgraded"
+    ],
+    "io.papermc.paper.command.brigadier.argument.SignedMessageResolver": [
+      "content()",
+      "resolveSignedMessage(String,CommandContext)"
+    ],
+    "com.destroystokyo.paper.entity.Pathfinder.PathResult": [
+      "canReachFinalPoint()"
+    ],
+    "org.bukkit.inventory.meta.components.ToolComponent": [
+      "addRule(Collection,Float,Boolean)",
+      "addRule(Material,Float,Boolean)",
+      "addRule(Tag,Float,Boolean)",
+      "getDefaultMiningSpeed()",
+      "getRules()",
+      "removeRule(ToolRule)",
+      "setDamagePerBlock(int)",
+      "setDefaultMiningSpeed(float)",
+      "setRules(List)"
+    ],
+    "io.papermc.paper.command.brigadier.argument.range.RangeProvider": [
+      "range()"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "BlockExplodeEvent(Block,BlockState,List,float)"
+    ],
+    "io.papermc.paper.event.entity.EntityKnockbackEvent": [
+      "setKnockback(Vector)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,BlockState,Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageByBlockEvent(Block,BlockState,Entity,DamageCause,DamageSource,double)",
+      "damagerState"
+    ],
+    "io.papermc.paper.registry.RegistryKeyImpl": [
+      "\u003cT\u003ecreateInternal(String)"
+    ],
+    "org.bukkit.plugin.PluginDescriptionFile": [
+      "paperPluginLoader"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.event.entity.EntityDeathEvent": [
+      "EntityDeathEvent(LivingEntity,List)",
+      "EntityDeathEvent(LivingEntity,List,int)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,List,int,String)",
+      "PlayerDeathEvent(Player,List,int,int,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,String,boolean)"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "explodedBlockState"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getInternalPotionData(NamespacedKey)",
+      "isCollidable(Material)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,DamageSource,Map,Map,BlockState)",
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,DamageSource,double,BlockState)",
+      "damagerBlockState"
+    ],
+    "com.destroystokyo.paper.MaterialSetTag": [
+      "getName(Material)"
+    ],
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": [
+      "acceleration"
+    ],
+    "org.bukkit.command.SimpleCommandMap": [
+      "SimpleCommandMap(Server)"
+    ],
+    "org.bukkit.Material": [
+      "isBlock",
+      "isBlock0()"
+    ],
+    "io.papermc.paper.tag.BaseTag": [
+      "getName(T)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.event.entity.EntityDeathEvent": [
+      "EntityDeathEvent(LivingEntity,List)",
+      "EntityDeathEvent(LivingEntity,List,int)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,List,int,String)",
+      "PlayerDeathEvent(Player,List,int,int,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,String)",
+      "PlayerDeathEvent(Player,List,int,int,int,int,String,boolean)"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "explodedBlockState"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getInternalPotionData(NamespacedKey)",
+      "isCollidable(Material)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,DamageSource,Map,Map,BlockState)",
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,DamageSource,double,BlockState)",
+      "damagerBlockState"
+    ],
+    "com.destroystokyo.paper.MaterialSetTag": [
+      "getName(Material)"
+    ],
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": [
+      "acceleration"
+    ],
+    "org.bukkit.command.SimpleCommandMap": [
+      "SimpleCommandMap(Server)"
+    ],
+    "org.bukkit.Material": [
+      "isBlock",
+      "isBlock0()"
+    ],
+    "io.papermc.paper.tag.BaseTag": [
+      "getName(T)"
+    ]
+  }
+}

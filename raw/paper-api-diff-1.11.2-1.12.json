@@ -1,0 +1,904 @@
+{
+  "versionA": "1.11.2",
+  "versionB": "1.12",
+  "packagesAdded": [
+    "com.destroystokyo.paper.event.profile",
+    "org.bukkit.advancement",
+    "org.bukkit.event.command"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.event.profile.LookupProfileEvent",
+    "com.destroystokyo.paper.event.profile.PreLookupProfileEvent",
+    "com.destroystokyo.paper.event.profile.PreLookupProfileEvent.PreProfileLookupCallback",
+    "com.destroystokyo.paper.event.profile.ProfileWhitelistVerifyEvent",
+    "org.bukkit.Keyed",
+    "org.bukkit.NamespacedKey",
+    "org.bukkit.advancement.Advancement",
+    "org.bukkit.advancement.AdvancementProgress",
+    "org.bukkit.block.Bed",
+    "org.bukkit.command.CommandSender.Spigot",
+    "org.bukkit.entity.Illager",
+    "org.bukkit.entity.Illusioner",
+    "org.bukkit.entity.Parrot",
+    "org.bukkit.entity.Parrot.Variant",
+    "org.bukkit.entity.Sittable",
+    "org.bukkit.entity.Spellcaster",
+    "org.bukkit.entity.Spellcaster.Spell",
+    "org.bukkit.event.command.UnknownCommandEvent",
+    "org.bukkit.event.entity.EntityPickupItemEvent",
+    "org.bukkit.event.player.PlayerAdvancementDoneEvent",
+    "org.bukkit.event.player.PlayerAttemptPickupItemEvent",
+    "org.bukkit.event.player.PlayerLocaleChangeEvent",
+    "org.bukkit.event.server.BroadcastMessageEvent",
+    "org.bukkit.inventory.ArmoredHorseInventory",
+    "org.bukkit.inventory.SaddledHorseInventory",
+    "org.bukkit.inventory.meta.KnowledgeBookMeta"
+  ],
+  "classesRemoved": [
+    "org.bukkit.command.defaults.AchievementCommand",
+    "org.bukkit.command.defaults.BanCommand",
+    "org.bukkit.command.defaults.BanIpCommand",
+    "org.bukkit.command.defaults.BanListCommand",
+    "org.bukkit.command.defaults.ClearCommand",
+    "org.bukkit.command.defaults.DefaultGameModeCommand",
+    "org.bukkit.command.defaults.DeopCommand",
+    "org.bukkit.command.defaults.DifficultyCommand",
+    "org.bukkit.command.defaults.EffectCommand",
+    "org.bukkit.command.defaults.EnchantCommand",
+    "org.bukkit.command.defaults.ExpCommand",
+    "org.bukkit.command.defaults.GameModeCommand",
+    "org.bukkit.command.defaults.GameRuleCommand",
+    "org.bukkit.command.defaults.GiveCommand",
+    "org.bukkit.command.defaults.KickCommand",
+    "org.bukkit.command.defaults.KillCommand",
+    "org.bukkit.command.defaults.ListCommand",
+    "org.bukkit.command.defaults.MeCommand",
+    "org.bukkit.command.defaults.OpCommand",
+    "org.bukkit.command.defaults.PardonCommand",
+    "org.bukkit.command.defaults.PardonIpCommand",
+    "org.bukkit.command.defaults.PlaySoundCommand",
+    "org.bukkit.command.defaults.SaveCommand",
+    "org.bukkit.command.defaults.SaveOffCommand",
+    "org.bukkit.command.defaults.SaveOnCommand",
+    "org.bukkit.command.defaults.SayCommand",
+    "org.bukkit.command.defaults.ScoreboardCommand",
+    "org.bukkit.command.defaults.SeedCommand",
+    "org.bukkit.command.defaults.SetIdleTimeoutCommand",
+    "org.bukkit.command.defaults.SetWorldSpawnCommand",
+    "org.bukkit.command.defaults.SpawnpointCommand",
+    "org.bukkit.command.defaults.SpreadPlayersCommand",
+    "org.bukkit.command.defaults.StopCommand",
+    "org.bukkit.command.defaults.TeleportCommand",
+    "org.bukkit.command.defaults.TellCommand",
+    "org.bukkit.command.defaults.TestForCommand",
+    "org.bukkit.command.defaults.TimeCommand",
+    "org.bukkit.command.defaults.ToggleDownfallCommand",
+    "org.bukkit.command.defaults.VanillaCommand",
+    "org.bukkit.command.defaults.WeatherCommand",
+    "org.bukkit.command.defaults.WhitelistCommand"
+  ],
+  "classesChanged": [
+    "org.bukkit.Bukkit",
+    "org.bukkit.Instrument",
+    "org.bukkit.Location",
+    "org.bukkit.Material",
+    "org.bukkit.OfflinePlayer",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.attribute.Attribute",
+    "org.bukkit.block.PistonMoveReaction",
+    "org.bukkit.command.CommandSender",
+    "org.bukkit.command.MessageCommandSender",
+    "org.bukkit.configuration.file.FileConfiguration",
+    "org.bukkit.configuration.file.YamlConfiguration",
+    "org.bukkit.entity.Damageable",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.Evoker.Spell",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.Item",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Minecart",
+    "org.bukkit.entity.Ocelot",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Projectile",
+    "org.bukkit.entity.Wolf",
+    "org.bukkit.event.block.BlockBreakEvent",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.EntityDamageEvent",
+    "org.bukkit.event.entity.EntityRegainHealthEvent",
+    "org.bukkit.event.player.PlayerPickupItemEvent",
+    "org.bukkit.event.server.ServerListPingEvent",
+    "org.bukkit.event.vehicle.VehicleDamageEvent",
+    "org.bukkit.inventory.HorseInventory",
+    "org.bukkit.inventory.ItemFactory",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.ShapedRecipe",
+    "org.bukkit.inventory.ShapelessRecipe",
+    "org.bukkit.plugin.Plugin",
+    "org.bukkit.plugin.PluginDescriptionFile",
+    "org.bukkit.plugin.SimplePluginManager",
+    "org.bukkit.plugin.java.JavaPlugin",
+    "org.bukkit.scoreboard.Team",
+    "org.bukkit.util.Vector"
+  ],
+  "membersAdded": {
+    "org.bukkit.event.player.PlayerAdvancementDoneEvent": [
+      "getAdvancement()",
+      "PlayerAdvancementDoneEvent(Player,Advancement)",
+      "advancement"
+    ],
+    "org.bukkit.entity.Item": [
+      "canMobPickup()",
+      "setCanMobPickup(boolean)"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "addPermission(Permission,boolean)",
+      "calculatePermissionDefault(Permission,boolean)",
+      "dirtyPermissibles()"
+    ],
+    "org.bukkit.event.player.PlayerAttemptPickupItemEvent": [
+      "PlayerAttemptPickupItemEvent(Player,Item)"
+    ],
+    "org.bukkit.entity.Player": [
+      "getAdvancementProgress(Advancement)"
+    ],
+    "org.bukkit.inventory.ShapelessRecipe": [
+      "getKey()",
+      "key",
+      "ShapelessRecipe(NamespacedKey,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityPickupItemEvent": [
+      "EntityPickupItemEvent(LivingEntity,Item,int)"
+    ],
+    "org.bukkit.event.command.UnknownCommandEvent": [
+      "UnknownCommandEvent(CommandSender,String,String)",
+      "commandLine",
+      "getCommandLine()"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "getSampleText()",
+      "sample",
+      "setSampleText(List)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "loadAdvancement(NamespacedKey,String)",
+      "removeAdvancement(NamespacedKey)"
+    ],
+    "org.bukkit.Server": [
+      "advancementIterator()",
+      "getAdvancement(NamespacedKey)",
+      "reloadData()",
+      "suggestPlayerNamesWhenNullTabCompletions()"
+    ],
+    "org.bukkit.Instrument": [
+      "BELL",
+      "CHIME",
+      "FLUTE",
+      "GUITAR",
+      "XYLOPHONE"
+    ],
+    "org.bukkit.inventory.ShapedRecipe": [
+      "ShapedRecipe(NamespacedKey,ItemStack)"
+    ],
+    "com.destroystokyo.paper.event.profile.PreLookupProfileEvent.PreProfileLookupCallback": [
+      "PreProfileLookupCallback(ProfileLookupCallback)",
+      "callback",
+      "onProfileLookupFailed(GameProfile,Exception)",
+      "onProfileLookupSucceeded(GameProfile)"
+    ],
+    "org.bukkit.event.player.PlayerLocaleChangeEvent": [
+      "PlayerLocaleChangeEvent(Player,String)",
+      "locale"
+    ],
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason": [
+      "SHOULDER_ENTITY"
+    ],
+    "org.bukkit.Material": [
+      "BLACK_GLAZED_TERRACOTTA",
+      "BLUE_GLAZED_TERRACOTTA",
+      "BROWN_GLAZED_TERRACOTTA",
+      "CONCRETE",
+      "CONCRETE_POWDER",
+      "CYAN_GLAZED_TERRACOTTA",
+      "GRAY_GLAZED_TERRACOTTA",
+      "GREEN_GLAZED_TERRACOTTA",
+      "KNOWLEDGE_BOOK",
+      "LIGHT_BLUE_GLAZED_TERRACOTTA",
+      "LIME_GLAZED_TERRACOTTA",
+      "MAGENTA_GLAZED_TERRACOTTA",
+      "ORANGE_GLAZED_TERRACOTTA",
+      "PINK_GLAZED_TERRACOTTA",
+      "PURPLE_GLAZED_TERRACOTTA",
+      "RED_GLAZED_TERRACOTTA",
+      "SILVER_GLAZED_TERRACOTTA",
+      "WHITE_GLAZED_TERRACOTTA",
+      "YELLOW_GLAZED_TERRACOTTA"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "getShoulderEntityLeft()",
+      "getShoulderEntityRight()",
+      "releaseLeftShoulderEntity()",
+      "releaseRightShoulderEntity()",
+      "setShoulderEntityLeft(Entity)",
+      "setShoulderEntityRight(Entity)"
+    ],
+    "org.bukkit.entity.Spellcaster.Spell": [
+      "DISAPPEAR",
+      "SUMMON_VEX"
+    ],
+    "org.bukkit.attribute.Attribute": [
+      "GENERIC_FLYING_SPEED"
+    ],
+    "org.bukkit.advancement.AdvancementProgress": [
+      "awardCriteria(String)",
+      "getAwardedCriteria()",
+      "getDateAwarded(String)",
+      "getRemainingCriteria()",
+      "isDone()",
+      "revokeCriteria(String)"
+    ],
+    "org.bukkit.block.PistonMoveReaction": [
+      "IGNORE",
+      "PUSH_ONLY"
+    ],
+    "org.bukkit.scoreboard.Team": [
+      "setColor(ChatColor)"
+    ],
+    "org.bukkit.inventory.ItemFactory": [
+      "ensureServerConversions(ItemStack)",
+      "getI18NDisplayName(ItemStack)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "fromMobSpawner()"
+    ],
+    "org.bukkit.NamespacedKey": [
+      "BUKKIT",
+      "MINECRAFT",
+      "NamespacedKey(Plugin,String)",
+      "NamespacedKey(String,String)",
+      "getNamespace()",
+      "minecraft(String)",
+      "namespace",
+      "randomKey()"
+    ],
+    "org.bukkit.entity.Spellcaster": [
+      "getSpell()",
+      "setSpell(Spell)"
+    ],
+    "org.bukkit.event.block.BlockBreakEvent": [
+      "dropItems",
+      "isDropItems()",
+      "setDropItems(boolean)"
+    ],
+    "org.bukkit.event.server.BroadcastMessageEvent": [
+      "BroadcastMessageEvent(String,Set)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_END_PORTAL_FRAME_FILL",
+      "BLOCK_END_PORTAL_SPAWN",
+      "BLOCK_NOTE_BELL",
+      "BLOCK_NOTE_CHIME",
+      "BLOCK_NOTE_FLUTE",
+      "BLOCK_NOTE_GUITAR",
+      "BLOCK_NOTE_XYLOPHONE",
+      "ENTITY_BOAT_PADDLE_LAND",
+      "ENTITY_BOAT_PADDLE_WATER",
+      "ENTITY_BOBBER_RETRIEVE",
+      "ENTITY_ENDEREYE_DEATH",
+      "ENTITY_ILLUSION_ILLAGER_AMBIENT",
+      "ENTITY_ILLUSION_ILLAGER_CAST_SPELL",
+      "ENTITY_ILLUSION_ILLAGER_DEATH",
+      "ENTITY_ILLUSION_ILLAGER_HURT",
+      "ENTITY_ILLUSION_ILLAGER_MIRROR_MOVE",
+      "ENTITY_ILLUSION_ILLAGER_PREPARE_BLINDNESS",
+      "ENTITY_ILLUSION_ILLAGER_PREPARE_MIRROR",
+      "ENTITY_PARROT_AMBIENT",
+      "ENTITY_PARROT_DEATH",
+      "ENTITY_PARROT_EAT",
+      "ENTITY_PARROT_FLY",
+      "ENTITY_PARROT_HURT",
+      "ENTITY_PARROT_IMITATE_BLAZE",
+      "ENTITY_PARROT_IMITATE_CREEPER",
+      "ENTITY_PARROT_IMITATE_ELDER_GUARDIAN",
+      "ENTITY_PARROT_IMITATE_ENDERDRAGON",
+      "ENTITY_PARROT_IMITATE_ENDERMAN",
+      "ENTITY_PARROT_IMITATE_ENDERMITE",
+      "ENTITY_PARROT_IMITATE_EVOCATION_ILLAGER",
+      "ENTITY_PARROT_IMITATE_GHAST",
+      "ENTITY_PARROT_IMITATE_HUSK",
+      "ENTITY_PARROT_IMITATE_ILLUSION_ILLAGER",
+      "ENTITY_PARROT_IMITATE_MAGMACUBE",
+      "ENTITY_PARROT_IMITATE_POLAR_BEAR",
+      "ENTITY_PARROT_IMITATE_SHULKER",
+      "ENTITY_PARROT_IMITATE_SILVERFISH",
+      "ENTITY_PARROT_IMITATE_SKELETON",
+      "ENTITY_PARROT_IMITATE_SLIME",
+      "ENTITY_PARROT_IMITATE_SPIDER",
+      "ENTITY_PARROT_IMITATE_STRAY",
+      "ENTITY_PARROT_IMITATE_VEX",
+      "ENTITY_PARROT_IMITATE_VINDICATION_ILLAGER",
+      "ENTITY_PARROT_IMITATE_WITCH",
+      "ENTITY_PARROT_IMITATE_WITHER",
+      "ENTITY_PARROT_IMITATE_WITHER_SKELETON",
+      "ENTITY_PARROT_IMITATE_WOLF",
+      "ENTITY_PARROT_IMITATE_ZOMBIE",
+      "ENTITY_PARROT_IMITATE_ZOMBIE_PIGMAN",
+      "ENTITY_PARROT_IMITATE_ZOMBIE_VILLAGER",
+      "ENTITY_PARROT_STEP",
+      "ENTITY_PLAYER_HURT_DROWN",
+      "ENTITY_PLAYER_HURT_ON_FIRE",
+      "UI_TOAST_CHALLENGE_COMPLETE",
+      "UI_TOAST_IN",
+      "UI_TOAST_OUT"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "ILLUSIONER",
+      "PARROT"
+    ],
+    "org.bukkit.event.player.PlayerPickupItemEvent": [
+      "flyAtPlayer",
+      "getFlyAtPlayer()",
+      "setFlyAtPlayer(boolean)"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "ensureServerConversions()",
+      "getI18NDisplayName()"
+    ],
+    "org.bukkit.util.Vector": [
+      "checkFinite()"
+    ],
+    "com.destroystokyo.paper.event.profile.LookupProfileEvent": [
+      "LookupProfileEvent(GameProfile)"
+    ],
+    "com.destroystokyo.paper.event.profile.PreLookupProfileEvent": [
+      "PreLookupProfileEvent(String)",
+      "addProperties(Multimap)",
+      "getProperties()",
+      "getUUID()",
+      "properties",
+      "setProperties(Multimap)",
+      "setUUID(UUID)",
+      "wrapProfileRepository(GameProfileRepository)"
+    ],
+    "org.bukkit.inventory.meta.KnowledgeBookMeta": [
+      "addRecipe(NamespacedKey...)",
+      "hasRecipes()"
+    ],
+    "com.destroystokyo.paper.event.profile.ProfileWhitelistVerifyEvent": [
+      "getProfile()",
+      "profile",
+      "ProfileWhitelistVerifyEvent(GameProfile,boolean,boolean,boolean,String)",
+      "isOp",
+      "isWhitelistEnabled()",
+      "whitelistEnabled",
+      "whitelisted"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.command.defaults.ClearCommand": [
+      "ClearCommand()"
+    ],
+    "org.bukkit.command.defaults.TellCommand": [
+      "TellCommand()"
+    ],
+    "org.bukkit.command.defaults.KickCommand": [
+      "KickCommand()"
+    ],
+    "org.bukkit.entity.Projectile": [
+      "_INVALID_getShooter()",
+      "_INVALID_setShooter(LivingEntity)"
+    ],
+    "org.bukkit.command.defaults.WhitelistCommand": [
+      "WHITELIST_SUBCOMMANDS",
+      "WhitelistCommand()",
+      "badPerm(CommandSender,String)"
+    ],
+    "org.bukkit.command.defaults.EffectCommand": [
+      "EffectCommand()",
+      "effects"
+    ],
+    "org.bukkit.command.defaults.WeatherCommand": [
+      "WEATHER_TYPES",
+      "WeatherCommand()"
+    ],
+    "org.bukkit.command.defaults.SpreadPlayersCommand": [
+      "SpreadPlayersCommand()",
+      "getSpreadLocations(World,int,double,double,double,double)",
+      "getTeams(List)",
+      "range(World,double,double,double,double,double,Location...)",
+      "spread(World,List,Array,boolean)"
+    ],
+    "org.bukkit.command.defaults.ListCommand": [
+      "ListCommand()"
+    ],
+    "org.bukkit.command.defaults.GameModeCommand": [
+      "GAMEMODE_NAMES",
+      "GameModeCommand()"
+    ],
+    "org.bukkit.command.defaults.SaveOnCommand": [
+      "SaveOnCommand()"
+    ],
+    "org.bukkit.command.defaults.OpCommand": [
+      "OpCommand()"
+    ],
+    "org.bukkit.command.defaults.GameRuleCommand": [
+      "GAMERULE_STATES",
+      "GameRuleCommand()",
+      "getGameWorld(CommandSender)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "_INVALID_getLastDamage()",
+      "_INVALID_setLastDamage(int)",
+      "getLineOfSight(HashSet,int)"
+    ],
+    "org.bukkit.command.defaults.ScoreboardCommand": [
+      "BOOLEAN",
+      "MAIN_CHOICES",
+      "OBJECTIVES_CHOICES",
+      "OBJECTIVES_CRITERIA",
+      "OBJECTIVES_DISPLAYSLOT",
+      "PLAYERS_CHOICES",
+      "ScoreboardCommand()",
+      "TEAMS_CHOICES",
+      "TEAMS_OPTION_CHOICES",
+      "TEAMS_OPTION_COLOR",
+      "getCurrentEntries()",
+      "getCurrentObjectives()",
+      "getCurrentTeams()",
+      "offlinePlayerSetToString(Set)",
+      "stringCollectionToString(Collection)"
+    ],
+    "org.bukkit.command.defaults.ToggleDownfallCommand": [
+      "ToggleDownfallCommand()"
+    ],
+    "org.bukkit.command.defaults.TestForCommand": [
+      "TestForCommand()"
+    ],
+    "org.bukkit.OfflinePlayer": [
+      "setBanned(boolean)"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "getDatabase()",
+      "ebean",
+      "getDatabaseClasses()",
+      "installDDL()",
+      "removeDDL()",
+      "replaceDatabaseString(String)"
+    ],
+    "org.bukkit.command.defaults.SeedCommand": [
+      "SeedCommand()"
+    ],
+    "org.bukkit.command.defaults.DifficultyCommand": [
+      "DIFFICULTY_NAMES",
+      "DifficultyCommand()",
+      "getDifficultyForString(CommandSender,String)"
+    ],
+    "org.bukkit.command.defaults.DeopCommand": [
+      "DeopCommand()"
+    ],
+    "org.bukkit.command.defaults.SetIdleTimeoutCommand": [
+      "SetIdleTimeoutCommand()"
+    ],
+    "org.bukkit.command.defaults.SaveOffCommand": [
+      "SaveOffCommand()"
+    ],
+    "org.bukkit.entity.Damageable": [
+      "_INVALID_damage(int)",
+      "_INVALID_damage(int,Entity)",
+      "_INVALID_getHealth()",
+      "_INVALID_getMaxHealth()",
+      "_INVALID_setHealth(int)",
+      "_INVALID_setMaxHealth(int)"
+    ],
+    "org.bukkit.command.defaults.BanCommand": [
+      "BanCommand()"
+    ],
+    "org.bukkit.command.defaults.SaveCommand": [
+      "SaveCommand()"
+    ],
+    "org.bukkit.command.defaults.PlaySoundCommand": [
+      "PlaySoundCommand()"
+    ],
+    "org.bukkit.command.defaults.SpawnpointCommand": [
+      "SpawnpointCommand()"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "calculatePermissionDefault(Permission)"
+    ],
+    "org.bukkit.command.defaults.ExpCommand": [
+      "ExpCommand()"
+    ],
+    "org.bukkit.command.defaults.VanillaCommand": [
+      "MAX_COORD",
+      "MIN_COORD",
+      "MIN_COORD_MINUS_ONE",
+      "VanillaCommand(String)",
+      "VanillaCommand(String,String,String,List)",
+      "createString(Array,int)",
+      "createString(Array,int,String)",
+      "getDouble(CommandSender,String)",
+      "getDouble(CommandSender,String,double,double)",
+      "getInteger(CommandSender,String,int)",
+      "getInteger(CommandSender,String,int,int)",
+      "getInteger(CommandSender,String,int,int,boolean)",
+      "getInteger(String)",
+      "getRelativeDouble(double,CommandSender,String)",
+      "matches(String)"
+    ],
+    "org.bukkit.configuration.file.FileConfiguration": [
+      "load(InputStream)"
+    ],
+    "org.bukkit.Server": [
+      "_INVALID_getOnlinePlayers()",
+      "configureDbConfig(ServerConfig)"
+    ],
+    "org.bukkit.command.defaults.PardonIpCommand": [
+      "PardonIpCommand()"
+    ],
+    "org.bukkit.command.defaults.BanIpCommand": [
+      "BanIpCommand()",
+      "ipValidity",
+      "processIPBan(String,CommandSender,String)"
+    ],
+    "org.bukkit.command.defaults.DefaultGameModeCommand": [
+      "DefaultGameModeCommand()"
+    ],
+    "org.bukkit.command.defaults.AchievementCommand": [
+      "AchievementCommand()"
+    ],
+    "org.bukkit.command.defaults.KillCommand": [
+      "KillCommand()"
+    ],
+    "org.bukkit.command.defaults.PardonCommand": [
+      "PardonCommand()"
+    ],
+    "org.bukkit.event.entity.EntityRegainHealthEvent": [
+      "_INVALID_getAmount()",
+      "_INVALID_setAmount(int)"
+    ],
+    "org.bukkit.command.defaults.TeleportCommand": [
+      "TeleportCommand()",
+      "getCoordinate(CommandSender,double,String)",
+      "getCoordinate(CommandSender,double,String,int,int)"
+    ],
+    "org.bukkit.command.defaults.StopCommand": [
+      "StopCommand()"
+    ],
+    "org.bukkit.command.defaults.SayCommand": [
+      "SayCommand()"
+    ],
+    "org.bukkit.event.vehicle.VehicleDamageEvent": [
+      "_INVALID_getDamage()",
+      "_INVALID_setDamage(int)",
+      "VehicleDamageEvent(Vehicle,Entity,int)"
+    ],
+    "org.bukkit.command.defaults.SetWorldSpawnCommand": [
+      "SetWorldSpawnCommand()"
+    ],
+    "org.bukkit.command.defaults.TimeCommand": [
+      "TABCOMPLETE_ADD_SET",
+      "TABCOMPLETE_DAY_NIGHT",
+      "TimeCommand()"
+    ],
+    "org.bukkit.command.defaults.EnchantCommand": [
+      "ENCHANTMENT_NAMES",
+      "EnchantCommand()",
+      "buildEnchantments()",
+      "getEnchantment(String)"
+    ],
+    "org.bukkit.configuration.file.YamlConfiguration": [
+      "loadConfiguration(InputStream)"
+    ],
+    "org.bukkit.command.defaults.GiveCommand": [
+      "materials",
+      "GiveCommand()"
+    ],
+    "org.bukkit.command.defaults.MeCommand": [
+      "MeCommand()"
+    ],
+    "org.bukkit.plugin.PluginDescriptionFile": [
+      "database",
+      "isDatabaseEnabled()",
+      "setDatabaseEnabled(boolean)"
+    ],
+    "org.bukkit.command.defaults.BanListCommand": [
+      "BANLIST_TYPES",
+      "BanListCommand()"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.command.defaults.ClearCommand": [
+      "ClearCommand()"
+    ],
+    "org.bukkit.command.defaults.TellCommand": [
+      "TellCommand()"
+    ],
+    "org.bukkit.command.defaults.KickCommand": [
+      "KickCommand()"
+    ],
+    "org.bukkit.entity.Projectile": [
+      "_INVALID_getShooter()",
+      "_INVALID_setShooter(LivingEntity)"
+    ],
+    "org.bukkit.command.defaults.WhitelistCommand": [
+      "WHITELIST_SUBCOMMANDS",
+      "WhitelistCommand()",
+      "badPerm(CommandSender,String)"
+    ],
+    "org.bukkit.command.defaults.EffectCommand": [
+      "EffectCommand()",
+      "effects"
+    ],
+    "org.bukkit.command.defaults.WeatherCommand": [
+      "WEATHER_TYPES",
+      "WeatherCommand()"
+    ],
+    "org.bukkit.command.defaults.SpreadPlayersCommand": [
+      "SpreadPlayersCommand()",
+      "getSpreadLocations(World,int,double,double,double,double)",
+      "getTeams(List)",
+      "range(World,double,double,double,double,double,Location...)",
+      "spread(World,List,Array,boolean)"
+    ],
+    "org.bukkit.command.defaults.ListCommand": [
+      "ListCommand()"
+    ],
+    "org.bukkit.command.defaults.GameModeCommand": [
+      "GAMEMODE_NAMES",
+      "GameModeCommand()"
+    ],
+    "org.bukkit.command.defaults.SaveOnCommand": [
+      "SaveOnCommand()"
+    ],
+    "org.bukkit.command.defaults.OpCommand": [
+      "OpCommand()"
+    ],
+    "org.bukkit.command.defaults.GameRuleCommand": [
+      "GAMERULE_STATES",
+      "GameRuleCommand()",
+      "getGameWorld(CommandSender)"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "_INVALID_getLastDamage()",
+      "_INVALID_setLastDamage(int)",
+      "getLineOfSight(HashSet,int)"
+    ],
+    "org.bukkit.command.defaults.ScoreboardCommand": [
+      "BOOLEAN",
+      "MAIN_CHOICES",
+      "OBJECTIVES_CHOICES",
+      "OBJECTIVES_CRITERIA",
+      "OBJECTIVES_DISPLAYSLOT",
+      "PLAYERS_CHOICES",
+      "ScoreboardCommand()",
+      "TEAMS_CHOICES",
+      "TEAMS_OPTION_CHOICES",
+      "TEAMS_OPTION_COLOR",
+      "getCurrentEntries()",
+      "getCurrentObjectives()",
+      "getCurrentTeams()",
+      "offlinePlayerSetToString(Set)",
+      "stringCollectionToString(Collection)"
+    ],
+    "org.bukkit.command.defaults.ToggleDownfallCommand": [
+      "ToggleDownfallCommand()"
+    ],
+    "org.bukkit.command.defaults.TestForCommand": [
+      "TestForCommand()"
+    ],
+    "org.bukkit.OfflinePlayer": [
+      "setBanned(boolean)"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "getDatabase()",
+      "ebean",
+      "getDatabaseClasses()",
+      "installDDL()",
+      "removeDDL()",
+      "replaceDatabaseString(String)"
+    ],
+    "org.bukkit.command.defaults.SeedCommand": [
+      "SeedCommand()"
+    ],
+    "org.bukkit.command.defaults.DifficultyCommand": [
+      "DIFFICULTY_NAMES",
+      "DifficultyCommand()",
+      "getDifficultyForString(CommandSender,String)"
+    ],
+    "org.bukkit.command.defaults.DeopCommand": [
+      "DeopCommand()"
+    ],
+    "org.bukkit.command.defaults.SetIdleTimeoutCommand": [
+      "SetIdleTimeoutCommand()"
+    ],
+    "org.bukkit.command.defaults.SaveOffCommand": [
+      "SaveOffCommand()"
+    ],
+    "org.bukkit.entity.Damageable": [
+      "_INVALID_damage(int)",
+      "_INVALID_damage(int,Entity)",
+      "_INVALID_getHealth()",
+      "_INVALID_getMaxHealth()",
+      "_INVALID_setHealth(int)",
+      "_INVALID_setMaxHealth(int)"
+    ],
+    "org.bukkit.command.defaults.BanCommand": [
+      "BanCommand()"
+    ],
+    "org.bukkit.command.defaults.SaveCommand": [
+      "SaveCommand()"
+    ],
+    "org.bukkit.command.defaults.PlaySoundCommand": [
+      "PlaySoundCommand()"
+    ],
+    "org.bukkit.command.defaults.SpawnpointCommand": [
+      "SpawnpointCommand()"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "calculatePermissionDefault(Permission)"
+    ],
+    "org.bukkit.command.defaults.ExpCommand": [
+      "ExpCommand()"
+    ],
+    "org.bukkit.command.defaults.VanillaCommand": [
+      "MAX_COORD",
+      "MIN_COORD",
+      "MIN_COORD_MINUS_ONE",
+      "VanillaCommand(String)",
+      "VanillaCommand(String,String,String,List)",
+      "createString(Array,int)",
+      "createString(Array,int,String)",
+      "getDouble(CommandSender,String)",
+      "getDouble(CommandSender,String,double,double)",
+      "getInteger(CommandSender,String,int)",
+      "getInteger(CommandSender,String,int,int)",
+      "getInteger(CommandSender,String,int,int,boolean)",
+      "getInteger(String)",
+      "getRelativeDouble(double,CommandSender,String)",
+      "matches(String)"
+    ],
+    "org.bukkit.configuration.file.FileConfiguration": [
+      "load(InputStream)"
+    ],
+    "org.bukkit.Server": [
+      "_INVALID_getOnlinePlayers()",
+      "configureDbConfig(ServerConfig)"
+    ],
+    "org.bukkit.command.defaults.PardonIpCommand": [
+      "PardonIpCommand()"
+    ],
+    "org.bukkit.command.defaults.BanIpCommand": [
+      "BanIpCommand()",
+      "ipValidity",
+      "processIPBan(String,CommandSender,String)"
+    ],
+    "org.bukkit.command.defaults.DefaultGameModeCommand": [
+      "DefaultGameModeCommand()"
+    ],
+    "org.bukkit.command.defaults.AchievementCommand": [
+      "AchievementCommand()"
+    ],
+    "org.bukkit.command.defaults.KillCommand": [
+      "KillCommand()"
+    ],
+    "org.bukkit.command.defaults.PardonCommand": [
+      "PardonCommand()"
+    ],
+    "org.bukkit.event.entity.EntityRegainHealthEvent": [
+      "_INVALID_getAmount()",
+      "_INVALID_setAmount(int)"
+    ],
+    "org.bukkit.command.defaults.TeleportCommand": [
+      "TeleportCommand()",
+      "getCoordinate(CommandSender,double,String)",
+      "getCoordinate(CommandSender,double,String,int,int)"
+    ],
+    "org.bukkit.command.defaults.StopCommand": [
+      "StopCommand()"
+    ],
+    "org.bukkit.command.defaults.SayCommand": [
+      "SayCommand()"
+    ],
+    "org.bukkit.event.vehicle.VehicleDamageEvent": [
+      "_INVALID_getDamage()",
+      "_INVALID_setDamage(int)",
+      "VehicleDamageEvent(Vehicle,Entity,int)"
+    ],
+    "org.bukkit.command.defaults.SetWorldSpawnCommand": [
+      "SetWorldSpawnCommand()"
+    ],
+    "org.bukkit.command.defaults.TimeCommand": [
+      "TABCOMPLETE_ADD_SET",
+      "TABCOMPLETE_DAY_NIGHT",
+      "TimeCommand()"
+    ],
+    "org.bukkit.command.defaults.EnchantCommand": [
+      "ENCHANTMENT_NAMES",
+      "EnchantCommand()",
+      "buildEnchantments()",
+      "getEnchantment(String)"
+    ],
+    "org.bukkit.configuration.file.YamlConfiguration": [
+      "loadConfiguration(InputStream)"
+    ],
+    "org.bukkit.command.defaults.GiveCommand": [
+      "materials",
+      "GiveCommand()"
+    ],
+    "org.bukkit.command.defaults.MeCommand": [
+      "MeCommand()"
+    ],
+    "org.bukkit.plugin.PluginDescriptionFile": [
+      "database",
+      "isDatabaseEnabled()",
+      "setDatabaseEnabled(boolean)"
+    ],
+    "org.bukkit.command.defaults.BanListCommand": [
+      "BANLIST_TYPES",
+      "BanListCommand()"
+    ]
+  }
+}

@@ -1,0 +1,534 @@
+{
+  "versionA": "1.18",
+  "versionB": "1.18.1",
+  "packagesAdded": [
+    "io.papermc.paper.entity",
+    "io.papermc.paper.potion",
+    "org.bukkit.profile"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.entity.Bucketable",
+    "io.papermc.paper.potion.PotionMix",
+    "org.bukkit.configuration.SectionPathData",
+    "org.bukkit.configuration.file.BukkitYaml",
+    "org.bukkit.entity.SpawnCategory",
+    "org.bukkit.event.block.BlockDamageAbortEvent",
+    "org.bukkit.event.player.PlayerHideEntityEvent",
+    "org.bukkit.event.player.PlayerShowEntityEvent",
+    "org.bukkit.potion.PotionEffectType.Category",
+    "org.bukkit.profile.PlayerProfile",
+    "org.bukkit.profile.PlayerTextures",
+    "org.bukkit.profile.PlayerTextures.SkinModel"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.MaterialTags",
+    "com.destroystokyo.paper.profile.PlayerProfile",
+    "io.papermc.paper.chat.ChatRenderer",
+    "io.papermc.paper.chat.ChatRenderer.ViewerUnaware",
+    "io.papermc.paper.tag.BaseTag",
+    "io.papermc.paper.text.PaperComponents",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Keyed",
+    "org.bukkit.Material",
+    "org.bukkit.OfflinePlayer",
+    "org.bukkit.RegionAccessor",
+    "org.bukkit.Registry",
+    "org.bukkit.Server",
+    "org.bukkit.StructureType",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.block.Campfire",
+    "org.bukkit.block.Furnace",
+    "org.bukkit.block.SculkSensor",
+    "org.bukkit.block.Skull",
+    "org.bukkit.block.data.Levelled",
+    "org.bukkit.block.data.type.Candle",
+    "org.bukkit.block.data.type.Leaves",
+    "org.bukkit.configuration.ConfigurationSection",
+    "org.bukkit.configuration.MemorySection",
+    "org.bukkit.configuration.file.FileConfigurationOptions",
+    "org.bukkit.configuration.file.YamlConfiguration",
+    "org.bukkit.configuration.file.YamlConfigurationOptions",
+    "org.bukkit.configuration.file.YamlConstructor",
+    "org.bukkit.entity.AbstractHorse",
+    "org.bukkit.entity.AbstractSkeleton",
+    "org.bukkit.entity.Dolphin",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.Item",
+    "org.bukkit.entity.Panda",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Skeleton",
+    "org.bukkit.entity.SkeletonHorse",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent",
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent",
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent",
+    "org.bukkit.event.vehicle.VehicleCollisionEvent",
+    "org.bukkit.event.vehicle.VehicleEntityCollisionEvent",
+    "org.bukkit.generator.WorldInfo",
+    "org.bukkit.inventory.AnvilInventory",
+    "org.bukkit.inventory.FurnaceInventory",
+    "org.bukkit.inventory.MerchantRecipe",
+    "org.bukkit.inventory.meta.SkullMeta",
+    "org.bukkit.persistence.PersistentDataContainer",
+    "org.bukkit.potion.PotionBrewer",
+    "org.bukkit.potion.PotionEffectType",
+    "org.bukkit.potion.PotionEffectTypeWrapper",
+    "org.bukkit.scoreboard.Objective",
+    "org.bukkit.scoreboard.Scoreboard",
+    "org.bukkit.scoreboard.Team",
+    "org.spigotmc.CustomTimingsHandler"
+  ],
+  "membersAdded": {
+    "org.bukkit.configuration.MemorySection": [
+      "getComments(String)",
+      "getInlineComments(String)",
+      "setComments(String,List)",
+      "setInlineComments(String,List)",
+      "getSectionPathData(String)"
+    ],
+    "org.bukkit.event.block.BlockDamageAbortEvent": [
+      "BlockDamageAbortEvent(Player,Block,ItemStack)"
+    ],
+    "org.bukkit.entity.Player": [
+      "playSound(Entity,Sound,SoundCategory,float,float)",
+      "playSound(Entity,Sound,float,float)",
+      "setSimulationDistance(int)",
+      "getPreviousGameMode()",
+      "sendMultiBlockChange(Map)",
+      "sendMultiBlockChange(Map,boolean)",
+      "setResourcePack(String,Array,Component)",
+      "setResourcePack(String,Array,Component,boolean)",
+      "setResourcePack(String,Array,String)",
+      "setResourcePack(String,Array,String,boolean)",
+      "setResourcePack(String,Array,boolean)"
+    ],
+    "org.bukkit.scoreboard.Objective": [
+      "getScoreFor(Entity)"
+    ],
+    "org.bukkit.inventory.meta.SkullMeta": [
+      "getOwnerProfile()",
+      "setOwnerProfile(PlayerProfile)"
+    ],
+    "org.bukkit.scoreboard.Scoreboard": [
+      "getEntityTeam(Entity)",
+      "getScoresFor(Entity)",
+      "resetScoresFor(Entity)"
+    ],
+    "org.bukkit.profile.PlayerProfile": [
+      "setTextures(PlayerTextures)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
+      "AsyncPlayerPreLoginEvent(String,InetAddress,InetAddress,UUID,PlayerProfile,String)"
+    ],
+    "org.bukkit.configuration.file.YamlConfigurationOptions": [
+      "parseComments(boolean)",
+      "setFooter(List)",
+      "setHeader(List)",
+      "width()",
+      "width(int)"
+    ],
+    "org.bukkit.configuration.file.FileConfigurationOptions": [
+      "PAPER_PARSE_COMMENTS_BY_DEFAULT",
+      "footer",
+      "getFooter()",
+      "getHeader()",
+      "parseComments",
+      "parseComments()"
+    ],
+    "org.bukkit.configuration.file.BukkitYaml": [
+      "BukkitYaml(BaseConstructor,Representer,DumperOptions,LoaderOptions)",
+      "blockCommentsCollector",
+      "events",
+      "getEmitterField(String)",
+      "inlineCommentsCollector",
+      "serialize(Node,Writer)"
+    ],
+    "org.bukkit.World": [
+      "getSpawnLimit(SpawnCategory)",
+      "getTicksPerSpawns(SpawnCategory)",
+      "setSpawnLimit(SpawnCategory,int)",
+      "setTicksPerSpawns(SpawnCategory,int)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "plainTextSerializer()",
+      "getDefaultAttributeModifiers(Material,EquipmentSlot)"
+    ],
+    "io.papermc.paper.potion.PotionMix": [
+      "PotionMix(NamespacedKey,ItemStack,RecipeChoice,RecipeChoice)"
+    ],
+    "org.bukkit.event.player.PlayerShowEntityEvent": [
+      "PlayerShowEntityEvent(Player,Entity)"
+    ],
+    "org.bukkit.Material": [
+      "getDefaultAttributeModifiers(EquipmentSlot)"
+    ],
+    "org.bukkit.persistence.PersistentDataContainer": [
+      "has(NamespacedKey)"
+    ],
+    "org.bukkit.block.SculkSensor": [
+      "getListenerRange()",
+      "setListenerRange(int)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "getSpawnCategory()",
+      "isFreezeTickingLocked()",
+      "isInPowderedSnow()",
+      "lockFreezeTicks(boolean)"
+    ],
+    "com.destroystokyo.paper.MaterialTags": [
+      "COPPER_BLOCKS",
+      "CUT_COPPER_BLOCKS",
+      "CUT_COPPER_SLABS",
+      "DEEPSLATE_ORES",
+      "EXPOSED_COPPER_BLOCKS",
+      "FULL_COPPER_BLOCKS",
+      "OXIDIZED_COPPER_BLOCKS",
+      "UNAFFECTED_COPPER_BLOCKS",
+      "UNWAXED_COPPER_BLOCKS",
+      "WAXED_COPPER_BLOCKS",
+      "WEATHERED_COPPER_BLOCKS"
+    ],
+    "org.bukkit.potion.PotionEffectType.Category": [
+      "BENEFICIAL",
+      "Category(TextColor)",
+      "HARMFUL"
+    ],
+    "org.bukkit.block.data.type.Leaves": [
+      "getMinimumDistance()"
+    ],
+    "org.bukkit.block.data.type.Candle": [
+      "getMinimumCandles()"
+    ],
+    "org.bukkit.entity.AbstractHorse": [
+      "isEatingHaystack()",
+      "setEatingHaystack(boolean)"
+    ],
+    "org.bukkit.inventory.FurnaceInventory": [
+      "canSmelt(ItemStack)",
+      "isFuel(ItemStack)"
+    ],
+    "org.bukkit.generator.WorldInfo": [
+      "vanillaBiomeProvider()"
+    ],
+    "org.bukkit.block.Campfire": [
+      "isCookingDisabled(int)",
+      "startCooking()",
+      "startCooking(int)",
+      "stopCooking()",
+      "stopCooking(int)"
+    ],
+    "org.bukkit.RegionAccessor": [
+      "generateTree(Location,Random,TreeType,Predicate)"
+    ],
+    "org.bukkit.potion.PotionBrewer": [
+      "addPotionMix(PotionMix)",
+      "removePotionMix(NamespacedKey)",
+      "resetPotionMixes()"
+    ],
+    "org.bukkit.configuration.file.YamlConstructor": [
+      "flattenMapping(MappingNode)"
+    ],
+    "org.bukkit.Registry": [
+      "POTION_EFFECT_TYPE",
+      "STRUCTURE_TYPE"
+    ],
+    "org.bukkit.entity.Panda": [
+      "getEatingTicks()",
+      "getSneezeTicks()",
+      "getUnhappyTicks()",
+      "isOnBack()",
+      "isRolling()",
+      "isSneezing()",
+      "setEatingTicks(int)",
+      "setIsOnBack(boolean)",
+      "setIsSitting(boolean)",
+      "setRolling(boolean)",
+      "setSneezeTicks(int)",
+      "setSneezing(boolean)",
+      "setUnhappyTicks(int)"
+    ],
+    "org.bukkit.Tag": [
+      "GAME_EVENT_IGNORE_VIBRATIONS_SNEAKING",
+      "GAME_EVENT_VIBRATIONS",
+      "REGISTRY_GAME_EVENTS"
+    ],
+    "org.bukkit.entity.Item": [
+      "setHealth(int)"
+    ],
+    "org.bukkit.event.player.PlayerHideEntityEvent": [
+      "PlayerHideEntityEvent(Player,Entity)"
+    ],
+    "org.bukkit.potion.PotionEffectTypeWrapper": [
+      "getAttributeModifierAmount(Attribute,int)",
+      "getEffectAttributes()",
+      "getEffectCategory()"
+    ],
+    "org.bukkit.block.Furnace": [
+      "getRecipeUsedCount(NamespacedKey)",
+      "getRecipesUsed()",
+      "hasRecipeUsedCount(NamespacedKey)",
+      "setRecipeUsedCount(CookingRecipe,int)",
+      "setRecipesUsed(Map)"
+    ],
+    "org.bukkit.entity.Dolphin": [
+      "getMoistness()",
+      "getTreasureLocation()",
+      "hasFish()",
+      "setHasFish(boolean)",
+      "setMoistness(int)",
+      "setTreasureLocation(Location)"
+    ],
+    "org.bukkit.Server": [
+      "createCommandSender(Consumer)",
+      "createPlayerProfile(String)",
+      "createPlayerProfile(UUID)",
+      "createPlayerProfile(UUID,String)",
+      "getPotionBrewer()",
+      "getResourcePack()",
+      "getResourcePackPrompt()",
+      "isResourcePackRequired()"
+    ],
+    "org.bukkit.configuration.SectionPathData": [
+      "SectionPathData(Object)",
+      "comments",
+      "getComments()",
+      "getInlineComments()",
+      "inlineComments",
+      "setComments(List)",
+      "setData(Object)",
+      "setInlineComments(List)"
+    ],
+    "org.bukkit.inventory.MerchantRecipe": [
+      "MerchantRecipe(ItemStack,int,int,boolean,int,float,int,int)",
+      "MerchantRecipe(ItemStack,int,int,boolean,int,float,int,int,boolean)",
+      "adjust(ItemStack)",
+      "demand",
+      "getAdjustedIngredient1()",
+      "getDemand()",
+      "getSpecialPrice()",
+      "setDemand(int)",
+      "setSpecialPrice(int)",
+      "specialPrice"
+    ],
+    "org.bukkit.profile.PlayerTextures.SkinModel": [
+      "CLASSIC",
+      "SLIM",
+      "SkinModel()"
+    ],
+    "org.bukkit.entity.SpawnCategory": [
+      "ANIMAL",
+      "MISC",
+      "MONSTER",
+      "SpawnCategory()",
+      "WATER_AMBIENT",
+      "WATER_ANIMAL",
+      "WATER_UNDERGROUND_CREATURE"
+    ],
+    "org.bukkit.scoreboard.Team": [
+      "addEntities(Collection)",
+      "addEntities(Entity...)",
+      "addEntity(Entity)",
+      "addEntries(Collection)",
+      "addEntries(String...)",
+      "hasEntity(Entity)",
+      "removeEntities(Collection)",
+      "removeEntities(Entity...)",
+      "removeEntity(Entity)",
+      "removeEntries(Collection)",
+      "removeEntries(String...)"
+    ],
+    "org.bukkit.entity.Skeleton": [
+      "inPowderedSnowTime()"
+    ],
+    "io.papermc.paper.entity.Bucketable": [
+      "getBaseBucketItem()",
+      "getPickupSound()",
+      "isFromBucket()",
+      "setFromBucket(boolean)"
+    ],
+    "org.bukkit.profile.PlayerTextures": [
+      "getCape()",
+      "getSkin()",
+      "getSkinModel()",
+      "getTimestamp()",
+      "setCape(URL)",
+      "setSkin(URL)",
+      "setSkin(URL,SkinModel)"
+    ],
+    "org.bukkit.inventory.AnvilInventory": [
+      "getRepairCostAmount()",
+      "setRepairCostAmount(int)"
+    ],
+    "io.papermc.paper.tag.BaseTag": [
+      "checkLock()",
+      "lock()",
+      "locked"
+    ],
+    "org.bukkit.block.data.Levelled": [
+      "getMinimumLevel()"
+    ],
+    "org.bukkit.configuration.file.YamlConfiguration": [
+      "adjustNodeComments(MappingNode)",
+      "constructor",
+      "fromNodeTree(MappingNode,ConfigurationSection)",
+      "getCommentLines(List)",
+      "getCommentLines(List,CommentType)",
+      "hasSerializedTypeKey(MappingNode)",
+      "loadHeader(List)",
+      "representer",
+      "saveHeader(List)",
+      "toNodeTree(ConfigurationSection)",
+      "yamlDumperOptions",
+      "yamlLoaderOptions"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe)"
+    ],
+    "org.bukkit.entity.SkeletonHorse": [
+      "isTrapped()",
+      "setTrapTime(int)",
+      "setTrapped(boolean)"
+    ]
+  },
+  "membersRemoved": {
+    "org.spigotmc.CustomTimingsHandler": [
+      "getCallerClass",
+      "sunReflectAvailable"
+    ],
+    "org.bukkit.configuration.file.FileConfigurationOptions": [
+      "copyHeader"
+    ],
+    "org.bukkit.configuration.file.YamlConfiguration": [
+      "convertMapsToSections(Map,ConfigurationSection)",
+      "loaderOptions",
+      "parseHeader(String)",
+      "yamlOptions",
+      "yamlRepresenter"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe,int)"
+    ]
+  },
+  "membersChanged": {
+    "org.spigotmc.CustomTimingsHandler": [
+      "getCallerClass",
+      "sunReflectAvailable"
+    ],
+    "org.bukkit.configuration.file.FileConfigurationOptions": [
+      "copyHeader"
+    ],
+    "org.bukkit.configuration.file.YamlConfiguration": [
+      "convertMapsToSections(Map,ConfigurationSection)",
+      "loaderOptions",
+      "parseHeader(String)",
+      "yamlOptions",
+      "yamlRepresenter"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe,int)"
+    ]
+  }
+}

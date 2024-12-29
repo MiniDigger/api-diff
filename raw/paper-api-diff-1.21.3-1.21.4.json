@@ -1,0 +1,536 @@
+{
+  "versionA": "1.21.3",
+  "versionB": "1.21.4",
+  "packagesAdded": [
+    "io.papermc.paper.event.executor"
+  ],
+  "packagesRemoved": [
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm"
+  ],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.brigadier",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.brigadier",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.ban",
+    "io.papermc.paper.block",
+    "io.papermc.paper.block.fluid",
+    "io.papermc.paper.block.fluid.type",
+    "io.papermc.paper.brigadier",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.command.brigadier",
+    "io.papermc.paper.command.brigadier.argument",
+    "io.papermc.paper.command.brigadier.argument.predicate",
+    "io.papermc.paper.command.brigadier.argument.range",
+    "io.papermc.paper.command.brigadier.argument.resolvers",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector",
+    "io.papermc.paper.datacomponent",
+    "io.papermc.paper.datacomponent.item",
+    "io.papermc.paper.datacomponent.item.consumable",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.inventory.tooltip",
+    "io.papermc.paper.item",
+    "io.papermc.paper.math",
+    "io.papermc.paper.persistence",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.lifecycle.event",
+    "io.papermc.paper.plugin.lifecycle.event.handler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar",
+    "io.papermc.paper.plugin.lifecycle.event.types",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.data",
+    "io.papermc.paper.registry.event",
+    "io.papermc.paper.registry.event.type",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.registry.keys.tags",
+    "io.papermc.paper.registry.set",
+    "io.papermc.paper.registry.tag",
+    "io.papermc.paper.scoreboard.numbers",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.flag",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.spawner",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.damage",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.boat",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.components",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.inventory.view",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.spawner",
+    "org.bukkit.structure",
+    "org.bukkit.tag",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.datacomponent.item.CustomModelData.Builder",
+    "io.papermc.paper.datapack.Datapack.Position",
+    "io.papermc.paper.datapack.DatapackRegistrar",
+    "io.papermc.paper.datapack.DatapackRegistrar.Configurer",
+    "io.papermc.paper.datapack.DiscoveredDatapack",
+    "io.papermc.paper.entity.EntitySerializationFlag",
+    "io.papermc.paper.registry.RegistryBuilderFactory",
+    "io.papermc.paper.registry.data.BannerPatternRegistryEntry",
+    "io.papermc.paper.registry.data.BannerPatternRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.DamageTypeRegistryEntry",
+    "io.papermc.paper.registry.data.DamageTypeRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider",
+    "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys",
+    "org.bukkit.Particle.Trail",
+    "org.bukkit.block.data.type.ResinClump",
+    "org.bukkit.inventory.meta.components.CustomModelDataComponent"
+  ],
+  "classesRemoved": [
+    "org.bukkit.Particle.TargetColor",
+    "org.bukkit.Registry.SimpleRegistry",
+    "org.bukkit.block.data.type.CreakingHeart.Creaking",
+    "org.bukkit.entity.CreakingTransient"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.MaterialTags",
+    "io.papermc.paper.command.brigadier.argument.CustomArgumentType",
+    "io.papermc.paper.command.brigadier.argument.CustomArgumentType.Converted",
+    "io.papermc.paper.datacomponent.item.CustomModelData",
+    "io.papermc.paper.datacomponent.item.Equippable",
+    "io.papermc.paper.datacomponent.item.Equippable.Builder",
+    "io.papermc.paper.datacomponent.item.consumable.ItemUseAnimation",
+    "io.papermc.paper.datapack.Datapack",
+    "io.papermc.paper.datapack.DatapackSource",
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents",
+    "io.papermc.paper.registry.RegistryKey",
+    "io.papermc.paper.registry.TypedKey",
+    "io.papermc.paper.registry.event.RegistryEvents",
+    "io.papermc.paper.registry.event.WritableRegistry",
+    "io.papermc.paper.registry.keys.BiomeKeys",
+    "io.papermc.paper.registry.keys.BlockTypeKeys",
+    "io.papermc.paper.registry.keys.ItemTypeKeys",
+    "io.papermc.paper.registry.keys.SoundEventKeys",
+    "io.papermc.paper.registry.keys.TrimMaterialKeys",
+    "io.papermc.paper.registry.keys.tags.BlockTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
+    "org.bukkit.Art",
+    "org.bukkit.EntityEffect",
+    "org.bukkit.FeatureFlag",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.Registry",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.TreeType",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.block.Biome",
+    "org.bukkit.block.BlockType",
+    "org.bukkit.block.data.type.CreakingHeart",
+    "org.bukkit.entity.Bogged",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Sheep",
+    "org.bukkit.entity.minecart.ExplosiveMinecart",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.ItemType",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.trim.TrimMaterial",
+    "org.bukkit.plugin.EventExecutor"
+  ],
+  "membersAdded": {
+    "org.bukkit.Tag": [
+      "BEE_ATTRACTIVE",
+      "ITEMS_DROWNED_PREFERRED_WEAPONS",
+      "ITEMS_PIGLIN_PREFERRED_WEAPONS",
+      "ITEMS_PILLAGER_PREFERRED_WEAPONS",
+      "ITEMS_SKELETON_PREFERRED_WEAPONS",
+      "ITEMS_STONE_CRAFTING_MATERIALS",
+      "ITEMS_WITHER_SKELETON_DISLIKED_WEAPONS"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getCustomModelDataComponent()",
+      "setCustomModelDataComponent(CustomModelDataComponent)"
+    ],
+    "io.papermc.paper.registry.data.DamageTypeRegistryEntry.Builder": [
+      "damageEffect(DamageEffect)",
+      "damageScaling(DamageScaling)",
+      "deathMessageType(DeathMessageType)",
+      "exhaustion(float)",
+      "messageId(String)"
+    ],
+    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
+      "createPaintingVariant(Consumer)",
+      "instance()"
+    ],
+    "org.bukkit.Art": [
+      "create(Consumer)"
+    ],
+    "org.bukkit.Particle.Trail": [
+      "Trail(Location,Color,int)"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents": [
+      "DATAPACK_DISCOVERY"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "deserializeEntity(Array,World,boolean,boolean)",
+      "serializeEntity(Entity,EntitySerializationFlag...)"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "DROWNED_PREFERRED_WEAPONS",
+      "PIGLIN_PREFERRED_WEAPONS",
+      "PILLAGER_PREFERRED_WEAPONS",
+      "SKELETON_PREFERRED_WEAPONS",
+      "WITHER_SKELETON_DISLIKED_WEAPONS"
+    ],
+    "io.papermc.paper.registry.data.BannerPatternRegistryEntry.Builder": [
+      "translationKey(String)"
+    ],
+    "io.papermc.paper.registry.RegistryBuilderFactory": [
+      "copyFrom(TypedKey)"
+    ],
+    "io.papermc.paper.datacomponent.item.CustomModelData": [
+      "colors()",
+      "customModelData()",
+      "flags()"
+    ],
+    "io.papermc.paper.datacomponent.item.CustomModelData.Builder": [
+      "addColor(Color)",
+      "addColors(List)",
+      "addFlag(boolean)",
+      "addFlags(List)",
+      "addFloat(float)",
+      "addFloats(List)",
+      "addString(String)",
+      "addStrings(List)"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "dropItem(EquipmentSlot)",
+      "dropItem(EquipmentSlot,int)",
+      "dropItem(EquipmentSlot,int,boolean,Consumer)",
+      "dropItem(ItemStack)",
+      "dropItem(ItemStack,boolean,Consumer)",
+      "dropItem(int)",
+      "dropItem(int,int)",
+      "dropItem(int,int,boolean,Consumer)"
+    ],
+    "org.bukkit.entity.minecart.ExplosiveMinecart": [
+      "getExplosionSpeedFactor()",
+      "setExplosionSpeedFactor(float)"
+    ],
+    "io.papermc.paper.registry.TypedKey": [
+      "\u003cT\u003ecreate(RegistryKey,String)"
+    ],
+    "io.papermc.paper.datapack.Datapack.Position": [
+      "Position()"
+    ],
+    "com.destroystokyo.paper.MaterialTags": [
+      "COMMAND_BLOCKS"
+    ],
+    "org.bukkit.inventory.meta.components.CustomModelDataComponent": [
+      "getFlags()",
+      "getFloats()",
+      "getStrings()",
+      "setColors(List)",
+      "setFlags(List)",
+      "setFloats(List)",
+      "setStrings(List)"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "setNatural(boolean)"
+    ],
+    "io.papermc.paper.command.brigadier.argument.CustomArgumentType.Converted": [
+      "\u003cS\u003eparse(StringReader,S)",
+      "\u003cS\u003econvert(N,S)"
+    ],
+    "io.papermc.paper.datapack.DatapackRegistrar": [
+      "discoverPack(Path,String)",
+      "discoverPack(Path,String,Consumer)",
+      "discoverPack(PluginMeta,Path,String,Consumer)",
+      "discoverPack(PluginMeta,URI,String,Consumer)",
+      "discoverPack(URI,String)",
+      "discoverPack(URI,String,Consumer)",
+      "getDiscoveredPack(String)",
+      "getDiscoveredPacks()",
+      "hasPackDiscovered(String)",
+      "removeDiscoveredPack(String)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_EYEBLOSSOM_CLOSE",
+      "BLOCK_EYEBLOSSOM_CLOSE_LONG",
+      "BLOCK_EYEBLOSSOM_IDLE",
+      "BLOCK_EYEBLOSSOM_OPEN",
+      "BLOCK_EYEBLOSSOM_OPEN_LONG",
+      "BLOCK_RESIN_BREAK",
+      "BLOCK_RESIN_BRICKS_BREAK",
+      "BLOCK_RESIN_BRICKS_FALL",
+      "BLOCK_RESIN_BRICKS_HIT",
+      "BLOCK_RESIN_BRICKS_PLACE",
+      "BLOCK_RESIN_BRICKS_STEP",
+      "BLOCK_RESIN_FALL",
+      "BLOCK_RESIN_PLACE",
+      "BLOCK_RESIN_STEP",
+      "ENTITY_CREAKING_TWITCH"
+    ],
+    "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
+      "AQUATIC",
+      "AXOLOTL_ALWAYS_HOSTILES",
+      "AXOLOTL_HUNT_TARGETS",
+      "BEEHIVE_INHABITORS",
+      "BOAT",
+      "CAN_BREATHE_UNDER_WATER",
+      "CAN_TURN_IN_BOATS",
+      "DEFLECTS_PROJECTILES",
+      "DISMOUNTS_UNDERWATER",
+      "EntityTypeTagKeys()",
+      "FALL_DAMAGE_IMMUNE",
+      "FREEZE_HURTS_EXTRA_TYPES",
+      "FREEZE_IMMUNE_ENTITY_TYPES",
+      "IGNORES_POISON_AND_REGEN",
+      "ILLAGER_FRIENDS",
+      "IMMUNE_TO_INFESTED",
+      "IMMUNE_TO_OOZING",
+      "IMPACT_PROJECTILES",
+      "INVERTED_HEALING_AND_HARM",
+      "NON_CONTROLLING_RIDER",
+      "NOT_SCARY_FOR_PUFFERFISH",
+      "NO_ANGER_FROM_WIND_CHARGE",
+      "POWDER_SNOW_WALKABLE_MOBS",
+      "RAIDERS",
+      "REDIRECTABLE_PROJECTILE",
+      "SENSITIVE_TO_BANE_OF_ARTHROPODS",
+      "SENSITIVE_TO_IMPALING",
+      "SENSITIVE_TO_SMITE",
+      "SKELETONS",
+      "WITHER_FRIENDS",
+      "ZOMBIES"
+    ],
+    "io.papermc.paper.registry.event.WritableRegistry": [
+      "registerWith(TypedKey,Consumer)"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "effectiveName()"
+    ],
+    "org.bukkit.block.BlockType": [
+      "POTTED_CLOSED_EYEBLOSSOM",
+      "POTTED_OPEN_EYEBLOSSOM"
+    ],
+    "io.papermc.paper.registry.RegistryKey": [
+      "typedKey(Key)",
+      "typedKey(String)"
+    ],
+    "io.papermc.paper.entity.EntitySerializationFlag": [
+      "EntitySerializationFlag()",
+      "FORCE",
+      "PASSENGERS"
+    ],
+    "io.papermc.paper.registry.data.DamageTypeRegistryEntry": [
+      "damageEffect()",
+      "damageScaling()",
+      "deathMessageType()",
+      "exhaustion()",
+      "messageId()"
+    ],
+    "io.papermc.paper.datapack.DatapackRegistrar.Configurer": [
+      "autoEnableOnServerStart(boolean)",
+      "position(boolean,Position)"
+    ],
+    "org.bukkit.inventory.meta.trim.TrimMaterial": [
+      "RESIN"
+    ],
+    "org.bukkit.inventory.ItemType": [
+      "CHISELED_RESIN_BRICKS",
+      "CLOSED_EYEBLOSSOM",
+      "OPEN_EYEBLOSSOM",
+      "RESIN_BLOCK",
+      "RESIN_BRICKS",
+      "RESIN_BRICK_SLAB",
+      "RESIN_BRICK_STAIRS",
+      "RESIN_BRICK_WALL",
+      "RESIN_CLUMP",
+      "RESIN_BRICK"
+    ],
+    "org.bukkit.Registry": [
+      "\u003cA\u003elegacyRegistryFor(Class)",
+      "\u003cA\u003eregistryFor(RegistryKey)",
+      "getTags()"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.Particle.TargetColor": [
+      "TargetColor(Location,Color)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable.Builder": [
+      "model(Key)"
+    ],
+    "org.bukkit.Tag": [
+      "TALL_FLOWERS",
+      "ITEMS_TRIM_TEMPLATES"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart.Creaking": [
+      "Creaking()",
+      "DISABLED",
+      "DORMANT"
+    ],
+    "org.bukkit.plugin.EventExecutor": [
+      "eventExecutorMap"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "getCreaking()",
+      "setCreaking(Creaking)"
+    ],
+    "org.bukkit.Registry.SimpleRegistry": [
+      "SimpleRegistry(Class)",
+      "SimpleRegistry(Class,Predicate)"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "TRIM_TEMPLATES"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "model()"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CREAKING_TRANSIENT"
+    ],
+    "io.papermc.paper.datacomponent.item.CustomModelData": [
+      "customModelData(int)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.Particle.TargetColor": [
+      "TargetColor(Location,Color)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable.Builder": [
+      "model(Key)"
+    ],
+    "org.bukkit.Tag": [
+      "TALL_FLOWERS",
+      "ITEMS_TRIM_TEMPLATES"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart.Creaking": [
+      "Creaking()",
+      "DISABLED",
+      "DORMANT"
+    ],
+    "org.bukkit.plugin.EventExecutor": [
+      "eventExecutorMap"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "getCreaking()",
+      "setCreaking(Creaking)"
+    ],
+    "org.bukkit.Registry.SimpleRegistry": [
+      "SimpleRegistry(Class)",
+      "SimpleRegistry(Class,Predicate)"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "TRIM_TEMPLATES"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "model()"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CREAKING_TRANSIENT"
+    ],
+    "io.papermc.paper.datacomponent.item.CustomModelData": [
+      "customModelData(int)"
+    ]
+  }
+}

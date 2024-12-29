@@ -1,0 +1,974 @@
+{
+  "versionA": "1.19.2",
+  "versionB": "1.19.3",
+  "packagesAdded": [
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.plugin.provider.entrypoint",
+    "io.papermc.paper.plugin.provider.util",
+    "org.bukkit.inventory.recipe"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.block",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.math",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.block.LockableTileState",
+    "io.papermc.paper.entity.TeleportFlag",
+    "io.papermc.paper.entity.TeleportFlag.EntityState",
+    "io.papermc.paper.entity.TeleportFlag.Relative",
+    "io.papermc.paper.event.block.BlockLockCheckEvent",
+    "io.papermc.paper.event.block.CompostItemEvent",
+    "io.papermc.paper.event.entity.EntityCompostItemEvent",
+    "io.papermc.paper.event.entity.EntityFertilizeEggEvent",
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent",
+    "io.papermc.paper.event.entity.WaterBottleSplashEvent",
+    "io.papermc.paper.math.BlockPosition",
+    "io.papermc.paper.math.BlockPositionImpl",
+    "io.papermc.paper.math.FinePosition",
+    "io.papermc.paper.math.FinePositionImpl",
+    "io.papermc.paper.math.Position",
+    "io.papermc.paper.plugin.PermissionManager",
+    "io.papermc.paper.plugin.bootstrap.PluginBootstrap",
+    "io.papermc.paper.plugin.bootstrap.PluginProviderContext",
+    "io.papermc.paper.plugin.configuration.PluginMeta",
+    "io.papermc.paper.plugin.loader.PluginClasspathBuilder",
+    "io.papermc.paper.plugin.loader.PluginLoader",
+    "io.papermc.paper.plugin.loader.library.ClassPathLibrary",
+    "io.papermc.paper.plugin.loader.library.LibraryLoadingException",
+    "io.papermc.paper.plugin.loader.library.impl.JarLibrary",
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver",
+    "io.papermc.paper.plugin.provider.classloader.PaperClassLoaderStorageAccess",
+    "org.bukkit.MusicInstrument",
+    "org.bukkit.Translatable",
+    "org.bukkit.block.ChiseledBookshelf",
+    "org.bukkit.block.HangingSign",
+    "org.bukkit.block.data.type.ChiseledBookshelf",
+    "org.bukkit.block.data.type.HangingSign",
+    "org.bukkit.block.data.type.WallHangingSign",
+    "org.bukkit.entity.Camel",
+    "org.bukkit.entity.Enemy",
+    "org.bukkit.event.block.BrewingStartEvent",
+    "org.bukkit.event.block.CampfireStartEvent",
+    "org.bukkit.event.block.InventoryBlockStartEvent",
+    "org.bukkit.event.inventory.PrepareGrindstoneEvent",
+    "org.bukkit.event.inventory.PrepareInventoryResultEvent",
+    "org.bukkit.generator.BiomeParameterPoint",
+    "org.bukkit.inventory.ChiseledBookshelfInventory",
+    "org.bukkit.inventory.meta.MusicInstrumentMeta",
+    "org.bukkit.inventory.recipe.CookingBookCategory",
+    "org.bukkit.inventory.recipe.CraftingBookCategory",
+    "org.bukkit.plugin.java.JavaPlugin.DummyPluginLoaderImplHolder"
+  ],
+  "classesRemoved": [
+    "io.papermc.paper.entity.RelativeTeleportFlag",
+    "org.bukkit.plugin.java.LibraryLoader",
+    "org.bukkit.plugin.java.PluginClassLoader"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.block.TargetBlockInfo.FluidMode",
+    "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent",
+    "com.destroystokyo.paper.event.inventory.PrepareResultEvent",
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent",
+    "com.destroystokyo.paper.utils.PaperPluginLogger",
+    "io.papermc.paper.event.player.AbstractChatEvent",
+    "io.papermc.paper.event.player.AsyncChatCommandDecorateEvent",
+    "io.papermc.paper.event.player.AsyncChatDecorateEvent",
+    "io.papermc.paper.event.player.AsyncChatEvent",
+    "io.papermc.paper.event.player.ChatEvent",
+    "io.papermc.paper.event.world.StructuresLocateEvent",
+    "io.papermc.paper.event.world.StructuresLocateEvent.Result",
+    "org.bukkit.Chunk",
+    "org.bukkit.ChunkSnapshot",
+    "org.bukkit.GameRule",
+    "org.bukkit.Instrument",
+    "org.bukkit.Location",
+    "org.bukkit.Material",
+    "org.bukkit.NamespacedKey",
+    "org.bukkit.Registry",
+    "org.bukkit.SkullType",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.Skull",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.entity.Boat.Type",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.Horse.Variant",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Pose",
+    "org.bukkit.entity.Projectile",
+    "org.bukkit.entity.Rabbit",
+    "org.bukkit.entity.Tadpole",
+    "org.bukkit.entity.minecart.ExplosiveMinecart",
+    "org.bukkit.event.block.BlockExplodeEvent",
+    "org.bukkit.event.command.UnknownCommandEvent",
+    "org.bukkit.event.entity.EntityPortalEvent",
+    "org.bukkit.event.inventory.FurnaceStartSmeltEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.inventory.PrepareAnvilEvent",
+    "org.bukkit.event.inventory.PrepareSmithingEvent",
+    "org.bukkit.event.player.PlayerKickEvent.Cause",
+    "org.bukkit.event.player.PlayerPortalEvent",
+    "org.bukkit.event.player.PlayerTeleportEvent.TeleportCause",
+    "org.bukkit.event.server.ServerListPingEvent",
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent",
+    "org.bukkit.generator.BiomeProvider",
+    "org.bukkit.inventory.CookingRecipe",
+    "org.bukkit.inventory.ItemFlag",
+    "org.bukkit.inventory.ShapedRecipe",
+    "org.bukkit.inventory.ShapelessRecipe",
+    "org.bukkit.inventory.meta.SkullMeta",
+    "org.bukkit.plugin.Plugin",
+    "org.bukkit.plugin.PluginDescriptionFile",
+    "org.bukkit.plugin.PluginLoader",
+    "org.bukkit.plugin.PluginManager",
+    "org.bukkit.plugin.SimplePluginManager",
+    "org.bukkit.plugin.java.JavaPlugin",
+    "org.bukkit.plugin.java.JavaPluginLoader",
+    "org.bukkit.util.Vector"
+  ],
+  "membersAdded": {
+    "org.bukkit.inventory.ItemFlag": [
+      "HIDE_ITEM_SPECIFICS"
+    ],
+    "io.papermc.paper.math.BlockPositionImpl": [
+      "BlockPositionImpl(int,int,int)",
+      "blockX",
+      "blockY",
+      "blockZ"
+    ],
+    "io.papermc.paper.math.BlockPosition": [
+      "offset(Axis,int)",
+      "offset(BlockFace)",
+      "offset(BlockFace,int)"
+    ],
+    "org.bukkit.block.data.type.ChiseledBookshelf": [
+      "getMaximumOccupiedSlots()",
+      "getOccupiedSlots()",
+      "isSlotOccupied(int)",
+      "setSlotOccupied(int,boolean)"
+    ],
+    "io.papermc.paper.plugin.loader.library.LibraryLoadingException": [
+      "LibraryLoadingException(String)",
+      "LibraryLoadingException(String,Exception)"
+    ],
+    "org.bukkit.ChunkSnapshot": [
+      "contains(Biome)"
+    ],
+    "io.papermc.paper.plugin.provider.classloader.PaperClassLoaderStorageAccess": [
+      "PaperClassLoaderStorageAccess()"
+    ],
+    "org.bukkit.entity.Projectile": [
+      "canHitEntity(Entity)",
+      "hitEntity(Entity)",
+      "hitEntity(Entity,Vector)"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin.DummyPluginLoaderImplHolder": [
+      "DummyPluginLoaderImplHolder()"
+    ],
+    "org.bukkit.inventory.ShapelessRecipe": [
+      "category",
+      "setCategory(CraftingBookCategory)"
+    ],
+    "org.bukkit.entity.Player": [
+      "playSound(Entity,String,SoundCategory,float,float)",
+      "playSound(Entity,String,float,float)",
+      "hasFlyingFallDamage()",
+      "hasSeenWinScreen()",
+      "lookAt(Position,LookAnchor)",
+      "sendEquipmentChange(LivingEntity,Map)",
+      "setFlyingFallDamage(TriState)",
+      "setHasSeenWinScreen(boolean)",
+      "showWinScreen()"
+    ],
+    "org.bukkit.inventory.meta.SkullMeta": [
+      "getNoteBlockSound()",
+      "setNoteBlockSound(NamespacedKey)"
+    ],
+    "io.papermc.paper.event.entity.EntityFertilizeEggEvent": [
+      "EntityFertilizeEggEvent(LivingEntity,LivingEntity,Player,ItemStack,int)"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "RANDOM_STAND"
+    ],
+    "org.bukkit.event.inventory.PrepareInventoryResultEvent": [
+      "PrepareInventoryResultEvent(InventoryView,ItemStack)"
+    ],
+    "org.bukkit.block.Block": [
+      "breakNaturally(ItemStack,boolean,boolean)",
+      "breakNaturally(boolean,boolean)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getBlockTranslationKey(Material)",
+      "getItemTranslationKey(Material)"
+    ],
+    "org.bukkit.Instrument": [
+      "CUSTOM_HEAD"
+    ],
+    "org.bukkit.block.ChiseledBookshelf": [
+      "getLastInteractedSlot()",
+      "setLastInteractedSlot(int)"
+    ],
+    "org.bukkit.Material": [
+      "ACACIA_HANGING_SIGN",
+      "ACACIA_WALL_HANGING_SIGN",
+      "BAMBOO_BLOCK",
+      "BAMBOO_BUTTON",
+      "BAMBOO_CHEST_RAFT",
+      "BAMBOO_DOOR",
+      "BAMBOO_FENCE",
+      "BAMBOO_FENCE_GATE",
+      "BAMBOO_HANGING_SIGN",
+      "BAMBOO_MOSAIC",
+      "BAMBOO_MOSAIC_SLAB",
+      "BAMBOO_MOSAIC_STAIRS",
+      "BAMBOO_PLANKS",
+      "BAMBOO_PRESSURE_PLATE",
+      "BAMBOO_RAFT",
+      "BAMBOO_SIGN",
+      "BAMBOO_SLAB",
+      "BAMBOO_STAIRS",
+      "BAMBOO_TRAPDOOR",
+      "BAMBOO_WALL_HANGING_SIGN",
+      "BAMBOO_WALL_SIGN",
+      "BIRCH_HANGING_SIGN",
+      "BIRCH_WALL_HANGING_SIGN",
+      "CAMEL_SPAWN_EGG",
+      "CRIMSON_HANGING_SIGN",
+      "CRIMSON_WALL_HANGING_SIGN",
+      "DARK_OAK_HANGING_SIGN",
+      "DARK_OAK_WALL_HANGING_SIGN",
+      "ENDER_DRAGON_SPAWN_EGG",
+      "IRON_GOLEM_SPAWN_EGG",
+      "JUNGLE_HANGING_SIGN",
+      "JUNGLE_WALL_HANGING_SIGN",
+      "MANGROVE_HANGING_SIGN",
+      "MANGROVE_WALL_HANGING_SIGN",
+      "OAK_HANGING_SIGN",
+      "OAK_WALL_HANGING_SIGN",
+      "PIGLIN_HEAD",
+      "PIGLIN_WALL_HEAD",
+      "SNOW_GOLEM_SPAWN_EGG",
+      "SPRUCE_HANGING_SIGN",
+      "SPRUCE_WALL_HANGING_SIGN",
+      "STRIPPED_BAMBOO_BLOCK",
+      "WARPED_HANGING_SIGN",
+      "WARPED_WALL_HANGING_SIGN",
+      "WITHER_SPAWN_EGG",
+      "getBlockTranslationKey()",
+      "getItemTranslationKey()"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent": [
+      "legacy$structures",
+      "setStructures(List)",
+      "structures"
+    ],
+    "org.bukkit.entity.Rabbit": [
+      "getMoreCarrotTicks()",
+      "setMoreCarrotTicks(int)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "teleport(Location,TeleportCause,TeleportFlag...)",
+      "teleport(Location,TeleportFlag...)"
+    ],
+    "org.bukkit.block.data.BlockData": [
+      "getLightEmission()",
+      "requiresCorrectToolForDrops()"
+    ],
+    "com.destroystokyo.paper.utils.PaperPluginLogger": [
+      "PaperPluginLogger(PluginMeta)",
+      "getLogger(PluginMeta)"
+    ],
+    "io.papermc.paper.math.Position": [
+      "isFine()",
+      "offset(int,int,int)",
+      "toBlock()",
+      "blockX()",
+      "blockY()",
+      "blockZ()",
+      "BLOCK_ZERO",
+      "FINE_ZERO",
+      "block(Location)",
+      "block(int,int,int)",
+      "fine(Location)",
+      "fine(double,double,double)",
+      "toCenter()"
+    ],
+    "org.bukkit.event.block.BrewingStartEvent": [
+      "BrewingStartEvent(Block,ItemStack,int)",
+      "brewingTime",
+      "getTotalBrewTime()",
+      "setTotalBrewTime(int)"
+    ],
+    "io.papermc.paper.math.FinePositionImpl": [
+      "FinePositionImpl(double,double,double)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_BAMBOO_WOOD_BREAK",
+      "BLOCK_BAMBOO_WOOD_BUTTON_CLICK_OFF",
+      "BLOCK_BAMBOO_WOOD_BUTTON_CLICK_ON",
+      "BLOCK_BAMBOO_WOOD_DOOR_CLOSE",
+      "BLOCK_BAMBOO_WOOD_DOOR_OPEN",
+      "BLOCK_BAMBOO_WOOD_FALL",
+      "BLOCK_BAMBOO_WOOD_FENCE_GATE_CLOSE",
+      "BLOCK_BAMBOO_WOOD_FENCE_GATE_OPEN",
+      "BLOCK_BAMBOO_WOOD_HANGING_SIGN_BREAK",
+      "BLOCK_BAMBOO_WOOD_HANGING_SIGN_FALL",
+      "BLOCK_BAMBOO_WOOD_HANGING_SIGN_HIT",
+      "BLOCK_BAMBOO_WOOD_HANGING_SIGN_PLACE",
+      "BLOCK_BAMBOO_WOOD_HANGING_SIGN_STEP",
+      "BLOCK_BAMBOO_WOOD_HIT",
+      "BLOCK_BAMBOO_WOOD_PLACE",
+      "BLOCK_BAMBOO_WOOD_PRESSURE_PLATE_CLICK_OFF",
+      "BLOCK_BAMBOO_WOOD_PRESSURE_PLATE_CLICK_ON",
+      "BLOCK_BAMBOO_WOOD_STEP",
+      "BLOCK_BAMBOO_WOOD_TRAPDOOR_CLOSE",
+      "BLOCK_BAMBOO_WOOD_TRAPDOOR_OPEN",
+      "BLOCK_CHISELED_BOOKSHELF_BREAK",
+      "BLOCK_CHISELED_BOOKSHELF_FALL",
+      "BLOCK_CHISELED_BOOKSHELF_HIT",
+      "BLOCK_CHISELED_BOOKSHELF_INSERT",
+      "BLOCK_CHISELED_BOOKSHELF_INSERT_ENCHANTED",
+      "BLOCK_CHISELED_BOOKSHELF_PICKUP",
+      "BLOCK_CHISELED_BOOKSHELF_PICKUP_ENCHANTED",
+      "BLOCK_CHISELED_BOOKSHELF_PLACE",
+      "BLOCK_CHISELED_BOOKSHELF_STEP",
+      "BLOCK_HANGING_SIGN_BREAK",
+      "BLOCK_HANGING_SIGN_FALL",
+      "BLOCK_HANGING_SIGN_HIT",
+      "BLOCK_HANGING_SIGN_PLACE",
+      "BLOCK_HANGING_SIGN_STEP",
+      "BLOCK_NETHER_WOOD_BREAK",
+      "BLOCK_NETHER_WOOD_BUTTON_CLICK_OFF",
+      "BLOCK_NETHER_WOOD_BUTTON_CLICK_ON",
+      "BLOCK_NETHER_WOOD_DOOR_CLOSE",
+      "BLOCK_NETHER_WOOD_DOOR_OPEN",
+      "BLOCK_NETHER_WOOD_FALL",
+      "BLOCK_NETHER_WOOD_FENCE_GATE_CLOSE",
+      "BLOCK_NETHER_WOOD_FENCE_GATE_OPEN",
+      "BLOCK_NETHER_WOOD_HANGING_SIGN_BREAK",
+      "BLOCK_NETHER_WOOD_HANGING_SIGN_FALL",
+      "BLOCK_NETHER_WOOD_HANGING_SIGN_HIT",
+      "BLOCK_NETHER_WOOD_HANGING_SIGN_PLACE",
+      "BLOCK_NETHER_WOOD_HANGING_SIGN_STEP",
+      "BLOCK_NETHER_WOOD_HIT",
+      "BLOCK_NETHER_WOOD_PLACE",
+      "BLOCK_NETHER_WOOD_PRESSURE_PLATE_CLICK_OFF",
+      "BLOCK_NETHER_WOOD_PRESSURE_PLATE_CLICK_ON",
+      "BLOCK_NETHER_WOOD_STEP",
+      "BLOCK_NETHER_WOOD_TRAPDOOR_CLOSE",
+      "BLOCK_NETHER_WOOD_TRAPDOOR_OPEN",
+      "BLOCK_NOTE_BLOCK_IMITATE_CREEPER",
+      "BLOCK_NOTE_BLOCK_IMITATE_ENDER_DRAGON",
+      "BLOCK_NOTE_BLOCK_IMITATE_PIGLIN",
+      "BLOCK_NOTE_BLOCK_IMITATE_SKELETON",
+      "BLOCK_NOTE_BLOCK_IMITATE_WITHER_SKELETON",
+      "BLOCK_NOTE_BLOCK_IMITATE_ZOMBIE",
+      "ENTITY_CAMEL_AMBIENT",
+      "ENTITY_CAMEL_DASH",
+      "ENTITY_CAMEL_DASH_READY",
+      "ENTITY_CAMEL_DEATH",
+      "ENTITY_CAMEL_EAT",
+      "ENTITY_CAMEL_HURT",
+      "ENTITY_CAMEL_SADDLE",
+      "ENTITY_CAMEL_SIT",
+      "ENTITY_CAMEL_STAND",
+      "ENTITY_CAMEL_STEP",
+      "ENTITY_CAMEL_STEP_SAND"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getBodyYaw()",
+      "getTargetBlockFace(int,FluidCollisionMode)",
+      "rayTraceEntities(int)",
+      "rayTraceEntities(int,boolean)",
+      "setArrowsInBody(int,boolean)",
+      "setBodyYaw(float)"
+    ],
+    "org.bukkit.entity.Camel": [
+      "isDashing()",
+      "setDashing(boolean)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent.Cause": [
+      "EXPIRED_PROFILE_PUBLIC_KEY",
+      "INVALID_PUBLIC_KEY_SIGNATURE"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "getPluginMeta()",
+      "init(Server,PluginDescriptionFile,File,File,ClassLoader,PluginMeta)",
+      "pluginMeta"
+    ],
+    "io.papermc.paper.entity.TeleportFlag.Relative": [
+      "Relative()"
+    ],
+    "org.bukkit.inventory.meta.MusicInstrumentMeta": [
+      "setInstrument(MusicInstrument)"
+    ],
+    "org.bukkit.Registry": [
+      "match(String)"
+    ],
+    "org.bukkit.GameRule": [
+      "BLOCK_EXPLOSION_DROP_DECAY",
+      "GLOBAL_SOUND_EVENTS",
+      "LAVA_SOURCE_CONVERSION",
+      "MOB_EXPLOSION_DROP_DECAY",
+      "SNOW_ACCUMULATION_HEIGHT",
+      "TNT_EXPLOSION_DROP_DECAY",
+      "WATER_SOURCE_CONVERSION"
+    ],
+    "io.papermc.paper.plugin.loader.library.impl.JarLibrary": [
+      "JarLibrary(Path)"
+    ],
+    "org.bukkit.Tag": [
+      "ALL_HANGING_SIGNS",
+      "ALL_SIGNS",
+      "BAMBOO_BLOCKS",
+      "CEILING_HANGING_SIGNS",
+      "INVALID_SPAWN_INSIDE",
+      "ITEMS_BOOKSHELF_BOOKS",
+      "ITEMS_CREEPER_IGNITERS",
+      "ITEMS_HANGING_SIGNS",
+      "ITEMS_NON_FLAMMABLE_WOOD",
+      "WALL_HANGING_SIGNS"
+    ],
+    "org.bukkit.MusicInstrument": [
+      "ADMIRE",
+      "CALL",
+      "DREAM",
+      "FEEL",
+      "INSTRUMENTS",
+      "MusicInstrument(NamespacedKey)",
+      "PONDER",
+      "SEEK",
+      "SING",
+      "YEARN",
+      "getInstrument(String)"
+    ],
+    "io.papermc.paper.event.player.AsyncChatEvent": [
+      "AsyncChatEvent(boolean,Player,Set,ChatRenderer,Component,Component,SignedMessage)"
+    ],
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver": [
+      "register(LibraryStore)",
+      "MavenLibraryResolver()",
+      "addDependency(Dependency)",
+      "addRepository(RemoteRepository)",
+      "dependencies"
+    ],
+    "org.bukkit.entity.Horse.Variant": [
+      "CAMEL"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "addPermissions(List)",
+      "overridePermissionManager(Plugin,PermissionManager)",
+      "isTransitiveDependency(PluginMeta,PluginMeta)",
+      "paperPluginManager"
+    ],
+    "io.papermc.paper.event.entity.EntityCompostItemEvent": [
+      "EntityCompostItemEvent(Entity,Block,ItemStack,boolean)",
+      "who"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent": [
+      "PaperServerListPingEvent(StatusClient,Component,int,int,String,int,CachedServerIcon)",
+      "PaperServerListPingEvent(StatusClient,String,int,int,String,int,CachedServerIcon)"
+    ],
+    "io.papermc.paper.event.block.CompostItemEvent": [
+      "CompostItemEvent(Block,ItemStack,boolean)",
+      "setWillRaiseLevel(boolean)",
+      "willRaiseLevel",
+      "willRaiseLevel()"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "ServerListPingEvent(InetAddress,Component,int)",
+      "ServerListPingEvent(InetAddress,Component,int,int)",
+      "ServerListPingEvent(String,InetAddress,Component,int)",
+      "ServerListPingEvent(String,InetAddress,Component,int,int)",
+      "ServerListPingEvent(String,InetAddress,String,int)",
+      "ServerListPingEvent(String,InetAddress,String,int,int)"
+    ],
+    "org.bukkit.event.block.CampfireStartEvent": [
+      "CampfireStartEvent(Block,ItemStack,CampfireRecipe)",
+      "campfireRecipe"
+    ],
+    "org.bukkit.inventory.recipe.CraftingBookCategory": [
+      "BUILDING",
+      "CraftingBookCategory()",
+      "EQUIPMENT"
+    ],
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": [
+      "EntityPushedByEntityAttackEvent(Entity,Entity,Vector)",
+      "getPushedBy()",
+      "pushedBy"
+    ],
+    "io.papermc.paper.event.player.AbstractChatEvent": [
+      "AbstractChatEvent(boolean,Player,Set,ChatRenderer,Component,Component,SignedMessage)",
+      "signedMessage",
+      "signedMessage()"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "getEnchantmentSeed()",
+      "setEnchantmentSeed(int)"
+    ],
+    "io.papermc.paper.plugin.loader.PluginClasspathBuilder": [
+      "addLibrary(ClassPathLibrary)"
+    ],
+    "io.papermc.paper.plugin.bootstrap.PluginBootstrap": [
+      "bootstrap(PluginProviderContext)",
+      "createPlugin(PluginProviderContext)"
+    ],
+    "org.bukkit.inventory.CookingRecipe": [
+      "setCategory(CookingBookCategory)"
+    ],
+    "org.bukkit.entity.minecart.ExplosiveMinecart": [
+      "explode(double)"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent.TeleportCause": [
+      "DISMOUNT"
+    ],
+    "org.bukkit.event.entity.EntityPortalEvent": [
+      "EntityPortalEvent(Entity,Location,Location,int,PortalType)"
+    ],
+    "org.bukkit.event.block.InventoryBlockStartEvent": [
+      "InventoryBlockStartEvent(Block,ItemStack)"
+    ],
+    "org.bukkit.NamespacedKey": [
+      "isValidKey(String)",
+      "isValidKeyChar(char)",
+      "isValidNamespace(String)",
+      "isValidNamespaceChar(char)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "CHISELED_BOOKSHELF"
+    ],
+    "io.papermc.paper.event.entity.WaterBottleSplashEvent": [
+      "WaterBottleSplashEvent(ThrownPotion,Map,Set,Set)",
+      "damageAsWaterSensitive(LivingEntity)",
+      "doNotDamageAsWaterSensitive(LivingEntity)",
+      "extinguish",
+      "getToDamage()",
+      "getToExtinguish()",
+      "getToRehydrate()",
+      "rehydrate"
+    ],
+    "com.destroystokyo.paper.block.TargetBlockInfo.FluidMode": [
+      "FluidMode(FluidCollisionMode)",
+      "bukkit"
+    ],
+    "io.papermc.paper.plugin.loader.PluginLoader": [
+      "classloader(PluginClasspathBuilder)"
+    ],
+    "io.papermc.paper.event.player.ChatEvent": [
+      "ChatEvent(Player,Set,ChatRenderer,Component,Component,SignedMessage)"
+    ],
+    "org.bukkit.util.Vector": [
+      "isZero()"
+    ],
+    "org.bukkit.inventory.recipe.CookingBookCategory": [
+      "CookingBookCategory()"
+    ],
+    "org.bukkit.generator.BiomeParameterPoint": [
+      "getContinentalness()",
+      "getDepth()",
+      "getErosion()",
+      "getMaxContinentalness()",
+      "getMaxDepth()",
+      "getMaxErosion()",
+      "getMaxHumidity()",
+      "getMaxTemperature()",
+      "getMaxWeirdness()",
+      "getMinContinentalness()",
+      "getMinDepth()",
+      "getMinErosion()",
+      "getMinHumidity()",
+      "getMinTemperature()",
+      "getMinWeirdness()",
+      "getWeirdness()"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "BlockExplodeEvent(Block,List,float,BlockState)",
+      "explodedBlockState",
+      "getExplodedBlockState()"
+    ],
+    "io.papermc.paper.entity.TeleportFlag.EntityState": [
+      "EntityState()",
+      "RETAIN_OPEN_INVENTORY",
+      "RETAIN_PASSENGERS",
+      "RETAIN_VEHICLE"
+    ],
+    "io.papermc.paper.plugin.bootstrap.PluginProviderContext": [
+      "getConfiguration()",
+      "getDataDirectory()"
+    ],
+    "org.bukkit.entity.Pose": [
+      "SITTING"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent.Result": [
+      "Result(Position,Structure)",
+      "pos",
+      "pos()",
+      "structure",
+      "structure()"
+    ],
+    "io.papermc.paper.event.block.BlockLockCheckEvent": [
+      "BlockLockCheckEvent(Block,LockableTileState,Player,Component,Sound)",
+      "denyWithMessageAndSound(Component,Sound)",
+      "getKeyItem()",
+      "getLockedMessage()",
+      "getLockedSound()",
+      "isUsingCustomKeyItemStack()",
+      "lockedMessage",
+      "lockedSound",
+      "resetKeyItem()",
+      "setKeyItem(ItemStack)",
+      "setLockedMessage(Component)",
+      "setLockedSound(Sound)"
+    ],
+    "org.bukkit.generator.BiomeProvider": [
+      "getBiome(WorldInfo,int,int,int,BiomeParameterPoint)"
+    ],
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent": [
+      "VehicleBlockCollisionEvent(Vehicle,Block,Vector)"
+    ],
+    "org.bukkit.plugin.PluginDescriptionFile": [
+      "getLoadBeforePlugins()",
+      "getLoadOrder()",
+      "getLoggerPrefix()",
+      "getMainClass()",
+      "getPluginDependencies()",
+      "getPluginSoftDependencies()",
+      "getProvidedPlugins()"
+    ]
+  },
+  "membersRemoved": {
+    "io.papermc.paper.event.world.StructuresLocateEvent": [
+      "configuredStructures"
+    ],
+    "org.bukkit.plugin.java.LibraryLoader": [
+      "LibraryLoader(Logger)",
+      "createLoader(PluginDescriptionFile)"
+    ],
+    "org.bukkit.Tag": [
+      "NON_FLAMMABLE_WOOD",
+      "OVERWORLD_NATURAL_LOGS"
+    ],
+    "io.papermc.paper.event.player.AsyncChatEvent": [
+      "AsyncChatEvent(boolean,Player,Set,ChatRenderer,Component,Component)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "teleport(Location,TeleportCause,boolean)",
+      "teleport(Location,TeleportCause,boolean,boolean)",
+      "teleport(Location,boolean)",
+      "teleport(Location,boolean,boolean)"
+    ],
+    "com.destroystokyo.paper.utils.PaperPluginLogger": [
+      "PaperPluginLogger(PluginDescriptionFile)"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "disablePlugins(boolean)",
+      "getPluginLoader(File)"
+    ],
+    "com.destroystokyo.paper.block.TargetBlockInfo.FluidMode": [
+      "FluidMode()"
+    ],
+    "org.bukkit.entity.Player": [
+      "lookAt(Location,LookAnchor)",
+      "teleport(Location,TeleportCause,boolean,boolean,RelativeTeleportFlag...)"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent": [
+      "PaperServerListPingEvent(StatusClient,Component,boolean,int,int,String,int,CachedServerIcon)",
+      "PaperServerListPingEvent(StatusClient,String,boolean,int,int,String,int,CachedServerIcon)"
+    ],
+    "org.bukkit.plugin.java.PluginClassLoader": [
+      "\u003cT\u003eaddEnumeration(ArrayList,Enumeration)",
+      "PluginClassLoader(JavaPluginLoader,ClassLoader,PluginDescriptionFile,File,File,ClassLoader)",
+      "classes",
+      "findClass(String)",
+      "getClasses()",
+      "getResources(String)",
+      "initialize(JavaPlugin)",
+      "jar",
+      "loadClass(String,boolean)",
+      "loadClass0(String,boolean,boolean,boolean)",
+      "manifest",
+      "pluginInit",
+      "pluginState",
+      "seenIllegalAccess",
+      "url"
+    ],
+    "io.papermc.paper.event.player.ChatEvent": [
+      "ChatEvent(Player,Set,ChatRenderer,Component,Component)"
+    ],
+    "io.papermc.paper.entity.RelativeTeleportFlag": [
+      "RelativeTeleportFlag()"
+    ],
+    "io.papermc.paper.event.player.AsyncChatCommandDecorateEvent": [
+      "AsyncChatCommandDecorateEvent(boolean,Player,Component,boolean,Component)"
+    ],
+    "org.bukkit.event.command.UnknownCommandEvent": [
+      "UnknownCommandEvent(CommandSender,String,String)"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "ServerListPingEvent(InetAddress,Component,boolean,int)",
+      "ServerListPingEvent(InetAddress,Component,boolean,int,int)",
+      "ServerListPingEvent(InetAddress,String,boolean,int)",
+      "ServerListPingEvent(InetAddress,String,boolean,int,int)",
+      "ServerListPingEvent(String,InetAddress,Component,boolean,int)",
+      "ServerListPingEvent(String,InetAddress,Component,boolean,int,int)",
+      "ServerListPingEvent(String,InetAddress,String,boolean,int)",
+      "ServerListPingEvent(String,InetAddress,String,boolean,int,int)",
+      "shouldSendChatPreviews"
+    ],
+    "io.papermc.paper.event.player.AsyncChatDecorateEvent": [
+      "isPreview"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "\u003cT\u003eregistryFor(Class)",
+      "getTranslationKey(Block)",
+      "getTranslationKey(Material)"
+    ],
+    "org.bukkit.plugin.java.JavaPluginLoader": [
+      "DISABLE_CLASS_PRIORITIZATION",
+      "classLoadLock",
+      "classLoadLockCount",
+      "getClassByName(String,boolean,PluginDescriptionFile,PluginClassLoader)"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent.Result": [
+      "configuredStructure"
+    ],
+    "org.bukkit.Instrument": [
+      "getByType(byte)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent": [
+      "hitBy"
+    ],
+    "io.papermc.paper.event.player.AbstractChatEvent": [
+      "AbstractChatEvent(boolean,Player,Set,ChatRenderer,Component,Component)"
+    ],
+    "org.bukkit.plugin.PluginManager": [
+      "disablePlugin(Plugin,boolean)"
+    ]
+  },
+  "membersChanged": {
+    "io.papermc.paper.event.world.StructuresLocateEvent": [
+      "configuredStructures"
+    ],
+    "org.bukkit.plugin.java.LibraryLoader": [
+      "LibraryLoader(Logger)",
+      "createLoader(PluginDescriptionFile)"
+    ],
+    "org.bukkit.Tag": [
+      "NON_FLAMMABLE_WOOD",
+      "OVERWORLD_NATURAL_LOGS"
+    ],
+    "io.papermc.paper.event.player.AsyncChatEvent": [
+      "AsyncChatEvent(boolean,Player,Set,ChatRenderer,Component,Component)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "teleport(Location,TeleportCause,boolean)",
+      "teleport(Location,TeleportCause,boolean,boolean)",
+      "teleport(Location,boolean)",
+      "teleport(Location,boolean,boolean)"
+    ],
+    "com.destroystokyo.paper.utils.PaperPluginLogger": [
+      "PaperPluginLogger(PluginDescriptionFile)"
+    ],
+    "org.bukkit.plugin.SimplePluginManager": [
+      "disablePlugins(boolean)",
+      "getPluginLoader(File)"
+    ],
+    "com.destroystokyo.paper.block.TargetBlockInfo.FluidMode": [
+      "FluidMode()"
+    ],
+    "org.bukkit.entity.Player": [
+      "lookAt(Location,LookAnchor)",
+      "teleport(Location,TeleportCause,boolean,boolean,RelativeTeleportFlag...)"
+    ],
+    "com.destroystokyo.paper.event.server.PaperServerListPingEvent": [
+      "PaperServerListPingEvent(StatusClient,Component,boolean,int,int,String,int,CachedServerIcon)",
+      "PaperServerListPingEvent(StatusClient,String,boolean,int,int,String,int,CachedServerIcon)"
+    ],
+    "org.bukkit.plugin.java.PluginClassLoader": [
+      "\u003cT\u003eaddEnumeration(ArrayList,Enumeration)",
+      "PluginClassLoader(JavaPluginLoader,ClassLoader,PluginDescriptionFile,File,File,ClassLoader)",
+      "classes",
+      "findClass(String)",
+      "getClasses()",
+      "getResources(String)",
+      "initialize(JavaPlugin)",
+      "jar",
+      "loadClass(String,boolean)",
+      "loadClass0(String,boolean,boolean,boolean)",
+      "manifest",
+      "pluginInit",
+      "pluginState",
+      "seenIllegalAccess",
+      "url"
+    ],
+    "io.papermc.paper.event.player.ChatEvent": [
+      "ChatEvent(Player,Set,ChatRenderer,Component,Component)"
+    ],
+    "io.papermc.paper.entity.RelativeTeleportFlag": [
+      "RelativeTeleportFlag()"
+    ],
+    "io.papermc.paper.event.player.AsyncChatCommandDecorateEvent": [
+      "AsyncChatCommandDecorateEvent(boolean,Player,Component,boolean,Component)"
+    ],
+    "org.bukkit.event.command.UnknownCommandEvent": [
+      "UnknownCommandEvent(CommandSender,String,String)"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "ServerListPingEvent(InetAddress,Component,boolean,int)",
+      "ServerListPingEvent(InetAddress,Component,boolean,int,int)",
+      "ServerListPingEvent(InetAddress,String,boolean,int)",
+      "ServerListPingEvent(InetAddress,String,boolean,int,int)",
+      "ServerListPingEvent(String,InetAddress,Component,boolean,int)",
+      "ServerListPingEvent(String,InetAddress,Component,boolean,int,int)",
+      "ServerListPingEvent(String,InetAddress,String,boolean,int)",
+      "ServerListPingEvent(String,InetAddress,String,boolean,int,int)",
+      "shouldSendChatPreviews"
+    ],
+    "io.papermc.paper.event.player.AsyncChatDecorateEvent": [
+      "isPreview"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "\u003cT\u003eregistryFor(Class)",
+      "getTranslationKey(Block)",
+      "getTranslationKey(Material)"
+    ],
+    "org.bukkit.plugin.java.JavaPluginLoader": [
+      "DISABLE_CLASS_PRIORITIZATION",
+      "classLoadLock",
+      "classLoadLockCount",
+      "getClassByName(String,boolean,PluginDescriptionFile,PluginClassLoader)"
+    ],
+    "io.papermc.paper.event.world.StructuresLocateEvent.Result": [
+      "configuredStructure"
+    ],
+    "org.bukkit.Instrument": [
+      "getByType(byte)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityKnockbackByEntityEvent": [
+      "hitBy"
+    ],
+    "io.papermc.paper.event.player.AbstractChatEvent": [
+      "AbstractChatEvent(boolean,Player,Set,ChatRenderer,Component,Component)"
+    ],
+    "org.bukkit.plugin.PluginManager": [
+      "disablePlugin(Plugin,boolean)"
+    ]
+  }
+}

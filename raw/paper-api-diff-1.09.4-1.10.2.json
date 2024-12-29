@@ -1,0 +1,269 @@
+{
+  "versionA": "1.09.4",
+  "versionB": "1.10.2",
+  "packagesAdded": [],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.event.entity.EntityZapEvent",
+    "org.bukkit.block.Lockable",
+    "org.bukkit.entity.PolarBear",
+    "org.bukkit.event.entity.EntityAirChangeEvent",
+    "org.bukkit.event.entity.EntityBreedEvent"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.event.entity.EntityAddToWorldEvent",
+    "com.destroystokyo.paper.event.entity.EntityRemoveFromWorldEvent",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.Sound",
+    "org.bukkit.block.Beacon",
+    "org.bukkit.command.Command",
+    "org.bukkit.command.CommandMap",
+    "org.bukkit.command.PluginCommand",
+    "org.bukkit.command.TabCompleter",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.enchantments.EnchantmentTarget",
+    "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.entity.ArmorStand",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Skeleton.SkeletonType",
+    "org.bukkit.entity.Villager.Profession",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.EntityDamageEvent.DamageCause",
+    "org.bukkit.event.entity.EntityTargetEvent.TargetReason",
+    "org.bukkit.event.entity.PigZapEvent",
+    "org.bukkit.event.entity.ProjectileHitEvent",
+    "org.bukkit.event.world.ChunkUnloadEvent",
+    "org.bukkit.inventory.InventoryView.Property",
+    "org.bukkit.inventory.meta.BookMeta"
+  ],
+  "membersAdded": {
+    "org.bukkit.entity.HumanEntity": [
+      "isHandRaised()"
+    ],
+    "org.bukkit.event.entity.EntityTargetEvent.TargetReason": [
+      "TEMPT"
+    ],
+    "org.bukkit.event.world.ChunkUnloadEvent": [
+      "ChunkUnloadEvent(Chunk,boolean)",
+      "isSaveChunk()",
+      "saveChunk",
+      "setSaveChunk(boolean)"
+    ],
+    "org.bukkit.entity.Villager.Profession": [
+      "HUSK",
+      "Profession(boolean)",
+      "isZombie()",
+      "zombie"
+    ],
+    "org.bukkit.entity.Entity": [
+      "addScoreboardTag(String)",
+      "getPortalCooldown()",
+      "getScoreboardTags()",
+      "removeScoreboardTag(String)",
+      "setPortalCooldown(int)"
+    ],
+    "org.bukkit.enchantments.EnchantmentWrapper": [
+      "isTreasure()"
+    ],
+    "org.bukkit.inventory.meta.BookMeta": [
+      "hasGeneration()"
+    ],
+    "org.bukkit.inventory.InventoryView.Property": [
+      "ENCHANT_ID1",
+      "ENCHANT_ID2",
+      "ENCHANT_ID3",
+      "ENCHANT_LEVEL1",
+      "ENCHANT_LEVEL2",
+      "ENCHANT_LEVEL3",
+      "ENCHANT_XP_SEED",
+      "LEVELS",
+      "PRIMARY_EFFECT",
+      "REPAIR_COST",
+      "SECONDARY_EFFECT",
+      "TICKS_FOR_CURRENT_SMELTING"
+    ],
+    "org.bukkit.entity.Player": [
+      "stopSound(Sound)",
+      "stopSound(String)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_ENCHANTMENT_TABLE_USE",
+      "ENTITY_HUSK_AMBIENT",
+      "ENTITY_HUSK_DEATH",
+      "ENTITY_HUSK_HURT",
+      "ENTITY_HUSK_STEP",
+      "ENTITY_POLAR_BEAR_AMBIENT",
+      "ENTITY_POLAR_BEAR_BABY_AMBIENT",
+      "ENTITY_POLAR_BEAR_DEATH",
+      "ENTITY_POLAR_BEAR_HURT",
+      "ENTITY_POLAR_BEAR_STEP",
+      "ENTITY_POLAR_BEAR_WARNING",
+      "ENTITY_STRAY_AMBIENT",
+      "ENTITY_STRAY_DEATH",
+      "ENTITY_STRAY_HURT",
+      "ENTITY_STRAY_STEP",
+      "ENTITY_WITHER_SKELETON_AMBIENT",
+      "ENTITY_WITHER_SKELETON_DEATH",
+      "ENTITY_WITHER_SKELETON_HURT",
+      "ENTITY_WITHER_SKELETON_STEP"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getPotionEffect(PotionEffectType)"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "POLAR_BEAR"
+    ],
+    "org.bukkit.event.entity.EntityAirChangeEvent": [
+      "EntityAirChangeEvent(Entity,int)"
+    ],
+    "org.bukkit.entity.Skeleton.SkeletonType": [
+      "STRAY",
+      "SkeletonType()"
+    ],
+    "org.bukkit.enchantments.EnchantmentTarget": [
+      "BREAKABLE"
+    ],
+    "org.bukkit.Particle": [
+      "FALLING_DUST"
+    ],
+    "org.bukkit.block.Beacon": [
+      "getEntitiesInRange()",
+      "getPrimaryEffect()",
+      "getSecondaryEffect()",
+      "setPrimaryEffect(PotionEffectType)",
+      "setSecondaryEffect(PotionEffectType)"
+    ],
+    "org.bukkit.block.Lockable": [
+      "getLock()",
+      "isLocked()",
+      "setLock(String)"
+    ],
+    "com.destroystokyo.paper.event.entity.EntityZapEvent": [
+      "EntityZapEvent(Entity,LightningStrike,Entity)",
+      "getBolt()",
+      "getReplacementEntity()",
+      "replacementEntity"
+    ],
+    "org.bukkit.command.Command": [
+      "tabComplete0(CommandSender,String,Array,Location)"
+    ],
+    "org.bukkit.event.entity.EntityBreedEvent": [
+      "EntityBreedEvent(LivingEntity,LivingEntity,LivingEntity,LivingEntity,ItemStack,int)",
+      "bredWith",
+      "breeder",
+      "father",
+      "getBredWith()",
+      "getBreeder()",
+      "getFather()",
+      "getMother()",
+      "mother"
+    ],
+    "org.bukkit.event.entity.ProjectileHitEvent": [
+      "ProjectileHitEvent(Projectile,Entity)",
+      "getHitEntity()",
+      "hitEntity"
+    ],
+    "org.bukkit.Material": [
+      "BONE_BLOCK",
+      "MAGMA",
+      "NETHER_WART_BLOCK",
+      "RED_NETHER_BRICK",
+      "STRUCTURE_VOID"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent.DamageCause": [
+      "HOT_FLOOR"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.entity.Villager.Profession": [
+      "Profession(int)",
+      "getProfession(int)",
+      "professions"
+    ],
+    "org.bukkit.command.TabCompleter": [
+      "onTabComplete(CommandSender,Command,String,Array,Location)"
+    ],
+    "org.bukkit.entity.Skeleton.SkeletonType": [
+      "SkeletonType(int)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.entity.Villager.Profession": [
+      "Profession(int)",
+      "getProfession(int)",
+      "professions"
+    ],
+    "org.bukkit.command.TabCompleter": [
+      "onTabComplete(CommandSender,Command,String,Array,Location)"
+    ],
+    "org.bukkit.entity.Skeleton.SkeletonType": [
+      "SkeletonType(int)"
+    ]
+  }
+}

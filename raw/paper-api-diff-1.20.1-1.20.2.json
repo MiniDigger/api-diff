@@ -1,0 +1,647 @@
+{
+  "versionA": "1.20.1",
+  "versionB": "1.20.2",
+  "packagesAdded": [
+    "io.papermc.paper.generated",
+    "io.papermc.paper.registry.keys"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.block",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.math",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.potion.SuspiciousEffectEntry",
+    "io.papermc.paper.potion.SuspiciousEffectEntryImpl",
+    "io.papermc.paper.registry.RegistryKey",
+    "io.papermc.paper.registry.RegistryKeyImpl",
+    "io.papermc.paper.registry.TypedKey",
+    "io.papermc.paper.registry.TypedKeyImpl",
+    "io.papermc.paper.registry.keys.BiomeKeys",
+    "io.papermc.paper.registry.keys.GameEventKeys",
+    "io.papermc.paper.registry.keys.StructureTypeKeys",
+    "io.papermc.paper.registry.keys.TrimMaterialKeys",
+    "io.papermc.paper.registry.keys.TrimPatternKeys",
+    "org.bukkit.event.player.PlayerRecipeBookSettingsChangeEvent",
+    "org.bukkit.event.player.PlayerRecipeBookSettingsChangeEvent.RecipeBookType",
+    "org.bukkit.event.world.AsyncStructureGenerateEvent",
+    "org.bukkit.event.world.AsyncStructureGenerateEvent.Cause",
+    "org.bukkit.inventory.ItemCraftResult",
+    "org.bukkit.util.BiomeSearchResult",
+    "org.bukkit.util.BlockTransformer",
+    "org.bukkit.util.BlockTransformer.TransformationState",
+    "org.bukkit.util.EntityTransformer"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "com.destroystokyo.paper.event.player.PlayerAdvancementCriterionGrantEvent",
+    "io.papermc.paper.math.Position",
+    "io.papermc.paper.potion.PotionMix",
+    "org.bukkit.Art",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Difficulty",
+    "org.bukkit.DyeColor",
+    "org.bukkit.Effect",
+    "org.bukkit.EntityEffect",
+    "org.bukkit.FeatureFlag",
+    "org.bukkit.GameEvent",
+    "org.bukkit.GameMode",
+    "org.bukkit.GameRule",
+    "org.bukkit.Instrument",
+    "org.bukkit.Location",
+    "org.bukkit.Material",
+    "org.bukkit.NamespacedKey",
+    "org.bukkit.Note",
+    "org.bukkit.Note.Tone",
+    "org.bukkit.Particle",
+    "org.bukkit.Registry",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.World.Environment",
+    "org.bukkit.WorldCreator",
+    "org.bukkit.attribute.Attribute",
+    "org.bukkit.attribute.AttributeInstance",
+    "org.bukkit.block.BlockState",
+    "org.bukkit.block.PistonMoveReaction",
+    "org.bukkit.block.data.BlockData",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.entity.AreaEffectCloud",
+    "org.bukkit.entity.Arrow",
+    "org.bukkit.entity.Display",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.EvokerFangs",
+    "org.bukkit.entity.FallingBlock",
+    "org.bukkit.entity.LightningStrike",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Mob",
+    "org.bukkit.entity.MushroomCow",
+    "org.bukkit.entity.Panda",
+    "org.bukkit.entity.Player",
+    "org.bukkit.event.entity.ExpBottleEvent",
+    "org.bukkit.event.entity.LingeringPotionSplashEvent",
+    "org.bukkit.event.entity.PotionSplashEvent",
+    "org.bukkit.event.entity.ProjectileHitEvent",
+    "org.bukkit.event.inventory.InventoryMoveItemEvent",
+    "org.bukkit.event.player.PlayerTeleportEvent",
+    "org.bukkit.inventory.InventoryView.Property",
+    "org.bukkit.inventory.ItemFactory",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.PotionMeta",
+    "org.bukkit.map.MapCursor",
+    "org.bukkit.map.MapCursor.Type",
+    "org.bukkit.map.MapPalette.MapColorCache",
+    "org.bukkit.map.MapView.Scale",
+    "org.bukkit.packs.DataPack",
+    "org.bukkit.plugin.PluginDescriptionFile",
+    "org.bukkit.potion.PotionEffectType",
+    "org.bukkit.potion.PotionType"
+  ],
+  "membersAdded": {
+    "org.bukkit.EntityEffect": [
+      "EGG_BREAK",
+      "FANG_ATTACK",
+      "GOAT_LOWER_HEAD",
+      "GOAT_RAISE_HEAD",
+      "HOGLIN_ATTACK",
+      "HONEY_BLOCK_FALL_PARTICLES",
+      "HONEY_BLOCK_SLIDE_PARTICLES",
+      "IRON_GOLEN_ATTACK",
+      "RAVAGER_ATTACK",
+      "RESET_SPAWNER_MINECART_DELAY",
+      "SHEEP_EAT_GRASS",
+      "SNIFFER_DIG",
+      "SNOWBALL_BREAK",
+      "SPAWN_DEATH_SMOKE",
+      "SWAP_HAND_ITEMS",
+      "TNT_MINECART_IGNITE",
+      "WARDEN_ATTACK",
+      "WARDEN_SONIC_ATTACK",
+      "WARDEN_TENDRIL_SHAKE",
+      "WOLF_SHAKE_STOP",
+      "ZOGLIN_ATTACK",
+      "isApplicableTo(Class)",
+      "isApplicableTo(Entity)"
+    ],
+    "io.papermc.paper.registry.keys.StructureTypeKeys": [
+      "StructureTypeKeys()"
+    ],
+    "org.bukkit.attribute.AttributeInstance": [
+      "getModifier(UUID)",
+      "removeModifier(UUID)"
+    ],
+    "org.bukkit.event.world.AsyncStructureGenerateEvent.Cause": [
+      "WORLD_GENERATION"
+    ],
+    "io.papermc.paper.registry.keys.GameEventKeys": [
+      "GameEventKeys()"
+    ],
+    "org.bukkit.entity.Player": [
+      "playSound(Entity,Sound,SoundCategory,float,float,long)",
+      "playSound(Entity,String,SoundCategory,float,float,long)",
+      "playSound(Location,Sound,SoundCategory,float,float,long)",
+      "playSound(Location,String,SoundCategory,float,float,long)",
+      "getIdleDuration()",
+      "resetIdleDuration()",
+      "updateInventory()"
+    ],
+    "org.bukkit.entity.Display": [
+      "getTeleportDuration()",
+      "setTeleportDuration(int)"
+    ],
+    "org.bukkit.entity.EvokerFangs": [
+      "getAttackDelay()",
+      "setAttackDelay(int)"
+    ],
+    "io.papermc.paper.registry.TypedKeyImpl": [
+      "registryKey()",
+      "TypedKeyImpl(Key,RegistryKey)",
+      "registryKey"
+    ],
+    "org.bukkit.Location": [
+      "isFinite()"
+    ],
+    "org.bukkit.World": [
+      "hasStructureAt(Position,Structure)",
+      "isPositionLoaded(Position)",
+      "locateNearestBiome(Location,int,Biome...)",
+      "locateNearestBiome(Location,int,int,int,Biome...)",
+      "rayTrace(Position,Vector,double,FluidCollisionMode,boolean,double,Predicate,Predicate)",
+      "rayTraceBlocks(Position,Vector,double,FluidCollisionMode,boolean,Predicate)",
+      "rayTraceEntities(Position,Vector,double,double,Predicate)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getInternalPotionData(NamespacedKey)"
+    ],
+    "io.papermc.paper.potion.PotionMix": [
+      "createPredicateChoice(Predicate)"
+    ],
+    "org.bukkit.Instrument": [
+      "Instrument(int,Sound)",
+      "getSound()",
+      "sound"
+    ],
+    "io.papermc.paper.registry.keys.BiomeKeys": [
+      "BiomeKeys()"
+    ],
+    "org.bukkit.inventory.ItemFactory": [
+      "enchantItem(Entity,ItemStack,int,boolean)",
+      "enchantItem(ItemStack,int,boolean)",
+      "enchantItem(World,ItemStack,int,boolean)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "getTrackedBy()"
+    ],
+    "org.bukkit.block.data.BlockData": [
+      "getCollisionShape(Location)"
+    ],
+    "org.bukkit.map.MapCursor.Type": [
+      "DESERT_VILLAGE",
+      "PLAINS_VILLAGE",
+      "SAVANNA_VILLAGE",
+      "SNOWY_VILLAGE",
+      "TAIGA_VILLAGE"
+    ],
+    "org.bukkit.potion.PotionType": [
+      "LONG_FIRE_RESISTANCE",
+      "LONG_INVISIBILITY",
+      "LONG_LEAPING",
+      "LONG_NIGHT_VISION",
+      "LONG_POISON",
+      "LONG_REGENERATION",
+      "LONG_SLOWNESS",
+      "LONG_SLOW_FALLING",
+      "LONG_STRENGTH",
+      "LONG_SWIFTNESS",
+      "LONG_TURTLE_MASTER",
+      "LONG_WATER_BREATHING",
+      "LONG_WEAKNESS",
+      "PotionType(String)",
+      "STRONG_HARMING",
+      "STRONG_HEALING",
+      "STRONG_LEAPING",
+      "STRONG_POISON",
+      "STRONG_REGENERATION",
+      "STRONG_SLOWNESS",
+      "STRONG_STRENGTH",
+      "STRONG_SWIFTNESS",
+      "STRONG_TURTLE_MASTER",
+      "getPotionEffects()",
+      "internalPotionDataSupplier"
+    ],
+    "io.papermc.paper.registry.TypedKey": [
+      "\u003cT\u003ecreate(RegistryKey,Key)"
+    ],
+    "org.bukkit.event.world.AsyncStructureGenerateEvent": [
+      "AsyncStructureGenerateEvent(World,boolean,Cause,Structure,BoundingBox,int,int)",
+      "blockTransformers",
+      "clearBlockTransformers()",
+      "clearEntityTransformers()",
+      "entityTransformers",
+      "getBlockTransformer(NamespacedKey)",
+      "getBlockTransformers()",
+      "getEntityTransformer(NamespacedKey)",
+      "getEntityTransformers()",
+      "removeBlockTransformer(NamespacedKey)",
+      "removeEntityTransformer(NamespacedKey)",
+      "setBlockTransformer(NamespacedKey,BlockTransformer)",
+      "setEntityTransformer(NamespacedKey,EntityTransformer)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_SPONGE_ABSORB",
+      "BLOCK_SPONGE_BREAK",
+      "BLOCK_SPONGE_FALL",
+      "BLOCK_SPONGE_HIT",
+      "BLOCK_SPONGE_PLACE",
+      "BLOCK_SPONGE_STEP",
+      "BLOCK_WET_SPONGE_BREAK",
+      "BLOCK_WET_SPONGE_FALL",
+      "BLOCK_WET_SPONGE_HIT",
+      "BLOCK_WET_SPONGE_PLACE",
+      "BLOCK_WET_SPONGE_STEP"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getForwardsMovement()",
+      "getSidewaysMovement()",
+      "getUpwardsMovement()"
+    ],
+    "org.bukkit.event.entity.ExpBottleEvent": [
+      "ExpBottleEvent(ThrownExpBottle,Entity,Block,BlockFace,int)"
+    ],
+    "org.bukkit.event.entity.LingeringPotionSplashEvent": [
+      "LingeringPotionSplashEvent(ThrownPotion,Entity,Block,BlockFace,AreaEffectCloud)",
+      "allowEmptyAreaEffectCreation",
+      "allowsEmptyCreation()",
+      "allowsEmptyCreation(boolean)"
+    ],
+    "org.bukkit.util.BlockTransformer.TransformationState": [
+      "getOriginal()"
+    ],
+    "org.bukkit.FeatureFlag": [
+      "TRADE_REBALANCE"
+    ],
+    "io.papermc.paper.potion.SuspiciousEffectEntryImpl": [
+      "duration()",
+      "effect()",
+      "SuspiciousEffectEntryImpl(PotionEffectType,int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerAdvancementCriterionGrantEvent": [
+      "advancementProgress",
+      "getAdvancementProgress()"
+    ],
+    "org.bukkit.packs.DataPack": [
+      "getMaxSupportedPackFormat()",
+      "getMinSupportedPackFormat()"
+    ],
+    "org.bukkit.Registry": [
+      "PARTICLE_TYPE"
+    ],
+    "org.bukkit.GameRule": [
+      "ENDER_PEARLS_VANISH_ON_DEATH"
+    ],
+    "org.bukkit.util.BlockTransformer": [
+      "transform(LimitedRegion,int,int,int,BlockState,TransformationState)"
+    ],
+    "org.bukkit.entity.Panda": [
+      "getCombinedGene()"
+    ],
+    "org.bukkit.Tag": [
+      "CAMEL_SAND_STEP_SOUND_BLOCKS",
+      "ENTITY_TYPES_NON_CONTROLLING_RIDER"
+    ],
+    "org.bukkit.entity.Mob": [
+      "isAggressive()",
+      "setAggressive(boolean)"
+    ],
+    "org.bukkit.WorldCreator": [
+      "keepSpawnInMemory()",
+      "keepSpawnInMemory(boolean)"
+    ],
+    "org.bukkit.entity.LightningStrike": [
+      "getCausingPlayer()",
+      "getFlashes()",
+      "setFlashes(int)"
+    ],
+    "org.bukkit.Server": [
+      "craftItem(Array,World)",
+      "craftItemResult(Array,World)",
+      "craftItemResult(Array,World,Player)"
+    ],
+    "io.papermc.paper.registry.keys.TrimMaterialKeys": [
+      "TrimMaterialKeys()"
+    ],
+    "org.bukkit.inventory.meta.PotionMeta": [
+      "getBasePotionType()",
+      "setBasePotionType(PotionType)"
+    ],
+    "org.bukkit.inventory.ItemCraftResult": [
+      "getOverflowItems()",
+      "getResultingMatrix()"
+    ],
+    "org.bukkit.event.player.PlayerRecipeBookSettingsChangeEvent.RecipeBookType": [
+      "RecipeBookType()"
+    ],
+    "org.bukkit.entity.MushroomCow": [
+      "getStewEffects()",
+      "setStewEffects(List)"
+    ],
+    "org.bukkit.GameEvent": [
+      "ENTITY_ACTION",
+      "UNEQUIP"
+    ],
+    "org.bukkit.event.player.PlayerRecipeBookSettingsChangeEvent": [
+      "PlayerRecipeBookSettingsChangeEvent(Player,RecipeBookType,boolean,boolean)",
+      "filtering",
+      "getRecipeBookType()",
+      "isFiltering()",
+      "open",
+      "recipeBookType"
+    ],
+    "org.bukkit.event.entity.PotionSplashEvent": [
+      "PotionSplashEvent(ThrownPotion,Entity,Block,BlockFace,Map)"
+    ],
+    "org.bukkit.attribute.Attribute": [
+      "GENERIC_MAX_ABSORPTION"
+    ],
+    "io.papermc.paper.potion.SuspiciousEffectEntry": [
+      "create(PotionEffectType,int)"
+    ],
+    "org.bukkit.enchantments.EnchantmentWrapper": [
+      "getMaxModifiedCost(int)",
+      "getMinModifiedCost(int)"
+    ],
+    "io.papermc.paper.registry.keys.TrimPatternKeys": [
+      "create(Key)",
+      "TrimPatternKeys()"
+    ],
+    "org.bukkit.block.BlockState": [
+      "copy()"
+    ],
+    "org.bukkit.Particle": [
+      "Particle(String)",
+      "Particle(String,Class)",
+      "Particle(String,Class,boolean)",
+      "Particle(String,boolean)",
+      "register"
+    ],
+    "org.bukkit.Note": [
+      "pitchArray"
+    ],
+    "io.papermc.paper.registry.RegistryKeyImpl": [
+      "\u003cT\u003ecreate(String)",
+      "REGISTRY_KEYS",
+      "RegistryKeyImpl(Key)"
+    ],
+    "org.bukkit.util.EntityTransformer": [
+      "transform(LimitedRegion,int,int,int,Entity,boolean)"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.inventory.ItemFactory": [
+      "updateMaterial(ItemMeta,Material)"
+    ],
+    "org.bukkit.map.MapCursor.Type": [
+      "byValue(byte)"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "setVersion(int)"
+    ],
+    "org.bukkit.potion.PotionType": [
+      "PotionType(PotionEffectType,boolean,boolean)",
+      "extendable",
+      "upgradeable"
+    ],
+    "org.bukkit.Note.Tone": [
+      "getById(byte)",
+      "getId(boolean)",
+      "isSharped(byte)"
+    ],
+    "org.bukkit.map.MapView.Scale": [
+      "valueOf(byte)"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "fromName(String)"
+    ],
+    "org.bukkit.map.MapCursor": [
+      "getRawType()"
+    ],
+    "org.bukkit.Particle": [
+      "Particle()",
+      "Particle(Class)"
+    ],
+    "org.bukkit.GameMode": [
+      "getByValue(int)"
+    ],
+    "org.bukkit.event.inventory.InventoryMoveItemEvent": [
+      "calledGetItem",
+      "calledSetItem"
+    ],
+    "org.bukkit.World.Environment": [
+      "getEnvironment(int)"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "PlayerTeleportEvent(Player,Location,Location,TeleportCause,Set)"
+    ],
+    "org.bukkit.Instrument": [
+      "Instrument(int)"
+    ],
+    "org.bukkit.DyeColor": [
+      "getByWoolData(byte)",
+      "getWoolData()",
+      "legacyValueOf(String)"
+    ],
+    "org.bukkit.plugin.PluginDescriptionFile": [
+      "getRawName()"
+    ],
+    "org.bukkit.event.entity.ProjectileHitEvent": [
+      "ProjectileHitEvent(Projectile,Entity,Block,BlockFace)"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "getById(int)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.inventory.ItemFactory": [
+      "updateMaterial(ItemMeta,Material)"
+    ],
+    "org.bukkit.map.MapCursor.Type": [
+      "byValue(byte)"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "setVersion(int)"
+    ],
+    "org.bukkit.potion.PotionType": [
+      "PotionType(PotionEffectType,boolean,boolean)",
+      "extendable",
+      "upgradeable"
+    ],
+    "org.bukkit.Note.Tone": [
+      "getById(byte)",
+      "getId(boolean)",
+      "isSharped(byte)"
+    ],
+    "org.bukkit.map.MapView.Scale": [
+      "valueOf(byte)"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "fromName(String)"
+    ],
+    "org.bukkit.map.MapCursor": [
+      "getRawType()"
+    ],
+    "org.bukkit.Particle": [
+      "Particle()",
+      "Particle(Class)"
+    ],
+    "org.bukkit.GameMode": [
+      "getByValue(int)"
+    ],
+    "org.bukkit.event.inventory.InventoryMoveItemEvent": [
+      "calledGetItem",
+      "calledSetItem"
+    ],
+    "org.bukkit.World.Environment": [
+      "getEnvironment(int)"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "PlayerTeleportEvent(Player,Location,Location,TeleportCause,Set)"
+    ],
+    "org.bukkit.Instrument": [
+      "Instrument(int)"
+    ],
+    "org.bukkit.DyeColor": [
+      "getByWoolData(byte)",
+      "getWoolData()",
+      "legacyValueOf(String)"
+    ],
+    "org.bukkit.plugin.PluginDescriptionFile": [
+      "getRawName()"
+    ],
+    "org.bukkit.event.entity.ProjectileHitEvent": [
+      "ProjectileHitEvent(Projectile,Entity,Block,BlockFace)"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "getById(int)"
+    ]
+  }
+}

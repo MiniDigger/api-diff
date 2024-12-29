@@ -1,0 +1,1529 @@
+{
+  "versionA": "1.21.1",
+  "versionB": "1.21.3",
+  "packagesAdded": [
+    "io.papermc.paper.datacomponent",
+    "io.papermc.paper.datacomponent.item",
+    "io.papermc.paper.datacomponent.item.consumable",
+    "io.papermc.paper.item",
+    "org.bukkit.entity.boat",
+    "org.bukkit.tag"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.brigadier",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.brigadier",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.ban",
+    "io.papermc.paper.block",
+    "io.papermc.paper.block.fluid",
+    "io.papermc.paper.block.fluid.type",
+    "io.papermc.paper.brigadier",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.command.brigadier",
+    "io.papermc.paper.command.brigadier.argument",
+    "io.papermc.paper.command.brigadier.argument.predicate",
+    "io.papermc.paper.command.brigadier.argument.range",
+    "io.papermc.paper.command.brigadier.argument.resolvers",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.inventory.tooltip",
+    "io.papermc.paper.math",
+    "io.papermc.paper.persistence",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.lifecycle.event",
+    "io.papermc.paper.plugin.lifecycle.event.handler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar",
+    "io.papermc.paper.plugin.lifecycle.event.types",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.data",
+    "io.papermc.paper.registry.event",
+    "io.papermc.paper.registry.event.type",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.registry.keys.tags",
+    "io.papermc.paper.registry.set",
+    "io.papermc.paper.registry.tag",
+    "io.papermc.paper.scoreboard.numbers",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.flag",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.spawner",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.damage",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.components",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.inventory.view",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.spawner",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.ClientOption.ParticleVisibility",
+    "io.papermc.paper.block.BlockPredicate",
+    "io.papermc.paper.block.BlockPredicate.Builder",
+    "io.papermc.paper.datacomponent.BuildableDataComponent",
+    "io.papermc.paper.datacomponent.DataComponentBuilder",
+    "io.papermc.paper.datacomponent.DataComponentType",
+    "io.papermc.paper.datacomponent.DataComponentType.NonValued",
+    "io.papermc.paper.datacomponent.DataComponentType.Valued",
+    "io.papermc.paper.datacomponent.DataComponentTypes",
+    "io.papermc.paper.datacomponent.item.BannerPatternLayers",
+    "io.papermc.paper.datacomponent.item.BannerPatternLayers.Builder",
+    "io.papermc.paper.datacomponent.item.BlockItemDataProperties",
+    "io.papermc.paper.datacomponent.item.BlockItemDataProperties.Builder",
+    "io.papermc.paper.datacomponent.item.BundleContents",
+    "io.papermc.paper.datacomponent.item.BundleContents.Builder",
+    "io.papermc.paper.datacomponent.item.ChargedProjectiles",
+    "io.papermc.paper.datacomponent.item.ChargedProjectiles.Builder",
+    "io.papermc.paper.datacomponent.item.Consumable",
+    "io.papermc.paper.datacomponent.item.Consumable.Builder",
+    "io.papermc.paper.datacomponent.item.CustomModelData",
+    "io.papermc.paper.datacomponent.item.DamageResistant",
+    "io.papermc.paper.datacomponent.item.DeathProtection",
+    "io.papermc.paper.datacomponent.item.DeathProtection.Builder",
+    "io.papermc.paper.datacomponent.item.DyedItemColor",
+    "io.papermc.paper.datacomponent.item.DyedItemColor.Builder",
+    "io.papermc.paper.datacomponent.item.Enchantable",
+    "io.papermc.paper.datacomponent.item.Equippable",
+    "io.papermc.paper.datacomponent.item.Equippable.Builder",
+    "io.papermc.paper.datacomponent.item.Fireworks",
+    "io.papermc.paper.datacomponent.item.Fireworks.Builder",
+    "io.papermc.paper.datacomponent.item.FoodProperties",
+    "io.papermc.paper.datacomponent.item.FoodProperties.Builder",
+    "io.papermc.paper.datacomponent.item.ItemAdventurePredicate",
+    "io.papermc.paper.datacomponent.item.ItemAdventurePredicate.Builder",
+    "io.papermc.paper.datacomponent.item.ItemArmorTrim",
+    "io.papermc.paper.datacomponent.item.ItemArmorTrim.Builder",
+    "io.papermc.paper.datacomponent.item.ItemAttributeModifiers",
+    "io.papermc.paper.datacomponent.item.ItemAttributeModifiers.Builder",
+    "io.papermc.paper.datacomponent.item.ItemAttributeModifiers.Entry",
+    "io.papermc.paper.datacomponent.item.ItemContainerContents",
+    "io.papermc.paper.datacomponent.item.ItemContainerContents.Builder",
+    "io.papermc.paper.datacomponent.item.ItemEnchantments",
+    "io.papermc.paper.datacomponent.item.ItemEnchantments.Builder",
+    "io.papermc.paper.datacomponent.item.ItemLore",
+    "io.papermc.paper.datacomponent.item.ItemLore.Builder",
+    "io.papermc.paper.datacomponent.item.JukeboxPlayable",
+    "io.papermc.paper.datacomponent.item.JukeboxPlayable.Builder",
+    "io.papermc.paper.datacomponent.item.LodestoneTracker",
+    "io.papermc.paper.datacomponent.item.LodestoneTracker.Builder",
+    "io.papermc.paper.datacomponent.item.MapDecorations",
+    "io.papermc.paper.datacomponent.item.MapDecorations.Builder",
+    "io.papermc.paper.datacomponent.item.MapDecorations.DecorationEntry",
+    "io.papermc.paper.datacomponent.item.MapId",
+    "io.papermc.paper.datacomponent.item.MapItemColor",
+    "io.papermc.paper.datacomponent.item.MapItemColor.Builder",
+    "io.papermc.paper.datacomponent.item.OminousBottleAmplifier",
+    "io.papermc.paper.datacomponent.item.PotDecorations",
+    "io.papermc.paper.datacomponent.item.PotDecorations.Builder",
+    "io.papermc.paper.datacomponent.item.PotionContents",
+    "io.papermc.paper.datacomponent.item.PotionContents.Builder",
+    "io.papermc.paper.datacomponent.item.Repairable",
+    "io.papermc.paper.datacomponent.item.ResolvableProfile",
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.Builder",
+    "io.papermc.paper.datacomponent.item.SeededContainerLoot",
+    "io.papermc.paper.datacomponent.item.SeededContainerLoot.Builder",
+    "io.papermc.paper.datacomponent.item.ShownInTooltip",
+    "io.papermc.paper.datacomponent.item.ShownInTooltip.Builder",
+    "io.papermc.paper.datacomponent.item.SuspiciousStewEffects",
+    "io.papermc.paper.datacomponent.item.SuspiciousStewEffects.Builder",
+    "io.papermc.paper.datacomponent.item.Tool",
+    "io.papermc.paper.datacomponent.item.Tool.Builder",
+    "io.papermc.paper.datacomponent.item.Tool.Rule",
+    "io.papermc.paper.datacomponent.item.Unbreakable",
+    "io.papermc.paper.datacomponent.item.Unbreakable.Builder",
+    "io.papermc.paper.datacomponent.item.UseCooldown",
+    "io.papermc.paper.datacomponent.item.UseCooldown.Builder",
+    "io.papermc.paper.datacomponent.item.UseRemainder",
+    "io.papermc.paper.datacomponent.item.WritableBookContent",
+    "io.papermc.paper.datacomponent.item.WritableBookContent.Builder",
+    "io.papermc.paper.datacomponent.item.WrittenBookContent",
+    "io.papermc.paper.datacomponent.item.WrittenBookContent.Builder",
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect",
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.ApplyStatusEffects",
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.ClearAllStatusEffects",
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.PlaySound",
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.RemoveStatusEffects",
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.TeleportRandomly",
+    "io.papermc.paper.datacomponent.item.consumable.ItemUseAnimation",
+    "io.papermc.paper.event.player.PlayerItemGroupCooldownEvent",
+    "io.papermc.paper.item.MapPostProcessing",
+    "io.papermc.paper.registry.data.PaintingVariantRegistryEntry",
+    "io.papermc.paper.registry.data.PaintingVariantRegistryEntry.Builder",
+    "io.papermc.paper.registry.keys.AttributeKeys",
+    "io.papermc.paper.registry.keys.FluidKeys",
+    "io.papermc.paper.registry.keys.PaintingVariantKeys",
+    "io.papermc.paper.registry.keys.SoundEventKeys",
+    "io.papermc.paper.registry.keys.tags.BannerPatternTagKeys",
+    "io.papermc.paper.registry.keys.tags.BiomeTagKeys",
+    "io.papermc.paper.registry.keys.tags.BlockTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.CatVariantTagKeys",
+    "io.papermc.paper.registry.keys.tags.DamageTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.FluidTagKeys",
+    "io.papermc.paper.registry.keys.tags.GameEventTagKeys",
+    "io.papermc.paper.registry.keys.tags.InstrumentTagKeys",
+    "io.papermc.paper.registry.keys.tags.PaintingVariantTagKeys",
+    "io.papermc.paper.registry.keys.tags.StructureTagKeys",
+    "io.papermc.paper.text.Filtered",
+    "org.bukkit.Input",
+    "org.bukkit.Particle.TargetColor",
+    "org.bukkit.advancement.AdvancementRequirement",
+    "org.bukkit.advancement.AdvancementRequirements",
+    "org.bukkit.block.BlockType",
+    "org.bukkit.block.BlockType.Typed",
+    "org.bukkit.block.CreakingHeart",
+    "org.bukkit.block.data.type.CreakingHeart",
+    "org.bukkit.block.data.type.CreakingHeart.Creaking",
+    "org.bukkit.block.data.type.HangingMoss",
+    "org.bukkit.block.data.type.MossyCarpet",
+    "org.bukkit.block.data.type.MossyCarpet.Height",
+    "org.bukkit.entity.Creaking",
+    "org.bukkit.entity.CreakingTransient",
+    "org.bukkit.entity.Salmon.Variant",
+    "org.bukkit.entity.boat.AcaciaBoat",
+    "org.bukkit.entity.boat.AcaciaChestBoat",
+    "org.bukkit.entity.boat.BambooChestRaft",
+    "org.bukkit.entity.boat.BambooRaft",
+    "org.bukkit.entity.boat.BirchBoat",
+    "org.bukkit.entity.boat.BirchChestBoat",
+    "org.bukkit.entity.boat.CherryBoat",
+    "org.bukkit.entity.boat.CherryChestBoat",
+    "org.bukkit.entity.boat.DarkOakBoat",
+    "org.bukkit.entity.boat.DarkOakChestBoat",
+    "org.bukkit.entity.boat.JungleBoat",
+    "org.bukkit.entity.boat.JungleChestBoat",
+    "org.bukkit.entity.boat.MangroveBoat",
+    "org.bukkit.entity.boat.MangroveChestBoat",
+    "org.bukkit.entity.boat.OakBoat",
+    "org.bukkit.entity.boat.OakChestBoat",
+    "org.bukkit.entity.boat.PaleOakBoat",
+    "org.bukkit.entity.boat.PaleOakChestBoat",
+    "org.bukkit.entity.boat.SpruceBoat",
+    "org.bukkit.entity.boat.SpruceChestBoat",
+    "org.bukkit.event.player.PlayerInputEvent",
+    "org.bukkit.inventory.TransmuteRecipe",
+    "org.bukkit.inventory.meta.components.EquippableComponent",
+    "org.bukkit.inventory.meta.components.UseCooldownComponent",
+    "org.bukkit.tag.DamageTypeTags"
+  ],
+  "classesRemoved": [
+    "org.bukkit.inventory.meta.components.FoodComponent.FoodEffect"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.ClientOption",
+    "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent",
+    "io.papermc.paper.entity.TeleportFlag.Relative",
+    "io.papermc.paper.event.player.PlayerItemCooldownEvent",
+    "io.papermc.paper.registry.RegistryKey",
+    "io.papermc.paper.registry.TypedKeyImpl",
+    "io.papermc.paper.registry.event.RegistryEvents",
+    "io.papermc.paper.registry.keys.BiomeKeys",
+    "io.papermc.paper.registry.keys.BlockTypeKeys",
+    "io.papermc.paper.registry.keys.DamageTypeKeys",
+    "io.papermc.paper.registry.keys.EnchantmentKeys",
+    "io.papermc.paper.registry.keys.GameEventKeys",
+    "io.papermc.paper.registry.keys.InstrumentKeys",
+    "io.papermc.paper.registry.keys.ItemTypeKeys",
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
+    "org.bukkit.Art",
+    "org.bukkit.Bukkit",
+    "org.bukkit.EntityEffect",
+    "org.bukkit.FeatureFlag",
+    "org.bukkit.Fluid",
+    "org.bukkit.GameRule",
+    "org.bukkit.Material",
+    "org.bukkit.MusicInstrument",
+    "org.bukkit.Particle",
+    "org.bukkit.Registry",
+    "org.bukkit.Registry.SimpleRegistry",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.TreeType",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.advancement.Advancement",
+    "org.bukkit.attribute.Attribute",
+    "org.bukkit.block.Biome",
+    "org.bukkit.block.Lockable",
+    "org.bukkit.block.banner.PatternType",
+    "org.bukkit.block.data.type.Vault",
+    "org.bukkit.damage.DamageType",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Salmon",
+    "org.bukkit.event.entity.EntityDamageEvent.DamageModifier",
+    "org.bukkit.generator.structure.Structure",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.ItemType",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.PotionMeta",
+    "org.bukkit.inventory.meta.components.FoodComponent",
+    "org.bukkit.inventory.meta.trim.TrimMaterial",
+    "org.bukkit.inventory.meta.trim.TrimPattern",
+    "org.bukkit.loot.LootTables"
+  ],
+  "membersAdded": {
+    "io.papermc.paper.datacomponent.item.PotDecorations.Builder": [
+      "back(ItemType)",
+      "front(ItemType)",
+      "left(ItemType)",
+      "right(ItemType)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemEnchantments.Builder": [
+      "add(Enchantment,int)",
+      "addAll(Map)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable.Builder": [
+      "allowedEntities(RegistryKeySet)",
+      "cameraOverlay(Key)",
+      "damageOnHurt(boolean)",
+      "dispensable(boolean)",
+      "equipSound(Key)",
+      "model(Key)",
+      "swappable(boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.BundleContents": [
+      "bundleContents()",
+      "bundleContents(List)"
+    ],
+    "org.bukkit.TreeType": [
+      "PALE_OAK",
+      "PALE_OAK_CREAKING"
+    ],
+    "io.papermc.paper.datacomponent.item.MapDecorations.DecorationEntry": [
+      "rotation()"
+    ],
+    "io.papermc.paper.registry.keys.SoundEventKeys": [
+      "SoundEventKeys()"
+    ],
+    "io.papermc.paper.datacomponent.item.WritableBookContent": [
+      "writeableBookContent()"
+    ],
+    "io.papermc.paper.datacomponent.item.SeededContainerLoot": [
+      "lootTable()",
+      "seededContainerLoot(Key)",
+      "seededContainerLoot(Key,long)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemEnchantments": [
+      "enchantments()",
+      "itemEnchantments()",
+      "itemEnchantments(Map,boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemAttributeModifiers.Entry": [
+      "attribute()",
+      "modifier()"
+    ],
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.RemoveStatusEffects": [
+      "removeEffects()"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemAdventurePredicate.Builder": [
+      "addPredicate(BlockPredicate)",
+      "addPredicates(List)"
+    ],
+    "org.bukkit.Input": [
+      "isBackward()",
+      "isForward()",
+      "isJump()",
+      "isLeft()",
+      "isRight()",
+      "isSneak()",
+      "isSprint()"
+    ],
+    "io.papermc.paper.datacomponent.item.WritableBookContent.Builder": [
+      "addPage(String)"
+    ],
+    "io.papermc.paper.datacomponent.item.MapDecorations.Builder": [
+      "put(String,DecorationEntry)",
+      "putAll(Map)"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "VALIDATE_FLOWER",
+      "VALIDATE_HIVE"
+    ],
+    "io.papermc.paper.datacomponent.item.JukeboxPlayable": [
+      "jukeboxPlayable(JukeboxSong)",
+      "jukeboxSong()"
+    ],
+    "io.papermc.paper.datacomponent.item.JukeboxPlayable.Builder": [
+      "jukeboxSong(JukeboxSong)"
+    ],
+    "io.papermc.paper.datacomponent.item.Enchantable": [
+      "enchantable(int)"
+    ],
+    "com.destroystokyo.paper.ClientOption.ParticleVisibility": [
+      "DECREASED",
+      "MINIMAL",
+      "ParticleVisibility(String)"
+    ],
+    "org.bukkit.World": [
+      "getChunkAtAsync(int,int,boolean,boolean,Consumer)",
+      "getChunksAtAsync(int,int,int,int,boolean,Runnable)"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "BREWING_FUEL",
+      "BUNDLES",
+      "DIAMOND_TOOL_MATERIALS",
+      "DUPLICATES_ALLAYS",
+      "FURNACE_MINECART_FUEL",
+      "GAZE_DISGUISE_EQUIPMENT",
+      "GOLD_TOOL_MATERIALS",
+      "IRON_TOOL_MATERIALS",
+      "MAP_INVISIBILITY_EQUIPMENT",
+      "NETHERITE_TOOL_MATERIALS",
+      "PANDA_EATS_FROM_GROUND",
+      "PIGLIN_SAFE_ARMOR",
+      "REPAIRS_CHAIN_ARMOR",
+      "REPAIRS_DIAMOND_ARMOR",
+      "REPAIRS_GOLD_ARMOR",
+      "REPAIRS_IRON_ARMOR",
+      "REPAIRS_LEATHER_ARMOR",
+      "REPAIRS_NETHERITE_ARMOR",
+      "REPAIRS_TURTLE_HELMET",
+      "REPAIRS_WOLF_ARMOR",
+      "VILLAGER_PICKS_UP",
+      "WOODEN_TOOL_MATERIALS"
+    ],
+    "io.papermc.paper.datacomponent.item.UseRemainder": [
+      "transformInto()",
+      "useRemainder(ItemStack)"
+    ],
+    "org.bukkit.block.data.type.Vault": [
+      "getVaultState()",
+      "setVaultState(State)"
+    ],
+    "io.papermc.paper.event.player.PlayerItemGroupCooldownEvent": [
+      "cooldownGroup"
+    ],
+    "io.papermc.paper.datacomponent.item.SuspiciousStewEffects": [
+      "suspiciousStewEffects()",
+      "suspiciousStewEffects(Collection)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemLore": [
+      "styledLines()"
+    ],
+    "io.papermc.paper.block.BlockPredicate": [
+      "predicate()"
+    ],
+    "io.papermc.paper.datacomponent.item.WrittenBookContent.Builder": [
+      "addFilteredPage(Filtered)",
+      "addFilteredPages(List)",
+      "addPages(List)",
+      "addPage(ComponentLike)",
+      "author(String)",
+      "filteredTitle(Filtered)",
+      "generation(int)",
+      "resolved(boolean)"
+    ],
+    "org.bukkit.Fluid": [
+      "getFluid(String)"
+    ],
+    "io.papermc.paper.datacomponent.item.consumable.ItemUseAnimation": [
+      "ItemUseAnimation()",
+      "SPEAR",
+      "TOOT_HORN"
+    ],
+    "io.papermc.paper.datacomponent.item.PotDecorations": [
+      "back()",
+      "front()",
+      "left()",
+      "potDecorations()",
+      "potDecorations(ItemType,ItemType,ItemType,ItemType)",
+      "right()"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "\u003cT\u003egetData(Valued)",
+      "\u003cT\u003egetDataOrDefault(Valued,T)",
+      "\u003cT\u003esetData(Valued,DataComponentBuilder)",
+      "\u003cT\u003esetData(Valued,T)",
+      "getDataTypes()",
+      "hasData(DataComponentType)",
+      "isDataOverridden(DataComponentType)",
+      "matchesWithoutData(ItemStack,Set)",
+      "matchesWithoutData(ItemStack,Set,boolean)",
+      "resetData(DataComponentType)",
+      "setData(NonValued)",
+      "unsetData(DataComponentType)"
+    ],
+    "com.destroystokyo.paper.ClientOption": [
+      "PARTICLE_VISIBILITY"
+    ],
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.Builder": [
+      "addProperties(Collection)",
+      "addProperty(ProfileProperty)",
+      "uuid(UUID)"
+    ],
+    "org.bukkit.FeatureFlag": [
+      "MINECART_IMPROVEMENTS",
+      "REDSTONE_EXPERIMENTS",
+      "WINTER_DROP"
+    ],
+    "io.papermc.paper.entity.TeleportFlag.Relative": [
+      "VELOCITY_ROTATION",
+      "VELOCITY_X",
+      "VELOCITY_Y",
+      "VELOCITY_Z"
+    ],
+    "io.papermc.paper.datacomponent.item.Tool.Builder": [
+      "addRule(Rule)",
+      "addRules(Collection)",
+      "damagePerBlock(int)",
+      "defaultMiningSpeed(float)"
+    ],
+    "org.bukkit.damage.DamageType": [
+      "MACE_SMASH"
+    ],
+    "org.bukkit.GameRule": [
+      "DISABLE_PLAYER_MOVEMENT_CHECK",
+      "MINECART_MAX_SPEED"
+    ],
+    "org.bukkit.Registry": [
+      "DATA_COMPONENT_TYPE"
+    ],
+    "io.papermc.paper.datacomponent.item.BannerPatternLayers.Builder": [
+      "add(Pattern)"
+    ],
+    "org.bukkit.Tag": [
+      "BATS_SPAWNABLE_ON",
+      "PALE_OAK_LOGS",
+      "ITEMS_BREWING_FUEL",
+      "ITEMS_BUNDLES",
+      "ITEMS_DIAMOND_TOOL_MATERIALS",
+      "ITEMS_DUPLICATES_ALLAYS",
+      "ITEMS_FURNACE_MINECART_FUEL",
+      "ITEMS_GAZE_DISGUISE_EQUIPMENT",
+      "ITEMS_GOLD_TOOL_MATERIALS",
+      "ITEMS_IRON_TOOL_MATERIALS",
+      "ITEMS_MAP_INVISIBILITY_EQUIPMENT",
+      "ITEMS_NETHERITE_TOOL_MATERIALS",
+      "ITEMS_PANDA_EATS_FROM_GROUND",
+      "ITEMS_PIGLIN_SAFE_ARMOR",
+      "ITEMS_REPAIRS_CHAIN_ARMOR",
+      "ITEMS_REPAIRS_DIAMOND_ARMOR",
+      "ITEMS_REPAIRS_GOLD_ARMOR",
+      "ITEMS_REPAIRS_IRON_ARMOR",
+      "ITEMS_REPAIRS_LEATHER_ARMOR",
+      "ITEMS_REPAIRS_NETHERITE_ARMOR",
+      "ITEMS_REPAIRS_TURTLE_HELMET",
+      "ITEMS_REPAIRS_WOLF_ARMOR",
+      "ITEMS_VILLAGER_PICKS_UP",
+      "ITEMS_WOODEN_TOOL_MATERIALS"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent": [
+      "getParticleVisibility()",
+      "hasParticleVisibilityChanged()",
+      "particleVisibility"
+    ],
+    "io.papermc.paper.datacomponent.item.UseCooldown.Builder": [
+      "cooldownGroup(Key)"
+    ],
+    "io.papermc.paper.datacomponent.item.Consumable": [
+      "animation()",
+      "consumable()",
+      "consumeEffects()",
+      "consumeSeconds()",
+      "hasConsumeParticles()"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemArmorTrim": [
+      "armorTrim()",
+      "itemArmorTrim(ArmorTrim)",
+      "itemArmorTrim(ArmorTrim,boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.DamageResistant": [
+      "damageResistant(TagKey)"
+    ],
+    "io.papermc.paper.datacomponent.item.FoodProperties": [
+      "food()",
+      "nutrition()",
+      "saturation()"
+    ],
+    "io.papermc.paper.text.Filtered": [
+      "\u003cT\u003eof(T,T)",
+      "filtered()",
+      "raw()"
+    ],
+    "org.bukkit.inventory.TransmuteRecipe": [
+      "TransmuteRecipe(NamespacedKey,Material,RecipeChoice,RecipeChoice)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemArmorTrim.Builder": [
+      "armorTrim(ArmorTrim)"
+    ],
+    "org.bukkit.Server": [
+      "getPauseWhenEmptyTime()",
+      "isGlobalTickThread()",
+      "isOwnedByCurrentRegion(World,int,int,int,int)",
+      "setPauseWhenEmptyTime(int)",
+      "allowPausing(Plugin,boolean)",
+      "isPaused()"
+    ],
+    "io.papermc.paper.registry.keys.tags.PaintingVariantTagKeys": [
+      "PLACEABLE",
+      "PaintingVariantTagKeys()"
+    ],
+    "io.papermc.paper.datacomponent.item.Repairable": [
+      "types()",
+      "repairable(RegistryKeySet)"
+    ],
+    "io.papermc.paper.datacomponent.item.UseCooldown": [
+      "cooldownGroup()",
+      "seconds()",
+      "useCooldown(float)"
+    ],
+    "io.papermc.paper.datacomponent.item.DeathProtection": [
+      "deathEffects()",
+      "deathProtection()",
+      "deathProtection(List)"
+    ],
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.ApplyStatusEffects": [
+      "effects()",
+      "probability()"
+    ],
+    "io.papermc.paper.datacomponent.item.MapDecorations": [
+      "decoration(String)",
+      "decorationEntry(Type,double,double,float)",
+      "decorations()",
+      "mapDecorations()",
+      "mapDecorations(Map)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemLore.Builder": [
+      "addLine(ComponentLike)",
+      "addLines(List)",
+      "lines(List)"
+    ],
+    "org.bukkit.advancement.AdvancementRequirement": [
+      "getRequiredCriteria()",
+      "isStrict()"
+    ],
+    "io.papermc.paper.datacomponent.item.OminousBottleAmplifier": [
+      "amplifier()",
+      "amplifier(int)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemAttributeModifiers.Builder": [
+      "addModifier(Attribute,AttributeModifier)",
+      "addModifier(Attribute,AttributeModifier,EquipmentSlotGroup)"
+    ],
+    "io.papermc.paper.registry.data.PaintingVariantRegistryEntry.Builder": [
+      "assetId(Key)",
+      "height(int)"
+    ],
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.TeleportRandomly": [
+      "diameter()"
+    ],
+    "io.papermc.paper.datacomponent.item.LodestoneTracker.Builder": [
+      "tracked(boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.PotionContents": [
+      "customColor()",
+      "customEffects()",
+      "potion()",
+      "potionContents()"
+    ],
+    "org.bukkit.advancement.AdvancementRequirements": [
+      "getRequirements()"
+    ],
+    "org.bukkit.block.BlockType": [
+      "PALE_OAK_WALL_HANGING_SIGN",
+      "PALE_OAK_WALL_SIGN",
+      "POTTED_PALE_OAK_SAPLING",
+      "\u003cB\u003egetBlockType(String)",
+      "\u003cB\u003etyped(Class)",
+      "hasCollision()",
+      "hasItemType()"
+    ],
+    "io.papermc.paper.registry.keys.PaintingVariantKeys": [
+      "PaintingVariantKeys()"
+    ],
+    "io.papermc.paper.registry.keys.tags.StructureTagKeys": [
+      "CATS_SPAWN_AS_BLACK",
+      "CATS_SPAWN_IN",
+      "DOLPHIN_LOCATED",
+      "EYE_OF_ENDER_LOCATED",
+      "ON_DESERT_VILLAGE_MAPS",
+      "ON_JUNGLE_EXPLORER_MAPS",
+      "ON_OCEAN_EXPLORER_MAPS",
+      "ON_PLAINS_VILLAGE_MAPS",
+      "ON_SAVANNA_VILLAGE_MAPS",
+      "ON_SNOWY_VILLAGE_MAPS",
+      "ON_SWAMP_EXPLORER_MAPS",
+      "ON_TAIGA_VILLAGE_MAPS",
+      "ON_TREASURE_MAPS",
+      "ON_TRIAL_CHAMBERS_MAPS",
+      "ON_WOODLAND_EXPLORER_MAPS",
+      "StructureTagKeys()"
+    ],
+    "io.papermc.paper.datacomponent.item.PotionContents.Builder": [
+      "addCustomEffect(PotionEffect)",
+      "addCustomEffects(List)",
+      "customColor(Color)",
+      "customName(String)",
+      "potion(PotionType)"
+    ],
+    "org.bukkit.inventory.ItemType": [
+      "CREAKING_HEART",
+      "PALE_HANGING_MOSS",
+      "PALE_MOSS_BLOCK",
+      "PALE_MOSS_CARPET",
+      "PALE_OAK_BUTTON",
+      "PALE_OAK_DOOR",
+      "PALE_OAK_FENCE",
+      "PALE_OAK_FENCE_GATE",
+      "PALE_OAK_HANGING_SIGN",
+      "PALE_OAK_LEAVES",
+      "PALE_OAK_LOG",
+      "PALE_OAK_PLANKS",
+      "PALE_OAK_PRESSURE_PLATE",
+      "PALE_OAK_SAPLING",
+      "PALE_OAK_SIGN",
+      "PALE_OAK_SLAB",
+      "PALE_OAK_STAIRS",
+      "PALE_OAK_TRAPDOOR",
+      "PALE_OAK_WOOD",
+      "STRIPPED_PALE_OAK_LOG",
+      "STRIPPED_PALE_OAK_WOOD",
+      "BLACK_BUNDLE",
+      "BLUE_BUNDLE",
+      "BORDURE_INDENTED_BANNER_PATTERN",
+      "BROWN_BUNDLE",
+      "CREAKING_SPAWN_EGG",
+      "CYAN_BUNDLE",
+      "FIELD_MASONED_BANNER_PATTERN",
+      "GRAY_BUNDLE",
+      "GREEN_BUNDLE",
+      "LIGHT_BLUE_BUNDLE",
+      "LIGHT_GRAY_BUNDLE",
+      "LIME_BUNDLE",
+      "MAGENTA_BUNDLE",
+      "ORANGE_BUNDLE",
+      "PALE_OAK_BOAT",
+      "PALE_OAK_CHEST_BOAT",
+      "PINK_BUNDLE",
+      "PURPLE_BUNDLE",
+      "RED_BUNDLE",
+      "WHITE_BUNDLE",
+      "YELLOW_BUNDLE",
+      "\u003cT\u003egetDefaultData(Valued)",
+      "getDefaultDataTypes()",
+      "hasDefaultData(DataComponentType)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemAdventurePredicate": [
+      "itemAdventurePredicate()",
+      "itemAdventurePredicate(List)",
+      "predicates()"
+    ],
+    "org.bukkit.inventory.meta.components.EquippableComponent": [
+      "getAllowedEntities()",
+      "getCameraOverlay()",
+      "getEquipSound()",
+      "getModel()",
+      "isDamageOnHurt()",
+      "isDispensable()",
+      "isSwappable()",
+      "setAllowedEntities(Collection)",
+      "setAllowedEntities(EntityType)",
+      "setAllowedEntities(Tag)",
+      "setCameraOverlay(NamespacedKey)",
+      "setDamageOnHurt(boolean)",
+      "setDispensable(boolean)",
+      "setEquipSound(Sound)",
+      "setModel(NamespacedKey)",
+      "setSlot(EquipmentSlot)",
+      "setSwappable(boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.ShownInTooltip": [
+      "showInTooltip(boolean)",
+      "showInTooltip()"
+    ],
+    "io.papermc.paper.datacomponent.item.ResolvableProfile": [
+      "properties()",
+      "resolvableProfile()",
+      "resolvableProfile(PlayerProfile)",
+      "resolve()"
+    ],
+    "org.bukkit.EntityEffect": [
+      "SHAKE"
+    ],
+    "io.papermc.paper.datacomponent.item.BlockItemDataProperties": [
+      "applyTo(BlockData)",
+      "blockItemStateProperties()",
+      "createBlockData(BlockType)"
+    ],
+    "io.papermc.paper.registry.keys.tags.BannerPatternTagKeys": [
+      "BannerPatternTagKeys()",
+      "NO_ITEM_REQUIRED",
+      "PATTERN_ITEM_BORDURE_INDENTED",
+      "PATTERN_ITEM_CREEPER",
+      "PATTERN_ITEM_FIELD_MASONED",
+      "PATTERN_ITEM_FLOW",
+      "PATTERN_ITEM_FLOWER",
+      "PATTERN_ITEM_GLOBE",
+      "PATTERN_ITEM_GUSTER",
+      "PATTERN_ITEM_MOJANG",
+      "PATTERN_ITEM_PIGLIN",
+      "PATTERN_ITEM_SKULL"
+    ],
+    "org.bukkit.entity.Player": [
+      "getCurrentInput()",
+      "getEnderPearls()",
+      "getPlayerListOrder()",
+      "setPlayerListOrder(int)"
+    ],
+    "org.bukkit.Art": [
+      "assetId()",
+      "getArt(String)",
+      "getById(int)"
+    ],
+    "io.papermc.paper.registry.keys.tags.FluidTagKeys": [
+      "FluidTagKeys()"
+    ],
+    "org.bukkit.block.Biome": [
+      "PALE_GARDEN",
+      "getBiome(String)"
+    ],
+    "io.papermc.paper.registry.keys.FluidKeys": [
+      "FluidKeys()"
+    ],
+    "org.bukkit.tag.DamageTypeTags": [
+      "ALWAYS_HURTS_ENDER_DRAGONS",
+      "ALWAYS_KILLS_ARMOR_STANDS",
+      "ALWAYS_MOST_SIGNIFICANT_FALL",
+      "ALWAYS_TRIGGERS_SILVERFISH",
+      "AVOIDS_GUARDIAN_THORNS",
+      "BURNS_ARMOR_STANDS",
+      "BURN_FROM_STEPPING",
+      "BYPASSES_ARMOR",
+      "BYPASSES_EFFECTS",
+      "BYPASSES_ENCHANTMENTS",
+      "BYPASSES_INVULNERABILITY",
+      "BYPASSES_RESISTANCE",
+      "BYPASSES_SHIELD",
+      "BYPASSES_WOLF_ARMOR",
+      "CAN_BREAK_ARMOR_STAND",
+      "DAMAGES_HELMET",
+      "IGNITES_ARMOR_STANDS",
+      "IS_DROWNING",
+      "IS_EXPLOSION",
+      "IS_FALL",
+      "IS_FIRE",
+      "IS_FREEZING",
+      "IS_LIGHTNING",
+      "IS_PLAYER_ATTACK",
+      "IS_PROJECTILE",
+      "NO_ANGER",
+      "NO_IMPACT",
+      "NO_KNOCKBACK",
+      "PANIC_CAUSES",
+      "PANIC_ENVIRONMENTAL_CAUSES",
+      "WITCH_RESISTANT_TO",
+      "WITHER_IMMUNE_TO",
+      "BYPASSES_COOLDOWN",
+      "DamageTypeTags()",
+      "IS_MACE_SMASH",
+      "getTag(String)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemContainerContents": [
+      "contents()",
+      "containerContents()",
+      "containerContents(List)"
+    ],
+    "io.papermc.paper.registry.keys.tags.GameEventTagKeys": [
+      "ALLAY_CAN_LISTEN",
+      "GameEventTagKeys()",
+      "IGNORE_VIBRATIONS_SNEAKING",
+      "SHRIEKER_CAN_LISTEN",
+      "VIBRATIONS",
+      "WARDEN_CAN_LISTEN"
+    ],
+    "io.papermc.paper.registry.data.PaintingVariantRegistryEntry": [
+      "height()"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "ARMADILLO_SHED",
+      "BABY_VILLAGER_GIFT",
+      "CHICKEN_LAY",
+      "SHEARING_MOOSHROOM",
+      "SHEARING_MOOSHROOM_BROWN",
+      "SHEARING_MOOSHROOM_RED",
+      "SHEARING_SHEEP",
+      "SHEARING_SHEEP_BLACK",
+      "SHEARING_SHEEP_BLUE",
+      "SHEARING_SHEEP_BROWN",
+      "SHEARING_SHEEP_CYAN",
+      "SHEARING_SHEEP_GRAY",
+      "SHEARING_SHEEP_GREEN",
+      "SHEARING_SHEEP_LIGHT_BLUE",
+      "SHEARING_SHEEP_LIGHT_GRAY",
+      "SHEARING_SHEEP_LIME",
+      "SHEARING_SHEEP_MAGENTA",
+      "SHEARING_SHEEP_ORANGE",
+      "SHEARING_SHEEP_PINK",
+      "SHEARING_SHEEP_PURPLE",
+      "SHEARING_SHEEP_RED",
+      "SHEARING_SHEEP_WHITE",
+      "SHEARING_SHEEP_YELLOW",
+      "SHEARING_SNOW_GOLEM",
+      "UNEMPLOYED_GIFT"
+    ],
+    "io.papermc.paper.datacomponent.item.Fireworks": [
+      "fireworks()",
+      "fireworks(List,int)",
+      "flightDuration()"
+    ],
+    "io.papermc.paper.datacomponent.item.BannerPatternLayers": [
+      "bannerPatternLayers()",
+      "bannerPatternLayers(List)",
+      "patterns()"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "getCreaking()",
+      "setCreaking(Creaking)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemContainerContents.Builder": [
+      "addAll(List)",
+      "add(ItemStack)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_CREAKING_HEART_BREAK",
+      "BLOCK_CREAKING_HEART_FALL",
+      "BLOCK_CREAKING_HEART_HIT",
+      "BLOCK_CREAKING_HEART_HURT",
+      "BLOCK_CREAKING_HEART_IDLE",
+      "BLOCK_CREAKING_HEART_PLACE",
+      "BLOCK_CREAKING_HEART_SPAWN",
+      "BLOCK_CREAKING_HEART_STEP",
+      "BLOCK_PALE_HANGING_MOSS_IDLE",
+      "BLOCK_SPAWNER_BREAK",
+      "BLOCK_SPAWNER_FALL",
+      "BLOCK_SPAWNER_HIT",
+      "BLOCK_SPAWNER_PLACE",
+      "BLOCK_SPAWNER_STEP",
+      "ENTITY_CREAKING_ACTIVATE",
+      "ENTITY_CREAKING_AMBIENT",
+      "ENTITY_CREAKING_ATTACK",
+      "ENTITY_CREAKING_DEACTIVATE",
+      "ENTITY_CREAKING_DEATH",
+      "ENTITY_CREAKING_FREEZE",
+      "ENTITY_CREAKING_SPAWN",
+      "ENTITY_CREAKING_STEP",
+      "ENTITY_CREAKING_SWAY",
+      "ENTITY_CREAKING_UNFREEZE",
+      "ENTITY_PARROT_IMITATE_CREAKING",
+      "ITEM_BUNDLE_INSERT_FAIL",
+      "UI_HUD_BUBBLE_POP",
+      "getSound(String)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "allowedEntities()",
+      "cameraOverlay()",
+      "damageOnHurt()",
+      "dispensable()",
+      "equipSound()",
+      "equippable(EquipmentSlot)",
+      "model()",
+      "slot()",
+      "swappable()"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CREAKING",
+      "CREAKING_TRANSIENT"
+    ],
+    "io.papermc.paper.datacomponent.item.Unbreakable": [
+      "unbreakable()",
+      "unbreakable(boolean)"
+    ],
+    "io.papermc.paper.item.MapPostProcessing": [
+      "LOCK",
+      "MapPostProcessing()"
+    ],
+    "org.bukkit.inventory.meta.components.UseCooldownComponent": [
+      "getCooldownGroup()",
+      "getCooldownSeconds()",
+      "setCooldownGroup(NamespacedKey)",
+      "setCooldownSeconds(float)"
+    ],
+    "org.bukkit.block.Lockable": [
+      "setLockItem(ItemStack)"
+    ],
+    "io.papermc.paper.datacomponent.item.SeededContainerLoot.Builder": [
+      "lootTable(Key)"
+    ],
+    "io.papermc.paper.datacomponent.DataComponentTypes": [
+      "\u003cT\u003evalued(String)",
+      "ATTRIBUTE_MODIFIERS",
+      "BANNER_PATTERNS",
+      "BASE_COLOR",
+      "BLOCK_DATA",
+      "BUNDLE_CONTENTS",
+      "CAN_BREAK",
+      "CAN_PLACE_ON",
+      "CHARGED_PROJECTILES",
+      "CONSUMABLE",
+      "CONTAINER_LOOT",
+      "CUSTOM_MODEL_DATA",
+      "CUSTOM_NAME",
+      "DAMAGE_RESISTANT",
+      "DEATH_PROTECTION",
+      "DYED_COLOR",
+      "DataComponentTypes()",
+      "ENCHANTMENTS",
+      "ENCHANTMENT_GLINT_OVERRIDE",
+      "EQUIPPABLE",
+      "FIREWORK_EXPLOSION",
+      "GLIDER",
+      "HIDE_TOOLTIP",
+      "INTANGIBLE_PROJECTILE",
+      "ITEM_MODEL",
+      "ITEM_NAME",
+      "JUKEBOX_PLAYABLE",
+      "LODESTONE_TRACKER",
+      "LORE",
+      "MAP_COLOR",
+      "MAP_DECORATIONS",
+      "MAP_ID",
+      "MAP_POST_PROCESSING",
+      "MAX_DAMAGE",
+      "MAX_STACK_SIZE",
+      "NOTE_BLOCK_SOUND",
+      "OMINOUS_BOTTLE_AMPLIFIER",
+      "POTION_CONTENTS",
+      "POT_DECORATIONS",
+      "RARITY",
+      "RECIPES",
+      "REPAIRABLE",
+      "STORED_ENCHANTMENTS",
+      "SUSPICIOUS_STEW_EFFECTS",
+      "TOOLTIP_STYLE",
+      "TRIM",
+      "UNBREAKABLE",
+      "USE_COOLDOWN",
+      "USE_REMAINDER",
+      "WRITABLE_BOOK_CONTENT",
+      "WRITTEN_BOOK_CONTENT",
+      "unvalued(String)"
+    ],
+    "org.bukkit.event.player.PlayerInputEvent": [
+      "PlayerInputEvent(Player,Input)"
+    ],
+    "io.papermc.paper.datacomponent.item.Fireworks.Builder": [
+      "addEffects(List)",
+      "flightDuration(int)"
+    ],
+    "org.bukkit.block.data.type.HangingMoss": [
+      "isTip()",
+      "setTip(boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.SuspiciousStewEffects.Builder": [
+      "add(SuspiciousEffectEntry)",
+      "addAll(Collection)"
+    ],
+    "org.bukkit.Particle.TargetColor": [
+      "TargetColor(Location,Color)"
+    ],
+    "io.papermc.paper.registry.keys.tags.BlockTypeTagKeys": [
+      "BlockTypeTagKeys()",
+      "DRIPSTONE_REPLACEABLE_BLOCKS",
+      "OVERWORLD_NATURAL_LOGS"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getDamageResistant()",
+      "getEnchantable()",
+      "getEquippable()",
+      "getItemModel()",
+      "getTooltipStyle()",
+      "getUseCooldown()",
+      "getUseRemainder()",
+      "hasDamageResistant()",
+      "hasEnchantable()",
+      "hasEquippable()",
+      "hasItemModel()",
+      "hasTooltipStyle()",
+      "hasUseCooldown()",
+      "hasUseRemainder()",
+      "isGlider()",
+      "setDamageResistant(Tag)",
+      "setEnchantable(Integer)",
+      "setEquippable(EquippableComponent)",
+      "setGlider(boolean)",
+      "setItemModel(NamespacedKey)",
+      "setTooltipStyle(NamespacedKey)",
+      "setUseCooldown(UseCooldownComponent)",
+      "setUseRemainder(ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent.DamageModifier": [
+      "INVULNERABILITY_REDUCTION"
+    ],
+    "io.papermc.paper.datacomponent.item.LodestoneTracker": [
+      "lodestoneTracker()",
+      "lodestoneTracker(Location,boolean)",
+      "tracked()"
+    ],
+    "io.papermc.paper.registry.keys.tags.InstrumentTagKeys": [
+      "GOAT_HORNS",
+      "InstrumentTagKeys()",
+      "REGULAR_GOAT_HORNS",
+      "SCREAMING_GOAT_HORNS"
+    ],
+    "io.papermc.paper.datacomponent.item.DeathProtection.Builder": [
+      "addEffect(ConsumeEffect)"
+    ],
+    "org.bukkit.inventory.meta.PotionMeta": [
+      "getCustomPotionName()",
+      "hasCustomName()",
+      "hasCustomPotionName()",
+      "setCustomPotionName(String)"
+    ],
+    "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
+      "ALLOWS_SURFACE_SLIME_SPAWNS",
+      "ALLOWS_TROPICAL_FISH_SPAWNS_AT_ANY_HEIGHT",
+      "BiomeTagKeys()",
+      "HAS_CLOSER_WATER_FOG",
+      "HAS_STRUCTURE_ANCIENT_CITY",
+      "HAS_STRUCTURE_BASTION_REMNANT",
+      "HAS_STRUCTURE_BURIED_TREASURE",
+      "HAS_STRUCTURE_DESERT_PYRAMID",
+      "HAS_STRUCTURE_END_CITY",
+      "HAS_STRUCTURE_IGLOO",
+      "HAS_STRUCTURE_JUNGLE_TEMPLE",
+      "HAS_STRUCTURE_MINESHAFT",
+      "HAS_STRUCTURE_MINESHAFT_MESA",
+      "HAS_STRUCTURE_NETHER_FORTRESS",
+      "HAS_STRUCTURE_NETHER_FOSSIL",
+      "HAS_STRUCTURE_OCEAN_MONUMENT",
+      "HAS_STRUCTURE_OCEAN_RUIN_COLD",
+      "HAS_STRUCTURE_OCEAN_RUIN_WARM",
+      "HAS_STRUCTURE_PILLAGER_OUTPOST",
+      "HAS_STRUCTURE_RUINED_PORTAL_DESERT",
+      "HAS_STRUCTURE_RUINED_PORTAL_JUNGLE",
+      "HAS_STRUCTURE_RUINED_PORTAL_MOUNTAIN",
+      "HAS_STRUCTURE_RUINED_PORTAL_NETHER",
+      "HAS_STRUCTURE_RUINED_PORTAL_OCEAN",
+      "HAS_STRUCTURE_RUINED_PORTAL_STANDARD",
+      "HAS_STRUCTURE_RUINED_PORTAL_SWAMP",
+      "HAS_STRUCTURE_SHIPWRECK",
+      "HAS_STRUCTURE_SHIPWRECK_BEACHED",
+      "HAS_STRUCTURE_STRONGHOLD",
+      "HAS_STRUCTURE_SWAMP_HUT",
+      "HAS_STRUCTURE_TRAIL_RUINS",
+      "HAS_STRUCTURE_TRIAL_CHAMBERS",
+      "HAS_STRUCTURE_VILLAGE_DESERT",
+      "HAS_STRUCTURE_VILLAGE_PLAINS",
+      "HAS_STRUCTURE_VILLAGE_SAVANNA",
+      "HAS_STRUCTURE_VILLAGE_SNOWY",
+      "HAS_STRUCTURE_VILLAGE_TAIGA",
+      "HAS_STRUCTURE_WOODLAND_MANSION",
+      "INCREASED_FIRE_BURNOUT",
+      "IS_BADLANDS",
+      "IS_BEACH",
+      "IS_DEEP_OCEAN",
+      "IS_END",
+      "IS_FOREST",
+      "IS_HILL",
+      "IS_JUNGLE",
+      "IS_MOUNTAIN",
+      "IS_NETHER",
+      "IS_OCEAN",
+      "IS_OVERWORLD",
+      "IS_RIVER",
+      "IS_SAVANNA",
+      "IS_TAIGA",
+      "MINESHAFT_BLOCKING",
+      "MORE_FREQUENT_DROWNED_SPAWNS",
+      "PLAYS_UNDERWATER_MUSIC",
+      "POLAR_BEARS_SPAWN_ON_ALTERNATE_BLOCKS",
+      "PRODUCES_CORALS_FROM_BONEMEAL",
+      "REDUCE_WATER_AMBIENT_SPAWNS",
+      "REQUIRED_OCEAN_MONUMENT_SURROUNDING",
+      "SNOW_GOLEM_MELTS",
+      "SPAWNS_COLD_VARIANT_FROGS",
+      "SPAWNS_GOLD_RABBITS",
+      "SPAWNS_SNOW_FOXES",
+      "SPAWNS_WARM_VARIANT_FROGS",
+      "SPAWNS_WHITE_RABBITS",
+      "STRONGHOLD_BIASED_TO",
+      "WATER_ON_MAP_OUTLINES",
+      "WITHOUT_PATROL_SPAWNS",
+      "WITHOUT_WANDERING_TRADER_SPAWNS",
+      "WITHOUT_ZOMBIE_SIEGES"
+    ],
+    "io.papermc.paper.datacomponent.item.Tool": [
+      "damagePerBlock()",
+      "defaultMiningSpeed()",
+      "rule(RegistryKeySet,Float,TriState)",
+      "rules()",
+      "tool()"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemAttributeModifiers": [
+      "itemAttributes()",
+      "modifiers()"
+    ],
+    "io.papermc.paper.datacomponent.item.CustomModelData": [
+      "customModelData(int)"
+    ],
+    "io.papermc.paper.datacomponent.item.WrittenBookContent": [
+      "pages()",
+      "generation()",
+      "resolved()",
+      "writtenBookContent(Filtered,String)",
+      "writtenBookContent(String,String)"
+    ],
+    "io.papermc.paper.datacomponent.item.FoodProperties.Builder": [
+      "canAlwaysEat(boolean)",
+      "nutrition(int)",
+      "saturation(float)"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "getCooldown(ItemStack)",
+      "hasCooldown(ItemStack)",
+      "setCooldown(ItemStack,int)"
+    ],
+    "io.papermc.paper.datacomponent.item.Consumable.Builder": [
+      "animation(ItemUseAnimation)",
+      "consumeSeconds(float)",
+      "hasConsumeParticles(boolean)",
+      "sound(Key)"
+    ],
+    "org.bukkit.attribute.Attribute": [
+      "SCALE",
+      "ARMOR_TOUGHNESS",
+      "ATTACK_DAMAGE",
+      "ATTACK_KNOCKBACK",
+      "ATTACK_SPEED",
+      "BLOCK_BREAK_SPEED",
+      "BLOCK_INTERACTION_RANGE",
+      "BURNING_TIME",
+      "ENTITY_INTERACTION_RANGE",
+      "EXPLOSION_KNOCKBACK_RESISTANCE",
+      "FALL_DAMAGE_MULTIPLIER",
+      "FLYING_SPEED",
+      "FOLLOW_RANGE",
+      "GRAVITY",
+      "JUMP_STRENGTH",
+      "KNOCKBACK_RESISTANCE",
+      "MAX_ABSORPTION",
+      "MAX_HEALTH",
+      "MINING_EFFICIENCY",
+      "MOVEMENT_EFFICIENCY",
+      "MOVEMENT_SPEED",
+      "OXYGEN_BONUS",
+      "SAFE_FALL_DISTANCE",
+      "SNEAKING_SPEED",
+      "SPAWN_REINFORCEMENTS",
+      "STEP_HEIGHT",
+      "SUBMERGED_MINING_SPEED",
+      "SWEEPING_DAMAGE_RATIO",
+      "TEMPT_RANGE",
+      "WATER_MOVEMENT_EFFICIENCY",
+      "getAttribute(String)"
+    ],
+    "io.papermc.paper.registry.keys.tags.DamageTypeTagKeys": [
+      "DamageTypeTagKeys()"
+    ],
+    "io.papermc.paper.block.BlockPredicate.Builder": [
+      "blocks(RegistryKeySet)"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart.Creaking": [
+      "Creaking()",
+      "DISABLED",
+      "DORMANT"
+    ],
+    "io.papermc.paper.datacomponent.item.ChargedProjectiles": [
+      "chargedProjectiles()",
+      "chargedProjectiles(List)",
+      "projectiles()"
+    ],
+    "org.bukkit.block.BlockType.Typed": [
+      "getBlockDataClass()"
+    ],
+    "io.papermc.paper.datacomponent.item.MapItemColor": [
+      "mapItemColor()"
+    ],
+    "io.papermc.paper.datacomponent.item.MapId": [
+      "mapId(int)"
+    ],
+    "org.bukkit.Particle": [
+      "BLOCK_CRUMBLE"
+    ],
+    "io.papermc.paper.registry.keys.tags.CatVariantTagKeys": [
+      "CatVariantTagKeys()",
+      "DEFAULT_SPAWNS",
+      "FULL_MOON_SPAWNS"
+    ],
+    "io.papermc.paper.registry.keys.AttributeKeys": [
+      "AttributeKeys()"
+    ],
+    "io.papermc.paper.datacomponent.item.DyedItemColor": [
+      "dyedItemColor()",
+      "dyedItemColor(Color,boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect": [
+      "applyStatusEffects(List,float)",
+      "clearAllStatusEffects()",
+      "playSoundConsumeEffect(Key)",
+      "removeEffects(RegistryKeySet)",
+      "teleportRandomlyEffect(float)"
+    ],
+    "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.PlaySound": [
+      "sound()"
+    ],
+    "io.papermc.paper.datacomponent.item.Tool.Rule": [
+      "blocks()",
+      "correctForDrops()",
+      "speed()"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.Particle": [
+      "Particle(String,Class,boolean)",
+      "Particle(String,boolean)",
+      "register"
+    ],
+    "org.bukkit.attribute.Attribute": [
+      "Attribute(String)",
+      "GENERIC_ARMOR",
+      "GENERIC_ARMOR_TOUGHNESS",
+      "GENERIC_ATTACK_DAMAGE",
+      "GENERIC_ATTACK_KNOCKBACK",
+      "GENERIC_ATTACK_SPEED",
+      "GENERIC_BURNING_TIME",
+      "GENERIC_EXPLOSION_KNOCKBACK_RESISTANCE",
+      "GENERIC_FALL_DAMAGE_MULTIPLIER",
+      "GENERIC_FLYING_SPEED",
+      "GENERIC_FOLLOW_RANGE",
+      "GENERIC_GRAVITY",
+      "GENERIC_JUMP_STRENGTH",
+      "GENERIC_KNOCKBACK_RESISTANCE",
+      "GENERIC_LUCK",
+      "GENERIC_MAX_ABSORPTION",
+      "GENERIC_MAX_HEALTH",
+      "GENERIC_MOVEMENT_EFFICIENCY",
+      "GENERIC_MOVEMENT_SPEED",
+      "GENERIC_OXYGEN_BONUS",
+      "GENERIC_SAFE_FALL_DISTANCE",
+      "GENERIC_SCALE",
+      "GENERIC_STEP_HEIGHT",
+      "GENERIC_WATER_MOVEMENT_EFFICIENCY",
+      "PLAYER_BLOCK_BREAK_SPEED",
+      "PLAYER_BLOCK_INTERACTION_RANGE",
+      "PLAYER_ENTITY_INTERACTION_RANGE",
+      "PLAYER_MINING_EFFICIENCY",
+      "PLAYER_SNEAKING_SPEED",
+      "PLAYER_SUBMERGED_MINING_SPEED",
+      "PLAYER_SWEEPING_DAMAGE_RATIO",
+      "ZOMBIE_SPAWN_REINFORCEMENTS"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "\u003cA,M\u003egetTag(TagKey)",
+      "getTimingsServerName()",
+      "reportTimings()"
+    ],
+    "org.bukkit.inventory.meta.components.FoodComponent.FoodEffect": [
+      "getProbability()",
+      "setProbability(float)"
+    ],
+    "org.bukkit.Sound": [
+      "ENTITY_GOAT_SCREAMING_HORN_BREAK",
+      "ITEM_GOAT_HORN_PLAY",
+      "Sound(String)"
+    ],
+    "org.bukkit.Art": [
+      "Art(int,int,int)"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "BOAT",
+      "CHEST_BOAT"
+    ],
+    "org.bukkit.block.Biome": [
+      "Biome()"
+    ],
+    "org.bukkit.Fluid": [
+      "Fluid()"
+    ],
+    "org.bukkit.inventory.meta.components.FoodComponent": [
+      "addEffect(PotionEffect,float)",
+      "getEatSeconds()",
+      "getUsingConvertsTo()",
+      "setEatSeconds(float)",
+      "setEffects(List)",
+      "setUsingConvertsTo(ItemStack)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.Particle": [
+      "Particle(String,Class,boolean)",
+      "Particle(String,boolean)",
+      "register"
+    ],
+    "org.bukkit.attribute.Attribute": [
+      "Attribute(String)",
+      "GENERIC_ARMOR",
+      "GENERIC_ARMOR_TOUGHNESS",
+      "GENERIC_ATTACK_DAMAGE",
+      "GENERIC_ATTACK_KNOCKBACK",
+      "GENERIC_ATTACK_SPEED",
+      "GENERIC_BURNING_TIME",
+      "GENERIC_EXPLOSION_KNOCKBACK_RESISTANCE",
+      "GENERIC_FALL_DAMAGE_MULTIPLIER",
+      "GENERIC_FLYING_SPEED",
+      "GENERIC_FOLLOW_RANGE",
+      "GENERIC_GRAVITY",
+      "GENERIC_JUMP_STRENGTH",
+      "GENERIC_KNOCKBACK_RESISTANCE",
+      "GENERIC_LUCK",
+      "GENERIC_MAX_ABSORPTION",
+      "GENERIC_MAX_HEALTH",
+      "GENERIC_MOVEMENT_EFFICIENCY",
+      "GENERIC_MOVEMENT_SPEED",
+      "GENERIC_OXYGEN_BONUS",
+      "GENERIC_SAFE_FALL_DISTANCE",
+      "GENERIC_SCALE",
+      "GENERIC_STEP_HEIGHT",
+      "GENERIC_WATER_MOVEMENT_EFFICIENCY",
+      "PLAYER_BLOCK_BREAK_SPEED",
+      "PLAYER_BLOCK_INTERACTION_RANGE",
+      "PLAYER_ENTITY_INTERACTION_RANGE",
+      "PLAYER_MINING_EFFICIENCY",
+      "PLAYER_SNEAKING_SPEED",
+      "PLAYER_SUBMERGED_MINING_SPEED",
+      "PLAYER_SWEEPING_DAMAGE_RATIO",
+      "ZOMBIE_SPAWN_REINFORCEMENTS"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "\u003cA,M\u003egetTag(TagKey)",
+      "getTimingsServerName()",
+      "reportTimings()"
+    ],
+    "org.bukkit.inventory.meta.components.FoodComponent.FoodEffect": [
+      "getProbability()",
+      "setProbability(float)"
+    ],
+    "org.bukkit.Sound": [
+      "ENTITY_GOAT_SCREAMING_HORN_BREAK",
+      "ITEM_GOAT_HORN_PLAY",
+      "Sound(String)"
+    ],
+    "org.bukkit.Art": [
+      "Art(int,int,int)"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "BOAT",
+      "CHEST_BOAT"
+    ],
+    "org.bukkit.block.Biome": [
+      "Biome()"
+    ],
+    "org.bukkit.Fluid": [
+      "Fluid()"
+    ],
+    "org.bukkit.inventory.meta.components.FoodComponent": [
+      "addEffect(PotionEffect,float)",
+      "getEatSeconds()",
+      "getUsingConvertsTo()",
+      "setEatSeconds(float)",
+      "setEffects(List)",
+      "setUsingConvertsTo(ItemStack)"
+    ]
+  }
+}

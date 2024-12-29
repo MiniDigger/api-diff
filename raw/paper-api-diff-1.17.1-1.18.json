@@ -1,0 +1,364 @@
+{
+  "versionA": "1.17.1",
+  "versionB": "1.18",
+  "packagesAdded": [],
+  "packagesRemoved": [
+    "io.papermc.paper.world.generation"
+  ],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.event.player.PlayerItemFrameChangeEvent",
+    "io.papermc.paper.event.player.PlayerItemFrameChangeEvent.ItemFrameChangeAction"
+  ],
+  "classesRemoved": [
+    "io.papermc.paper.util.JarManifests",
+    "io.papermc.paper.world.generation.ProtoWorld"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "org.bukkit.Bukkit",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.World",
+    "org.bukkit.block.Biome",
+    "org.bukkit.block.Block",
+    "org.bukkit.entity.Player",
+    "org.bukkit.generator.ChunkGenerator",
+    "org.bukkit.potion.PotionEffectType",
+    "org.bukkit.potion.PotionEffectTypeWrapper"
+  ],
+  "membersAdded": {
+    "io.papermc.paper.event.player.PlayerItemFrameChangeEvent.ItemFrameChangeAction": [
+      "ItemFrameChangeAction()",
+      "PLACE",
+      "REMOVE",
+      "ROTATE"
+    ],
+    "org.bukkit.Tag": [
+      "ANIMALS_SPAWNABLE_ON",
+      "AXOLOTLS_SPAWNABLE_ON",
+      "AZALEA_GROWS_ON",
+      "AZALEA_ROOT_REPLACEABLE",
+      "BIG_DRIPLEAF_PLACEABLE",
+      "FOXES_SPAWNABLE_ON",
+      "GOATS_SPAWNABLE_ON",
+      "MOOSHROOMS_SPAWNABLE_ON",
+      "PARROTS_SPAWNABLE_ON",
+      "POLAR_BEARS_SPAWNABLE_ON_IN_FROZEN_OCEAN",
+      "RABBITS_SPAWNABLE_ON",
+      "REPLACEABLE_PLANTS",
+      "WOLVES_SPAWNABLE_ON"
+    ],
+    "io.papermc.paper.event.player.PlayerItemFrameChangeEvent": [
+      "PlayerItemFrameChangeEvent(Player,ItemFrame,ItemStack,ItemFrameChangeAction)",
+      "getItemFrame()",
+      "itemFrame"
+    ],
+    "org.bukkit.entity.Player": [
+      "canSee(Entity)",
+      "hideEntity(Plugin,Entity)",
+      "isAllowingServerListings()",
+      "sendEquipmentChange(LivingEntity,EquipmentSlot,ItemStack)",
+      "sendHealthUpdate()",
+      "sendHealthUpdate(double,int,float)",
+      "showDemoScreen()",
+      "showEntity(Plugin,Entity)"
+    ],
+    "org.bukkit.Sound": [
+      "MUSIC_DISC_OTHERSIDE",
+      "BLOCK_GROWING_PLANT_CROP",
+      "ITEM_BUNDLE_DROP_CONTENTS",
+      "ITEM_BUNDLE_INSERT",
+      "ITEM_BUNDLE_REMOVE_ONE",
+      "MUSIC_OVERWORLD_DRIPSTONE_CAVES",
+      "MUSIC_OVERWORLD_FROZEN_PEAKS",
+      "MUSIC_OVERWORLD_GROVE",
+      "MUSIC_OVERWORLD_JAGGED_PEAKS",
+      "MUSIC_OVERWORLD_LUSH_CAVES",
+      "MUSIC_OVERWORLD_MEADOW",
+      "MUSIC_OVERWORLD_SNOWY_SLOPES",
+      "MUSIC_OVERWORLD_STONY_PEAKS"
+    ],
+    "org.bukkit.block.Biome": [
+      "FROZEN_PEAKS",
+      "GROVE",
+      "JAGGED_PEAKS",
+      "MEADOW",
+      "OLD_GROWTH_BIRCH_FOREST",
+      "OLD_GROWTH_PINE_TAIGA",
+      "OLD_GROWTH_SPRUCE_TAIGA",
+      "SNOWY_PLAINS",
+      "SNOWY_SLOPES",
+      "SPARSE_JUNGLE",
+      "STONY_PEAKS",
+      "STONY_SHORE",
+      "WINDSWEPT_FOREST",
+      "WINDSWEPT_GRAVELLY_HILLS",
+      "WINDSWEPT_HILLS",
+      "WINDSWEPT_SAVANNA",
+      "WOODED_BADLANDS"
+    ],
+    "org.bukkit.Particle": [
+      "BLOCK_MARKER"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "PARROT_WANDER"
+    ],
+    "org.bukkit.potion.PotionEffectTypeWrapper": [
+      "PotionEffectTypeWrapper(int,String)"
+    ],
+    "org.bukkit.block.Block": [
+      "canPlace(BlockData)"
+    ],
+    "org.bukkit.World": [
+      "getSimulationDistance()"
+    ],
+    "org.bukkit.Server": [
+      "getHideOnlinePlayers()"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "PotionEffectType(int,NamespacedKey)"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.potion.PotionEffectTypeWrapper": [
+      "PotionEffectTypeWrapper(int)"
+    ],
+    "io.papermc.paper.util.JarManifests": [
+      "JAR_MANIFESTS",
+      "JarManifests()",
+      "MANIFEST_MAP",
+      "getManifestMap()",
+      "getManifestStreams()"
+    ],
+    "org.bukkit.entity.Player": [
+      "sendChunkChange(Location,int,int,int,byte...)"
+    ],
+    "org.bukkit.block.Biome": [
+      "BADLANDS_PLATEAU",
+      "BAMBOO_JUNGLE_HILLS",
+      "BIRCH_FOREST_HILLS",
+      "DARK_FOREST_HILLS",
+      "DEEP_WARM_OCEAN",
+      "DESERT_HILLS",
+      "DESERT_LAKES",
+      "GIANT_SPRUCE_TAIGA",
+      "GIANT_SPRUCE_TAIGA_HILLS",
+      "GIANT_TREE_TAIGA",
+      "GIANT_TREE_TAIGA_HILLS",
+      "GRAVELLY_MOUNTAINS",
+      "JUNGLE_EDGE",
+      "JUNGLE_HILLS",
+      "MODIFIED_BADLANDS_PLATEAU",
+      "MODIFIED_GRAVELLY_MOUNTAINS",
+      "MODIFIED_JUNGLE",
+      "MODIFIED_JUNGLE_EDGE",
+      "MODIFIED_WOODED_BADLANDS_PLATEAU",
+      "MOUNTAINS",
+      "MOUNTAIN_EDGE",
+      "MUSHROOM_FIELD_SHORE",
+      "SHATTERED_SAVANNA",
+      "SHATTERED_SAVANNA_PLATEAU",
+      "SNOWY_MOUNTAINS",
+      "SNOWY_TAIGA_HILLS",
+      "SNOWY_TAIGA_MOUNTAINS",
+      "SNOWY_TUNDRA",
+      "STONE_SHORE",
+      "SWAMP_HILLS",
+      "TAIGA_HILLS",
+      "TAIGA_MOUNTAINS",
+      "TALL_BIRCH_FOREST",
+      "TALL_BIRCH_HILLS",
+      "WOODED_BADLANDS_PLATEAU",
+      "WOODED_HILLS",
+      "WOODED_MOUNTAINS"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "PotionEffectType(int)"
+    ],
+    "org.bukkit.generator.ChunkGenerator": [
+      "generateDecorations(ProtoWorld)"
+    ],
+    "io.papermc.paper.world.generation.ProtoWorld": [
+      "\u003cT\u003espawn(Vector,Class)",
+      "\u003cT\u003espawn(Vector,Class,Consumer)",
+      "\u003cT\u003espawn(Vector,Class,Consumer,SpawnReason)",
+      "\u003cT\u003espawn(Vector,Class,SpawnReason)",
+      "\u003cT\u003espawn(Vector,Class,SpawnReason,Consumer)",
+      "spawnEntity(Vector,EntityType)",
+      "spawnEntity(Vector,EntityType,SpawnReason)",
+      "spawnEntity(Vector,EntityType,SpawnReason,Consumer)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.potion.PotionEffectTypeWrapper": [
+      "PotionEffectTypeWrapper(int)"
+    ],
+    "io.papermc.paper.util.JarManifests": [
+      "JAR_MANIFESTS",
+      "JarManifests()",
+      "MANIFEST_MAP",
+      "getManifestMap()",
+      "getManifestStreams()"
+    ],
+    "org.bukkit.entity.Player": [
+      "sendChunkChange(Location,int,int,int,byte...)"
+    ],
+    "org.bukkit.block.Biome": [
+      "BADLANDS_PLATEAU",
+      "BAMBOO_JUNGLE_HILLS",
+      "BIRCH_FOREST_HILLS",
+      "DARK_FOREST_HILLS",
+      "DEEP_WARM_OCEAN",
+      "DESERT_HILLS",
+      "DESERT_LAKES",
+      "GIANT_SPRUCE_TAIGA",
+      "GIANT_SPRUCE_TAIGA_HILLS",
+      "GIANT_TREE_TAIGA",
+      "GIANT_TREE_TAIGA_HILLS",
+      "GRAVELLY_MOUNTAINS",
+      "JUNGLE_EDGE",
+      "JUNGLE_HILLS",
+      "MODIFIED_BADLANDS_PLATEAU",
+      "MODIFIED_GRAVELLY_MOUNTAINS",
+      "MODIFIED_JUNGLE",
+      "MODIFIED_JUNGLE_EDGE",
+      "MODIFIED_WOODED_BADLANDS_PLATEAU",
+      "MOUNTAINS",
+      "MOUNTAIN_EDGE",
+      "MUSHROOM_FIELD_SHORE",
+      "SHATTERED_SAVANNA",
+      "SHATTERED_SAVANNA_PLATEAU",
+      "SNOWY_MOUNTAINS",
+      "SNOWY_TAIGA_HILLS",
+      "SNOWY_TAIGA_MOUNTAINS",
+      "SNOWY_TUNDRA",
+      "STONE_SHORE",
+      "SWAMP_HILLS",
+      "TAIGA_HILLS",
+      "TAIGA_MOUNTAINS",
+      "TALL_BIRCH_FOREST",
+      "TALL_BIRCH_HILLS",
+      "WOODED_BADLANDS_PLATEAU",
+      "WOODED_HILLS",
+      "WOODED_MOUNTAINS"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "PotionEffectType(int)"
+    ],
+    "org.bukkit.generator.ChunkGenerator": [
+      "generateDecorations(ProtoWorld)"
+    ],
+    "io.papermc.paper.world.generation.ProtoWorld": [
+      "\u003cT\u003espawn(Vector,Class)",
+      "\u003cT\u003espawn(Vector,Class,Consumer)",
+      "\u003cT\u003espawn(Vector,Class,Consumer,SpawnReason)",
+      "\u003cT\u003espawn(Vector,Class,SpawnReason)",
+      "\u003cT\u003espawn(Vector,Class,SpawnReason,Consumer)",
+      "spawnEntity(Vector,EntityType)",
+      "spawnEntity(Vector,EntityType,SpawnReason)",
+      "spawnEntity(Vector,EntityType,SpawnReason,Consumer)"
+    ]
+  }
+}

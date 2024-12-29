@@ -1,0 +1,495 @@
+{
+  "versionA": "1.20.2",
+  "versionB": "1.20.3",
+  "packagesAdded": [
+    "org.bukkit.block.spawner"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.block",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.math",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.structure",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "org.bukkit.block.Crafter",
+    "org.bukkit.block.TrialSpawner",
+    "org.bukkit.block.data.type.CopperBulb",
+    "org.bukkit.block.data.type.Crafter",
+    "org.bukkit.block.data.type.Crafter.Orientation",
+    "org.bukkit.block.data.type.TrialSpawner",
+    "org.bukkit.block.data.type.TrialSpawner.State",
+    "org.bukkit.block.spawner.SpawnRule",
+    "org.bukkit.block.spawner.SpawnerEntry",
+    "org.bukkit.entity.Breeze",
+    "org.bukkit.entity.EntitySnapshot",
+    "org.bukkit.entity.WindCharge",
+    "org.bukkit.inventory.CrafterInventory"
+  ],
+  "classesRemoved": [],
+  "classesChanged": [
+    "org.bukkit.FeatureFlag",
+    "org.bukkit.GameRule",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.RegionAccessor",
+    "org.bukkit.Registry",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.block.CreatureSpawner",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Pose",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent",
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent.Status",
+    "org.bukkit.generator.structure.Structure",
+    "org.bukkit.inventory.meta.SpawnEggMeta",
+    "org.bukkit.loot.LootTables",
+    "org.bukkit.potion.PotionEffectType",
+    "org.bukkit.potion.PotionEffectTypeWrapper"
+  ],
+  "membersAdded": {
+    "org.bukkit.Tag": [
+      "ENTITY_TYPES_CAN_TURN_IN_BOATS",
+      "ENTITY_TYPES_DEFLECTS_ARROWS",
+      "ENTITY_TYPES_DEFLECTS_TRIDENTS"
+    ],
+    "org.bukkit.enchantments.Enchantment": [
+      "Enchantment()",
+      "getEnchantment(String)"
+    ],
+    "org.bukkit.entity.Player": [
+      "setResourcePack(UUID,String,Array,String,boolean)"
+    ],
+    "org.bukkit.block.data.type.Crafter": [
+      "isCrafting()",
+      "setCrafting(boolean)"
+    ],
+    "org.bukkit.potion.PotionEffectTypeWrapper": [
+      "PotionEffectTypeWrapper()"
+    ],
+    "org.bukkit.inventory.meta.SpawnEggMeta": [
+      "getSpawnedEntity()",
+      "setSpawnedEntity(EntitySnapshot)"
+    ],
+    "org.bukkit.block.data.type.TrialSpawner.State": [
+      "EJECTING_REWARD",
+      "WAITING_FOR_PLAYERS",
+      "WAITING_FOR_REWARD_EJECTION"
+    ],
+    "org.bukkit.Material": [
+      "BREEZE_SPAWN_EGG",
+      "CHISELED_COPPER",
+      "CHISELED_TUFF",
+      "CHISELED_TUFF_BRICKS",
+      "COPPER_BULB",
+      "COPPER_DOOR",
+      "COPPER_GRATE",
+      "COPPER_TRAPDOOR",
+      "EXPOSED_CHISELED_COPPER",
+      "EXPOSED_COPPER_BULB",
+      "EXPOSED_COPPER_DOOR",
+      "EXPOSED_COPPER_GRATE",
+      "EXPOSED_COPPER_TRAPDOOR",
+      "OXIDIZED_CHISELED_COPPER",
+      "OXIDIZED_COPPER_BULB",
+      "OXIDIZED_COPPER_DOOR",
+      "OXIDIZED_COPPER_GRATE",
+      "OXIDIZED_COPPER_TRAPDOOR",
+      "POLISHED_TUFF",
+      "POLISHED_TUFF_SLAB",
+      "POLISHED_TUFF_STAIRS",
+      "POLISHED_TUFF_WALL",
+      "SHORT_GRASS",
+      "TRIAL_KEY",
+      "TRIAL_SPAWNER",
+      "TUFF_BRICKS",
+      "TUFF_BRICK_SLAB",
+      "TUFF_BRICK_STAIRS",
+      "TUFF_BRICK_WALL",
+      "TUFF_SLAB",
+      "TUFF_STAIRS",
+      "TUFF_WALL",
+      "WAXED_CHISELED_COPPER",
+      "WAXED_COPPER_BULB",
+      "WAXED_COPPER_DOOR",
+      "WAXED_COPPER_GRATE",
+      "WAXED_COPPER_TRAPDOOR",
+      "WAXED_EXPOSED_CHISELED_COPPER",
+      "WAXED_EXPOSED_COPPER_BULB",
+      "WAXED_EXPOSED_COPPER_DOOR",
+      "WAXED_EXPOSED_COPPER_GRATE",
+      "WAXED_EXPOSED_COPPER_TRAPDOOR",
+      "WAXED_OXIDIZED_CHISELED_COPPER",
+      "WAXED_OXIDIZED_COPPER_BULB",
+      "WAXED_OXIDIZED_COPPER_DOOR",
+      "WAXED_OXIDIZED_COPPER_GRATE",
+      "WAXED_OXIDIZED_COPPER_TRAPDOOR",
+      "WAXED_WEATHERED_CHISELED_COPPER",
+      "WAXED_WEATHERED_COPPER_BULB",
+      "WAXED_WEATHERED_COPPER_DOOR",
+      "WAXED_WEATHERED_COPPER_GRATE",
+      "WAXED_WEATHERED_COPPER_TRAPDOOR",
+      "WEATHERED_CHISELED_COPPER",
+      "WEATHERED_COPPER_BULB",
+      "WEATHERED_COPPER_DOOR",
+      "WEATHERED_COPPER_GRATE",
+      "WEATHERED_COPPER_TRAPDOOR"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "RIAL_CHAMBER_CONSUMABLES",
+      "TRIAL_CHAMBERS_CHAMBER_DISPENSER",
+      "TRIAL_CHAMBERS_CORRIDOR",
+      "TRIAL_CHAMBERS_CORRIDOR_DISPENSER",
+      "TRIAL_CHAMBERS_CORRIDOR_POT",
+      "TRIAL_CHAMBERS_ENTRANCE",
+      "TRIAL_CHAMBERS_INTERSECTION",
+      "TRIAL_CHAMBERS_INTERSECTION_BARREL",
+      "TRIAL_CHAMBERS_REWARD",
+      "TRIAL_CHAMBERS_SUPPLY",
+      "TRIAL_CHAMBERS_WATER_DISPENSER",
+      "TRIAL_CHAMBER_KEY"
+    ],
+    "org.bukkit.block.CreatureSpawner": [
+      "addPotentialSpawn(EntitySnapshot,int,SpawnRule)",
+      "addPotentialSpawn(SpawnerEntry)",
+      "getPotentialSpawns()",
+      "setPotentialSpawns(Collection)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "copy(Location)",
+      "createSnapshot()",
+      "isInWorld()"
+    ],
+    "org.bukkit.enchantments.EnchantmentWrapper": [
+      "EnchantmentWrapper()"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "CRAFTER"
+    ],
+    "org.bukkit.block.spawner.SpawnerEntry": [
+      "SpawnerEntry(EntitySnapshot,int,SpawnRule)",
+      "getSnapshot()",
+      "getSpawnRule()",
+      "getSpawnWeight()",
+      "setSnapshot(EntitySnapshot)",
+      "setSpawnRule(SpawnRule)",
+      "setSpawnWeight(int)",
+      "snapshot",
+      "spawnRule",
+      "spawnWeight"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_COPPER_BULB_BREAK",
+      "BLOCK_COPPER_BULB_FALL",
+      "BLOCK_COPPER_BULB_HIT",
+      "BLOCK_COPPER_BULB_PLACE",
+      "BLOCK_COPPER_BULB_STEP",
+      "BLOCK_COPPER_BULB_TURN_OFF",
+      "BLOCK_COPPER_BULB_TURN_ON",
+      "BLOCK_COPPER_DOOR_CLOSE",
+      "BLOCK_COPPER_DOOR_OPEN",
+      "BLOCK_COPPER_GRATE_BREAK",
+      "BLOCK_COPPER_GRATE_FALL",
+      "BLOCK_COPPER_GRATE_HIT",
+      "BLOCK_COPPER_GRATE_PLACE",
+      "BLOCK_COPPER_GRATE_STEP",
+      "BLOCK_COPPER_TRAPDOOR_CLOSE",
+      "BLOCK_COPPER_TRAPDOOR_OPEN",
+      "BLOCK_CRAFTER_CRAFT",
+      "BLOCK_CRAFTER_FAIL",
+      "BLOCK_DECORATED_POT_INSERT",
+      "BLOCK_DECORATED_POT_INSERT_FAIL",
+      "BLOCK_HANGING_SIGN_WAXED_INTERACT_FAIL",
+      "BLOCK_POLISHED_TUFF_BREAK",
+      "BLOCK_POLISHED_TUFF_FALL",
+      "BLOCK_POLISHED_TUFF_HIT",
+      "BLOCK_POLISHED_TUFF_PLACE",
+      "BLOCK_POLISHED_TUFF_STEP",
+      "BLOCK_TRIAL_SPAWNER_AMBIENT",
+      "BLOCK_TRIAL_SPAWNER_BREAK",
+      "BLOCK_TRIAL_SPAWNER_CLOSE_SHUTTER",
+      "BLOCK_TRIAL_SPAWNER_DETECT_PLAYER",
+      "BLOCK_TRIAL_SPAWNER_EJECT_ITEM",
+      "BLOCK_TRIAL_SPAWNER_FALL",
+      "BLOCK_TRIAL_SPAWNER_HIT",
+      "BLOCK_TRIAL_SPAWNER_OPEN_SHUTTER",
+      "BLOCK_TRIAL_SPAWNER_PLACE",
+      "BLOCK_TRIAL_SPAWNER_SPAWN_MOB",
+      "BLOCK_TRIAL_SPAWNER_STEP",
+      "BLOCK_TUFF_BRICKS_BREAK",
+      "BLOCK_TUFF_BRICKS_FALL",
+      "BLOCK_TUFF_BRICKS_HIT",
+      "BLOCK_TUFF_BRICKS_PLACE",
+      "BLOCK_TUFF_BRICKS_STEP",
+      "ENTITY_BREEZE_DEATH",
+      "ENTITY_BREEZE_HURT",
+      "ENTITY_BREEZE_IDLE_AIR",
+      "ENTITY_BREEZE_IDLE_GROUND",
+      "ENTITY_BREEZE_INHALE",
+      "ENTITY_BREEZE_JUMP",
+      "ENTITY_BREEZE_LAND",
+      "ENTITY_BREEZE_SHOOT",
+      "ENTITY_BREEZE_SLIDE",
+      "ENTITY_GENERIC_WIND_BURST",
+      "ENTITY_PARROT_IMITATE_BREEZE",
+      "ENTITY_PLAYER_TELEPORT"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "BREEZE",
+      "WIND_CHARGE"
+    ],
+    "org.bukkit.generator.structure.Structure": [
+      "TRIAL_CHAMBERS"
+    ],
+    "org.bukkit.Particle": [
+      "DUST_PLUME",
+      "GUST",
+      "GUST_DUST",
+      "GUST_EMITTER",
+      "TRIAL_SPAWNER_DETECTION",
+      "WHITE_SMOKE"
+    ],
+    "org.bukkit.entity.EntitySnapshot": [
+      "createEntity(Location)",
+      "createEntity(World)"
+    ],
+    "org.bukkit.RegionAccessor": [
+      "\u003cT\u003eaddEntity(T)",
+      "\u003cT\u003ecreateEntity(Location,Class)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent": [
+      "PlayerResourcePackStatusEvent(Player,UUID,Status)",
+      "PlayerResourcePackStatusEvent(Player,UUID,Status,String)",
+      "getID()"
+    ],
+    "org.bukkit.FeatureFlag": [
+      "UPDATE_121"
+    ],
+    "org.bukkit.entity.Pose": [
+      "INHALING",
+      "SHOOTING",
+      "SLIDING"
+    ],
+    "org.bukkit.block.spawner.SpawnRule": [
+      "SpawnRule(int,int,int,int)",
+      "getMaxBlockLight()",
+      "getMaxSkyLight()",
+      "getMinBlockLight()",
+      "getMinSkyLight()",
+      "maxBlockLight",
+      "maxSkyLight",
+      "minBlockLight",
+      "minSkyLight",
+      "setMaxBlockLight(int)",
+      "setMaxSkyLight(int)",
+      "setMinBlockLight(int)",
+      "setMinSkyLight(int)"
+    ],
+    "org.bukkit.block.data.type.TrialSpawner": [
+      "getTrialSpawnerState()",
+      "setTrialSpawnerState(State)"
+    ],
+    "org.bukkit.block.Crafter": [
+      "getCraftingTicks()",
+      "isSlotDisabled(int)",
+      "setCraftingTicks(int)",
+      "setSlotDisabled(int,boolean)"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "convertLegacy(String)",
+      "PotionEffectType()",
+      "getPotionEffectType(int,String)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent.Status": [
+      "DISCARDED",
+      "DOWNLOADED",
+      "FAILED_RELOAD",
+      "INVALID_URL"
+    ],
+    "org.bukkit.Registry": [
+      "EFFECT"
+    ],
+    "org.bukkit.GameRule": [
+      "MAX_COMMAND_FORK_COUNT",
+      "PLAYERS_NETHER_PORTAL_CREATIVE_DELAY",
+      "PLAYERS_NETHER_PORTAL_DEFAULT_DELAY",
+      "PROJECTILES_CAN_BREAK_BLOCKS"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.potion.PotionEffectTypeWrapper": [
+      "PotionEffectTypeWrapper(int,String)"
+    ],
+    "org.bukkit.enchantments.EnchantmentWrapper": [
+      "EnchantmentWrapper(String)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent": [
+      "PlayerResourcePackStatusEvent(Player,Status)",
+      "PlayerResourcePackStatusEvent(Player,Status,String)"
+    ],
+    "org.bukkit.enchantments.Enchantment": [
+      "Enchantment(NamespacedKey)",
+      "isAcceptingRegistrations()",
+      "registerEnchantment(Enchantment)"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "acceptingNew",
+      "byKey",
+      "byName",
+      "stopAcceptingRegistrations()",
+      "PotionEffectType(int,NamespacedKey)",
+      "registerPotionEffectType(PotionEffectType)"
+    ],
+    "org.bukkit.Material": [
+      "GRASS"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.potion.PotionEffectTypeWrapper": [
+      "PotionEffectTypeWrapper(int,String)"
+    ],
+    "org.bukkit.enchantments.EnchantmentWrapper": [
+      "EnchantmentWrapper(String)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent": [
+      "PlayerResourcePackStatusEvent(Player,Status)",
+      "PlayerResourcePackStatusEvent(Player,Status,String)"
+    ],
+    "org.bukkit.enchantments.Enchantment": [
+      "Enchantment(NamespacedKey)",
+      "isAcceptingRegistrations()",
+      "registerEnchantment(Enchantment)"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "acceptingNew",
+      "byKey",
+      "byName",
+      "stopAcceptingRegistrations()",
+      "PotionEffectType(int,NamespacedKey)",
+      "registerPotionEffectType(PotionEffectType)"
+    ],
+    "org.bukkit.Material": [
+      "GRASS"
+    ]
+  }
+}

@@ -1,0 +1,1282 @@
+<html lang="en">
+<head>
+    <title>1.13.2 1.14 | ApiDiff</title>
+    <style>
+html {
+    color-scheme: dark light;
+}
+[index] {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+    padding: 0;
+}
+[nested] {
+    list-style-type: none;
+    padding-left: 1em;
+}
+[diff] {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 60ch);
+    padding-left: 1em;
+}
+h2:has(+ ul[empty]) {
+    display: none;
+}
+a, a:visited {
+    color: unset;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+<a href='index.html'>Back</a>
+<h1>Diff between 1.13.2 and 1.14</h1>
+<h2>Added packages</h2>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/package-summary.html">org.bukkit.persistence</a></li>
+</ul>
+<h2>Removed packages</h2>
+<ul empty>
+</ul>
+<h2>Changed packages</h2>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/package-summary.html">com.destroystokyo.paper</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/block/package-summary.html">com.destroystokyo.paper.block</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/entity/package-summary.html">com.destroystokyo.paper.entity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/event/block/package-summary.html">com.destroystokyo.paper.event.block</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/event/entity/package-summary.html">com.destroystokyo.paper.event.entity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/event/executor/package-summary.html">com.destroystokyo.paper.event.executor</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/event/executor/asm/package-summary.html">com.destroystokyo.paper.event.executor.asm</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/event/player/package-summary.html">com.destroystokyo.paper.event.player</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/event/profile/package-summary.html">com.destroystokyo.paper.event.profile</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/event/server/package-summary.html">com.destroystokyo.paper.event.server</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/exception/package-summary.html">com.destroystokyo.paper.exception</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/inventory/package-summary.html">com.destroystokyo.paper.inventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/inventory/meta/package-summary.html">com.destroystokyo.paper.inventory.meta</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/loottable/package-summary.html">com.destroystokyo.paper.loottable</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/network/package-summary.html">com.destroystokyo.paper.network</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/profile/package-summary.html">com.destroystokyo.paper.profile</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/util/package-summary.html">com.destroystokyo.paper.util</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/com/destroystokyo/paper/utils/package-summary.html">com.destroystokyo.paper.utils</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/package-summary.html">org.bukkit</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/advancement/package-summary.html">org.bukkit.advancement</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/attribute/package-summary.html">org.bukkit.attribute</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/package-summary.html">org.bukkit.block</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/banner/package-summary.html">org.bukkit.block.banner</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/package-summary.html">org.bukkit.block.data</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/package-summary.html">org.bukkit.block.data.type</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/structure/package-summary.html">org.bukkit.block.structure</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/boss/package-summary.html">org.bukkit.boss</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/command/package-summary.html">org.bukkit.command</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/command/defaults/package-summary.html">org.bukkit.command.defaults</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/configuration/package-summary.html">org.bukkit.configuration</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/configuration/file/package-summary.html">org.bukkit.configuration.file</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/configuration/serialization/package-summary.html">org.bukkit.configuration.serialization</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/conversations/package-summary.html">org.bukkit.conversations</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/package-summary.html">org.bukkit.enchantments</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/package-summary.html">org.bukkit.entity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/minecart/package-summary.html">org.bukkit.entity.minecart</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/package-summary.html">org.bukkit.event</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/package-summary.html">org.bukkit.event.block</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/command/package-summary.html">org.bukkit.event.command</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/enchantment/package-summary.html">org.bukkit.event.enchantment</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/package-summary.html">org.bukkit.event.entity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/hanging/package-summary.html">org.bukkit.event.hanging</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/package-summary.html">org.bukkit.event.inventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/package-summary.html">org.bukkit.event.player</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/server/package-summary.html">org.bukkit.event.server</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/vehicle/package-summary.html">org.bukkit.event.vehicle</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/weather/package-summary.html">org.bukkit.event.weather</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/package-summary.html">org.bukkit.event.world</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/generator/package-summary.html">org.bukkit.generator</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/help/package-summary.html">org.bukkit.help</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/package-summary.html">org.bukkit.inventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/package-summary.html">org.bukkit.inventory.meta</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/tags/package-summary.html">org.bukkit.inventory.meta.tags</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/package-summary.html">org.bukkit.loot</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/map/package-summary.html">org.bukkit.map</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/material/package-summary.html">org.bukkit.material</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/material/types/package-summary.html">org.bukkit.material.types</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/metadata/package-summary.html">org.bukkit.metadata</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/permissions/package-summary.html">org.bukkit.permissions</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/plugin/package-summary.html">org.bukkit.plugin</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/plugin/java/package-summary.html">org.bukkit.plugin.java</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/plugin/messaging/package-summary.html">org.bukkit.plugin.messaging</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/potion/package-summary.html">org.bukkit.potion</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/projectiles/package-summary.html">org.bukkit.projectiles</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/scheduler/package-summary.html">org.bukkit.scheduler</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/scoreboard/package-summary.html">org.bukkit.scoreboard</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/util/package-summary.html">org.bukkit.util</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/util/io/package-summary.html">org.bukkit.util.io</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/util/noise/package-summary.html">org.bukkit.util.noise</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/util/permissions/package-summary.html">org.bukkit.util.permissions</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/spigotmc/package-summary.html">org.spigotmc</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/spigotmc/event/entity/package-summary.html">org.spigotmc.event.entity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/spigotmc/event/player/package-summary.html">org.spigotmc.event.player</a></li>
+</ul>
+<h2>Added classes</h2>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html">org.bukkit.Registry</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry/SimpleRegistry.html">org.bukkit.Registry.SimpleRegistry</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Barrel.html">org.bukkit.block.Barrel</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Bell.html">org.bukkit.block.Bell</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/BlastFurnace.html">org.bukkit.block.BlastFurnace</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Campfire.html">org.bukkit.block.Campfire</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Jigsaw.html">org.bukkit.block.Jigsaw</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Lectern.html">org.bukkit.block.Lectern</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Smoker.html">org.bukkit.block.Smoker</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/TileState.html">org.bukkit.block.TileState</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bamboo.html">org.bukkit.block.data.type.Bamboo</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bamboo/Leaves.html">org.bukkit.block.data.type.Bamboo.Leaves</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell.html">org.bukkit.block.data.type.Bell</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell/Attachment.html">org.bukkit.block.data.type.Bell.Attachment</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Campfire.html">org.bukkit.block.data.type.Campfire</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Lantern.html">org.bukkit.block.data.type.Lantern</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Lectern.html">org.bukkit.block.data.type.Lectern</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Scaffolding.html">org.bukkit.block.data.type.Scaffolding</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/AbstractArrow.html">org.bukkit.entity.AbstractArrow</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/AbstractArrow/PickupRule.html">org.bukkit.entity.AbstractArrow.PickupRule</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/AbstractArrow/PickupStatus.html">org.bukkit.entity.AbstractArrow.PickupStatus</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/AbstractVillager.html">org.bukkit.entity.AbstractVillager</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat.html">org.bukkit.entity.Cat</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html">org.bukkit.entity.Cat.Type</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox.html">org.bukkit.entity.Fox</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox/Type.html">org.bukkit.entity.Fox.Type</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/MushroomCow/Variant.html">org.bukkit.entity.MushroomCow.Variant</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda.html">org.bukkit.entity.Panda</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html">org.bukkit.entity.Panda.Gene</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pillager.html">org.bukkit.entity.Pillager</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html">org.bukkit.entity.Pose</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Raider.html">org.bukkit.entity.Raider</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Ravager.html">org.bukkit.entity.Ravager</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/TraderLlama.html">org.bukkit.entity.TraderLlama</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager/Type.html">org.bukkit.entity.Villager.Type</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/WanderingTrader.html">org.bukkit.entity.WanderingTrader</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockCookEvent.html">org.bukkit.event.block.BlockCookEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockShearEntityEvent.html">org.bukkit.event.block.BlockShearEntityEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPoseChangeEvent.html">org.bukkit.event.entity.EntityPoseChangeEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/TradeSelectEvent.html">org.bukkit.event.inventory.TradeSelectEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/BlastingRecipe.html">org.bukkit.inventory.BlastingRecipe</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/BlockInventoryHolder.html">org.bukkit.inventory.BlockInventoryHolder</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CampfireRecipe.html">org.bukkit.inventory.CampfireRecipe</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CartographyInventory.html">org.bukkit.inventory.CartographyInventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CookingRecipe.html">org.bukkit.inventory.CookingRecipe</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/GrindstoneInventory.html">org.bukkit.inventory.GrindstoneInventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/LecternInventory.html">org.bukkit.inventory.LecternInventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/LoomInventory.html">org.bukkit.inventory.LoomInventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/SmokingRecipe.html">org.bukkit.inventory.SmokingRecipe</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/StonecutterInventory.html">org.bukkit.inventory.StonecutterInventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/StonecuttingRecipe.html">org.bukkit.inventory.StonecuttingRecipe</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/BlockDataMeta.html">org.bukkit.inventory.meta.BlockDataMeta</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/CrossbowMeta.html">org.bukkit.inventory.meta.CrossbowMeta</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataAdapterContext.html">org.bukkit.persistence.PersistentDataAdapterContext</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataContainer.html">org.bukkit.persistence.PersistentDataContainer</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataHolder.html">org.bukkit.persistence.PersistentDataHolder</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType.html">org.bukkit.persistence.PersistentDataType</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType/PrimitivePersistentDataType.html">org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType</a></li>
+</ul>
+<h2>Removed classes</h2>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html">org.bukkit.TravelAgent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Arrow/PickupRule.html">org.bukkit.entity.Arrow.PickupRule</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Arrow/PickupStatus.html">org.bukkit.entity.Arrow.PickupStatus</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Arrow/Spigot.html">org.bukkit.entity.Arrow.Spigot</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html">org.bukkit.entity.Villager.Career</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Weather.html">org.bukkit.entity.Weather</a></li>
+</ul>
+<h2>Changed classes</h2>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Art.html">org.bukkit.Art</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Bukkit.html">org.bukkit.Bukkit</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Chunk.html">org.bukkit.Chunk</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html">org.bukkit.Instrument</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Location.html">org.bukkit.Location</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html">org.bukkit.Material</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html">org.bukkit.Particle</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Server.html">org.bukkit.Server</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html">org.bukkit.Sound</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html">org.bukkit.Statistic</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/StructureType.html">org.bukkit.StructureType</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html">org.bukkit.Tag</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/UnsafeValues.html">org.bukkit.UnsafeValues</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/World.html">org.bukkit.World</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Beacon.html">org.bukkit.block.Beacon</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Biome.html">org.bukkit.block.Biome</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/banner/PatternType.html">org.bukkit.block.banner.PatternType</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/Enchantment.html">org.bukkit.enchantments.Enchantment</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/EnchantmentTarget.html">org.bukkit.enchantments.EnchantmentTarget</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Arrow.html">org.bukkit.entity.Arrow</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Entity.html">org.bukkit.entity.Entity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/EntityType.html">org.bukkit.entity.EntityType</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/ExperienceOrb/SpawnReason.html">org.bukkit.entity.ExperienceOrb.SpawnReason</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/HumanEntity.html">org.bukkit.entity.HumanEntity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/LivingEntity.html">org.bukkit.entity.LivingEntity</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/MushroomCow.html">org.bukkit.entity.MushroomCow</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/TippedArrow.html">org.bukkit.entity.TippedArrow</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager.html">org.bukkit.entity.Villager</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager/Profession.html">org.bukkit.entity.Villager.Profession</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPortalEvent.html">org.bukkit.event.entity.EntityPortalEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityShootBowEvent.html">org.bukkit.event.entity.EntityShootBowEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityTargetEvent/TargetReason.html">org.bukkit.event.entity.EntityTargetEvent.TargetReason</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/VillagerAcquireTradeEvent.html">org.bukkit.event.entity.VillagerAcquireTradeEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/VillagerReplenishTradeEvent.html">org.bukkit.event.entity.VillagerReplenishTradeEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/FurnaceSmeltEvent.html">org.bukkit.event.inventory.FurnaceSmeltEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html">org.bukkit.event.inventory.InventoryType</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/PlayerPickupArrowEvent.html">org.bukkit.event.player.PlayerPickupArrowEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/PlayerPortalEvent.html">org.bukkit.event.player.PlayerPortalEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/server/BroadcastMessageEvent.html">org.bukkit.event.server.BroadcastMessageEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/ChunkUnloadEvent.html">org.bukkit.event.world.ChunkUnloadEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/PortalCreateEvent.html">org.bukkit.event.world.PortalCreateEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/PortalCreateEvent/CreateReason.html">org.bukkit.event.world.PortalCreateEvent.CreateReason</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/generator/ChunkGenerator.html">org.bukkit.generator.ChunkGenerator</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/FurnaceRecipe.html">org.bukkit.inventory.FurnaceRecipe</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/Inventory.html">org.bukkit.inventory.Inventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/InventoryView/Property.html">org.bukkit.inventory.InventoryView.Property</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantInventory.html">org.bukkit.inventory.MerchantInventory</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html">org.bukkit.inventory.MerchantRecipe</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/RecipeChoice/MaterialChoice.html">org.bukkit.inventory.RecipeChoice.MaterialChoice</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/ItemMeta.html">org.bukkit.inventory.meta.ItemMeta</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html">org.bukkit.loot.LootTables</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/map/MapView.html">org.bukkit.map.MapView</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/potion/PotionEffectType.html">org.bukkit.potion.PotionEffectType</a></li>
+</ul>
+<h2>Added members</h2>
+<ul nested>
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html">org.bukkit.Instrument</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html#BANJO">BANJO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html#BIT">BIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html#COW_BELL">COW_BELL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html#DIDGERIDOO">DIDGERIDOO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html#IRON_XYLOPHONE">IRON_XYLOPHONE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Instrument.html#PLING">PLING</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Location.html">org.bukkit.Location</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Location.html#isWorldLoaded()">isWorldLoaded()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html">org.bukkit.Material</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#ACACIA_SIGN">ACACIA_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#ACACIA_WALL_SIGN">ACACIA_WALL_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#ANDESITE_SLAB">ANDESITE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#ANDESITE_STAIRS">ANDESITE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#ANDESITE_WALL">ANDESITE_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BAMBOO">BAMBOO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BAMBOO_SAPLING">BAMBOO_SAPLING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BIRCH_SIGN">BIRCH_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BIRCH_WALL_SIGN">BIRCH_WALL_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BLACK_DYE">BLACK_DYE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BLUE_DYE">BLUE_DYE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BRICK_WALL">BRICK_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#BROWN_DYE">BROWN_DYE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#CAMPFIRE">CAMPFIRE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#CARTOGRAPHY_TABLE">CARTOGRAPHY_TABLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#CAT_SPAWN_EGG">CAT_SPAWN_EGG</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#CORNFLOWER">CORNFLOWER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#CREEPER_BANNER_PATTERN">CREEPER_BANNER_PATTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#CUT_RED_SANDSTONE_SLAB">CUT_RED_SANDSTONE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#CUT_SANDSTONE_SLAB">CUT_SANDSTONE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#DARK_OAK_SIGN">DARK_OAK_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#DARK_OAK_WALL_SIGN">DARK_OAK_WALL_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#DIORITE_SLAB">DIORITE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#DIORITE_STAIRS">DIORITE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#DIORITE_WALL">DIORITE_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#END_STONE_BRICK_SLAB">END_STONE_BRICK_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#END_STONE_BRICK_STAIRS">END_STONE_BRICK_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#END_STONE_BRICK_WALL">END_STONE_BRICK_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#FLETCHING_TABLE">FLETCHING_TABLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#FLOWER_BANNER_PATTERN">FLOWER_BANNER_PATTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#FOX_SPAWN_EGG">FOX_SPAWN_EGG</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#GLOBE_BANNER_PATTERN">GLOBE_BANNER_PATTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#GRANITE_SLAB">GRANITE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#GRANITE_STAIRS">GRANITE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#GRANITE_WALL">GRANITE_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#GREEN_DYE">GREEN_DYE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#JIGSAW">JIGSAW</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#JUNGLE_SIGN">JUNGLE_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#JUNGLE_WALL_SIGN">JUNGLE_WALL_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#LANTERN">LANTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#LEATHER_HORSE_ARMOR">LEATHER_HORSE_ARMOR</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#LILY_OF_THE_VALLEY">LILY_OF_THE_VALLEY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#MOJANG_BANNER_PATTERN">MOJANG_BANNER_PATTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#MOSSY_COBBLESTONE_SLAB">MOSSY_COBBLESTONE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#MOSSY_COBBLESTONE_STAIRS">MOSSY_COBBLESTONE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#MOSSY_STONE_BRICK_SLAB">MOSSY_STONE_BRICK_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#MOSSY_STONE_BRICK_STAIRS">MOSSY_STONE_BRICK_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#MOSSY_STONE_BRICK_WALL">MOSSY_STONE_BRICK_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#NETHER_BRICK_WALL">NETHER_BRICK_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#OAK_SIGN">OAK_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#OAK_WALL_SIGN">OAK_WALL_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#PANDA_SPAWN_EGG">PANDA_SPAWN_EGG</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#PILLAGER_SPAWN_EGG">PILLAGER_SPAWN_EGG</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POLISHED_ANDESITE_SLAB">POLISHED_ANDESITE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POLISHED_ANDESITE_STAIRS">POLISHED_ANDESITE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POLISHED_DIORITE_SLAB">POLISHED_DIORITE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POLISHED_DIORITE_STAIRS">POLISHED_DIORITE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POLISHED_GRANITE_SLAB">POLISHED_GRANITE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POLISHED_GRANITE_STAIRS">POLISHED_GRANITE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POTTED_BAMBOO">POTTED_BAMBOO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POTTED_CORNFLOWER">POTTED_CORNFLOWER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POTTED_LILY_OF_THE_VALLEY">POTTED_LILY_OF_THE_VALLEY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#POTTED_WITHER_ROSE">POTTED_WITHER_ROSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#PRISMARINE_WALL">PRISMARINE_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#RAVAGER_SPAWN_EGG">RAVAGER_SPAWN_EGG</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#RED_DYE">RED_DYE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#RED_NETHER_BRICK_SLAB">RED_NETHER_BRICK_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#RED_NETHER_BRICK_STAIRS">RED_NETHER_BRICK_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#RED_NETHER_BRICK_WALL">RED_NETHER_BRICK_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#RED_SANDSTONE_WALL">RED_SANDSTONE_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SANDSTONE_WALL">SANDSTONE_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SCAFFOLDING">SCAFFOLDING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SKULL_BANNER_PATTERN">SKULL_BANNER_PATTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMITHING_TABLE">SMITHING_TABLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMOOTH_QUARTZ_SLAB">SMOOTH_QUARTZ_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMOOTH_QUARTZ_STAIRS">SMOOTH_QUARTZ_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMOOTH_RED_SANDSTONE_SLAB">SMOOTH_RED_SANDSTONE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMOOTH_RED_SANDSTONE_STAIRS">SMOOTH_RED_SANDSTONE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMOOTH_SANDSTONE_SLAB">SMOOTH_SANDSTONE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMOOTH_SANDSTONE_STAIRS">SMOOTH_SANDSTONE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SMOOTH_STONE_SLAB">SMOOTH_STONE_SLAB</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SPRUCE_SIGN">SPRUCE_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SPRUCE_WALL_SIGN">SPRUCE_WALL_SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#STONE_BRICK_WALL">STONE_BRICK_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#STONE_STAIRS">STONE_STAIRS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SUSPICIOUS_STEW">SUSPICIOUS_STEW</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SWEET_BERRIES">SWEET_BERRIES</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#SWEET_BERRY_BUSH">SWEET_BERRY_BUSH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#TRADER_LLAMA_SPAWN_EGG">TRADER_LLAMA_SPAWN_EGG</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#WANDERING_TRADER_SPAWN_EGG">WANDERING_TRADER_SPAWN_EGG</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#WHITE_DYE">WHITE_DYE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#WITHER_ROSE">WITHER_ROSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Material.html#YELLOW_DYE">YELLOW_DYE</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html">org.bukkit.Particle</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#CAMPFIRE_COSY_SMOKE">CAMPFIRE_COSY_SMOKE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#CAMPFIRE_SIGNAL_SMOKE">CAMPFIRE_SIGNAL_SMOKE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#COMPOSTER">COMPOSTER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#FALLING_LAVA">FALLING_LAVA</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#FALLING_WATER">FALLING_WATER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#FLASH">FLASH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#LANDING_LAVA">LANDING_LAVA</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Particle.html#SNEEZE">SNEEZE</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html">org.bukkit.Registry</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#ADVANCEMENT">ADVANCEMENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#ART">ART</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#BIOME">BIOME</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#BOSS_BARS">BOSS_BARS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#ENCHANTMENT">ENCHANTMENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#ENTITY_TYPE">ENTITY_TYPE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#LOOT_TABLES">LOOT_TABLES</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#MATERIAL">MATERIAL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#STATISTIC">STATISTIC</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#VILLAGER_PROFESSION">VILLAGER_PROFESSION</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry.html#VILLAGER_TYPE">VILLAGER_TYPE</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry/SimpleRegistry.html">org.bukkit.Registry.SimpleRegistry</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry/SimpleRegistry.html#SimpleRegistry(Class)">SimpleRegistry(Class)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry/SimpleRegistry.html#SimpleRegistry(Class,Predicate)">SimpleRegistry(Class,Predicate)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Registry/SimpleRegistry.html#get(NamespacedKey)">get(NamespacedKey)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html">org.bukkit.Sound</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_BREAK">BLOCK_BAMBOO_BREAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_FALL">BLOCK_BAMBOO_FALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_HIT">BLOCK_BAMBOO_HIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_PLACE">BLOCK_BAMBOO_PLACE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_SAPLING_BREAK">BLOCK_BAMBOO_SAPLING_BREAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_SAPLING_HIT">BLOCK_BAMBOO_SAPLING_HIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_SAPLING_PLACE">BLOCK_BAMBOO_SAPLING_PLACE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BAMBOO_STEP">BLOCK_BAMBOO_STEP</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BARREL_CLOSE">BLOCK_BARREL_CLOSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BARREL_OPEN">BLOCK_BARREL_OPEN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BELL_RESONATE">BLOCK_BELL_RESONATE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BELL_USE">BLOCK_BELL_USE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_BLASTFURNACE_FIRE_CRACKLE">BLOCK_BLASTFURNACE_FIRE_CRACKLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_CAMPFIRE_CRACKLE">BLOCK_CAMPFIRE_CRACKLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_COMPOSTER_EMPTY">BLOCK_COMPOSTER_EMPTY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_COMPOSTER_FILL">BLOCK_COMPOSTER_FILL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_COMPOSTER_FILL_SUCCESS">BLOCK_COMPOSTER_FILL_SUCCESS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_COMPOSTER_READY">BLOCK_COMPOSTER_READY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_CROP_BREAK">BLOCK_CROP_BREAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_GRINDSTONE_USE">BLOCK_GRINDSTONE_USE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_LANTERN_BREAK">BLOCK_LANTERN_BREAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_LANTERN_FALL">BLOCK_LANTERN_FALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_LANTERN_HIT">BLOCK_LANTERN_HIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_LANTERN_PLACE">BLOCK_LANTERN_PLACE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_LANTERN_STEP">BLOCK_LANTERN_STEP</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_NETHER_WART_BREAK">BLOCK_NETHER_WART_BREAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_NOTE_BLOCK_BANJO">BLOCK_NOTE_BLOCK_BANJO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_NOTE_BLOCK_BIT">BLOCK_NOTE_BLOCK_BIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_NOTE_BLOCK_COW_BELL">BLOCK_NOTE_BLOCK_COW_BELL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_NOTE_BLOCK_DIDGERIDOO">BLOCK_NOTE_BLOCK_DIDGERIDOO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_NOTE_BLOCK_IRON_XYLOPHONE">BLOCK_NOTE_BLOCK_IRON_XYLOPHONE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SCAFFOLDING_BREAK">BLOCK_SCAFFOLDING_BREAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SCAFFOLDING_FALL">BLOCK_SCAFFOLDING_FALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SCAFFOLDING_HIT">BLOCK_SCAFFOLDING_HIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SCAFFOLDING_PLACE">BLOCK_SCAFFOLDING_PLACE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SCAFFOLDING_STEP">BLOCK_SCAFFOLDING_STEP</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SMOKER_SMOKE">BLOCK_SMOKER_SMOKE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SWEET_BERRY_BUSH_BREAK">BLOCK_SWEET_BERRY_BUSH_BREAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#BLOCK_SWEET_BERRY_BUSH_PLACE">BLOCK_SWEET_BERRY_BUSH_PLACE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_CAT_BEG_FOR_FOOD">ENTITY_CAT_BEG_FOR_FOOD</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_CAT_EAT">ENTITY_CAT_EAT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_CAT_STRAY_AMBIENT">ENTITY_CAT_STRAY_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_EVOKER_CELEBRATE">ENTITY_EVOKER_CELEBRATE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_AGGRO">ENTITY_FOX_AGGRO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_AMBIENT">ENTITY_FOX_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_BITE">ENTITY_FOX_BITE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_DEATH">ENTITY_FOX_DEATH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_EAT">ENTITY_FOX_EAT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_HURT">ENTITY_FOX_HURT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_SCREECH">ENTITY_FOX_SCREECH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_SLEEP">ENTITY_FOX_SLEEP</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_SNIFF">ENTITY_FOX_SNIFF</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_FOX_SPIT">ENTITY_FOX_SPIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_MOOSHROOM_CONVERT">ENTITY_MOOSHROOM_CONVERT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_MOOSHROOM_EAT">ENTITY_MOOSHROOM_EAT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_MOOSHROOM_MILK">ENTITY_MOOSHROOM_MILK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_MOOSHROOM_SUSPICIOUS_MILK">ENTITY_MOOSHROOM_SUSPICIOUS_MILK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_OCELOT_AMBIENT">ENTITY_OCELOT_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_OCELOT_DEATH">ENTITY_OCELOT_DEATH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_OCELOT_HURT">ENTITY_OCELOT_HURT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_AGGRESSIVE_AMBIENT">ENTITY_PANDA_AGGRESSIVE_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_AMBIENT">ENTITY_PANDA_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_BITE">ENTITY_PANDA_BITE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_CANT_BREED">ENTITY_PANDA_CANT_BREED</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_DEATH">ENTITY_PANDA_DEATH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_EAT">ENTITY_PANDA_EAT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_HURT">ENTITY_PANDA_HURT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_PRE_SNEEZE">ENTITY_PANDA_PRE_SNEEZE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_SNEEZE">ENTITY_PANDA_SNEEZE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_STEP">ENTITY_PANDA_STEP</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PANDA_WORRIED_AMBIENT">ENTITY_PANDA_WORRIED_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PARROT_IMITATE_GUARDIAN">ENTITY_PARROT_IMITATE_GUARDIAN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PARROT_IMITATE_PANDA">ENTITY_PARROT_IMITATE_PANDA</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PARROT_IMITATE_PILLAGER">ENTITY_PARROT_IMITATE_PILLAGER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PARROT_IMITATE_RAVAGER">ENTITY_PARROT_IMITATE_RAVAGER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PILLAGER_AMBIENT">ENTITY_PILLAGER_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PILLAGER_CELEBRATE">ENTITY_PILLAGER_CELEBRATE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PILLAGER_DEATH">ENTITY_PILLAGER_DEATH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PILLAGER_HURT">ENTITY_PILLAGER_HURT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_PLAYER_HURT_SWEET_BERRY_BUSH">ENTITY_PLAYER_HURT_SWEET_BERRY_BUSH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_AMBIENT">ENTITY_RAVAGER_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_ATTACK">ENTITY_RAVAGER_ATTACK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_CELEBRATE">ENTITY_RAVAGER_CELEBRATE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_DEATH">ENTITY_RAVAGER_DEATH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_HURT">ENTITY_RAVAGER_HURT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_ROAR">ENTITY_RAVAGER_ROAR</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_STEP">ENTITY_RAVAGER_STEP</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_RAVAGER_STUNNED">ENTITY_RAVAGER_STUNNED</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_CELEBRATE">ENTITY_VILLAGER_CELEBRATE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_ARMORER">ENTITY_VILLAGER_WORK_ARMORER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_BUTCHER">ENTITY_VILLAGER_WORK_BUTCHER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_CARTOGRAPHER">ENTITY_VILLAGER_WORK_CARTOGRAPHER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_CLERIC">ENTITY_VILLAGER_WORK_CLERIC</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_FARMER">ENTITY_VILLAGER_WORK_FARMER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_FISHERMAN">ENTITY_VILLAGER_WORK_FISHERMAN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_FLETCHER">ENTITY_VILLAGER_WORK_FLETCHER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_LEATHERWORKER">ENTITY_VILLAGER_WORK_LEATHERWORKER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_LIBRARIAN">ENTITY_VILLAGER_WORK_LIBRARIAN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_MASON">ENTITY_VILLAGER_WORK_MASON</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_SHEPHERD">ENTITY_VILLAGER_WORK_SHEPHERD</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_TOOLSMITH">ENTITY_VILLAGER_WORK_TOOLSMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VILLAGER_WORK_WEAPONSMITH">ENTITY_VILLAGER_WORK_WEAPONSMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_VINDICATOR_CELEBRATE">ENTITY_VINDICATOR_CELEBRATE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_AMBIENT">ENTITY_WANDERING_TRADER_AMBIENT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_DEATH">ENTITY_WANDERING_TRADER_DEATH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_DISAPPEARED">ENTITY_WANDERING_TRADER_DISAPPEARED</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_DRINK_MILK">ENTITY_WANDERING_TRADER_DRINK_MILK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_DRINK_POTION">ENTITY_WANDERING_TRADER_DRINK_POTION</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_HURT">ENTITY_WANDERING_TRADER_HURT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_NO">ENTITY_WANDERING_TRADER_NO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_REAPPEARED">ENTITY_WANDERING_TRADER_REAPPEARED</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_TRADE">ENTITY_WANDERING_TRADER_TRADE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WANDERING_TRADER_YES">ENTITY_WANDERING_TRADER_YES</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ENTITY_WITCH_CELEBRATE">ENTITY_WITCH_CELEBRATE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#EVENT_RAID_HORN">EVENT_RAID_HORN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_BOOK_PAGE_TURN">ITEM_BOOK_PAGE_TURN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_BOOK_PUT">ITEM_BOOK_PUT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROP_PLANT">ITEM_CROP_PLANT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_HIT">ITEM_CROSSBOW_HIT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_LOADING_END">ITEM_CROSSBOW_LOADING_END</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_LOADING_MIDDLE">ITEM_CROSSBOW_LOADING_MIDDLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_LOADING_START">ITEM_CROSSBOW_LOADING_START</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_QUICK_CHARGE_1">ITEM_CROSSBOW_QUICK_CHARGE_1</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_QUICK_CHARGE_2">ITEM_CROSSBOW_QUICK_CHARGE_2</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_QUICK_CHARGE_3">ITEM_CROSSBOW_QUICK_CHARGE_3</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_CROSSBOW_SHOOT">ITEM_CROSSBOW_SHOOT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_NETHER_WART_PLANT">ITEM_NETHER_WART_PLANT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#ITEM_SWEET_BERRIES_PICK_FROM_BUSH">ITEM_SWEET_BERRIES_PICK_FROM_BUSH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#UI_CARTOGRAPHY_TABLE_TAKE_RESULT">UI_CARTOGRAPHY_TABLE_TAKE_RESULT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#UI_LOOM_SELECT_PATTERN">UI_LOOM_SELECT_PATTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#UI_LOOM_TAKE_RESULT">UI_LOOM_TAKE_RESULT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#UI_STONECUTTER_SELECT_RECIPE">UI_STONECUTTER_SELECT_RECIPE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Sound.html#UI_STONECUTTER_TAKE_RESULT">UI_STONECUTTER_TAKE_RESULT</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html">org.bukkit.Statistic</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#BELL_RING">BELL_RING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#INTERACT_WITH_BLAST_FURNACE">INTERACT_WITH_BLAST_FURNACE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#INTERACT_WITH_CAMPFIRE">INTERACT_WITH_CAMPFIRE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#INTERACT_WITH_CARTOGRAPHY_TABLE">INTERACT_WITH_CARTOGRAPHY_TABLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#INTERACT_WITH_LECTERN">INTERACT_WITH_LECTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#INTERACT_WITH_LOOM">INTERACT_WITH_LOOM</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#INTERACT_WITH_SMOKER">INTERACT_WITH_SMOKER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#INTERACT_WITH_STONECUTTER">INTERACT_WITH_STONECUTTER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#OPEN_BARREL">OPEN_BARREL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#RAID_TRIGGER">RAID_TRIGGER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Statistic.html#RAID_WIN">RAID_WIN</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html">org.bukkit.Tag</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#BAMBOO_PLANTABLE_ON">BAMBOO_PLANTABLE_ON</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#DIRT_LIKE">DIRT_LIKE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#ITEMS_ARROWS">ITEMS_ARROWS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#ITEMS_COALS">ITEMS_COALS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#ITEMS_MUSIC_DISCS">ITEMS_MUSIC_DISCS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#SMALL_FLOWERS">SMALL_FLOWERS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#STANDING_SIGNS">STANDING_SIGNS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#WALLS">WALLS</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/Tag.html#WALL_SIGNS">WALL_SIGNS</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/UnsafeValues.html">org.bukkit.UnsafeValues</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/UnsafeValues.html#getMaterial(String,int)">getMaterial(String,int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/UnsafeValues.html#getTimingsServerName()">getTimingsServerName()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Biome.html">org.bukkit.block.Biome</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Biome.html#BAMBOO_JUNGLE">BAMBOO_JUNGLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Biome.html#BAMBOO_JUNGLE_HILLS">BAMBOO_JUNGLE_HILLS</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Campfire.html">org.bukkit.block.Campfire</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Campfire.html#getCookTime(int)">getCookTime(int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Campfire.html#getCookTimeTotal(int)">getCookTimeTotal(int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Campfire.html#setCookTime(int,int)">setCookTime(int,int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Campfire.html#setCookTimeTotal(int,int)">setCookTimeTotal(int,int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Lectern.html">org.bukkit.block.Lectern</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Lectern.html#getPage()">getPage()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/Lectern.html#setPage(int)">setPage(int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/banner/PatternType.html">org.bukkit.block.banner.PatternType</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/banner/PatternType.html#GLOBE">GLOBE</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bamboo.html">org.bukkit.block.data.type.Bamboo</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bamboo.html#getLeaves()">getLeaves()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bamboo.html#setLeaves(Leaves)">setLeaves(Leaves)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell.html">org.bukkit.block.data.type.Bell</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell.html#setAttachment(Attachment)">setAttachment(Attachment)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell/Attachment.html">org.bukkit.block.data.type.Bell.Attachment</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell/Attachment.html#Attachment()">Attachment()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell/Attachment.html#DOUBLE_WALL">DOUBLE_WALL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Bell/Attachment.html#SINGLE_WALL">SINGLE_WALL</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Campfire.html">org.bukkit.block.data.type.Campfire</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Campfire.html#isSignalFire()">isSignalFire()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Campfire.html#setSignalFire(boolean)">setSignalFire(boolean)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Lantern.html">org.bukkit.block.data.type.Lantern</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Lantern.html#isHanging()">isHanging()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Lantern.html#setHanging(boolean)">setHanging(boolean)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Lectern.html">org.bukkit.block.data.type.Lectern</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Lectern.html#hasBook()">hasBook()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Scaffolding.html">org.bukkit.block.data.type.Scaffolding</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Scaffolding.html#getMaximumDistance()">getMaximumDistance()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Scaffolding.html#isBottom()">isBottom()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/block/data/type/Scaffolding.html#setBottom(boolean)">setBottom(boolean)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/Enchantment.html">org.bukkit.enchantments.Enchantment</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/Enchantment.html#MULTISHOT">MULTISHOT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/Enchantment.html#PIERCING">PIERCING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/Enchantment.html#QUICK_CHARGE">QUICK_CHARGE</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/EnchantmentTarget.html">org.bukkit.enchantments.EnchantmentTarget</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/enchantments/EnchantmentTarget.html#CROSSBOW">CROSSBOW</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html">org.bukkit.entity.Cat.Type</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#ALL_BLACK">ALL_BLACK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#BRITISH_SHORTHAIR">BRITISH_SHORTHAIR</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#CALICO">CALICO</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#JELLIE">JELLIE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#PERSIAN">PERSIAN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#RAGDOLL">RAGDOLL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#SIAMESE">SIAMESE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Cat/Type.html#TABBY">TABBY</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox.html">org.bukkit.entity.Fox</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox.html#getFoxType()">getFoxType()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox.html#isCrouching()">isCrouching()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox.html#setCrouching(boolean)">setCrouching(boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox.html#setFoxType(Type)">setFoxType(Type)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Fox.html#setSleeping(boolean)">setSleeping(boolean)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda.html">org.bukkit.entity.Panda</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda.html#getHiddenGene()">getHiddenGene()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda.html#getMainGene()">getMainGene()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda.html#setHiddenGene(Gene)">setHiddenGene(Gene)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda.html#setMainGene(Gene)">setMainGene(Gene)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html">org.bukkit.entity.Panda.Gene</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#AGGRESSIVE">AGGRESSIVE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#Gene(boolean)">Gene(boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#LAZY">LAZY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#PLAYFUL">PLAYFUL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#WEAK">WEAK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#WORRIED">WORRIED</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#isRecessive()">isRecessive()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Panda/Gene.html#recessive">recessive</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html">org.bukkit.entity.Pose</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html#FALL_FLYING">FALL_FLYING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html#Pose()">Pose()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html#SLEEPING">SLEEPING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html#SNEAKING">SNEAKING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html#SPIN_ATTACK">SPIN_ATTACK</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html#STANDING">STANDING</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Pose.html#SWIMMING">SWIMMING</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Raider.html">org.bukkit.entity.Raider</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Raider.html#getPatrolTarget()">getPatrolTarget()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Raider.html#isPatrolLeader()">isPatrolLeader()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Raider.html#setPatrolLeader(boolean)">setPatrolLeader(boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Raider.html#setPatrolTarget(Block)">setPatrolTarget(Block)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager.html">org.bukkit.entity.Villager</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager.html#getVillagerLevel()">getVillagerLevel()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager.html#getVillagerType()">getVillagerType()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager.html#setVillagerLevel(int)">setVillagerLevel(int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager.html#setVillagerType(Type)">setVillagerType(Type)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager/Profession.html">org.bukkit.entity.Villager.Profession</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager/Profession.html#MASON">MASON</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager/Profession.html#Profession()">Profession()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager/Profession.html#TOOLSMITH">TOOLSMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/entity/Villager/Profession.html#WEAPONSMITH">WEAPONSMITH</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockCookEvent.html">org.bukkit.event.block.BlockCookEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockCookEvent.html#BlockCookEvent(Block,ItemStack,ItemStack)">BlockCookEvent(Block,ItemStack,ItemStack)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockShearEntityEvent.html">org.bukkit.event.block.BlockShearEntityEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockShearEntityEvent.html#BlockShearEntityEvent(Block,Entity,ItemStack)">BlockShearEntityEvent(Block,Entity,ItemStack)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockShearEntityEvent.html#getTool()">getTool()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockShearEntityEvent.html#sheared">sheared</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/block/BlockShearEntityEvent.html#tool">tool</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPortalEvent.html">org.bukkit.event.entity.EntityPortalEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPortalEvent.html#EntityPortalEvent(Entity,Location,Location)">EntityPortalEvent(Entity,Location,Location)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPoseChangeEvent.html">org.bukkit.event.entity.EntityPoseChangeEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPoseChangeEvent.html#EntityPoseChangeEvent(Entity,Pose)">EntityPoseChangeEvent(Entity,Pose)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPoseChangeEvent.html#getPose()">getPose()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityPoseChangeEvent.html#pose">pose</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityShootBowEvent.html">org.bukkit.event.entity.EntityShootBowEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityShootBowEvent.html#EntityShootBowEvent(LivingEntity,ItemStack,Entity,float)">EntityShootBowEvent(LivingEntity,ItemStack,Entity,float)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityShootBowEvent.html#EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,float)">EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,float)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityTargetEvent/TargetReason.html">org.bukkit.event.entity.EntityTargetEvent.TargetReason</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/EntityTargetEvent/TargetReason.html#FOLLOW_LEADER">FOLLOW_LEADER</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/VillagerAcquireTradeEvent.html">org.bukkit.event.entity.VillagerAcquireTradeEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/VillagerAcquireTradeEvent.html#VillagerAcquireTradeEvent(AbstractVillager,MerchantRecipe)">VillagerAcquireTradeEvent(AbstractVillager,MerchantRecipe)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/VillagerReplenishTradeEvent.html">org.bukkit.event.entity.VillagerReplenishTradeEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/entity/VillagerReplenishTradeEvent.html#VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe,int)">VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe,int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html">org.bukkit.event.inventory.InventoryType</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#BARREL">BARREL</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#BLAST_FURNACE">BLAST_FURNACE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#CARTOGRAPHY">CARTOGRAPHY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#GRINDSTONE">GRINDSTONE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#LECTERN">LECTERN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#LOOM">LOOM</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#SMOKER">SMOKER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/InventoryType.html#STONECUTTER">STONECUTTER</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/TradeSelectEvent.html">org.bukkit.event.inventory.TradeSelectEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/TradeSelectEvent.html#TradeSelectEvent(InventoryView,int)">TradeSelectEvent(InventoryView,int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/TradeSelectEvent.html#getIndex()">getIndex()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/inventory/TradeSelectEvent.html#index">index</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/PlayerPickupArrowEvent.html">org.bukkit.event.player.PlayerPickupArrowEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/PlayerPickupArrowEvent.html#PlayerPickupArrowEvent(Player,Item,AbstractArrow)">PlayerPickupArrowEvent(Player,Item,AbstractArrow)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/PlayerPortalEvent.html">org.bukkit.event.player.PlayerPortalEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/PlayerPortalEvent.html#PlayerPortalEvent(Player,Location,Location)">PlayerPortalEvent(Player,Location,Location)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/player/PlayerPortalEvent.html#PlayerPortalEvent(Player,Location,Location,TeleportCause)">PlayerPortalEvent(Player,Location,Location,TeleportCause)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/server/BroadcastMessageEvent.html">org.bukkit.event.server.BroadcastMessageEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/server/BroadcastMessageEvent.html#BroadcastMessageEvent(boolean,String,Set)">BroadcastMessageEvent(boolean,String,Set)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/PortalCreateEvent.html">org.bukkit.event.world.PortalCreateEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/PortalCreateEvent.html#PortalCreateEvent(List,World,CreateReason)">PortalCreateEvent(List,World,CreateReason)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/PortalCreateEvent/CreateReason.html">org.bukkit.event.world.PortalCreateEvent.CreateReason</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/PortalCreateEvent/CreateReason.html#END_PLATFORM">END_PLATFORM</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/event/world/PortalCreateEvent/CreateReason.html#NETHER_PAIR">NETHER_PAIR</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/generator/ChunkGenerator.html">org.bukkit.generator.ChunkGenerator</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/generator/ChunkGenerator.html#isParallelCapable()">isParallelCapable()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/BlastingRecipe.html">org.bukkit.inventory.BlastingRecipe</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/BlastingRecipe.html#BlastingRecipe(NamespacedKey,ItemStack,Material,float,int)">BlastingRecipe(NamespacedKey,ItemStack,Material,float,int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/BlastingRecipe.html#BlastingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)">BlastingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CampfireRecipe.html">org.bukkit.inventory.CampfireRecipe</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CampfireRecipe.html#CampfireRecipe(NamespacedKey,ItemStack,Material,float,int)">CampfireRecipe(NamespacedKey,ItemStack,Material,float,int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CampfireRecipe.html#CampfireRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)">CampfireRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CookingRecipe.html">org.bukkit.inventory.CookingRecipe</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CookingRecipe.html#CookingRecipe(NamespacedKey,ItemStack,Material,float,int)">CookingRecipe(NamespacedKey,ItemStack,Material,float,int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/CookingRecipe.html#CookingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)">CookingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/InventoryView/Property.html">org.bukkit.inventory.InventoryView.Property</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/InventoryView/Property.html#BOOK_PAGE">BOOK_PAGE</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantInventory.html">org.bukkit.inventory.MerchantInventory</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantInventory.html#getMerchant()">getMerchant()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html">org.bukkit.inventory.MerchantRecipe</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html#MerchantRecipe(ItemStack,int,int,boolean,int,float)">MerchantRecipe(ItemStack,int,int,boolean,int,float)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html#getPriceMultiplier()">getPriceMultiplier()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html#getVillagerExperience()">getVillagerExperience()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html#priceMultiplier">priceMultiplier</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html#setPriceMultiplier(float)">setPriceMultiplier(float)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html#setVillagerExperience(int)">setVillagerExperience(int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/MerchantRecipe.html#villagerExperience">villagerExperience</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/RecipeChoice/MaterialChoice.html">org.bukkit.inventory.RecipeChoice.MaterialChoice</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/RecipeChoice/MaterialChoice.html#MaterialChoice(Tag)">MaterialChoice(Tag)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/SmokingRecipe.html">org.bukkit.inventory.SmokingRecipe</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/SmokingRecipe.html#SmokingRecipe(NamespacedKey,ItemStack,Material,float,int)">SmokingRecipe(NamespacedKey,ItemStack,Material,float,int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/SmokingRecipe.html#SmokingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)">SmokingRecipe(NamespacedKey,ItemStack,RecipeChoice,float,int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/StonecuttingRecipe.html">org.bukkit.inventory.StonecuttingRecipe</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/StonecuttingRecipe.html#StonecuttingRecipe(NamespacedKey,ItemStack,Material)">StonecuttingRecipe(NamespacedKey,ItemStack,Material)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/StonecuttingRecipe.html#StonecuttingRecipe(NamespacedKey,ItemStack,RecipeChoice)">StonecuttingRecipe(NamespacedKey,ItemStack,RecipeChoice)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/BlockDataMeta.html">org.bukkit.inventory.meta.BlockDataMeta</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/BlockDataMeta.html#getBlockData(Material)">getBlockData(Material)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/BlockDataMeta.html#hasBlockData()">hasBlockData()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/CrossbowMeta.html">org.bukkit.inventory.meta.CrossbowMeta</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/CrossbowMeta.html#addChargedProjectile(ItemStack)">addChargedProjectile(ItemStack)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/CrossbowMeta.html#getChargedProjectiles()">getChargedProjectiles()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/CrossbowMeta.html#hasChargedProjectiles()">hasChargedProjectiles()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/CrossbowMeta.html#setChargedProjectiles(List)">setChargedProjectiles(List)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/ItemMeta.html">org.bukkit.inventory.meta.ItemMeta</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/ItemMeta.html#getCustomModelData()">getCustomModelData()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/ItemMeta.html#hasCustomModelData()">hasCustomModelData()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/ItemMeta.html#setCustomModelData(Integer)">setCustomModelData(Integer)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/inventory/meta/ItemMeta.html#setVersion(int)">setVersion(int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html">org.bukkit.loot.LootTables</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#ARMORER_GIFT">ARMORER_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#BUTCHER_GIFT">BUTCHER_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#CARTOGRAPHER_GIFT">CARTOGRAPHER_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#CAT">CAT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#CAT_MORNING_GIFT">CAT_MORNING_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#CLERIC_GIFT">CLERIC_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#FARMER_GIFT">FARMER_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#FISHERMAN_GIFT">FISHERMAN_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#FLETCHER_GIFT">FLETCHER_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#FOX">FOX</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#LEATHERWORKER_GIFT">LEATHERWORKER_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#LIBRARIAN_GIFT">LIBRARIAN_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#MASON_GIFT">MASON_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#MOOSHROOM">MOOSHROOM</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#PANDA">PANDA</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#PILLAGER">PILLAGER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#PILLAGER_OUTPOST">PILLAGER_OUTPOST</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#RAVAGER">RAVAGER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#SHEEP_LIGHT_GRAY">SHEEP_LIGHT_GRAY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#SHEPHERD_GIFT">SHEPHERD_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#TOOLSMITH_GIFT">TOOLSMITH_GIFT</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#TRADER_LLAMA">TRADER_LLAMA</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_ARMORER">VILLAGE_ARMORER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_BUTCHER">VILLAGE_BUTCHER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_CARTOGRAPHER">VILLAGE_CARTOGRAPHER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_DESERT_HOUSE">VILLAGE_DESERT_HOUSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_FISHER">VILLAGE_FISHER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_FLETCHER">VILLAGE_FLETCHER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_MASON">VILLAGE_MASON</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_PLAINS_HOUSE">VILLAGE_PLAINS_HOUSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_SAVANNA_HOUSE">VILLAGE_SAVANNA_HOUSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_SHEPHERD">VILLAGE_SHEPHERD</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_SNOWY_HOUSE">VILLAGE_SNOWY_HOUSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_TAIGA_HOUSE">VILLAGE_TAIGA_HOUSE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_TANNERY">VILLAGE_TANNERY</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_TEMPLE">VILLAGE_TEMPLE</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_TOOLSMITH">VILLAGE_TOOLSMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#VILLAGE_WEAPONSMITH">VILLAGE_WEAPONSMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#WANDERING_TRADER">WANDERING_TRADER</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/loot/LootTables.html#WEAPONSMITH_GIFT">WEAPONSMITH_GIFT</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataAdapterContext.html">org.bukkit.persistence.PersistentDataAdapterContext</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataAdapterContext.html#newPersistentDataContainer()">newPersistentDataContainer()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataContainer.html">org.bukkit.persistence.PersistentDataContainer</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataContainer.html#<T,Z>get(NamespacedKey,PersistentDataType)">&lt;T,Z&gt;get(NamespacedKey,PersistentDataType)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataContainer.html#<T,Z>getOrDefault(NamespacedKey,PersistentDataType,Z)">&lt;T,Z&gt;getOrDefault(NamespacedKey,PersistentDataType,Z)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataContainer.html#<T,Z>has(NamespacedKey,PersistentDataType)">&lt;T,Z&gt;has(NamespacedKey,PersistentDataType)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataContainer.html#<T,Z>set(NamespacedKey,PersistentDataType,Z)">&lt;T,Z&gt;set(NamespacedKey,PersistentDataType,Z)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataContainer.html#remove(NamespacedKey)">remove(NamespacedKey)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataHolder.html">org.bukkit.persistence.PersistentDataHolder</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataHolder.html#getPersistentDataContainer()">getPersistentDataContainer()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType.html">org.bukkit.persistence.PersistentDataType</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType.html#toPrimitive(Z,PersistentDataAdapterContext)">toPrimitive(Z,PersistentDataAdapterContext)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType/PrimitivePersistentDataType.html">org.bukkit.persistence.PersistentDataType.PrimitivePersistentDataType</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType/PrimitivePersistentDataType.html#PrimitivePersistentDataType(Class)">PrimitivePersistentDataType(Class)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType/PrimitivePersistentDataType.html#fromPrimitive(T,PersistentDataAdapterContext)">fromPrimitive(T,PersistentDataAdapterContext)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/persistence/PersistentDataType/PrimitivePersistentDataType.html#toPrimitive(T,PersistentDataAdapterContext)">toPrimitive(T,PersistentDataAdapterContext)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.14/org/bukkit/potion/PotionEffectType.html">org.bukkit.potion.PotionEffectType</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/potion/PotionEffectType.html#BAD_OMEN">BAD_OMEN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.14/org/bukkit/potion/PotionEffectType.html#HERO_OF_THE_VILLAGE">HERO_OF_THE_VILLAGE</a></li>
+</ul>
+</li>
+
+</ul>
+<h2>Removed members</h2>
+<ul nested>
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Chunk.html">org.bukkit.Chunk</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Chunk.html#unload(boolean,boolean)">unload(boolean,boolean)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Material.html">org.bukkit.Material</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Material.html#CACTUS_GREEN">CACTUS_GREEN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Material.html#DANDELION_YELLOW">DANDELION_YELLOW</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Material.html#ROSE_RED">ROSE_RED</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Material.html#SIGN">SIGN</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Material.html#WALL_SIGN">WALL_SIGN</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Server.html">org.bukkit.Server</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Server.html#getCurrentTick()">getCurrentTick()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Server.html#getServerId()">getServerId()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/Server.html#getServerName()">getServerName()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html">org.bukkit.TravelAgent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#createPortal(Location)">createPortal(Location)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#findOrCreate(Location)">findOrCreate(Location)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#findPortal(Location)">findPortal(Location)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#getCanCreatePortal()">getCanCreatePortal()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#getCreationRadius()">getCreationRadius()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#getSearchRadius()">getSearchRadius()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#setCanCreatePortal(boolean)">setCanCreatePortal(boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#setCreationRadius(int)">setCreationRadius(int)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/TravelAgent.html#setSearchRadius(int)">setSearchRadius(int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/World.html">org.bukkit.World</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/World.html#unloadChunk(int,int,boolean,boolean)">unloadChunk(int,int,boolean,boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/World.html#unloadChunkRequest(int,int,boolean)">unloadChunkRequest(int,int,boolean)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/EntityType.html">org.bukkit.entity.EntityType</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/EntityType.html#COMPLEX_PART">COMPLEX_PART</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager.html">org.bukkit.entity.Villager</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager.html#getCareer()">getCareer()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager.html#getRiches()">getRiches()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager.html#setCareer(Career)">setCareer(Career)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager.html#setCareer(Career,boolean)">setCareer(Career,boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager.html#setRiches(int)">setRiches(int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html">org.bukkit.entity.Villager.Career</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html#Career(Profession)">Career(Profession)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html#TOOL_SMITH">TOOL_SMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html#WEAPON_SMITH">WEAPON_SMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html#careerMap">careerMap</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html#getCareers(Profession)">getCareers(Profession)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Career.html#profession">profession</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Profession.html">org.bukkit.entity.Villager.Profession</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Profession.html#BLACKSMITH">BLACKSMITH</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Profession.html#PRIEST">PRIEST</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Profession.html#Profession(boolean)">Profession(boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Profession.html#getCareers()">getCareers()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Profession.html#isZombie()">isZombie()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/entity/Villager/Profession.html#zombie">zombie</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/EntityPortalEvent.html">org.bukkit.event.entity.EntityPortalEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/EntityPortalEvent.html#EntityPortalEvent(Entity,Location,Location,TravelAgent)">EntityPortalEvent(Entity,Location,Location,TravelAgent)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/EntityShootBowEvent.html">org.bukkit.event.entity.EntityShootBowEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/EntityShootBowEvent.html#EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Projectile,float)">EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Projectile,float)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/EntityShootBowEvent.html#EntityShootBowEvent(LivingEntity,ItemStack,Projectile,float)">EntityShootBowEvent(LivingEntity,ItemStack,Projectile,float)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/VillagerAcquireTradeEvent.html">org.bukkit.event.entity.VillagerAcquireTradeEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/VillagerAcquireTradeEvent.html#VillagerAcquireTradeEvent(Villager,MerchantRecipe)">VillagerAcquireTradeEvent(Villager,MerchantRecipe)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/VillagerReplenishTradeEvent.html">org.bukkit.event.entity.VillagerReplenishTradeEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/entity/VillagerReplenishTradeEvent.html#VillagerReplenishTradeEvent(Villager,MerchantRecipe,int)">VillagerReplenishTradeEvent(Villager,MerchantRecipe,int)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPickupArrowEvent.html">org.bukkit.event.player.PlayerPickupArrowEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPickupArrowEvent.html#PlayerPickupArrowEvent(Player,Item,Arrow)">PlayerPickupArrowEvent(Player,Item,Arrow)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html">org.bukkit.event.player.PlayerPortalEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#PlayerPortalEvent(Player,Location,Location,TravelAgent)">PlayerPortalEvent(Player,Location,Location,TravelAgent)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#PlayerPortalEvent(Player,Location,Location,TravelAgent,TeleportCause)">PlayerPortalEvent(Player,Location,Location,TravelAgent,TeleportCause)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#getPortalTravelAgent()">getPortalTravelAgent()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#setPortalTravelAgent(TravelAgent)">setPortalTravelAgent(TravelAgent)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#travelAgent">travelAgent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#useTravelAgent">useTravelAgent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#useTravelAgent()">useTravelAgent()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/player/PlayerPortalEvent.html#useTravelAgent(boolean)">useTravelAgent(boolean)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/world/PortalCreateEvent.html">org.bukkit.event.world.PortalCreateEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/world/PortalCreateEvent.html#PortalCreateEvent(Collection,World,CreateReason)">PortalCreateEvent(Collection,World,CreateReason)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/world/PortalCreateEvent/CreateReason.html">org.bukkit.event.world.PortalCreateEvent.CreateReason</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/event/world/PortalCreateEvent/CreateReason.html#OBC_DESTINATION">OBC_DESTINATION</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/loot/LootTables.html">org.bukkit.loot.LootTables</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.13.2/org/bukkit/loot/LootTables.html#VILLAGE_BLACKSMITH">VILLAGE_BLACKSMITH</a></li>
+</ul>
+</li>
+
+</ul>
+<h2>Changed members</h2>
+<ul empty>
+</ul>
+</body>
+</html>
