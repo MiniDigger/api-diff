@@ -132,6 +132,9 @@ public class ApiExportDoclet implements Doclet {
             }
 
             // handle link
+            // TODO links to inner classes are broken
+            // TODO links to methods with arguments are broken, need fully qualified name
+            // TODO links to methods with type parameters are broken, need to remove them
             switch (e.getKind()) {
                 case PACKAGE -> {
                     element.put("link", "https://jd.papermc.io/paper/" + mcVersion + "/" + String.join("/", ((String) element.get("name")).split("\\.")) + "/package-summary.html");

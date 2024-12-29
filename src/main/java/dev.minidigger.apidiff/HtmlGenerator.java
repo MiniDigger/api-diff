@@ -2,17 +2,20 @@ package dev.minidigger.apidiff;
 
 import dev.minidigger.apidiff.ApiDiffer.ApiDiff;
 import dev.minidigger.apidiff.ApiDiffer.Member;
+import dev.minidigger.apidiff.SinceGenerator.SinceReport;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static dev.minidigger.apidiff.ApiDiffer.*;
+import static dev.minidigger.apidiff.ApiDiffer.Class;
+import static dev.minidigger.apidiff.ApiDiffer.Package;
 
 public class HtmlGenerator {
 
@@ -65,6 +68,7 @@ public class HtmlGenerator {
                     .collect(Collectors.joining("\n", "  <ul index>\n", "\n  </ul>"));
             String diffs = apiDiffer.diffs.keySet().stream().sorted().map((s) -> "    <li><a href=\"diff-" + s + ".html\">" + s + "</a></li>")
                     .collect(Collectors.joining("\n", "  <ul index>\n", "\n  </ul>"));
+            String since = "<a href=\"since.html\">Since</a>";
             String index = """
                     <html lang="en">
                     <head>
@@ -73,20 +77,53 @@ public class HtmlGenerator {
                     </head>
                     <body>
                     <h1>ApiDiff</h1>
+                    <h2>Since Report</h2>
+                    %s
                     <h2>Diffs</h2>
                     %s
                     <h2>Raw data</h2>
                     %s
                     </body>
                     </html>
-                    """.formatted(css, diffs, rawData);
+                    """.formatted(css, since, diffs, rawData);
             Files.writeString(output.resolve("index.html"), index);
         }
     }
 
-    public void generateSince() {
-        // TODO generate since
-//        apiDiffer.diffs.fo
+    public void generateSince(List<String> versions, SinceReport sinceReport) throws IOException {
+        // TODO generate sinces and output them, I think we have to walk back all diffs until we find the element
+        StringBuilder html = new StringBuilder("""
+                <html lang="en">
+                <head>
+                    <title>Since | ApiDiff</title>
+                    %s
+                </head>
+                <body>
+                <h1>Since</h1>
+                """.formatted(css));
+        ApiExport lastExport = apiDiffer.load(versions.getLast());
+        for (Package aPackage : lastExport.packages().values()) {
+            html.append("<h2><a href=\"").append(aPackage.link()).append("\">").append(htmlEscape(aPackage.name())).append(" (since: ").append(sinceReport.packages().get(aPackage.name())).append(")").append("</a></h2>\n");
+
+            for (Class aClass : aPackage.classes()) {
+                html.append("<h3><a href=\"").append(aClass.link()).append("\">").append(htmlEscape(aClass.name())).append(" (since: ").append(sinceReport.classes().get(aClass.name())).append(")").append("</a></h2>\n");
+                html.append("<ul>\n");
+                for (Member member : aClass.members()) {
+                    html.append("  <li><a href=\"").append(member.link()).append("\">").append(htmlEscape(member.name())).append(" (since: ").append(sinceReport.members().get(aClass.name(), member.name())).append(")").append("</a></li>\n");
+                }
+                html.append("</ul>\n");
+                for (Class innerClass : aClass.innerClasses()) {
+                    html.append("<h4><a href=\"").append(innerClass.link()).append("\">").append(htmlEscape(innerClass.name())).append(" (since: ").append(sinceReport.classes().get(innerClass.name())).append(")").append("</a></h2>\n");
+                    html.append("<ul>\n");
+                    for (Member member : innerClass.members()) {
+                        html.append("  <li><a href=\"").append(member.link()).append("\">").append(htmlEscape(member.name())).append(" (since: ").append(sinceReport.members().get(innerClass.name(), member.name())).append(")").append("</a></li>\n");
+                    }
+                    html.append("</ul>\n");
+                }
+            }
+        }
+        html.append("</body>\n</html>");
+        Files.writeString(output.resolve("since.html"), html.toString());
     }
 
     public void generateDiff(String versionA, String versionB) throws Exception {

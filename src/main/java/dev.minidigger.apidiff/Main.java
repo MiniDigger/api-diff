@@ -20,10 +20,6 @@ import static jdk.javadoc.internal.tool.Main.execute;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Main main = new Main();
-        ApiDiffer apiDiffer = new ApiDiffer();
-        HtmlGenerator htmlGenerator = new HtmlGenerator(apiDiffer);
-
         List<String> versions = List.of(
                 "1.09.4",
                 "1.10.2",
@@ -39,6 +35,11 @@ public class Main {
                 "1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6",
                 "1.21.1", "1.21.3", "1.21.4"
         );
+
+        Main main = new Main();
+        ApiDiffer apiDiffer = new ApiDiffer();
+        SinceGenerator sinceGenerator = new SinceGenerator(versions, apiDiffer);
+        HtmlGenerator htmlGenerator = new HtmlGenerator(apiDiffer);
 
         // download all sources jars
         for (String version : versions) {
@@ -60,8 +61,8 @@ public class Main {
 //        apiDiffer.diff("1.21.3", "1.21.4", Path.of("output/raw/paper-api-diff-1.21.3-1.21.4.json"));
 //        htmlGenerator.generateDiff("1.21.3", "1.21.4");
 
+        htmlGenerator.generateSince(versions, sinceGenerator.generate());
         htmlGenerator.generateIndex();
-        htmlGenerator.generateSince();
     }
 
     public void generateApiExport(String version) {
