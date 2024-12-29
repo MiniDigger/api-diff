@@ -2,18 +2,12 @@ package dev.minidigger.apidiff;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.sun.source.doctree.DocCommentTree;
-import com.sun.source.util.DocTrees;
 import com.sun.tools.javac.code.Attribute;
 import com.sun.tools.javac.code.Symbol;
 import com.sun.tools.javac.code.Type;
 import jdk.javadoc.doclet.Doclet;
 import jdk.javadoc.doclet.DocletEnvironment;
 import jdk.javadoc.doclet.Reporter;
-import jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration;
-import jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter;
-import jdk.javadoc.internal.doclets.toolkit.DocletException;
-import jdk.javadoc.internal.doclets.toolkit.util.DocPath;
 
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
@@ -31,15 +25,11 @@ import static com.sun.tools.javac.code.TypeTag.FORALL;
 public class ApiExportDoclet implements Doclet {
     private static final Comparator<Map<String, Object>> comparator = Comparator.comparing(m -> (String) m.get("name"));
 
-    private Locale locale;
-    private Reporter reporter;
     private Path outputFile;
     private String mcVersion;
 
     @Override
     public void init(Locale locale, Reporter reporter) {
-        this.locale = locale;
-        this.reporter = reporter;
     }
 
     @Override
@@ -50,31 +40,7 @@ public class ApiExportDoclet implements Doclet {
     @Override
     public Set<? extends Option> getSupportedOptions() {
         return Set.of(
-                new Option() {
-                    @Override
-                    public int getArgumentCount() {
-                        return 1;
-                    }
-
-                    @Override
-                    public String getDescription() {
-                        return "name of the output file";
-                    }
-
-                    @Override
-                    public Kind getKind() {
-                        return Kind.STANDARD;
-                    }
-
-                    @Override
-                    public List<String> getNames() {
-                        return List.of("--output-file");
-                    }
-
-                    @Override
-                    public String getParameters() {
-                        return "";
-                    }
+                new BasicOption("--output-file", "name of the output file") {
 
                     @Override
                     public boolean process(String option,
@@ -87,31 +53,7 @@ public class ApiExportDoclet implements Doclet {
                         }
                         return true;
                     }
-                }, new Option() {
-                    @Override
-                    public int getArgumentCount() {
-                        return 1;
-                    }
-
-                    @Override
-                    public String getDescription() {
-                        return "minecraft version";
-                    }
-
-                    @Override
-                    public Kind getKind() {
-                        return Kind.STANDARD;
-                    }
-
-                    @Override
-                    public List<String> getNames() {
-                        return List.of("--mc-version");
-                    }
-
-                    @Override
-                    public String getParameters() {
-                        return "";
-                    }
+                }, new BasicOption("--mc-version", "minecraft version") {
 
                     @Override
                     public boolean process(String option,
@@ -129,11 +71,9 @@ public class ApiExportDoclet implements Doclet {
 
     @Override
     public boolean run(DocletEnvironment environment) {
-        HtmlDocletWriter htmlDocletWriter = bullshit(environment);
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
         try (var out = new PrintWriter(Files.newBufferedWriter(outputFile))) {
-            ShowElements se = new ShowElements(environment.getDocTrees(), htmlDocletWriter, mcVersion);
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            ShowElements se = new ShowElements(mcVersion);
             Set<Map<String, Object>> result = new TreeSet<>(comparator);
             se.scan(environment.getSpecifiedElements(), result);
             out.println(gson.toJson(result));
@@ -144,13 +84,9 @@ public class ApiExportDoclet implements Doclet {
     }
 
     static class ShowElements extends ElementScanner14<Void, Set<Map<String, Object>>> {
-        private final DocTrees docTrees;
-        private final HtmlDocletWriter htmlDocletWriter;
         private final String mcVersion;
 
-        ShowElements(DocTrees docTrees, HtmlDocletWriter htmlDocletWriter, String mcVersion) {
-            this.docTrees = docTrees;
-            this.htmlDocletWriter = htmlDocletWriter;
+        ShowElements(String mcVersion) {
             this.mcVersion = mcVersion;
         }
 
@@ -195,6 +131,7 @@ public class ApiExportDoclet implements Doclet {
                 element.put("name", name);
             }
 
+            // handle link
             switch (e.getKind()) {
                 case PACKAGE -> {
                     element.put("link", "https://jd.papermc.io/paper/" + mcVersion + "/" + String.join("/", ((String) element.get("name")).split("\\.")) + "/package-summary.html");
@@ -207,6 +144,7 @@ public class ApiExportDoclet implements Doclet {
                 }
             }
 
+            // handle api status and deprecated
             if (e instanceof Symbol s && s.getMetadata() != null) {
                 for (Attribute.Compound attribute : s.getMetadata().getDeclarationAttributes()) {
                     String annotation = attribute.getAnnotationType().toString();
@@ -228,30 +166,9 @@ public class ApiExportDoclet implements Doclet {
                 }
             }
 
+            // we ignore internal stuff
             if ("Internal".equals(element.get("apiStatus"))) {
                 return null;
-            }
-
-            if (e.toString().contains("NamespacedTag(java.lang.@org.jetbrains.annotations.NotNull String,java.lang.@org.jetbrains.annotations.NotNull String)")) {
-                System.out.println("woo");
-            }
-
-            DocCommentTree dcTree = docTrees.getDocCommentTree(e);
-            if (dcTree != null) {
-                Map<String, String> comment = new LinkedHashMap<>();
-                comment.put("preamble", htmlDocletWriter.commentTagsToContent(e, dcTree.getPreamble(), false).toString());
-                comment.put("body", htmlDocletWriter.commentTagsToContent(e, dcTree.getFullBody(), false).toString());
-                comment.put("postamble", htmlDocletWriter.commentTagsToContent(e, dcTree.getPostamble(), false).toString());
-                // TODO this doesnt work for some reason
-                comment.put("tags", htmlDocletWriter.commentTagsToContent(e, dcTree.getBlockTags(), false).toString());
-                comment.put("plain", dcTree.toString());
-                element.put("comment", comment);
-
-                Set.of("preamble", "body", "postamble", "tags").forEach(k -> {
-                    if (comment.get(k).isBlank()) {
-                        comment.remove(k);
-                    }
-                });
             }
 
             result.add(element);
@@ -269,22 +186,39 @@ public class ApiExportDoclet implements Doclet {
         }
     }
 
-    private HtmlDocletWriter bullshit(DocletEnvironment environment) {
-        HtmlConfiguration htmlConfiguration = new HtmlConfiguration(this, locale, reporter) {
-            {
-                initConfiguration(environment, (s) -> s);
-            }
+    abstract static class BasicOption implements Option {
 
-            @Override
-            public void initDocLint(List<String> opts, Set<String> customTagNames) {
-                // no-op
-            }
-        };
-        try {
-            htmlConfiguration.setOptions();
-        } catch (DocletException e) {
-            throw new RuntimeException(e);
+        private final String name;
+        private final String description;
+
+        BasicOption(String name, String description) {
+            this.name = name;
+            this.description = description;
         }
-        return new HtmlDocletWriter(htmlConfiguration, DocPath.create(outputFile.getFileName().toString()));
+
+        @Override
+        public int getArgumentCount() {
+            return 1;
+        }
+
+        @Override
+        public String getDescription() {
+            return description;
+        }
+
+        @Override
+        public Kind getKind() {
+            return Kind.STANDARD;
+        }
+
+        @Override
+        public List<String> getNames() {
+            return List.of(name);
+        }
+
+        @Override
+        public String getParameters() {
+            return "";
+        }
     }
 }
