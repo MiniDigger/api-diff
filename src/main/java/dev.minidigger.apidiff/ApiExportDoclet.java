@@ -6,6 +6,7 @@ import com.sun.source.doctree.DocCommentTree;
 import com.sun.source.util.DocTrees;
 import com.sun.tools.javac.code.Attribute;
 import com.sun.tools.javac.code.Symbol;
+import com.sun.tools.javac.code.Type;
 import jdk.javadoc.doclet.Doclet;
 import jdk.javadoc.doclet.DocletEnvironment;
 import jdk.javadoc.doclet.Reporter;
@@ -23,12 +24,17 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 
+import static com.sun.tools.javac.code.Flags.BLOCK;
+import static com.sun.tools.javac.code.TypeTag.ARRAY;
+import static com.sun.tools.javac.code.TypeTag.FORALL;
+
 public class ApiExportDoclet implements Doclet {
     private static final Comparator<Map<String, Object>> comparator = Comparator.comparing(m -> (String) m.get("name"));
 
     private Locale locale;
     private Reporter reporter;
     private Path outputFile;
+    private String mcVersion;
 
     @Override
     public void init(Locale locale, Reporter reporter) {
@@ -81,6 +87,38 @@ public class ApiExportDoclet implements Doclet {
                         }
                         return true;
                     }
+                }, new Option() {
+                    @Override
+                    public int getArgumentCount() {
+                        return 1;
+                    }
+
+                    @Override
+                    public String getDescription() {
+                        return "minecraft version";
+                    }
+
+                    @Override
+                    public Kind getKind() {
+                        return Kind.STANDARD;
+                    }
+
+                    @Override
+                    public List<String> getNames() {
+                        return List.of("--mc-version");
+                    }
+
+                    @Override
+                    public String getParameters() {
+                        return "";
+                    }
+
+                    @Override
+                    public boolean process(String option,
+                                           List<String> arguments) {
+                        mcVersion = arguments.getFirst();
+                        return true;
+                    }
                 });
     }
 
@@ -95,7 +133,7 @@ public class ApiExportDoclet implements Doclet {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         try (var out = new PrintWriter(Files.newBufferedWriter(outputFile))) {
-            ShowElements se = new ShowElements(environment.getDocTrees(), htmlDocletWriter);
+            ShowElements se = new ShowElements(environment.getDocTrees(), htmlDocletWriter, mcVersion);
             Set<Map<String, Object>> result = new TreeSet<>(comparator);
             se.scan(environment.getSpecifiedElements(), result);
             out.println(gson.toJson(result));
@@ -108,10 +146,12 @@ public class ApiExportDoclet implements Doclet {
     static class ShowElements extends ElementScanner14<Void, Set<Map<String, Object>>> {
         private final DocTrees docTrees;
         private final HtmlDocletWriter htmlDocletWriter;
+        private final String mcVersion;
 
-        ShowElements(DocTrees docTrees, HtmlDocletWriter htmlDocletWriter) {
+        ShowElements(DocTrees docTrees, HtmlDocletWriter htmlDocletWriter, String mcVersion) {
             this.docTrees = docTrees;
             this.htmlDocletWriter = htmlDocletWriter;
+            this.mcVersion = mcVersion;
         }
 
         @Override
@@ -121,6 +161,51 @@ public class ApiExportDoclet implements Doclet {
             element.put("kind", e.getKind());
             element.put("name", e.toString());
             element.put("children", children);
+
+            // total jank but gets rid of annotations on params
+            if (e instanceof Symbol.MethodSymbol ms) {
+                String name;
+                if ((ms.flags() & BLOCK) != 0) {
+                    name = ms.owner.name.toString();
+                } else {
+                    name = (ms.name == ms.name.table.names.init) ? ms.owner.name.toString() : ms.name.toString();
+                    if (ms.type != null) {
+                        if (ms.type.hasTag(FORALL))
+                            name = "<" + ms.type.getTypeArguments() + ">" + name;
+                        name += "(";
+                        com.sun.tools.javac.util.List<Type> args = ms.type.getParameterTypes();
+                        if (args.tail != null && args.head != null) {
+                            StringBuilder buf = new StringBuilder();
+                            while (args.tail.nonEmpty()) {
+                                buf.append(args.head.tsym.name);
+                                args = args.tail;
+                                buf.append(',');
+                            }
+                            if (args.head.hasTag(ARRAY)) {
+                                buf.append(((Type.ArrayType) args.head).elemtype.tsym.name);
+                                buf.append("...");
+                            } else {
+                                buf.append(args.head.tsym.name);
+                            }
+                            name += buf.toString();
+                        }
+                        name += ")";
+                    }
+                }
+                element.put("name", name);
+            }
+
+            switch (e.getKind()) {
+                case PACKAGE -> {
+                    element.put("link", "https://jd.papermc.io/paper/" + mcVersion + "/" + String.join("/", ((String) element.get("name")).split("\\.")) + "/package-summary.html");
+                }
+                case CLASS, INTERFACE, ENUM, RECORD -> {
+                    element.put("link", "https://jd.papermc.io/paper/" + mcVersion + "/" + String.join("/", ((String) element.get("name")).split("\\.")) + ".html");
+                }
+                case ENUM_CONSTANT, FIELD, METHOD, CONSTRUCTOR, RECORD_COMPONENT -> {
+                    element.put("link", "https://jd.papermc.io/paper/" + mcVersion + "/" + String.join("/", e.getEnclosingElement().toString().split("\\.")) + ".html#" + element.get("name"));
+                }
+            }
 
             if (e instanceof Symbol s && s.getMetadata() != null) {
                 for (Attribute.Compound attribute : s.getMetadata().getDeclarationAttributes()) {

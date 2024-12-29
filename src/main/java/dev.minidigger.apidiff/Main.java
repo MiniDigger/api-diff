@@ -21,8 +21,11 @@ import static jdk.javadoc.internal.tool.Main.execute;
 public class Main {
     public static void main(String[] args) throws Exception {
         Main main = new Main();
+        ApiDiffer apiDiffer = new ApiDiffer();
+        HtmlGenerator htmlGenerator = new HtmlGenerator(apiDiffer);
+
         List<String> versions = List.of(
-                "1.9.4",
+                "1.09.4",
                 "1.10.2",
                 "1.11", "1.11.1", "1.11.2",
                 "1.12", "1.12.1", "1.12.2",
@@ -34,7 +37,8 @@ public class Main {
                 "1.18", "1.18.1", "1.18.2",
                 "1.19", "1.19.1", "1.19.2", "1.19.3", "1.19.4",
                 "1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6",
-                "1.21.1", "1.21.3", "1.21.4");
+                "1.21.1", "1.21.3", "1.21.4"
+        );
 
         // download all sources jars
         for (String version : versions) {
@@ -47,13 +51,17 @@ public class Main {
         }
 
         for (int i = 0; i < versions.size() - 1; i++) {
-            new ApiDiff(Path.of("output/paper-api-" + versions.get(i) + ".json"), Path.of("output/paper-api-" + versions.get(i + 1) + ".json"), Path.of("output/paper-api-diff-" + versions.get(i) + "-" + versions.get(i + 1) + ".json"));
+            apiDiffer.diff(versions.get(i), versions.get(i + 1), Path.of("output/raw/paper-api-diff-" + versions.get(i) + "-" + versions.get(i + 1) + ".json"));
+            htmlGenerator.generateDiff(versions.get(i), versions.get(i + 1));
         }
 
+//        main.generateApiExport("1.21.3");
 //        main.generateApiExport("1.21.4");
-//        new ApiDiff(Path.of("output/paper-api-1.21.3.json"), Path.of("output/paper-api-1.21.4.json"), Path.of("output/paper-api-diff-1.21.3-1.21.4.json"));
+//        apiDiffer.diff("1.21.3", "1.21.4", Path.of("output/raw/paper-api-diff-1.21.3-1.21.4.json"));
+//        htmlGenerator.generateDiff("1.21.3", "1.21.4");
 
-        // TODO generate some kinda visual representation of the diff and maybe at the tip a way to list @since for all memembers
+        htmlGenerator.generateIndex();
+        htmlGenerator.generateSince();
     }
 
     public void generateApiExport(String version) {
@@ -62,7 +70,7 @@ public class Main {
         if (Files.isDirectory(Path.of("sources/paper-api-" + version + "/io"))) {
             packages += ":io.papermc.paper";
         }
-        execute("--ignore-source-errors", "-public", "-quiet", "-doclet", "dev.minidigger.apidiff.ApiExportDoclet", "--output-file", "output/paper-api-" + version + ".json", "-sourcepath", "sources/paper-api-" + version, "-subpackages", packages);
+        execute("--ignore-source-errors", "-public", "-quiet", "-doclet", "dev.minidigger.apidiff.ApiExportDoclet", "--output-file", "output/raw/paper-api-" + version + ".json", "--mc-version", version, "-sourcepath", "sources/paper-api-" + version, "-subpackages", packages);
     }
 
     public void fetchSourcesJar(String version) throws Exception {
@@ -73,9 +81,9 @@ public class Main {
         if (minor < 17) {
             group = "com/destroystokyo";
         }
-        String metadataUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version + "-R0.1-SNAPSHOT/maven-metadata.xml";
+        String metadataUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/maven-metadata.xml";
         String snapshotVersion = getLatestSnapshotVersion(metadataUrl);
-        String sourcesUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version + "-R0.1-SNAPSHOT/paper-api-" + snapshotVersion + "-sources.jar";
+        String sourcesUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/paper-api-" + snapshotVersion + "-sources.jar";
         downloadAndExtractSourcesToDisk(sourcesUrl, Path.of("sources/paper-api-" + version));
     }
 
