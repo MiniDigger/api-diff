@@ -212,9 +212,11 @@
     "org.bukkit.Art",
     "org.bukkit.EntityEffect",
     "org.bukkit.FeatureFlag",
+    "org.bukkit.Location",
     "org.bukkit.Material",
     "org.bukkit.Particle",
     "org.bukkit.Registry",
+    "org.bukkit.Server",
     "org.bukkit.Sound",
     "org.bukkit.Tag",
     "org.bukkit.TreeType",
@@ -265,6 +267,10 @@
     ],
     "org.bukkit.Particle.Trail": [
       "Trail(Location,Color,int)"
+    ],
+    "org.bukkit.Location": [
+      "addRotation(float,float)",
+      "subtractRotation(float,float)"
     ],
     "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents": [
       "DATAPACK_DISCOVERY"
