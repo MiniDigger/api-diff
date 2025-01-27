@@ -40,6 +40,7 @@ a:hover {
 <h2>Added packages</h2>
 <ul diff>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/executor/package-summary.html">io.papermc.paper.event.executor</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/package-summary.html">io.papermc.paper.raytracing</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/inventory/view/builder/package-summary.html">org.bukkit.inventory.view.builder</a></li>
 </ul>
 <h2>Removed packages</h2>
@@ -211,7 +212,11 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/datapack/DatapackRegistrar/Configurer.html">io.papermc.paper.datapack.DatapackRegistrar.Configurer</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/datapack/DiscoveredDatapack.html">io.papermc.paper.datapack.DiscoveredDatapack</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/entity/EntitySerializationFlag.html">io.papermc.paper.entity.EntitySerializationFlag</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/entity/PlayerGiveResult.html">io.papermc.paper.entity.PlayerGiveResult</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/entity/EntityEffectTickEvent.html">io.papermc.paper.event.entity.EntityEffectTickEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html">io.papermc.paper.event.player.PlayerClientLoadedWorldEvent</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html">io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/RayTraceTarget.html">io.papermc.paper.raytracing.RayTraceTarget</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/registry/RegistryBuilderFactory.html">io.papermc.paper.registry.RegistryBuilderFactory</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/registry/data/BannerPatternRegistryEntry.html">io.papermc.paper.registry.data.BannerPatternRegistryEntry</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/registry/data/BannerPatternRegistryEntry/Builder.html">io.papermc.paper.registry.data.BannerPatternRegistryEntry.Builder</a></li>
@@ -270,6 +275,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/Tag.html">org.bukkit.Tag</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/TreeType.html">org.bukkit.TreeType</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/UnsafeValues.html">org.bukkit.UnsafeValues</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/World.html">org.bukkit.World</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/block/Biome.html">org.bukkit.block.Biome</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/block/BlockType.html">org.bukkit.block.BlockType</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/block/BlockType/Typed.html">org.bukkit.block.BlockType.Typed</a></li>
@@ -282,6 +288,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/Sheep.html">org.bukkit.entity.Sheep</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/minecart/ExplosiveMinecart.html">org.bukkit.entity.minecart.ExplosiveMinecart</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/inventory/InventoryAction.html">org.bukkit.event.inventory.InventoryAction</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/player/PlayerChangedMainHandEvent.html">org.bukkit.event.player.PlayerChangedMainHandEvent</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/inventory/ItemStack.html">org.bukkit.inventory.ItemStack</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/inventory/ItemType.html">org.bukkit.inventory.ItemType</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/inventory/MenuType.html">org.bukkit.inventory.MenuType</a></li>
@@ -380,9 +387,47 @@ a:hover {
 </li>
 
 <li>
+<h3><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/entity/PlayerGiveResult.html">io.papermc.paper.entity.PlayerGiveResult</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/entity/PlayerGiveResult.html#drops()">drops()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/entity/PlayerGiveResult.html#leftovers()">leftovers()</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html">io.papermc.paper.event.player.PlayerClientLoadedWorldEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html#isTimeout()">isTimeout()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html#timeout">timeout</a></li>
+</ul>
+</li>
+
+<li>
 <h3><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/plugin/lifecycle/event/types/LifecycleEvents.html">io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents</a></h3>
 <ul diff>
   <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/plugin/lifecycle/event/types/LifecycleEvents.html#DATAPACK_DISCOVERY">DATAPACK_DISCOVERY</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html">io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#blockFilter(Predicate)">blockFilter(Predicate)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#direction(Vector)">direction(Vector)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#entityFilter(Predicate)">entityFilter(Predicate)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#fluidCollisionMode(FluidCollisionMode)">fluidCollisionMode(FluidCollisionMode)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#ignorePassableBlocks(boolean)">ignorePassableBlocks(boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#maxDistance(double)">maxDistance(double)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#raySize(double)">raySize(double)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#start(Location)">start(Location)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/PositionedRayTraceConfigurationBuilder.html#targets(RayTraceTarget,RayTraceTarget...)">targets(RayTraceTarget,RayTraceTarget...)</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/RayTraceTarget.html">io.papermc.paper.raytracing.RayTraceTarget</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/io/papermc/paper/raytracing/RayTraceTarget.html#RayTraceTarget()">RayTraceTarget()</a></li>
 </ul>
 </li>
 
@@ -581,6 +626,13 @@ a:hover {
 </li>
 
 <li>
+<h3><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/World.html">org.bukkit.World</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/World.html#rayTrace(Consumer)">rayTrace(Consumer)</a></li>
+</ul>
+</li>
+
+<li>
 <h3><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/block/BlockType.html">org.bukkit.block.BlockType</a></h3>
 <ul diff>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/block/BlockType.html#POTTED_CLOSED_EYEBLOSSOM">POTTED_CLOSED_EYEBLOSSOM</a></li>
@@ -618,6 +670,15 @@ a:hover {
 </li>
 
 <li>
+<h3><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/Player.html">org.bukkit.entity.Player</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/Player.html#give(Collection)">give(Collection)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/Player.html#give(Collection,boolean)">give(Collection,boolean)</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/Player.html#give(ItemStack...)">give(ItemStack...)</a></li>
+</ul>
+</li>
+
+<li>
 <h3><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/minecart/ExplosiveMinecart.html">org.bukkit.entity.minecart.ExplosiveMinecart</a></h3>
 <ul diff>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/entity/minecart/ExplosiveMinecart.html#getExplosionSpeedFactor()">getExplosionSpeedFactor()</a></li>
@@ -634,6 +695,14 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/inventory/InventoryAction.html#PLACE_ALL_INTO_BUNDLE">PLACE_ALL_INTO_BUNDLE</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/inventory/InventoryAction.html#PLACE_FROM_BUNDLE">PLACE_FROM_BUNDLE</a></li>
   <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/inventory/InventoryAction.html#PLACE_SOME_INTO_BUNDLE">PLACE_SOME_INTO_BUNDLE</a></li>
+</ul>
+</li>
+
+<li>
+<h3><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/player/PlayerChangedMainHandEvent.html">org.bukkit.event.player.PlayerChangedMainHandEvent</a></h3>
+<ul diff>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/player/PlayerChangedMainHandEvent.html#getNewMainHand()">getNewMainHand()</a></li>
+  <li><a href="https://jd.papermc.io/paper/1.21.4/org/bukkit/event/player/PlayerChangedMainHandEvent.html#newMainHand">newMainHand</a></li>
 </ul>
 </li>
 

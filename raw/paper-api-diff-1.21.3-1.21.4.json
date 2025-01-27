@@ -3,6 +3,7 @@
   "versionB": "1.21.4",
   "packagesAdded": [
     "io.papermc.paper.event.executor",
+    "io.papermc.paper.raytracing",
     "org.bukkit.inventory.view.builder"
   ],
   "packagesRemoved": [
@@ -171,7 +172,11 @@
     "io.papermc.paper.datapack.DatapackRegistrar.Configurer",
     "io.papermc.paper.datapack.DiscoveredDatapack",
     "io.papermc.paper.entity.EntitySerializationFlag",
+    "io.papermc.paper.entity.PlayerGiveResult",
     "io.papermc.paper.event.entity.EntityEffectTickEvent",
+    "io.papermc.paper.event.player.PlayerClientLoadedWorldEvent",
+    "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder",
+    "io.papermc.paper.raytracing.RayTraceTarget",
     "io.papermc.paper.registry.RegistryBuilderFactory",
     "io.papermc.paper.registry.data.BannerPatternRegistryEntry",
     "io.papermc.paper.registry.data.BannerPatternRegistryEntry.Builder",
@@ -228,6 +233,7 @@
     "org.bukkit.Tag",
     "org.bukkit.TreeType",
     "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
     "org.bukkit.block.Biome",
     "org.bukkit.block.BlockType",
     "org.bukkit.block.BlockType.Typed",
@@ -240,6 +246,7 @@
     "org.bukkit.entity.Sheep",
     "org.bukkit.entity.minecart.ExplosiveMinecart",
     "org.bukkit.event.inventory.InventoryAction",
+    "org.bukkit.event.player.PlayerChangedMainHandEvent",
     "org.bukkit.inventory.ItemStack",
     "org.bukkit.inventory.ItemType",
     "org.bukkit.inventory.MenuType",
@@ -250,22 +257,6 @@
     "org.bukkit.plugin.java.JavaPlugin"
   ],
   "membersAdded": {
-    "org.bukkit.inventory.MenuType": [
-      "\u003cV,B\u003etyped(Class)"
-    ],
-    "org.bukkit.Tag": [
-      "BEE_ATTRACTIVE",
-      "ITEMS_DROWNED_PREFERRED_WEAPONS",
-      "ITEMS_PIGLIN_PREFERRED_WEAPONS",
-      "ITEMS_PILLAGER_PREFERRED_WEAPONS",
-      "ITEMS_SKELETON_PREFERRED_WEAPONS",
-      "ITEMS_STONE_CRAFTING_MATERIALS",
-      "ITEMS_WITHER_SKELETON_DISLIKED_WEAPONS"
-    ],
-    "org.bukkit.inventory.meta.ItemMeta": [
-      "getCustomModelDataComponent()",
-      "setCustomModelDataComponent(CustomModelDataComponent)"
-    ],
     "io.papermc.paper.registry.data.DamageTypeRegistryEntry.Builder": [
       "damageEffect(DamageEffect)",
       "damageScaling(DamageScaling)",
@@ -273,22 +264,24 @@
       "exhaustion(float)",
       "messageId(String)"
     ],
-    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
-      "createPaintingVariant(Consumer)",
-      "instance()"
+    "org.bukkit.entity.Player": [
+      "give(Collection)",
+      "give(Collection,boolean)",
+      "give(ItemStack...)"
     ],
     "org.bukkit.Art": [
       "create(Consumer)"
     ],
-    "org.bukkit.inventory.view.builder.InventoryViewBuilder": [
-      "build(HumanEntity)"
-    ],
-    "org.bukkit.Particle.Trail": [
-      "Trail(Location,Color,int)"
-    ],
-    "io.papermc.paper.command.brigadier.CommandSourceStack": [
-      "withExecutor(Entity)",
-      "withLocation(Location)"
+    "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder": [
+      "blockFilter(Predicate)",
+      "direction(Vector)",
+      "entityFilter(Predicate)",
+      "fluidCollisionMode(FluidCollisionMode)",
+      "ignorePassableBlocks(boolean)",
+      "maxDistance(double)",
+      "raySize(double)",
+      "start(Location)",
+      "targets(RayTraceTarget,RayTraceTarget...)"
     ],
     "org.bukkit.Location": [
       "addRotation(float,float)",
@@ -297,12 +290,12 @@
     "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents": [
       "DATAPACK_DISCOVERY"
     ],
+    "org.bukkit.World": [
+      "rayTrace(Consumer)"
+    ],
     "org.bukkit.UnsafeValues": [
       "deserializeEntity(Array,World,boolean,boolean)",
       "serializeEntity(Entity,EntitySerializationFlag...)"
-    ],
-    "org.bukkit.Server": [
-      "createMerchant()"
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "DROWNED_PREFERRED_WEAPONS",
@@ -310,17 +303,6 @@
       "PILLAGER_PREFERRED_WEAPONS",
       "SKELETON_PREFERRED_WEAPONS",
       "WITHER_SKELETON_DISLIKED_WEAPONS"
-    ],
-    "io.papermc.paper.registry.data.BannerPatternRegistryEntry.Builder": [
-      "translationKey(String)"
-    ],
-    "io.papermc.paper.registry.RegistryBuilderFactory": [
-      "copyFrom(TypedKey)"
-    ],
-    "io.papermc.paper.datacomponent.item.CustomModelData": [
-      "colors()",
-      "customModelData()",
-      "flags()"
     ],
     "io.papermc.paper.datacomponent.item.CustomModelData.Builder": [
       "addColor(Color)",
@@ -332,34 +314,8 @@
       "addString(String)",
       "addStrings(List)"
     ],
-    "org.bukkit.entity.HumanEntity": [
-      "dropItem(EquipmentSlot)",
-      "dropItem(EquipmentSlot,int)",
-      "dropItem(EquipmentSlot,int,boolean,Consumer)",
-      "dropItem(ItemStack)",
-      "dropItem(ItemStack,boolean,Consumer)",
-      "dropItem(int)",
-      "dropItem(int,int)",
-      "dropItem(int,int,boolean,Consumer)",
-      "getPotentialRespawnLocation()"
-    ],
-    "org.bukkit.event.inventory.InventoryAction": [
-      "PICKUP_ALL_INTO_BUNDLE",
-      "PICKUP_FROM_BUNDLE",
-      "PICKUP_SOME_INTO_BUNDLE",
-      "PLACE_ALL_INTO_BUNDLE",
-      "PLACE_FROM_BUNDLE",
-      "PLACE_SOME_INTO_BUNDLE"
-    ],
-    "org.bukkit.entity.minecart.ExplosiveMinecart": [
-      "getExplosionSpeedFactor()",
-      "setExplosionSpeedFactor(float)"
-    ],
     "io.papermc.paper.registry.TypedKey": [
       "\u003cT\u003ecreate(RegistryKey,String)"
-    ],
-    "io.papermc.paper.datapack.Datapack.Position": [
-      "Position()"
     ],
     "com.destroystokyo.paper.MaterialTags": [
       "COMMAND_BLOCKS"
@@ -392,9 +348,6 @@
       "hasPackDiscovered(String)",
       "removeDiscoveredPack(String)"
     ],
-    "org.bukkit.block.BlockType.Typed": [
-      "createBlockDataStates()"
-    ],
     "org.bukkit.Sound": [
       "BLOCK_EYEBLOSSOM_CLOSE",
       "BLOCK_EYEBLOSSOM_CLOSE_LONG",
@@ -411,6 +364,117 @@
       "BLOCK_RESIN_PLACE",
       "BLOCK_RESIN_STEP",
       "ENTITY_CREAKING_TWITCH"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "effectiveName()"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "isBeingEnabled"
+    ],
+    "io.papermc.paper.registry.RegistryKey": [
+      "typedKey(Key)",
+      "typedKey(String)"
+    ],
+    "io.papermc.paper.entity.EntitySerializationFlag": [
+      "EntitySerializationFlag()",
+      "FORCE",
+      "PASSENGERS"
+    ],
+    "org.bukkit.inventory.meta.trim.TrimMaterial": [
+      "RESIN"
+    ],
+    "org.bukkit.Registry": [
+      "\u003cA\u003elegacyRegistryFor(Class)",
+      "\u003cA\u003eregistryFor(RegistryKey)",
+      "getTags()"
+    ],
+    "org.bukkit.inventory.MenuType": [
+      "\u003cV,B\u003etyped(Class)"
+    ],
+    "org.bukkit.event.player.PlayerChangedMainHandEvent": [
+      "getNewMainHand()",
+      "newMainHand"
+    ],
+    "org.bukkit.Tag": [
+      "BEE_ATTRACTIVE",
+      "ITEMS_DROWNED_PREFERRED_WEAPONS",
+      "ITEMS_PIGLIN_PREFERRED_WEAPONS",
+      "ITEMS_PILLAGER_PREFERRED_WEAPONS",
+      "ITEMS_SKELETON_PREFERRED_WEAPONS",
+      "ITEMS_STONE_CRAFTING_MATERIALS",
+      "ITEMS_WITHER_SKELETON_DISLIKED_WEAPONS"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getCustomModelDataComponent()",
+      "setCustomModelDataComponent(CustomModelDataComponent)"
+    ],
+    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
+      "createPaintingVariant(Consumer)",
+      "instance()"
+    ],
+    "io.papermc.paper.event.player.PlayerClientLoadedWorldEvent": [
+      "isTimeout()",
+      "timeout"
+    ],
+    "org.bukkit.inventory.view.builder.InventoryViewBuilder": [
+      "build(HumanEntity)"
+    ],
+    "org.bukkit.Particle.Trail": [
+      "Trail(Location,Color,int)"
+    ],
+    "io.papermc.paper.command.brigadier.CommandSourceStack": [
+      "withExecutor(Entity)",
+      "withLocation(Location)"
+    ],
+    "org.bukkit.Server": [
+      "createMerchant()"
+    ],
+    "io.papermc.paper.registry.data.BannerPatternRegistryEntry.Builder": [
+      "translationKey(String)"
+    ],
+    "io.papermc.paper.registry.RegistryBuilderFactory": [
+      "copyFrom(TypedKey)"
+    ],
+    "io.papermc.paper.raytracing.RayTraceTarget": [
+      "RayTraceTarget()"
+    ],
+    "io.papermc.paper.datacomponent.item.CustomModelData": [
+      "colors()",
+      "customModelData()",
+      "flags()"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "dropItem(EquipmentSlot)",
+      "dropItem(EquipmentSlot,int)",
+      "dropItem(EquipmentSlot,int,boolean,Consumer)",
+      "dropItem(ItemStack)",
+      "dropItem(ItemStack,boolean,Consumer)",
+      "dropItem(int)",
+      "dropItem(int,int)",
+      "dropItem(int,int,boolean,Consumer)",
+      "getPotentialRespawnLocation()"
+    ],
+    "org.bukkit.event.inventory.InventoryAction": [
+      "PICKUP_ALL_INTO_BUNDLE",
+      "PICKUP_FROM_BUNDLE",
+      "PICKUP_SOME_INTO_BUNDLE",
+      "PLACE_ALL_INTO_BUNDLE",
+      "PLACE_FROM_BUNDLE",
+      "PLACE_SOME_INTO_BUNDLE"
+    ],
+    "org.bukkit.entity.minecart.ExplosiveMinecart": [
+      "getExplosionSpeedFactor()",
+      "setExplosionSpeedFactor(float)"
+    ],
+    "io.papermc.paper.datapack.Datapack.Position": [
+      "Position()"
+    ],
+    "io.papermc.paper.entity.PlayerGiveResult": [
+      "drops()",
+      "leftovers()"
+    ],
+    "org.bukkit.block.BlockType.Typed": [
+      "createBlockDataStates()"
     ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "AQUATIC",
@@ -448,24 +512,9 @@
     "io.papermc.paper.registry.event.WritableRegistry": [
       "registerWith(TypedKey,Consumer)"
     ],
-    "org.bukkit.inventory.ItemStack": [
-      "effectiveName()"
-    ],
     "org.bukkit.block.BlockType": [
       "POTTED_CLOSED_EYEBLOSSOM",
       "POTTED_OPEN_EYEBLOSSOM"
-    ],
-    "org.bukkit.plugin.java.JavaPlugin": [
-      "isBeingEnabled"
-    ],
-    "io.papermc.paper.registry.RegistryKey": [
-      "typedKey(Key)",
-      "typedKey(String)"
-    ],
-    "io.papermc.paper.entity.EntitySerializationFlag": [
-      "EntitySerializationFlag()",
-      "FORCE",
-      "PASSENGERS"
     ],
     "io.papermc.paper.registry.data.DamageTypeRegistryEntry": [
       "damageEffect()",
@@ -482,9 +531,6 @@
       "checkReachable(boolean)",
       "merchant(Merchant)"
     ],
-    "org.bukkit.inventory.meta.trim.TrimMaterial": [
-      "RESIN"
-    ],
     "org.bukkit.inventory.ItemType": [
       "CHISELED_RESIN_BRICKS",
       "CLOSED_EYEBLOSSOM",
@@ -496,11 +542,6 @@
       "RESIN_BRICK_WALL",
       "RESIN_CLUMP",
       "RESIN_BRICK"
-    ],
-    "org.bukkit.Registry": [
-      "\u003cA\u003elegacyRegistryFor(Class)",
-      "\u003cA\u003eregistryFor(RegistryKey)",
-      "getTags()"
     ]
   },
   "membersRemoved": {
