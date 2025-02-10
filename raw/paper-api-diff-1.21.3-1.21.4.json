@@ -242,6 +242,7 @@
     "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.Panda",
     "org.bukkit.entity.Player",
     "org.bukkit.entity.Sheep",
     "org.bukkit.entity.minecart.ExplosiveMinecart",
