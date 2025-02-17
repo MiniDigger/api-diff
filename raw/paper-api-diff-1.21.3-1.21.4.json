@@ -166,6 +166,7 @@
     "org.spigotmc.event.player"
   ],
   "classesAdded": [
+    "io.papermc.paper.command.brigadier.argument.resolvers.RotationResolver",
     "io.papermc.paper.datacomponent.item.CustomModelData.Builder",
     "io.papermc.paper.datapack.Datapack.Position",
     "io.papermc.paper.datapack.DatapackRegistrar",
@@ -173,8 +174,13 @@
     "io.papermc.paper.datapack.DiscoveredDatapack",
     "io.papermc.paper.entity.EntitySerializationFlag",
     "io.papermc.paper.entity.PlayerGiveResult",
+    "io.papermc.paper.event.entity.EntityAttemptSmashAttackEvent",
     "io.papermc.paper.event.entity.EntityEffectTickEvent",
+    "io.papermc.paper.event.entity.EntityEquipmentChangedEvent",
+    "io.papermc.paper.event.entity.EntityEquipmentChangedEvent.EquipmentChange",
     "io.papermc.paper.event.player.PlayerClientLoadedWorldEvent",
+    "io.papermc.paper.math.Rotation",
+    "io.papermc.paper.math.RotationImpl",
     "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder",
     "io.papermc.paper.raytracing.RayTraceTarget",
     "io.papermc.paper.registry.RegistryBuilderFactory",
@@ -199,7 +205,9 @@
   ],
   "classesChanged": [
     "com.destroystokyo.paper.MaterialTags",
+    "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent",
     "io.papermc.paper.command.brigadier.CommandSourceStack",
+    "io.papermc.paper.command.brigadier.argument.ArgumentTypes",
     "io.papermc.paper.command.brigadier.argument.CustomArgumentType",
     "io.papermc.paper.command.brigadier.argument.CustomArgumentType.Converted",
     "io.papermc.paper.datacomponent.item.CustomModelData",
@@ -237,7 +245,10 @@
     "org.bukkit.block.Biome",
     "org.bukkit.block.BlockType",
     "org.bukkit.block.BlockType.Typed",
+    "org.bukkit.block.TrialSpawner",
+    "org.bukkit.block.Vault",
     "org.bukkit.block.data.type.CreakingHeart",
+    "org.bukkit.entity.AbstractArrow",
     "org.bukkit.entity.Bogged",
     "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
@@ -258,6 +269,34 @@
     "org.bukkit.plugin.java.JavaPlugin"
   ],
   "membersAdded": {
+    "org.bukkit.block.Vault": [
+      "addRewardedPlayer(UUID)",
+      "getActivationRange()",
+      "getConnectedPlayers()",
+      "getDeactivationRange()",
+      "getDisplayedItem()",
+      "getDisplayedLootTable()",
+      "getNextStateUpdateTime()",
+      "getRewardedPlayers()",
+      "hasConnectedPlayer(UUID)",
+      "hasRewardedPlayer(UUID)",
+      "removeRewardedPlayer(UUID)",
+      "setActivationRange(double)",
+      "setDeactivationRange(double)",
+      "setDisplayedItem(ItemStack)",
+      "setDisplayedLootTable(LootTable)",
+      "setNextStateUpdateTime(long)"
+    ],
+    "org.bukkit.EntityEffect": [
+      "BREAK_EQUIPMENT_BODY",
+      "EntityEffect(int,Class...)",
+      "PROJECTILE_CRACK",
+      "PROTECTED_FROM_DEATH",
+      "TRUSTING_FAILED",
+      "TRUSTING_SUCCEEDED",
+      "applicableClasses",
+      "getApplicableClasses()"
+    ],
     "io.papermc.paper.registry.data.DamageTypeRegistryEntry.Builder": [
       "damageEffect(DamageEffect)",
       "damageScaling(DamageScaling)",
@@ -285,7 +324,9 @@
       "targets(RayTraceTarget,RayTraceTarget...)"
     ],
     "org.bukkit.Location": [
+      "addRotation(Rotation)",
       "addRotation(float,float)",
+      "subtractRotation(Rotation)",
       "subtractRotation(float,float)"
     ],
     "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents": [
@@ -298,12 +339,22 @@
       "deserializeEntity(Array,World,boolean,boolean)",
       "serializeEntity(Entity,EntitySerializationFlag...)"
     ],
+    "io.papermc.paper.event.entity.EntityEquipmentChangedEvent.EquipmentChange": [
+      "newItem()",
+      "oldItem()"
+    ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "DROWNED_PREFERRED_WEAPONS",
       "PIGLIN_PREFERRED_WEAPONS",
       "PILLAGER_PREFERRED_WEAPONS",
       "SKELETON_PREFERRED_WEAPONS",
       "WITHER_SKELETON_DISLIKED_WEAPONS"
+    ],
+    "org.bukkit.block.TrialSpawner": [
+      "getCooldownEnd()",
+      "getNextSpawnAttempt()",
+      "setCooldownEnd(long)",
+      "setNextSpawnAttempt(long)"
     ],
     "io.papermc.paper.datacomponent.item.CustomModelData.Builder": [
       "addColor(Color)",
@@ -366,7 +417,11 @@
       "BLOCK_RESIN_STEP",
       "ENTITY_CREAKING_TWITCH"
     ],
+    "io.papermc.paper.math.Rotation": [
+      "rotation(float,float)"
+    ],
     "org.bukkit.inventory.ItemStack": [
+      "editPersistentDataContainer(Consumer)",
       "effectiveName()"
     ],
     "org.bukkit.plugin.java.JavaPlugin": [
@@ -417,8 +472,17 @@
       "isTimeout()",
       "timeout"
     ],
+    "io.papermc.paper.event.entity.EntityEquipmentChangedEvent": [
+      "equipmentChanges",
+      "getEquipmentChanges()"
+    ],
     "org.bukkit.inventory.view.builder.InventoryViewBuilder": [
       "build(HumanEntity)"
+    ],
+    "io.papermc.paper.math.RotationImpl": [
+      "pitch()",
+      "yaw()",
+      "RotationImpl(float,float)"
     ],
     "org.bukkit.Particle.Trail": [
       "Trail(Location,Color,int)"
@@ -443,6 +507,9 @@
       "colors()",
       "customModelData()",
       "flags()"
+    ],
+    "org.bukkit.entity.AbstractArrow": [
+      "getAttachedBlocks()"
     ],
     "org.bukkit.entity.HumanEntity": [
       "dropItem(EquipmentSlot)",
@@ -476,6 +543,9 @@
     ],
     "org.bukkit.block.BlockType.Typed": [
       "createBlockDataStates()"
+    ],
+    "org.bukkit.inventory.MenuType.Typed": [
+      "create(HumanEntity)"
     ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "AQUATIC",
@@ -528,6 +598,11 @@
       "autoEnableOnServerStart(boolean)",
       "position(boolean,Position)"
     ],
+    "io.papermc.paper.event.entity.EntityAttemptSmashAttackEvent": [
+      "getOriginalResult()",
+      "originalResult",
+      "weapon"
+    ],
     "org.bukkit.inventory.view.builder.MerchantInventoryViewBuilder": [
       "checkReachable(boolean)",
       "merchant(Merchant)"
@@ -555,6 +630,10 @@
     "io.papermc.paper.datacomponent.item.Equippable.Builder": [
       "model(Key)"
     ],
+    "org.bukkit.EntityEffect": [
+      "EntityEffect(int,Class)",
+      "applicable"
+    ],
     "org.bukkit.Tag": [
       "TALL_FLOWERS",
       "ITEMS_TRIM_TEMPLATES"
@@ -564,12 +643,18 @@
       "DISABLED",
       "DORMANT"
     ],
-    "org.bukkit.plugin.EventExecutor": [
-      "eventExecutorMap"
-    ],
     "org.bukkit.block.data.type.CreakingHeart": [
       "getCreaking()",
       "setCreaking(Creaking)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "model()"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CREAKING_TRANSIENT"
+    ],
+    "org.bukkit.plugin.EventExecutor": [
+      "eventExecutorMap"
     ],
     "org.bukkit.Registry.SimpleRegistry": [
       "SimpleRegistry(Class)",
@@ -577,12 +662,6 @@
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "TRIM_TEMPLATES"
-    ],
-    "io.papermc.paper.datacomponent.item.Equippable": [
-      "model()"
-    ],
-    "org.bukkit.entity.EntityType": [
-      "CREAKING_TRANSIENT"
     ],
     "io.papermc.paper.datacomponent.item.CustomModelData": [
       "customModelData(int)"
@@ -598,6 +677,10 @@
     "io.papermc.paper.datacomponent.item.Equippable.Builder": [
       "model(Key)"
     ],
+    "org.bukkit.EntityEffect": [
+      "EntityEffect(int,Class)",
+      "applicable"
+    ],
     "org.bukkit.Tag": [
       "TALL_FLOWERS",
       "ITEMS_TRIM_TEMPLATES"
@@ -607,12 +690,18 @@
       "DISABLED",
       "DORMANT"
     ],
-    "org.bukkit.plugin.EventExecutor": [
-      "eventExecutorMap"
-    ],
     "org.bukkit.block.data.type.CreakingHeart": [
       "getCreaking()",
       "setCreaking(Creaking)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "model()"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CREAKING_TRANSIENT"
+    ],
+    "org.bukkit.plugin.EventExecutor": [
+      "eventExecutorMap"
     ],
     "org.bukkit.Registry.SimpleRegistry": [
       "SimpleRegistry(Class)",
@@ -620,12 +709,6 @@
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "TRIM_TEMPLATES"
-    ],
-    "io.papermc.paper.datacomponent.item.Equippable": [
-      "model()"
-    ],
-    "org.bukkit.entity.EntityType": [
-      "CREAKING_TRANSIENT"
     ],
     "io.papermc.paper.datacomponent.item.CustomModelData": [
       "customModelData(int)"
