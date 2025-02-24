@@ -221,13 +221,24 @@
     "io.papermc.paper.registry.TypedKey",
     "io.papermc.paper.registry.event.RegistryEvents",
     "io.papermc.paper.registry.event.WritableRegistry",
+    "io.papermc.paper.registry.keys.BannerPatternKeys",
     "io.papermc.paper.registry.keys.BiomeKeys",
     "io.papermc.paper.registry.keys.BlockTypeKeys",
+    "io.papermc.paper.registry.keys.DamageTypeKeys",
+    "io.papermc.paper.registry.keys.EnchantmentKeys",
+    "io.papermc.paper.registry.keys.GameEventKeys",
+    "io.papermc.paper.registry.keys.InstrumentKeys",
     "io.papermc.paper.registry.keys.ItemTypeKeys",
+    "io.papermc.paper.registry.keys.JukeboxSongKeys",
+    "io.papermc.paper.registry.keys.PaintingVariantKeys",
     "io.papermc.paper.registry.keys.SoundEventKeys",
+    "io.papermc.paper.registry.keys.StructureKeys",
     "io.papermc.paper.registry.keys.TrimMaterialKeys",
+    "io.papermc.paper.registry.keys.TrimPatternKeys",
+    "io.papermc.paper.registry.keys.WolfVariantKeys",
     "io.papermc.paper.registry.keys.tags.BlockTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
+    "io.papermc.paper.registry.tag.TagKey",
     "org.bukkit.Art",
     "org.bukkit.Bukkit",
     "org.bukkit.EntityEffect",
@@ -312,6 +323,9 @@
     "org.bukkit.Art": [
       "create(Consumer)"
     ],
+    "io.papermc.paper.registry.tag.TagKey": [
+      "\u003cT\u003ecreate(RegistryKey,String)"
+    ],
     "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder": [
       "blockFilter(Predicate)",
       "direction(Vector)",
@@ -365,9 +379,6 @@
       "addFloats(List)",
       "addString(String)",
       "addStrings(List)"
-    ],
-    "io.papermc.paper.registry.TypedKey": [
-      "\u003cT\u003ecreate(RegistryKey,String)"
     ],
     "com.destroystokyo.paper.MaterialTags": [
       "COMMAND_BLOCKS"
@@ -425,9 +436,15 @@
       "effectiveName()"
     ],
     "org.bukkit.plugin.java.JavaPlugin": [
-      "isBeingEnabled"
+      "isBeingEnabled",
+      "registerCommand(String,BasicCommand)",
+      "registerCommand(String,Collection,BasicCommand)",
+      "registerCommand(String,String,BasicCommand)",
+      "registerCommand(String,String,Collection,BasicCommand)"
     ],
     "io.papermc.paper.registry.RegistryKey": [
+      "tagKey(Key)",
+      "tagKey(String)",
       "typedKey(Key)",
       "typedKey(String)"
     ],
