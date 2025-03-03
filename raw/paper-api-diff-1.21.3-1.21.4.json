@@ -261,6 +261,7 @@
     "org.bukkit.block.data.type.CreakingHeart",
     "org.bukkit.entity.AbstractArrow",
     "org.bukkit.entity.Bogged",
+    "org.bukkit.entity.Creaking",
     "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.HumanEntity",
@@ -447,6 +448,10 @@
       "tagKey(String)",
       "typedKey(Key)",
       "typedKey(String)"
+    ],
+    "org.bukkit.entity.Creaking": [
+      "activate(Player)",
+      "deactivate()"
     ],
     "io.papermc.paper.entity.EntitySerializationFlag": [
       "EntitySerializationFlag()",
