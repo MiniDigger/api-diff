@@ -470,6 +470,7 @@
     "io.papermc.paper.event.entity.TameableDeathMessageEvent": "1.18.2",
     "io.papermc.paper.event.entity.WardenAngerChangeEvent": "1.19",
     "io.papermc.paper.event.entity.WaterBottleSplashEvent": "1.19.3",
+    "io.papermc.paper.event.packet.ClientTickEndEvent": "1.21.4",
     "io.papermc.paper.event.packet.PlayerChunkLoadEvent": "1.16.4",
     "io.papermc.paper.event.packet.PlayerChunkUnloadEvent": "1.16.4",
     "io.papermc.paper.event.player.AbstractChatEvent": "1.16.5",

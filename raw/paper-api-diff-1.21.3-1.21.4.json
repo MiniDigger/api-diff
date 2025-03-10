@@ -178,6 +178,7 @@
     "io.papermc.paper.event.entity.EntityEffectTickEvent",
     "io.papermc.paper.event.entity.EntityEquipmentChangedEvent",
     "io.papermc.paper.event.entity.EntityEquipmentChangedEvent.EquipmentChange",
+    "io.papermc.paper.event.packet.ClientTickEndEvent",
     "io.papermc.paper.event.player.PlayerClientLoadedWorldEvent",
     "io.papermc.paper.math.Rotation",
     "io.papermc.paper.math.RotationImpl",
@@ -269,6 +270,7 @@
     "org.bukkit.entity.Player",
     "org.bukkit.entity.Sheep",
     "org.bukkit.entity.minecart.ExplosiveMinecart",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
     "org.bukkit.event.inventory.InventoryAction",
     "org.bukkit.event.player.PlayerChangedMainHandEvent",
     "org.bukkit.inventory.ItemStack",
@@ -317,9 +319,11 @@
       "messageId(String)"
     ],
     "org.bukkit.entity.Player": [
+      "getDeathScreenScore()",
       "give(Collection)",
       "give(Collection,boolean)",
-      "give(ItemStack...)"
+      "give(ItemStack...)",
+      "setDeathScreenScore(int)"
     ],
     "org.bukkit.Art": [
       "create(Consumer)"
