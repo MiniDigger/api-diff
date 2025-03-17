@@ -246,6 +246,7 @@
     "org.bukkit.FeatureFlag",
     "org.bukkit.Location",
     "org.bukkit.Material",
+    "org.bukkit.NamespacedKey",
     "org.bukkit.Particle",
     "org.bukkit.Registry",
     "org.bukkit.Server",
@@ -559,6 +560,9 @@
     "org.bukkit.entity.minecart.ExplosiveMinecart": [
       "getExplosionSpeedFactor()",
       "setExplosionSpeedFactor(float)"
+    ],
+    "org.bukkit.NamespacedKey": [
+      "validate()"
     ],
     "io.papermc.paper.datapack.Datapack.Position": [
       "Position()"
