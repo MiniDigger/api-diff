@@ -206,7 +206,9 @@
   ],
   "classesChanged": [
     "com.destroystokyo.paper.MaterialTags",
+    "com.destroystokyo.paper.NamespacedTag",
     "com.destroystokyo.paper.event.player.PlayerArmorChangeEvent",
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent",
     "io.papermc.paper.command.brigadier.CommandSourceStack",
     "io.papermc.paper.command.brigadier.argument.ArgumentTypes",
     "io.papermc.paper.command.brigadier.argument.CustomArgumentType",
@@ -258,6 +260,7 @@
     "org.bukkit.block.Biome",
     "org.bukkit.block.BlockType",
     "org.bukkit.block.BlockType.Typed",
+    "org.bukkit.block.Skull",
     "org.bukkit.block.TrialSpawner",
     "org.bukkit.block.Vault",
     "org.bukkit.block.data.type.CreakingHeart",
@@ -271,9 +274,58 @@
     "org.bukkit.entity.Player",
     "org.bukkit.entity.Sheep",
     "org.bukkit.entity.minecart.ExplosiveMinecart",
+    "org.bukkit.event.block.BlockBurnEvent",
+    "org.bukkit.event.block.BlockCookEvent",
+    "org.bukkit.event.block.BlockMultiPlaceEvent",
+    "org.bukkit.event.block.BlockPhysicsEvent",
+    "org.bukkit.event.block.BlockPistonExtendEvent",
+    "org.bukkit.event.block.BlockPlaceEvent",
+    "org.bukkit.event.block.SignChangeEvent",
     "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.EntityCombustByBlockEvent",
+    "org.bukkit.event.entity.EntityCombustByEntityEvent",
+    "org.bukkit.event.entity.EntityCombustEvent",
+    "org.bukkit.event.entity.EntityPlaceEvent",
+    "org.bukkit.event.entity.EntityResurrectEvent",
+    "org.bukkit.event.entity.EntityShootBowEvent",
+    "org.bukkit.event.entity.EntityUnleashEvent",
+    "org.bukkit.event.entity.ExpBottleEvent",
+    "org.bukkit.event.entity.ItemSpawnEvent",
+    "org.bukkit.event.entity.LingeringPotionSplashEvent",
+    "org.bukkit.event.entity.PlayerLeashEntityEvent",
+    "org.bukkit.event.entity.PotionSplashEvent",
+    "org.bukkit.event.entity.SheepDyeWoolEvent",
+    "org.bukkit.event.hanging.HangingPlaceEvent",
+    "org.bukkit.event.inventory.FurnaceSmeltEvent",
+    "org.bukkit.event.inventory.FurnaceStartSmeltEvent",
     "org.bukkit.event.inventory.InventoryAction",
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerAnimationEvent",
+    "org.bukkit.event.player.PlayerBedEnterEvent",
+    "org.bukkit.event.player.PlayerBucketEmptyEvent",
+    "org.bukkit.event.player.PlayerBucketEvent",
+    "org.bukkit.event.player.PlayerBucketFillEvent",
     "org.bukkit.event.player.PlayerChangedMainHandEvent",
+    "org.bukkit.event.player.PlayerGameModeChangeEvent",
+    "org.bukkit.event.player.PlayerHarvestBlockEvent",
+    "org.bukkit.event.player.PlayerItemConsumeEvent",
+    "org.bukkit.event.player.PlayerItemDamageEvent",
+    "org.bukkit.event.player.PlayerJoinEvent",
+    "org.bukkit.event.player.PlayerLoginEvent",
+    "org.bukkit.event.player.PlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerQuitEvent",
+    "org.bukkit.event.player.PlayerRespawnEvent",
+    "org.bukkit.event.player.PlayerRiptideEvent",
+    "org.bukkit.event.player.PlayerUnleashEntityEvent",
+    "org.bukkit.event.server.BroadcastMessageEvent",
+    "org.bukkit.event.server.ServerListPingEvent",
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent",
+    "org.bukkit.event.weather.LightningStrikeEvent",
+    "org.bukkit.event.weather.ThunderChangeEvent",
+    "org.bukkit.event.weather.WeatherChangeEvent",
+    "org.bukkit.event.world.PortalCreateEvent",
+    "org.bukkit.generator.ChunkGenerator.ChunkData",
+    "org.bukkit.inventory.InventoryView",
     "org.bukkit.inventory.ItemStack",
     "org.bukkit.inventory.ItemType",
     "org.bukkit.inventory.MenuType",
@@ -353,7 +405,8 @@
       "DATAPACK_DISCOVERY"
     ],
     "org.bukkit.World": [
-      "rayTrace(Consumer)"
+      "rayTrace(Consumer)",
+      "save(boolean)"
     ],
     "org.bukkit.UnsafeValues": [
       "deserializeEntity(Array,World,boolean,boolean)",
@@ -490,6 +543,9 @@
     "org.bukkit.inventory.meta.ItemMeta": [
       "getCustomModelDataComponent()",
       "setCustomModelDataComponent(CustomModelDataComponent)"
+    ],
+    "org.bukkit.generator.ChunkGenerator.ChunkData": [
+      "getHeight(HeightMap,int,int)"
     ],
     "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
       "createPaintingVariant(Consumer)",
@@ -651,37 +707,33 @@
     ]
   },
   "membersRemoved": {
-    "org.bukkit.inventory.MenuType": [
-      "\u003cV\u003etyped(Class)"
-    ],
-    "org.bukkit.Particle.TargetColor": [
-      "TargetColor(Location,Color)"
+    "org.bukkit.event.block.BlockPistonExtendEvent": [
+      "BlockPistonExtendEvent(Block,List,BlockFace)"
     ],
     "io.papermc.paper.datacomponent.item.Equippable.Builder": [
       "model(Key)"
+    ],
+    "org.bukkit.event.entity.EntityUnleashEvent": [
+      "EntityUnleashEvent(Entity,UnleashReason,boolean)"
     ],
     "org.bukkit.EntityEffect": [
       "EntityEffect(int,Class)",
       "applicable"
     ],
-    "org.bukkit.Tag": [
-      "TALL_FLOWERS",
-      "ITEMS_TRIM_TEMPLATES"
+    "org.bukkit.event.player.PlayerBedEnterEvent": [
+      "PlayerBedEnterEvent(Player,Block,BedEnterResult)"
     ],
-    "org.bukkit.block.data.type.CreakingHeart.Creaking": [
-      "Creaking()",
-      "DISABLED",
-      "DORMANT"
+    "org.bukkit.event.entity.ItemSpawnEvent": [
+      "ItemSpawnEvent(Item)"
     ],
-    "org.bukkit.block.data.type.CreakingHeart": [
-      "getCreaking()",
-      "setCreaking(Creaking)"
+    "org.bukkit.event.player.PlayerUnleashEntityEvent": [
+      "PlayerUnleashEntityEvent(Entity,Player,EquipmentSlot,boolean)"
     ],
-    "io.papermc.paper.datacomponent.item.Equippable": [
-      "model()"
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
+      "AsyncPlayerPreLoginEvent(String,InetAddress,UUID,boolean)"
     ],
-    "org.bukkit.entity.EntityType": [
-      "CREAKING_TRANSIENT"
+    "org.bukkit.event.player.PlayerRiptideEvent": [
+      "PlayerRiptideEvent(Player,ItemStack,Vector)"
     ],
     "org.bukkit.plugin.EventExecutor": [
       "eventExecutorMap"
@@ -693,42 +745,197 @@
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "TRIM_TEMPLATES"
     ],
+    "org.bukkit.event.block.BlockPlaceEvent": [
+      "BlockPlaceEvent(Block,BlockState,Block,ItemStack,Player,boolean,EquipmentSlot)"
+    ],
+    "org.bukkit.event.block.BlockPhysicsEvent": [
+      "BlockPhysicsEvent(Block,BlockData)",
+      "BlockPhysicsEvent(Block,BlockData,Block)"
+    ],
+    "org.bukkit.event.weather.LightningStrikeEvent": [
+      "LightningStrikeEvent(World,LightningStrike,Cause)"
+    ],
+    "org.bukkit.event.player.PlayerJoinEvent": [
+      "PlayerJoinEvent(Player,Component)"
+    ],
+    "org.bukkit.event.player.PlayerItemDamageEvent": [
+      "PlayerItemDamageEvent(Player,ItemStack,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "PlayerLoginEvent(Player,String,InetAddress)",
+      "PlayerLoginEvent(Player,String,InetAddress,InetAddress)",
+      "PlayerLoginEvent(Player,String,InetAddress,Result,Component,InetAddress)"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "getCreaking()",
+      "setCreaking(Creaking)"
+    ],
+    "org.bukkit.event.entity.PlayerLeashEntityEvent": [
+      "PlayerLeashEntityEvent(Entity,Entity,Player,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.FurnaceSmeltEvent": [
+      "FurnaceSmeltEvent(Block,ItemStack,ItemStack,CookingRecipe)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "model()"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CREAKING_TRANSIENT"
+    ],
+    "org.bukkit.event.entity.ExpBottleEvent": [
+      "ExpBottleEvent(ThrownExpBottle,Entity,Block,BlockFace,int)"
+    ],
+    "org.bukkit.event.entity.EntityResurrectEvent": [
+      "EntityResurrectEvent(LivingEntity,EquipmentSlot)"
+    ],
+    "org.bukkit.event.player.PlayerBucketFillEvent": [
+      "PlayerBucketFillEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.entity.LingeringPotionSplashEvent": [
+      "LingeringPotionSplashEvent(ThrownPotion,Entity,Block,BlockFace,AreaEffectCloud)"
+    ],
+    "org.bukkit.event.player.PlayerQuitEvent": [
+      "PlayerQuitEvent(Player,Component,QuitReason)"
+    ],
+    "org.bukkit.event.block.BlockMultiPlaceEvent": [
+      "BlockMultiPlaceEvent(List,Block,ItemStack,Player,boolean,EquipmentSlot)"
+    ],
+    "org.bukkit.event.entity.EntityCombustByEntityEvent": [
+      "EntityCombustByEntityEvent(Entity,Entity,float)"
+    ],
+    "org.bukkit.inventory.MenuType": [
+      "\u003cV\u003etyped(Class)"
+    ],
+    "org.bukkit.event.player.PlayerGameModeChangeEvent": [
+      "PlayerGameModeChangeEvent(Player,GameMode,Cause,Component)"
+    ],
+    "org.bukkit.Particle.TargetColor": [
+      "TargetColor(Location,Color)"
+    ],
+    "org.bukkit.event.weather.ThunderChangeEvent": [
+      "ThunderChangeEvent(World,boolean,Cause)"
+    ],
+    "org.bukkit.Tag": [
+      "TALL_FLOWERS",
+      "ITEMS_TRIM_TEMPLATES"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent": [
+      "PlayerClientOptionsChangeEvent(Player,String,int,ChatVisibility,boolean,SkinParts,MainHand)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(List,World,Entity,CreateReason)"
+    ],
+    "org.bukkit.event.player.PlayerItemConsumeEvent": [
+      "PlayerItemConsumeEvent(Player,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.player.PlayerHarvestBlockEvent": [
+      "PlayerHarvestBlockEvent(Player,Block,EquipmentSlot,List)"
+    ],
+    "org.bukkit.event.player.PlayerAnimationEvent": [
+      "PlayerAnimationEvent(Player,PlayerAnimationType)"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,RespawnReason,Builder)"
+    ],
+    "org.bukkit.event.weather.WeatherChangeEvent": [
+      "WeatherChangeEvent(World,boolean,Cause)"
+    ],
+    "org.bukkit.event.entity.SheepDyeWoolEvent": [
+      "SheepDyeWoolEvent(Sheep,DyeColor,Player)"
+    ],
+    "org.bukkit.event.block.SignChangeEvent": [
+      "SignChangeEvent(Block,Player,List,Side)"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "ServerListPingEvent(InetAddress,Component,int)",
+      "ServerListPingEvent(InetAddress,Component,int,int)",
+      "ServerListPingEvent(String,InetAddress,Component,int)",
+      "ServerListPingEvent(String,InetAddress,Component,int,int)",
+      "ServerListPingEvent(String,InetAddress,String,int)",
+      "ServerListPingEvent(String,InetAddress,String,int,int)"
+    ],
+    "org.bukkit.event.entity.EntityPlaceEvent": [
+      "EntityPlaceEvent(Entity,Player,Block,BlockFace,EquipmentSlot)"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,EquipmentSlot,float,boolean)"
+    ],
+    "com.destroystokyo.paper.NamespacedTag": [
+      "randomKey()"
+    ],
     "io.papermc.paper.datacomponent.item.CustomModelData": [
       "customModelData(int)"
+    ],
+    "org.bukkit.event.entity.PotionSplashEvent": [
+      "PotionSplashEvent(ThrownPotion,Entity,Block,BlockFace,Map)"
+    ],
+    "org.bukkit.event.block.BlockBurnEvent": [
+      "BlockBurnEvent(Block,Block)"
+    ],
+    "org.bukkit.event.entity.EntityCombustEvent": [
+      "EntityCombustEvent(Entity,float)"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart.Creaking": [
+      "Creaking()",
+      "DISABLED",
+      "DORMANT"
+    ],
+    "org.bukkit.event.block.BlockCookEvent": [
+      "BlockCookEvent(Block,ItemStack,ItemStack,CookingRecipe)"
+    ],
+    "org.bukkit.event.server.BroadcastMessageEvent": [
+      "BroadcastMessageEvent(boolean,Component,Set)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEmptyEvent": [
+      "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.FurnaceStartSmeltEvent": [
+      "FurnaceStartSmeltEvent(Block,ItemStack,CookingRecipe,int)"
+    ],
+    "org.bukkit.event.player.PlayerPreLoginEvent": [
+      "PlayerPreLoginEvent(String,InetAddress,UUID)"
+    ],
+    "org.bukkit.event.entity.EntityCombustByBlockEvent": [
+      "EntityCombustByBlockEvent(Block,Entity,float)"
+    ],
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent": [
+      "VehicleBlockCollisionEvent(Vehicle,Block,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEvent": [
+      "PlayerBucketEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.hanging.HangingPlaceEvent": [
+      "HangingPlaceEvent(Hanging,Player,Block,BlockFace,EquipmentSlot,ItemStack)"
     ]
   },
   "membersChanged": {
-    "org.bukkit.inventory.MenuType": [
-      "\u003cV\u003etyped(Class)"
-    ],
-    "org.bukkit.Particle.TargetColor": [
-      "TargetColor(Location,Color)"
+    "org.bukkit.event.block.BlockPistonExtendEvent": [
+      "BlockPistonExtendEvent(Block,List,BlockFace)"
     ],
     "io.papermc.paper.datacomponent.item.Equippable.Builder": [
       "model(Key)"
+    ],
+    "org.bukkit.event.entity.EntityUnleashEvent": [
+      "EntityUnleashEvent(Entity,UnleashReason,boolean)"
     ],
     "org.bukkit.EntityEffect": [
       "EntityEffect(int,Class)",
       "applicable"
     ],
-    "org.bukkit.Tag": [
-      "TALL_FLOWERS",
-      "ITEMS_TRIM_TEMPLATES"
+    "org.bukkit.event.player.PlayerBedEnterEvent": [
+      "PlayerBedEnterEvent(Player,Block,BedEnterResult)"
     ],
-    "org.bukkit.block.data.type.CreakingHeart.Creaking": [
-      "Creaking()",
-      "DISABLED",
-      "DORMANT"
+    "org.bukkit.event.entity.ItemSpawnEvent": [
+      "ItemSpawnEvent(Item)"
     ],
-    "org.bukkit.block.data.type.CreakingHeart": [
-      "getCreaking()",
-      "setCreaking(Creaking)"
+    "org.bukkit.event.player.PlayerUnleashEntityEvent": [
+      "PlayerUnleashEntityEvent(Entity,Player,EquipmentSlot,boolean)"
     ],
-    "io.papermc.paper.datacomponent.item.Equippable": [
-      "model()"
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
+      "AsyncPlayerPreLoginEvent(String,InetAddress,UUID,boolean)"
     ],
-    "org.bukkit.entity.EntityType": [
-      "CREAKING_TRANSIENT"
+    "org.bukkit.event.player.PlayerRiptideEvent": [
+      "PlayerRiptideEvent(Player,ItemStack,Vector)"
     ],
     "org.bukkit.plugin.EventExecutor": [
       "eventExecutorMap"
@@ -740,8 +947,167 @@
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "TRIM_TEMPLATES"
     ],
+    "org.bukkit.event.block.BlockPlaceEvent": [
+      "BlockPlaceEvent(Block,BlockState,Block,ItemStack,Player,boolean,EquipmentSlot)"
+    ],
+    "org.bukkit.event.block.BlockPhysicsEvent": [
+      "BlockPhysicsEvent(Block,BlockData)",
+      "BlockPhysicsEvent(Block,BlockData,Block)"
+    ],
+    "org.bukkit.event.weather.LightningStrikeEvent": [
+      "LightningStrikeEvent(World,LightningStrike,Cause)"
+    ],
+    "org.bukkit.event.player.PlayerJoinEvent": [
+      "PlayerJoinEvent(Player,Component)"
+    ],
+    "org.bukkit.event.player.PlayerItemDamageEvent": [
+      "PlayerItemDamageEvent(Player,ItemStack,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "PlayerLoginEvent(Player,String,InetAddress)",
+      "PlayerLoginEvent(Player,String,InetAddress,InetAddress)",
+      "PlayerLoginEvent(Player,String,InetAddress,Result,Component,InetAddress)"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "getCreaking()",
+      "setCreaking(Creaking)"
+    ],
+    "org.bukkit.event.entity.PlayerLeashEntityEvent": [
+      "PlayerLeashEntityEvent(Entity,Entity,Player,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.FurnaceSmeltEvent": [
+      "FurnaceSmeltEvent(Block,ItemStack,ItemStack,CookingRecipe)"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "model()"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CREAKING_TRANSIENT"
+    ],
+    "org.bukkit.event.entity.ExpBottleEvent": [
+      "ExpBottleEvent(ThrownExpBottle,Entity,Block,BlockFace,int)"
+    ],
+    "org.bukkit.event.entity.EntityResurrectEvent": [
+      "EntityResurrectEvent(LivingEntity,EquipmentSlot)"
+    ],
+    "org.bukkit.event.player.PlayerBucketFillEvent": [
+      "PlayerBucketFillEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.entity.LingeringPotionSplashEvent": [
+      "LingeringPotionSplashEvent(ThrownPotion,Entity,Block,BlockFace,AreaEffectCloud)"
+    ],
+    "org.bukkit.event.player.PlayerQuitEvent": [
+      "PlayerQuitEvent(Player,Component,QuitReason)"
+    ],
+    "org.bukkit.event.block.BlockMultiPlaceEvent": [
+      "BlockMultiPlaceEvent(List,Block,ItemStack,Player,boolean,EquipmentSlot)"
+    ],
+    "org.bukkit.event.entity.EntityCombustByEntityEvent": [
+      "EntityCombustByEntityEvent(Entity,Entity,float)"
+    ],
+    "org.bukkit.inventory.MenuType": [
+      "\u003cV\u003etyped(Class)"
+    ],
+    "org.bukkit.event.player.PlayerGameModeChangeEvent": [
+      "PlayerGameModeChangeEvent(Player,GameMode,Cause,Component)"
+    ],
+    "org.bukkit.Particle.TargetColor": [
+      "TargetColor(Location,Color)"
+    ],
+    "org.bukkit.event.weather.ThunderChangeEvent": [
+      "ThunderChangeEvent(World,boolean,Cause)"
+    ],
+    "org.bukkit.Tag": [
+      "TALL_FLOWERS",
+      "ITEMS_TRIM_TEMPLATES"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerClientOptionsChangeEvent": [
+      "PlayerClientOptionsChangeEvent(Player,String,int,ChatVisibility,boolean,SkinParts,MainHand)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(List,World,Entity,CreateReason)"
+    ],
+    "org.bukkit.event.player.PlayerItemConsumeEvent": [
+      "PlayerItemConsumeEvent(Player,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.player.PlayerHarvestBlockEvent": [
+      "PlayerHarvestBlockEvent(Player,Block,EquipmentSlot,List)"
+    ],
+    "org.bukkit.event.player.PlayerAnimationEvent": [
+      "PlayerAnimationEvent(Player,PlayerAnimationType)"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,RespawnReason,Builder)"
+    ],
+    "org.bukkit.event.weather.WeatherChangeEvent": [
+      "WeatherChangeEvent(World,boolean,Cause)"
+    ],
+    "org.bukkit.event.entity.SheepDyeWoolEvent": [
+      "SheepDyeWoolEvent(Sheep,DyeColor,Player)"
+    ],
+    "org.bukkit.event.block.SignChangeEvent": [
+      "SignChangeEvent(Block,Player,List,Side)"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "ServerListPingEvent(InetAddress,Component,int)",
+      "ServerListPingEvent(InetAddress,Component,int,int)",
+      "ServerListPingEvent(String,InetAddress,Component,int)",
+      "ServerListPingEvent(String,InetAddress,Component,int,int)",
+      "ServerListPingEvent(String,InetAddress,String,int)",
+      "ServerListPingEvent(String,InetAddress,String,int,int)"
+    ],
+    "org.bukkit.event.entity.EntityPlaceEvent": [
+      "EntityPlaceEvent(Entity,Player,Block,BlockFace,EquipmentSlot)"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,EquipmentSlot,float,boolean)"
+    ],
+    "com.destroystokyo.paper.NamespacedTag": [
+      "randomKey()"
+    ],
     "io.papermc.paper.datacomponent.item.CustomModelData": [
       "customModelData(int)"
+    ],
+    "org.bukkit.event.entity.PotionSplashEvent": [
+      "PotionSplashEvent(ThrownPotion,Entity,Block,BlockFace,Map)"
+    ],
+    "org.bukkit.event.block.BlockBurnEvent": [
+      "BlockBurnEvent(Block,Block)"
+    ],
+    "org.bukkit.event.entity.EntityCombustEvent": [
+      "EntityCombustEvent(Entity,float)"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart.Creaking": [
+      "Creaking()",
+      "DISABLED",
+      "DORMANT"
+    ],
+    "org.bukkit.event.block.BlockCookEvent": [
+      "BlockCookEvent(Block,ItemStack,ItemStack,CookingRecipe)"
+    ],
+    "org.bukkit.event.server.BroadcastMessageEvent": [
+      "BroadcastMessageEvent(boolean,Component,Set)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEmptyEvent": [
+      "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.FurnaceStartSmeltEvent": [
+      "FurnaceStartSmeltEvent(Block,ItemStack,CookingRecipe,int)"
+    ],
+    "org.bukkit.event.player.PlayerPreLoginEvent": [
+      "PlayerPreLoginEvent(String,InetAddress,UUID)"
+    ],
+    "org.bukkit.event.entity.EntityCombustByBlockEvent": [
+      "EntityCombustByBlockEvent(Block,Entity,float)"
+    ],
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent": [
+      "VehicleBlockCollisionEvent(Vehicle,Block,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEvent": [
+      "PlayerBucketEvent(Player,Block,Block,BlockFace,Material,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.hanging.HangingPlaceEvent": [
+      "HangingPlaceEvent(Hanging,Player,Block,BlockFace,EquipmentSlot,ItemStack)"
     ]
   }
 }
