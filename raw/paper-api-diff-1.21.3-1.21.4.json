@@ -491,6 +491,7 @@
       "rotation(float,float)"
     ],
     "org.bukkit.inventory.ItemStack": [
+      "copyDataFrom(ItemStack,Predicate)",
       "editPersistentDataContainer(Consumer)",
       "effectiveName()"
     ],

@@ -1,0 +1,2680 @@
+{
+  "versionA": "1.21.4",
+  "versionB": "1.21.5",
+  "packagesAdded": [],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.brigadier",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.brigadier",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.ban",
+    "io.papermc.paper.block",
+    "io.papermc.paper.block.fluid",
+    "io.papermc.paper.block.fluid.type",
+    "io.papermc.paper.brigadier",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.command.brigadier",
+    "io.papermc.paper.command.brigadier.argument",
+    "io.papermc.paper.command.brigadier.argument.predicate",
+    "io.papermc.paper.command.brigadier.argument.range",
+    "io.papermc.paper.command.brigadier.argument.resolvers",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector",
+    "io.papermc.paper.datacomponent",
+    "io.papermc.paper.datacomponent.item",
+    "io.papermc.paper.datacomponent.item.consumable",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.inventory.tooltip",
+    "io.papermc.paper.item",
+    "io.papermc.paper.math",
+    "io.papermc.paper.persistence",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.lifecycle.event",
+    "io.papermc.paper.plugin.lifecycle.event.handler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar",
+    "io.papermc.paper.plugin.lifecycle.event.types",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.raytracing",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.data",
+    "io.papermc.paper.registry.event",
+    "io.papermc.paper.registry.event.type",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.registry.keys.tags",
+    "io.papermc.paper.registry.set",
+    "io.papermc.paper.registry.tag",
+    "io.papermc.paper.scoreboard.numbers",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.flag",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.spawner",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.damage",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.boat",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.components",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.inventory.view",
+    "org.bukkit.inventory.view.builder",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.spawner",
+    "org.bukkit.structure",
+    "org.bukkit.tag",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "io.papermc.paper.datacomponent.item.BlocksAttacks",
+    "io.papermc.paper.datacomponent.item.BlocksAttacks.Builder",
+    "io.papermc.paper.datacomponent.item.TooltipDisplay",
+    "io.papermc.paper.datacomponent.item.TooltipDisplay.Builder",
+    "io.papermc.paper.datacomponent.item.Weapon",
+    "io.papermc.paper.datacomponent.item.Weapon.Builder",
+    "io.papermc.paper.registry.keys.ChickenVariantKeys",
+    "io.papermc.paper.registry.keys.CowVariantKeys",
+    "io.papermc.paper.registry.keys.DataComponentTypeKeys",
+    "io.papermc.paper.registry.keys.PigVariantKeys",
+    "io.papermc.paper.registry.keys.WolfSoundVariantKeys",
+    "org.bukkit.block.Orientation",
+    "org.bukkit.block.TestBlock",
+    "org.bukkit.block.TestInstanceBlock",
+    "org.bukkit.block.data.Segmentable",
+    "org.bukkit.block.data.type.CreakingHeart.State",
+    "org.bukkit.block.data.type.FlowerBed",
+    "org.bukkit.block.data.type.LeafLitter",
+    "org.bukkit.block.data.type.TestBlock",
+    "org.bukkit.block.data.type.TestBlock.Mode",
+    "org.bukkit.entity.AbstractCow",
+    "org.bukkit.entity.Chicken.Variant",
+    "org.bukkit.entity.Cow.Variant",
+    "org.bukkit.entity.Pig.Variant",
+    "org.bukkit.entity.Wolf.SoundVariant"
+  ],
+  "classesRemoved": [
+    "io.papermc.paper.datacomponent.item.ShownInTooltip",
+    "io.papermc.paper.datacomponent.item.ShownInTooltip.Builder",
+    "io.papermc.paper.datacomponent.item.Unbreakable",
+    "io.papermc.paper.datacomponent.item.Unbreakable.Builder",
+    "io.papermc.paper.registry.keys.tags.CatVariantTagKeys"
+  ],
+  "classesChanged": [
+    "io.papermc.paper.datacomponent.DataComponentTypes",
+    "io.papermc.paper.datacomponent.item.DyedItemColor",
+    "io.papermc.paper.datacomponent.item.Equippable",
+    "io.papermc.paper.datacomponent.item.Equippable.Builder",
+    "io.papermc.paper.datacomponent.item.ItemArmorTrim",
+    "io.papermc.paper.datacomponent.item.ItemEnchantments",
+    "io.papermc.paper.datacomponent.item.Tool",
+    "io.papermc.paper.datacomponent.item.Tool.Builder",
+    "io.papermc.paper.event.entity.EntityFertilizeEggEvent",
+    "io.papermc.paper.registry.RegistryKey",
+    "io.papermc.paper.registry.keys.BlockTypeKeys",
+    "io.papermc.paper.registry.keys.ItemTypeKeys",
+    "io.papermc.paper.registry.keys.SoundEventKeys",
+    "io.papermc.paper.registry.keys.tags.BiomeTagKeys",
+    "io.papermc.paper.registry.keys.tags.BlockTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.StructureTagKeys",
+    "org.bukkit.EntityEffect",
+    "org.bukkit.GameRule",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.block.BlockType",
+    "org.bukkit.block.data.type.CaveVinesPlant",
+    "org.bukkit.block.data.type.CreakingHeart",
+    "org.bukkit.block.data.type.Jukebox",
+    "org.bukkit.block.data.type.Lectern",
+    "org.bukkit.block.data.type.PinkPetals",
+    "org.bukkit.block.data.type.SculkSensor",
+    "org.bukkit.block.data.type.Switch",
+    "org.bukkit.entity.Chicken",
+    "org.bukkit.entity.Cow",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Pig",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Wolf",
+    "org.bukkit.entity.memory.MemoryKey",
+    "org.bukkit.event.Event",
+    "org.bukkit.event.block.BellResonateEvent",
+    "org.bukkit.event.block.BellRingEvent",
+    "org.bukkit.event.block.BlockBreakEvent",
+    "org.bukkit.event.block.BlockBurnEvent",
+    "org.bukkit.event.block.BlockCanBuildEvent",
+    "org.bukkit.event.block.BlockCookEvent",
+    "org.bukkit.event.block.BlockDamageAbortEvent",
+    "org.bukkit.event.block.BlockDamageEvent",
+    "org.bukkit.event.block.BlockDispenseArmorEvent",
+    "org.bukkit.event.block.BlockDispenseEvent",
+    "org.bukkit.event.block.BlockDispenseLootEvent",
+    "org.bukkit.event.block.BlockDropItemEvent",
+    "org.bukkit.event.block.BlockExpEvent",
+    "org.bukkit.event.block.BlockExplodeEvent",
+    "org.bukkit.event.block.BlockFadeEvent",
+    "org.bukkit.event.block.BlockFertilizeEvent",
+    "org.bukkit.event.block.BlockFormEvent",
+    "org.bukkit.event.block.BlockFromToEvent",
+    "org.bukkit.event.block.BlockGrowEvent",
+    "org.bukkit.event.block.BlockIgniteEvent",
+    "org.bukkit.event.block.BlockMultiPlaceEvent",
+    "org.bukkit.event.block.BlockPhysicsEvent",
+    "org.bukkit.event.block.BlockPistonExtendEvent",
+    "org.bukkit.event.block.BlockPistonRetractEvent",
+    "org.bukkit.event.block.BlockPlaceEvent",
+    "org.bukkit.event.block.BlockReceiveGameEvent",
+    "org.bukkit.event.block.BlockRedstoneEvent",
+    "org.bukkit.event.block.BlockShearEntityEvent",
+    "org.bukkit.event.block.BlockSpreadEvent",
+    "org.bukkit.event.block.CampfireStartEvent",
+    "org.bukkit.event.block.CauldronLevelChangeEvent",
+    "org.bukkit.event.block.CrafterCraftEvent",
+    "org.bukkit.event.block.EntityBlockFormEvent",
+    "org.bukkit.event.block.FluidLevelChangeEvent",
+    "org.bukkit.event.block.InventoryBlockStartEvent",
+    "org.bukkit.event.block.LeavesDecayEvent",
+    "org.bukkit.event.block.MoistureChangeEvent",
+    "org.bukkit.event.block.NotePlayEvent",
+    "org.bukkit.event.block.SculkBloomEvent",
+    "org.bukkit.event.block.SignChangeEvent",
+    "org.bukkit.event.block.SpongeAbsorbEvent",
+    "org.bukkit.event.block.TNTPrimeEvent",
+    "org.bukkit.event.block.VaultDisplayItemEvent",
+    "org.bukkit.event.enchantment.EnchantItemEvent",
+    "org.bukkit.event.enchantment.PrepareItemEnchantEvent",
+    "org.bukkit.event.entity.AreaEffectCloudApplyEvent",
+    "org.bukkit.event.entity.ArrowBodyCountChangeEvent",
+    "org.bukkit.event.entity.BatToggleSleepEvent",
+    "org.bukkit.event.entity.CreatureSpawnEvent",
+    "org.bukkit.event.entity.CreeperPowerEvent",
+    "org.bukkit.event.entity.EnderDragonChangePhaseEvent",
+    "org.bukkit.event.entity.EntityAirChangeEvent",
+    "org.bukkit.event.entity.EntityBreakDoorEvent",
+    "org.bukkit.event.entity.EntityBreedEvent",
+    "org.bukkit.event.entity.EntityChangeBlockEvent",
+    "org.bukkit.event.entity.EntityCombustByBlockEvent",
+    "org.bukkit.event.entity.EntityCombustByEntityEvent",
+    "org.bukkit.event.entity.EntityCombustEvent",
+    "org.bukkit.event.entity.EntityCreatePortalEvent",
+    "org.bukkit.event.entity.EntityDamageByBlockEvent",
+    "org.bukkit.event.entity.EntityDamageByEntityEvent",
+    "org.bukkit.event.entity.EntityDamageEvent",
+    "org.bukkit.event.entity.EntityDeathEvent",
+    "org.bukkit.event.entity.EntityDismountEvent",
+    "org.bukkit.event.entity.EntityDropItemEvent",
+    "org.bukkit.event.entity.EntityEnterBlockEvent",
+    "org.bukkit.event.entity.EntityEnterLoveModeEvent",
+    "org.bukkit.event.entity.EntityExhaustionEvent",
+    "org.bukkit.event.entity.EntityExplodeEvent",
+    "org.bukkit.event.entity.EntityInteractEvent",
+    "org.bukkit.event.entity.EntityKnockbackByEntityEvent",
+    "org.bukkit.event.entity.EntityKnockbackEvent",
+    "org.bukkit.event.entity.EntityMountEvent",
+    "org.bukkit.event.entity.EntityPickupItemEvent",
+    "org.bukkit.event.entity.EntityPlaceEvent",
+    "org.bukkit.event.entity.EntityPortalEnterEvent",
+    "org.bukkit.event.entity.EntityPortalEvent",
+    "org.bukkit.event.entity.EntityPortalExitEvent",
+    "org.bukkit.event.entity.EntityPoseChangeEvent",
+    "org.bukkit.event.entity.EntityPotionEffectEvent",
+    "org.bukkit.event.entity.EntityRegainHealthEvent",
+    "org.bukkit.event.entity.EntityRemoveEvent",
+    "org.bukkit.event.entity.EntityResurrectEvent",
+    "org.bukkit.event.entity.EntityShootBowEvent",
+    "org.bukkit.event.entity.EntitySpawnEvent",
+    "org.bukkit.event.entity.EntitySpellCastEvent",
+    "org.bukkit.event.entity.EntityTameEvent",
+    "org.bukkit.event.entity.EntityTargetEvent",
+    "org.bukkit.event.entity.EntityTargetLivingEntityEvent",
+    "org.bukkit.event.entity.EntityTeleportEvent",
+    "org.bukkit.event.entity.EntityToggleGlideEvent",
+    "org.bukkit.event.entity.EntityToggleSwimEvent",
+    "org.bukkit.event.entity.EntityTransformEvent",
+    "org.bukkit.event.entity.EntityUnleashEvent",
+    "org.bukkit.event.entity.ExpBottleEvent",
+    "org.bukkit.event.entity.ExplosionPrimeEvent",
+    "org.bukkit.event.entity.FireworkExplodeEvent",
+    "org.bukkit.event.entity.FoodLevelChangeEvent",
+    "org.bukkit.event.entity.HorseJumpEvent",
+    "org.bukkit.event.entity.ItemDespawnEvent",
+    "org.bukkit.event.entity.ItemMergeEvent",
+    "org.bukkit.event.entity.ItemSpawnEvent",
+    "org.bukkit.event.entity.LingeringPotionSplashEvent",
+    "org.bukkit.event.entity.PigZapEvent",
+    "org.bukkit.event.entity.PigZombieAngerEvent",
+    "org.bukkit.event.entity.PiglinBarterEvent",
+    "org.bukkit.event.entity.PlayerDeathEvent",
+    "org.bukkit.event.entity.PlayerLeashEntityEvent",
+    "org.bukkit.event.entity.PotionSplashEvent",
+    "org.bukkit.event.entity.ProjectileHitEvent",
+    "org.bukkit.event.entity.ProjectileLaunchEvent",
+    "org.bukkit.event.entity.SheepDyeWoolEvent",
+    "org.bukkit.event.entity.SheepRegrowWoolEvent",
+    "org.bukkit.event.entity.SlimeSplitEvent",
+    "org.bukkit.event.entity.SpawnerSpawnEvent",
+    "org.bukkit.event.entity.StriderTemperatureChangeEvent",
+    "org.bukkit.event.entity.TrialSpawnerSpawnEvent",
+    "org.bukkit.event.entity.VillagerAcquireTradeEvent",
+    "org.bukkit.event.entity.VillagerCareerChangeEvent",
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent",
+    "org.bukkit.event.hanging.HangingBreakByEntityEvent",
+    "org.bukkit.event.hanging.HangingBreakEvent",
+    "org.bukkit.event.hanging.HangingPlaceEvent",
+    "org.bukkit.event.inventory.BrewEvent",
+    "org.bukkit.event.inventory.BrewingStandFuelEvent",
+    "org.bukkit.event.inventory.CraftItemEvent",
+    "org.bukkit.event.inventory.FurnaceBurnEvent",
+    "org.bukkit.event.inventory.FurnaceExtractEvent",
+    "org.bukkit.event.inventory.FurnaceSmeltEvent",
+    "org.bukkit.event.inventory.FurnaceStartSmeltEvent",
+    "org.bukkit.event.inventory.HopperInventorySearchEvent",
+    "org.bukkit.event.inventory.InventoryClickEvent",
+    "org.bukkit.event.inventory.InventoryCloseEvent",
+    "org.bukkit.event.inventory.InventoryCreativeEvent",
+    "org.bukkit.event.inventory.InventoryDragEvent",
+    "org.bukkit.event.inventory.InventoryEvent",
+    "org.bukkit.event.inventory.InventoryInteractEvent",
+    "org.bukkit.event.inventory.InventoryMoveItemEvent",
+    "org.bukkit.event.inventory.InventoryOpenEvent",
+    "org.bukkit.event.inventory.InventoryPickupItemEvent",
+    "org.bukkit.event.inventory.PrepareAnvilEvent",
+    "org.bukkit.event.inventory.PrepareGrindstoneEvent",
+    "org.bukkit.event.inventory.PrepareInventoryResultEvent",
+    "org.bukkit.event.inventory.PrepareItemCraftEvent",
+    "org.bukkit.event.inventory.PrepareSmithingEvent",
+    "org.bukkit.event.inventory.SmithItemEvent",
+    "org.bukkit.event.inventory.TradeSelectEvent",
+    "org.bukkit.event.player.AsyncPlayerChatEvent",
+    "org.bukkit.event.player.AsyncPlayerChatPreviewEvent",
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerAdvancementDoneEvent",
+    "org.bukkit.event.player.PlayerAnimationEvent",
+    "org.bukkit.event.player.PlayerArmorStandManipulateEvent",
+    "org.bukkit.event.player.PlayerBedEnterEvent",
+    "org.bukkit.event.player.PlayerBedLeaveEvent",
+    "org.bukkit.event.player.PlayerBucketEmptyEvent",
+    "org.bukkit.event.player.PlayerBucketEntityEvent",
+    "org.bukkit.event.player.PlayerBucketEvent",
+    "org.bukkit.event.player.PlayerBucketFillEvent",
+    "org.bukkit.event.player.PlayerBucketFishEvent",
+    "org.bukkit.event.player.PlayerChangedMainHandEvent",
+    "org.bukkit.event.player.PlayerChangedWorldEvent",
+    "org.bukkit.event.player.PlayerChannelEvent",
+    "org.bukkit.event.player.PlayerChatEvent",
+    "org.bukkit.event.player.PlayerChatTabCompleteEvent",
+    "org.bukkit.event.player.PlayerCommandPreprocessEvent",
+    "org.bukkit.event.player.PlayerCommandSendEvent",
+    "org.bukkit.event.player.PlayerDropItemEvent",
+    "org.bukkit.event.player.PlayerEditBookEvent",
+    "org.bukkit.event.player.PlayerEggThrowEvent",
+    "org.bukkit.event.player.PlayerExpChangeEvent",
+    "org.bukkit.event.player.PlayerExpCooldownChangeEvent",
+    "org.bukkit.event.player.PlayerFishEvent",
+    "org.bukkit.event.player.PlayerGameModeChangeEvent",
+    "org.bukkit.event.player.PlayerHarvestBlockEvent",
+    "org.bukkit.event.player.PlayerHideEntityEvent",
+    "org.bukkit.event.player.PlayerInputEvent",
+    "org.bukkit.event.player.PlayerInteractAtEntityEvent",
+    "org.bukkit.event.player.PlayerInteractEntityEvent",
+    "org.bukkit.event.player.PlayerInteractEvent",
+    "org.bukkit.event.player.PlayerItemBreakEvent",
+    "org.bukkit.event.player.PlayerItemConsumeEvent",
+    "org.bukkit.event.player.PlayerItemDamageEvent",
+    "org.bukkit.event.player.PlayerItemHeldEvent",
+    "org.bukkit.event.player.PlayerItemMendEvent",
+    "org.bukkit.event.player.PlayerJoinEvent",
+    "org.bukkit.event.player.PlayerKickEvent",
+    "org.bukkit.event.player.PlayerLevelChangeEvent",
+    "org.bukkit.event.player.PlayerLinksSendEvent",
+    "org.bukkit.event.player.PlayerLocaleChangeEvent",
+    "org.bukkit.event.player.PlayerLoginEvent",
+    "org.bukkit.event.player.PlayerMoveEvent",
+    "org.bukkit.event.player.PlayerPickupArrowEvent",
+    "org.bukkit.event.player.PlayerPickupItemEvent",
+    "org.bukkit.event.player.PlayerPortalEvent",
+    "org.bukkit.event.player.PlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerQuitEvent",
+    "org.bukkit.event.player.PlayerRecipeBookClickEvent",
+    "org.bukkit.event.player.PlayerRecipeBookSettingsChangeEvent",
+    "org.bukkit.event.player.PlayerRecipeDiscoverEvent",
+    "org.bukkit.event.player.PlayerRegisterChannelEvent",
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent",
+    "org.bukkit.event.player.PlayerRespawnEvent",
+    "org.bukkit.event.player.PlayerRiptideEvent",
+    "org.bukkit.event.player.PlayerShearEntityEvent",
+    "org.bukkit.event.player.PlayerShowEntityEvent",
+    "org.bukkit.event.player.PlayerSignOpenEvent",
+    "org.bukkit.event.player.PlayerSpawnChangeEvent",
+    "org.bukkit.event.player.PlayerStatisticIncrementEvent",
+    "org.bukkit.event.player.PlayerSwapHandItemsEvent",
+    "org.bukkit.event.player.PlayerTakeLecternBookEvent",
+    "org.bukkit.event.player.PlayerTeleportEvent",
+    "org.bukkit.event.player.PlayerToggleFlightEvent",
+    "org.bukkit.event.player.PlayerToggleSneakEvent",
+    "org.bukkit.event.player.PlayerToggleSprintEvent",
+    "org.bukkit.event.player.PlayerUnleashEntityEvent",
+    "org.bukkit.event.player.PlayerUnregisterChannelEvent",
+    "org.bukkit.event.player.PlayerVelocityEvent",
+    "org.bukkit.event.raid.RaidFinishEvent",
+    "org.bukkit.event.raid.RaidSpawnWaveEvent",
+    "org.bukkit.event.raid.RaidStopEvent",
+    "org.bukkit.event.raid.RaidTriggerEvent",
+    "org.bukkit.event.server.BroadcastMessageEvent",
+    "org.bukkit.event.server.MapInitializeEvent",
+    "org.bukkit.event.server.PluginDisableEvent",
+    "org.bukkit.event.server.PluginEnableEvent",
+    "org.bukkit.event.server.RemoteServerCommandEvent",
+    "org.bukkit.event.server.ServerCommandEvent",
+    "org.bukkit.event.server.ServerListPingEvent",
+    "org.bukkit.event.server.ServerLoadEvent",
+    "org.bukkit.event.server.ServiceRegisterEvent",
+    "org.bukkit.event.server.ServiceUnregisterEvent",
+    "org.bukkit.event.server.TabCompleteEvent",
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent",
+    "org.bukkit.event.vehicle.VehicleCreateEvent",
+    "org.bukkit.event.vehicle.VehicleDamageEvent",
+    "org.bukkit.event.vehicle.VehicleDestroyEvent",
+    "org.bukkit.event.vehicle.VehicleEnterEvent",
+    "org.bukkit.event.vehicle.VehicleEntityCollisionEvent",
+    "org.bukkit.event.vehicle.VehicleExitEvent",
+    "org.bukkit.event.vehicle.VehicleMoveEvent",
+    "org.bukkit.event.vehicle.VehicleUpdateEvent",
+    "org.bukkit.event.weather.LightningStrikeEvent",
+    "org.bukkit.event.weather.ThunderChangeEvent",
+    "org.bukkit.event.weather.WeatherChangeEvent",
+    "org.bukkit.event.world.AsyncStructureGenerateEvent",
+    "org.bukkit.event.world.AsyncStructureSpawnEvent",
+    "org.bukkit.event.world.ChunkLoadEvent",
+    "org.bukkit.event.world.ChunkPopulateEvent",
+    "org.bukkit.event.world.ChunkUnloadEvent",
+    "org.bukkit.event.world.EntitiesLoadEvent",
+    "org.bukkit.event.world.EntitiesUnloadEvent",
+    "org.bukkit.event.world.GenericGameEvent",
+    "org.bukkit.event.world.LootGenerateEvent",
+    "org.bukkit.event.world.PortalCreateEvent",
+    "org.bukkit.event.world.SpawnChangeEvent",
+    "org.bukkit.event.world.StructureGrowEvent",
+    "org.bukkit.event.world.TimeSkipEvent",
+    "org.bukkit.event.world.WorldInitEvent",
+    "org.bukkit.event.world.WorldLoadEvent",
+    "org.bukkit.event.world.WorldSaveEvent",
+    "org.bukkit.event.world.WorldUnloadEvent",
+    "org.bukkit.inventory.EquipmentSlot",
+    "org.bukkit.inventory.EquipmentSlotGroup",
+    "org.bukkit.inventory.ItemFlag",
+    "org.bukkit.inventory.ItemType",
+    "org.bukkit.inventory.SmithingTrimRecipe",
+    "org.bukkit.inventory.meta.components.EquippableComponent",
+    "org.bukkit.map.MapCursor.Type",
+    "org.bukkit.map.MapPalette",
+    "org.bukkit.scoreboard.DisplaySlot",
+    "org.bukkit.tag.DamageTypeTags"
+  ],
+  "membersAdded": {
+    "io.papermc.paper.datacomponent.item.Equippable.Builder": [
+      "equipOnInteract(boolean)"
+    ],
+    "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
+      "AXOLOTL_VARIANT",
+      "BLOCKS_ATTACKS",
+      "BREAK_SOUND",
+      "CAT_COLLAR",
+      "CHICKEN_VARIANT",
+      "COW_VARIANT",
+      "FOX_VARIANT",
+      "HORSE_VARIANT",
+      "LLAMA_VARIANT",
+      "MOOSHROOM_VARIANT",
+      "PARROT_VARIANT",
+      "PIG_VARIANT",
+      "POTION_DURATION_SCALE",
+      "PROVIDES_BANNER_PATTERNS",
+      "PROVIDES_TRIM_MATERIAL",
+      "RABBIT_VARIANT",
+      "SALMON_SIZE",
+      "SHEEP_COLOR",
+      "SHULKER_COLOR",
+      "TOOLTIP_DISPLAY",
+      "TROPICAL_FISH_BASE_COLOR",
+      "TROPICAL_FISH_PATTERN",
+      "TROPICAL_FISH_PATTERN_COLOR",
+      "VILLAGER_VARIANT",
+      "WOLF_COLLAR",
+      "WOLF_SOUND_VARIANT",
+      "BEES",
+      "BLOCK_ENTITY_DATA",
+      "BLOCK_STATE",
+      "BUCKET_ENTITY_DATA",
+      "CREATIVE_SLOT_LOCK",
+      "CUSTOM_DATA",
+      "DEBUG_STICK_STATE",
+      "DataComponentTypeKeys()",
+      "ENTITY_DATA"
+    ],
+    "org.bukkit.event.weather.ThunderChangeEvent": [
+      "newThunderState"
+    ],
+    "org.bukkit.EntityEffect": [
+      "BREAK_EQUIPMENT_SADDLE",
+      "DROWN_PARTICLES"
+    ],
+    "org.bukkit.Tag": [
+      "CAMELS_SPAWNABLE_ON",
+      "DRY_VEGETATION_MAY_PLACE_ON",
+      "EDIBLE_FOR_SHEEP",
+      "PLAYS_AMBIENT_DESERT_BLOCK_SOUNDS",
+      "REPLACEABLE_BY_MUSHROOMS",
+      "SWORD_INSTANTLY_MINES",
+      "ENTITY_TYPES_BOAT",
+      "ENTITY_TYPES_CAN_BREATHE_UNDER_WATER",
+      "ENTITY_TYPES_CAN_EQUIP_SADDLE",
+      "ENTITY_TYPES_CAN_WEAR_HORSE_ARMOR",
+      "ENTITY_TYPES_UNDEAD",
+      "ENTITY_TYPES_ZOMBIES",
+      "GAME_EVENT_SHRIEKER_CAN_LISTEN",
+      "GAME_EVENT_WARDEN_CAN_LISTEN",
+      "ITEMS_ACACIA_LOGS",
+      "ITEMS_ANVIL",
+      "ITEMS_BAMBOO_BLOCKS",
+      "ITEMS_BEDS",
+      "ITEMS_BIRCH_LOGS",
+      "ITEMS_BOOK_CLONING_TARGET",
+      "ITEMS_BUTTONS",
+      "ITEMS_CANDLES",
+      "ITEMS_CHERRY_LOGS",
+      "ITEMS_CLUSTER_MAX_HARVESTABLES",
+      "ITEMS_COAL_ORES",
+      "ITEMS_COMPLETES_FIND_TREE_TUTORIAL",
+      "ITEMS_COPPER_ORES",
+      "ITEMS_CRIMSON_STEMS",
+      "ITEMS_DAMPENS_VIBRATIONS",
+      "ITEMS_DARK_OAK_LOGS",
+      "ITEMS_DIAMOND_ORES",
+      "ITEMS_DIRT",
+      "ITEMS_DOORS",
+      "ITEMS_EGGS",
+      "ITEMS_EMERALD_ORES",
+      "ITEMS_FENCES",
+      "ITEMS_FENCE_GATES",
+      "ITEMS_FLOWERS",
+      "ITEMS_FREEZE_IMMUNE_WEARABLES",
+      "ITEMS_GOLD_ORES",
+      "ITEMS_IGNORED_BY_PIGLIN_BABIES",
+      "ITEMS_IRON_ORES",
+      "ITEMS_JUNGLE_LOGS",
+      "ITEMS_LAPIS_ORES",
+      "ITEMS_LEAVES",
+      "ITEMS_LOGS",
+      "ITEMS_LOGS_THAT_BURN",
+      "ITEMS_MANGROVE_LOGS",
+      "ITEMS_NOTEBLOCK_TOP_INSTRUMENTS",
+      "ITEMS_OAK_LOGS",
+      "ITEMS_PALE_OAK_LOGS",
+      "ITEMS_PIGLIN_REPELLENTS",
+      "ITEMS_PLANKS",
+      "ITEMS_RAILS",
+      "ITEMS_REDSTONE_ORES",
+      "ITEMS_SAND",
+      "ITEMS_SAPLINGS",
+      "ITEMS_SHULKER_BOXES",
+      "ITEMS_SIGNS",
+      "ITEMS_SLABS",
+      "ITEMS_SMALL_FLOWERS",
+      "ITEMS_SMELTS_TO_GLASS",
+      "ITEMS_SOUL_FIRE_BASE_BLOCKS",
+      "ITEMS_SPRUCE_LOGS",
+      "ITEMS_STAIRS",
+      "ITEMS_STONE_BRICKS",
+      "ITEMS_STONE_BUTTONS",
+      "ITEMS_TERRACOTTA",
+      "ITEMS_TRAPDOORS",
+      "ITEMS_WALLS",
+      "ITEMS_WARPED_STEMS",
+      "ITEMS_WART_BLOCKS",
+      "ITEMS_WOODEN_BUTTONS",
+      "ITEMS_WOODEN_DOORS",
+      "ITEMS_WOODEN_FENCES",
+      "ITEMS_WOODEN_PRESSURE_PLATES",
+      "ITEMS_WOODEN_SLABS",
+      "ITEMS_WOODEN_STAIRS",
+      "ITEMS_WOODEN_TRAPDOORS",
+      "ITEMS_WOOL",
+      "ITEMS_WOOL_CARPETS"
+    ],
+    "io.papermc.paper.registry.keys.PigVariantKeys": [
+      "PigVariantKeys()"
+    ],
+    "org.bukkit.event.Event": [
+      "isAsync"
+    ],
+    "io.papermc.paper.registry.keys.ChickenVariantKeys": [
+      "ChickenVariantKeys()"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemEnchantments": [
+      "itemEnchantments(Map)"
+    ],
+    "org.bukkit.event.weather.WeatherChangeEvent": [
+      "newWeatherState"
+    ],
+    "org.bukkit.block.data.type.CaveVinesPlant": [
+      "hasBerries()"
+    ],
+    "io.papermc.paper.datacomponent.item.TooltipDisplay": [
+      "hiddenComponents()",
+      "hideTooltip()",
+      "tooltipDisplay()"
+    ],
+    "org.bukkit.block.data.type.TestBlock.Mode": [
+      "ACCEPT",
+      "FAIL",
+      "LOG"
+    ],
+    "org.bukkit.entity.Wolf.SoundVariant": [
+      "BIG",
+      "CUTE",
+      "GRUMPY",
+      "PUGLIN",
+      "SAD",
+      "getSoundVariant(String)"
+    ],
+    "io.papermc.paper.datacomponent.item.Weapon.Builder": [
+      "disableBlockingForSeconds(float)",
+      "itemDamagePerAttack(int)"
+    ],
+    "org.bukkit.event.entity.PigZapEvent": [
+      "zombifiedPiglin"
+    ],
+    "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
+      "SPAWNS_COLD_VARIANT_FARM_ANIMALS",
+      "SPAWNS_WARM_VARIANT_FARM_ANIMALS"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "BOOK_CLONING_TARGET",
+      "EGGS"
+    ],
+    "io.papermc.paper.datacomponent.item.Tool": [
+      "canDestroyBlocksInCreative()"
+    ],
+    "org.bukkit.block.data.type.Jukebox": [
+      "setHasRecord(boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.Weapon": [
+      "disableBlockingForSeconds()",
+      "itemDamagePerAttack()",
+      "weapon()"
+    ],
+    "io.papermc.paper.registry.keys.CowVariantKeys": [
+      "CowVariantKeys()"
+    ],
+    "io.papermc.paper.datacomponent.item.TooltipDisplay.Builder": [
+      "addHiddenComponents(DataComponentType...)",
+      "hiddenComponents(Set)",
+      "hideTooltip(boolean)"
+    ],
+    "org.bukkit.block.data.Segmentable": [
+      "getMaximumSegmentAmount()",
+      "getMinimumSegmentAmount()",
+      "getSegmentAmount()",
+      "setSegmentAmount(int)"
+    ],
+    "org.bukkit.entity.memory.MemoryKey": [
+      "ATE_RECENTLY",
+      "ATTACK_COOLING_DOWN",
+      "CANT_REACH_WALK_TARGET_SINCE",
+      "DANCING",
+      "DANGER_DETECTED_RECENTLY",
+      "DISABLE_WALK_TO_ADMIRE_ITEM",
+      "GAZE_COOLDOWN_TICKS",
+      "HEARD_BELL_TIME",
+      "HIDING_PLACE",
+      "IS_PANICKING",
+      "LONG_JUMP_MID_JUMP",
+      "PACIFIED",
+      "SNIFFER_HAPPY",
+      "TIME_TRYING_TO_REACH_ADMIRE_ITEM",
+      "VISIBLE_ADULT_HOGLIN_COUNT",
+      "VISIBLE_ADULT_PIGLIN_COUNT"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "getCreakingHeartState()",
+      "setCreakingHeartState(State)"
+    ],
+    "io.papermc.paper.registry.keys.WolfSoundVariantKeys": [
+      "WolfSoundVariantKeys()"
+    ],
+    "org.bukkit.block.data.type.Lectern": [
+      "setHasBook(boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.BlocksAttacks": [
+      "blockDelaySeconds()",
+      "blockSound()",
+      "blocksAttacks()",
+      "bypassedBy()",
+      "disableCooldownScale()",
+      "disableSound()"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_CACTUS_FLOWER_BREAK",
+      "BLOCK_CACTUS_FLOWER_PLACE",
+      "BLOCK_DEADBUSH_IDLE",
+      "BLOCK_FIREFLY_BUSH_IDLE",
+      "BLOCK_IRON_BREAK",
+      "BLOCK_IRON_FALL",
+      "BLOCK_IRON_HIT",
+      "BLOCK_IRON_PLACE",
+      "BLOCK_IRON_STEP",
+      "BLOCK_LEAF_LITTER_BREAK",
+      "BLOCK_LEAF_LITTER_FALL",
+      "BLOCK_LEAF_LITTER_HIT",
+      "BLOCK_LEAF_LITTER_PLACE",
+      "BLOCK_LEAF_LITTER_STEP",
+      "BLOCK_SAND_IDLE",
+      "BLOCK_SAND_WIND",
+      "ENTITY_WOLF_ANGRY_AMBIENT",
+      "ENTITY_WOLF_ANGRY_DEATH",
+      "ENTITY_WOLF_ANGRY_GROWL",
+      "ENTITY_WOLF_ANGRY_HURT",
+      "ENTITY_WOLF_ANGRY_PANT",
+      "ENTITY_WOLF_ANGRY_WHINE",
+      "ENTITY_WOLF_BIG_AMBIENT",
+      "ENTITY_WOLF_BIG_DEATH",
+      "ENTITY_WOLF_BIG_GROWL",
+      "ENTITY_WOLF_BIG_HURT",
+      "ENTITY_WOLF_BIG_PANT",
+      "ENTITY_WOLF_BIG_WHINE",
+      "ENTITY_WOLF_CUTE_AMBIENT",
+      "ENTITY_WOLF_CUTE_DEATH",
+      "ENTITY_WOLF_CUTE_GROWL",
+      "ENTITY_WOLF_CUTE_HURT",
+      "ENTITY_WOLF_CUTE_PANT",
+      "ENTITY_WOLF_CUTE_WHINE",
+      "ENTITY_WOLF_GRUMPY_AMBIENT",
+      "ENTITY_WOLF_GRUMPY_DEATH",
+      "ENTITY_WOLF_GRUMPY_GROWL",
+      "ENTITY_WOLF_GRUMPY_HURT",
+      "ENTITY_WOLF_GRUMPY_PANT",
+      "ENTITY_WOLF_GRUMPY_WHINE",
+      "ENTITY_WOLF_PUGLIN_AMBIENT",
+      "ENTITY_WOLF_PUGLIN_DEATH",
+      "ENTITY_WOLF_PUGLIN_GROWL",
+      "ENTITY_WOLF_PUGLIN_HURT",
+      "ENTITY_WOLF_PUGLIN_PANT",
+      "ENTITY_WOLF_PUGLIN_WHINE",
+      "ENTITY_WOLF_SAD_AMBIENT",
+      "ENTITY_WOLF_SAD_DEATH",
+      "ENTITY_WOLF_SAD_GROWL",
+      "ENTITY_WOLF_SAD_HURT",
+      "ENTITY_WOLF_SAD_PANT",
+      "ENTITY_WOLF_SAD_WHINE"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "equipOnInteract()"
+    ],
+    "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
+      "CAN_EQUIP_SADDLE",
+      "CAN_WEAR_HORSE_ARMOR"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart.State": [
+      "AWAKE",
+      "DORMANT",
+      "UPROOTED"
+    ],
+    "org.bukkit.Particle": [
+      "FIREFLY",
+      "TINTED_LEAVES"
+    ],
+    "org.bukkit.inventory.SmithingTrimRecipe": [
+      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,TrimPattern)",
+      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,TrimPattern,boolean)",
+      "getTrimPattern()"
+    ],
+    "org.bukkit.entity.Wolf": [
+      "getSoundVariant()",
+      "setSoundVariant(SoundVariant)"
+    ],
+    "io.papermc.paper.datacomponent.item.BlocksAttacks.Builder": [
+      "blockDelaySeconds(float)",
+      "blockSound(Key)",
+      "bypassedBy(TagKey)",
+      "disableCooldownScale(float)",
+      "disableSound(Key)"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "teleportFlags"
+    ],
+    "io.papermc.paper.datacomponent.item.DyedItemColor": [
+      "dyedItemColor(Color)"
+    ],
+    "org.bukkit.event.entity.ArrowBodyCountChangeEvent": [
+      "reset"
+    ],
+    "org.bukkit.block.data.type.SculkSensor": [
+      "getSculkSensorPhase()",
+      "setSculkSensorPhase(Phase)"
+    ],
+    "org.bukkit.inventory.ItemType": [
+      "BUSH",
+      "CACTUS_FLOWER",
+      "FIREFLY_BUSH",
+      "LEAF_LITTER",
+      "SHORT_DRY_GRASS",
+      "TALL_DRY_GRASS",
+      "TEST_BLOCK",
+      "TEST_INSTANCE_BLOCK",
+      "WILDFLOWERS",
+      "BLUE_EGG",
+      "BROWN_EGG"
+    ],
+    "io.papermc.paper.datacomponent.item.Tool.Builder": [
+      "canDestroyBlocksInCreative(boolean)"
+    ],
+    "org.bukkit.inventory.meta.components.EquippableComponent": [
+      "isEquipOnInteract()",
+      "setEquipOnInteract(boolean)"
+    ],
+    "org.bukkit.GameRule": [
+      "ALLOW_FIRE_TICKS_AWAY_FROM_PLAYER",
+      "TNT_EXPLODES"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.event.block.BlockPistonExtendEvent": [
+      "BlockPistonExtendEvent(Block,int,BlockFace)"
+    ],
+    "org.bukkit.event.player.PlayerPortalEvent": [
+      "PlayerPortalEvent(Player,Location,Location)",
+      "PlayerPortalEvent(Player,Location,Location,TeleportCause)",
+      "PlayerPortalEvent(Player,Location,Location,TeleportCause,int,boolean,int)",
+      "getSearchRadius"
+    ],
+    "org.bukkit.event.inventory.InventoryEvent": [
+      "InventoryEvent(InventoryView)"
+    ],
+    "org.bukkit.event.player.PlayerStatisticIncrementEvent": [
+      "PlayerStatisticIncrementEvent(Player,Statistic,int,int)",
+      "PlayerStatisticIncrementEvent(Player,Statistic,int,int,EntityType)",
+      "PlayerStatisticIncrementEvent(Player,Statistic,int,int,Material)"
+    ],
+    "org.bukkit.event.Event": [
+      "async"
+    ],
+    "org.bukkit.event.player.PlayerMoveEvent": [
+      "PlayerMoveEvent(Player,Location,Location)"
+    ],
+    "org.bukkit.event.entity.ItemSpawnEvent": [
+      "ItemSpawnEvent(Item,Location)"
+    ],
+    "org.bukkit.event.entity.EntitySpawnEvent": [
+      "EntitySpawnEvent(Entity)"
+    ],
+    "org.bukkit.event.block.BlockFormEvent": [
+      "BlockFormEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.player.PlayerUnleashEntityEvent": [
+      "PlayerUnleashEntityEvent(Entity,Player)",
+      "PlayerUnleashEntityEvent(Entity,Player,EquipmentSlot)"
+    ],
+    "org.bukkit.event.server.MapInitializeEvent": [
+      "MapInitializeEvent(MapView)"
+    ],
+    "org.bukkit.event.entity.EntityTameEvent": [
+      "EntityTameEvent(LivingEntity,AnimalTamer)"
+    ],
+    "org.bukkit.event.block.TNTPrimeEvent": [
+      "TNTPrimeEvent(Block,PrimeCause,Entity,Block)"
+    ],
+    "org.bukkit.event.inventory.FurnaceBurnEvent": [
+      "FurnaceBurnEvent(Block,ItemStack,int)"
+    ],
+    "org.bukkit.event.server.ServerCommandEvent": [
+      "ServerCommandEvent(CommandSender,String)"
+    ],
+    "org.bukkit.event.inventory.PrepareSmithingEvent": [
+      "PrepareSmithingEvent(InventoryView,ItemStack)"
+    ],
+    "org.bukkit.event.player.PlayerToggleSneakEvent": [
+      "PlayerToggleSneakEvent(Player,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityBreakDoorEvent": [
+      "EntityBreakDoorEvent(LivingEntity,Block,BlockData)"
+    ],
+    "org.bukkit.event.block.CauldronLevelChangeEvent": [
+      "CauldronLevelChangeEvent(Block,Entity,ChangeReason,BlockState)"
+    ],
+    "org.bukkit.event.player.PlayerShowEntityEvent": [
+      "PlayerShowEntityEvent(Player,Entity)"
+    ],
+    "org.bukkit.event.weather.LightningStrikeEvent": [
+      "LightningStrikeEvent(World,LightningStrike)"
+    ],
+    "org.bukkit.event.block.VaultDisplayItemEvent": [
+      "VaultDisplayItemEvent(Block,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityExhaustionEvent": [
+      "EntityExhaustionEvent(HumanEntity,ExhaustionReason,float)"
+    ],
+    "org.bukkit.event.block.BlockSpreadEvent": [
+      "BlockSpreadEvent(Block,Block,BlockState)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "setLastDamageCause(EntityDamageEvent)"
+    ],
+    "org.bukkit.event.inventory.FurnaceExtractEvent": [
+      "FurnaceExtractEvent(Player,Block,Material,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEntityEvent": [
+      "PlayerBucketEntityEvent(Player,Entity,ItemStack,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.InventoryDragEvent": [
+      "InventoryDragEvent(InventoryView,ItemStack,ItemStack,boolean,Map)"
+    ],
+    "org.bukkit.event.entity.EntityResurrectEvent": [
+      "EntityResurrectEvent(LivingEntity)"
+    ],
+    "org.bukkit.event.player.PlayerBucketFillEvent": [
+      "PlayerBucketFillEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketFillEvent(Player,Block,BlockFace,Material,ItemStack)"
+    ],
+    "org.bukkit.event.entity.FireworkExplodeEvent": [
+      "FireworkExplodeEvent(Firework)"
+    ],
+    "org.bukkit.event.world.AsyncStructureSpawnEvent": [
+      "AsyncStructureSpawnEvent(World,Structure,BoundingBox,int,int)"
+    ],
+    "org.bukkit.event.entity.LingeringPotionSplashEvent": [
+      "LingeringPotionSplashEvent(ThrownPotion,AreaEffectCloud)"
+    ],
+    "org.bukkit.event.inventory.InventoryOpenEvent": [
+      "InventoryOpenEvent(InventoryView)"
+    ],
+    "org.bukkit.event.player.PlayerItemMendEvent": [
+      "PlayerItemMendEvent(Player,ItemStack,EquipmentSlot,ExperienceOrb,int)"
+    ],
+    "org.bukkit.event.player.PlayerChatTabCompleteEvent": [
+      "PlayerChatTabCompleteEvent(Player,String,Collection)"
+    ],
+    "org.bukkit.event.player.PlayerQuitEvent": [
+      "PlayerQuitEvent(Player,Component)",
+      "PlayerQuitEvent(Player,String)",
+      "PlayerQuitEvent(Player,String,QuitReason)"
+    ],
+    "org.bukkit.event.vehicle.VehicleUpdateEvent": [
+      "VehicleUpdateEvent(Vehicle)"
+    ],
+    "org.bukkit.event.player.PlayerUnregisterChannelEvent": [
+      "PlayerUnregisterChannelEvent(Player,String)"
+    ],
+    "org.bukkit.event.vehicle.VehicleMoveEvent": [
+      "VehicleMoveEvent(Vehicle,Location,Location)"
+    ],
+    "org.bukkit.event.entity.ExplosionPrimeEvent": [
+      "ExplosionPrimeEvent(Entity,float,boolean)",
+      "ExplosionPrimeEvent(Explosive)"
+    ],
+    "org.bukkit.event.block.BlockGrowEvent": [
+      "BlockGrowEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.hanging.HangingBreakByEntityEvent": [
+      "HangingBreakByEntityEvent(Hanging,Entity)",
+      "HangingBreakByEntityEvent(Hanging,Entity,RemoveCause)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "cancel",
+      "PortalCreateEvent(List,World,CreateReason)"
+    ],
+    "org.bukkit.event.player.PlayerHarvestBlockEvent": [
+      "PlayerHarvestBlockEvent(Player,Block,List)"
+    ],
+    "org.bukkit.event.entity.CreeperPowerEvent": [
+      "CreeperPowerEvent(Creeper,LightningStrike,PowerCause)",
+      "CreeperPowerEvent(Creeper,PowerCause)"
+    ],
+    "org.bukkit.event.entity.AreaEffectCloudApplyEvent": [
+      "AreaEffectCloudApplyEvent(AreaEffectCloud,List)"
+    ],
+    "org.bukkit.event.entity.SheepDyeWoolEvent": [
+      "SheepDyeWoolEvent(Sheep,DyeColor)"
+    ],
+    "org.bukkit.event.inventory.InventoryCreativeEvent": [
+      "InventoryCreativeEvent(InventoryView,SlotType,int,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,Entity,float)",
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,float)"
+    ],
+    "org.bukkit.event.entity.EntityEnterBlockEvent": [
+      "EntityEnterBlockEvent(Entity,Block)"
+    ],
+    "org.bukkit.event.entity.EntityKnockbackEvent": [
+      "EntityKnockbackEvent(LivingEntity,KnockbackCause,double,Vector,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerLocaleChangeEvent": [
+      "PlayerLocaleChangeEvent(Player,String)"
+    ],
+    "org.bukkit.event.player.PlayerRecipeBookSettingsChangeEvent": [
+      "PlayerRecipeBookSettingsChangeEvent(Player,RecipeBookType,boolean,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerEggThrowEvent": [
+      "PlayerEggThrowEvent(Player,Egg,boolean,byte,EntityType)"
+    ],
+    "org.bukkit.event.server.ServiceUnregisterEvent": [
+      "ServiceUnregisterEvent(RegisteredServiceProvider)"
+    ],
+    "org.bukkit.event.block.BlockDispenseLootEvent": [
+      "BlockDispenseLootEvent(Player,Block,List)"
+    ],
+    "org.bukkit.event.world.StructureGrowEvent": [
+      "StructureGrowEvent(Location,TreeType,boolean,Player,List)"
+    ],
+    "org.bukkit.event.vehicle.VehicleEntityCollisionEvent": [
+      "VehicleEntityCollisionEvent(Vehicle,Entity)"
+    ],
+    "org.bukkit.event.vehicle.VehicleDamageEvent": [
+      "VehicleDamageEvent(Vehicle,Entity,double)"
+    ],
+    "org.bukkit.event.entity.EntityMountEvent": [
+      "EntityMountEvent(Entity,Entity)"
+    ],
+    "org.bukkit.event.raid.RaidTriggerEvent": [
+      "RaidTriggerEvent(Raid,World,Player)"
+    ],
+    "org.bukkit.event.player.PlayerPickupItemEvent": [
+      "PlayerPickupItemEvent(Player,Item,int)"
+    ],
+    "org.bukkit.event.player.PlayerInteractEntityEvent": [
+      "PlayerInteractEntityEvent(Player,Entity)",
+      "PlayerInteractEntityEvent(Player,Entity,EquipmentSlot)"
+    ],
+    "org.bukkit.event.player.PlayerSignOpenEvent": [
+      "PlayerSignOpenEvent(Player,Sign,Side,Cause)"
+    ],
+    "org.bukkit.event.entity.ItemMergeEvent": [
+      "ItemMergeEvent(Item,Item)"
+    ],
+    "org.bukkit.event.player.PlayerLevelChangeEvent": [
+      "PlayerLevelChangeEvent(Player,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent": [
+      "PlayerResourcePackStatusEvent(Player,UUID,Status)"
+    ],
+    "org.bukkit.event.player.PlayerPreLoginEvent": [
+      "PlayerPreLoginEvent(String,InetAddress)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,BlockState,Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageByBlockEvent(Block,BlockState,Entity,DamageCause,DamageSource,double)",
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,Map,Map)",
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,double)"
+    ],
+    "org.bukkit.event.entity.ArrowBodyCountChangeEvent": [
+      "ArrowBodyCountChangeEvent(LivingEntity,int,int,boolean)",
+      "isReset"
+    ],
+    "org.bukkit.event.entity.EntityCombustByBlockEvent": [
+      "EntityCombustByBlockEvent(Block,Entity,int)"
+    ],
+    "org.bukkit.event.raid.RaidStopEvent": [
+      "RaidStopEvent(Raid,World,Reason)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEvent": [
+      "PlayerBucketEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketEvent(Player,Block,BlockFace,Material,ItemStack)"
+    ],
+    "org.bukkit.event.hanging.HangingPlaceEvent": [
+      "HangingPlaceEvent(Hanging,Player,Block,BlockFace,EquipmentSlot)"
+    ],
+    "org.bukkit.inventory.ItemFlag": [
+      "HIDE_ITEM_SPECIFICS"
+    ],
+    "org.bukkit.event.block.BlockReceiveGameEvent": [
+      "BlockReceiveGameEvent(GameEvent,Block,Entity)"
+    ],
+    "org.bukkit.event.player.PlayerLinksSendEvent": [
+      "PlayerLinksSendEvent(Player,ServerLinks)"
+    ],
+    "org.bukkit.tag.DamageTypeTags": [
+      "BYPASSES_COOLDOWN"
+    ],
+    "org.bukkit.event.server.PluginEnableEvent": [
+      "PluginEnableEvent(Plugin)"
+    ],
+    "org.bukkit.event.world.TimeSkipEvent": [
+      "TimeSkipEvent(World,SkipReason,long)"
+    ],
+    "org.bukkit.event.entity.EntityEnterLoveModeEvent": [
+      "EntityEnterLoveModeEvent(Animals,HumanEntity,int)"
+    ],
+    "org.bukkit.event.entity.EntityToggleSwimEvent": [
+      "EntityToggleSwimEvent(LivingEntity,boolean)"
+    ],
+    "org.bukkit.event.inventory.InventoryInteractEvent": [
+      "InventoryInteractEvent(InventoryView)"
+    ],
+    "org.bukkit.event.entity.PlayerLeashEntityEvent": [
+      "PlayerLeashEntityEvent(Entity,Entity,Player)"
+    ],
+    "org.bukkit.event.entity.EntityAirChangeEvent": [
+      "EntityAirChangeEvent(Entity,int)"
+    ],
+    "org.bukkit.event.block.FluidLevelChangeEvent": [
+      "FluidLevelChangeEvent(Block,BlockData)"
+    ],
+    "org.bukkit.event.entity.EntityKnockbackByEntityEvent": [
+      "EntityKnockbackByEntityEvent(LivingEntity,Entity,KnockbackCause,double,Vector,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerArmorStandManipulateEvent": [
+      "PlayerArmorStandManipulateEvent(Player,ArmorStand,ItemStack,ItemStack,EquipmentSlot,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.BrewEvent": [
+      "BrewEvent(Block,BrewerInventory,List,int)"
+    ],
+    "org.bukkit.event.player.PlayerExpChangeEvent": [
+      "PlayerExpChangeEvent(Player,Entity,int)",
+      "PlayerExpChangeEvent(Player,int)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent": [
+      "PlayerKickEvent(Player,Component,Component)",
+      "PlayerKickEvent(Player,String,String)"
+    ],
+    "org.bukkit.event.block.BlockDropItemEvent": [
+      "BlockDropItemEvent(Block,BlockState,Player,List)"
+    ],
+    "org.bukkit.event.vehicle.VehicleExitEvent": [
+      "VehicleExitEvent(Vehicle,LivingEntity)",
+      "VehicleExitEvent(Vehicle,LivingEntity,boolean)"
+    ],
+    "org.bukkit.event.server.RemoteServerCommandEvent": [
+      "RemoteServerCommandEvent(CommandSender,String)"
+    ],
+    "org.bukkit.event.entity.EntityBreedEvent": [
+      "EntityBreedEvent(LivingEntity,LivingEntity,LivingEntity,LivingEntity,ItemStack,int)"
+    ],
+    "org.bukkit.scoreboard.DisplaySlot": [
+      "DisplaySlot(NamedTextColor)"
+    ],
+    "org.bukkit.event.player.PlayerAdvancementDoneEvent": [
+      "PlayerAdvancementDoneEvent(Player,Advancement)",
+      "PlayerAdvancementDoneEvent(Player,Advancement,Component)"
+    ],
+    "org.bukkit.event.enchantment.PrepareItemEnchantEvent": [
+      "PrepareItemEnchantEvent(Player,EnchantmentView,Block,ItemStack,Array,int)"
+    ],
+    "org.bukkit.event.weather.ThunderChangeEvent": [
+      "ThunderChangeEvent(World,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityTargetLivingEntityEvent": [
+      "EntityTargetLivingEntityEvent(Entity,LivingEntity,TargetReason)"
+    ],
+    "org.bukkit.event.inventory.InventoryPickupItemEvent": [
+      "InventoryPickupItemEvent(Inventory,Item)"
+    ],
+    "org.bukkit.event.player.PlayerAnimationEvent": [
+      "PlayerAnimationEvent(Player)"
+    ],
+    "org.bukkit.event.entity.SpawnerSpawnEvent": [
+      "SpawnerSpawnEvent(Entity,CreatureSpawner)"
+    ],
+    "org.bukkit.event.weather.WeatherChangeEvent": [
+      "WeatherChangeEvent(World,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerSwapHandItemsEvent": [
+      "PlayerSwapHandItemsEvent(Player,ItemStack,ItemStack)"
+    ],
+    "org.bukkit.event.player.PlayerHideEntityEvent": [
+      "PlayerHideEntityEvent(Player,Entity)"
+    ],
+    "org.bukkit.event.vehicle.VehicleDestroyEvent": [
+      "VehicleDestroyEvent(Vehicle,Entity)"
+    ],
+    "org.bukkit.event.entity.ItemDespawnEvent": [
+      "ItemDespawnEvent(Item,Location)"
+    ],
+    "org.bukkit.event.entity.EntitySpellCastEvent": [
+      "EntitySpellCastEvent(Spellcaster,Spell)"
+    ],
+    "org.bukkit.event.block.SculkBloomEvent": [
+      "SculkBloomEvent(Block,int)"
+    ],
+    "org.bukkit.event.hanging.HangingBreakEvent": [
+      "HangingBreakEvent(Hanging,RemoveCause)"
+    ],
+    "org.bukkit.event.world.WorldUnloadEvent": [
+      "isCancelled",
+      "WorldUnloadEvent(World)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerChatPreviewEvent": [
+      "AsyncPlayerChatPreviewEvent(boolean,Player,String,Set)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerChatEvent": [
+      "AsyncPlayerChatEvent(boolean,Player,String,Set)"
+    ],
+    "org.bukkit.event.inventory.CraftItemEvent": [
+      "CraftItemEvent(Recipe,InventoryView,SlotType,int,ClickType,InventoryAction)",
+      "CraftItemEvent(Recipe,InventoryView,SlotType,int,ClickType,InventoryAction,int)"
+    ],
+    "org.bukkit.event.block.LeavesDecayEvent": [
+      "LeavesDecayEvent(Block)"
+    ],
+    "org.bukkit.event.entity.PigZombieAngerEvent": [
+      "PigZombieAngerEvent(PigZombie,Entity,int)"
+    ],
+    "org.bukkit.event.block.BlockBurnEvent": [
+      "BlockBurnEvent(Block)"
+    ],
+    "org.bukkit.event.world.GenericGameEvent": [
+      "GenericGameEvent(GameEvent,Location,Entity,int,boolean)"
+    ],
+    "org.bukkit.event.server.ServiceRegisterEvent": [
+      "ServiceRegisterEvent(RegisteredServiceProvider)"
+    ],
+    "org.bukkit.event.entity.HorseJumpEvent": [
+      "HorseJumpEvent(AbstractHorse,float)"
+    ],
+    "org.bukkit.event.entity.EntityCombustEvent": [
+      "EntityCombustEvent(Entity,int)"
+    ],
+    "org.bukkit.event.block.InventoryBlockStartEvent": [
+      "InventoryBlockStartEvent(Block,ItemStack)"
+    ],
+    "org.bukkit.event.server.ServerLoadEvent": [
+      "ServerLoadEvent(LoadType)"
+    ],
+    "org.bukkit.event.block.EntityBlockFormEvent": [
+      "EntityBlockFormEvent(Entity,Block,BlockState)"
+    ],
+    "org.bukkit.event.block.BlockExpEvent": [
+      "BlockExpEvent(Block,int)"
+    ],
+    "org.bukkit.event.player.PlayerTakeLecternBookEvent": [
+      "PlayerTakeLecternBookEvent(Player,Lectern)"
+    ],
+    "org.bukkit.event.player.PlayerChatEvent": [
+      "PlayerChatEvent(Player,String)",
+      "PlayerChatEvent(Player,String,String,Set)"
+    ],
+    "io.papermc.paper.registry.keys.tags.CatVariantTagKeys": [
+      "CatVariantTagKeys()",
+      "DEFAULT_SPAWNS",
+      "FULL_MOON_SPAWNS"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "BlockExplodeEvent(Block,BlockState,List,float,ExplosionResult)"
+    ],
+    "org.bukkit.event.inventory.FurnaceStartSmeltEvent": [
+      "FurnaceStartSmeltEvent(Block,ItemStack,CookingRecipe)"
+    ],
+    "io.papermc.paper.datacomponent.item.DyedItemColor": [
+      "dyedItemColor(Color,boolean)"
+    ],
+    "org.bukkit.event.inventory.PrepareGrindstoneEvent": [
+      "PrepareGrindstoneEvent(InventoryView,ItemStack)"
+    ],
+    "org.bukkit.event.block.BlockCanBuildEvent": [
+      "BlockCanBuildEvent(Block,BlockData,boolean)",
+      "BlockCanBuildEvent(Block,Player,BlockData,boolean)"
+    ],
+    "org.bukkit.event.entity.ProjectileHitEvent": [
+      "ProjectileHitEvent(Projectile)",
+      "ProjectileHitEvent(Projectile,Block)",
+      "ProjectileHitEvent(Projectile,Entity)",
+      "ProjectileHitEvent(Projectile,Entity,Block)"
+    ],
+    "org.bukkit.event.block.BlockFromToEvent": [
+      "BlockFromToEvent(Block,Block)",
+      "BlockFromToEvent(Block,BlockFace)"
+    ],
+    "org.bukkit.event.entity.EntityPoseChangeEvent": [
+      "EntityPoseChangeEvent(Entity,Pose)"
+    ],
+    "org.bukkit.event.block.BlockDispenseEvent": [
+      "BlockDispenseEvent(Block,ItemStack,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerSpawnChangeEvent": [
+      "PlayerSpawnChangeEvent(Player,Location,boolean,Cause)"
+    ],
+    "org.bukkit.event.entity.EntityUnleashEvent": [
+      "EntityUnleashEvent(Entity,UnleashReason)"
+    ],
+    "org.bukkit.event.entity.SlimeSplitEvent": [
+      "SlimeSplitEvent(Slime,int)"
+    ],
+    "org.bukkit.event.player.PlayerRecipeBookClickEvent": [
+      "PlayerRecipeBookClickEvent(Player,Recipe,boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemEnchantments": [
+      "itemEnchantments(Map,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerVelocityEvent": [
+      "PlayerVelocityEvent(Player,Vector)"
+    ],
+    "org.bukkit.event.entity.EntityPortalExitEvent": [
+      "EntityPortalExitEvent(Entity,Location,Location,Vector,Vector)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
+      "AsyncPlayerPreLoginEvent(String,InetAddress)",
+      "AsyncPlayerPreLoginEvent(String,InetAddress,InetAddress,UUID,boolean,PlayerProfile)",
+      "AsyncPlayerPreLoginEvent(String,InetAddress,UUID)",
+      "AsyncPlayerPreLoginEvent(String,InetAddress,UUID,boolean,PlayerProfile)"
+    ],
+    "org.bukkit.event.inventory.PrepareInventoryResultEvent": [
+      "PrepareInventoryResultEvent(InventoryView,ItemStack)"
+    ],
+    "org.bukkit.event.block.BlockPistonRetractEvent": [
+      "BlockPistonRetractEvent(Block,List,BlockFace)"
+    ],
+    "org.bukkit.event.player.PlayerBedLeaveEvent": [
+      "PlayerBedLeaveEvent(Player,Block,boolean)"
+    ],
+    "org.bukkit.event.world.WorldSaveEvent": [
+      "WorldSaveEvent(World)"
+    ],
+    "org.bukkit.event.world.LootGenerateEvent": [
+      "LootGenerateEvent(World,Entity,InventoryHolder,LootTable,LootContext,List,boolean)"
+    ],
+    "org.bukkit.event.entity.PigZapEvent": [
+      "PigZapEvent(Pig,LightningStrike,PigZombie)",
+      "pigzombie"
+    ],
+    "org.bukkit.event.entity.EntityCreatePortalEvent": [
+      "EntityCreatePortalEvent(LivingEntity,List,PortalType)"
+    ],
+    "org.bukkit.event.block.BlockRedstoneEvent": [
+      "BlockRedstoneEvent(Block,int,int)"
+    ],
+    "org.bukkit.event.block.BlockPlaceEvent": [
+      "BlockPlaceEvent(Block,BlockState,Block,ItemStack,Player,boolean)"
+    ],
+    "org.bukkit.event.block.BlockPhysicsEvent": [
+      "BlockPhysicsEvent(Block,BlockData,int,int,int)"
+    ],
+    "org.bukkit.event.enchantment.EnchantItemEvent": [
+      "EnchantItemEvent(Player,InventoryView,Block,ItemStack,int,Map,Enchantment,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "PlayerLoginEvent(Player,String,InetAddress,Result,String,InetAddress)"
+    ],
+    "org.bukkit.event.player.PlayerToggleFlightEvent": [
+      "PlayerToggleFlightEvent(Player,boolean)"
+    ],
+    "org.bukkit.event.entity.VillagerCareerChangeEvent": [
+      "VillagerCareerChangeEvent(Villager,Profession,ChangeReason)"
+    ],
+    "org.bukkit.event.world.EntitiesUnloadEvent": [
+      "EntitiesUnloadEvent(Chunk,List)"
+    ],
+    "org.bukkit.event.inventory.PrepareAnvilEvent": [
+      "PrepareAnvilEvent(AnvilView,ItemStack)"
+    ],
+    "org.bukkit.event.world.ChunkPopulateEvent": [
+      "ChunkPopulateEvent(Chunk)"
+    ],
+    "org.bukkit.event.entity.ProjectileLaunchEvent": [
+      "ProjectileLaunchEvent(Entity)"
+    ],
+    "org.bukkit.event.inventory.PrepareItemCraftEvent": [
+      "PrepareItemCraftEvent(CraftingInventory,InventoryView,boolean)"
+    ],
+    "org.bukkit.event.block.BlockMultiPlaceEvent": [
+      "BlockMultiPlaceEvent(List,Block,ItemStack,Player,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityExplodeEvent": [
+      "EntityExplodeEvent(Entity,Location,List,float,ExplosionResult)"
+    ],
+    "org.bukkit.event.block.MoistureChangeEvent": [
+      "MoistureChangeEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.entity.BatToggleSleepEvent": [
+      "BatToggleSleepEvent(Bat,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerChangedMainHandEvent": [
+      "PlayerChangedMainHandEvent(Player,MainHand)"
+    ],
+    "org.bukkit.event.vehicle.VehicleEnterEvent": [
+      "VehicleEnterEvent(Vehicle,Entity)"
+    ],
+    "org.bukkit.event.entity.EntityToggleGlideEvent": [
+      "EntityToggleGlideEvent(LivingEntity,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean)",
+      "PlayerRespawnEvent(Player,Location,boolean,boolean)",
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,RespawnReason)"
+    ],
+    "org.bukkit.event.player.PlayerBucketFishEvent": [
+      "PlayerBucketFishEvent(Player,Fish,ItemStack,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.InventoryCloseEvent": [
+      "InventoryCloseEvent(InventoryView)",
+      "InventoryCloseEvent(InventoryView,Reason)"
+    ],
+    "org.bukkit.event.entity.PiglinBarterEvent": [
+      "PiglinBarterEvent(Piglin,ItemStack,List)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemArmorTrim": [
+      "itemArmorTrim(ArmorTrim,boolean)"
+    ],
+    "org.bukkit.event.block.SignChangeEvent": [
+      "SignChangeEvent(Block,Player,Array,Side)",
+      "SignChangeEvent(Block,Player,List)",
+      "SignChangeEvent(Block,Player,String...)"
+    ],
+    "org.bukkit.event.player.PlayerRegisterChannelEvent": [
+      "PlayerRegisterChannelEvent(Player,String)"
+    ],
+    "org.bukkit.event.entity.EntityChangeBlockEvent": [
+      "EntityChangeBlockEvent(Entity,Block,BlockData)"
+    ],
+    "org.bukkit.event.vehicle.VehicleCreateEvent": [
+      "VehicleCreateEvent(Vehicle)"
+    ],
+    "org.bukkit.event.entity.EntityPlaceEvent": [
+      "EntityPlaceEvent(Entity,Player,Block,BlockFace)"
+    ],
+    "org.bukkit.event.server.TabCompleteEvent": [
+      "TabCompleteEvent(CommandSender,String,List)",
+      "TabCompleteEvent(CommandSender,String,List,boolean,Location)",
+      "loc"
+    ],
+    "org.bukkit.event.world.ChunkLoadEvent": [
+      "ChunkLoadEvent(Chunk,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerInteractEvent": [
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace)",
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot)",
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot,Vector)",
+      "clickedPosistion"
+    ],
+    "org.bukkit.event.raid.RaidSpawnWaveEvent": [
+      "RaidSpawnWaveEvent(Raid,World,Raider,List)"
+    ],
+    "org.bukkit.event.entity.PotionSplashEvent": [
+      "PotionSplashEvent(ThrownPotion,Map)"
+    ],
+    "org.bukkit.event.entity.EntityPortalEvent": [
+      "EntityPortalEvent(Entity,Location,Location)",
+      "EntityPortalEvent(Entity,Location,Location,int)",
+      "EntityPortalEvent(Entity,Location,Location,int,boolean,int)"
+    ],
+    "org.bukkit.event.block.BlockCookEvent": [
+      "BlockCookEvent(Block,ItemStack,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityTeleportEvent": [
+      "EntityTeleportEvent(Entity,Location,Location)"
+    ],
+    "org.bukkit.event.entity.EntityRegainHealthEvent": [
+      "EntityRegainHealthEvent(Entity,double,RegainReason)",
+      "EntityRegainHealthEvent(Entity,double,RegainReason,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerToggleSprintEvent": [
+      "PlayerToggleSprintEvent(Player,boolean)"
+    ],
+    "org.bukkit.event.block.BellResonateEvent": [
+      "BellResonateEvent(Block,List)"
+    ],
+    "org.bukkit.event.world.EntitiesLoadEvent": [
+      "EntitiesLoadEvent(Chunk,List)"
+    ],
+    "org.bukkit.event.world.SpawnChangeEvent": [
+      "SpawnChangeEvent(World,Location)"
+    ],
+    "org.bukkit.event.player.PlayerItemBreakEvent": [
+      "PlayerItemBreakEvent(Player,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityDropItemEvent": [
+      "EntityDropItemEvent(Entity,Item)"
+    ],
+    "org.bukkit.event.entity.EntityPortalEnterEvent": [
+      "EntityPortalEnterEvent(Entity,Location)"
+    ],
+    "org.bukkit.event.inventory.BrewingStandFuelEvent": [
+      "BrewingStandFuelEvent(Block,ItemStack,int)"
+    ],
+    "io.papermc.paper.datacomponent.item.ShownInTooltip": [
+      "showInTooltip(boolean)",
+      "showInTooltip()"
+    ],
+    "org.bukkit.event.entity.EnderDragonChangePhaseEvent": [
+      "EnderDragonChangePhaseEvent(EnderDragon,Phase,Phase)"
+    ],
+    "org.bukkit.event.world.ChunkUnloadEvent": [
+      "ChunkUnloadEvent(Chunk)",
+      "ChunkUnloadEvent(Chunk,boolean)"
+    ],
+    "org.bukkit.event.inventory.TradeSelectEvent": [
+      "TradeSelectEvent(MerchantView,int)"
+    ],
+    "org.bukkit.event.player.PlayerBedEnterEvent": [
+      "PlayerBedEnterEvent(Player,Block)"
+    ],
+    "org.bukkit.event.player.PlayerFishEvent": [
+      "PlayerFishEvent(Player,Entity,FishHook,EquipmentSlot,State)",
+      "PlayerFishEvent(Player,Entity,FishHook,State)"
+    ],
+    "org.bukkit.event.world.WorldInitEvent": [
+      "WorldInitEvent(World)"
+    ],
+    "org.bukkit.event.player.PlayerRiptideEvent": [
+      "PlayerRiptideEvent(Player,ItemStack)"
+    ],
+    "org.bukkit.event.server.PluginDisableEvent": [
+      "PluginDisableEvent(Plugin)"
+    ],
+    "org.bukkit.event.entity.EntityRemoveEvent": [
+      "EntityRemoveEvent(Entity,Cause)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByEntityEvent": [
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,DamageSource,double)",
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,Map,Map)",
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,double)"
+    ],
+    "org.bukkit.event.player.PlayerJoinEvent": [
+      "PlayerJoinEvent(Player,String)"
+    ],
+    "org.bukkit.event.player.PlayerItemDamageEvent": [
+      "PlayerItemDamageEvent(Player,ItemStack,int)"
+    ],
+    "org.bukkit.event.entity.StriderTemperatureChangeEvent": [
+      "StriderTemperatureChangeEvent(Strider,boolean)"
+    ],
+    "org.bukkit.event.entity.CreatureSpawnEvent": [
+      "CreatureSpawnEvent(LivingEntity,SpawnReason)"
+    ],
+    "org.bukkit.event.player.PlayerShearEntityEvent": [
+      "PlayerShearEntityEvent(Player,Entity)",
+      "what"
+    ],
+    "org.bukkit.event.inventory.SmithItemEvent": [
+      "SmithItemEvent(InventoryView,SlotType,int,ClickType,InventoryAction)",
+      "SmithItemEvent(InventoryView,SlotType,int,ClickType,InventoryAction,int)"
+    ],
+    "org.bukkit.event.inventory.InventoryClickEvent": [
+      "InventoryClickEvent(InventoryView,SlotType,int,ClickType,InventoryAction)",
+      "InventoryClickEvent(InventoryView,SlotType,int,ClickType,InventoryAction,int)",
+      "slot_type"
+    ],
+    "org.bukkit.event.world.AsyncStructureGenerateEvent": [
+      "AsyncStructureGenerateEvent(World,boolean,Cause,Structure,BoundingBox,int,int)"
+    ],
+    "org.bukkit.event.inventory.FurnaceSmeltEvent": [
+      "FurnaceSmeltEvent(Block,ItemStack,ItemStack)"
+    ],
+    "org.bukkit.Sound": [
+      "ENTITY_WOLF_HOWL"
+    ],
+    "org.bukkit.event.entity.ExpBottleEvent": [
+      "ExpBottleEvent(ThrownExpBottle,int)"
+    ],
+    "org.bukkit.event.block.BlockIgniteEvent": [
+      "BlockIgniteEvent(Block,IgniteCause,Block)",
+      "BlockIgniteEvent(Block,IgniteCause,Entity)",
+      "BlockIgniteEvent(Block,IgniteCause,Entity,Block)"
+    ],
+    "io.papermc.paper.datacomponent.item.Unbreakable": [
+      "unbreakable()",
+      "unbreakable(boolean)"
+    ],
+    "org.bukkit.event.block.SpongeAbsorbEvent": [
+      "SpongeAbsorbEvent(Block,List)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,DamageSource,List,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,int,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,int,int,String,boolean)"
+    ],
+    "org.bukkit.event.inventory.HopperInventorySearchEvent": [
+      "HopperInventorySearchEvent(Inventory,ContainerType,Block,Block)"
+    ],
+    "org.bukkit.event.block.NotePlayEvent": [
+      "NotePlayEvent(Block,Instrument,Note)"
+    ],
+    "io.papermc.paper.datacomponent.DataComponentTypes": [
+      "HIDE_TOOLTIP"
+    ],
+    "org.bukkit.event.player.PlayerInputEvent": [
+      "PlayerInputEvent(Player,Input)"
+    ],
+    "org.bukkit.event.entity.EntityCombustByEntityEvent": [
+      "EntityCombustByEntityEvent(Entity,Entity,int)"
+    ],
+    "org.bukkit.event.entity.TrialSpawnerSpawnEvent": [
+      "TrialSpawnerSpawnEvent(Entity,TrialSpawner)"
+    ],
+    "org.bukkit.event.player.PlayerGameModeChangeEvent": [
+      "PlayerGameModeChangeEvent(Player,GameMode)"
+    ],
+    "org.bukkit.event.player.PlayerItemConsumeEvent": [
+      "PlayerItemConsumeEvent(Player,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityTargetEvent": [
+      "EntityTargetEvent(Entity,Entity,TargetReason)"
+    ],
+    "org.bukkit.event.world.WorldLoadEvent": [
+      "WorldLoadEvent(World)"
+    ],
+    "org.bukkit.event.entity.EntityInteractEvent": [
+      "EntityInteractEvent(Entity,Block)"
+    ],
+    "org.bukkit.event.block.BlockFadeEvent": [
+      "BlockFadeEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.entity.EntityPickupItemEvent": [
+      "EntityPickupItemEvent(LivingEntity,Item,int)"
+    ],
+    "org.bukkit.event.entity.VillagerAcquireTradeEvent": [
+      "VillagerAcquireTradeEvent(AbstractVillager,MerchantRecipe)"
+    ],
+    "org.bukkit.event.entity.EntityTransformEvent": [
+      "EntityTransformEvent(Entity,List,TransformReason)"
+    ],
+    "org.bukkit.event.entity.EntityDeathEvent": [
+      "EntityDeathEvent(LivingEntity,DamageSource,List)",
+      "EntityDeathEvent(LivingEntity,DamageSource,List,int)"
+    ],
+    "org.bukkit.event.inventory.InventoryMoveItemEvent": [
+      "InventoryMoveItemEvent(Inventory,ItemStack,Inventory,boolean)"
+    ],
+    "org.bukkit.event.block.CampfireStartEvent": [
+      "CampfireStartEvent(Block,ItemStack,CampfireRecipe)"
+    ],
+    "org.bukkit.event.player.PlayerCommandPreprocessEvent": [
+      "PlayerCommandPreprocessEvent(Player,String)",
+      "PlayerCommandPreprocessEvent(Player,String,Set)"
+    ],
+    "org.bukkit.event.entity.SheepRegrowWoolEvent": [
+      "SheepRegrowWoolEvent(Sheep)"
+    ],
+    "org.bukkit.event.player.PlayerPickupArrowEvent": [
+      "PlayerPickupArrowEvent(Player,Item,AbstractArrow)"
+    ],
+    "org.bukkit.event.block.BlockDamageEvent": [
+      "BlockDamageEvent(Player,Block,ItemStack,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent": [
+      "EntityDamageEvent(Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageEvent(Entity,DamageCause,DamageSource,double)",
+      "EntityDamageEvent(Entity,DamageCause,Map,Map)",
+      "EntityDamageEvent(Entity,DamageCause,double)"
+    ],
+    "org.bukkit.event.player.PlayerExpCooldownChangeEvent": [
+      "PlayerExpCooldownChangeEvent(Player,int,ChangeReason)"
+    ],
+    "org.bukkit.event.player.PlayerEditBookEvent": [
+      "PlayerEditBookEvent(Player,int,BookMeta,BookMeta,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerCommandSendEvent": [
+      "PlayerCommandSendEvent(Player,Collection)"
+    ],
+    "org.bukkit.event.block.BlockBreakEvent": [
+      "BlockBreakEvent(Block,Player)"
+    ],
+    "org.bukkit.event.server.BroadcastMessageEvent": [
+      "BroadcastMessageEvent(Component,Set)",
+      "BroadcastMessageEvent(String,Set)",
+      "BroadcastMessageEvent(boolean,String,Set)"
+    ],
+    "org.bukkit.event.player.PlayerDropItemEvent": [
+      "PlayerDropItemEvent(Player,Item)"
+    ],
+    "org.bukkit.event.entity.EntityPotionEffectEvent": [
+      "EntityPotionEffectEvent(LivingEntity,PotionEffect,PotionEffect,Cause,Action,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerItemHeldEvent": [
+      "PlayerItemHeldEvent(Player,int,int)"
+    ],
+    "org.bukkit.inventory.SmithingTrimRecipe": [
+      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice)",
+      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEmptyEvent": [
+      "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketEmptyEvent(Player,Block,BlockFace,Material,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityDismountEvent": [
+      "EntityDismountEvent(Entity,Entity)",
+      "EntityDismountEvent(Entity,Entity,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerInteractAtEntityEvent": [
+      "PlayerInteractAtEntityEvent(Player,Entity,Vector)",
+      "PlayerInteractAtEntityEvent(Player,Entity,Vector,EquipmentSlot)"
+    ],
+    "org.bukkit.event.block.BlockFertilizeEvent": [
+      "BlockFertilizeEvent(Block,Player,List)"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "PlayerTeleportEvent(Player,Location,Location)",
+      "PlayerTeleportEvent(Player,Location,Location,TeleportCause)",
+      "teleportFlagSet"
+    ],
+    "org.bukkit.event.entity.FoodLevelChangeEvent": [
+      "FoodLevelChangeEvent(HumanEntity,int)",
+      "FoodLevelChangeEvent(HumanEntity,int,ItemStack)"
+    ],
+    "org.bukkit.event.block.BlockDispenseArmorEvent": [
+      "BlockDispenseArmorEvent(Block,ItemStack,LivingEntity)"
+    ],
+    "org.bukkit.event.player.PlayerRecipeDiscoverEvent": [
+      "PlayerRecipeDiscoverEvent(Player,NamespacedKey)"
+    ],
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent": [
+      "VehicleBlockCollisionEvent(Vehicle,Block)"
+    ],
+    "org.bukkit.map.MapPalette": [
+      "c(int,int,int)",
+      "c(int,int,int,int)"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe)"
+    ],
+    "org.bukkit.event.raid.RaidFinishEvent": [
+      "RaidFinishEvent(Raid,World,List)"
+    ],
+    "org.bukkit.event.block.BellRingEvent": [
+      "BellRingEvent(Block,BlockFace,Entity)"
+    ],
+    "org.bukkit.event.player.PlayerChangedWorldEvent": [
+      "PlayerChangedWorldEvent(Player,World)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.event.block.BlockPistonExtendEvent": [
+      "BlockPistonExtendEvent(Block,int,BlockFace)"
+    ],
+    "org.bukkit.event.player.PlayerPortalEvent": [
+      "PlayerPortalEvent(Player,Location,Location)",
+      "PlayerPortalEvent(Player,Location,Location,TeleportCause)",
+      "PlayerPortalEvent(Player,Location,Location,TeleportCause,int,boolean,int)",
+      "getSearchRadius"
+    ],
+    "org.bukkit.event.inventory.InventoryEvent": [
+      "InventoryEvent(InventoryView)"
+    ],
+    "org.bukkit.event.player.PlayerStatisticIncrementEvent": [
+      "PlayerStatisticIncrementEvent(Player,Statistic,int,int)",
+      "PlayerStatisticIncrementEvent(Player,Statistic,int,int,EntityType)",
+      "PlayerStatisticIncrementEvent(Player,Statistic,int,int,Material)"
+    ],
+    "org.bukkit.event.Event": [
+      "async"
+    ],
+    "org.bukkit.event.player.PlayerMoveEvent": [
+      "PlayerMoveEvent(Player,Location,Location)"
+    ],
+    "org.bukkit.event.entity.ItemSpawnEvent": [
+      "ItemSpawnEvent(Item,Location)"
+    ],
+    "org.bukkit.event.entity.EntitySpawnEvent": [
+      "EntitySpawnEvent(Entity)"
+    ],
+    "org.bukkit.event.block.BlockFormEvent": [
+      "BlockFormEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.player.PlayerUnleashEntityEvent": [
+      "PlayerUnleashEntityEvent(Entity,Player)",
+      "PlayerUnleashEntityEvent(Entity,Player,EquipmentSlot)"
+    ],
+    "org.bukkit.event.server.MapInitializeEvent": [
+      "MapInitializeEvent(MapView)"
+    ],
+    "org.bukkit.event.entity.EntityTameEvent": [
+      "EntityTameEvent(LivingEntity,AnimalTamer)"
+    ],
+    "org.bukkit.event.block.TNTPrimeEvent": [
+      "TNTPrimeEvent(Block,PrimeCause,Entity,Block)"
+    ],
+    "org.bukkit.event.inventory.FurnaceBurnEvent": [
+      "FurnaceBurnEvent(Block,ItemStack,int)"
+    ],
+    "org.bukkit.event.server.ServerCommandEvent": [
+      "ServerCommandEvent(CommandSender,String)"
+    ],
+    "org.bukkit.event.inventory.PrepareSmithingEvent": [
+      "PrepareSmithingEvent(InventoryView,ItemStack)"
+    ],
+    "org.bukkit.event.player.PlayerToggleSneakEvent": [
+      "PlayerToggleSneakEvent(Player,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityBreakDoorEvent": [
+      "EntityBreakDoorEvent(LivingEntity,Block,BlockData)"
+    ],
+    "org.bukkit.event.block.CauldronLevelChangeEvent": [
+      "CauldronLevelChangeEvent(Block,Entity,ChangeReason,BlockState)"
+    ],
+    "org.bukkit.event.player.PlayerShowEntityEvent": [
+      "PlayerShowEntityEvent(Player,Entity)"
+    ],
+    "org.bukkit.event.weather.LightningStrikeEvent": [
+      "LightningStrikeEvent(World,LightningStrike)"
+    ],
+    "org.bukkit.event.block.VaultDisplayItemEvent": [
+      "VaultDisplayItemEvent(Block,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityExhaustionEvent": [
+      "EntityExhaustionEvent(HumanEntity,ExhaustionReason,float)"
+    ],
+    "org.bukkit.event.block.BlockSpreadEvent": [
+      "BlockSpreadEvent(Block,Block,BlockState)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "setLastDamageCause(EntityDamageEvent)"
+    ],
+    "org.bukkit.event.inventory.FurnaceExtractEvent": [
+      "FurnaceExtractEvent(Player,Block,Material,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEntityEvent": [
+      "PlayerBucketEntityEvent(Player,Entity,ItemStack,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.InventoryDragEvent": [
+      "InventoryDragEvent(InventoryView,ItemStack,ItemStack,boolean,Map)"
+    ],
+    "org.bukkit.event.entity.EntityResurrectEvent": [
+      "EntityResurrectEvent(LivingEntity)"
+    ],
+    "org.bukkit.event.player.PlayerBucketFillEvent": [
+      "PlayerBucketFillEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketFillEvent(Player,Block,BlockFace,Material,ItemStack)"
+    ],
+    "org.bukkit.event.entity.FireworkExplodeEvent": [
+      "FireworkExplodeEvent(Firework)"
+    ],
+    "org.bukkit.event.world.AsyncStructureSpawnEvent": [
+      "AsyncStructureSpawnEvent(World,Structure,BoundingBox,int,int)"
+    ],
+    "org.bukkit.event.entity.LingeringPotionSplashEvent": [
+      "LingeringPotionSplashEvent(ThrownPotion,AreaEffectCloud)"
+    ],
+    "org.bukkit.event.inventory.InventoryOpenEvent": [
+      "InventoryOpenEvent(InventoryView)"
+    ],
+    "org.bukkit.event.player.PlayerItemMendEvent": [
+      "PlayerItemMendEvent(Player,ItemStack,EquipmentSlot,ExperienceOrb,int)"
+    ],
+    "org.bukkit.event.player.PlayerChatTabCompleteEvent": [
+      "PlayerChatTabCompleteEvent(Player,String,Collection)"
+    ],
+    "org.bukkit.event.player.PlayerQuitEvent": [
+      "PlayerQuitEvent(Player,Component)",
+      "PlayerQuitEvent(Player,String)",
+      "PlayerQuitEvent(Player,String,QuitReason)"
+    ],
+    "org.bukkit.event.vehicle.VehicleUpdateEvent": [
+      "VehicleUpdateEvent(Vehicle)"
+    ],
+    "org.bukkit.event.player.PlayerUnregisterChannelEvent": [
+      "PlayerUnregisterChannelEvent(Player,String)"
+    ],
+    "org.bukkit.event.vehicle.VehicleMoveEvent": [
+      "VehicleMoveEvent(Vehicle,Location,Location)"
+    ],
+    "org.bukkit.event.entity.ExplosionPrimeEvent": [
+      "ExplosionPrimeEvent(Entity,float,boolean)",
+      "ExplosionPrimeEvent(Explosive)"
+    ],
+    "org.bukkit.event.block.BlockGrowEvent": [
+      "BlockGrowEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.hanging.HangingBreakByEntityEvent": [
+      "HangingBreakByEntityEvent(Hanging,Entity)",
+      "HangingBreakByEntityEvent(Hanging,Entity,RemoveCause)"
+    ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "cancel",
+      "PortalCreateEvent(List,World,CreateReason)"
+    ],
+    "org.bukkit.event.player.PlayerHarvestBlockEvent": [
+      "PlayerHarvestBlockEvent(Player,Block,List)"
+    ],
+    "org.bukkit.event.entity.CreeperPowerEvent": [
+      "CreeperPowerEvent(Creeper,LightningStrike,PowerCause)",
+      "CreeperPowerEvent(Creeper,PowerCause)"
+    ],
+    "org.bukkit.event.entity.AreaEffectCloudApplyEvent": [
+      "AreaEffectCloudApplyEvent(AreaEffectCloud,List)"
+    ],
+    "org.bukkit.event.entity.SheepDyeWoolEvent": [
+      "SheepDyeWoolEvent(Sheep,DyeColor)"
+    ],
+    "org.bukkit.event.inventory.InventoryCreativeEvent": [
+      "InventoryCreativeEvent(InventoryView,SlotType,int,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityShootBowEvent": [
+      "EntityShootBowEvent(LivingEntity,ItemStack,Entity,float)",
+      "EntityShootBowEvent(LivingEntity,ItemStack,ItemStack,Entity,float)"
+    ],
+    "org.bukkit.event.entity.EntityEnterBlockEvent": [
+      "EntityEnterBlockEvent(Entity,Block)"
+    ],
+    "org.bukkit.event.entity.EntityKnockbackEvent": [
+      "EntityKnockbackEvent(LivingEntity,KnockbackCause,double,Vector,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerLocaleChangeEvent": [
+      "PlayerLocaleChangeEvent(Player,String)"
+    ],
+    "org.bukkit.event.player.PlayerRecipeBookSettingsChangeEvent": [
+      "PlayerRecipeBookSettingsChangeEvent(Player,RecipeBookType,boolean,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerEggThrowEvent": [
+      "PlayerEggThrowEvent(Player,Egg,boolean,byte,EntityType)"
+    ],
+    "org.bukkit.event.server.ServiceUnregisterEvent": [
+      "ServiceUnregisterEvent(RegisteredServiceProvider)"
+    ],
+    "org.bukkit.event.block.BlockDispenseLootEvent": [
+      "BlockDispenseLootEvent(Player,Block,List)"
+    ],
+    "org.bukkit.event.world.StructureGrowEvent": [
+      "StructureGrowEvent(Location,TreeType,boolean,Player,List)"
+    ],
+    "org.bukkit.event.vehicle.VehicleEntityCollisionEvent": [
+      "VehicleEntityCollisionEvent(Vehicle,Entity)"
+    ],
+    "org.bukkit.event.vehicle.VehicleDamageEvent": [
+      "VehicleDamageEvent(Vehicle,Entity,double)"
+    ],
+    "org.bukkit.event.entity.EntityMountEvent": [
+      "EntityMountEvent(Entity,Entity)"
+    ],
+    "org.bukkit.event.raid.RaidTriggerEvent": [
+      "RaidTriggerEvent(Raid,World,Player)"
+    ],
+    "org.bukkit.event.player.PlayerPickupItemEvent": [
+      "PlayerPickupItemEvent(Player,Item,int)"
+    ],
+    "org.bukkit.event.player.PlayerInteractEntityEvent": [
+      "PlayerInteractEntityEvent(Player,Entity)",
+      "PlayerInteractEntityEvent(Player,Entity,EquipmentSlot)"
+    ],
+    "org.bukkit.event.player.PlayerSignOpenEvent": [
+      "PlayerSignOpenEvent(Player,Sign,Side,Cause)"
+    ],
+    "org.bukkit.event.entity.ItemMergeEvent": [
+      "ItemMergeEvent(Item,Item)"
+    ],
+    "org.bukkit.event.player.PlayerLevelChangeEvent": [
+      "PlayerLevelChangeEvent(Player,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerResourcePackStatusEvent": [
+      "PlayerResourcePackStatusEvent(Player,UUID,Status)"
+    ],
+    "org.bukkit.event.player.PlayerPreLoginEvent": [
+      "PlayerPreLoginEvent(String,InetAddress)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,BlockState,Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageByBlockEvent(Block,BlockState,Entity,DamageCause,DamageSource,double)",
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,Map,Map)",
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,double)"
+    ],
+    "org.bukkit.event.entity.ArrowBodyCountChangeEvent": [
+      "ArrowBodyCountChangeEvent(LivingEntity,int,int,boolean)",
+      "isReset"
+    ],
+    "org.bukkit.event.entity.EntityCombustByBlockEvent": [
+      "EntityCombustByBlockEvent(Block,Entity,int)"
+    ],
+    "org.bukkit.event.raid.RaidStopEvent": [
+      "RaidStopEvent(Raid,World,Reason)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEvent": [
+      "PlayerBucketEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketEvent(Player,Block,BlockFace,Material,ItemStack)"
+    ],
+    "org.bukkit.event.hanging.HangingPlaceEvent": [
+      "HangingPlaceEvent(Hanging,Player,Block,BlockFace,EquipmentSlot)"
+    ],
+    "org.bukkit.inventory.ItemFlag": [
+      "HIDE_ITEM_SPECIFICS"
+    ],
+    "org.bukkit.event.block.BlockReceiveGameEvent": [
+      "BlockReceiveGameEvent(GameEvent,Block,Entity)"
+    ],
+    "org.bukkit.event.player.PlayerLinksSendEvent": [
+      "PlayerLinksSendEvent(Player,ServerLinks)"
+    ],
+    "org.bukkit.tag.DamageTypeTags": [
+      "BYPASSES_COOLDOWN"
+    ],
+    "org.bukkit.event.server.PluginEnableEvent": [
+      "PluginEnableEvent(Plugin)"
+    ],
+    "org.bukkit.event.world.TimeSkipEvent": [
+      "TimeSkipEvent(World,SkipReason,long)"
+    ],
+    "org.bukkit.event.entity.EntityEnterLoveModeEvent": [
+      "EntityEnterLoveModeEvent(Animals,HumanEntity,int)"
+    ],
+    "org.bukkit.event.entity.EntityToggleSwimEvent": [
+      "EntityToggleSwimEvent(LivingEntity,boolean)"
+    ],
+    "org.bukkit.event.inventory.InventoryInteractEvent": [
+      "InventoryInteractEvent(InventoryView)"
+    ],
+    "org.bukkit.event.entity.PlayerLeashEntityEvent": [
+      "PlayerLeashEntityEvent(Entity,Entity,Player)"
+    ],
+    "org.bukkit.event.entity.EntityAirChangeEvent": [
+      "EntityAirChangeEvent(Entity,int)"
+    ],
+    "org.bukkit.event.block.FluidLevelChangeEvent": [
+      "FluidLevelChangeEvent(Block,BlockData)"
+    ],
+    "org.bukkit.event.entity.EntityKnockbackByEntityEvent": [
+      "EntityKnockbackByEntityEvent(LivingEntity,Entity,KnockbackCause,double,Vector,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerArmorStandManipulateEvent": [
+      "PlayerArmorStandManipulateEvent(Player,ArmorStand,ItemStack,ItemStack,EquipmentSlot,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.BrewEvent": [
+      "BrewEvent(Block,BrewerInventory,List,int)"
+    ],
+    "org.bukkit.event.player.PlayerExpChangeEvent": [
+      "PlayerExpChangeEvent(Player,Entity,int)",
+      "PlayerExpChangeEvent(Player,int)"
+    ],
+    "org.bukkit.event.player.PlayerKickEvent": [
+      "PlayerKickEvent(Player,Component,Component)",
+      "PlayerKickEvent(Player,String,String)"
+    ],
+    "org.bukkit.event.block.BlockDropItemEvent": [
+      "BlockDropItemEvent(Block,BlockState,Player,List)"
+    ],
+    "org.bukkit.event.vehicle.VehicleExitEvent": [
+      "VehicleExitEvent(Vehicle,LivingEntity)",
+      "VehicleExitEvent(Vehicle,LivingEntity,boolean)"
+    ],
+    "org.bukkit.event.server.RemoteServerCommandEvent": [
+      "RemoteServerCommandEvent(CommandSender,String)"
+    ],
+    "org.bukkit.event.entity.EntityBreedEvent": [
+      "EntityBreedEvent(LivingEntity,LivingEntity,LivingEntity,LivingEntity,ItemStack,int)"
+    ],
+    "org.bukkit.scoreboard.DisplaySlot": [
+      "DisplaySlot(NamedTextColor)"
+    ],
+    "org.bukkit.event.player.PlayerAdvancementDoneEvent": [
+      "PlayerAdvancementDoneEvent(Player,Advancement)",
+      "PlayerAdvancementDoneEvent(Player,Advancement,Component)"
+    ],
+    "org.bukkit.event.enchantment.PrepareItemEnchantEvent": [
+      "PrepareItemEnchantEvent(Player,EnchantmentView,Block,ItemStack,Array,int)"
+    ],
+    "org.bukkit.event.weather.ThunderChangeEvent": [
+      "ThunderChangeEvent(World,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityTargetLivingEntityEvent": [
+      "EntityTargetLivingEntityEvent(Entity,LivingEntity,TargetReason)"
+    ],
+    "org.bukkit.event.inventory.InventoryPickupItemEvent": [
+      "InventoryPickupItemEvent(Inventory,Item)"
+    ],
+    "org.bukkit.event.player.PlayerAnimationEvent": [
+      "PlayerAnimationEvent(Player)"
+    ],
+    "org.bukkit.event.entity.SpawnerSpawnEvent": [
+      "SpawnerSpawnEvent(Entity,CreatureSpawner)"
+    ],
+    "org.bukkit.event.weather.WeatherChangeEvent": [
+      "WeatherChangeEvent(World,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerSwapHandItemsEvent": [
+      "PlayerSwapHandItemsEvent(Player,ItemStack,ItemStack)"
+    ],
+    "org.bukkit.event.player.PlayerHideEntityEvent": [
+      "PlayerHideEntityEvent(Player,Entity)"
+    ],
+    "org.bukkit.event.vehicle.VehicleDestroyEvent": [
+      "VehicleDestroyEvent(Vehicle,Entity)"
+    ],
+    "org.bukkit.event.entity.ItemDespawnEvent": [
+      "ItemDespawnEvent(Item,Location)"
+    ],
+    "org.bukkit.event.entity.EntitySpellCastEvent": [
+      "EntitySpellCastEvent(Spellcaster,Spell)"
+    ],
+    "org.bukkit.event.block.SculkBloomEvent": [
+      "SculkBloomEvent(Block,int)"
+    ],
+    "org.bukkit.event.hanging.HangingBreakEvent": [
+      "HangingBreakEvent(Hanging,RemoveCause)"
+    ],
+    "org.bukkit.event.world.WorldUnloadEvent": [
+      "isCancelled",
+      "WorldUnloadEvent(World)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerChatPreviewEvent": [
+      "AsyncPlayerChatPreviewEvent(boolean,Player,String,Set)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerChatEvent": [
+      "AsyncPlayerChatEvent(boolean,Player,String,Set)"
+    ],
+    "org.bukkit.event.inventory.CraftItemEvent": [
+      "CraftItemEvent(Recipe,InventoryView,SlotType,int,ClickType,InventoryAction)",
+      "CraftItemEvent(Recipe,InventoryView,SlotType,int,ClickType,InventoryAction,int)"
+    ],
+    "org.bukkit.event.block.LeavesDecayEvent": [
+      "LeavesDecayEvent(Block)"
+    ],
+    "org.bukkit.event.entity.PigZombieAngerEvent": [
+      "PigZombieAngerEvent(PigZombie,Entity,int)"
+    ],
+    "org.bukkit.event.block.BlockBurnEvent": [
+      "BlockBurnEvent(Block)"
+    ],
+    "org.bukkit.event.world.GenericGameEvent": [
+      "GenericGameEvent(GameEvent,Location,Entity,int,boolean)"
+    ],
+    "org.bukkit.event.server.ServiceRegisterEvent": [
+      "ServiceRegisterEvent(RegisteredServiceProvider)"
+    ],
+    "org.bukkit.event.entity.HorseJumpEvent": [
+      "HorseJumpEvent(AbstractHorse,float)"
+    ],
+    "org.bukkit.event.entity.EntityCombustEvent": [
+      "EntityCombustEvent(Entity,int)"
+    ],
+    "org.bukkit.event.block.InventoryBlockStartEvent": [
+      "InventoryBlockStartEvent(Block,ItemStack)"
+    ],
+    "org.bukkit.event.server.ServerLoadEvent": [
+      "ServerLoadEvent(LoadType)"
+    ],
+    "org.bukkit.event.block.EntityBlockFormEvent": [
+      "EntityBlockFormEvent(Entity,Block,BlockState)"
+    ],
+    "org.bukkit.event.block.BlockExpEvent": [
+      "BlockExpEvent(Block,int)"
+    ],
+    "org.bukkit.event.player.PlayerTakeLecternBookEvent": [
+      "PlayerTakeLecternBookEvent(Player,Lectern)"
+    ],
+    "org.bukkit.event.player.PlayerChatEvent": [
+      "PlayerChatEvent(Player,String)",
+      "PlayerChatEvent(Player,String,String,Set)"
+    ],
+    "io.papermc.paper.registry.keys.tags.CatVariantTagKeys": [
+      "CatVariantTagKeys()",
+      "DEFAULT_SPAWNS",
+      "FULL_MOON_SPAWNS"
+    ],
+    "org.bukkit.event.block.BlockExplodeEvent": [
+      "BlockExplodeEvent(Block,BlockState,List,float,ExplosionResult)"
+    ],
+    "org.bukkit.event.inventory.FurnaceStartSmeltEvent": [
+      "FurnaceStartSmeltEvent(Block,ItemStack,CookingRecipe)"
+    ],
+    "io.papermc.paper.datacomponent.item.DyedItemColor": [
+      "dyedItemColor(Color,boolean)"
+    ],
+    "org.bukkit.event.inventory.PrepareGrindstoneEvent": [
+      "PrepareGrindstoneEvent(InventoryView,ItemStack)"
+    ],
+    "org.bukkit.event.block.BlockCanBuildEvent": [
+      "BlockCanBuildEvent(Block,BlockData,boolean)",
+      "BlockCanBuildEvent(Block,Player,BlockData,boolean)"
+    ],
+    "org.bukkit.event.entity.ProjectileHitEvent": [
+      "ProjectileHitEvent(Projectile)",
+      "ProjectileHitEvent(Projectile,Block)",
+      "ProjectileHitEvent(Projectile,Entity)",
+      "ProjectileHitEvent(Projectile,Entity,Block)"
+    ],
+    "org.bukkit.event.block.BlockFromToEvent": [
+      "BlockFromToEvent(Block,Block)",
+      "BlockFromToEvent(Block,BlockFace)"
+    ],
+    "org.bukkit.event.entity.EntityPoseChangeEvent": [
+      "EntityPoseChangeEvent(Entity,Pose)"
+    ],
+    "org.bukkit.event.block.BlockDispenseEvent": [
+      "BlockDispenseEvent(Block,ItemStack,Vector)"
+    ],
+    "org.bukkit.event.player.PlayerSpawnChangeEvent": [
+      "PlayerSpawnChangeEvent(Player,Location,boolean,Cause)"
+    ],
+    "org.bukkit.event.entity.EntityUnleashEvent": [
+      "EntityUnleashEvent(Entity,UnleashReason)"
+    ],
+    "org.bukkit.event.entity.SlimeSplitEvent": [
+      "SlimeSplitEvent(Slime,int)"
+    ],
+    "org.bukkit.event.player.PlayerRecipeBookClickEvent": [
+      "PlayerRecipeBookClickEvent(Player,Recipe,boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemEnchantments": [
+      "itemEnchantments(Map,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerVelocityEvent": [
+      "PlayerVelocityEvent(Player,Vector)"
+    ],
+    "org.bukkit.event.entity.EntityPortalExitEvent": [
+      "EntityPortalExitEvent(Entity,Location,Location,Vector,Vector)"
+    ],
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
+      "AsyncPlayerPreLoginEvent(String,InetAddress)",
+      "AsyncPlayerPreLoginEvent(String,InetAddress,InetAddress,UUID,boolean,PlayerProfile)",
+      "AsyncPlayerPreLoginEvent(String,InetAddress,UUID)",
+      "AsyncPlayerPreLoginEvent(String,InetAddress,UUID,boolean,PlayerProfile)"
+    ],
+    "org.bukkit.event.inventory.PrepareInventoryResultEvent": [
+      "PrepareInventoryResultEvent(InventoryView,ItemStack)"
+    ],
+    "org.bukkit.event.block.BlockPistonRetractEvent": [
+      "BlockPistonRetractEvent(Block,List,BlockFace)"
+    ],
+    "org.bukkit.event.player.PlayerBedLeaveEvent": [
+      "PlayerBedLeaveEvent(Player,Block,boolean)"
+    ],
+    "org.bukkit.event.world.WorldSaveEvent": [
+      "WorldSaveEvent(World)"
+    ],
+    "org.bukkit.event.world.LootGenerateEvent": [
+      "LootGenerateEvent(World,Entity,InventoryHolder,LootTable,LootContext,List,boolean)"
+    ],
+    "org.bukkit.event.entity.PigZapEvent": [
+      "PigZapEvent(Pig,LightningStrike,PigZombie)",
+      "pigzombie"
+    ],
+    "org.bukkit.event.entity.EntityCreatePortalEvent": [
+      "EntityCreatePortalEvent(LivingEntity,List,PortalType)"
+    ],
+    "org.bukkit.event.block.BlockRedstoneEvent": [
+      "BlockRedstoneEvent(Block,int,int)"
+    ],
+    "org.bukkit.event.block.BlockPlaceEvent": [
+      "BlockPlaceEvent(Block,BlockState,Block,ItemStack,Player,boolean)"
+    ],
+    "org.bukkit.event.block.BlockPhysicsEvent": [
+      "BlockPhysicsEvent(Block,BlockData,int,int,int)"
+    ],
+    "org.bukkit.event.enchantment.EnchantItemEvent": [
+      "EnchantItemEvent(Player,InventoryView,Block,ItemStack,int,Map,Enchantment,int,int)"
+    ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "PlayerLoginEvent(Player,String,InetAddress,Result,String,InetAddress)"
+    ],
+    "org.bukkit.event.player.PlayerToggleFlightEvent": [
+      "PlayerToggleFlightEvent(Player,boolean)"
+    ],
+    "org.bukkit.event.entity.VillagerCareerChangeEvent": [
+      "VillagerCareerChangeEvent(Villager,Profession,ChangeReason)"
+    ],
+    "org.bukkit.event.world.EntitiesUnloadEvent": [
+      "EntitiesUnloadEvent(Chunk,List)"
+    ],
+    "org.bukkit.event.inventory.PrepareAnvilEvent": [
+      "PrepareAnvilEvent(AnvilView,ItemStack)"
+    ],
+    "org.bukkit.event.world.ChunkPopulateEvent": [
+      "ChunkPopulateEvent(Chunk)"
+    ],
+    "org.bukkit.event.entity.ProjectileLaunchEvent": [
+      "ProjectileLaunchEvent(Entity)"
+    ],
+    "org.bukkit.event.inventory.PrepareItemCraftEvent": [
+      "PrepareItemCraftEvent(CraftingInventory,InventoryView,boolean)"
+    ],
+    "org.bukkit.event.block.BlockMultiPlaceEvent": [
+      "BlockMultiPlaceEvent(List,Block,ItemStack,Player,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityExplodeEvent": [
+      "EntityExplodeEvent(Entity,Location,List,float,ExplosionResult)"
+    ],
+    "org.bukkit.event.block.MoistureChangeEvent": [
+      "MoistureChangeEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.entity.BatToggleSleepEvent": [
+      "BatToggleSleepEvent(Bat,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerChangedMainHandEvent": [
+      "PlayerChangedMainHandEvent(Player,MainHand)"
+    ],
+    "org.bukkit.event.vehicle.VehicleEnterEvent": [
+      "VehicleEnterEvent(Vehicle,Entity)"
+    ],
+    "org.bukkit.event.entity.EntityToggleGlideEvent": [
+      "EntityToggleGlideEvent(LivingEntity,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "PlayerRespawnEvent(Player,Location,boolean)",
+      "PlayerRespawnEvent(Player,Location,boolean,boolean)",
+      "PlayerRespawnEvent(Player,Location,boolean,boolean,RespawnReason)"
+    ],
+    "org.bukkit.event.player.PlayerBucketFishEvent": [
+      "PlayerBucketFishEvent(Player,Fish,ItemStack,ItemStack,EquipmentSlot)"
+    ],
+    "org.bukkit.event.inventory.InventoryCloseEvent": [
+      "InventoryCloseEvent(InventoryView)",
+      "InventoryCloseEvent(InventoryView,Reason)"
+    ],
+    "org.bukkit.event.entity.PiglinBarterEvent": [
+      "PiglinBarterEvent(Piglin,ItemStack,List)"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemArmorTrim": [
+      "itemArmorTrim(ArmorTrim,boolean)"
+    ],
+    "org.bukkit.event.block.SignChangeEvent": [
+      "SignChangeEvent(Block,Player,Array,Side)",
+      "SignChangeEvent(Block,Player,List)",
+      "SignChangeEvent(Block,Player,String...)"
+    ],
+    "org.bukkit.event.player.PlayerRegisterChannelEvent": [
+      "PlayerRegisterChannelEvent(Player,String)"
+    ],
+    "org.bukkit.event.entity.EntityChangeBlockEvent": [
+      "EntityChangeBlockEvent(Entity,Block,BlockData)"
+    ],
+    "org.bukkit.event.vehicle.VehicleCreateEvent": [
+      "VehicleCreateEvent(Vehicle)"
+    ],
+    "org.bukkit.event.entity.EntityPlaceEvent": [
+      "EntityPlaceEvent(Entity,Player,Block,BlockFace)"
+    ],
+    "org.bukkit.event.server.TabCompleteEvent": [
+      "TabCompleteEvent(CommandSender,String,List)",
+      "TabCompleteEvent(CommandSender,String,List,boolean,Location)",
+      "loc"
+    ],
+    "org.bukkit.event.world.ChunkLoadEvent": [
+      "ChunkLoadEvent(Chunk,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerInteractEvent": [
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace)",
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot)",
+      "PlayerInteractEvent(Player,Action,ItemStack,Block,BlockFace,EquipmentSlot,Vector)",
+      "clickedPosistion"
+    ],
+    "org.bukkit.event.raid.RaidSpawnWaveEvent": [
+      "RaidSpawnWaveEvent(Raid,World,Raider,List)"
+    ],
+    "org.bukkit.event.entity.PotionSplashEvent": [
+      "PotionSplashEvent(ThrownPotion,Map)"
+    ],
+    "org.bukkit.event.entity.EntityPortalEvent": [
+      "EntityPortalEvent(Entity,Location,Location)",
+      "EntityPortalEvent(Entity,Location,Location,int)",
+      "EntityPortalEvent(Entity,Location,Location,int,boolean,int)"
+    ],
+    "org.bukkit.event.block.BlockCookEvent": [
+      "BlockCookEvent(Block,ItemStack,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityTeleportEvent": [
+      "EntityTeleportEvent(Entity,Location,Location)"
+    ],
+    "org.bukkit.event.entity.EntityRegainHealthEvent": [
+      "EntityRegainHealthEvent(Entity,double,RegainReason)",
+      "EntityRegainHealthEvent(Entity,double,RegainReason,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerToggleSprintEvent": [
+      "PlayerToggleSprintEvent(Player,boolean)"
+    ],
+    "org.bukkit.event.block.BellResonateEvent": [
+      "BellResonateEvent(Block,List)"
+    ],
+    "org.bukkit.event.world.EntitiesLoadEvent": [
+      "EntitiesLoadEvent(Chunk,List)"
+    ],
+    "org.bukkit.event.world.SpawnChangeEvent": [
+      "SpawnChangeEvent(World,Location)"
+    ],
+    "org.bukkit.event.player.PlayerItemBreakEvent": [
+      "PlayerItemBreakEvent(Player,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityDropItemEvent": [
+      "EntityDropItemEvent(Entity,Item)"
+    ],
+    "org.bukkit.event.entity.EntityPortalEnterEvent": [
+      "EntityPortalEnterEvent(Entity,Location)"
+    ],
+    "org.bukkit.event.inventory.BrewingStandFuelEvent": [
+      "BrewingStandFuelEvent(Block,ItemStack,int)"
+    ],
+    "io.papermc.paper.datacomponent.item.ShownInTooltip": [
+      "showInTooltip(boolean)",
+      "showInTooltip()"
+    ],
+    "org.bukkit.event.entity.EnderDragonChangePhaseEvent": [
+      "EnderDragonChangePhaseEvent(EnderDragon,Phase,Phase)"
+    ],
+    "org.bukkit.event.world.ChunkUnloadEvent": [
+      "ChunkUnloadEvent(Chunk)",
+      "ChunkUnloadEvent(Chunk,boolean)"
+    ],
+    "org.bukkit.event.inventory.TradeSelectEvent": [
+      "TradeSelectEvent(MerchantView,int)"
+    ],
+    "org.bukkit.event.player.PlayerBedEnterEvent": [
+      "PlayerBedEnterEvent(Player,Block)"
+    ],
+    "org.bukkit.event.player.PlayerFishEvent": [
+      "PlayerFishEvent(Player,Entity,FishHook,EquipmentSlot,State)",
+      "PlayerFishEvent(Player,Entity,FishHook,State)"
+    ],
+    "org.bukkit.event.world.WorldInitEvent": [
+      "WorldInitEvent(World)"
+    ],
+    "org.bukkit.event.player.PlayerRiptideEvent": [
+      "PlayerRiptideEvent(Player,ItemStack)"
+    ],
+    "org.bukkit.event.server.PluginDisableEvent": [
+      "PluginDisableEvent(Plugin)"
+    ],
+    "org.bukkit.event.entity.EntityRemoveEvent": [
+      "EntityRemoveEvent(Entity,Cause)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByEntityEvent": [
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,DamageSource,double)",
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,Map,Map)",
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,double)"
+    ],
+    "org.bukkit.event.player.PlayerJoinEvent": [
+      "PlayerJoinEvent(Player,String)"
+    ],
+    "org.bukkit.event.player.PlayerItemDamageEvent": [
+      "PlayerItemDamageEvent(Player,ItemStack,int)"
+    ],
+    "org.bukkit.event.entity.StriderTemperatureChangeEvent": [
+      "StriderTemperatureChangeEvent(Strider,boolean)"
+    ],
+    "org.bukkit.event.entity.CreatureSpawnEvent": [
+      "CreatureSpawnEvent(LivingEntity,SpawnReason)"
+    ],
+    "org.bukkit.event.player.PlayerShearEntityEvent": [
+      "PlayerShearEntityEvent(Player,Entity)",
+      "what"
+    ],
+    "org.bukkit.event.inventory.SmithItemEvent": [
+      "SmithItemEvent(InventoryView,SlotType,int,ClickType,InventoryAction)",
+      "SmithItemEvent(InventoryView,SlotType,int,ClickType,InventoryAction,int)"
+    ],
+    "org.bukkit.event.inventory.InventoryClickEvent": [
+      "InventoryClickEvent(InventoryView,SlotType,int,ClickType,InventoryAction)",
+      "InventoryClickEvent(InventoryView,SlotType,int,ClickType,InventoryAction,int)",
+      "slot_type"
+    ],
+    "org.bukkit.event.world.AsyncStructureGenerateEvent": [
+      "AsyncStructureGenerateEvent(World,boolean,Cause,Structure,BoundingBox,int,int)"
+    ],
+    "org.bukkit.event.inventory.FurnaceSmeltEvent": [
+      "FurnaceSmeltEvent(Block,ItemStack,ItemStack)"
+    ],
+    "org.bukkit.Sound": [
+      "ENTITY_WOLF_HOWL"
+    ],
+    "org.bukkit.event.entity.ExpBottleEvent": [
+      "ExpBottleEvent(ThrownExpBottle,int)"
+    ],
+    "org.bukkit.event.block.BlockIgniteEvent": [
+      "BlockIgniteEvent(Block,IgniteCause,Block)",
+      "BlockIgniteEvent(Block,IgniteCause,Entity)",
+      "BlockIgniteEvent(Block,IgniteCause,Entity,Block)"
+    ],
+    "io.papermc.paper.datacomponent.item.Unbreakable": [
+      "unbreakable()",
+      "unbreakable(boolean)"
+    ],
+    "org.bukkit.event.block.SpongeAbsorbEvent": [
+      "SpongeAbsorbEvent(Block,List)"
+    ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "PlayerDeathEvent(Player,DamageSource,List,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,int,int,String)",
+      "PlayerDeathEvent(Player,DamageSource,List,int,int,int,int,String,boolean)"
+    ],
+    "org.bukkit.event.inventory.HopperInventorySearchEvent": [
+      "HopperInventorySearchEvent(Inventory,ContainerType,Block,Block)"
+    ],
+    "org.bukkit.event.block.NotePlayEvent": [
+      "NotePlayEvent(Block,Instrument,Note)"
+    ],
+    "io.papermc.paper.datacomponent.DataComponentTypes": [
+      "HIDE_TOOLTIP"
+    ],
+    "org.bukkit.event.player.PlayerInputEvent": [
+      "PlayerInputEvent(Player,Input)"
+    ],
+    "org.bukkit.event.entity.EntityCombustByEntityEvent": [
+      "EntityCombustByEntityEvent(Entity,Entity,int)"
+    ],
+    "org.bukkit.event.entity.TrialSpawnerSpawnEvent": [
+      "TrialSpawnerSpawnEvent(Entity,TrialSpawner)"
+    ],
+    "org.bukkit.event.player.PlayerGameModeChangeEvent": [
+      "PlayerGameModeChangeEvent(Player,GameMode)"
+    ],
+    "org.bukkit.event.player.PlayerItemConsumeEvent": [
+      "PlayerItemConsumeEvent(Player,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityTargetEvent": [
+      "EntityTargetEvent(Entity,Entity,TargetReason)"
+    ],
+    "org.bukkit.event.world.WorldLoadEvent": [
+      "WorldLoadEvent(World)"
+    ],
+    "org.bukkit.event.entity.EntityInteractEvent": [
+      "EntityInteractEvent(Entity,Block)"
+    ],
+    "org.bukkit.event.block.BlockFadeEvent": [
+      "BlockFadeEvent(Block,BlockState)"
+    ],
+    "org.bukkit.event.entity.EntityPickupItemEvent": [
+      "EntityPickupItemEvent(LivingEntity,Item,int)"
+    ],
+    "org.bukkit.event.entity.VillagerAcquireTradeEvent": [
+      "VillagerAcquireTradeEvent(AbstractVillager,MerchantRecipe)"
+    ],
+    "org.bukkit.event.entity.EntityTransformEvent": [
+      "EntityTransformEvent(Entity,List,TransformReason)"
+    ],
+    "org.bukkit.event.entity.EntityDeathEvent": [
+      "EntityDeathEvent(LivingEntity,DamageSource,List)",
+      "EntityDeathEvent(LivingEntity,DamageSource,List,int)"
+    ],
+    "org.bukkit.event.inventory.InventoryMoveItemEvent": [
+      "InventoryMoveItemEvent(Inventory,ItemStack,Inventory,boolean)"
+    ],
+    "org.bukkit.event.block.CampfireStartEvent": [
+      "CampfireStartEvent(Block,ItemStack,CampfireRecipe)"
+    ],
+    "org.bukkit.event.player.PlayerCommandPreprocessEvent": [
+      "PlayerCommandPreprocessEvent(Player,String)",
+      "PlayerCommandPreprocessEvent(Player,String,Set)"
+    ],
+    "org.bukkit.event.entity.SheepRegrowWoolEvent": [
+      "SheepRegrowWoolEvent(Sheep)"
+    ],
+    "org.bukkit.event.player.PlayerPickupArrowEvent": [
+      "PlayerPickupArrowEvent(Player,Item,AbstractArrow)"
+    ],
+    "org.bukkit.event.block.BlockDamageEvent": [
+      "BlockDamageEvent(Player,Block,ItemStack,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent": [
+      "EntityDamageEvent(Entity,DamageCause,DamageSource,Map,Map)",
+      "EntityDamageEvent(Entity,DamageCause,DamageSource,double)",
+      "EntityDamageEvent(Entity,DamageCause,Map,Map)",
+      "EntityDamageEvent(Entity,DamageCause,double)"
+    ],
+    "org.bukkit.event.player.PlayerExpCooldownChangeEvent": [
+      "PlayerExpCooldownChangeEvent(Player,int,ChangeReason)"
+    ],
+    "org.bukkit.event.player.PlayerEditBookEvent": [
+      "PlayerEditBookEvent(Player,int,BookMeta,BookMeta,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerCommandSendEvent": [
+      "PlayerCommandSendEvent(Player,Collection)"
+    ],
+    "org.bukkit.event.block.BlockBreakEvent": [
+      "BlockBreakEvent(Block,Player)"
+    ],
+    "org.bukkit.event.server.BroadcastMessageEvent": [
+      "BroadcastMessageEvent(Component,Set)",
+      "BroadcastMessageEvent(String,Set)",
+      "BroadcastMessageEvent(boolean,String,Set)"
+    ],
+    "org.bukkit.event.player.PlayerDropItemEvent": [
+      "PlayerDropItemEvent(Player,Item)"
+    ],
+    "org.bukkit.event.entity.EntityPotionEffectEvent": [
+      "EntityPotionEffectEvent(LivingEntity,PotionEffect,PotionEffect,Cause,Action,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerItemHeldEvent": [
+      "PlayerItemHeldEvent(Player,int,int)"
+    ],
+    "org.bukkit.inventory.SmithingTrimRecipe": [
+      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice)",
+      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerBucketEmptyEvent": [
+      "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
+      "PlayerBucketEmptyEvent(Player,Block,BlockFace,Material,ItemStack)"
+    ],
+    "org.bukkit.event.entity.EntityDismountEvent": [
+      "EntityDismountEvent(Entity,Entity)",
+      "EntityDismountEvent(Entity,Entity,boolean)"
+    ],
+    "org.bukkit.event.player.PlayerInteractAtEntityEvent": [
+      "PlayerInteractAtEntityEvent(Player,Entity,Vector)",
+      "PlayerInteractAtEntityEvent(Player,Entity,Vector,EquipmentSlot)"
+    ],
+    "org.bukkit.event.block.BlockFertilizeEvent": [
+      "BlockFertilizeEvent(Block,Player,List)"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent": [
+      "PlayerTeleportEvent(Player,Location,Location)",
+      "PlayerTeleportEvent(Player,Location,Location,TeleportCause)",
+      "teleportFlagSet"
+    ],
+    "org.bukkit.event.entity.FoodLevelChangeEvent": [
+      "FoodLevelChangeEvent(HumanEntity,int)",
+      "FoodLevelChangeEvent(HumanEntity,int,ItemStack)"
+    ],
+    "org.bukkit.event.block.BlockDispenseArmorEvent": [
+      "BlockDispenseArmorEvent(Block,ItemStack,LivingEntity)"
+    ],
+    "org.bukkit.event.player.PlayerRecipeDiscoverEvent": [
+      "PlayerRecipeDiscoverEvent(Player,NamespacedKey)"
+    ],
+    "org.bukkit.event.vehicle.VehicleBlockCollisionEvent": [
+      "VehicleBlockCollisionEvent(Vehicle,Block)"
+    ],
+    "org.bukkit.map.MapPalette": [
+      "c(int,int,int)",
+      "c(int,int,int,int)"
+    ],
+    "org.bukkit.event.entity.VillagerReplenishTradeEvent": [
+      "VillagerReplenishTradeEvent(AbstractVillager,MerchantRecipe)"
+    ],
+    "org.bukkit.event.raid.RaidFinishEvent": [
+      "RaidFinishEvent(Raid,World,List)"
+    ],
+    "org.bukkit.event.block.BellRingEvent": [
+      "BellRingEvent(Block,BlockFace,Entity)"
+    ],
+    "org.bukkit.event.player.PlayerChangedWorldEvent": [
+      "PlayerChangedWorldEvent(Player,World)"
+    ]
+  }
+}
