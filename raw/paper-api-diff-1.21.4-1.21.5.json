@@ -826,7 +826,9 @@
     "org.bukkit.inventory.SmithingTrimRecipe": [
       "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,TrimPattern)",
       "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,TrimPattern,boolean)",
-      "getTrimPattern()"
+      "getTrimPattern()",
+      "patternFromMaterial(Material)",
+      "patternFromTemplate(RecipeChoice)"
     ],
     "org.bukkit.entity.Wolf": [
       "getSoundVariant()",
@@ -1723,10 +1725,6 @@
     "org.bukkit.event.player.PlayerItemHeldEvent": [
       "PlayerItemHeldEvent(Player,int,int)"
     ],
-    "org.bukkit.inventory.SmithingTrimRecipe": [
-      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice)",
-      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,boolean)"
-    ],
     "org.bukkit.event.player.PlayerBucketEmptyEvent": [
       "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
       "PlayerBucketEmptyEvent(Player,Block,BlockFace,Material,ItemStack)"
@@ -2622,10 +2620,6 @@
     ],
     "org.bukkit.event.player.PlayerItemHeldEvent": [
       "PlayerItemHeldEvent(Player,int,int)"
-    ],
-    "org.bukkit.inventory.SmithingTrimRecipe": [
-      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice)",
-      "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,boolean)"
     ],
     "org.bukkit.event.player.PlayerBucketEmptyEvent": [
       "PlayerBucketEmptyEvent(Player,Block,Block,BlockFace,Material,ItemStack)",
