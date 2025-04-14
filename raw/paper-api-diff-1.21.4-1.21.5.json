@@ -161,6 +161,8 @@
     "org.spigotmc.event.player"
   ],
   "classesAdded": [
+    "io.papermc.paper.datacomponent.DataComponentHolder",
+    "io.papermc.paper.datacomponent.DataComponentView",
     "io.papermc.paper.datacomponent.item.BlocksAttacks",
     "io.papermc.paper.datacomponent.item.BlocksAttacks.Builder",
     "io.papermc.paper.datacomponent.item.TooltipDisplay",
@@ -219,6 +221,7 @@
     "org.bukkit.Particle",
     "org.bukkit.Sound",
     "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
     "org.bukkit.block.BlockType",
     "org.bukkit.block.data.type.CaveVinesPlant",
     "org.bukkit.block.data.type.CreakingHeart",
@@ -680,6 +683,10 @@
     "io.papermc.paper.datacomponent.item.Weapon.Builder": [
       "disableBlockingForSeconds(float)",
       "itemDamagePerAttack(int)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "deserializeStack(Map)",
+      "serializeStack(ItemStack)"
     ],
     "org.bukkit.event.entity.PigZapEvent": [
       "zombifiedPiglin"
@@ -1385,6 +1392,11 @@
     ],
     "org.bukkit.event.block.BlockPlaceEvent": [
       "BlockPlaceEvent(Block,BlockState,Block,ItemStack,Player,boolean)"
+    ],
+    "org.bukkit.Material": [
+      "Material(int,int,int)",
+      "Material(int,int,int,Class)",
+      "durability"
     ],
     "org.bukkit.event.block.BlockPhysicsEvent": [
       "BlockPhysicsEvent(Block,BlockData,int,int,int)"
@@ -2281,6 +2293,11 @@
     ],
     "org.bukkit.event.block.BlockPlaceEvent": [
       "BlockPlaceEvent(Block,BlockState,Block,ItemStack,Player,boolean)"
+    ],
+    "org.bukkit.Material": [
+      "Material(int,int,int)",
+      "Material(int,int,int,Class)",
+      "durability"
     ],
     "org.bukkit.event.block.BlockPhysicsEvent": [
       "BlockPhysicsEvent(Block,BlockData,int,int,int)"
