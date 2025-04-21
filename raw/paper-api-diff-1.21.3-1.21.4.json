@@ -556,6 +556,10 @@
       "isTimeout()",
       "timeout"
     ],
+    "org.bukkit.event.player.PlayerRespawnEvent": [
+      "isMissingRespawnBlock()",
+      "missingRespawnBlock"
+    ],
     "io.papermc.paper.event.entity.EntityEquipmentChangedEvent": [
       "equipmentChanges",
       "getEquipmentChanges()"

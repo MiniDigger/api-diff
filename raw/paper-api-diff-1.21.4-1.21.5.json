@@ -222,6 +222,8 @@
     "org.bukkit.Sound",
     "org.bukkit.Tag",
     "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.WorldCreator",
     "org.bukkit.block.BlockType",
     "org.bukkit.block.data.type.CaveVinesPlant",
     "org.bukkit.block.data.type.CreakingHeart",
@@ -230,6 +232,7 @@
     "org.bukkit.block.data.type.PinkPetals",
     "org.bukkit.block.data.type.SculkSensor",
     "org.bukkit.block.data.type.Switch",
+    "org.bukkit.configuration.serialization.ConfigurationSerializable",
     "org.bukkit.entity.Chicken",
     "org.bukkit.entity.Cow",
     "org.bukkit.entity.Entity",
@@ -507,6 +510,7 @@
     "org.bukkit.inventory.ItemFlag",
     "org.bukkit.inventory.ItemType",
     "org.bukkit.inventory.SmithingTrimRecipe",
+    "org.bukkit.inventory.meta.ItemMeta",
     "org.bukkit.inventory.meta.components.EquippableComponent",
     "org.bukkit.map.MapCursor.Type",
     "org.bukkit.map.MapPalette",
@@ -516,6 +520,156 @@
   "membersAdded": {
     "io.papermc.paper.datacomponent.item.Equippable.Builder": [
       "equipOnInteract(boolean)"
+    ],
+    "org.bukkit.EntityEffect": [
+      "BREAK_EQUIPMENT_SADDLE",
+      "DROWN_PARTICLES"
+    ],
+    "io.papermc.paper.registry.keys.PigVariantKeys": [
+      "PigVariantKeys()"
+    ],
+    "org.bukkit.event.Event": [
+      "isAsync"
+    ],
+    "io.papermc.paper.datacomponent.item.ItemEnchantments": [
+      "itemEnchantments(Map)"
+    ],
+    "io.papermc.paper.datacomponent.item.TooltipDisplay": [
+      "hiddenComponents()",
+      "hideTooltip()",
+      "tooltipDisplay()"
+    ],
+    "org.bukkit.block.data.type.TestBlock.Mode": [
+      "ACCEPT",
+      "FAIL",
+      "LOG"
+    ],
+    "io.papermc.paper.datacomponent.item.Weapon.Builder": [
+      "disableBlockingForSeconds(float)",
+      "itemDamagePerAttack(int)"
+    ],
+    "org.bukkit.World": [
+      "hasBonusChest()"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "deserializeStack(Map)",
+      "serializeStack(ItemStack)"
+    ],
+    "org.bukkit.event.entity.PigZapEvent": [
+      "zombifiedPiglin"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "BOOK_CLONING_TARGET",
+      "EGGS"
+    ],
+    "io.papermc.paper.datacomponent.item.Weapon": [
+      "disableBlockingForSeconds()",
+      "itemDamagePerAttack()",
+      "weapon()"
+    ],
+    "io.papermc.paper.registry.keys.CowVariantKeys": [
+      "CowVariantKeys()"
+    ],
+    "io.papermc.paper.datacomponent.item.TooltipDisplay.Builder": [
+      "addHiddenComponents(DataComponentType...)",
+      "hiddenComponents(Set)",
+      "hideTooltip(boolean)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "isTrackedBy(Player)"
+    ],
+    "org.bukkit.block.data.type.CreakingHeart": [
+      "getCreakingHeartState()",
+      "setCreakingHeartState(State)"
+    ],
+    "io.papermc.paper.registry.keys.WolfSoundVariantKeys": [
+      "WolfSoundVariantKeys()"
+    ],
+    "org.bukkit.block.data.type.Lectern": [
+      "setHasBook(boolean)"
+    ],
+    "io.papermc.paper.datacomponent.item.BlocksAttacks": [
+      "blockDelaySeconds()",
+      "blockSound()",
+      "blocksAttacks()",
+      "bypassedBy()",
+      "disableCooldownScale()",
+      "disableSound()"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_CACTUS_FLOWER_BREAK",
+      "BLOCK_CACTUS_FLOWER_PLACE",
+      "BLOCK_DEADBUSH_IDLE",
+      "BLOCK_FIREFLY_BUSH_IDLE",
+      "BLOCK_IRON_BREAK",
+      "BLOCK_IRON_FALL",
+      "BLOCK_IRON_HIT",
+      "BLOCK_IRON_PLACE",
+      "BLOCK_IRON_STEP",
+      "BLOCK_LEAF_LITTER_BREAK",
+      "BLOCK_LEAF_LITTER_FALL",
+      "BLOCK_LEAF_LITTER_HIT",
+      "BLOCK_LEAF_LITTER_PLACE",
+      "BLOCK_LEAF_LITTER_STEP",
+      "BLOCK_SAND_IDLE",
+      "BLOCK_SAND_WIND",
+      "ENTITY_WOLF_ANGRY_AMBIENT",
+      "ENTITY_WOLF_ANGRY_DEATH",
+      "ENTITY_WOLF_ANGRY_GROWL",
+      "ENTITY_WOLF_ANGRY_HURT",
+      "ENTITY_WOLF_ANGRY_PANT",
+      "ENTITY_WOLF_ANGRY_WHINE",
+      "ENTITY_WOLF_BIG_AMBIENT",
+      "ENTITY_WOLF_BIG_DEATH",
+      "ENTITY_WOLF_BIG_GROWL",
+      "ENTITY_WOLF_BIG_HURT",
+      "ENTITY_WOLF_BIG_PANT",
+      "ENTITY_WOLF_BIG_WHINE",
+      "ENTITY_WOLF_CUTE_AMBIENT",
+      "ENTITY_WOLF_CUTE_DEATH",
+      "ENTITY_WOLF_CUTE_GROWL",
+      "ENTITY_WOLF_CUTE_HURT",
+      "ENTITY_WOLF_CUTE_PANT",
+      "ENTITY_WOLF_CUTE_WHINE",
+      "ENTITY_WOLF_GRUMPY_AMBIENT",
+      "ENTITY_WOLF_GRUMPY_DEATH",
+      "ENTITY_WOLF_GRUMPY_GROWL",
+      "ENTITY_WOLF_GRUMPY_HURT",
+      "ENTITY_WOLF_GRUMPY_PANT",
+      "ENTITY_WOLF_GRUMPY_WHINE",
+      "ENTITY_WOLF_PUGLIN_AMBIENT",
+      "ENTITY_WOLF_PUGLIN_DEATH",
+      "ENTITY_WOLF_PUGLIN_GROWL",
+      "ENTITY_WOLF_PUGLIN_HURT",
+      "ENTITY_WOLF_PUGLIN_PANT",
+      "ENTITY_WOLF_PUGLIN_WHINE",
+      "ENTITY_WOLF_SAD_AMBIENT",
+      "ENTITY_WOLF_SAD_DEATH",
+      "ENTITY_WOLF_SAD_GROWL",
+      "ENTITY_WOLF_SAD_HURT",
+      "ENTITY_WOLF_SAD_PANT",
+      "ENTITY_WOLF_SAD_WHINE"
+    ],
+    "io.papermc.paper.datacomponent.item.Equippable": [
+      "equipOnInteract()"
+    ],
+    "org.bukkit.entity.Wolf": [
+      "getSoundVariant()",
+      "setSoundVariant(SoundVariant)"
+    ],
+    "io.papermc.paper.datacomponent.item.BlocksAttacks.Builder": [
+      "blockDelaySeconds(float)",
+      "blockSound(Key)",
+      "bypassedBy(TagKey)",
+      "disableCooldownScale(float)",
+      "disableSound(Key)"
+    ],
+    "io.papermc.paper.datacomponent.item.Tool.Builder": [
+      "canDestroyBlocksInCreative(boolean)"
+    ],
+    "org.bukkit.GameRule": [
+      "ALLOW_FIRE_TICKS_AWAY_FROM_PLAYER",
+      "TNT_EXPLODES"
     ],
     "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
       "AXOLOTL_VARIANT",
@@ -556,10 +710,6 @@
     ],
     "org.bukkit.event.weather.ThunderChangeEvent": [
       "newThunderState"
-    ],
-    "org.bukkit.EntityEffect": [
-      "BREAK_EQUIPMENT_SADDLE",
-      "DROWN_PARTICLES"
     ],
     "org.bukkit.Tag": [
       "CAMELS_SPAWNABLE_ON",
@@ -644,33 +794,22 @@
       "ITEMS_WOOL",
       "ITEMS_WOOL_CARPETS"
     ],
-    "io.papermc.paper.registry.keys.PigVariantKeys": [
-      "PigVariantKeys()"
-    ],
-    "org.bukkit.event.Event": [
-      "isAsync"
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "hasCustomModelDataComponent()"
     ],
     "io.papermc.paper.registry.keys.ChickenVariantKeys": [
       "ChickenVariantKeys()"
     ],
-    "io.papermc.paper.datacomponent.item.ItemEnchantments": [
-      "itemEnchantments(Map)"
-    ],
     "org.bukkit.event.weather.WeatherChangeEvent": [
       "newWeatherState"
     ],
+    "org.bukkit.WorldCreator": [
+      "bonusChest",
+      "bonusChest()",
+      "bonusChest(boolean)"
+    ],
     "org.bukkit.block.data.type.CaveVinesPlant": [
       "hasBerries()"
-    ],
-    "io.papermc.paper.datacomponent.item.TooltipDisplay": [
-      "hiddenComponents()",
-      "hideTooltip()",
-      "tooltipDisplay()"
-    ],
-    "org.bukkit.block.data.type.TestBlock.Mode": [
-      "ACCEPT",
-      "FAIL",
-      "LOG"
     ],
     "org.bukkit.entity.Wolf.SoundVariant": [
       "BIG",
@@ -680,43 +819,15 @@
       "SAD",
       "getSoundVariant(String)"
     ],
-    "io.papermc.paper.datacomponent.item.Weapon.Builder": [
-      "disableBlockingForSeconds(float)",
-      "itemDamagePerAttack(int)"
-    ],
-    "org.bukkit.UnsafeValues": [
-      "deserializeStack(Map)",
-      "serializeStack(ItemStack)"
-    ],
-    "org.bukkit.event.entity.PigZapEvent": [
-      "zombifiedPiglin"
-    ],
     "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
       "SPAWNS_COLD_VARIANT_FARM_ANIMALS",
       "SPAWNS_WARM_VARIANT_FARM_ANIMALS"
-    ],
-    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
-      "BOOK_CLONING_TARGET",
-      "EGGS"
     ],
     "io.papermc.paper.datacomponent.item.Tool": [
       "canDestroyBlocksInCreative()"
     ],
     "org.bukkit.block.data.type.Jukebox": [
       "setHasRecord(boolean)"
-    ],
-    "io.papermc.paper.datacomponent.item.Weapon": [
-      "disableBlockingForSeconds()",
-      "itemDamagePerAttack()",
-      "weapon()"
-    ],
-    "io.papermc.paper.registry.keys.CowVariantKeys": [
-      "CowVariantKeys()"
-    ],
-    "io.papermc.paper.datacomponent.item.TooltipDisplay.Builder": [
-      "addHiddenComponents(DataComponentType...)",
-      "hiddenComponents(Set)",
-      "hideTooltip(boolean)"
     ],
     "org.bukkit.block.data.Segmentable": [
       "getMaximumSegmentAmount()",
@@ -742,81 +853,6 @@
       "VISIBLE_ADULT_HOGLIN_COUNT",
       "VISIBLE_ADULT_PIGLIN_COUNT"
     ],
-    "org.bukkit.block.data.type.CreakingHeart": [
-      "getCreakingHeartState()",
-      "setCreakingHeartState(State)"
-    ],
-    "io.papermc.paper.registry.keys.WolfSoundVariantKeys": [
-      "WolfSoundVariantKeys()"
-    ],
-    "org.bukkit.block.data.type.Lectern": [
-      "setHasBook(boolean)"
-    ],
-    "io.papermc.paper.datacomponent.item.BlocksAttacks": [
-      "blockDelaySeconds()",
-      "blockSound()",
-      "blocksAttacks()",
-      "bypassedBy()",
-      "disableCooldownScale()",
-      "disableSound()"
-    ],
-    "org.bukkit.Sound": [
-      "BLOCK_CACTUS_FLOWER_BREAK",
-      "BLOCK_CACTUS_FLOWER_PLACE",
-      "BLOCK_DEADBUSH_IDLE",
-      "BLOCK_FIREFLY_BUSH_IDLE",
-      "BLOCK_IRON_BREAK",
-      "BLOCK_IRON_FALL",
-      "BLOCK_IRON_HIT",
-      "BLOCK_IRON_PLACE",
-      "BLOCK_IRON_STEP",
-      "BLOCK_LEAF_LITTER_BREAK",
-      "BLOCK_LEAF_LITTER_FALL",
-      "BLOCK_LEAF_LITTER_HIT",
-      "BLOCK_LEAF_LITTER_PLACE",
-      "BLOCK_LEAF_LITTER_STEP",
-      "BLOCK_SAND_IDLE",
-      "BLOCK_SAND_WIND",
-      "ENTITY_WOLF_ANGRY_AMBIENT",
-      "ENTITY_WOLF_ANGRY_DEATH",
-      "ENTITY_WOLF_ANGRY_GROWL",
-      "ENTITY_WOLF_ANGRY_HURT",
-      "ENTITY_WOLF_ANGRY_PANT",
-      "ENTITY_WOLF_ANGRY_WHINE",
-      "ENTITY_WOLF_BIG_AMBIENT",
-      "ENTITY_WOLF_BIG_DEATH",
-      "ENTITY_WOLF_BIG_GROWL",
-      "ENTITY_WOLF_BIG_HURT",
-      "ENTITY_WOLF_BIG_PANT",
-      "ENTITY_WOLF_BIG_WHINE",
-      "ENTITY_WOLF_CUTE_AMBIENT",
-      "ENTITY_WOLF_CUTE_DEATH",
-      "ENTITY_WOLF_CUTE_GROWL",
-      "ENTITY_WOLF_CUTE_HURT",
-      "ENTITY_WOLF_CUTE_PANT",
-      "ENTITY_WOLF_CUTE_WHINE",
-      "ENTITY_WOLF_GRUMPY_AMBIENT",
-      "ENTITY_WOLF_GRUMPY_DEATH",
-      "ENTITY_WOLF_GRUMPY_GROWL",
-      "ENTITY_WOLF_GRUMPY_HURT",
-      "ENTITY_WOLF_GRUMPY_PANT",
-      "ENTITY_WOLF_GRUMPY_WHINE",
-      "ENTITY_WOLF_PUGLIN_AMBIENT",
-      "ENTITY_WOLF_PUGLIN_DEATH",
-      "ENTITY_WOLF_PUGLIN_GROWL",
-      "ENTITY_WOLF_PUGLIN_HURT",
-      "ENTITY_WOLF_PUGLIN_PANT",
-      "ENTITY_WOLF_PUGLIN_WHINE",
-      "ENTITY_WOLF_SAD_AMBIENT",
-      "ENTITY_WOLF_SAD_DEATH",
-      "ENTITY_WOLF_SAD_GROWL",
-      "ENTITY_WOLF_SAD_HURT",
-      "ENTITY_WOLF_SAD_PANT",
-      "ENTITY_WOLF_SAD_WHINE"
-    ],
-    "io.papermc.paper.datacomponent.item.Equippable": [
-      "equipOnInteract()"
-    ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "CAN_EQUIP_SADDLE",
       "CAN_WEAR_HORSE_ARMOR"
@@ -836,17 +872,6 @@
       "getTrimPattern()",
       "patternFromMaterial(Material)",
       "patternFromTemplate(RecipeChoice)"
-    ],
-    "org.bukkit.entity.Wolf": [
-      "getSoundVariant()",
-      "setSoundVariant(SoundVariant)"
-    ],
-    "io.papermc.paper.datacomponent.item.BlocksAttacks.Builder": [
-      "blockDelaySeconds(float)",
-      "blockSound(Key)",
-      "bypassedBy(TagKey)",
-      "disableCooldownScale(float)",
-      "disableSound(Key)"
     ],
     "org.bukkit.event.player.PlayerTeleportEvent": [
       "teleportFlags"
@@ -874,16 +899,9 @@
       "BLUE_EGG",
       "BROWN_EGG"
     ],
-    "io.papermc.paper.datacomponent.item.Tool.Builder": [
-      "canDestroyBlocksInCreative(boolean)"
-    ],
     "org.bukkit.inventory.meta.components.EquippableComponent": [
       "isEquipOnInteract()",
       "setEquipOnInteract(boolean)"
-    ],
-    "org.bukkit.GameRule": [
-      "ALLOW_FIRE_TICKS_AWAY_FROM_PLAYER",
-      "TNT_EXPLODES"
     ]
   },
   "membersRemoved": {
