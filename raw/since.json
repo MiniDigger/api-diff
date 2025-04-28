@@ -452,6 +452,7 @@
     "io.papermc.paper.event.block.DragonEggFormEvent": "1.16.5",
     "io.papermc.paper.event.block.PlayerShearBlockEvent": "1.16.4",
     "io.papermc.paper.event.block.TargetHitEvent": "1.16.4",
+    "io.papermc.paper.event.block.VaultChangeStateEvent": "1.21.5",
     "io.papermc.paper.event.entity.ElderGuardianAppearanceEvent": "1.16.5",
     "io.papermc.paper.event.entity.EntityAttemptSmashAttackEvent": "1.21.4",
     "io.papermc.paper.event.entity.EntityCompostItemEvent": "1.19.3",

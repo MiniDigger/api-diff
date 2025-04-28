@@ -169,6 +169,7 @@
     "io.papermc.paper.datacomponent.item.TooltipDisplay.Builder",
     "io.papermc.paper.datacomponent.item.Weapon",
     "io.papermc.paper.datacomponent.item.Weapon.Builder",
+    "io.papermc.paper.event.block.VaultChangeStateEvent",
     "io.papermc.paper.registry.keys.ChickenVariantKeys",
     "io.papermc.paper.registry.keys.CowVariantKeys",
     "io.papermc.paper.registry.keys.DataComponentTypeKeys",
@@ -219,11 +220,14 @@
     "org.bukkit.GameRule",
     "org.bukkit.Material",
     "org.bukkit.Particle",
+    "org.bukkit.Registry",
     "org.bukkit.Sound",
     "org.bukkit.Tag",
     "org.bukkit.UnsafeValues",
     "org.bukkit.World",
     "org.bukkit.WorldCreator",
+    "org.bukkit.block.Block",
+    "org.bukkit.block.BlockState",
     "org.bukkit.block.BlockType",
     "org.bukkit.block.data.type.CaveVinesPlant",
     "org.bukkit.block.data.type.CreakingHeart",
@@ -237,6 +241,8 @@
     "org.bukkit.entity.Cow",
     "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.FishHook",
+    "org.bukkit.entity.HumanEntity",
     "org.bukkit.entity.LivingEntity",
     "org.bukkit.entity.Pig",
     "org.bukkit.entity.Player",
@@ -664,8 +670,14 @@
       "disableCooldownScale(float)",
       "disableSound(Key)"
     ],
+    "org.bukkit.entity.FishHook": [
+      "retrieve(EquipmentSlot)"
+    ],
     "io.papermc.paper.datacomponent.item.Tool.Builder": [
       "canDestroyBlocksInCreative(boolean)"
+    ],
+    "org.bukkit.Registry": [
+      "keyStream()"
     ],
     "org.bukkit.GameRule": [
       "ALLOW_FIRE_TICKS_AWAY_FROM_PLAYER",
@@ -829,6 +841,10 @@
     "org.bukkit.block.data.type.Jukebox": [
       "setHasRecord(boolean)"
     ],
+    "org.bukkit.entity.HumanEntity": [
+      "getCooldown(Key)",
+      "setCooldown(Key,int)"
+    ],
     "org.bukkit.block.data.Segmentable": [
       "getMaximumSegmentAmount()",
       "getMinimumSegmentAmount()",
@@ -853,6 +869,9 @@
       "VISIBLE_ADULT_HOGLIN_COUNT",
       "VISIBLE_ADULT_PIGLIN_COUNT"
     ],
+    "org.bukkit.block.BlockState": [
+      "isSuffocating()"
+    ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "CAN_EQUIP_SADDLE",
       "CAN_WEAR_HORSE_ARMOR"
@@ -865,6 +884,10 @@
     "org.bukkit.Particle": [
       "FIREFLY",
       "TINTED_LEAVES"
+    ],
+    "io.papermc.paper.event.block.VaultChangeStateEvent": [
+      "currentState",
+      "getCurrentState()"
     ],
     "org.bukkit.inventory.SmithingTrimRecipe": [
       "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,TrimPattern)",
