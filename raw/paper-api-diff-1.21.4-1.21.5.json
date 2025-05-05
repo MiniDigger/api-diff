@@ -1,7 +1,10 @@
 {
   "versionA": "1.21.4",
   "versionB": "1.21.5",
-  "packagesAdded": [],
+  "packagesAdded": [
+    "io.papermc.paper.configuration",
+    "io.papermc.paper.world.damagesource"
+  ],
   "packagesRemoved": [],
   "packagesChanged": [
     "com.destroystokyo.paper",
@@ -161,6 +164,7 @@
     "org.spigotmc.event.player"
   ],
   "classesAdded": [
+    "io.papermc.paper.configuration.ServerConfiguration",
     "io.papermc.paper.datacomponent.DataComponentHolder",
     "io.papermc.paper.datacomponent.DataComponentView",
     "io.papermc.paper.datacomponent.item.BlocksAttacks",
@@ -170,11 +174,18 @@
     "io.papermc.paper.datacomponent.item.Weapon",
     "io.papermc.paper.datacomponent.item.Weapon.Builder",
     "io.papermc.paper.event.block.VaultChangeStateEvent",
+    "io.papermc.paper.event.player.AbstractRespawnEvent",
+    "io.papermc.paper.event.player.PlayerPickBlockEvent",
+    "io.papermc.paper.event.player.PlayerPickEntityEvent",
     "io.papermc.paper.registry.keys.ChickenVariantKeys",
     "io.papermc.paper.registry.keys.CowVariantKeys",
     "io.papermc.paper.registry.keys.DataComponentTypeKeys",
     "io.papermc.paper.registry.keys.PigVariantKeys",
     "io.papermc.paper.registry.keys.WolfSoundVariantKeys",
+    "io.papermc.paper.world.damagesource.CombatEntry",
+    "io.papermc.paper.world.damagesource.CombatTracker",
+    "io.papermc.paper.world.damagesource.FallLocationType",
+    "io.papermc.paper.world.damagesource.FallLocationTypeImpl",
     "org.bukkit.block.Orientation",
     "org.bukkit.block.TestBlock",
     "org.bukkit.block.TestInstanceBlock",
@@ -185,6 +196,7 @@
     "org.bukkit.block.data.type.TestBlock",
     "org.bukkit.block.data.type.TestBlock.Mode",
     "org.bukkit.entity.AbstractCow",
+    "org.bukkit.entity.Armadillo.State",
     "org.bukkit.entity.Chicken.Variant",
     "org.bukkit.entity.Cow.Variant",
     "org.bukkit.entity.Pig.Variant",
@@ -198,15 +210,18 @@
     "io.papermc.paper.registry.keys.tags.CatVariantTagKeys"
   ],
   "classesChanged": [
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.datacomponent.item.DyedItemColor",
     "io.papermc.paper.datacomponent.item.Equippable",
     "io.papermc.paper.datacomponent.item.Equippable.Builder",
     "io.papermc.paper.datacomponent.item.ItemArmorTrim",
     "io.papermc.paper.datacomponent.item.ItemEnchantments",
+    "io.papermc.paper.datacomponent.item.PotionContents",
     "io.papermc.paper.datacomponent.item.Tool",
     "io.papermc.paper.datacomponent.item.Tool.Builder",
     "io.papermc.paper.event.entity.EntityFertilizeEggEvent",
+    "io.papermc.paper.event.player.PlayerPickItemEvent",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.keys.BlockTypeKeys",
     "io.papermc.paper.registry.keys.ItemTypeKeys",
@@ -216,11 +231,14 @@
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.StructureTagKeys",
+    "org.bukkit.Bukkit",
     "org.bukkit.EntityEffect",
     "org.bukkit.GameRule",
     "org.bukkit.Material",
+    "org.bukkit.OfflinePlayer",
     "org.bukkit.Particle",
     "org.bukkit.Registry",
+    "org.bukkit.Server",
     "org.bukkit.Sound",
     "org.bukkit.Tag",
     "org.bukkit.UnsafeValues",
@@ -237,6 +255,7 @@
     "org.bukkit.block.data.type.SculkSensor",
     "org.bukkit.block.data.type.Switch",
     "org.bukkit.configuration.serialization.ConfigurationSerializable",
+    "org.bukkit.entity.Armadillo",
     "org.bukkit.entity.Chicken",
     "org.bukkit.entity.Cow",
     "org.bukkit.entity.Entity",
@@ -513,10 +532,12 @@
     "org.bukkit.event.world.WorldUnloadEvent",
     "org.bukkit.inventory.EquipmentSlot",
     "org.bukkit.inventory.EquipmentSlotGroup",
+    "org.bukkit.inventory.InventoryView",
     "org.bukkit.inventory.ItemFlag",
     "org.bukkit.inventory.ItemType",
     "org.bukkit.inventory.SmithingTrimRecipe",
     "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.PotionMeta",
     "org.bukkit.inventory.meta.components.EquippableComponent",
     "org.bukkit.map.MapCursor.Type",
     "org.bukkit.map.MapPalette",
@@ -531,6 +552,10 @@
       "BREAK_EQUIPMENT_SADDLE",
       "DROWN_PARTICLES"
     ],
+    "io.papermc.paper.world.damagesource.FallLocationType": [
+      "OTHER_CLIMBABLE",
+      "VINES"
+    ],
     "io.papermc.paper.registry.keys.PigVariantKeys": [
       "PigVariantKeys()"
     ],
@@ -539,6 +564,9 @@
     ],
     "io.papermc.paper.datacomponent.item.ItemEnchantments": [
       "itemEnchantments(Map)"
+    ],
+    "io.papermc.paper.world.damagesource.FallLocationTypeImpl": [
+      "FallLocationTypeImpl(String)"
     ],
     "io.papermc.paper.datacomponent.item.TooltipDisplay": [
       "hiddenComponents()",
@@ -553,6 +581,10 @@
     "io.papermc.paper.datacomponent.item.Weapon.Builder": [
       "disableBlockingForSeconds(float)",
       "itemDamagePerAttack(int)"
+    ],
+    "org.bukkit.entity.Armadillo": [
+      "rollOut()",
+      "rollUp()"
     ],
     "org.bukkit.World": [
       "hasBonusChest()"
@@ -584,6 +616,11 @@
     "org.bukkit.entity.Entity": [
       "isTrackedBy(Player)"
     ],
+    "io.papermc.paper.world.damagesource.CombatEntry": [
+      "combatEntry(DamageSource,float,FallLocationType,float)",
+      "combatEntry(LivingEntity,DamageSource,float)",
+      "getFallLocationType()"
+    ],
     "org.bukkit.block.data.type.CreakingHeart": [
       "getCreakingHeartState()",
       "setCreakingHeartState(State)"
@@ -593,6 +630,9 @@
     ],
     "org.bukkit.block.data.type.Lectern": [
       "setHasBook(boolean)"
+    ],
+    "io.papermc.paper.event.player.AbstractRespawnEvent": [
+      "AbstractRespawnEvent(Player,Location,boolean,boolean,boolean,RespawnReason)"
     ],
     "io.papermc.paper.datacomponent.item.BlocksAttacks": [
       "blockDelaySeconds()",
@@ -658,6 +698,15 @@
     ],
     "io.papermc.paper.datacomponent.item.Equippable": [
       "equipOnInteract()"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getCombatTracker()"
+    ],
+    "org.bukkit.OfflinePlayer": [
+      "getRespawnLocation(boolean)"
+    ],
+    "org.bukkit.event.entity.LingeringPotionSplashEvent": [
+      "effectCloud"
     ],
     "org.bukkit.entity.Wolf": [
       "getSoundVariant()",
@@ -812,6 +861,11 @@
     "io.papermc.paper.registry.keys.ChickenVariantKeys": [
       "ChickenVariantKeys()"
     ],
+    "org.bukkit.entity.Armadillo.State": [
+      "ROLLING",
+      "SCARED",
+      "UNROLLING"
+    ],
     "org.bukkit.event.weather.WeatherChangeEvent": [
       "newWeatherState"
     ],
@@ -823,6 +877,9 @@
     "org.bukkit.block.data.type.CaveVinesPlant": [
       "hasBerries()"
     ],
+    "io.papermc.paper.configuration.ServerConfiguration": [
+      "isProxyOnlineMode()"
+    ],
     "org.bukkit.entity.Wolf.SoundVariant": [
       "BIG",
       "CUTE",
@@ -831,9 +888,16 @@
       "SAD",
       "getSoundVariant(String)"
     ],
+    "org.bukkit.Server": [
+      "getServerConfig()"
+    ],
     "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
       "SPAWNS_COLD_VARIANT_FARM_ANIMALS",
       "SPAWNS_WARM_VARIANT_FARM_ANIMALS"
+    ],
+    "org.bukkit.inventory.meta.PotionMeta": [
+      "computeEffectiveColor()",
+      "getAllEffects()"
     ],
     "io.papermc.paper.datacomponent.item.Tool": [
       "canDestroyBlocksInCreative()"
@@ -876,10 +940,24 @@
       "CAN_EQUIP_SADDLE",
       "CAN_WEAR_HORSE_ARMOR"
     ],
+    "io.papermc.paper.datacomponent.item.PotionContents": [
+      "allEffects()"
+    ],
     "org.bukkit.block.data.type.CreakingHeart.State": [
       "AWAKE",
       "DORMANT",
       "UPROOTED"
+    ],
+    "io.papermc.paper.world.damagesource.CombatTracker": [
+      "addCombatEntry(CombatEntry)",
+      "calculateFallLocationType()",
+      "computeMostSignificantFall()",
+      "getCombatDuration()",
+      "getCombatEntries()",
+      "isInCombat()",
+      "isTakingDamage()",
+      "resetCombatState()",
+      "setCombatEntries(List)"
     ],
     "org.bukkit.Particle": [
       "FIREFLY",
@@ -888,6 +966,10 @@
     "io.papermc.paper.event.block.VaultChangeStateEvent": [
       "currentState",
       "getCurrentState()"
+    ],
+    "io.papermc.paper.event.player.PlayerPickItemEvent": [
+      "includeData",
+      "isIncludeData()"
     ],
     "org.bukkit.inventory.SmithingTrimRecipe": [
       "SmithingTrimRecipe(NamespacedKey,RecipeChoice,RecipeChoice,RecipeChoice,TrimPattern)",
@@ -1205,6 +1287,9 @@
     ],
     "org.bukkit.event.entity.EntityAirChangeEvent": [
       "EntityAirChangeEvent(Entity,int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent": [
+      "respawnedLocation"
     ],
     "org.bukkit.event.block.FluidLevelChangeEvent": [
       "FluidLevelChangeEvent(Block,BlockData)"
@@ -2106,6 +2191,9 @@
     ],
     "org.bukkit.event.entity.EntityAirChangeEvent": [
       "EntityAirChangeEvent(Entity,int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent": [
+      "respawnedLocation"
     ],
     "org.bukkit.event.block.FluidLevelChangeEvent": [
       "FluidLevelChangeEvent(Block,BlockData)"
