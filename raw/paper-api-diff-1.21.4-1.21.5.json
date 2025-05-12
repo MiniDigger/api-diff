@@ -3,6 +3,7 @@
   "versionB": "1.21.5",
   "packagesAdded": [
     "io.papermc.paper.configuration",
+    "io.papermc.paper.registry.data.client",
     "io.papermc.paper.world.damagesource"
   ],
   "packagesRemoved": [],
@@ -177,6 +178,23 @@
     "io.papermc.paper.event.player.AbstractRespawnEvent",
     "io.papermc.paper.event.player.PlayerPickBlockEvent",
     "io.papermc.paper.event.player.PlayerPickEntityEvent",
+    "io.papermc.paper.registry.data.CatTypeRegistryEntry",
+    "io.papermc.paper.registry.data.CatTypeRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.ChickenVariantRegistryEntry",
+    "io.papermc.paper.registry.data.ChickenVariantRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.ChickenVariantRegistryEntry.Model",
+    "io.papermc.paper.registry.data.CowVariantRegistryEntry",
+    "io.papermc.paper.registry.data.CowVariantRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.CowVariantRegistryEntry.Model",
+    "io.papermc.paper.registry.data.FrogVariantRegistryEntry",
+    "io.papermc.paper.registry.data.FrogVariantRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.PigVariantRegistryEntry",
+    "io.papermc.paper.registry.data.PigVariantRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.PigVariantRegistryEntry.Model",
+    "io.papermc.paper.registry.data.WolfVariantRegistryEntry",
+    "io.papermc.paper.registry.data.WolfVariantRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.client.ClientTextureAsset",
+    "io.papermc.paper.registry.data.client.ClientTextureAssetImpl",
     "io.papermc.paper.registry.keys.ChickenVariantKeys",
     "io.papermc.paper.registry.keys.CowVariantKeys",
     "io.papermc.paper.registry.keys.DataComponentTypeKeys",
@@ -223,6 +241,7 @@
     "io.papermc.paper.event.entity.EntityFertilizeEggEvent",
     "io.papermc.paper.event.player.PlayerPickItemEvent",
     "io.papermc.paper.registry.RegistryKey",
+    "io.papermc.paper.registry.event.RegistryEvents",
     "io.papermc.paper.registry.keys.BlockTypeKeys",
     "io.papermc.paper.registry.keys.ItemTypeKeys",
     "io.papermc.paper.registry.keys.SoundEventKeys",
@@ -614,12 +633,19 @@
       "hideTooltip(boolean)"
     ],
     "org.bukkit.entity.Entity": [
-      "isTrackedBy(Player)"
+      "getVisualFire()",
+      "isTrackedBy(Player)",
+      "setVisualFire(TriState)"
     ],
     "io.papermc.paper.world.damagesource.CombatEntry": [
       "combatEntry(DamageSource,float,FallLocationType,float)",
       "combatEntry(LivingEntity,DamageSource,float)",
       "getFallLocationType()"
+    ],
+    "io.papermc.paper.registry.data.WolfVariantRegistryEntry.Builder": [
+      "angryClientTextureAsset(ClientTextureAsset)",
+      "tameClientTextureAsset(ClientTextureAsset)",
+      "wildClientTextureAsset(ClientTextureAsset)"
     ],
     "org.bukkit.block.data.type.CreakingHeart": [
       "getCreakingHeartState()",
@@ -630,6 +656,10 @@
     ],
     "org.bukkit.block.data.type.Lectern": [
       "setHasBook(boolean)"
+    ],
+    "io.papermc.paper.registry.data.PigVariantRegistryEntry": [
+      "clientTextureAsset()",
+      "model()"
     ],
     "io.papermc.paper.event.player.AbstractRespawnEvent": [
       "AbstractRespawnEvent(Player,Location,boolean,boolean,boolean,RespawnReason)"
@@ -705,12 +735,24 @@
     "org.bukkit.OfflinePlayer": [
       "getRespawnLocation(boolean)"
     ],
+    "org.bukkit.event.entity.PlayerDeathEvent": [
+      "deathScreenMessageOverride",
+      "deathScreenMessageOverride()",
+      "deathScreenMessageOverride(Component)",
+      "getShowDeathMessages()",
+      "setShowDeathMessages(boolean)",
+      "showDeathMessages"
+    ],
     "org.bukkit.event.entity.LingeringPotionSplashEvent": [
       "effectCloud"
     ],
     "org.bukkit.entity.Wolf": [
       "getSoundVariant()",
       "setSoundVariant(SoundVariant)"
+    ],
+    "io.papermc.paper.registry.data.PigVariantRegistryEntry.Builder": [
+      "clientTextureAsset(ClientTextureAsset)",
+      "model(Model)"
     ],
     "io.papermc.paper.datacomponent.item.BlocksAttacks.Builder": [
       "blockDelaySeconds(float)",
@@ -771,6 +813,11 @@
     ],
     "org.bukkit.event.weather.ThunderChangeEvent": [
       "newThunderState"
+    ],
+    "io.papermc.paper.registry.data.client.ClientTextureAsset": [
+      "clientTextureAsset(Key)",
+      "clientTextureAsset(Key,Key)",
+      "clientTextureAsset(String)"
     ],
     "org.bukkit.Tag": [
       "CAMELS_SPAWNABLE_ON",
@@ -877,6 +924,14 @@
     "org.bukkit.block.data.type.CaveVinesPlant": [
       "hasBerries()"
     ],
+    "io.papermc.paper.registry.data.client.ClientTextureAssetImpl": [
+      "identifier()",
+      "texturePath()",
+      "ClientTextureAssetImpl(Key,Key)",
+      "identifier",
+      "pathFromIdentifier(Key)",
+      "texturePath"
+    ],
     "io.papermc.paper.configuration.ServerConfiguration": [
       "isProxyOnlineMode()"
     ],
@@ -890,6 +945,9 @@
     ],
     "org.bukkit.Server": [
       "getServerConfig()"
+    ],
+    "io.papermc.paper.registry.data.PigVariantRegistryEntry.Model": [
+      "Model()"
     ],
     "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
       "SPAWNS_COLD_VARIANT_FARM_ANIMALS",
@@ -939,6 +997,11 @@
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "CAN_EQUIP_SADDLE",
       "CAN_WEAR_HORSE_ARMOR"
+    ],
+    "io.papermc.paper.registry.data.WolfVariantRegistryEntry": [
+      "angryClientTextureAsset()",
+      "tameClientTextureAsset()",
+      "wildClientTextureAsset()"
     ],
     "io.papermc.paper.datacomponent.item.PotionContents": [
       "allEffects()"
