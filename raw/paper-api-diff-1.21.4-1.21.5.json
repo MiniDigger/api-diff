@@ -3,6 +3,7 @@
   "versionB": "1.21.5",
   "packagesAdded": [
     "io.papermc.paper.configuration",
+    "io.papermc.paper.datacomponent.item.blocksattacks",
     "io.papermc.paper.registry.data.client",
     "io.papermc.paper.world.damagesource"
   ],
@@ -174,7 +175,12 @@
     "io.papermc.paper.datacomponent.item.TooltipDisplay.Builder",
     "io.papermc.paper.datacomponent.item.Weapon",
     "io.papermc.paper.datacomponent.item.Weapon.Builder",
+    "io.papermc.paper.datacomponent.item.blocksattacks.DamageReduction",
+    "io.papermc.paper.datacomponent.item.blocksattacks.DamageReduction.Builder",
+    "io.papermc.paper.datacomponent.item.blocksattacks.ItemDamageFunction",
+    "io.papermc.paper.datacomponent.item.blocksattacks.ItemDamageFunction.Builder",
     "io.papermc.paper.event.block.VaultChangeStateEvent",
+    "io.papermc.paper.event.entity.FishHookStateChangeEvent",
     "io.papermc.paper.event.player.AbstractRespawnEvent",
     "io.papermc.paper.event.player.PlayerPickBlockEvent",
     "io.papermc.paper.event.player.PlayerPickEntityEvent",
@@ -229,6 +235,7 @@
   ],
   "classesChanged": [
     "com.destroystokyo.paper.event.player.PlayerPostRespawnEvent",
+    "com.destroystokyo.paper.util.VersionFetcher",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.datacomponent.item.DyedItemColor",
     "io.papermc.paper.datacomponent.item.Equippable",
@@ -499,6 +506,7 @@
     "org.bukkit.event.player.PlayerSwapHandItemsEvent",
     "org.bukkit.event.player.PlayerTakeLecternBookEvent",
     "org.bukkit.event.player.PlayerTeleportEvent",
+    "org.bukkit.event.player.PlayerTeleportEvent.TeleportCause",
     "org.bukkit.event.player.PlayerToggleFlightEvent",
     "org.bukkit.event.player.PlayerToggleSneakEvent",
     "org.bukkit.event.player.PlayerToggleSprintEvent",
@@ -619,6 +627,10 @@
       "BOOK_CLONING_TARGET",
       "EGGS"
     ],
+    "io.papermc.paper.datacomponent.item.blocksattacks.DamageReduction": [
+      "damageReduction()",
+      "horizontalBlockingAngle()"
+    ],
     "io.papermc.paper.datacomponent.item.Weapon": [
       "disableBlockingForSeconds()",
       "itemDamagePerAttack()",
@@ -633,6 +645,7 @@
       "hideTooltip(boolean)"
     ],
     "org.bukkit.entity.Entity": [
+      "getPickItemStack()",
       "getVisualFire()",
       "isTrackedBy(Player)",
       "setVisualFire(TriState)"
@@ -669,8 +682,10 @@
       "blockSound()",
       "blocksAttacks()",
       "bypassedBy()",
+      "damageReductions()",
       "disableCooldownScale()",
-      "disableSound()"
+      "disableSound()",
+      "itemDamage()"
     ],
     "org.bukkit.Sound": [
       "BLOCK_CACTUS_FLOWER_BREAK",
@@ -735,6 +750,11 @@
     "org.bukkit.OfflinePlayer": [
       "getRespawnLocation(boolean)"
     ],
+    "io.papermc.paper.datacomponent.item.blocksattacks.ItemDamageFunction.Builder": [
+      "base(float)",
+      "factor(float)",
+      "threshold(float)"
+    ],
     "org.bukkit.event.entity.PlayerDeathEvent": [
       "deathScreenMessageOverride",
       "deathScreenMessageOverride()",
@@ -755,11 +775,14 @@
       "model(Model)"
     ],
     "io.papermc.paper.datacomponent.item.BlocksAttacks.Builder": [
+      "addDamageReduction(DamageReduction)",
       "blockDelaySeconds(float)",
       "blockSound(Key)",
       "bypassedBy(TagKey)",
+      "damageReductions(List)",
       "disableCooldownScale(float)",
-      "disableSound(Key)"
+      "disableSound(Key)",
+      "itemDamage(ItemDamageFunction)"
     ],
     "org.bukkit.entity.FishHook": [
       "retrieve(EquipmentSlot)"
@@ -773,6 +796,10 @@
     "org.bukkit.GameRule": [
       "ALLOW_FIRE_TICKS_AWAY_FROM_PLAYER",
       "TNT_EXPLODES"
+    ],
+    "io.papermc.paper.datacomponent.item.blocksattacks.DamageReduction.Builder": [
+      "horizontalBlockingAngle(float)",
+      "type(RegistryKeySet)"
     ],
     "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
       "AXOLOTL_VARIANT",
@@ -921,6 +948,13 @@
       "bonusChest()",
       "bonusChest(boolean)"
     ],
+    "io.papermc.paper.datacomponent.item.blocksattacks.ItemDamageFunction": [
+      "base()",
+      "factor()",
+      "damageToApply(float)",
+      "itemDamageFunction()",
+      "threshold()"
+    ],
     "org.bukkit.block.data.type.CaveVinesPlant": [
       "hasBerries()"
     ],
@@ -972,6 +1006,9 @@
       "getMinimumSegmentAmount()",
       "getSegmentAmount()",
       "setSegmentAmount(int)"
+    ],
+    "org.bukkit.event.player.PlayerTeleportEvent.TeleportCause": [
+      "CONSUMABLE_EFFECT"
     ],
     "org.bukkit.entity.memory.MemoryKey": [
       "ATE_RECENTLY",
@@ -1025,6 +1062,10 @@
     "org.bukkit.Particle": [
       "FIREFLY",
       "TINTED_LEAVES"
+    ],
+    "io.papermc.paper.event.entity.FishHookStateChangeEvent": [
+      "getNewHookState()",
+      "newHookState"
     ],
     "io.papermc.paper.event.block.VaultChangeStateEvent": [
       "currentState",
