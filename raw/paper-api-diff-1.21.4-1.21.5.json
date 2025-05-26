@@ -181,7 +181,9 @@
     "io.papermc.paper.datacomponent.item.blocksattacks.ItemDamageFunction.Builder",
     "io.papermc.paper.event.block.VaultChangeStateEvent",
     "io.papermc.paper.event.entity.FishHookStateChangeEvent",
+    "io.papermc.paper.event.packet.UncheckedSignChangeEvent",
     "io.papermc.paper.event.player.AbstractRespawnEvent",
+    "io.papermc.paper.event.player.PlayerMapFilledEvent",
     "io.papermc.paper.event.player.PlayerPickBlockEvent",
     "io.papermc.paper.event.player.PlayerPickEntityEvent",
     "io.papermc.paper.registry.data.CatTypeRegistryEntry",
@@ -261,6 +263,7 @@
     "org.bukkit.EntityEffect",
     "org.bukkit.GameRule",
     "org.bukkit.Material",
+    "org.bukkit.MusicInstrument",
     "org.bukkit.OfflinePlayer",
     "org.bukkit.Particle",
     "org.bukkit.Registry",
@@ -591,6 +594,9 @@
     ],
     "io.papermc.paper.datacomponent.item.ItemEnchantments": [
       "itemEnchantments(Map)"
+    ],
+    "org.bukkit.entity.Player": [
+      "openVirtualSign(Position,Side)"
     ],
     "io.papermc.paper.world.damagesource.FallLocationTypeImpl": [
       "FallLocationTypeImpl(String)"
@@ -948,6 +954,13 @@
       "bonusChest()",
       "bonusChest(boolean)"
     ],
+    "io.papermc.paper.event.player.PlayerMapFilledEvent": [
+      "createdMap",
+      "getCreatedMap()",
+      "getOriginalItem()",
+      "originalItem",
+      "setCreatedMap(ItemStack)"
+    ],
     "io.papermc.paper.datacomponent.item.blocksattacks.ItemDamageFunction": [
       "base()",
       "factor()",
@@ -1084,6 +1097,10 @@
     ],
     "org.bukkit.event.player.PlayerTeleportEvent": [
       "teleportFlags"
+    ],
+    "io.papermc.paper.event.packet.UncheckedSignChangeEvent": [
+      "editedBlockPosition",
+      "getEditedBlockPosition()"
     ],
     "io.papermc.paper.datacomponent.item.DyedItemColor": [
       "dyedItemColor(Color)"
@@ -1250,13 +1267,12 @@
     "org.bukkit.event.block.BlockGrowEvent": [
       "BlockGrowEvent(Block,BlockState)"
     ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(List,World,CreateReason)"
+    ],
     "org.bukkit.event.hanging.HangingBreakByEntityEvent": [
       "HangingBreakByEntityEvent(Hanging,Entity)",
       "HangingBreakByEntityEvent(Hanging,Entity,RemoveCause)"
-    ],
-    "org.bukkit.event.world.PortalCreateEvent": [
-      "cancel",
-      "PortalCreateEvent(List,World,CreateReason)"
     ],
     "org.bukkit.event.player.PlayerHarvestBlockEvent": [
       "PlayerHarvestBlockEvent(Player,Block,List)"
@@ -2154,13 +2170,12 @@
     "org.bukkit.event.block.BlockGrowEvent": [
       "BlockGrowEvent(Block,BlockState)"
     ],
+    "org.bukkit.event.world.PortalCreateEvent": [
+      "PortalCreateEvent(List,World,CreateReason)"
+    ],
     "org.bukkit.event.hanging.HangingBreakByEntityEvent": [
       "HangingBreakByEntityEvent(Hanging,Entity)",
       "HangingBreakByEntityEvent(Hanging,Entity,RemoveCause)"
-    ],
-    "org.bukkit.event.world.PortalCreateEvent": [
-      "cancel",
-      "PortalCreateEvent(List,World,CreateReason)"
     ],
     "org.bukkit.event.player.PlayerHarvestBlockEvent": [
       "PlayerHarvestBlockEvent(Player,Block,List)"
