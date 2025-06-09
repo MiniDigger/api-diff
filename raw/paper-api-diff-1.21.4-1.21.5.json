@@ -294,6 +294,7 @@
     "org.bukkit.entity.LivingEntity",
     "org.bukkit.entity.Pig",
     "org.bukkit.entity.Player",
+    "org.bukkit.entity.Villager",
     "org.bukkit.entity.Wolf",
     "org.bukkit.entity.memory.MemoryKey",
     "org.bukkit.event.Event",
@@ -761,6 +762,10 @@
       "factor(float)",
       "threshold(float)"
     ],
+    "org.bukkit.entity.Villager": [
+      "restock()",
+      "updateDemand()"
+    ],
     "org.bukkit.event.entity.PlayerDeathEvent": [
       "deathScreenMessageOverride",
       "deathScreenMessageOverride()",
@@ -797,6 +802,7 @@
       "canDestroyBlocksInCreative(boolean)"
     ],
     "org.bukkit.Registry": [
+      "getTagValues(TagKey)",
       "keyStream()"
     ],
     "org.bukkit.GameRule": [
