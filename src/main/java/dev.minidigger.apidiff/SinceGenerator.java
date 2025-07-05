@@ -2,6 +2,7 @@ package dev.minidigger.apidiff;
 
 import com.google.common.collect.*;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSerializer;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -42,7 +43,11 @@ public class SinceGenerator {
         }
 
         SinceReport report = new SinceReport(packages, classes, members);
-        String json = new GsonBuilder().setPrettyPrinting().create().toJson(report);
+        String json = new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(Table.class, (JsonSerializer<Table<?, ?, ?>>) (table, type, context) -> context.serialize(table.rowMap()))
+                .create()
+                .toJson(report);
         Files.writeString(Path.of("output/raw/since.json"), json);
         return report;
     }
