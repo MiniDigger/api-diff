@@ -44,6 +44,7 @@
     "io.papermc.paper.datacomponent.item.blocksattacks": "1.21.5",
     "io.papermc.paper.datacomponent.item.consumable": "1.21.3",
     "io.papermc.paper.datapack": "1.16.5",
+    "io.papermc.paper.dialog": "1.21.7",
     "io.papermc.paper.enchantments": "1.16.5",
     "io.papermc.paper.entity": "1.18.1",
     "io.papermc.paper.event.block": "1.16.2",
@@ -81,6 +82,11 @@
     "io.papermc.paper.registry": "1.18.2",
     "io.papermc.paper.registry.data": "1.21.1",
     "io.papermc.paper.registry.data.client": "1.21.5",
+    "io.papermc.paper.registry.data.dialog": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.action": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.body": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type": "1.21.7",
     "io.papermc.paper.registry.event": "1.21.1",
     "io.papermc.paper.registry.event.type": "1.21.1",
     "io.papermc.paper.registry.holder": "1.21.6",
@@ -451,6 +457,8 @@
     "io.papermc.paper.datapack.DatapackRegistrar.Configurer": "1.21.4",
     "io.papermc.paper.datapack.DatapackSource": "1.21.1",
     "io.papermc.paper.datapack.DiscoveredDatapack": "1.21.4",
+    "io.papermc.paper.dialog.Dialog": "1.21.7",
+    "io.papermc.paper.dialog.DialogResponseView": "1.21.7",
     "io.papermc.paper.enchantments.EnchantmentRarity": "1.16.5",
     "io.papermc.paper.entity.Bucketable": "1.18.1",
     "io.papermc.paper.entity.CollarColorable": "1.18.2",
@@ -521,6 +529,7 @@
     "io.papermc.paper.event.player.PlayerBedFailEnterEvent.FailReason": "1.16.5",
     "io.papermc.paper.event.player.PlayerChangeBeaconEffectEvent": "1.16.5",
     "io.papermc.paper.event.player.PlayerClientLoadedWorldEvent": "1.21.4",
+    "io.papermc.paper.event.player.PlayerCustomClickEvent": "1.21.7",
     "io.papermc.paper.event.player.PlayerDeepSleepEvent": "1.16.5",
     "io.papermc.paper.event.player.PlayerFailMoveEvent": "1.20.1",
     "io.papermc.paper.event.player.PlayerFailMoveEvent.FailReason": "1.20.1",
@@ -655,6 +664,41 @@
     "io.papermc.paper.registry.data.WolfVariantRegistryEntry.Builder": "1.21.5",
     "io.papermc.paper.registry.data.client.ClientTextureAsset": "1.21.5",
     "io.papermc.paper.registry.data.client.ClientTextureAssetImpl": "1.21.5",
+    "io.papermc.paper.registry.data.dialog.ActionButton": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.ActionButton.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.DialogBase": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.DialogBase.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.DialogBase.DialogAfterAction": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.DialogRegistryEntry": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.DialogRegistryEntry.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CommandTemplateAction": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CustomClickAction": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.StaticAction": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.action.DialogActionCallback": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.body.DialogBody": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.body.PlainMessageDialogBody": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.DialogInput": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput.OptionEntry": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.MultilineOptions": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.ConfirmationType": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.DialogListType": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.DialogListType.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.DialogType": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType.Builder": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.NoticeType": "1.21.7",
+    "io.papermc.paper.registry.data.dialog.type.ServerLinksType": "1.21.7",
     "io.papermc.paper.registry.event.RegistryComposeEvent": "1.21.6",
     "io.papermc.paper.registry.event.RegistryEntryAddEvent": "1.21.1",
     "io.papermc.paper.registry.event.RegistryEvent": "1.21.1",
@@ -676,6 +720,7 @@
     "io.papermc.paper.registry.keys.CowVariantKeys": "1.21.5",
     "io.papermc.paper.registry.keys.DamageTypeKeys": "1.20.6",
     "io.papermc.paper.registry.keys.DataComponentTypeKeys": "1.21.5",
+    "io.papermc.paper.registry.keys.DialogKeys": "1.21.7",
     "io.papermc.paper.registry.keys.EnchantmentKeys": "1.20.6",
     "io.papermc.paper.registry.keys.FluidKeys": "1.21.3",
     "io.papermc.paper.registry.keys.FrogVariantKeys": "1.21.1",
@@ -701,6 +746,7 @@
     "io.papermc.paper.registry.keys.tags.BiomeTagKeys": "1.21.3",
     "io.papermc.paper.registry.keys.tags.BlockTypeTagKeys": "1.21.3",
     "io.papermc.paper.registry.keys.tags.DamageTypeTagKeys": "1.21.3",
+    "io.papermc.paper.registry.keys.tags.DialogTagKeys": "1.21.7",
     "io.papermc.paper.registry.keys.tags.EnchantmentTagKeys": "1.21.1",
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": "1.21.4",
     "io.papermc.paper.registry.keys.tags.FluidTagKeys": "1.21.3",
@@ -712,6 +758,7 @@
     "io.papermc.paper.registry.set.RegistryKeySet": "1.21.1",
     "io.papermc.paper.registry.set.RegistrySet": "1.21.1",
     "io.papermc.paper.registry.set.RegistryValueSet": "1.21.1",
+    "io.papermc.paper.registry.set.RegistryValueSetBuilder": "1.21.7",
     "io.papermc.paper.registry.tag.Tag": "1.21.1",
     "io.papermc.paper.registry.tag.TagKey": "1.21.1",
     "io.papermc.paper.scoreboard.numbers.BlankFormatImpl": "1.20.4",
@@ -4727,6 +4774,19 @@
       "getTitle()": "basically forever",
       "isRequired()": "1.19.4"
     },
+    "io.papermc.paper.dialog.Dialog": {
+      "CUSTOM_OPTIONS": "1.21.7",
+      "QUICK_ACTIONS": "1.21.7",
+      "SERVER_LINKS": "1.21.7",
+      "create(Consumer)": "1.21.4",
+      "getDialog(String)": "1.21.7"
+    },
+    "io.papermc.paper.dialog.DialogResponseView": {
+      "getBoolean(String)": "basically forever",
+      "getFloat(String)": "1.21.7",
+      "getText(String)": "1.21.7",
+      "payload()": "1.21.7"
+    },
     "io.papermc.paper.enchantments.EnchantmentRarity": {
       "COMMON": "1.16.5",
       "EnchantmentRarity(int)": "1.16.5",
@@ -5417,6 +5477,16 @@
       "getHandlers()": "basically forever",
       "isTimeout()": "1.21.4",
       "timeout": "1.21.4"
+    },
+    "io.papermc.paper.event.player.PlayerCustomClickEvent": {
+      "commonConnection": "1.21.7",
+      "getCommonConnection()": "1.21.7",
+      "getDialogResponseView()": "1.21.7",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getIdentifier()": "basically forever",
+      "getTag()": "1.21.7",
+      "identifier": "basically forever"
     },
     "io.papermc.paper.event.player.PlayerDeepSleepEvent": {
       "HANDLER_LIST": "1.16.4",
@@ -6265,6 +6335,7 @@
       "COW_VARIANT": "1.21.5",
       "DAMAGE_TYPE": "1.20.4",
       "DATA_COMPONENT_TYPE": "1.21.3",
+      "DIALOG": "1.21.7",
       "ENCHANTMENT": "1.14",
       "ENTITY_TYPE": "1.14",
       "FLUID": "1.16.3",
@@ -6427,6 +6498,7 @@
       "range(int)": "1.21.1"
     },
     "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": {
+      "createDialog(Consumer)": "1.21.7",
       "createInstrument(Consumer)": "1.21.7",
       "instance()": "1.21.4"
     },
@@ -6523,6 +6595,225 @@
       "texturePath()": "1.21.5",
       "toString()": "basically forever"
     },
+    "io.papermc.paper.registry.data.dialog.ActionButton": {
+      "action()": "1.21.7",
+      "builder(Component)": "1.21.7",
+      "create(Component,Component,int,DialogAction)": "1.21.7",
+      "label()": "1.21.7",
+      "tooltip()": "1.16.5",
+      "width()": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.ActionButton.Builder": {
+      "action(DialogAction)": "1.21.7",
+      "build()": "basically forever",
+      "tooltip(Component)": "1.21.7",
+      "width(int)": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.DialogBase": {
+      "afterAction()": "1.21.7",
+      "body()": "1.21.7",
+      "builder(Component)": "1.21.7",
+      "canCloseWithEscape()": "1.21.7",
+      "create(Component,Component,boolean,boolean,DialogAfterAction,List,List)": "1.21.7",
+      "externalTitle()": "1.21.7",
+      "inputs()": "1.21.7",
+      "pause()": "1.21.7",
+      "title()": "1.16.5"
+    },
+    "io.papermc.paper.registry.data.dialog.DialogBase.Builder": {
+      "afterAction(DialogAfterAction)": "1.21.7",
+      "body(List)": "1.21.7",
+      "build()": "basically forever",
+      "canCloseWithEscape(boolean)": "1.21.7",
+      "externalTitle(Component)": "1.21.7",
+      "inputs(List)": "1.21.7",
+      "pause(boolean)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.DialogBase.DialogAfterAction": {
+      "CLOSE": "basically forever",
+      "DialogAfterAction(String)": "1.21.7",
+      "NAMES": "1.17.1",
+      "NONE": "basically forever",
+      "WAIT_FOR_RESPONSE": "1.21.7",
+      "name": "basically forever",
+      "valueOf(String)": "basically forever",
+      "values()": "basically forever"
+    },
+    "io.papermc.paper.registry.data.dialog.DialogRegistryEntry": {
+      "base()": "1.21.5",
+      "type()": "basically forever"
+    },
+    "io.papermc.paper.registry.data.dialog.DialogRegistryEntry.Builder": {
+      "base(DialogBase)": "1.21.7",
+      "registryValueSet()": "1.21.7",
+      "type(DialogType)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.action.DialogAction": {
+      "commandTemplate(String)": "1.21.7",
+      "customClick(DialogActionCallback,Options)": "1.21.7",
+      "customClick(Key,BinaryTagHolder)": "1.21.7",
+      "staticAction(ClickEvent)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CommandTemplateAction": {
+      "template()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CustomClickAction": {
+      "additions()": "1.21.7",
+      "id()": "1.20.6"
+    },
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.StaticAction": {
+      "value()": "basically forever"
+    },
+    "io.papermc.paper.registry.data.dialog.action.DialogActionCallback": {
+      "accept(DialogResponseView,Audience)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.body.DialogBody": {
+      "item(ItemStack)": "1.21.7",
+      "item(ItemStack,PlainMessageDialogBody,boolean,boolean,int,int)": "1.21.7",
+      "plainMessage(Component)": "1.21.7",
+      "plainMessage(Component,int)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody": {
+      "description()": "1.17.1",
+      "height()": "1.21.3",
+      "item()": "1.21.7",
+      "showDecorations()": "1.21.7",
+      "showTooltip()": "1.21.7",
+      "width()": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody.Builder": {
+      "build()": "basically forever",
+      "description(PlainMessageDialogBody)": "1.21.7",
+      "height(int)": "1.21.3",
+      "showDecorations(boolean)": "1.21.7",
+      "showTooltip(boolean)": "1.21.7",
+      "width(int)": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.body.PlainMessageDialogBody": {
+      "contents()": "1.21.3",
+      "width()": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput": {
+      "initial()": "1.21.7",
+      "label()": "1.21.7",
+      "onFalse()": "1.21.7",
+      "onTrue()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput.Builder": {
+      "build()": "basically forever",
+      "initial(boolean)": "1.21.7",
+      "onFalse(String)": "1.21.7",
+      "onTrue(String)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.input.DialogInput": {
+      "bool(String,Component)": "1.21.7",
+      "bool(String,Component,boolean,String,String)": "1.21.7",
+      "key()": "1.16.5",
+      "numberRange(String,Component,float,float)": "1.21.7",
+      "numberRange(String,int,Component,String,float,float,Float,Float)": "1.21.7",
+      "singleOption(String,Component,List)": "1.21.7",
+      "singleOption(String,int,List,Component,boolean)": "1.21.7",
+      "text(String,Component)": "1.21.7",
+      "text(String,int,Component,boolean,String,int,MultilineOptions)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput": {
+      "end()": "1.21.7",
+      "initial()": "1.21.7",
+      "label()": "1.21.7",
+      "labelFormat()": "1.21.7",
+      "start()": "1.15.2",
+      "step()": "1.21.7",
+      "width()": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput.Builder": {
+      "build()": "basically forever",
+      "initial(Float)": "1.21.7",
+      "labelFormat(String)": "1.21.7",
+      "step(Float)": "1.21.7",
+      "width(int)": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput": {
+      "entries()": "1.21.7",
+      "label()": "1.21.7",
+      "labelVisible()": "1.21.7",
+      "width()": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput.Builder": {
+      "build()": "basically forever",
+      "labelVisible(boolean)": "1.21.7",
+      "width(int)": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput.OptionEntry": {
+      "create(String,Component,boolean)": "1.21.7",
+      "display()": "1.21.6",
+      "id()": "1.20.6",
+      "initial()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput": {
+      "initial()": "1.21.7",
+      "label()": "1.21.7",
+      "labelVisible()": "1.21.7",
+      "maxLength()": "1.21.7",
+      "multiline()": "1.21.7",
+      "width()": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.Builder": {
+      "build()": "basically forever",
+      "initial(String)": "1.21.7",
+      "labelVisible(boolean)": "1.21.7",
+      "maxLength(int)": "1.21.7",
+      "multiline(MultilineOptions)": "1.21.7",
+      "width(int)": "1.18.1"
+    },
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.MultilineOptions": {
+      "create(Integer,Integer)": "1.21.7",
+      "height()": "1.21.3",
+      "maxLines()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.ConfirmationType": {
+      "noButton()": "1.21.7",
+      "yesButton()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.DialogListType": {
+      "buttonWidth()": "1.21.7",
+      "columns()": "1.21.7",
+      "dialogs()": "1.21.7",
+      "exitAction()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.DialogListType.Builder": {
+      "build()": "basically forever",
+      "buttonWidth(int)": "1.21.7",
+      "columns(int)": "1.21.7",
+      "exitAction(ActionButton)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.DialogType": {
+      "confirmation(ActionButton,ActionButton)": "1.21.7",
+      "dialogList(RegistrySet)": "1.21.7",
+      "dialogList(RegistrySet,ActionButton,int,int)": "1.21.7",
+      "multiAction(List)": "1.21.7",
+      "multiAction(List,ActionButton,int)": "1.21.7",
+      "notice()": "1.21.7",
+      "notice(ActionButton)": "1.21.7",
+      "serverLinks(ActionButton,int,int)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType": {
+      "actions()": "1.21.7",
+      "columns()": "1.21.7",
+      "exitAction()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType.Builder": {
+      "build()": "basically forever",
+      "columns(int)": "1.21.7",
+      "exitAction(ActionButton)": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.NoticeType": {
+      "action()": "1.21.7"
+    },
+    "io.papermc.paper.registry.data.dialog.type.ServerLinksType": {
+      "buttonWidth()": "1.21.7",
+      "columns()": "1.21.7",
+      "exitAction()": "1.21.7"
+    },
     "io.papermc.paper.registry.event.RegistryComposeEvent": {
       "\u003cV\u003egetOrCreateTag(TagKey)": "1.21.1",
       "registry()": "1.18.2"
@@ -6547,6 +6838,7 @@
       "CHICKEN_VARIANT": "1.21.5",
       "COW_VARIANT": "1.21.5",
       "DAMAGE_TYPE": "1.20.4",
+      "DIALOG": "1.21.7",
       "ENCHANTMENT": "1.14",
       "FROG_VARIANT": "1.19",
       "GAME_EVENT": "1.17",
@@ -8017,6 +8309,13 @@
       "WOLF_VARIANT": "1.20.5",
       "WRITABLE_BOOK_CONTENT": "1.21.3",
       "WRITTEN_BOOK_CONTENT": "1.21.3",
+      "create(Key)": "1.20.2"
+    },
+    "io.papermc.paper.registry.keys.DialogKeys": {
+      "CUSTOM_OPTIONS": "1.21.7",
+      "DialogKeys()": "1.21.7",
+      "QUICK_ACTIONS": "1.21.7",
+      "SERVER_LINKS": "1.21.7",
       "create(Key)": "1.20.2"
     },
     "io.papermc.paper.registry.keys.EnchantmentKeys": {
@@ -11982,6 +12281,12 @@
       "WITHER_IMMUNE_TO": "1.21.3",
       "create(Key)": "1.20.2"
     },
+    "io.papermc.paper.registry.keys.tags.DialogTagKeys": {
+      "DialogTagKeys()": "1.21.7",
+      "PAUSE_SCREEN_ADDITIONS": "1.21.7",
+      "QUICK_ACTIONS": "1.21.7",
+      "create(Key)": "1.20.2"
+    },
     "io.papermc.paper.registry.keys.tags.EnchantmentTagKeys": {
       "CURSE": "1.21.1",
       "DOUBLE_TRADE_PRICE": "1.21.1",
@@ -12310,6 +12615,7 @@
       "\u003cT\u003ekeySet(RegistryKey,Iterable)": "1.21.1",
       "\u003cT\u003ekeySet(RegistryKey,TypedKey...)": "1.21.1",
       "\u003cT\u003ekeySetFromValues(RegistryKey,Iterable)": "1.21.1",
+      "\u003cT\u003evalueSet(RegistryKey,Iterable)": "1.21.7",
       "isEmpty()": "basically forever",
       "registryKey()": "1.20.2",
       "size()": "basically forever"
@@ -12318,6 +12624,10 @@
       "iterator()": "basically forever",
       "size()": "basically forever",
       "values()": "basically forever"
+    },
+    "io.papermc.paper.registry.set.RegistryValueSetBuilder": {
+      "add(Consumer)": "1.21.7",
+      "build()": "basically forever"
     },
     "io.papermc.paper.registry.tag.Tag": {
       "tagKey()": "1.21.1"

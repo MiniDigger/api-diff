@@ -3,8 +3,14 @@
   "versionB": "1.21.7",
   "packagesAdded": [
     "io.papermc.paper.connection",
+    "io.papermc.paper.dialog",
     "io.papermc.paper.event.connection",
-    "io.papermc.paper.event.connection.configuration"
+    "io.papermc.paper.event.connection.configuration",
+    "io.papermc.paper.registry.data.dialog",
+    "io.papermc.paper.registry.data.dialog.action",
+    "io.papermc.paper.registry.data.dialog.body",
+    "io.papermc.paper.registry.data.dialog.input",
+    "io.papermc.paper.registry.data.dialog.type"
   ],
   "packagesRemoved": [],
   "packagesChanged": [
@@ -178,13 +184,54 @@
     "io.papermc.paper.connection.PlayerLoginConnection",
     "io.papermc.paper.connection.ReadablePlayerCookieConnection",
     "io.papermc.paper.connection.WritablePlayerCookieConnection",
+    "io.papermc.paper.dialog.Dialog",
+    "io.papermc.paper.dialog.DialogResponseView",
     "io.papermc.paper.event.connection.PlayerConnectionValidateLoginEvent",
     "io.papermc.paper.event.connection.configuration.AsyncPlayerConnectionConfigureEvent",
     "io.papermc.paper.event.connection.configuration.PlayerConnectionInitialConfigureEvent",
     "io.papermc.paper.event.connection.configuration.PlayerConnectionReconfigureEvent",
+    "io.papermc.paper.event.player.PlayerCustomClickEvent",
     "io.papermc.paper.event.player.PlayerServerFullCheckEvent",
     "io.papermc.paper.registry.data.InstrumentRegistryEntry",
-    "io.papermc.paper.registry.data.InstrumentRegistryEntry.Builder"
+    "io.papermc.paper.registry.data.InstrumentRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.dialog.ActionButton",
+    "io.papermc.paper.registry.data.dialog.ActionButton.Builder",
+    "io.papermc.paper.registry.data.dialog.DialogBase",
+    "io.papermc.paper.registry.data.dialog.DialogBase.Builder",
+    "io.papermc.paper.registry.data.dialog.DialogBase.DialogAfterAction",
+    "io.papermc.paper.registry.data.dialog.DialogRegistryEntry",
+    "io.papermc.paper.registry.data.dialog.DialogRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CommandTemplateAction",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CustomClickAction",
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.StaticAction",
+    "io.papermc.paper.registry.data.dialog.action.DialogActionCallback",
+    "io.papermc.paper.registry.data.dialog.body.DialogBody",
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody",
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody.Builder",
+    "io.papermc.paper.registry.data.dialog.body.PlainMessageDialogBody",
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput",
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput.Builder",
+    "io.papermc.paper.registry.data.dialog.input.DialogInput",
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput",
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput.Builder",
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput",
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput.Builder",
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput.OptionEntry",
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput",
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.Builder",
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.MultilineOptions",
+    "io.papermc.paper.registry.data.dialog.type.ConfirmationType",
+    "io.papermc.paper.registry.data.dialog.type.DialogListType",
+    "io.papermc.paper.registry.data.dialog.type.DialogListType.Builder",
+    "io.papermc.paper.registry.data.dialog.type.DialogType",
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType",
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType.Builder",
+    "io.papermc.paper.registry.data.dialog.type.NoticeType",
+    "io.papermc.paper.registry.data.dialog.type.ServerLinksType",
+    "io.papermc.paper.registry.keys.DialogKeys",
+    "io.papermc.paper.registry.keys.tags.DialogTagKeys",
+    "io.papermc.paper.registry.set.RegistryValueSetBuilder"
   ],
   "classesRemoved": [],
   "classesChanged": [
@@ -208,6 +255,7 @@
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.PaintingVariantTagKeys",
     "io.papermc.paper.registry.keys.tags.StructureTagKeys",
+    "io.papermc.paper.registry.set.RegistrySet",
     "io.papermc.paper.registry.tag.TagKey",
     "org.bukkit.Art",
     "org.bukkit.JukeboxSong",
@@ -229,18 +277,17 @@
     "org.bukkit.plugin.messaging.StandardMessenger"
   ],
   "membersAdded": {
-    "io.papermc.paper.connection.PlayerConnection": [
-      "disconnect(Component)",
-      "getClientAddress()"
+    "io.papermc.paper.registry.data.dialog.DialogBase.DialogAfterAction": [
+      "DialogAfterAction(String)",
+      "WAIT_FOR_RESPONSE"
     ],
-    "org.bukkit.plugin.messaging.StandardMessenger": [
-      "dispatchIncomingMessage(PlayerConnection,String,byte...)"
+    "io.papermc.paper.registry.data.dialog.type.ServerLinksType": [
+      "buttonWidth()",
+      "columns()",
+      "exitAction()"
     ],
-    "org.bukkit.MusicInstrument": [
-      "create(Consumer)"
-    ],
-    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
-      "createInstrument(Consumer)"
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType": [
+      "actions()"
     ],
     "org.bukkit.Art": [
       "DENNIS"
@@ -252,15 +299,16 @@
     "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
       "playerLoginConnection"
     ],
-    "org.bukkit.plugin.messaging.PluginMessageListener": [
-      "onPluginMessageReceived(String,PlayerConnection,byte...)"
+    "io.papermc.paper.registry.data.dialog.type.DialogListType": [
+      "dialogs()"
     ],
-    "io.papermc.paper.connection.PlayerGameConnection": [
-      "reenterConfiguration()"
+    "io.papermc.paper.registry.keys.tags.DialogTagKeys": [
+      "QUICK_ACTIONS",
+      "DialogTagKeys()",
+      "PAUSE_SCREEN_ADDITIONS"
     ],
-    "io.papermc.paper.registry.data.InstrumentRegistryEntry.Builder": [
-      "duration(float)",
-      "range(float)"
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CommandTemplateAction": [
+      "template()"
     ],
     "io.papermc.paper.event.player.PlayerServerFullCheckEvent": [
       "allow",
@@ -277,18 +325,204 @@
       "getAudience()",
       "getProfile()"
     ],
-    "org.bukkit.inventory.ItemType": [
-      "MUSIC_DISC_LAVA_CHICKEN"
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput": [
+      "label()",
+      "initial()",
+      "labelVisible()",
+      "maxLength()",
+      "multiline()"
+    ],
+    "io.papermc.paper.dialog.DialogResponseView": [
+      "getFloat(String)",
+      "getText(String)",
+      "payload()"
+    ],
+    "io.papermc.paper.registry.data.dialog.DialogBase": [
+      "builder(Component)",
+      "afterAction()",
+      "body()",
+      "canCloseWithEscape()",
+      "create(Component,Component,boolean,boolean,DialogAfterAction,List,List)",
+      "externalTitle()",
+      "inputs()",
+      "pause()"
     ],
     "org.bukkit.Material": [
       "asBlockType()",
       "asItemType()"
     ],
+    "io.papermc.paper.connection.PlayerCommonConnection": [
+      "sendReportDetails(Map)"
+    ],
+    "io.papermc.paper.registry.data.dialog.action.DialogAction": [
+      "commandTemplate(String)",
+      "customClick(DialogActionCallback,Options)",
+      "customClick(Key,BinaryTagHolder)",
+      "staticAction(ClickEvent)"
+    ],
+    "io.papermc.paper.registry.set.RegistryValueSetBuilder": [
+      "add(Consumer)"
+    ],
+    "io.papermc.paper.registry.data.dialog.action.DialogActionCallback": [
+      "accept(DialogResponseView,Audience)"
+    ],
+    "io.papermc.paper.registry.data.dialog.type.NoticeType": [
+      "action()"
+    ],
+    "io.papermc.paper.registry.event.RegistryEvents": [
+      "DIALOG"
+    ],
+    "io.papermc.paper.registry.data.dialog.type.DialogType": [
+      "confirmation(ActionButton,ActionButton)",
+      "dialogList(RegistrySet)",
+      "dialogList(RegistrySet,ActionButton,int,int)",
+      "multiAction(List)",
+      "multiAction(List,ActionButton,int)",
+      "notice()",
+      "notice(ActionButton)",
+      "serverLinks(ActionButton,int,int)"
+    ],
     "org.bukkit.JukeboxSong": [
       "LAVA_CHICKEN"
     ],
-    "io.papermc.paper.connection.PlayerCommonConnection": [
-      "sendReportDetails(Map)"
+    "io.papermc.paper.registry.data.dialog.type.MultiActionType.Builder": [
+      "columns(int)",
+      "exitAction(ActionButton)"
+    ],
+    "io.papermc.paper.dialog.Dialog": [
+      "getDialog(String)"
+    ],
+    "io.papermc.paper.connection.PlayerConnection": [
+      "disconnect(Component)",
+      "getClientAddress()"
+    ],
+    "org.bukkit.MusicInstrument": [
+      "create(Consumer)"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput": [
+      "end()",
+      "labelFormat()",
+      "step()"
+    ],
+    "io.papermc.paper.registry.data.dialog.ActionButton.Builder": [
+      "action(DialogAction)",
+      "tooltip(Component)"
+    ],
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody.Builder": [
+      "description(PlainMessageDialogBody)",
+      "showDecorations(boolean)",
+      "showTooltip(boolean)"
+    ],
+    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
+      "createDialog(Consumer)",
+      "createInstrument(Consumer)"
+    ],
+    "io.papermc.paper.event.player.PlayerCustomClickEvent": [
+      "commonConnection",
+      "getCommonConnection()",
+      "getDialogResponseView()",
+      "getTag()"
+    ],
+    "io.papermc.paper.registry.set.RegistrySet": [
+      "\u003cT\u003evalueSet(RegistryKey,Iterable)"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.MultilineOptions": [
+      "create(Integer,Integer)",
+      "maxLines()"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput": [
+      "onFalse()",
+      "onTrue()"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.BooleanDialogInput.Builder": [
+      "initial(boolean)",
+      "onFalse(String)",
+      "onTrue(String)"
+    ],
+    "io.papermc.paper.registry.data.dialog.DialogRegistryEntry.Builder": [
+      "base(DialogBase)",
+      "registryValueSet()",
+      "type(DialogType)"
+    ],
+    "org.bukkit.plugin.messaging.PluginMessageListener": [
+      "onPluginMessageReceived(String,PlayerConnection,byte...)"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.NumberRangeDialogInput.Builder": [
+      "initial(Float)",
+      "labelFormat(String)",
+      "step(Float)"
+    ],
+    "io.papermc.paper.registry.data.dialog.action.DialogAction.CustomClickAction": [
+      "additions()"
+    ],
+    "io.papermc.paper.connection.PlayerGameConnection": [
+      "reenterConfiguration()"
+    ],
+    "io.papermc.paper.registry.data.InstrumentRegistryEntry.Builder": [
+      "duration(float)",
+      "range(float)"
+    ],
+    "io.papermc.paper.registry.data.dialog.DialogBase.Builder": [
+      "afterAction(DialogAfterAction)",
+      "body(List)",
+      "canCloseWithEscape(boolean)",
+      "externalTitle(Component)",
+      "inputs(List)",
+      "pause(boolean)"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput": [
+      "entries()"
+    ],
+    "io.papermc.paper.registry.keys.DialogKeys": [
+      "CUSTOM_OPTIONS",
+      "SERVER_LINKS",
+      "DialogKeys()"
+    ],
+    "io.papermc.paper.registry.data.dialog.type.ConfirmationType": [
+      "noButton()",
+      "yesButton()"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.DialogInput": [
+      "bool(String,Component)",
+      "bool(String,Component,boolean,String,String)",
+      "numberRange(String,Component,float,float)",
+      "numberRange(String,int,Component,String,float,float,Float,Float)",
+      "singleOption(String,Component,List)",
+      "singleOption(String,int,List,Component,boolean)",
+      "text(String,Component)",
+      "text(String,int,Component,boolean,String,int,MultilineOptions)"
+    ],
+    "io.papermc.paper.registry.data.dialog.body.DialogBody": [
+      "item(ItemStack)",
+      "item(ItemStack,PlainMessageDialogBody,boolean,boolean,int,int)",
+      "plainMessage(Component)",
+      "plainMessage(Component,int)"
+    ],
+    "org.bukkit.plugin.messaging.StandardMessenger": [
+      "dispatchIncomingMessage(PlayerConnection,String,byte...)"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput.OptionEntry": [
+      "create(String,Component,boolean)"
+    ],
+    "io.papermc.paper.registry.data.dialog.ActionButton": [
+      "create(Component,Component,int,DialogAction)"
+    ],
+    "org.bukkit.inventory.ItemType": [
+      "MUSIC_DISC_LAVA_CHICKEN"
+    ],
+    "io.papermc.paper.registry.data.dialog.type.DialogListType.Builder": [
+      "buttonWidth(int)"
+    ],
+    "io.papermc.paper.registry.data.dialog.input.TextDialogInput.Builder": [
+      "labelVisible(boolean)",
+      "initial(String)",
+      "maxLength(int)",
+      "multiline(MultilineOptions)"
+    ],
+    "io.papermc.paper.registry.data.dialog.body.ItemDialogBody": [
+      "item()",
+      "showDecorations()",
+      "showTooltip()"
     ]
   },
   "membersRemoved": {},
