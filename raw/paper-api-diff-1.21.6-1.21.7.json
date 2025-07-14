@@ -235,6 +235,7 @@
   ],
   "classesRemoved": [],
   "classesChanged": [
+    "io.papermc.paper.command.brigadier.argument.ArgumentTypes",
     "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider",
@@ -438,6 +439,9 @@
       "initial(boolean)",
       "onFalse(String)",
       "onTrue(String)"
+    ],
+    "io.papermc.paper.command.brigadier.argument.ArgumentTypes": [
+      "hexColor()"
     ],
     "io.papermc.paper.registry.data.dialog.DialogRegistryEntry.Builder": [
       "base(DialogBase)",

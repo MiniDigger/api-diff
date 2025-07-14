@@ -4030,6 +4030,7 @@
       "finePosition(boolean)": "1.21.1",
       "gameMode()": "1.20.6",
       "heightMap()": "1.20.6",
+      "hexColor()": "1.21.7",
       "integerRange()": "1.20.6",
       "itemPredicate()": "1.20.6",
       "itemStack()": "1.20.6",
