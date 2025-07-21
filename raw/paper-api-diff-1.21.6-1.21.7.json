@@ -260,6 +260,7 @@
     "io.papermc.paper.registry.tag.TagKey",
     "org.bukkit.Art",
     "org.bukkit.JukeboxSong",
+    "org.bukkit.Location",
     "org.bukkit.Material",
     "org.bukkit.MusicInstrument",
     "org.bukkit.Registry",
@@ -269,6 +270,7 @@
     "org.bukkit.block.data.BlockData",
     "org.bukkit.entity.AbstractArrow",
     "org.bukkit.entity.Player",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
     "org.bukkit.event.player.AsyncPlayerPreLoginEvent",
     "org.bukkit.event.player.PlayerLinksSendEvent",
     "org.bukkit.inventory.ItemType",
@@ -473,6 +475,9 @@
       "externalTitle(Component)",
       "inputs(List)",
       "pause(boolean)"
+    ],
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason": [
+      "REHYDRATION"
     ],
     "io.papermc.paper.registry.data.dialog.input.SingleOptionDialogInput": [
       "entries()"
