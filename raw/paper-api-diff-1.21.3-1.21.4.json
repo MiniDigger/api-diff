@@ -220,6 +220,7 @@
     "io.papermc.paper.datapack.Datapack",
     "io.papermc.paper.datapack.DatapackSource",
     "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents",
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.TypedKey",
     "io.papermc.paper.registry.event.RegistryEvents",
@@ -551,6 +552,11 @@
     "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
       "createPaintingVariant(Consumer)",
       "instance()"
+    ],
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver": [
+      "MAVEN_CENTRAL_DEFAULT_MIRROR",
+      "MAVEN_CENTRAL_URLS",
+      "getDefaultMavenCentralMirror()"
     ],
     "io.papermc.paper.event.player.PlayerClientLoadedWorldEvent": [
       "isTimeout()",

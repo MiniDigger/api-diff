@@ -1,0 +1,639 @@
+{
+  "versionA": "1.21.8",
+  "versionB": "1.21.9",
+  "packagesAdded": [],
+  "packagesRemoved": [
+    "io.papermc.paper.generated"
+  ],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.brigadier",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.brigadier",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.ban",
+    "io.papermc.paper.block",
+    "io.papermc.paper.block.fluid",
+    "io.papermc.paper.block.fluid.type",
+    "io.papermc.paper.brigadier",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.command.brigadier",
+    "io.papermc.paper.command.brigadier.argument",
+    "io.papermc.paper.command.brigadier.argument.position",
+    "io.papermc.paper.command.brigadier.argument.predicate",
+    "io.papermc.paper.command.brigadier.argument.range",
+    "io.papermc.paper.command.brigadier.argument.resolvers",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector",
+    "io.papermc.paper.configuration",
+    "io.papermc.paper.connection",
+    "io.papermc.paper.datacomponent",
+    "io.papermc.paper.datacomponent.item",
+    "io.papermc.paper.datacomponent.item.attribute",
+    "io.papermc.paper.datacomponent.item.blocksattacks",
+    "io.papermc.paper.datacomponent.item.consumable",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.dialog",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.connection",
+    "io.papermc.paper.event.connection.configuration",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.inventory.tooltip",
+    "io.papermc.paper.item",
+    "io.papermc.paper.math",
+    "io.papermc.paper.persistence",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.lifecycle.event",
+    "io.papermc.paper.plugin.lifecycle.event.handler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar",
+    "io.papermc.paper.plugin.lifecycle.event.types",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.raytracing",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.data",
+    "io.papermc.paper.registry.data.client",
+    "io.papermc.paper.registry.data.dialog",
+    "io.papermc.paper.registry.data.dialog.action",
+    "io.papermc.paper.registry.data.dialog.body",
+    "io.papermc.paper.registry.data.dialog.input",
+    "io.papermc.paper.registry.data.dialog.type",
+    "io.papermc.paper.registry.event",
+    "io.papermc.paper.registry.event.type",
+    "io.papermc.paper.registry.holder",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.registry.keys.tags",
+    "io.papermc.paper.registry.set",
+    "io.papermc.paper.registry.tag",
+    "io.papermc.paper.scoreboard.numbers",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "io.papermc.paper.world.damagesource",
+    "io.papermc.paper.world.flag",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.spawner",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.damage",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.boat",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.components",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.inventory.view",
+    "org.bukkit.inventory.view.builder",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.spawner",
+    "org.bukkit.structure",
+    "org.bukkit.tag",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.SkinParts.Mutable",
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.SkinPatch",
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.SkinPatchBuilder",
+    "io.papermc.paper.event.entity.ItemTransportingEntityValidateTargetEvent",
+    "io.papermc.paper.event.player.AsyncPlayerSpawnLocationEvent",
+    "io.papermc.paper.world.WeatheringCopperState",
+    "org.bukkit.Particle.Spell",
+    "org.bukkit.block.CopperGolemStatue",
+    "org.bukkit.block.Shelf",
+    "org.bukkit.block.data.SideChaining",
+    "org.bukkit.block.data.SideChaining.ChainPart",
+    "org.bukkit.block.data.type.CopperGolemStatue",
+    "org.bukkit.block.data.type.CopperGolemStatue.Pose",
+    "org.bukkit.block.data.type.Shelf",
+    "org.bukkit.entity.CopperGolem",
+    "org.bukkit.entity.CopperGolem.Oxidizing",
+    "org.bukkit.entity.CopperGolem.Oxidizing.AtTime",
+    "org.bukkit.entity.CopperGolem.Oxidizing.Unset",
+    "org.bukkit.entity.CopperGolem.Oxidizing.Waxed",
+    "org.bukkit.entity.Mannequin",
+    "org.bukkit.inventory.ShelfInventory"
+  ],
+  "classesRemoved": [
+    "io.papermc.paper.registry.event.RegistryFreezeEvent",
+    "org.bukkit.packs.DataPack",
+    "org.bukkit.packs.DataPack.Compatibility",
+    "org.bukkit.packs.DataPack.Source",
+    "org.bukkit.packs.DataPackManager"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.ClientOption.ChatVisibility",
+    "com.destroystokyo.paper.ClientOption.ParticleVisibility",
+    "com.destroystokyo.paper.MaterialTags",
+    "com.destroystokyo.paper.SkinParts",
+    "com.destroystokyo.paper.event.brigadier.CommandRegisteredEvent",
+    "com.destroystokyo.paper.event.profile.LookupProfileEvent",
+    "com.destroystokyo.paper.profile.PlayerProfile",
+    "io.papermc.paper.datacomponent.item.ResolvableProfile",
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.Builder",
+    "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent",
+    "io.papermc.paper.event.packet.UncheckedSignChangeEvent",
+    "io.papermc.paper.registry.event.RegistryEventProvider",
+    "io.papermc.paper.registry.keys.BlockTypeKeys",
+    "io.papermc.paper.registry.keys.ItemTypeKeys",
+    "io.papermc.paper.registry.keys.SoundEventKeys",
+    "io.papermc.paper.registry.keys.tags.BlockTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys",
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
+    "io.papermc.paper.threadedregions.RegionizedServerInitEvent",
+    "org.bukkit.Bukkit",
+    "org.bukkit.GameRule",
+    "org.bukkit.Material",
+    "org.bukkit.OfflinePlayer",
+    "org.bukkit.Particle",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Tag",
+    "org.bukkit.WorldCreator",
+    "org.bukkit.block.BlockType",
+    "org.bukkit.block.Skull",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.memory.MemoryKey",
+    "org.bukkit.event.command.UnknownCommandEvent",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.EntitySpawnEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.player.PlayerGameModeChangeEvent.Cause",
+    "org.bukkit.inventory.ItemType",
+    "org.bukkit.loot.LootTables",
+    "org.spigotmc.event.player.PlayerSpawnLocationEvent"
+  ],
+  "membersAdded": {
+    "io.papermc.paper.datacomponent.item.ResolvableProfile": [
+      "dynamic()",
+      "skinPatch()"
+    ],
+    "org.bukkit.Tag": [
+      "BARS",
+      "CHAINS",
+      "COPPER_CHESTS",
+      "COPPER_GOLEM_STATUES",
+      "INCORRECT_FOR_COPPER_TOOL",
+      "LIGHTNING_RODS",
+      "WOODEN_SHELVES",
+      "ENTITY_TYPES_ACCEPTS_IRON_GOLEM_GIFT",
+      "ENTITY_TYPES_CANDIDATE_FOR_IRON_GOLEM_GIFT",
+      "ENTITY_TYPES_CANNOT_BE_PUSHED_ONTO_BOATS",
+      "ITEMS_BARS",
+      "ITEMS_CHAINS",
+      "ITEMS_COPPER",
+      "ITEMS_COPPER_CHESTS",
+      "ITEMS_COPPER_GOLEM_STATUES",
+      "ITEMS_COPPER_TOOL_MATERIALS",
+      "ITEMS_LANTERNS",
+      "ITEMS_LIGHTNING_RODS",
+      "ITEMS_REPAIRS_COPPER_ARMOR",
+      "ITEMS_SHEARABLE_FROM_COPPER_GOLEM",
+      "ITEMS_WOODEN_SHELVES"
+    ],
+    "org.bukkit.entity.Mannequin": [
+      "setProfile(ResolvableProfile)",
+      "defaultDescription()",
+      "defaultProfile()",
+      "isImmovable()",
+      "setDescription(Component)",
+      "setImmovable(boolean)",
+      "setMainHand(MainHand)",
+      "setSkinParts(SkinParts)"
+    ],
+    "io.papermc.paper.world.WeatheringCopperState": [
+      "EXPOSED",
+      "OXIDIZED",
+      "UNAFFECTED",
+      "WEATHERED",
+      "WeatheringCopperState()"
+    ],
+    "org.bukkit.block.data.type.CopperGolemStatue": [
+      "getCopperGolemPose()",
+      "setCopperGolemPose(Pose)"
+    ],
+    "io.papermc.paper.event.player.AsyncPlayerSpawnLocationEvent": [
+      "isNewPlayer()",
+      "newPlayer"
+    ],
+    "com.destroystokyo.paper.SkinParts": [
+      "allParts()",
+      "mutableCopy()"
+    ],
+    "org.bukkit.Server": [
+      "getRespawnWorld()",
+      "setRespawnWorld(World)"
+    ],
+    "org.bukkit.entity.CopperGolem.Oxidizing.Unset": [
+      "Unset()"
+    ],
+    "org.bukkit.block.data.SideChaining": [
+      "getSideChain()",
+      "setSideChain(ChainPart)"
+    ],
+    "org.bukkit.entity.CopperGolem.Oxidizing.Waxed": [
+      "Waxed()"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "COPPER_TOOL_MATERIALS",
+      "REPAIRS_COPPER_ARMOR",
+      "SHEARABLE_FROM_COPPER_GOLEM"
+    ],
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason": [
+      "BUILD_COPPERGOLEM"
+    ],
+    "org.bukkit.block.data.SideChaining.ChainPart": [
+      "ChainPart()",
+      "UNCONNECTED"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "BRUSH_ARMADILLO",
+      "CARVE_PUMPKIN",
+      "CHARGED_CREEPER",
+      "CHARGED_CREEPER_CREEPER",
+      "CHARGED_CREEPER_PIGLIN",
+      "CHARGED_CREEPER_SKELETON",
+      "CHARGED_CREEPER_WITHER_SKELETON",
+      "CHARGED_CREEPER_ZOMBIE",
+      "HARVEST_BEEHIVE",
+      "HARVEST_CAVE_VINE",
+      "HARVEST_SWEET_BERRY_BUSH",
+      "TURTLE_GROW"
+    ],
+    "org.bukkit.Particle.Spell": [
+      "Spell(Color,float)"
+    ],
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.SkinPatch": [
+      "cape()",
+      "elytra()"
+    ],
+    "com.destroystokyo.paper.SkinParts.Mutable": [
+      "immutableCopy()",
+      "setCapeEnabled(boolean)",
+      "setHatsEnabled(boolean)",
+      "setJacketEnabled(boolean)",
+      "setLeftPantsEnabled(boolean)",
+      "setLeftSleeveEnabled(boolean)",
+      "setRightPantsEnabled(boolean)",
+      "setRightSleeveEnabled(boolean)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "SHELF"
+    ],
+    "org.bukkit.entity.memory.MemoryKey": [
+      "TRANSPORT_ITEMS_COOLDOWN_TICKS"
+    ],
+    "com.destroystokyo.paper.MaterialTags": [
+      "COPPER_TOOLS"
+    ],
+    "org.bukkit.entity.CopperGolem": [
+      "getOxidizing()",
+      "getWeatheringState()",
+      "setOxidizing(Oxidizing)",
+      "setWeatheringState(WeatheringCopperState)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_COPPER_CHEST_CLOSE",
+      "BLOCK_COPPER_CHEST_OPEN",
+      "BLOCK_COPPER_CHEST_OXIDIZED_CLOSE",
+      "BLOCK_COPPER_CHEST_OXIDIZED_OPEN",
+      "BLOCK_COPPER_CHEST_WEATHERED_CLOSE",
+      "BLOCK_COPPER_CHEST_WEATHERED_OPEN",
+      "BLOCK_COPPER_GOLEM_STATUE_BREAK",
+      "BLOCK_COPPER_GOLEM_STATUE_FALL",
+      "BLOCK_COPPER_GOLEM_STATUE_HIT",
+      "BLOCK_COPPER_GOLEM_STATUE_PLACE",
+      "BLOCK_COPPER_GOLEM_STATUE_STEP",
+      "BLOCK_SHELF_ACTIVATE",
+      "BLOCK_SHELF_BREAK",
+      "BLOCK_SHELF_DEACTIVATE",
+      "BLOCK_SHELF_FALL",
+      "BLOCK_SHELF_HIT",
+      "BLOCK_SHELF_MULTI_SWAP",
+      "BLOCK_SHELF_PLACE",
+      "BLOCK_SHELF_PLACE_ITEM",
+      "BLOCK_SHELF_SINGLE_SWAP",
+      "BLOCK_SHELF_STEP",
+      "BLOCK_SHELF_TAKE_ITEM",
+      "ENTITY_COPPER_GOLEM_BECOME_STATUE",
+      "ENTITY_COPPER_GOLEM_DEATH",
+      "ENTITY_COPPER_GOLEM_HURT",
+      "ENTITY_COPPER_GOLEM_ITEM_DROP",
+      "ENTITY_COPPER_GOLEM_ITEM_NO_DROP",
+      "ENTITY_COPPER_GOLEM_NO_ITEM_GET",
+      "ENTITY_COPPER_GOLEM_NO_ITEM_NO_GET",
+      "ENTITY_COPPER_GOLEM_OXIDIZED_DEATH",
+      "ENTITY_COPPER_GOLEM_OXIDIZED_HURT",
+      "ENTITY_COPPER_GOLEM_OXIDIZED_SPIN",
+      "ENTITY_COPPER_GOLEM_OXIDIZED_STEP",
+      "ENTITY_COPPER_GOLEM_SHEAR",
+      "ENTITY_COPPER_GOLEM_SPAWN",
+      "ENTITY_COPPER_GOLEM_SPIN",
+      "ENTITY_COPPER_GOLEM_STEP",
+      "ENTITY_COPPER_GOLEM_WEATHERED_DEATH",
+      "ENTITY_COPPER_GOLEM_WEATHERED_HURT",
+      "ENTITY_COPPER_GOLEM_WEATHERED_SPIN",
+      "ENTITY_COPPER_GOLEM_WEATHERED_STEP",
+      "ITEM_ARMOR_EQUIP_COPPER",
+      "WEATHER_END_FLASH"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "COPPER_GOLEM",
+      "MANNEQUIN"
+    ],
+    "org.bukkit.entity.CopperGolem.Oxidizing": [
+      "atTime(long)",
+      "unset()",
+      "waxed()"
+    ],
+    "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
+      "ACCEPTS_IRON_GOLEM_GIFT",
+      "CANDIDATE_FOR_IRON_GOLEM_GIFT",
+      "CANNOT_BE_PUSHED_ONTO_BOATS"
+    ],
+    "org.bukkit.block.BlockType": [
+      "COPPER_WALL_TORCH"
+    ],
+    "org.bukkit.OfflinePlayer": [
+      "applySkinToPlayerHeadContents(Builder)"
+    ],
+    "org.bukkit.Particle": [
+      "COPPER_FIRE_FLAME"
+    ],
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.SkinPatchBuilder": [
+      "body(Key)",
+      "cape(Key)",
+      "elytra(Key)",
+      "model(SkinModel)"
+    ],
+    "io.papermc.paper.datacomponent.item.ResolvableProfile.Builder": [
+      "skinPatch(Consumer)",
+      "skinPatch(SkinPatch)"
+    ],
+    "org.bukkit.inventory.ItemType": [
+      "COPPER_TORCH",
+      "ACACIA_SHELF",
+      "BAMBOO_SHELF",
+      "BIRCH_SHELF",
+      "CHERRY_SHELF",
+      "COPPER_BARS",
+      "COPPER_CHAIN",
+      "COPPER_CHEST",
+      "COPPER_GOLEM_STATUE",
+      "COPPER_LANTERN",
+      "CRIMSON_SHELF",
+      "DARK_OAK_SHELF",
+      "EXPOSED_COPPER_BARS",
+      "EXPOSED_COPPER_CHAIN",
+      "EXPOSED_COPPER_CHEST",
+      "EXPOSED_COPPER_GOLEM_STATUE",
+      "EXPOSED_COPPER_LANTERN",
+      "EXPOSED_LIGHTNING_ROD",
+      "IRON_CHAIN",
+      "JUNGLE_SHELF",
+      "MANGROVE_SHELF",
+      "OAK_SHELF",
+      "OXIDIZED_COPPER_BARS",
+      "OXIDIZED_COPPER_CHAIN",
+      "OXIDIZED_COPPER_CHEST",
+      "OXIDIZED_COPPER_GOLEM_STATUE",
+      "OXIDIZED_COPPER_LANTERN",
+      "OXIDIZED_LIGHTNING_ROD",
+      "PALE_OAK_SHELF",
+      "SPRUCE_SHELF",
+      "WARPED_SHELF",
+      "WAXED_COPPER_BARS",
+      "WAXED_COPPER_CHAIN",
+      "WAXED_COPPER_CHEST",
+      "WAXED_COPPER_GOLEM_STATUE",
+      "WAXED_COPPER_LANTERN",
+      "WAXED_EXPOSED_COPPER_BARS",
+      "WAXED_EXPOSED_COPPER_CHAIN",
+      "WAXED_EXPOSED_COPPER_CHEST",
+      "WAXED_EXPOSED_COPPER_GOLEM_STATUE",
+      "WAXED_EXPOSED_COPPER_LANTERN",
+      "WAXED_EXPOSED_LIGHTNING_ROD",
+      "WAXED_LIGHTNING_ROD",
+      "WAXED_OXIDIZED_COPPER_BARS",
+      "WAXED_OXIDIZED_COPPER_CHAIN",
+      "WAXED_OXIDIZED_COPPER_CHEST",
+      "WAXED_OXIDIZED_COPPER_GOLEM_STATUE",
+      "WAXED_OXIDIZED_COPPER_LANTERN",
+      "WAXED_OXIDIZED_LIGHTNING_ROD",
+      "WAXED_WEATHERED_COPPER_BARS",
+      "WAXED_WEATHERED_COPPER_CHAIN",
+      "WAXED_WEATHERED_COPPER_CHEST",
+      "WAXED_WEATHERED_COPPER_GOLEM_STATUE",
+      "WAXED_WEATHERED_COPPER_LANTERN",
+      "WAXED_WEATHERED_LIGHTNING_ROD",
+      "WEATHERED_COPPER_BARS",
+      "WEATHERED_COPPER_CHAIN",
+      "WEATHERED_COPPER_CHEST",
+      "WEATHERED_COPPER_GOLEM_STATUE",
+      "WEATHERED_COPPER_LANTERN",
+      "WEATHERED_LIGHTNING_ROD",
+      "COPPER_AXE",
+      "COPPER_BOOTS",
+      "COPPER_CHESTPLATE",
+      "COPPER_GOLEM_SPAWN_EGG",
+      "COPPER_HELMET",
+      "COPPER_HOE",
+      "COPPER_HORSE_ARMOR",
+      "COPPER_LEGGINGS",
+      "COPPER_NUGGET",
+      "COPPER_PICKAXE",
+      "COPPER_SHOVEL",
+      "COPPER_SWORD"
+    ],
+    "org.bukkit.event.player.PlayerGameModeChangeEvent.Cause": [
+      "GAMEMODE_SWITCHER"
+    ],
+    "org.bukkit.GameRule": [
+      "ALLOW_ENTERING_NETHER_USING_PORTALS",
+      "COMMAND_BLOCKS_ENABLED",
+      "PVP",
+      "SPAWNER_BLOCKS_ENABLED",
+      "SPAWN_MONSTERS"
+    ]
+  },
+  "membersRemoved": {
+    "io.papermc.paper.registry.event.RegistryEventProvider": [
+      "freeze()"
+    ],
+    "org.bukkit.packs.DataPack.Source": [
+      "Source()"
+    ],
+    "org.bukkit.packs.DataPackManager": [
+      "getDataPack(NamespacedKey)",
+      "getDataPacks()",
+      "getDisabledDataPacks(World)",
+      "getEnabledDataPacks(World)",
+      "isEnabledByFeature(EntityType,World)",
+      "isEnabledByFeature(Material,World)"
+    ],
+    "org.bukkit.packs.DataPack.Compatibility": [
+      "NEW",
+      "OLD"
+    ],
+    "org.bukkit.Server": [
+      "getDataPackManager()"
+    ],
+    "io.papermc.paper.event.packet.UncheckedSignChangeEvent": [
+      "cancel"
+    ],
+    "org.bukkit.event.entity.EntitySpawnEvent": [
+      "canceled"
+    ],
+    "org.bukkit.inventory.ItemType": [
+      "CHAIN"
+    ],
+    "org.bukkit.WorldCreator": [
+      "keepSpawnInMemory()",
+      "keepSpawnInMemory(boolean)",
+      "keepSpawnLoaded"
+    ],
+    "org.bukkit.packs.DataPack": [
+      "getMaxSupportedPackFormat()",
+      "getMinSupportedPackFormat()",
+      "getPackFormat()",
+      "getRequestedFeatures()"
+    ],
+    "org.bukkit.GameRule": [
+      "SPAWN_CHUNK_RADIUS"
+    ]
+  },
+  "membersChanged": {
+    "io.papermc.paper.registry.event.RegistryEventProvider": [
+      "freeze()"
+    ],
+    "org.bukkit.packs.DataPack.Source": [
+      "Source()"
+    ],
+    "org.bukkit.packs.DataPackManager": [
+      "getDataPack(NamespacedKey)",
+      "getDataPacks()",
+      "getDisabledDataPacks(World)",
+      "getEnabledDataPacks(World)",
+      "isEnabledByFeature(EntityType,World)",
+      "isEnabledByFeature(Material,World)"
+    ],
+    "org.bukkit.packs.DataPack.Compatibility": [
+      "NEW",
+      "OLD"
+    ],
+    "org.bukkit.Server": [
+      "getDataPackManager()"
+    ],
+    "io.papermc.paper.event.packet.UncheckedSignChangeEvent": [
+      "cancel"
+    ],
+    "org.bukkit.event.entity.EntitySpawnEvent": [
+      "canceled"
+    ],
+    "org.bukkit.inventory.ItemType": [
+      "CHAIN"
+    ],
+    "org.bukkit.WorldCreator": [
+      "keepSpawnInMemory()",
+      "keepSpawnInMemory(boolean)",
+      "keepSpawnLoaded"
+    ],
+    "org.bukkit.packs.DataPack": [
+      "getMaxSupportedPackFormat()",
+      "getMinSupportedPackFormat()",
+      "getPackFormat()",
+      "getRequestedFeatures()"
+    ],
+    "org.bukkit.GameRule": [
+      "SPAWN_CHUNK_RADIUS"
+    ]
+  }
+}

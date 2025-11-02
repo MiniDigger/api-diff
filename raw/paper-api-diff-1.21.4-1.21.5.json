@@ -249,6 +249,7 @@
     "io.papermc.paper.datacomponent.item.Tool.Builder",
     "io.papermc.paper.event.entity.EntityFertilizeEggEvent",
     "io.papermc.paper.event.player.PlayerPickItemEvent",
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.event.RegistryEvents",
     "io.papermc.paper.registry.keys.BlockTypeKeys",
@@ -1472,6 +1473,11 @@
     "org.bukkit.event.player.PlayerAnimationEvent": [
       "PlayerAnimationEvent(Player)"
     ],
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver": [
+      "MAVEN_CENTRAL_DEFAULT_MIRROR",
+      "MAVEN_CENTRAL_URLS",
+      "getDefaultMavenCentralMirror()"
+    ],
     "org.bukkit.event.entity.SpawnerSpawnEvent": [
       "SpawnerSpawnEvent(Entity,CreatureSpawner)"
     ],
@@ -2374,6 +2380,11 @@
     ],
     "org.bukkit.event.player.PlayerAnimationEvent": [
       "PlayerAnimationEvent(Player)"
+    ],
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver": [
+      "MAVEN_CENTRAL_DEFAULT_MIRROR",
+      "MAVEN_CENTRAL_URLS",
+      "getDefaultMavenCentralMirror()"
     ],
     "org.bukkit.event.entity.SpawnerSpawnEvent": [
       "SpawnerSpawnEvent(Entity,CreatureSpawner)"
