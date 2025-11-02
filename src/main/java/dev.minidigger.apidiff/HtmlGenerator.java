@@ -91,7 +91,6 @@ public class HtmlGenerator {
     }
 
     public void generateSince(List<String> versions, SinceReport sinceReport) throws IOException {
-        // TODO generate sinces and output them, I think we have to walk back all diffs until we find the element
         StringBuilder html = new StringBuilder("""
                 <html lang="en">
                 <head>

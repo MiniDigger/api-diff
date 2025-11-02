@@ -4,12 +4,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+import javax.net.ssl.HttpsURLConnection;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URL;
+import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -33,7 +35,7 @@ public class Main {
                 "1.18", "1.18.1", "1.18.2",
                 "1.19", "1.19.1", "1.19.2", "1.19.3", "1.19.4",
                 "1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6",
-                "1.21.1", "1.21.3", "1.21.4", "1.21.5", "1.21.6", "1.21.7", "1.21.8", "1.21.9-pre2"
+                "1.21.1", "1.21.3", "1.21.4", "1.21.5", "1.21.6", "1.21.7", "1.21.8", "1.21.9", "1.21.10"
         );
 
         Main main = new Main();
@@ -84,13 +86,21 @@ public class Main {
         }
         String metadataUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/maven-metadata.xml";
         String snapshotVersion = getLatestSnapshotVersion(metadataUrl);
+        if (snapshotVersion == null) {
+            System.err.println("Could not find snapshot version for " + version);
+            return;
+        }
         String sourcesUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/paper-api-" + snapshotVersion + "-sources.jar";
         downloadAndExtractSourcesToDisk(sourcesUrl, Path.of("sources/paper-api-" + version));
     }
 
     public String getLatestSnapshotVersion(String metadataUrl) throws Exception {
         URL url = new URI(metadataUrl).toURL();
-        try (InputStream inputStream = url.openStream()) {
+        URLConnection urlConnection = url.openConnection();
+        if (urlConnection instanceof HttpsURLConnection httpsURLConnection) {
+            httpsURLConnection.setRequestProperty("User-Agent", "api-diff/1.0 <https://github.com/MiniDigger/api-diff/>");
+        }
+        try (InputStream inputStream = urlConnection.getInputStream()) {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document document = builder.parse(inputStream);
