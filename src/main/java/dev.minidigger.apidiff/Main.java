@@ -1,5 +1,7 @@
 package dev.minidigger.apidiff;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -12,42 +14,111 @@ import java.io.InputStream;
 import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 import static jdk.javadoc.internal.tool.Main.execute;
 
 public class Main {
+    private static final URI API_URL = URI.create("https://fill.papermc.io/graphql");
+    // language=graphql
+    private static final String VERSION_REQUEST = """
+                            {
+                                project(key: "paper") {
+                                    versions(first: 100, orderBy: { direction: ASC }) {
+                                        nodes {
+                                           family {
+                                               key
+                                           }
+                                           key
+                                        }
+                                    }
+                                }
+                            }
+                           """.stripIndent()
+                            .replace("\n", "\\n")
+                            .replace("\"", "\\\"");
+
+
     public static void main(String[] args) throws Exception {
-        List<String> versions = List.of(
-                "1.09.4",
-                "1.10.2",
-                "1.11", "1.11.1", "1.11.2",
-                "1.12", "1.12.1", "1.12.2",
-                "1.13", "1.13.1", "1.13.2",
-                "1.14", "1.14.1", "1.14.2", "1.14.3", "1.14.4",
-                "1.15", "1.15.2",
-                "1.16.1", "1.16.2", "1.16.3", "1.16.4", "1.16.5",
-                "1.17", "1.17.1",
-                "1.18", "1.18.1", "1.18.2",
-                "1.19", "1.19.1", "1.19.2", "1.19.3", "1.19.4",
-                "1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6",
-                "1.21.1", "1.21.3", "1.21.4", "1.21.5", "1.21.6", "1.21.7", "1.21.8", "1.21.9", "1.21.10", "1.21.11"
-        );
+        Map<String, List<String>> versionsMap;
+        try (var client = HttpClient.newHttpClient()) {
+            var request = HttpRequest.newBuilder()
+                    .uri(API_URL)
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString("{\"query\":\"" + VERSION_REQUEST + "\"}"))
+                    .build();
+            var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            var code = response.statusCode();
+
+            if (code > 299 || code < 200) {
+                throw new RuntimeException("Could not connect to " + API_URL + " due to: " + response.body());
+            }
+
+            var json = JsonParser.parseString(response.body()).getAsJsonObject();
+            if (json.has("errors"))
+                throw new RuntimeException("Couldn't fetch versions from " + API_URL + ", reason: " + json.get("errors"));
+            versionsMap =
+                    json.getAsJsonObject("data")
+                            .getAsJsonObject("project")
+                            .getAsJsonObject("versions")
+                            .getAsJsonArray("nodes")
+                            .asList()
+                            .stream()
+                            .skip(2) // skip 1.7.10 and 1.8.8
+                            .map(JsonElement::getAsJsonObject)
+                            // this version doesn't have a sources jar
+                            .filter(v -> !v.get("key").getAsString().equals("1.13-pre7"))
+                            .collect(Collectors.groupingBy(
+                                    v -> v.getAsJsonObject("family").get("key").getAsString(),
+                                    LinkedHashMap::new,
+                                    Collectors.mapping(
+                                            v -> v.get("key").getAsString(),
+                                            Collectors.toCollection(ArrayList::new)
+                                    )
+                            ));
+
+        }
 
         Main main = new Main();
         ApiDiffer apiDiffer = new ApiDiffer();
-        SinceGenerator sinceGenerator = new SinceGenerator(versions, apiDiffer);
-        HtmlGenerator htmlGenerator = new HtmlGenerator(apiDiffer);
 
-        // download all sources jars
-        for (String version : versions) {
-            main.fetchSourcesJar(version);
+        for (var it = versionsMap.entrySet().iterator(); it.hasNext(); ) {
+            var versionFamily = it.next();
+            var family = versionFamily.getKey();
+
+            versionFamily.getValue().removeIf(version ->
+                    {
+                        try {
+                            return !main.fetchSourcesJar(family, version);
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+            );
+
+            if (versionFamily.getValue().isEmpty()) {
+                it.remove();
+            }
         }
 
+        var versions = versionsMap.values().stream()
+                .flatMap(Collection::stream)
+                .toList();
+
+        SinceGenerator sinceGenerator = new SinceGenerator(versions, apiDiffer);
+        HtmlGenerator htmlGenerator = new HtmlGenerator(apiDiffer);
         // generate api-export json
         for (String version : versions) {
             main.generateApiExport(version);
@@ -76,22 +147,26 @@ public class Main {
         execute("--ignore-source-errors", "-public", "-quiet", "-doclet", "dev.minidigger.apidiff.ApiExportDoclet", "--output-file", "output/raw/paper-api-" + version + ".json", "--mc-version", version, "-sourcepath", "sources/paper-api-" + version, "-subpackages", packages);
     }
 
-    public void fetchSourcesJar(String version) throws Exception {
+    public boolean fetchSourcesJar(String family, String version) throws Exception {
         // TODO add hash check to prevent redownloading
         System.out.println("Fetching sources for " + version);
-        int minor = Integer.parseInt(version.split("\\.")[1]);
+        var parts = family.split("\\.");
+        int major = Integer.parseInt(parts[0]);
+        int minor = Integer.parseInt(parts[1]);
         String group = "io/papermc";
-        if (minor < 17) {
+        // hopefully this doesn't break with new versioning system
+        if (major < 26 && minor < 17)
             group = "com/destroystokyo";
-        }
+
         String metadataUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/maven-metadata.xml";
         String snapshotVersion = getLatestSnapshotVersion(metadataUrl);
         if (snapshotVersion == null) {
             System.err.println("Could not find snapshot version for " + version);
-            return;
+            return false;
         }
         String sourcesUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/paper-api-" + snapshotVersion + "-sources.jar";
         downloadAndExtractSourcesToDisk(sourcesUrl, Path.of("sources/paper-api-" + version));
+        return true;
     }
 
     public String getLatestSnapshotVersion(String metadataUrl) throws Exception {
@@ -115,7 +190,10 @@ public class Main {
                     for (int i = 0; i < snapshotVersionList.getLength(); i++) {
                         Element snapshotVersion = (Element) snapshotVersionList.item(i);
                         String extension = snapshotVersion.getElementsByTagName("extension").item(0).getTextContent();
-                        if ("jar".equals(extension)) {
+                        NodeList classifierNodes = snapshotVersion.getElementsByTagName("classifier");
+                        String classifier = classifierNodes.getLength() > 0 ? classifierNodes.item(0).getTextContent() : "";
+
+                        if ("jar".equals(extension) && "sources".equals(classifier)) {
                             return snapshotVersion.getElementsByTagName("value").item(0).getTextContent();
                         }
                     }

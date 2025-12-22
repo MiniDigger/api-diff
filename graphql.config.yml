@@ -1,0 +1,2 @@
+schema: https://fill.papermc.io/graphql
+documents: src/main/java/dev.minidigger.apidiff/Main.java
