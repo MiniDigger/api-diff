@@ -1,0 +1,675 @@
+{
+  "versionA": "1.21",
+  "versionB": "1.21.1",
+  "packagesAdded": [
+    "io.papermc.paper.world.flag"
+  ],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.block",
+    "com.destroystokyo.paper.brigadier",
+    "com.destroystokyo.paper.entity",
+    "com.destroystokyo.paper.entity.ai",
+    "com.destroystokyo.paper.entity.villager",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.brigadier",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.inventory",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.profile",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.inventory.meta",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.network",
+    "com.destroystokyo.paper.profile",
+    "com.destroystokyo.paper.util",
+    "com.destroystokyo.paper.utils",
+    "io.papermc.paper",
+    "io.papermc.paper.advancement",
+    "io.papermc.paper.ban",
+    "io.papermc.paper.block",
+    "io.papermc.paper.block.fluid",
+    "io.papermc.paper.block.fluid.type",
+    "io.papermc.paper.brigadier",
+    "io.papermc.paper.chat",
+    "io.papermc.paper.command",
+    "io.papermc.paper.command.brigadier",
+    "io.papermc.paper.command.brigadier.argument",
+    "io.papermc.paper.command.brigadier.argument.predicate",
+    "io.papermc.paper.command.brigadier.argument.range",
+    "io.papermc.paper.command.brigadier.argument.resolvers",
+    "io.papermc.paper.command.brigadier.argument.resolvers.selector",
+    "io.papermc.paper.datapack",
+    "io.papermc.paper.enchantments",
+    "io.papermc.paper.entity",
+    "io.papermc.paper.event.block",
+    "io.papermc.paper.event.entity",
+    "io.papermc.paper.event.packet",
+    "io.papermc.paper.event.player",
+    "io.papermc.paper.event.server",
+    "io.papermc.paper.event.world",
+    "io.papermc.paper.event.world.border",
+    "io.papermc.paper.inventory",
+    "io.papermc.paper.inventory.tooltip",
+    "io.papermc.paper.math",
+    "io.papermc.paper.persistence",
+    "io.papermc.paper.plugin",
+    "io.papermc.paper.plugin.bootstrap",
+    "io.papermc.paper.plugin.configuration",
+    "io.papermc.paper.plugin.lifecycle.event",
+    "io.papermc.paper.plugin.lifecycle.event.handler",
+    "io.papermc.paper.plugin.lifecycle.event.handler.configuration",
+    "io.papermc.paper.plugin.lifecycle.event.registrar",
+    "io.papermc.paper.plugin.lifecycle.event.types",
+    "io.papermc.paper.plugin.loader",
+    "io.papermc.paper.plugin.loader.library",
+    "io.papermc.paper.plugin.loader.library.impl",
+    "io.papermc.paper.plugin.provider.classloader",
+    "io.papermc.paper.potion",
+    "io.papermc.paper.registry",
+    "io.papermc.paper.registry.data",
+    "io.papermc.paper.registry.event",
+    "io.papermc.paper.registry.event.type",
+    "io.papermc.paper.registry.keys",
+    "io.papermc.paper.registry.keys.tags",
+    "io.papermc.paper.registry.set",
+    "io.papermc.paper.registry.tag",
+    "io.papermc.paper.scoreboard.numbers",
+    "io.papermc.paper.tag",
+    "io.papermc.paper.text",
+    "io.papermc.paper.threadedregions.scheduler",
+    "io.papermc.paper.util",
+    "io.papermc.paper.world",
+    "org.bukkit",
+    "org.bukkit.advancement",
+    "org.bukkit.attribute",
+    "org.bukkit.ban",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.block.data",
+    "org.bukkit.block.data.type",
+    "org.bukkit.block.sign",
+    "org.bukkit.block.spawner",
+    "org.bukkit.block.structure",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.damage",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.memory",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.command",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.raid",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.generator.structure",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.inventory.meta.components",
+    "org.bukkit.inventory.meta.tags",
+    "org.bukkit.inventory.meta.trim",
+    "org.bukkit.inventory.recipe",
+    "org.bukkit.inventory.view",
+    "org.bukkit.loot",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.packs",
+    "org.bukkit.permissions",
+    "org.bukkit.persistence",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.profile",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.spawner",
+    "org.bukkit.structure",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.Namespaced",
+    "com.destroystokyo.paper.NamespacedTag",
+    "io.papermc.paper.block.TileStateInventoryHolder",
+    "io.papermc.paper.datapack.DatapackSource",
+    "io.papermc.paper.entity.Leashable",
+    "io.papermc.paper.event.player.PlayerInsertLecternBookEvent",
+    "io.papermc.paper.plugin.lifecycle.event.types.TagEventTypeProvider",
+    "io.papermc.paper.registry.keys.BannerPatternKeys",
+    "io.papermc.paper.registry.keys.BlockTypeKeys",
+    "io.papermc.paper.registry.keys.CatVariantKeys",
+    "io.papermc.paper.registry.keys.FrogVariantKeys",
+    "io.papermc.paper.registry.keys.JukeboxSongKeys",
+    "io.papermc.paper.registry.keys.MapDecorationTypeKeys",
+    "io.papermc.paper.registry.keys.MenuTypeKeys",
+    "io.papermc.paper.registry.keys.VillagerProfessionKeys",
+    "io.papermc.paper.registry.keys.VillagerTypeKeys",
+    "io.papermc.paper.tag.PostFlattenTagRegistrar",
+    "io.papermc.paper.tag.PreFlattenTagRegistrar",
+    "io.papermc.paper.tag.TagEntry",
+    "io.papermc.paper.world.flag.FeatureDependant",
+    "io.papermc.paper.world.flag.FeatureFlagSetHolder",
+    "org.bukkit.block.data.type.Skull",
+    "org.bukkit.block.data.type.WallSkull",
+    "org.bukkit.event.block.BlockDispenseLootEvent",
+    "org.bukkit.event.block.VaultDisplayItemEvent",
+    "org.bukkit.inventory.MenuType",
+    "org.bukkit.inventory.MenuType.Typed",
+    "org.bukkit.util.OldEnum"
+  ],
+  "classesRemoved": [
+    "com.destroystokyo.paper.event.executor.MethodHandleEventExecutor",
+    "com.destroystokyo.paper.event.executor.StaticMethodHandleEventExecutor",
+    "com.destroystokyo.paper.event.executor.asm.ASMEventExecutorGenerator",
+    "com.destroystokyo.paper.event.executor.asm.ClassDefiner",
+    "com.destroystokyo.paper.event.executor.asm.SafeClassDefiner",
+    "com.destroystokyo.paper.event.executor.asm.SafeClassDefiner.GeneratedClassLoader",
+    "com.destroystokyo.paper.util.SneakyThrow",
+    "com.destroystokyo.paper.util.VersionFetcher.DummyVersionFetcher",
+    "com.destroystokyo.paper.utils.CachedSizeConcurrentLinkedQueue",
+    "io.papermc.paper.chat.ViewerUnawareImpl",
+    "io.papermc.paper.chat.ViewerUnawareImpl.Default",
+    "io.papermc.paper.potion.SuspiciousEffectEntryImpl",
+    "io.papermc.paper.util.TransformingRandomAccessList",
+    "io.papermc.paper.util.TransformingRandomAccessList.TransformedListIterator"
+  ],
+  "classesChanged": [
+    "com.destroystokyo.paper.ParticleBuilder",
+    "com.destroystokyo.paper.event.brigadier.AsyncPlayerSendCommandsEvent",
+    "com.destroystokyo.paper.event.brigadier.AsyncPlayerSendSuggestionsEvent",
+    "io.papermc.paper.datapack.Datapack",
+    "io.papermc.paper.datapack.DatapackManager",
+    "io.papermc.paper.event.block.BlockLockCheckEvent",
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents",
+    "io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver",
+    "io.papermc.paper.registry.RegistryKey",
+    "org.bukkit.Bukkit",
+    "org.bukkit.EntityEffect",
+    "org.bukkit.FeatureFlag",
+    "org.bukkit.Material",
+    "org.bukkit.OfflinePlayer",
+    "org.bukkit.Registry",
+    "org.bukkit.Registry.SimpleRegistry",
+    "org.bukkit.Server",
+    "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
+    "org.bukkit.attribute.AttributeModifier",
+    "org.bukkit.block.BrewingStand",
+    "org.bukkit.block.Container",
+    "org.bukkit.block.Lectern",
+    "org.bukkit.block.Sign",
+    "org.bukkit.block.banner.PatternType",
+    "org.bukkit.block.data.type.DecoratedPot",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.entity.Cat.Type",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.Frog.Variant",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.Villager.Profession",
+    "org.bukkit.entity.Villager.Type",
+    "org.bukkit.event.block.BrewingStartEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.inventory.ItemFactory",
+    "org.bukkit.inventory.ItemStack",
+    "org.bukkit.inventory.meta.CompassMeta",
+    "org.bukkit.inventory.meta.FireworkMeta",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.trim.TrimMaterial",
+    "org.bukkit.inventory.meta.trim.TrimPattern",
+    "org.bukkit.inventory.view.AnvilView",
+    "org.bukkit.inventory.view.BeaconView",
+    "org.bukkit.inventory.view.BrewingStandView",
+    "org.bukkit.inventory.view.CrafterView",
+    "org.bukkit.inventory.view.EnchantmentView",
+    "org.bukkit.inventory.view.FurnaceView",
+    "org.bukkit.inventory.view.LecternView",
+    "org.bukkit.inventory.view.LoomView",
+    "org.bukkit.inventory.view.MerchantView",
+    "org.bukkit.inventory.view.StonecutterView",
+    "org.bukkit.map.MapCursor.Type",
+    "org.bukkit.plugin.messaging.ChannelNameTooLongException",
+    "org.bukkit.plugin.messaging.StandardMessenger"
+  ],
+  "membersAdded": {
+    "org.bukkit.attribute.AttributeModifier": [
+      "UUID_PATTERN"
+    ],
+    "org.bukkit.EntityEffect": [
+      "ARMADILLO_PEEK",
+      "BODY_BREAK",
+      "TAMING_FAILED",
+      "TAMING_SUCCEEDED"
+    ],
+    "org.bukkit.enchantments.Enchantment": [
+      "getExclusiveWith()",
+      "getPrimaryItems()",
+      "getSupportedItems()"
+    ],
+    "io.papermc.paper.datapack.DatapackManager": [
+      "getPack(String)",
+      "refreshPacks()"
+    ],
+    "org.bukkit.entity.Player": [
+      "sendEntityEffect(EntityEffect,Entity)"
+    ],
+    "org.bukkit.inventory.view.BrewingStandView": [
+      "getRecipeBrewTime()",
+      "setRecipeBrewTime(int)"
+    ],
+    "io.papermc.paper.registry.keys.BlockTypeKeys": [
+      "BlockTypeKeys()"
+    ],
+    "org.bukkit.inventory.view.AnvilView": [
+      "bypassEnchantmentLevelRestriction(boolean)",
+      "bypassesEnchantmentLevelRestriction()"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents": [
+      "TAGS"
+    ],
+    "org.bukkit.util.OldEnum": [
+      "compareTo(T)",
+      "ordinal()"
+    ],
+    "org.bukkit.World": [
+      "createExplosion(Entity,Location,float,boolean,boolean,boolean)",
+      "getVoidDamageAmount()",
+      "getVoidDamageMinBuildHeightOffset()",
+      "isVoidDamageEnabled()",
+      "setVoidDamageAmount(float)",
+      "setVoidDamageEnabled(boolean)",
+      "setVoidDamageMinBuildHeightOffset(double)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "deserializeItemFromJson(JsonObject)",
+      "serializeItemAsJson(ItemStack)"
+    ],
+    "org.bukkit.plugin.messaging.ChannelNameTooLongException": [
+      "ChannelNameTooLongException(int,String)"
+    ],
+    "org.bukkit.Registry.SimpleRegistry": [
+      "getOrThrow(NamespacedKey)"
+    ],
+    "org.bukkit.Material": [
+      "blockType"
+    ],
+    "io.papermc.paper.tag.TagEntry": [
+      "\u003cT\u003etagEntry(TagKey)",
+      "\u003cT\u003etagEntry(TagKey,boolean)",
+      "\u003cT\u003evalueEntry(TypedKey)",
+      "\u003cT\u003evalueEntry(TypedKey,boolean)",
+      "isTag()"
+    ],
+    "org.bukkit.block.Sign": [
+      "getAllowedEditorUniqueId()",
+      "setAllowedEditorUniqueId(UUID)"
+    ],
+    "io.papermc.paper.world.flag.FeatureDependant": [
+      "requiredFeatures()"
+    ],
+    "org.bukkit.event.block.VaultDisplayItemEvent": [
+      "VaultDisplayItemEvent(Block,ItemStack)",
+      "displayItem"
+    ],
+    "io.papermc.paper.registry.keys.JukeboxSongKeys": [
+      "JukeboxSongKeys()"
+    ],
+    "org.bukkit.inventory.ItemFactory": [
+      "enchantWithLevels(ItemStack,int,RegistryKeySet,Random)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "broadcastHurtAnimation(Collection)"
+    ],
+    "io.papermc.paper.registry.keys.MenuTypeKeys": [
+      "MenuTypeKeys()"
+    ],
+    "org.bukkit.event.block.BrewingStartEvent": [
+      "recipeBrewTime"
+    ],
+    "org.bukkit.inventory.meta.FireworkMeta": [
+      "hasPower()"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "setRiptiding(boolean)"
+    ],
+    "org.bukkit.inventory.ItemStack": [
+      "ARRAY_SERIALIZATION_VERSION",
+      "deserializeItemsFromBytes(byte...)",
+      "enchantWithLevels(int,RegistryKeySet,Random)",
+      "serializeItemsAsBytes(Collection)",
+      "serializeItemsAsBytes(ItemStack...)"
+    ],
+    "io.papermc.paper.world.flag.FeatureFlagSetHolder": [
+      "isEnabled(FeatureDependant)"
+    ],
+    "org.bukkit.FeatureFlag": [
+      "ALL_FLAGS",
+      "deprecated(String)"
+    ],
+    "org.bukkit.inventory.meta.trim.TrimMaterial": [
+      "getTrimMaterial(String)"
+    ],
+    "io.papermc.paper.registry.keys.VillagerTypeKeys": [
+      "VillagerTypeKeys()"
+    ],
+    "org.bukkit.Registry": [
+      "MENU"
+    ],
+    "org.bukkit.inventory.MenuType": [
+      "CRAFTER_3X3",
+      "GENERIC_3X3",
+      "GENERIC_9X1",
+      "GENERIC_9X2",
+      "GENERIC_9X3",
+      "GENERIC_9X4",
+      "GENERIC_9X5",
+      "GENERIC_9X6",
+      "\u003cT\u003eget(String)",
+      "\u003cV\u003etyped(Class)",
+      "getInventoryViewClass()"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getCanDestroy()",
+      "getCanPlaceOn()",
+      "getDestroyableKeys()",
+      "getPlaceableKeys()",
+      "hasDestroyableKeys()",
+      "hasPlaceableKeys()",
+      "setCanDestroy(Set)",
+      "setCanPlaceOn(Set)",
+      "setDestroyableKeys(Collection)",
+      "setPlaceableKeys(Collection)"
+    ],
+    "com.destroystokyo.paper.ParticleBuilder": [
+      "color(int,int,int,int)"
+    ],
+    "org.bukkit.inventory.meta.trim.TrimPattern": [
+      "getTrimPattern(String)"
+    ],
+    "io.papermc.paper.datapack.Datapack": [
+      "computeDisplayName()",
+      "getRequiredFeatures()"
+    ],
+    "io.papermc.paper.registry.keys.BannerPatternKeys": [
+      "BannerPatternKeys()"
+    ],
+    "io.papermc.paper.tag.PreFlattenTagRegistrar": [
+      "addToTag(TagKey,Collection)",
+      "getAllTags()",
+      "setTag(TagKey,Collection)"
+    ],
+    "org.bukkit.block.data.type.DecoratedPot": [
+      "isCracked()",
+      "setCracked(boolean)"
+    ],
+    "org.bukkit.Server": [
+      "getWorld(Key)"
+    ],
+    "com.destroystokyo.paper.NamespacedTag": [
+      "NamespacedTag(Plugin,String)",
+      "NamespacedTag(String,String)",
+      "VALID_KEY",
+      "VALID_NAMESPACE",
+      "randomKey()"
+    ],
+    "io.papermc.paper.registry.keys.MapDecorationTypeKeys": [
+      "MapDecorationTypeKeys()"
+    ],
+    "org.bukkit.event.block.BlockDispenseLootEvent": [
+      "BlockDispenseLootEvent(Player,Block,List)",
+      "dispensedLoot",
+      "getDispensedLoot()",
+      "setDispensedLoot(List)"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "startRiptideAttack(int,float,ItemStack)"
+    ],
+    "org.bukkit.plugin.messaging.StandardMessenger": [
+      "shortened(String)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "InventoryType(int,String,MenuType)",
+      "InventoryType(int,String,MenuType,boolean)",
+      "getMenuType()",
+      "menuType"
+    ],
+    "io.papermc.paper.registry.keys.FrogVariantKeys": [
+      "FrogVariantKeys()"
+    ],
+    "org.bukkit.inventory.MenuType.Typed": [
+      "create(HumanEntity,Component)",
+      "create(HumanEntity,String)"
+    ],
+    "io.papermc.paper.registry.keys.VillagerProfessionKeys": [
+      "VillagerProfessionKeys()"
+    ],
+    "io.papermc.paper.registry.keys.CatVariantKeys": [
+      "CatVariantKeys()"
+    ],
+    "org.bukkit.inventory.meta.CompassMeta": [
+      "clearLodestone()",
+      "isLodestoneCompass()"
+    ],
+    "io.papermc.paper.plugin.lifecycle.event.types.TagEventTypeProvider": [
+      "\u003cT\u003epostFlatten(RegistryKey)",
+      "\u003cT\u003epreFlatten(RegistryKey)"
+    ]
+  },
+  "membersRemoved": {
+    "com.destroystokyo.paper.utils.CachedSizeConcurrentLinkedQueue": [
+      "CachedSizeConcurrentLinkedQueue()",
+      "add(E)",
+      "cachedSize",
+      "poll()"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.SafeClassDefiner": [
+      "defineClass(ClassLoader,String,byte...)",
+      "SafeClassDefiner()"
+    ],
+    "com.destroystokyo.paper.event.executor.MethodHandleEventExecutor": [
+      "MethodHandleEventExecutor(Class,Method)",
+      "MethodHandleEventExecutor(Class,MethodHandle)"
+    ],
+    "io.papermc.paper.chat.ViewerUnawareImpl": [
+      "ViewerUnawareImpl(ViewerUnaware)",
+      "unaware"
+    ],
+    "io.papermc.paper.chat.ViewerUnawareImpl.Default": [
+      "Default(ViewerUnaware)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "InventoryType(int,String)",
+      "InventoryType(int,String,boolean)"
+    ],
+    "com.destroystokyo.paper.util.SneakyThrow": [
+      "\u003cT\u003ethrowSneaky(Throwable)",
+      "SneakyThrow()",
+      "sneaky(Throwable)"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.ClassDefiner": [
+      "isBypassAccessChecks()"
+    ],
+    "org.bukkit.event.block.BrewingStartEvent": [
+      "BrewingStartEvent(Block,ItemStack,int)"
+    ],
+    "com.destroystokyo.paper.util.VersionFetcher.DummyVersionFetcher": [
+      "DummyVersionFetcher()"
+    ],
+    "com.destroystokyo.paper.event.executor.StaticMethodHandleEventExecutor": [
+      "handle",
+      "method",
+      "StaticMethodHandleEventExecutor(Class,Method)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getFeatureFlag(NamespacedKey)"
+    ],
+    "io.papermc.paper.util.TransformingRandomAccessList.TransformedListIterator": [
+      "\u003cA\u003ecast(Iterator)",
+      "TransformedListIterator(ListIterator)",
+      "add(T)",
+      "backingIterator",
+      "backingIterator()",
+      "hasPrevious()",
+      "nextIndex()",
+      "previous()",
+      "previousIndex()",
+      "set(T)",
+      "transform(F)",
+      "transformBack(T)"
+    ],
+    "io.papermc.paper.util.TransformingRandomAccessList": [
+      "TransformingRandomAccessList(List,Function,Function)",
+      "add(int,T)",
+      "fromFunction",
+      "fromList",
+      "get(int)",
+      "listIterator(int)",
+      "remove(int)",
+      "removeIf(Predicate)",
+      "set(int,T)",
+      "toFunction"
+    ],
+    "org.bukkit.plugin.messaging.ChannelNameTooLongException": [
+      "ChannelNameTooLongException(String)"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.SafeClassDefiner.GeneratedClassLoader": [
+      "GeneratedClassLoader(ClassLoader)",
+      "define(String,byte...)",
+      "getClassLoadingLock(String)",
+      "hasClass(String)"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.ASMEventExecutorGenerator": [
+      "ASMEventExecutorGenerator()",
+      "EXECUTE_DESCRIPTOR",
+      "NEXT_ID",
+      "generateEventExecutor(Method,String)",
+      "generateName()"
+    ],
+    "io.papermc.paper.potion.SuspiciousEffectEntryImpl": [
+      "SuspiciousEffectEntryImpl(PotionEffectType,int)"
+    ]
+  },
+  "membersChanged": {
+    "com.destroystokyo.paper.utils.CachedSizeConcurrentLinkedQueue": [
+      "CachedSizeConcurrentLinkedQueue()",
+      "add(E)",
+      "cachedSize",
+      "poll()"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.SafeClassDefiner": [
+      "defineClass(ClassLoader,String,byte...)",
+      "SafeClassDefiner()"
+    ],
+    "com.destroystokyo.paper.event.executor.MethodHandleEventExecutor": [
+      "MethodHandleEventExecutor(Class,Method)",
+      "MethodHandleEventExecutor(Class,MethodHandle)"
+    ],
+    "io.papermc.paper.chat.ViewerUnawareImpl": [
+      "ViewerUnawareImpl(ViewerUnaware)",
+      "unaware"
+    ],
+    "io.papermc.paper.chat.ViewerUnawareImpl.Default": [
+      "Default(ViewerUnaware)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "InventoryType(int,String)",
+      "InventoryType(int,String,boolean)"
+    ],
+    "com.destroystokyo.paper.util.SneakyThrow": [
+      "\u003cT\u003ethrowSneaky(Throwable)",
+      "SneakyThrow()",
+      "sneaky(Throwable)"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.ClassDefiner": [
+      "isBypassAccessChecks()"
+    ],
+    "org.bukkit.event.block.BrewingStartEvent": [
+      "BrewingStartEvent(Block,ItemStack,int)"
+    ],
+    "com.destroystokyo.paper.util.VersionFetcher.DummyVersionFetcher": [
+      "DummyVersionFetcher()"
+    ],
+    "com.destroystokyo.paper.event.executor.StaticMethodHandleEventExecutor": [
+      "handle",
+      "method",
+      "StaticMethodHandleEventExecutor(Class,Method)"
+    ],
+    "org.bukkit.UnsafeValues": [
+      "getFeatureFlag(NamespacedKey)"
+    ],
+    "io.papermc.paper.util.TransformingRandomAccessList.TransformedListIterator": [
+      "\u003cA\u003ecast(Iterator)",
+      "TransformedListIterator(ListIterator)",
+      "add(T)",
+      "backingIterator",
+      "backingIterator()",
+      "hasPrevious()",
+      "nextIndex()",
+      "previous()",
+      "previousIndex()",
+      "set(T)",
+      "transform(F)",
+      "transformBack(T)"
+    ],
+    "io.papermc.paper.util.TransformingRandomAccessList": [
+      "TransformingRandomAccessList(List,Function,Function)",
+      "add(int,T)",
+      "fromFunction",
+      "fromList",
+      "get(int)",
+      "listIterator(int)",
+      "remove(int)",
+      "removeIf(Predicate)",
+      "set(int,T)",
+      "toFunction"
+    ],
+    "org.bukkit.plugin.messaging.ChannelNameTooLongException": [
+      "ChannelNameTooLongException(String)"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.SafeClassDefiner.GeneratedClassLoader": [
+      "GeneratedClassLoader(ClassLoader)",
+      "define(String,byte...)",
+      "getClassLoadingLock(String)",
+      "hasClass(String)"
+    ],
+    "com.destroystokyo.paper.event.executor.asm.ASMEventExecutorGenerator": [
+      "ASMEventExecutorGenerator()",
+      "EXECUTE_DESCRIPTOR",
+      "NEXT_ID",
+      "generateEventExecutor(Method,String)",
+      "generateName()"
+    ],
+    "io.papermc.paper.potion.SuspiciousEffectEntryImpl": [
+      "SuspiciousEffectEntryImpl(PotionEffectType,int)"
+    ]
+  }
+}

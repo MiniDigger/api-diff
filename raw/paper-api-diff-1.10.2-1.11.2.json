@@ -1,0 +1,665 @@
+{
+  "versionA": "1.10.2",
+  "versionB": "1.11.2",
+  "packagesAdded": [],
+  "packagesRemoved": [],
+  "packagesChanged": [
+    "com.destroystokyo.paper",
+    "com.destroystokyo.paper.event.block",
+    "com.destroystokyo.paper.event.entity",
+    "com.destroystokyo.paper.event.executor",
+    "com.destroystokyo.paper.event.executor.asm",
+    "com.destroystokyo.paper.event.player",
+    "com.destroystokyo.paper.event.server",
+    "com.destroystokyo.paper.exception",
+    "com.destroystokyo.paper.loottable",
+    "com.destroystokyo.paper.utils",
+    "org.bukkit",
+    "org.bukkit.attribute",
+    "org.bukkit.block",
+    "org.bukkit.block.banner",
+    "org.bukkit.boss",
+    "org.bukkit.command",
+    "org.bukkit.command.defaults",
+    "org.bukkit.configuration",
+    "org.bukkit.configuration.file",
+    "org.bukkit.configuration.serialization",
+    "org.bukkit.conversations",
+    "org.bukkit.enchantments",
+    "org.bukkit.entity",
+    "org.bukkit.entity.minecart",
+    "org.bukkit.event",
+    "org.bukkit.event.block",
+    "org.bukkit.event.enchantment",
+    "org.bukkit.event.entity",
+    "org.bukkit.event.hanging",
+    "org.bukkit.event.inventory",
+    "org.bukkit.event.player",
+    "org.bukkit.event.server",
+    "org.bukkit.event.vehicle",
+    "org.bukkit.event.weather",
+    "org.bukkit.event.world",
+    "org.bukkit.generator",
+    "org.bukkit.help",
+    "org.bukkit.inventory",
+    "org.bukkit.inventory.meta",
+    "org.bukkit.map",
+    "org.bukkit.material",
+    "org.bukkit.material.types",
+    "org.bukkit.metadata",
+    "org.bukkit.permissions",
+    "org.bukkit.plugin",
+    "org.bukkit.plugin.java",
+    "org.bukkit.plugin.messaging",
+    "org.bukkit.potion",
+    "org.bukkit.projectiles",
+    "org.bukkit.scheduler",
+    "org.bukkit.scoreboard",
+    "org.bukkit.util",
+    "org.bukkit.util.io",
+    "org.bukkit.util.noise",
+    "org.bukkit.util.permissions",
+    "org.spigotmc",
+    "org.spigotmc.event.entity",
+    "org.spigotmc.event.player"
+  ],
+  "classesAdded": [
+    "com.destroystokyo.paper.event.entity.ProjectileCollideEvent",
+    "com.destroystokyo.paper.event.player.IllegalPacketEvent",
+    "com.destroystokyo.paper.event.player.PlayerTeleportEndGatewayEvent",
+    "com.destroystokyo.paper.utils.CachedSizeConcurrentLinkedQueue",
+    "org.bukkit.Nameable",
+    "org.bukkit.SoundCategory",
+    "org.bukkit.block.Comparator",
+    "org.bukkit.block.DaylightDetector",
+    "org.bukkit.block.EnchantingTable",
+    "org.bukkit.block.EnderChest",
+    "org.bukkit.block.ShulkerBox",
+    "org.bukkit.command.BufferedCommandSender",
+    "org.bukkit.command.MessageCommandSender",
+    "org.bukkit.enchantments.EnchantmentOffer",
+    "org.bukkit.entity.AbstractHorse",
+    "org.bukkit.entity.Arrow.PickupStatus",
+    "org.bukkit.entity.ChestedHorse",
+    "org.bukkit.entity.Donkey",
+    "org.bukkit.entity.ElderGuardian",
+    "org.bukkit.entity.Evoker",
+    "org.bukkit.entity.Evoker.Spell",
+    "org.bukkit.entity.EvokerFangs",
+    "org.bukkit.entity.Husk",
+    "org.bukkit.entity.Llama",
+    "org.bukkit.entity.Llama.Color",
+    "org.bukkit.entity.LlamaSpit",
+    "org.bukkit.entity.Mule",
+    "org.bukkit.entity.SkeletonHorse",
+    "org.bukkit.entity.Stray",
+    "org.bukkit.entity.Vex",
+    "org.bukkit.entity.Vindicator",
+    "org.bukkit.entity.WitherSkeleton",
+    "org.bukkit.entity.ZombieHorse",
+    "org.bukkit.entity.ZombieVillager",
+    "org.bukkit.event.entity.EntityResurrectEvent",
+    "org.bukkit.event.inventory.BrewingStandFuelEvent",
+    "org.bukkit.inventory.LlamaInventory",
+    "org.bukkit.inventory.Merchant",
+    "org.bukkit.inventory.meta.SpawnEggMeta",
+    "org.bukkit.material.Observer",
+    "org.bukkit.util.Consumer"
+  ],
+  "classesRemoved": [
+    "org.bukkit.command.TabCommandExecutor",
+    "org.bukkit.entity.FallingSand",
+    "org.bukkit.entity.PoweredMinecart",
+    "org.bukkit.entity.StorageMinecart",
+    "org.bukkit.event.player.PlayerInventoryEvent",
+    "org.bukkit.potion.Potion.Tier",
+    "org.bukkit.util.Java15Compat"
+  ],
+  "classesChanged": [
+    "org.bukkit.Bukkit",
+    "org.bukkit.Chunk",
+    "org.bukkit.DyeColor",
+    "org.bukkit.Material",
+    "org.bukkit.Particle",
+    "org.bukkit.Server",
+    "org.bukkit.Sound",
+    "org.bukkit.Statistic",
+    "org.bukkit.World",
+    "org.bukkit.WorldBorder",
+    "org.bukkit.attribute.Attribute",
+    "org.bukkit.attribute.AttributeInstance",
+    "org.bukkit.command.Command",
+    "org.bukkit.command.CommandMap",
+    "org.bukkit.command.SimpleCommandMap",
+    "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.entity.ArmorStand",
+    "org.bukkit.entity.Arrow",
+    "org.bukkit.entity.Entity",
+    "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.ExperienceOrb",
+    "org.bukkit.entity.Firework",
+    "org.bukkit.entity.Horse",
+    "org.bukkit.entity.Horse.Variant",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.Player",
+    "org.bukkit.entity.TippedArrow",
+    "org.bukkit.entity.Villager",
+    "org.bukkit.entity.Villager.Profession",
+    "org.bukkit.event.block.BlockBurnEvent",
+    "org.bukkit.event.block.BlockIgniteEvent",
+    "org.bukkit.event.enchantment.PrepareItemEnchantEvent",
+    "org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason",
+    "org.bukkit.event.entity.EntityChangeBlockEvent",
+    "org.bukkit.event.entity.EntityDamageByBlockEvent",
+    "org.bukkit.event.entity.EntityDamageByEntityEvent",
+    "org.bukkit.event.entity.EntityDamageEvent",
+    "org.bukkit.event.entity.EntityDamageEvent.DamageCause",
+    "org.bukkit.event.entity.EntityRegainHealthEvent",
+    "org.bukkit.event.entity.HorseJumpEvent",
+    "org.bukkit.event.entity.ProjectileHitEvent",
+    "org.bukkit.event.hanging.HangingBreakByEntityEvent",
+    "org.bukkit.event.inventory.BrewEvent",
+    "org.bukkit.event.inventory.CraftItemEvent",
+    "org.bukkit.event.inventory.InventoryClickEvent",
+    "org.bukkit.event.inventory.InventoryType",
+    "org.bukkit.event.player.PlayerCommandPreprocessEvent",
+    "org.bukkit.event.player.PlayerExpChangeEvent",
+    "org.bukkit.event.player.PlayerFishEvent",
+    "org.bukkit.event.player.PlayerLoginEvent",
+    "org.bukkit.event.vehicle.VehicleCreateEvent",
+    "org.bukkit.inventory.AnvilInventory",
+    "org.bukkit.inventory.meta.ItemMeta",
+    "org.bukkit.inventory.meta.MapMeta",
+    "org.bukkit.inventory.meta.PotionMeta",
+    "org.bukkit.map.MapCursor.Type",
+    "org.bukkit.map.MapView",
+    "org.bukkit.plugin.java.JavaPlugin",
+    "org.bukkit.potion.Potion",
+    "org.bukkit.potion.PotionEffectType",
+    "org.bukkit.potion.PotionEffectTypeWrapper"
+  ],
+  "membersAdded": {
+    "org.bukkit.event.inventory.BrewingStandFuelEvent": [
+      "BrewingStandFuelEvent(Block,ItemStack,int)",
+      "consuming",
+      "fuelPower",
+      "getFuelPower()",
+      "isConsuming()",
+      "setConsuming(boolean)",
+      "setFuelPower(int)"
+    ],
+    "org.bukkit.entity.Firework": [
+      "getBoostedEntity()",
+      "getSpawningEntity()"
+    ],
+    "org.bukkit.entity.Evoker": [
+      "getCurrentSpell()",
+      "setCurrentSpell(Spell)"
+    ],
+    "org.bukkit.enchantments.Enchantment": [
+      "BINDING_CURSE",
+      "SWEEPING_EDGE",
+      "VANISHING_CURSE"
+    ],
+    "org.bukkit.attribute.AttributeInstance": [
+      "getDefaultValue()"
+    ],
+    "org.bukkit.Statistic": [
+      "SHULKER_BOX_OPENED"
+    ],
+    "org.bukkit.command.SimpleCommandMap": [
+      "getKnownCommands()"
+    ],
+    "org.bukkit.entity.Player": [
+      "playSound(Location,Sound,SoundCategory,float,float)",
+      "playSound(Location,String,SoundCategory,float,float)",
+      "sendActionBar(String)",
+      "sendActionBar(char,String)",
+      "sendTitle(String,String,int,int,int)",
+      "setResourcePack(String,byte...)",
+      "stopSound(Sound,SoundCategory)",
+      "stopSound(String,SoundCategory)"
+    ],
+    "org.bukkit.entity.EvokerFangs": [
+      "setOwner(LivingEntity)"
+    ],
+    "com.destroystokyo.paper.event.entity.ProjectileCollideEvent": [
+      "ProjectileCollideEvent(Projectile,Entity)",
+      "collidedWith",
+      "getCollidedWith()",
+      "handlerList"
+    ],
+    "org.bukkit.World": [
+      "\u003cT\u003espawn(Location,Class,Consumer)",
+      "getChunkCount()",
+      "getEntityCount()",
+      "getPlayerCount()",
+      "getTickableTileEntityCount()",
+      "getTileEntityCount()",
+      "spawnFallingBlock(Location,MaterialData)"
+    ],
+    "org.bukkit.Chunk": [
+      "isSlimeChunk()"
+    ],
+    "org.bukkit.material.Observer": [
+      "Observer()",
+      "Observer(BlockFace)",
+      "Observer(Material)",
+      "Observer(Material,byte)",
+      "Observer(int)",
+      "Observer(int,byte)"
+    ],
+    "org.bukkit.Material": [
+      "BLACK_SHULKER_BOX",
+      "BLUE_SHULKER_BOX",
+      "BROWN_SHULKER_BOX",
+      "CYAN_SHULKER_BOX",
+      "GRAY_SHULKER_BOX",
+      "GREEN_SHULKER_BOX",
+      "IRON_NUGGET",
+      "LIGHT_BLUE_SHULKER_BOX",
+      "LIME_SHULKER_BOX",
+      "MAGENTA_SHULKER_BOX",
+      "OBSERVER",
+      "ORANGE_SHULKER_BOX",
+      "PINK_SHULKER_BOX",
+      "PURPLE_SHULKER_BOX",
+      "RED_SHULKER_BOX",
+      "SHULKER_SHELL",
+      "SILVER_SHULKER_BOX",
+      "WHITE_SHULKER_BOX",
+      "YELLOW_SHULKER_BOX",
+      "isFuel()"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent.DamageCause": [
+      "CRAMMING",
+      "ENTITY_SWEEP_ATTACK"
+    ],
+    "org.bukkit.entity.Villager.Profession": [
+      "NITWIT"
+    ],
+    "org.bukkit.entity.Entity": [
+      "addPassenger(Entity)",
+      "getPassengers()",
+      "removePassenger(Entity)"
+    ],
+    "org.bukkit.map.MapCursor.Type": [
+      "MANSION",
+      "RED_MARKER",
+      "SMALL_WHITE_CIRCLE",
+      "TEMPLE",
+      "WHITE_CIRCLE"
+    ],
+    "org.bukkit.inventory.meta.MapMeta": [
+      "getLocationName()",
+      "hasLocationName()",
+      "setLocationName(String)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_SHULKER_BOX_CLOSE",
+      "BLOCK_SHULKER_BOX_OPEN",
+      "ENTITY_ELDER_GUARDIAN_FLOP",
+      "ENTITY_EVOCATION_FANGS_ATTACK",
+      "ENTITY_EVOCATION_ILLAGER_AMBIENT",
+      "ENTITY_EVOCATION_ILLAGER_CAST_SPELL",
+      "ENTITY_EVOCATION_ILLAGER_DEATH",
+      "ENTITY_EVOCATION_ILLAGER_HURT",
+      "ENTITY_EVOCATION_ILLAGER_PREPARE_ATTACK",
+      "ENTITY_EVOCATION_ILLAGER_PREPARE_SUMMON",
+      "ENTITY_EVOCATION_ILLAGER_PREPARE_WOLOLO",
+      "ENTITY_LLAMA_AMBIENT",
+      "ENTITY_LLAMA_ANGRY",
+      "ENTITY_LLAMA_CHEST",
+      "ENTITY_LLAMA_DEATH",
+      "ENTITY_LLAMA_EAT",
+      "ENTITY_LLAMA_HURT",
+      "ENTITY_LLAMA_SPIT",
+      "ENTITY_LLAMA_STEP",
+      "ENTITY_LLAMA_SWAG",
+      "ENTITY_MULE_CHEST",
+      "ENTITY_VEX_AMBIENT",
+      "ENTITY_VEX_CHARGE",
+      "ENTITY_VEX_DEATH",
+      "ENTITY_VEX_HURT",
+      "ENTITY_VINDICATION_ILLAGER_AMBIENT",
+      "ENTITY_VINDICATION_ILLAGER_DEATH",
+      "ENTITY_VINDICATION_ILLAGER_HURT",
+      "ITEM_ARMOR_EQUIP_ELYTRA",
+      "ITEM_BOTTLE_EMPTY",
+      "ITEM_TOTEM_USE"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "ELDER_GUARDIAN",
+      "EVOKER",
+      "EVOKER_FANGS",
+      "LLAMA_SPIT",
+      "VEX",
+      "VINDICATOR",
+      "WITHER_SKELETON",
+      "ZOMBIE_HORSE",
+      "ZOMBIE_VILLAGER"
+    ],
+    "org.bukkit.command.BufferedCommandSender": [
+      "BufferedCommandSender()"
+    ],
+    "org.bukkit.event.entity.EntityResurrectEvent": [
+      "EntityResurrectEvent(LivingEntity)"
+    ],
+    "org.bukkit.event.inventory.BrewEvent": [
+      "BrewEvent(Block,BrewerInventory,int)",
+      "fuelLevel"
+    ],
+    "org.bukkit.event.player.PlayerExpChangeEvent": [
+      "PlayerExpChangeEvent(Player,Entity,int)"
+    ],
+    "com.destroystokyo.paper.event.player.PlayerTeleportEndGatewayEvent": [
+      "PlayerTeleportEndGatewayEvent(Player,Location,Location,EndGateway)",
+      "gateway",
+      "getGateway()"
+    ],
+    "org.bukkit.entity.Evoker.Spell": [
+      "FANGS",
+      "SUMMON",
+      "Spell()",
+      "WOLOLO"
+    ],
+    "com.destroystokyo.paper.event.player.IllegalPacketEvent": [
+      "IllegalPacketEvent(Player,String,String,Exception)",
+      "ex",
+      "getExceptionMessage()",
+      "isShouldKick()",
+      "kickMessage",
+      "process(Player,String,String,Exception)",
+      "setShouldKick(boolean)",
+      "shouldKick"
+    ],
+    "org.bukkit.event.enchantment.PrepareItemEnchantEvent": [
+      "getOffers()",
+      "offers"
+    ],
+    "com.destroystokyo.paper.utils.CachedSizeConcurrentLinkedQueue": [
+      "CachedSizeConcurrentLinkedQueue()",
+      "add(E)",
+      "cachedSize",
+      "poll()"
+    ],
+    "org.bukkit.inventory.meta.ItemMeta": [
+      "getLocalizedName()",
+      "hasLocalizedName()",
+      "setLocalizedName(String)"
+    ],
+    "org.bukkit.event.hanging.HangingBreakByEntityEvent": [
+      "HangingBreakByEntityEvent(Hanging,Entity,RemoveCause)"
+    ],
+    "org.bukkit.entity.Horse.Variant": [
+      "LLAMA"
+    ],
+    "org.bukkit.entity.Arrow.PickupStatus": [
+      "PickupStatus()"
+    ],
+    "org.bukkit.entity.Arrow": [
+      "getPickupStatus()",
+      "setPickupStatus(PickupStatus)"
+    ],
+    "org.bukkit.util.Consumer": [
+      "accept(T)"
+    ],
+    "org.bukkit.WorldBorder": [
+      "isInBounds(Location)",
+      "isInside(Location)"
+    ],
+    "org.bukkit.entity.Llama": [
+      "getStrength()",
+      "setStrength(int)"
+    ],
+    "org.bukkit.Server": [
+      "createMerchant(String)",
+      "reloadCommandAliases()"
+    ],
+    "org.bukkit.inventory.meta.PotionMeta": [
+      "hasColor()"
+    ],
+    "org.bukkit.map.MapView": [
+      "isUnlimitedTracking()",
+      "setUnlimitedTracking(boolean)"
+    ],
+    "org.bukkit.event.block.BlockBurnEvent": [
+      "BlockBurnEvent(Block,Block)"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "getCooldown(Material)",
+      "hasCooldown(Material)",
+      "openMerchant(Merchant,boolean)",
+      "setCooldown(Material,int)"
+    ],
+    "org.bukkit.attribute.Attribute": [
+      "GENERIC_ARMOR_TOUGHNESS"
+    ],
+    "org.bukkit.event.entity.HorseJumpEvent": [
+      "HorseJumpEvent(AbstractHorse,float)"
+    ],
+    "org.bukkit.event.inventory.InventoryType": [
+      "SHULKER_BOX"
+    ],
+    "org.bukkit.enchantments.EnchantmentWrapper": [
+      "isCursed()"
+    ],
+    "org.bukkit.SoundCategory": [
+      "BLOCKS",
+      "HOSTILE",
+      "MASTER",
+      "MUSIC",
+      "NEUTRAL",
+      "PLAYERS",
+      "RECORDS",
+      "SoundCategory()",
+      "VOICE"
+    ],
+    "org.bukkit.inventory.AnvilInventory": [
+      "getRenameText()"
+    ],
+    "org.bukkit.Particle": [
+      "TOTEM",
+      "SPIT"
+    ],
+    "org.bukkit.entity.ExperienceOrb": [
+      "isFromBottle()"
+    ],
+    "org.bukkit.entity.ArmorStand": [
+      "canMove()",
+      "setCanMove(boolean)"
+    ],
+    "org.bukkit.enchantments.EnchantmentOffer": [
+      "EnchantmentOffer(Enchantment,int,int)",
+      "cost",
+      "enchantment",
+      "enchantmentLevel",
+      "getCost()",
+      "getEnchantmentLevel()",
+      "setCost(int)",
+      "setEnchantment(Enchantment)",
+      "setEnchantmentLevel(int)"
+    ],
+    "org.bukkit.inventory.LlamaInventory": [
+      "getDecor()",
+      "setDecor(ItemStack)"
+    ],
+    "org.bukkit.event.entity.ProjectileHitEvent": [
+      "ProjectileHitEvent(Projectile,Block)",
+      "ProjectileHitEvent(Projectile,Entity,Block)",
+      "getHitBlock()",
+      "hitBlock"
+    ]
+  },
+  "membersRemoved": {
+    "org.bukkit.event.enchantment.PrepareItemEnchantEvent": [
+      "levelsOffered"
+    ],
+    "org.bukkit.event.entity.HorseJumpEvent": [
+      "HorseJumpEvent(Horse,float)"
+    ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "PlayerLoginEvent(Player)",
+      "PlayerLoginEvent(Player,Result,String)",
+      "PlayerLoginEvent(Player,String)"
+    ],
+    "org.bukkit.Statistic": [
+      "JUNK_FISHED",
+      "TREASURE_FISHED"
+    ],
+    "org.bukkit.event.entity.EntityRegainHealthEvent": [
+      "EntityRegainHealthEvent(Entity,int,RegainReason)"
+    ],
+    "org.bukkit.potion.Potion.Tier": [
+      "ONE",
+      "TWO",
+      "Tier(int)",
+      "damageBit",
+      "getByDamageBit(int)",
+      "getDamageBit()"
+    ],
+    "org.bukkit.event.inventory.InventoryClickEvent": [
+      "InventoryClickEvent(InventoryView,SlotType,int,boolean,boolean)"
+    ],
+    "org.bukkit.util.Java15Compat": [
+      "\u003cT\u003eArrays_copyOfRange(Array,int,int)",
+      "Java15Compat()"
+    ],
+    "org.bukkit.event.player.PlayerFishEvent": [
+      "PlayerFishEvent(Player,Entity,State)"
+    ],
+    "org.bukkit.Sound": [
+      "ENTITY_EXPERIENCE_ORB_TOUCH"
+    ],
+    "org.bukkit.event.block.BlockIgniteEvent": [
+      "BlockIgniteEvent(Block,IgniteCause,Player)"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "JavaPlugin(PluginLoader,Server,PluginDescriptionFile,File,File)",
+      "initialize(PluginLoader,Server,PluginDescriptionFile,File,File,ClassLoader)",
+      "isInitialized()"
+    ],
+    "org.bukkit.event.entity.EntityChangeBlockEvent": [
+      "EntityChangeBlockEvent(LivingEntity,Block,Material)"
+    ],
+    "org.bukkit.event.inventory.BrewEvent": [
+      "BrewEvent(Block,BrewerInventory)"
+    ],
+    "org.bukkit.Server": [
+      "useExactLoginLocation()"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,int)"
+    ],
+    "org.bukkit.command.TabCommandExecutor": [
+      "onTabComplete()"
+    ],
+    "org.bukkit.potion.Potion": [
+      "Potion(PotionType,Tier)",
+      "Potion(PotionType,Tier,boolean)",
+      "Potion(PotionType,Tier,boolean,boolean)",
+      "setTier(Tier)"
+    ],
+    "org.bukkit.event.player.PlayerInventoryEvent": [
+      "PlayerInventoryEvent(Player,Inventory)"
+    ],
+    "org.bukkit.command.Command": [
+      "tabComplete(CommandSender,String...)"
+    ],
+    "org.bukkit.event.inventory.CraftItemEvent": [
+      "CraftItemEvent(Recipe,InventoryView,SlotType,int,boolean,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent": [
+      "EntityDamageEvent(Entity,DamageCause,int)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByEntityEvent": [
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,int)"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.event.enchantment.PrepareItemEnchantEvent": [
+      "levelsOffered"
+    ],
+    "org.bukkit.event.entity.HorseJumpEvent": [
+      "HorseJumpEvent(Horse,float)"
+    ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "PlayerLoginEvent(Player)",
+      "PlayerLoginEvent(Player,Result,String)",
+      "PlayerLoginEvent(Player,String)"
+    ],
+    "org.bukkit.Statistic": [
+      "JUNK_FISHED",
+      "TREASURE_FISHED"
+    ],
+    "org.bukkit.event.entity.EntityRegainHealthEvent": [
+      "EntityRegainHealthEvent(Entity,int,RegainReason)"
+    ],
+    "org.bukkit.potion.Potion.Tier": [
+      "ONE",
+      "TWO",
+      "Tier(int)",
+      "damageBit",
+      "getByDamageBit(int)",
+      "getDamageBit()"
+    ],
+    "org.bukkit.event.inventory.InventoryClickEvent": [
+      "InventoryClickEvent(InventoryView,SlotType,int,boolean,boolean)"
+    ],
+    "org.bukkit.util.Java15Compat": [
+      "\u003cT\u003eArrays_copyOfRange(Array,int,int)",
+      "Java15Compat()"
+    ],
+    "org.bukkit.event.player.PlayerFishEvent": [
+      "PlayerFishEvent(Player,Entity,State)"
+    ],
+    "org.bukkit.Sound": [
+      "ENTITY_EXPERIENCE_ORB_TOUCH"
+    ],
+    "org.bukkit.event.block.BlockIgniteEvent": [
+      "BlockIgniteEvent(Block,IgniteCause,Player)"
+    ],
+    "org.bukkit.plugin.java.JavaPlugin": [
+      "JavaPlugin(PluginLoader,Server,PluginDescriptionFile,File,File)",
+      "initialize(PluginLoader,Server,PluginDescriptionFile,File,File,ClassLoader)",
+      "isInitialized()"
+    ],
+    "org.bukkit.event.entity.EntityChangeBlockEvent": [
+      "EntityChangeBlockEvent(LivingEntity,Block,Material)"
+    ],
+    "org.bukkit.event.inventory.BrewEvent": [
+      "BrewEvent(Block,BrewerInventory)"
+    ],
+    "org.bukkit.Server": [
+      "useExactLoginLocation()"
+    ],
+    "org.bukkit.event.entity.EntityDamageByBlockEvent": [
+      "EntityDamageByBlockEvent(Block,Entity,DamageCause,int)"
+    ],
+    "org.bukkit.command.TabCommandExecutor": [
+      "onTabComplete()"
+    ],
+    "org.bukkit.potion.Potion": [
+      "Potion(PotionType,Tier)",
+      "Potion(PotionType,Tier,boolean)",
+      "Potion(PotionType,Tier,boolean,boolean)",
+      "setTier(Tier)"
+    ],
+    "org.bukkit.event.player.PlayerInventoryEvent": [
+      "PlayerInventoryEvent(Player,Inventory)"
+    ],
+    "org.bukkit.command.Command": [
+      "tabComplete(CommandSender,String...)"
+    ],
+    "org.bukkit.event.inventory.CraftItemEvent": [
+      "CraftItemEvent(Recipe,InventoryView,SlotType,int,boolean,boolean)"
+    ],
+    "org.bukkit.event.entity.EntityDamageEvent": [
+      "EntityDamageEvent(Entity,DamageCause,int)"
+    ],
+    "org.bukkit.event.entity.EntityDamageByEntityEvent": [
+      "EntityDamageByEntityEvent(Entity,Entity,DamageCause,int)"
+    ]
+  }
+}
