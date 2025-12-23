@@ -7,9 +7,12 @@ import dev.minidigger.apidiff.SinceGenerator.SinceReport;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -63,10 +66,11 @@ public class HtmlGenerator {
     public void generateIndex() throws Exception {
         try (Stream<Path> files = Files.list(output.resolve("raw"))) {
             String rawData = files.filter(Files::isRegularFile).filter(p -> p.toString().endsWith(".json"))
-                    .map(Path::getFileName).map(Path::toString).sorted()
+                    .map(Path::getFileName).map(Path::toString).sorted(HtmlGenerator::compareVersionAware)
                     .map((s) -> "    <li><a href=\"raw/" + s + "\">" + s + "</a></li>")
                     .collect(Collectors.joining("\n", "  <ul index>\n", "\n  </ul>"));
-            String diffs = apiDiffer.diffs.keySet().stream().sorted().map((s) -> "    <li><a href=\"diff-" + s + ".html\">" + s + "</a></li>")
+            String diffs = apiDiffer.diffs.keySet().stream().sorted(HtmlGenerator::compareVersionAware)
+                    .map((s) -> "    <li><a href=\"diff-" + s + ".html\">" + s + "</a></li>")
                     .collect(Collectors.joining("\n", "  <ul index>\n", "\n  </ul>"));
             String since = "<a href=\"since.html\">Since</a>";
             String index = """
@@ -190,5 +194,49 @@ public class HtmlGenerator {
 
     private String htmlEscape(String s) {
         return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;");
+    }
+
+    public static int compareVersionAware(String a, String b) {
+        boolean aDiff = a.contains("-diff-");
+        boolean bDiff = b.contains("-diff-");
+        if (aDiff != bDiff) {
+            // raw files (no "-diff-") come first
+            return aDiff ? 1 : -1;
+        }
+
+        // compare first version parts
+        List<Integer> va = parseVersionParts(a);
+        List<Integer> vb = parseVersionParts(b);
+        int cmp = compareVersionLists(va, vb);
+        if (cmp != 0) return cmp;
+
+        // fallback to lexicographic
+        return a.compareTo(b);
+    }
+
+    private static List<Integer> parseVersionParts(String s) {
+        Matcher m = Pattern.compile("(\\d+(?:\\.\\d+)*)").matcher(s);
+        if (!m.find()) return java.util.List.of();
+        String ver = m.group(1);
+        String[] parts = ver.split("\\.");
+        List<Integer> nums = new ArrayList<>(parts.length);
+        for (String p : parts) {
+            try {
+                nums.add(Integer.parseInt(p));
+            } catch (NumberFormatException ex) {
+                nums.add(0);
+            }
+        }
+        return nums;
+    }
+
+    private static int compareVersionLists(List<Integer> a, List<Integer> b) {
+        int max = Math.max(a.size(), b.size());
+        for (int i = 0; i < max; i++) {
+            int ai = i < a.size() ? a.get(i) : 0;
+            int bi = i < b.size() ? b.get(i) : 0;
+            if (ai != bi) return Integer.compare(ai, bi);
+        }
+        return 0;
     }
 }
