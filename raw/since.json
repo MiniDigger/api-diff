@@ -17431,7 +17431,8 @@
       "getTotalHealth()": "1.14.4",
       "getTotalWaves()": "1.14.4",
       "isStarted()": "1.14.4",
-      "setBadOmenLevel(int)": "1.14.4"
+      "setBadOmenLevel(int)": "1.14.4",
+      "setTotalWaves(int)": "1.21.11"
     },
     "org.bukkit.Raid.RaidStatus": {
       "LOSS": "1.14.4",
@@ -20418,6 +20419,7 @@
       "deserializeEntity(Array,World,boolean,boolean)": "1.21.4",
       "deserializeItem(byte...)": "1.15.2",
       "deserializeItemFromJson(JsonObject)": "1.21.1",
+      "deserializeItemHover(ShowItem)": "1.21.11",
       "deserializeStack(Map)": "1.21.5",
       "fromLegacy(Material)": "1.13",
       "fromLegacy(Material,byte)": "1.13",

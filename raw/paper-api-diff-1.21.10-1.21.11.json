@@ -237,10 +237,12 @@
     "org.bukkit.EntityEffect",
     "org.bukkit.GameRule",
     "org.bukkit.Material",
+    "org.bukkit.Raid",
     "org.bukkit.Registry",
     "org.bukkit.Sound",
     "org.bukkit.Statistic",
     "org.bukkit.Tag",
+    "org.bukkit.UnsafeValues",
     "org.bukkit.World",
     "org.bukkit.WorldBorder",
     "org.bukkit.block.DecoratedPot",
@@ -363,6 +365,9 @@
       "HORSE_MOUNT_PANIC",
       "SPEAR_USE"
     ],
+    "org.bukkit.UnsafeValues": [
+      "deserializeItemHover(ShowItem)"
+    ],
     "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
       "SPAWNS_CORAL_VARIANT_ZOMBIE_NAUTILUS"
     ],
@@ -388,6 +393,9 @@
       "canSetSpawn()",
       "canSleep()",
       "problem()"
+    ],
+    "org.bukkit.Raid": [
+      "setTotalWaves(int)"
     ],
     "io.papermc.paper.datacomponent.item.AttackRange": [
       "attackRange()",
