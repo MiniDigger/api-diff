@@ -195,6 +195,7 @@
     "io.papermc.paper.datacomponent.item.SwingAnimation.Builder",
     "io.papermc.paper.datacomponent.item.UseEffects",
     "io.papermc.paper.datacomponent.item.UseEffects.Builder",
+    "io.papermc.paper.raytracing.BlockCollisionMode",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry.Builder",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry.Model",
@@ -220,7 +221,10 @@
     "io.papermc.paper.datacomponent.item.consumable.ItemUseAnimation",
     "io.papermc.paper.event.player.PlayerBedFailEnterEvent",
     "io.papermc.paper.event.player.PlayerBedFailEnterEvent.FailReason",
+    "io.papermc.paper.event.player.PlayerPurchaseEvent",
+    "io.papermc.paper.event.player.PlayerTradeEvent",
     "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent",
+    "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.event.RegistryEvents",
     "io.papermc.paper.registry.keys.DamageTypeKeys",
@@ -250,6 +254,7 @@
     "org.bukkit.enchantments.Enchantment",
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.LivingEntity",
+    "org.bukkit.entity.Mannequin",
     "org.bukkit.entity.Skeleton.SkeletonType",
     "org.bukkit.entity.memory.MemoryKey",
     "org.bukkit.event.entity.EntityExhaustionEvent.ExhaustionReason",
@@ -312,6 +317,9 @@
     "org.bukkit.Statistic": [
       "NAUTILUS_ONE_CM"
     ],
+    "org.bukkit.entity.Mannequin": [
+      "validPoses()"
+    ],
     "org.bukkit.event.player.PlayerBedEnterEvent": [
       "enterAction",
       "enterAction()"
@@ -365,6 +373,12 @@
       "HORSE_MOUNT_PANIC",
       "SPEAR_USE"
     ],
+    "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder": [
+      "blockCollisionMode(BlockCollisionMode)"
+    ],
+    "io.papermc.paper.event.player.PlayerPurchaseEvent": [
+      "merchant"
+    ],
     "org.bukkit.UnsafeValues": [
       "deserializeItemHover(ShowItem)"
     ],
@@ -373,6 +387,11 @@
     ],
     "io.papermc.paper.registry.keys.ZombieNautilusVariantKeys": [
       "ZombieNautilusVariantKeys()"
+    ],
+    "io.papermc.paper.raytracing.BlockCollisionMode": [
+      "BlockCollisionMode()",
+      "COLLIDER",
+      "OUTLINE"
     ],
     "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent": [
       "getDurationTicks()",
@@ -605,6 +624,9 @@
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "ENCHANTABLE_SWORD"
     ],
+    "io.papermc.paper.event.player.PlayerTradeEvent": [
+      "villager"
+    ],
     "org.bukkit.GameRule": [
       "GameRule(String,Class)",
       "gameRules"
@@ -626,6 +648,9 @@
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "ENCHANTABLE_SWORD"
+    ],
+    "io.papermc.paper.event.player.PlayerTradeEvent": [
+      "villager"
     ],
     "org.bukkit.GameRule": [
       "GameRule(String,Class)",

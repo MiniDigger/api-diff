@@ -649,6 +649,7 @@
     "io.papermc.paper.plugin.provider.classloader.PaperClassLoaderStorageAccess": "1.19.3",
     "io.papermc.paper.potion.PotionMix": "1.18.1",
     "io.papermc.paper.potion.SuspiciousEffectEntry": "1.20.2",
+    "io.papermc.paper.raytracing.BlockCollisionMode": "1.21.11",
     "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder": "1.21.4",
     "io.papermc.paper.raytracing.RayTraceTarget": "1.21.4",
     "io.papermc.paper.registry.Reference": "1.18.2",
@@ -6012,10 +6013,12 @@
       "cancelled": "basically forever",
       "getHandlerList()": "basically forever",
       "getHandlers()": "basically forever",
+      "getMerchant()": "1.14",
       "getTrade()": "1.16.4",
       "increaseTradeUses": "1.16.4",
       "isCancelled()": "basically forever",
       "isRewardingExp()": "1.16.4",
+      "merchant": "1.21.11",
       "rewardExp": "1.16.4",
       "setCancelled(boolean)": "basically forever",
       "setIncreaseTradeUses(boolean)": "1.16.4",
@@ -6091,8 +6094,8 @@
       "setCancelled(boolean)": "basically forever"
     },
     "io.papermc.paper.event.player.PlayerTradeEvent": {
-      "getVillager()": "1.16.4",
-      "villager": "1.16.4"
+      "getMerchant()": "1.14",
+      "getVillager()": "1.16.4"
     },
     "io.papermc.paper.event.player.PlayerUntrackEntityEvent": {
       "HANDLER_LIST": "1.16.4",
@@ -6576,7 +6579,16 @@
       "duration()": "1.20.2",
       "effect()": "1.20.2"
     },
+    "io.papermc.paper.raytracing.BlockCollisionMode": {
+      "BlockCollisionMode()": "1.21.11",
+      "COLLIDER": "1.21.11",
+      "OUTLINE": "1.21.11",
+      "VISUAL": "basically forever",
+      "valueOf(String)": "basically forever",
+      "values()": "basically forever"
+    },
     "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder": {
+      "blockCollisionMode(BlockCollisionMode)": "1.21.11",
       "blockFilter(Predicate)": "1.21.4",
       "direction(Vector)": "1.21.4",
       "entityFilter(Predicate)": "1.21.4",
@@ -26366,7 +26378,8 @@
       "setImmovable(boolean)": "1.21.9",
       "setMainHand(MainHand)": "1.21.9",
       "setProfile(ResolvableProfile)": "1.21.9",
-      "setSkinParts(SkinParts)": "1.21.9"
+      "setSkinParts(SkinParts)": "1.21.9",
+      "validPoses()": "1.21.11"
     },
     "org.bukkit.entity.Minecart": {
       "getDamage()": "basically forever",
