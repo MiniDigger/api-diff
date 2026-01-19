@@ -16325,8 +16325,6 @@
       "MYCELIUM": "1.13",
       "Material(int)": "basically forever",
       "Material(int,Class)": "basically forever",
-      "Material(int,int)": "basically forever",
-      "Material(int,int,Class)": "basically forever",
       "NAME_TAG": "basically forever",
       "NAUTILUS_SHELL": "1.13",
       "NAUTILUS_SPAWN_EGG": "1.21.11",
@@ -17118,7 +17116,6 @@
       "legacy": "1.13",
       "matchMaterial(String)": "basically forever",
       "matchMaterial(String,boolean)": "1.13",
-      "maxStack": "basically forever",
       "translationKey()": "1.17.1",
       "valueOf(String)": "basically forever",
       "values()": "basically forever"

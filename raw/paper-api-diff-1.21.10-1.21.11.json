@@ -624,6 +624,11 @@
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "ENCHANTABLE_SWORD"
     ],
+    "org.bukkit.Material": [
+      "Material(int,int)",
+      "Material(int,int,Class)",
+      "maxStack"
+    ],
     "io.papermc.paper.event.player.PlayerTradeEvent": [
       "villager"
     ],
@@ -648,6 +653,11 @@
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "ENCHANTABLE_SWORD"
+    ],
+    "org.bukkit.Material": [
+      "Material(int,int)",
+      "Material(int,int,Class)",
+      "maxStack"
     ],
     "io.papermc.paper.event.player.PlayerTradeEvent": [
       "villager"
