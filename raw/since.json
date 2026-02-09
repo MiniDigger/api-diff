@@ -54,6 +54,7 @@
     "io.papermc.paper.event.connection.configuration": "1.21.7",
     "io.papermc.paper.event.entity": "1.16.4",
     "io.papermc.paper.event.executor": "1.21.4",
+    "io.papermc.paper.event.inventory": "1.21.11",
     "io.papermc.paper.event.packet": "1.16.4",
     "io.papermc.paper.event.player": "1.16.4",
     "io.papermc.paper.event.server": "1.16.4",
@@ -543,6 +544,7 @@
     "io.papermc.paper.event.entity.TameableDeathMessageEvent": "1.18.2",
     "io.papermc.paper.event.entity.WardenAngerChangeEvent": "1.19",
     "io.papermc.paper.event.entity.WaterBottleSplashEvent": "1.19.3",
+    "io.papermc.paper.event.inventory.ItemCraftedEvent": "1.21.11",
     "io.papermc.paper.event.packet.ClientTickEndEvent": "1.21.4",
     "io.papermc.paper.event.packet.PlayerChunkLoadEvent": "1.16.4",
     "io.papermc.paper.event.packet.PlayerChunkUnloadEvent": "1.16.4",
@@ -1899,6 +1901,7 @@
     "org.bukkit.inventory.ItemStack": "basically forever",
     "org.bukkit.inventory.ItemType": "1.21",
     "org.bukkit.inventory.ItemType.Typed": "1.21",
+    "org.bukkit.inventory.ItemTypeRecipeChoiceImpl": "1.21.11",
     "org.bukkit.inventory.JukeboxInventory": "1.19.4",
     "org.bukkit.inventory.LecternInventory": "1.14",
     "org.bukkit.inventory.LlamaInventory": "1.11.2",
@@ -1914,6 +1917,7 @@
     "org.bukkit.inventory.Recipe": "basically forever",
     "org.bukkit.inventory.RecipeChoice": "1.13.1",
     "org.bukkit.inventory.RecipeChoice.ExactChoice": "1.13.2",
+    "org.bukkit.inventory.RecipeChoice.ItemTypeChoice": "1.21.11",
     "org.bukkit.inventory.RecipeChoice.MaterialChoice": "1.13.1",
     "org.bukkit.inventory.SaddledHorseInventory": "1.12",
     "org.bukkit.inventory.SaddledMountInventory": "1.21.11",
@@ -5592,6 +5596,15 @@
       "getToRehydrate()": "1.19.3",
       "rehydrate": "1.19.3",
       "setIntensity(LivingEntity,double)": "basically forever"
+    },
+    "io.papermc.paper.event.inventory.ItemCraftedEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "craftedItem": "1.21.11",
+      "getCraftedItem()": "1.21.11",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getPlayer()": "basically forever",
+      "player": "basically forever"
     },
     "io.papermc.paper.event.packet.ClientTickEndEvent": {
       "HANDLER_LIST": "1.16.4",
@@ -26602,6 +26615,7 @@
       "addCustomChatCompletions(Collection)": "1.19.4",
       "addResourcePack(UUID,String,Array,String,boolean)": "1.20.4",
       "applyMending(int)": "1.12.2",
+      "applySkinToPlayerHeadContents(Builder)": "1.21.9",
       "asHoverEvent(UnaryOperator)": "1.16.5",
       "banIp(String,Date,String,boolean)": "1.20.1",
       "banIp(String,Duration,String,boolean)": "1.20.1",
@@ -33785,6 +33799,20 @@
       "createItemStack(int,Consumer)": "1.21",
       "getItemMetaClass()": "1.21"
     },
+    "org.bukkit.inventory.ItemTypeRecipeChoiceImpl": {
+      "ItemTypeRecipeChoiceImpl(RegistryKeySet)": "1.21.11",
+      "clone()": "basically forever",
+      "equals(Object)": "basically forever",
+      "getChoices()": "1.13.1",
+      "getItemStack()": "basically forever",
+      "hashCode()": "basically forever",
+      "itemTypes": "1.21.11",
+      "itemTypes()": "1.21.11",
+      "legacyChoices": "1.21.11",
+      "test(ItemStack)": "1.13.1",
+      "toString()": "basically forever",
+      "validate(boolean)": "1.20.6"
+    },
     "org.bukkit.inventory.JukeboxInventory": {
       "getHolder()": "basically forever",
       "getRecord()": "1.13.2",
@@ -33933,6 +33961,8 @@
       "clone()": "basically forever",
       "empty()": "1.20.1",
       "getItemStack()": "basically forever",
+      "itemType(ItemType,ItemType...)": "1.21.11",
+      "itemType(RegistryKeySet)": "1.21.11",
       "test(ItemStack)": "1.13.1"
     },
     "org.bukkit.inventory.RecipeChoice.ExactChoice": {
@@ -33949,7 +33979,11 @@
       "toString()": "basically forever",
       "validate(boolean)": "1.20.6"
     },
+    "org.bukkit.inventory.RecipeChoice.ItemTypeChoice": {
+      "itemTypes()": "1.21.11"
+    },
     "org.bukkit.inventory.RecipeChoice.MaterialChoice": {
+      "MaterialChoice()": "1.21.11",
       "MaterialChoice(List)": "1.13.1",
       "MaterialChoice(Material)": "1.13.2",
       "MaterialChoice(Material...)": "1.13.2",

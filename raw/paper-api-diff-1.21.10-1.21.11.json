@@ -2,7 +2,8 @@
   "versionA": "1.21.10",
   "versionB": "1.21.11",
   "packagesAdded": [
-    "io.papermc.paper.block.bed"
+    "io.papermc.paper.block.bed",
+    "io.papermc.paper.event.inventory"
   ],
   "packagesRemoved": [],
   "packagesChanged": [
@@ -195,6 +196,7 @@
     "io.papermc.paper.datacomponent.item.SwingAnimation.Builder",
     "io.papermc.paper.datacomponent.item.UseEffects",
     "io.papermc.paper.datacomponent.item.UseEffects.Builder",
+    "io.papermc.paper.event.inventory.ItemCraftedEvent",
     "io.papermc.paper.raytracing.BlockCollisionMode",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry.Builder",
@@ -211,7 +213,9 @@
     "org.bukkit.entity.ZombieNautilus.Variant",
     "org.bukkit.inventory.ArmoredMountInventory",
     "org.bukkit.inventory.ArmoredSaddledMountInventory",
+    "org.bukkit.inventory.ItemTypeRecipeChoiceImpl",
     "org.bukkit.inventory.MountInventory",
+    "org.bukkit.inventory.RecipeChoice.ItemTypeChoice",
     "org.bukkit.inventory.SaddledMountInventory"
   ],
   "classesRemoved": [],
@@ -255,6 +259,7 @@
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.LivingEntity",
     "org.bukkit.entity.Mannequin",
+    "org.bukkit.entity.Player",
     "org.bukkit.entity.Skeleton.SkeletonType",
     "org.bukkit.entity.memory.MemoryKey",
     "org.bukkit.event.entity.EntityExhaustionEvent.ExhaustionReason",
@@ -262,33 +267,13 @@
     "org.bukkit.event.player.PlayerBedEnterEvent",
     "org.bukkit.event.player.PlayerBedEnterEvent.BedEnterResult",
     "org.bukkit.inventory.ItemType",
+    "org.bukkit.inventory.RecipeChoice",
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice",
     "org.bukkit.potion.PotionEffectType"
   ],
   "membersAdded": {
-    "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
-      "ATTACK_RANGE",
-      "KINETIC_WEAPON",
-      "MINIMUM_ATTACK_CHARGE",
-      "PIERCING_WEAPON",
-      "SWING_ANIMATION",
-      "USE_EFFECTS",
-      "ZOMBIE_NAUTILUS_VARIANT"
-    ],
-    "org.bukkit.Tag": [
-      "CAN_GLIDE_THROUGH",
-      "ENTITY_TYPES_BURN_IN_DAYLIGHT",
-      "ENTITY_TYPES_CAN_FLOAT_WHILE_RIDDEN",
-      "ENTITY_TYPES_CAN_WEAR_NAUTILUS_ARMOR",
-      "ENTITY_TYPES_NAUTILUS_HOSTILES",
-      "ITEMS_CAMEL_HUSK_FOOD",
-      "ITEMS_ENCHANTABLE_LUNGE",
-      "ITEMS_ENCHANTABLE_MELEE_WEAPON",
-      "ITEMS_ENCHANTABLE_SWEEPING",
-      "ITEMS_NAUTILUS_BUCKET_FOOD",
-      "ITEMS_NAUTILUS_FOOD",
-      "ITEMS_NAUTILUS_TAMING_ITEMS",
-      "ITEMS_SPEARS",
-      "ITEMS_ZOMBIE_HORSE_FOOD"
+    "org.bukkit.inventory.RecipeChoice.MaterialChoice": [
+      "MaterialChoice()"
     ],
     "io.papermc.paper.datacomponent.item.SwingAnimation.Animation": [
       "Animation()",
@@ -327,45 +312,6 @@
     "io.papermc.paper.registry.keys.GameRuleKeys": [
       "GameRuleKeys()"
     ],
-    "org.bukkit.entity.Skeleton.SkeletonType": [
-      "PARCHED"
-    ],
-    "org.bukkit.GameRules": [
-      "ADVANCE_TIME",
-      "ADVANCE_WEATHER",
-      "BLOCK_DROPS",
-      "COMMAND_BLOCKS_WORK",
-      "ELYTRA_MOVEMENT_CHECK",
-      "ENTITY_DROPS",
-      "FIRE_SPREAD_RADIUS_AROUND_PLAYER",
-      "IMMEDIATE_RESPAWN",
-      "LIMITED_CRAFTING",
-      "MAX_BLOCK_MODIFICATIONS",
-      "MAX_COMMAND_FORKS",
-      "MAX_COMMAND_SEQUENCE_LENGTH",
-      "MAX_MINECART_SPEED",
-      "MAX_SNOW_ACCUMULATION_HEIGHT",
-      "MOB_DROPS",
-      "NATURAL_HEALTH_REGENERATION",
-      "PLAYER_MOVEMENT_CHECK",
-      "RAIDS",
-      "RESPAWN_RADIUS",
-      "SHOW_ADVANCEMENT_MESSAGES",
-      "SPAWNER_BLOCKS_WORK",
-      "SPAWN_MOBS",
-      "SPAWN_PATROLS",
-      "SPAWN_PHANTOMS",
-      "SPAWN_WANDERING_TRADERS",
-      "SPAWN_WARDENS",
-      "SPREAD_VINES",
-      "\u003cT\u003egetRule(String)",
-      "GameRules()"
-    ],
-    "org.bukkit.WorldBorder": [
-      "changeSize(double,long)",
-      "getWarningTimeTicks()",
-      "setWarningTimeTicks(int)"
-    ],
     "io.papermc.paper.datacomponent.item.SwingAnimation": [
       "swingAnimation()"
     ],
@@ -376,26 +322,11 @@
     "io.papermc.paper.raytracing.PositionedRayTraceConfigurationBuilder": [
       "blockCollisionMode(BlockCollisionMode)"
     ],
-    "io.papermc.paper.event.player.PlayerPurchaseEvent": [
-      "merchant"
-    ],
     "org.bukkit.UnsafeValues": [
       "deserializeItemHover(ShowItem)"
     ],
-    "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
-      "SPAWNS_CORAL_VARIANT_ZOMBIE_NAUTILUS"
-    ],
     "io.papermc.paper.registry.keys.ZombieNautilusVariantKeys": [
       "ZombieNautilusVariantKeys()"
-    ],
-    "io.papermc.paper.raytracing.BlockCollisionMode": [
-      "BlockCollisionMode()",
-      "COLLIDER",
-      "OUTLINE"
-    ],
-    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent": [
-      "getDurationTicks()",
-      "setDurationTicks(long)"
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "CAMEL_HUSK_FOOD",
@@ -408,22 +339,9 @@
       "SPEARS",
       "ZOMBIE_HORSE_FOOD"
     ],
-    "io.papermc.paper.block.bed.BedEnterAction": [
-      "canSetSpawn()",
-      "canSleep()",
-      "problem()"
-    ],
-    "org.bukkit.Raid": [
-      "setTotalWaves(int)"
-    ],
-    "io.papermc.paper.datacomponent.item.AttackRange": [
-      "attackRange()",
-      "hitboxMargin()",
-      "maxCreativeReach()",
-      "maxReach()",
-      "minCreativeReach()",
-      "minReach()",
-      "mobFactor()"
+    "io.papermc.paper.event.inventory.ItemCraftedEvent": [
+      "craftedItem",
+      "getCraftedItem()"
     ],
     "io.papermc.paper.datacomponent.item.KineticWeapon.Builder": [
       "contactCooldownTicks(int)",
@@ -433,12 +351,6 @@
       "dismountConditions(Condition)",
       "forwardMovement(float)",
       "knockbackConditions(Condition)"
-    ],
-    "org.bukkit.entity.memory.MemoryKey": [
-      "ATTACK_TARGET_COOLDOWN",
-      "CHARGE_COOLDOWN_TICKS",
-      "SPEAR_ENGAGE_TIME",
-      "SPEAR_FLEEING_TIME"
     ],
     "io.papermc.paper.datacomponent.item.UseEffects": [
       "canSprint()",
@@ -528,6 +440,139 @@
       "CAMEL_HUSK",
       "ZOMBIE_NAUTILUS"
     ],
+    "org.bukkit.block.DecoratedPot": [
+      "startWobble(WobbleStyle)"
+    ],
+    "io.papermc.paper.block.bed.BedRuleResult": [
+      "TOO_MUCH_LIGHT",
+      "success()"
+    ],
+    "io.papermc.paper.block.bed.BedEnterProblem": [
+      "errorMessage()",
+      "OTHER"
+    ],
+    "org.bukkit.potion.PotionEffectType": [
+      "BREATH_OF_THE_NAUTILUS"
+    ],
+    "org.bukkit.GameRule": [
+      "\u003cT\u003egetByName(String)",
+      "GameRule()",
+      "inverseBool()"
+    ],
+    "org.bukkit.Registry": [
+      "GAME_RULE"
+    ],
+    "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
+      "ATTACK_RANGE",
+      "KINETIC_WEAPON",
+      "MINIMUM_ATTACK_CHARGE",
+      "PIERCING_WEAPON",
+      "SWING_ANIMATION",
+      "USE_EFFECTS",
+      "ZOMBIE_NAUTILUS_VARIANT"
+    ],
+    "org.bukkit.Tag": [
+      "CAN_GLIDE_THROUGH",
+      "ENTITY_TYPES_BURN_IN_DAYLIGHT",
+      "ENTITY_TYPES_CAN_FLOAT_WHILE_RIDDEN",
+      "ENTITY_TYPES_CAN_WEAR_NAUTILUS_ARMOR",
+      "ENTITY_TYPES_NAUTILUS_HOSTILES",
+      "ITEMS_CAMEL_HUSK_FOOD",
+      "ITEMS_ENCHANTABLE_LUNGE",
+      "ITEMS_ENCHANTABLE_MELEE_WEAPON",
+      "ITEMS_ENCHANTABLE_SWEEPING",
+      "ITEMS_NAUTILUS_BUCKET_FOOD",
+      "ITEMS_NAUTILUS_FOOD",
+      "ITEMS_NAUTILUS_TAMING_ITEMS",
+      "ITEMS_SPEARS",
+      "ITEMS_ZOMBIE_HORSE_FOOD"
+    ],
+    "org.bukkit.inventory.RecipeChoice": [
+      "itemType(ItemType,ItemType...)",
+      "itemType(RegistryKeySet)"
+    ],
+    "org.bukkit.entity.Skeleton.SkeletonType": [
+      "PARCHED"
+    ],
+    "org.bukkit.GameRules": [
+      "ADVANCE_TIME",
+      "ADVANCE_WEATHER",
+      "BLOCK_DROPS",
+      "COMMAND_BLOCKS_WORK",
+      "ELYTRA_MOVEMENT_CHECK",
+      "ENTITY_DROPS",
+      "FIRE_SPREAD_RADIUS_AROUND_PLAYER",
+      "IMMEDIATE_RESPAWN",
+      "LIMITED_CRAFTING",
+      "MAX_BLOCK_MODIFICATIONS",
+      "MAX_COMMAND_FORKS",
+      "MAX_COMMAND_SEQUENCE_LENGTH",
+      "MAX_MINECART_SPEED",
+      "MAX_SNOW_ACCUMULATION_HEIGHT",
+      "MOB_DROPS",
+      "NATURAL_HEALTH_REGENERATION",
+      "PLAYER_MOVEMENT_CHECK",
+      "RAIDS",
+      "RESPAWN_RADIUS",
+      "SHOW_ADVANCEMENT_MESSAGES",
+      "SPAWNER_BLOCKS_WORK",
+      "SPAWN_MOBS",
+      "SPAWN_PATROLS",
+      "SPAWN_PHANTOMS",
+      "SPAWN_WANDERING_TRADERS",
+      "SPAWN_WARDENS",
+      "SPREAD_VINES",
+      "\u003cT\u003egetRule(String)",
+      "GameRules()"
+    ],
+    "org.bukkit.WorldBorder": [
+      "changeSize(double,long)",
+      "getWarningTimeTicks()",
+      "setWarningTimeTicks(int)"
+    ],
+    "io.papermc.paper.event.player.PlayerPurchaseEvent": [
+      "merchant"
+    ],
+    "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
+      "SPAWNS_CORAL_VARIANT_ZOMBIE_NAUTILUS"
+    ],
+    "io.papermc.paper.raytracing.BlockCollisionMode": [
+      "BlockCollisionMode()",
+      "COLLIDER",
+      "OUTLINE"
+    ],
+    "io.papermc.paper.event.world.border.WorldBorderBoundsChangeEvent": [
+      "getDurationTicks()",
+      "setDurationTicks(long)"
+    ],
+    "io.papermc.paper.block.bed.BedEnterAction": [
+      "canSetSpawn()",
+      "canSleep()",
+      "problem()"
+    ],
+    "org.bukkit.Raid": [
+      "setTotalWaves(int)"
+    ],
+    "io.papermc.paper.datacomponent.item.AttackRange": [
+      "attackRange()",
+      "hitboxMargin()",
+      "maxCreativeReach()",
+      "maxReach()",
+      "minCreativeReach()",
+      "minReach()",
+      "mobFactor()"
+    ],
+    "org.bukkit.inventory.ItemTypeRecipeChoiceImpl": [
+      "ItemTypeRecipeChoiceImpl(RegistryKeySet)",
+      "itemTypes",
+      "legacyChoices"
+    ],
+    "org.bukkit.entity.memory.MemoryKey": [
+      "ATTACK_TARGET_COOLDOWN",
+      "CHARGE_COOLDOWN_TICKS",
+      "SPEAR_ENGAGE_TIME",
+      "SPEAR_FLEEING_TIME"
+    ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "BURN_IN_DAYLIGHT",
       "CAN_FLOAT_WHILE_RIDDEN",
@@ -552,21 +597,13 @@
       "duration(int)",
       "type(Animation)"
     ],
-    "org.bukkit.block.DecoratedPot": [
-      "startWobble(WobbleStyle)"
-    ],
     "io.papermc.paper.datacomponent.item.KineticWeapon.Condition": [
       "maxDurationTicks()",
       "minRelativeSpeed()",
       "minSpeed()"
     ],
-    "io.papermc.paper.block.bed.BedRuleResult": [
-      "TOO_MUCH_LIGHT",
-      "success()"
-    ],
-    "io.papermc.paper.block.bed.BedEnterProblem": [
-      "errorMessage()",
-      "OTHER"
+    "org.bukkit.inventory.RecipeChoice.ItemTypeChoice": [
+      "itemTypes()"
     ],
     "org.bukkit.inventory.ItemType": [
       "CAMEL_HUSK_SPAWN_EGG",
@@ -594,17 +631,6 @@
       "minCreativeReach(float)",
       "minReach(float)",
       "mobFactor(float)"
-    ],
-    "org.bukkit.potion.PotionEffectType": [
-      "BREATH_OF_THE_NAUTILUS"
-    ],
-    "org.bukkit.GameRule": [
-      "\u003cT\u003egetByName(String)",
-      "GameRule()",
-      "inverseBool()"
-    ],
-    "org.bukkit.Registry": [
-      "GAME_RULE"
     ]
   },
   "membersRemoved": {
