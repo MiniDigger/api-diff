@@ -1291,6 +1291,7 @@
     "org.bukkit.entity.ComplexLivingEntity": "basically forever",
     "org.bukkit.entity.CopperGolem": "1.21.9",
     "org.bukkit.entity.CopperGolem.Oxidizing": "1.21.9",
+    "org.bukkit.entity.CopperGolem.State": "1.21.11",
     "org.bukkit.entity.Cow": "basically forever",
     "org.bukkit.entity.Cow.Variant": "1.21.5",
     "org.bukkit.entity.Creaking": "1.21.3",
@@ -2548,11 +2549,14 @@
       "canFloat()": "1.15.2",
       "canOpenDoors()": "1.15.2",
       "canPassDoors()": "1.15.2",
+      "findPath(Entity)": "1.21.11",
       "findPath(LivingEntity)": "1.13.1",
       "findPath(Location)": "1.13.1",
       "getCurrentPath()": "basically forever",
       "getEntity()": "basically forever",
       "hasPath()": "1.13.1",
+      "moveTo(Entity)": "1.21.11",
+      "moveTo(Entity,double)": "1.21.11",
       "moveTo(LivingEntity)": "1.13.1",
       "moveTo(LivingEntity,double)": "1.13.1",
       "moveTo(Location)": "1.13.1",
@@ -24822,16 +24826,7 @@
     },
     "org.bukkit.enchantments.EnchantmentWrapper": {
       "EnchantmentWrapper()": "1.20.4",
-      "displayName(int)": "1.16.5",
-      "getActiveSlots()": "1.16.5",
-      "getDamageIncrease(int,EntityCategory)": "1.16.5",
-      "getEnchantment()": "basically forever",
-      "getMaxModifiedCost(int)": "1.20.2",
-      "getMinModifiedCost(int)": "1.20.2",
-      "getRarity()": "1.16.5",
-      "isDiscoverable()": "1.16.5",
-      "isTradeable()": "1.16.5",
-      "translationKey()": "1.17.1"
+      "getEnchantment()": "basically forever"
     },
     "org.bukkit.entity.AbstractArrow": {
       "getAttachedBlock()": "1.12.2",
@@ -25243,8 +25238,10 @@
       "getParts()": "basically forever"
     },
     "org.bukkit.entity.CopperGolem": {
+      "getGolemState()": "1.21.11",
       "getOxidizing()": "1.21.9",
       "getWeatheringState()": "1.21.9",
+      "setGolemState(State)": "1.21.11",
       "setOxidizing(Oxidizing)": "1.21.9",
       "setWeatheringState(WeatheringCopperState)": "1.21.9"
     },
@@ -25252,6 +25249,16 @@
       "atTime(long)": "1.21.9",
       "unset()": "1.21.9",
       "waxed()": "1.21.9"
+    },
+    "org.bukkit.entity.CopperGolem.State": {
+      "DROPPING_ITEM": "1.21.11",
+      "DROPPING_NO_ITEM": "1.21.11",
+      "GETTING_ITEM": "1.21.11",
+      "GETTING_NO_ITEM": "1.21.11",
+      "IDLE": "1.20.1",
+      "State()": "basically forever",
+      "valueOf(String)": "basically forever",
+      "values()": "basically forever"
     },
     "org.bukkit.entity.Cow": {
       "getVariant()": "basically forever",
@@ -29570,10 +29577,11 @@
     },
     "org.bukkit.event.inventory.FurnaceExtractEvent": {
       "getItemAmount()": "basically forever",
+      "getItemStack()": "basically forever",
       "getItemType()": "basically forever",
       "getPlayer()": "basically forever",
       "itemAmount": "basically forever",
-      "itemType": "basically forever",
+      "itemStack": "basically forever",
       "player": "basically forever"
     },
     "org.bukkit.event.inventory.FurnaceStartSmeltEvent": {
@@ -36945,14 +36953,7 @@
     },
     "org.bukkit.potion.PotionEffectTypeWrapper": {
       "PotionEffectTypeWrapper()": "1.20.4",
-      "getAttributeModifierAmount(Attribute,int)": "1.18.1",
-      "getColor()": "basically forever",
-      "getEffectAttributes()": "1.18.1",
-      "getEffectCategory()": "1.18.1",
-      "getKey()": "1.12",
-      "getType()": "basically forever",
-      "isInstant()": "basically forever",
-      "translationKey()": "1.17.1"
+      "getType()": "basically forever"
     },
     "org.bukkit.potion.PotionType": {
       "AWKWARD": "basically forever",

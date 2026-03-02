@@ -207,6 +207,7 @@
     "org.bukkit.block.DecoratedPot.WobbleStyle",
     "org.bukkit.entity.AbstractNautilus",
     "org.bukkit.entity.CamelHusk",
+    "org.bukkit.entity.CopperGolem.State",
     "org.bukkit.entity.Nautilus",
     "org.bukkit.entity.Parched",
     "org.bukkit.entity.ZombieNautilus",
@@ -220,6 +221,7 @@
   ],
   "classesRemoved": [],
   "classesChanged": [
+    "com.destroystokyo.paper.entity.Pathfinder",
     "com.destroystokyo.paper.entity.ai.VanillaGoal",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.datacomponent.item.consumable.ItemUseAnimation",
@@ -256,6 +258,8 @@
     "org.bukkit.block.DecoratedPot",
     "org.bukkit.damage.DamageType",
     "org.bukkit.enchantments.Enchantment",
+    "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.entity.CopperGolem",
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.LivingEntity",
     "org.bukkit.entity.Mannequin",
@@ -264,16 +268,29 @@
     "org.bukkit.entity.memory.MemoryKey",
     "org.bukkit.event.entity.EntityExhaustionEvent.ExhaustionReason",
     "org.bukkit.event.entity.EntityPotionEffectEvent.Cause",
+    "org.bukkit.event.inventory.FurnaceExtractEvent",
     "org.bukkit.event.player.PlayerBedEnterEvent",
     "org.bukkit.event.player.PlayerBedEnterEvent.BedEnterResult",
     "org.bukkit.inventory.ItemType",
     "org.bukkit.inventory.RecipeChoice",
     "org.bukkit.inventory.RecipeChoice.MaterialChoice",
-    "org.bukkit.potion.PotionEffectType"
+    "org.bukkit.potion.PotionEffectType",
+    "org.bukkit.potion.PotionEffectTypeWrapper"
   ],
   "membersAdded": {
     "org.bukkit.inventory.RecipeChoice.MaterialChoice": [
       "MaterialChoice()"
+    ],
+    "org.bukkit.entity.CopperGolem.State": [
+      "DROPPING_ITEM",
+      "DROPPING_NO_ITEM",
+      "GETTING_ITEM",
+      "GETTING_NO_ITEM"
+    ],
+    "com.destroystokyo.paper.entity.Pathfinder": [
+      "findPath(Entity)",
+      "moveTo(Entity)",
+      "moveTo(Entity,double)"
     ],
     "io.papermc.paper.datacomponent.item.SwingAnimation.Animation": [
       "Animation()",
@@ -572,6 +589,10 @@
       "CHARGE_COOLDOWN_TICKS",
       "SPEAR_ENGAGE_TIME",
       "SPEAR_FLEEING_TIME"
+    ],
+    "org.bukkit.entity.CopperGolem": [
+      "getGolemState()",
+      "setGolemState(State)"
     ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "BURN_IN_DAYLIGHT",
