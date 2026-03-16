@@ -589,6 +589,7 @@
     "io.papermc.paper.event.player.PlayerSignCommandPreprocessEvent": "1.16.5",
     "io.papermc.paper.event.player.PlayerStonecutterRecipeSelectEvent": "1.16.5",
     "io.papermc.paper.event.player.PlayerStopUsingItemEvent": "1.18.2",
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent": "1.21.11",
     "io.papermc.paper.event.player.PlayerTrackEntityEvent": "1.19.2",
     "io.papermc.paper.event.player.PlayerTradeEvent": "1.16.4",
     "io.papermc.paper.event.player.PlayerUntrackEntityEvent": "1.19.2",
@@ -6099,6 +6100,20 @@
       "getTicksHeldFor()": "1.18.2",
       "item": "basically forever",
       "ticksHeldFor": "1.18.2"
+    },
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent": {
+      "HANDLERS": "basically forever",
+      "cancelled": "basically forever",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getItemInHand()": "basically forever",
+      "getItemToSwap()": "1.21.11",
+      "getSlot()": "basically forever",
+      "isCancelled()": "basically forever",
+      "itemInHand": "basically forever",
+      "itemToSwap": "1.21.11",
+      "setCancelled(boolean)": "basically forever",
+      "slot": "basically forever"
     },
     "io.papermc.paper.event.player.PlayerTrackEntityEvent": {
       "HANDLER_LIST": "1.16.4",

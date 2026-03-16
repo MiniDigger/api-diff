@@ -197,6 +197,7 @@
     "io.papermc.paper.datacomponent.item.UseEffects",
     "io.papermc.paper.datacomponent.item.UseEffects.Builder",
     "io.papermc.paper.event.inventory.ItemCraftedEvent",
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent",
     "io.papermc.paper.raytracing.BlockCollisionMode",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry.Builder",
@@ -456,6 +457,11 @@
     "org.bukkit.entity.EntityType": [
       "CAMEL_HUSK",
       "ZOMBIE_NAUTILUS"
+    ],
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent": [
+      "HANDLERS",
+      "getItemToSwap()",
+      "itemToSwap"
     ],
     "org.bukkit.block.DecoratedPot": [
       "startWobble(WobbleStyle)"
