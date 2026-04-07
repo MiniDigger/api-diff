@@ -19,10 +19,10 @@ public class ApiDiffer {
     public final Map<String, ApiDiff> diffs = new LinkedHashMap<>();
 
     @SuppressWarnings("unchecked")
-    public ApiExport load(String version) {
-        return exports.computeIfAbsent(version, v -> {
+    public ApiExport load(VersionInfo version) {
+        return exports.computeIfAbsent(version.name(), v -> {
             try {
-                List<Map<String, Object>> input = gson.fromJson(Files.readString(Path.of("output/raw/paper-api-" + version + ".json")), ArrayList.class);
+                List<Map<String, Object>> input = gson.fromJson(Files.readString(Path.of("output/raw/paper-api-" + version.name() + ".json")), ArrayList.class);
                 ApiExport export = new ApiExport(version, new LinkedHashMap<>(), new LinkedHashMap<>(), new LinkedHashMap<>());
                 parse(input, export, null);
                 return export;
@@ -32,7 +32,7 @@ public class ApiDiffer {
         });
     }
 
-    public void diff(String versionA, String versionB, Path output) throws Exception {
+    public void diff(VersionInfo versionA, VersionInfo versionB, Path output) throws Exception {
         // read the two api exports
         ApiExport a = load(versionA);
         ApiExport b = load(versionB);
@@ -113,12 +113,12 @@ public class ApiDiffer {
                 membersRemoved.stream().collect(Collectors.groupingBy((m) -> m.parent().name())),
                 membersChanged.stream().collect(Collectors.groupingBy((m) -> m.parent().name()))
         );
-        diffs.put(versionA + "-" + versionB, diff);
+        diffs.put(versionA.name() + "-" + versionB.name(), diff);
 
         // poor mans type adapter
         Map<String, Object> result = new LinkedHashMap<>();
-        result.put("versionA", versionA);
-        result.put("versionB", versionB);
+        result.put("versionA", versionA.name());
+        result.put("versionB", versionB.name());
         result.put("packagesAdded", packagesAdded.stream().map(Package::name).toList());
         result.put("packagesRemoved", packagesRemoved.stream().map(Package::name).toList());
         result.put("packagesChanged", packagesChanged.stream().map(Package::name).toList());
@@ -131,7 +131,7 @@ public class ApiDiffer {
         Files.writeString(output, gson.toJson(result));
     }
 
-    public record ApiDiff(String versionA, String versionB,
+    public record ApiDiff(VersionInfo versionA, VersionInfo versionB,
                           List<Package> packagesAdded, List<Package> packagesRemoved, List<Package> packagesChanged,
                           List<Class> classesAdded, List<Class> classesRemoved, List<Class> classesChanged,
                           Map<String, List<Member>> membersAdded, Map<String, List<Member>> membersRemoved,
@@ -174,7 +174,7 @@ public class ApiDiffer {
         }
     }
 
-    public record ApiExport(String version, Map<String, Package> packages, Map<String, Class> classes,
+    public record ApiExport(VersionInfo version, Map<String, Package> packages, Map<String, Class> classes,
                             Map<String, Member> members) {
     }
 

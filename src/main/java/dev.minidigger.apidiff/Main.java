@@ -32,6 +32,12 @@ public class Main {
                                 key
                             }
                             key
+                            builds(last: 1) {
+                                nodes {
+                                    number
+                                    channel
+                                }
+                            }
                          }
                      }
                  }
@@ -46,17 +52,17 @@ public class Main {
         ApiDiffer apiDiffer = new ApiDiffer();
         SourceFetcher sourceFetcher = new SourceFetcher();
 
-        List<String> versions = getVersions(main, sourceFetcher);
+        List<VersionInfo> versions = getVersions(main, sourceFetcher);
 
         SinceGenerator sinceGenerator = new SinceGenerator(versions, apiDiffer);
         HtmlGenerator htmlGenerator = new HtmlGenerator(apiDiffer);
         // generate api-export json
-        for (String version : versions) {
+        for (VersionInfo version : versions) {
             main.generateApiExport(version);
         }
 
         for (int i = 0; i < versions.size() - 1; i++) {
-            apiDiffer.diff(versions.get(i), versions.get(i + 1), Path.of("output/raw/paper-api-diff-" + versions.get(i) + "-" + versions.get(i + 1) + ".json"));
+            apiDiffer.diff(versions.get(i), versions.get(i + 1), Path.of("output/raw/paper-api-diff-" + versions.get(i).name() + "-" + versions.get(i + 1).name() + ".json"));
             htmlGenerator.generateDiff(versions.get(i), versions.get(i + 1));
         }
 
@@ -69,8 +75,8 @@ public class Main {
         htmlGenerator.generateIndex();
     }
 
-    private static @NonNull List<String> getVersions(Main main, SourceFetcher sourceFetcher) throws IOException, InterruptedException {
-        List<String> versions;
+    private static @NonNull List<VersionInfo> getVersions(Main main, SourceFetcher sourceFetcher) throws IOException, InterruptedException {
+        List<VersionInfo> versions;
 
         boolean automatic = true;
         if (automatic) {
@@ -81,7 +87,7 @@ public class Main {
 
                 versionFamily.getValue().removeIf(version -> {
                     try {
-                        return version.contains("pre") || version.contains("rc") || !sourceFetcher.fetchSourcesJar(family, version);
+                        return version.name().contains("pre") || version.name().contains("rc") || !sourceFetcher.fetchSourcesJar(family, version);
                     } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
@@ -96,10 +102,11 @@ public class Main {
                     .flatMap(Collection::stream)
                     .toList();
         } else {
-            versions = List.of("1.21.3", "1.21.4");
+            // TODO: automatically fetch build number and channel
+            versions = List.of(new VersionInfo("1.21.3", 0, "STABLE"), new VersionInfo("1.21.4", 0, "STABLE"));
             versions.forEach(version -> {
                 try {
-                    sourceFetcher.fetchSourcesJar(version, version);
+                    sourceFetcher.fetchSourcesJar(version.name(), version);
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
@@ -108,7 +115,7 @@ public class Main {
         return versions;
     }
 
-    public @NonNull Map<String, List<String>> fetchVersions() throws IOException, InterruptedException {
+    public @NonNull Map<String, List<VersionInfo>> fetchVersions() throws IOException, InterruptedException {
         try (var client = HttpClient.newHttpClient()) {
             var request = HttpRequest.newBuilder()
                     .uri(API_URL)
@@ -138,19 +145,23 @@ public class Main {
                             v -> v.getAsJsonObject("family").get("key").getAsString(),
                             LinkedHashMap::new,
                             Collectors.mapping(
-                                    v -> v.get("key").getAsString(),
+                                    v -> {
+                                        var key = v.get("key").getAsString();
+                                        var build = v.getAsJsonObject("builds").getAsJsonArray("nodes").get(0).getAsJsonObject();
+                                        return new VersionInfo(key, build.get("number").getAsInt(), build.get("channel").getAsString());
+                                    },
                                     Collectors.toCollection(ArrayList::new)
                             )
                     ));
         }
     }
 
-    public void generateApiExport(String version) {
+    public void generateApiExport(VersionInfo version) {
         // TODO add hash check to prevent rerunning
         String packages = "com.destroystokyo.paper:org.bukkit:org.spigotmc";
-        if (Files.isDirectory(Path.of("sources/paper-api-" + version + "/io"))) {
+        if (Files.isDirectory(Path.of("sources/paper-api-" + version.name() + "/io"))) {
             packages += ":io.papermc.paper";
         }
-        execute("--ignore-source-errors", "-public", "-quiet", "-doclet", "dev.minidigger.apidiff.ApiExportDoclet", "--output-file", "output/raw/paper-api-" + version + ".json", "--mc-version", version, "-sourcepath", "sources/paper-api-" + version, "-subpackages", packages);
+        execute("--ignore-source-errors", "-public", "-quiet", "-doclet", "dev.minidigger.apidiff.ApiExportDoclet", "--output-file", "output/raw/paper-api-" + version.name() + ".json", "--mc-version", version.name(), "-sourcepath", "sources/paper-api-" + version.name(), "-subpackages", packages);
     }
 }

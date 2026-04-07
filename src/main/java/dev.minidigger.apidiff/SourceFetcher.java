@@ -19,25 +19,31 @@ import java.util.zip.ZipInputStream;
 
 public class SourceFetcher {
 
-    public boolean fetchSourcesJar(String family, String version) throws Exception {
-        // TODO add hash check to prevent redownloading
-        System.out.println("Fetching sources for " + version);
+    private boolean isVersionNew(String family) {
         var parts = family.split("\\.");
         int major = Integer.parseInt(parts[0]);
-        int minor = Integer.parseInt(parts[1]);
-        String group = "io/papermc";
-        // hopefully this doesn't break with new versioning system
-        if (major < 26 && minor < 17)
-            group = "com/destroystokyo";
+        return major >= 26;
+    }
 
-        String metadataUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/maven-metadata.xml";
-        String snapshotVersion = getLatestSnapshotVersion(metadataUrl);
-        if (snapshotVersion == null) {
-            System.err.println("Could not find snapshot version for " + version);
-            return false;
+    public boolean fetchSourcesJar(String family, VersionInfo version) throws Exception {
+        // TODO add hash check to prevent redownloading
+        System.out.println("Fetching sources for " + version.name());
+
+        // Versions >=26.1 do not have metadata xml files
+        String sourcesUrl;
+        if (!isVersionNew(family)) {
+            String metadataUrl = version.metadataUrl(family);
+            String snapshotVersion = getLatestSnapshotVersion(metadataUrl);
+            if (snapshotVersion == null) {
+                System.err.println("Could not find snapshot version for " + version.name());
+                return false;
+            }
+            sourcesUrl = version.sourcesUrl(family, snapshotVersion);
+        } else {
+            sourcesUrl = version.sourcesUrl(family, "");
         }
-        String sourcesUrl = "https://repo.papermc.io/repository/maven-public/" + group + "/paper/paper-api/" + version.replace(".0", ".") + "-R0.1-SNAPSHOT/paper-api-" + snapshotVersion + "-sources.jar";
-        downloadAndExtractSourcesToDisk(sourcesUrl, Path.of("sources/paper-api-" + version));
+
+        downloadAndExtractSourcesToDisk(sourcesUrl, Path.of("sources/paper-api-" + version.name()));
         return true;
     }
 

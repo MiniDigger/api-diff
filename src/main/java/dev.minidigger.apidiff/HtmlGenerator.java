@@ -94,7 +94,7 @@ public class HtmlGenerator {
         }
     }
 
-    public void generateSince(List<String> versions, SinceReport sinceReport) throws IOException {
+    public void generateSince(List<VersionInfo> versions, SinceReport sinceReport) throws IOException {
         StringBuilder html = new StringBuilder("""
                 <html lang="en">
                 <head>
@@ -129,8 +129,8 @@ public class HtmlGenerator {
         Files.writeString(output.resolve("since.html"), html.toString());
     }
 
-    public void generateDiff(String versionA, String versionB) throws Exception {
-        ApiDiff diff = apiDiffer.diffs.get(versionA + "-" + versionB);
+    public void generateDiff(VersionInfo versionA, VersionInfo versionB) throws Exception {
+        ApiDiff diff = apiDiffer.diffs.get(versionA.name() + "-" + versionB.name());
         String html = """
                 <html lang="en">
                 <head>
@@ -162,8 +162,8 @@ public class HtmlGenerator {
                 </html>
                 """
                 .replace("{css}", css)
-                .replace("{versionA}", versionA)
-                .replace("{versionB}", versionB)
+                .replace("{versionA}", versionA.name())
+                .replace("{versionB}", versionB.name())
                 .replace("{packagesAdded}", list(diff.packagesAdded()))
                 .replace("{packagesRemoved}", list(diff.packagesRemoved()))
                 .replace("{packagesChanged}", list(diff.packagesChanged()))
@@ -174,10 +174,10 @@ public class HtmlGenerator {
                 .replace("{membersRemoved}", group(diff.membersRemoved(), versionA))
                 .replace("{membersChanged}", group(diff.membersChanged(), versionB));
 
-        Files.writeString(output.resolve("diff-" + versionA + "-" + versionB + ".html"), html);
+        Files.writeString(output.resolve("diff-" + versionA.name() + "-" + versionB.name() + ".html"), html);
     }
 
-    private String group(Map<String, List<Member>> input, String version) {
+    private String group(Map<String, List<Member>> input, VersionInfo version) {
         return input.keySet().stream().sorted()
                 .map((c) -> {
                     String link = apiDiffer.load(version).classes().get(c).link();

@@ -12,10 +12,10 @@ import java.util.Map;
 
 public class SinceGenerator {
 
-    private final List<String> versions;
+    private final List<VersionInfo> versions;
     private final ApiDiffer apiDiffer;
 
-    public SinceGenerator(List<String> versions, ApiDiffer apiDiffer) {
+    public SinceGenerator(List<VersionInfo> versions, ApiDiffer apiDiffer) {
         this.versions = versions;
         this.apiDiffer = apiDiffer;
     }
@@ -53,39 +53,39 @@ public class SinceGenerator {
     }
 
     private String packetSince(ApiDiffer.Package aPackage) {
-        for (String version : versions) {
+        for (VersionInfo version : versions) {
             ApiDiffer.ApiExport export = apiDiffer.load(version);
             if (export.packages().containsKey(aPackage.name())) {
                 if (version.equals(versions.getFirst())) {
                     return "basically forever";
                 }
-                return version;
+                return version.name();
             }
         }
         return "forever";
     }
 
     private String classSince(ApiDiffer.Class aClass) {
-        for (String version : versions) {
+        for (VersionInfo version : versions) {
             ApiDiffer.ApiExport export = apiDiffer.load(version);
             if (export.classes().containsKey(aClass.name())) {
                 if (version.equals(versions.getFirst())) {
                     return "basically forever";
                 }
-                return version;
+                return version.name();
             }
         }
         return "forever";
     }
 
     private String memberSince(ApiDiffer.Member member) {
-        for (String version : versions) {
+        for (VersionInfo version : versions) {
             ApiDiffer.ApiExport export = apiDiffer.load(version);
             if (export.members().containsKey(member.name())) {
                 if (version.equals(versions.getFirst())) {
                     return "basically forever";
                 }
-                return version;
+                return version.name();
             }
         }
         return "forever";
