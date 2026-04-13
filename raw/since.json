@@ -533,6 +533,7 @@
     "io.papermc.paper.event.entity.EntityKnockbackEvent": "1.20.6",
     "io.papermc.paper.event.entity.EntityKnockbackEvent.Cause": "1.20.6",
     "io.papermc.paper.event.entity.EntityLoadCrossbowEvent": "1.16.4",
+    "io.papermc.paper.event.entity.EntityLungeEvent": "26.1.2",
     "io.papermc.paper.event.entity.EntityMoveEvent": "1.16.5",
     "io.papermc.paper.event.entity.EntityPortalReadyEvent": "1.19",
     "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": "1.19.3",
@@ -589,6 +590,7 @@
     "io.papermc.paper.event.player.PlayerSignCommandPreprocessEvent": "1.16.5",
     "io.papermc.paper.event.player.PlayerStonecutterRecipeSelectEvent": "1.16.5",
     "io.papermc.paper.event.player.PlayerStopUsingItemEvent": "1.18.2",
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent": "1.21.11",
     "io.papermc.paper.event.player.PlayerToggleEntityAgeLockEvent": "26.1.1",
     "io.papermc.paper.event.player.PlayerTrackEntityEvent": "1.19.2",
     "io.papermc.paper.event.player.PlayerTradeEvent": "1.16.4",
@@ -5484,6 +5486,17 @@
       "setConsumeItem(boolean)": "1.16.2",
       "shouldConsumeItem()": "1.16.2"
     },
+    "io.papermc.paper.event.entity.EntityLungeEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "cancelled": "basically forever",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getLungePower()": "26.1.2",
+      "isCancelled()": "basically forever",
+      "lungePower": "26.1.2",
+      "setCancelled(boolean)": "basically forever",
+      "setLungePower(int)": "26.1.2"
+    },
     "io.papermc.paper.event.entity.EntityMoveEvent": {
       "HANDLER_LIST": "1.16.4",
       "cancelled": "basically forever",
@@ -6114,6 +6127,20 @@
       "getTicksHeldFor()": "1.18.2",
       "item": "basically forever",
       "ticksHeldFor": "1.18.2"
+    },
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent": {
+      "HANDLERS": "basically forever",
+      "cancelled": "basically forever",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getItemInHand()": "basically forever",
+      "getItemToSwap()": "1.21.11",
+      "getSlot()": "basically forever",
+      "isCancelled()": "basically forever",
+      "itemInHand": "basically forever",
+      "itemToSwap": "1.21.11",
+      "setCancelled(boolean)": "basically forever",
+      "slot": "basically forever"
     },
     "io.papermc.paper.event.player.PlayerToggleEntityAgeLockEvent": {
       "HANDLER_LIST": "1.16.4",
@@ -25169,16 +25196,7 @@
     },
     "org.bukkit.enchantments.EnchantmentWrapper": {
       "EnchantmentWrapper()": "1.20.4",
-      "displayName(int)": "1.16.5",
-      "getActiveSlots()": "1.16.5",
-      "getDamageIncrease(int,EntityCategory)": "1.16.5",
-      "getEnchantment()": "basically forever",
-      "getMaxModifiedCost(int)": "1.20.2",
-      "getMinModifiedCost(int)": "1.20.2",
-      "getRarity()": "1.16.5",
-      "isDiscoverable()": "1.16.5",
-      "isTradeable()": "1.16.5",
-      "translationKey()": "1.17.1"
+      "getEnchantment()": "basically forever"
     },
     "org.bukkit.entity.AbstractArrow": {
       "getAttachedBlock()": "1.12.2",
@@ -37335,14 +37353,7 @@
     },
     "org.bukkit.potion.PotionEffectTypeWrapper": {
       "PotionEffectTypeWrapper()": "1.20.4",
-      "getAttributeModifierAmount(Attribute,int)": "1.18.1",
-      "getColor()": "basically forever",
-      "getEffectAttributes()": "1.18.1",
-      "getEffectCategory()": "1.18.1",
-      "getKey()": "1.12",
-      "getType()": "basically forever",
-      "isInstant()": "basically forever",
-      "translationKey()": "1.17.1"
+      "getType()": "basically forever"
     },
     "org.bukkit.potion.PotionType": {
       "AWKWARD": "basically forever",
