@@ -185,7 +185,12 @@
   ],
   "classesRemoved": [],
   "classesChanged": [
+    "org.bukkit.ChunkSnapshot",
+    "org.bukkit.GameRule",
+    "org.bukkit.Server",
+    "org.bukkit.WorldCreator",
     "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.generator.WorldInfo",
     "org.bukkit.potion.PotionEffectTypeWrapper"
   ],
   "membersAdded": {
@@ -198,6 +203,12 @@
       "getLungePower()",
       "lungePower",
       "setLungePower(int)"
+    ],
+    "org.bukkit.ChunkSnapshot": [
+      "getWorldKey()"
+    ],
+    "org.bukkit.WorldCreator": [
+      "nameFromKey(NamespacedKey)"
     ]
   },
   "membersRemoved": {},
