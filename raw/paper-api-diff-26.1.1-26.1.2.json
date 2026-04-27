@@ -1,7 +1,9 @@
 {
   "versionA": "26.1.1",
   "versionB": "26.1.2",
-  "packagesAdded": [],
+  "packagesAdded": [
+    "io.papermc.paper.entity.poi"
+  ],
   "packagesRemoved": [],
   "packagesChanged": [
     "com.destroystokyo.paper",
@@ -180,24 +182,42 @@
     "org.spigotmc.event.player"
   ],
   "classesAdded": [
+    "io.papermc.paper.entity.poi.PoiSearchResult",
+    "io.papermc.paper.entity.poi.PoiType",
+    "io.papermc.paper.entity.poi.PoiType.Occupancy",
+    "io.papermc.paper.entity.poi.PoiTypes",
     "io.papermc.paper.event.entity.EntityLungeEvent",
-    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent"
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent",
+    "io.papermc.paper.registry.keys.PoiTypeKeys",
+    "io.papermc.paper.registry.keys.tags.PoiTypeTagKeys",
+    "org.bukkit.event.world.ClockTimeSkipEvent",
+    "org.bukkit.event.world.ClockTimeSkipEvent.SkipReason"
   ],
-  "classesRemoved": [],
+  "classesRemoved": [
+    "org.bukkit.event.world.TimeSkipEvent.SkipReason"
+  ],
   "classesChanged": [
+    "io.papermc.paper.registry.RegistryKey",
+    "org.bukkit.Bukkit",
     "org.bukkit.ChunkSnapshot",
     "org.bukkit.GameRule",
+    "org.bukkit.Registry",
     "org.bukkit.Server",
+    "org.bukkit.World",
     "org.bukkit.WorldCreator",
     "org.bukkit.enchantments.EnchantmentWrapper",
+    "org.bukkit.entity.Damageable",
+    "org.bukkit.event.hanging.HangingBreakByEntityEvent",
+    "org.bukkit.event.vehicle.VehicleDamageEvent",
+    "org.bukkit.event.vehicle.VehicleDestroyEvent",
+    "org.bukkit.event.world.TimeSkipEvent",
     "org.bukkit.generator.WorldInfo",
     "org.bukkit.potion.PotionEffectTypeWrapper"
   ],
   "membersAdded": {
-    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent": [
-      "HANDLERS",
-      "getItemToSwap()",
-      "itemToSwap"
+    "org.bukkit.entity.Damageable": [
+      "kill()",
+      "kill(DamageSource)"
     ],
     "io.papermc.paper.event.entity.EntityLungeEvent": [
       "getLungePower()",
@@ -207,8 +227,55 @@
     "org.bukkit.ChunkSnapshot": [
       "getWorldKey()"
     ],
+    "io.papermc.paper.entity.poi.PoiSearchResult": [
+      "poiType()"
+    ],
     "org.bukkit.WorldCreator": [
-      "nameFromKey(NamespacedKey)"
+      "clearForcedSpawnPosition()",
+      "forcedSpawnPitch()",
+      "forcedSpawnPosition()",
+      "forcedSpawnPosition(Position,float,float)",
+      "forcedSpawnYaw()",
+      "nameFromKey(NamespacedKey)",
+      "spawnPitchOverride",
+      "spawnPositionOverride",
+      "spawnYawOverride"
+    ],
+    "io.papermc.paper.registry.keys.PoiTypeKeys": [
+      "MEETING",
+      "TEST_INSTANCE",
+      "PoiTypeKeys()"
+    ],
+    "io.papermc.paper.entity.poi.PoiType": [
+      "hasOccupants()",
+      "is(BlockData)"
+    ],
+    "io.papermc.paper.entity.poi.PoiType.Occupancy": [
+      "HAS_SPACE",
+      "IS_OCCUPIED",
+      "occupancy(String)"
+    ],
+    "io.papermc.paper.registry.keys.tags.PoiTypeTagKeys": [
+      "ACQUIRABLE_JOB_SITE",
+      "BEE_HOME",
+      "PoiTypeTagKeys()"
+    ],
+    "io.papermc.paper.event.player.PlayerSwapWithEquipmentSlotEvent": [
+      "HANDLERS",
+      "getItemToSwap()",
+      "itemToSwap"
+    ],
+    "org.bukkit.World": [
+      "locateAllPoiInRange(Location,Predicate,int)",
+      "locateAllPoiInRange(Location,Predicate,int,Occupancy)",
+      "locateNearestPoi(Location,PoiType,int)",
+      "locateNearestPoi(Location,PoiType,int,Occupancy)"
+    ],
+    "io.papermc.paper.entity.poi.PoiTypes": [
+      "PoiTypes()"
+    ],
+    "org.bukkit.Registry": [
+      "POINT_OF_INTEREST_TYPE"
     ]
   },
   "membersRemoved": {},
