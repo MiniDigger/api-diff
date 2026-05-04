@@ -1,12 +1,10 @@
 package dev.minidigger.apidiff;
 
+import java.util.Locale;
+
 public record VersionInfo(String name, int build, String channel) {
     private String channelSuffix() {
-        return switch(channel) {
-            case "ALPHA" -> "-alpha";
-            case "BETA" -> "-beta";
-            default -> "";
-        };
+        return "-" + channel.toLowerCase(Locale.ROOT);
     }
 
     public String metadataUrl(String family) {
