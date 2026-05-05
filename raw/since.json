@@ -29618,6 +29618,7 @@
     "org.bukkit.event.entity.EntityUnleashEvent.UnleashReason": {
       "DISTANCE": "basically forever",
       "HOLDER_GONE": "basically forever",
+      "LEASHED_GONE": "26.1.2",
       "PLAYER_UNLEASH": "basically forever",
       "UNKNOWN": "basically forever",
       "UnleashReason()": "basically forever",

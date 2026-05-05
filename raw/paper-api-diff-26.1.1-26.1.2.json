@@ -207,6 +207,7 @@
     "org.bukkit.WorldCreator",
     "org.bukkit.enchantments.EnchantmentWrapper",
     "org.bukkit.entity.Damageable",
+    "org.bukkit.event.entity.EntityUnleashEvent.UnleashReason",
     "org.bukkit.event.hanging.HangingBreakByEntityEvent",
     "org.bukkit.event.vehicle.VehicleDamageEvent",
     "org.bukkit.event.vehicle.VehicleDestroyEvent",
@@ -223,6 +224,9 @@
       "getLungePower()",
       "lungePower",
       "setLungePower(int)"
+    ],
+    "org.bukkit.event.entity.EntityUnleashEvent.UnleashReason": [
+      "LEASHED_GONE"
     ],
     "org.bukkit.ChunkSnapshot": [
       "getWorldKey()"
