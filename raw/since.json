@@ -26536,6 +26536,7 @@
       "dropItem(int)": "1.21.4",
       "dropItem(int,int)": "1.21.4",
       "dropItem(int,int,boolean,Consumer)": "1.21.4",
+      "fireworkBoost()": "26.1.2",
       "fireworkBoost(ItemStack)": "1.19.2",
       "getAttackCooldown()": "1.15.2",
       "getBedLocation()": "1.13.2",

@@ -207,6 +207,7 @@
     "org.bukkit.WorldCreator",
     "org.bukkit.enchantments.EnchantmentWrapper",
     "org.bukkit.entity.Damageable",
+    "org.bukkit.entity.HumanEntity",
     "org.bukkit.event.entity.EntityUnleashEvent.UnleashReason",
     "org.bukkit.event.hanging.HangingBreakByEntityEvent",
     "org.bukkit.event.vehicle.VehicleDamageEvent",
@@ -216,6 +217,9 @@
     "org.bukkit.potion.PotionEffectTypeWrapper"
   ],
   "membersAdded": {
+    "org.bukkit.entity.HumanEntity": [
+      "fireworkBoost()"
+    ],
     "org.bukkit.entity.Damageable": [
       "kill()",
       "kill(DamageSource)"
