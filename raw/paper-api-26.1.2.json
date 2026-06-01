@@ -119080,6 +119080,11 @@
           },
           {
             "kind": "METHOD",
+            "name": "getDefaultValue()",
+            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/attribute/Attribute.html#getDefaultValue()"
+          },
+          {
+            "kind": "METHOD",
             "name": "getSentiment()",
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/attribute/Attribute.html#getSentiment()"
           },
@@ -119196,7 +119201,11 @@
           {
             "kind": "METHOD",
             "name": "getDefaultValue()",
-            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/attribute/AttributeInstance.html#getDefaultValue()"
+            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/attribute/AttributeInstance.html#getDefaultValue()",
+            "deprecated": {
+              "since": "26.1",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "METHOD",

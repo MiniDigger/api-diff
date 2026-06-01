@@ -21488,6 +21488,7 @@
       "WAYPOINT_RECEIVE_RANGE": "1.21.6",
       "WAYPOINT_TRANSMIT_RANGE": "1.21.6",
       "getAttribute(String)": "1.21.3",
+      "getDefaultValue()": "1.11.2",
       "getSentiment()": "1.21.8",
       "valueOf(String)": "basically forever",
       "values()": "basically forever"
