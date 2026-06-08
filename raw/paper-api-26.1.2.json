@@ -152038,13 +152038,15 @@
             "name": "getBoostedEntity()",
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#getBoostedEntity()",
             "deprecated": {
+              "since": "1.18.2",
               "deprecated": "true"
             }
           },
           {
             "kind": "METHOD",
             "name": "getFireworkMeta()",
-            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#getFireworkMeta()"
+            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#getFireworkMeta()",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -152057,6 +152059,7 @@
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#getLife()",
             "deprecated": {
               "forRemoval": "true",
+              "since": "1.18.2",
               "deprecated": "true"
             }
           },
@@ -152066,6 +152069,7 @@
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#getMaxLife()",
             "deprecated": {
               "forRemoval": "true",
+              "since": "1.18.2",
               "deprecated": "true"
             }
           },
@@ -152114,7 +152118,8 @@
                 "name": "meta"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#setFireworkMeta(FireworkMeta)"
+            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#setFireworkMeta(FireworkMeta)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -152139,6 +152144,7 @@
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#setLife(int)",
             "deprecated": {
               "forRemoval": "true",
+              "since": "1.18.2",
               "deprecated": "true"
             }
           },
@@ -152154,6 +152160,7 @@
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/Firework.html#setMaxLife(int)",
             "deprecated": {
               "forRemoval": "true",
+              "since": "1.18.2",
               "deprecated": "true"
             }
           },
@@ -164458,7 +164465,8 @@
           {
             "kind": "METHOD",
             "name": "getPotionMeta()",
-            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/ThrownPotion.html#getPotionMeta()"
+            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/ThrownPotion.html#getPotionMeta()",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -164480,7 +164488,8 @@
                 "name": "meta"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/ThrownPotion.html#setPotionMeta(PotionMeta)"
+            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/entity/ThrownPotion.html#setPotionMeta(PotionMeta)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
