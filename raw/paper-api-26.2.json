@@ -11417,6 +11417,11 @@
           },
           {
             "kind": "METHOD",
+            "name": "asObjectContents()",
+            "link": "https://jd.papermc.io/paper/26.2/com/destroystokyo/paper/profile/PlayerProfile.html#asObjectContents()"
+          },
+          {
+            "kind": "METHOD",
             "name": "clearProperties()",
             "link": "https://jd.papermc.io/paper/26.2/com/destroystokyo/paper/profile/PlayerProfile.html#clearProperties()"
           },
@@ -74392,14 +74397,24 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#BOOK_PAGE_TURN"
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "BOW_FIRE",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#BOW_FIRE"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#BOW_FIRE",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
             "name": "BREWING_STAND_BREW",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#BREWING_STAND_BREW"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "BRUSH_BLOCK_COMPLETE",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#BRUSH_BLOCK_COMPLETE"
           },
           {
             "kind": "FIELD",
@@ -74417,14 +74432,24 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#CHORUS_FLOWER_GROW"
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "CLICK1",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#CLICK1"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#CLICK1",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "CLICK2",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#CLICK2"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#CLICK2",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74453,6 +74478,26 @@
           },
           {
             "kind": "ENUM_CONSTANT",
+            "name": "DESTROY_BLOCK",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#DESTROY_BLOCK"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "DISPENSER_DISPENSE",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#DISPENSER_DISPENSE"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "DISPENSER_FAIL",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#DISPENSER_FAIL"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "DISPENSER_PROJECTILE_LAUNCH",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#DISPENSER_PROJECTILE_LAUNCH"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
             "name": "DOOR_CLOSE",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#DOOR_CLOSE",
             "deprecated": {
@@ -74472,9 +74517,14 @@
             }
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "DRAGON_BREATH",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#DRAGON_BREATH"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#DRAGON_BREATH",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74483,28 +74533,48 @@
           },
           {
             "kind": "ENUM_CONSTANT",
+            "name": "EGG_CRACK",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#EGG_CRACK"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
             "name": "ELECTRIC_SPARK",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ELECTRIC_SPARK"
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "ENDERDRAGON_GROWL",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDERDRAGON_GROWL"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDERDRAGON_GROWL",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "ENDERDRAGON_SHOOT",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDERDRAGON_SHOOT"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDERDRAGON_SHOOT",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
             "name": "ENDEREYE_LAUNCH",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDEREYE_LAUNCH",
             "deprecated": {
-              "forRemoval": "true",
               "since": "1.21",
+              "forRemoval": "true",
               "deprecated": "true"
             }
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "ENDER_DRAGON_BREATH",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDER_DRAGON_BREATH"
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74515,6 +74585,16 @@
             "kind": "ENUM_CONSTANT",
             "name": "ENDER_DRAGON_DESTROY_BLOCK",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDER_DRAGON_DESTROY_BLOCK"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "ENDER_DRAGON_GROWL",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDER_DRAGON_GROWL"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "ENDER_DRAGON_SHOOT",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ENDER_DRAGON_SHOOT"
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74620,8 +74700,8 @@
             "name": "GUST_DUST",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#GUST_DUST",
             "deprecated": {
-              "forRemoval": "true",
               "since": "1.20.5",
+              "forRemoval": "true",
               "deprecated": "true"
             }
           },
@@ -74691,24 +74771,44 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#OXIDISED_COPPER_SCRAPE"
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_AND_SOUND_BRUSH_BLOCK_COMPLETE",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "PARTICLES_EGG_CRACK",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_EGG_CRACK"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_EGG_CRACK",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "PARTICLES_SCULK_CHARGE",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_SCULK_CHARGE"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_SCULK_CHARGE",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "PARTICLES_SCULK_SHRIEK",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_SCULK_SHRIEK"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#PARTICLES_SCULK_SHRIEK",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74747,13 +74847,33 @@
           },
           {
             "kind": "ENUM_CONSTANT",
+            "name": "RECORD_STOP",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#RECORD_STOP"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
             "name": "REDSTONE_TORCH_BURNOUT",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#REDSTONE_TORCH_BURNOUT"
           },
           {
             "kind": "ENUM_CONSTANT",
+            "name": "SCULK_CHARGE",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SCULK_CHARGE"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "SCULK_SHRIEK",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SCULK_SHRIEK"
+          },
+          {
+            "kind": "FIELD",
             "name": "SHOOT_WHITE_SMOKE",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SHOOT_WHITE_SMOKE"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SHOOT_WHITE_SMOKE",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74771,24 +74891,39 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SMITHING_TABLE_USE"
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "SMOKE",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SMOKE"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SMOKE",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
+            "name": "SMOKE_SHOOT",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SMOKE_SHOOT"
+          },
+          {
+            "kind": "FIELD",
             "name": "SOUND_STOP_JUKEBOX_SONG",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SOUND_STOP_JUKEBOX_SONG"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SOUND_STOP_JUKEBOX_SONG",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
-            "kind": "ENUM_CONSTANT",
-            "name": "SOUND_SULFUR_SPIKE_LAND",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SOUND_SULFUR_SPIKE_LAND"
-          },
-          {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "SOUND_WITH_CHARGE_SHOT",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SOUND_WITH_CHARGE_SHOT"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SOUND_WITH_CHARGE_SHOT",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74803,7 +74938,17 @@
           {
             "kind": "ENUM_CONSTANT",
             "name": "STEP_SOUND",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#STEP_SOUND"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#STEP_SOUND",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "SULFUR_SPIKE_LAND",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#SULFUR_SPIKE_LAND"
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74881,14 +75026,24 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#VAULT_EJECT_ITEM"
           },
           {
-            "kind": "ENUM_CONSTANT",
+            "kind": "FIELD",
             "name": "VILLAGER_PLANT_GROW",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#VILLAGER_PLANT_GROW",
             "deprecated": {
-              "forRemoval": "true",
               "since": "1.20.5",
+              "forRemoval": "true",
               "deprecated": "true"
             }
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "WHITE_SMOKE_SHOOT",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#WHITE_SMOKE_SHOOT"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "WIND_CHARGE_SHOOT",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#WIND_CHARGE_SHOOT"
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -74922,8 +75077,18 @@
           },
           {
             "kind": "ENUM_CONSTANT",
+            "name": "ZOMBIE_CONVERTED_TO_VILLAGER",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ZOMBIE_CONVERTED_TO_VILLAGER"
+          },
+          {
+            "kind": "FIELD",
             "name": "ZOMBIE_CONVERTED_VILLAGER",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ZOMBIE_CONVERTED_VILLAGER"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Effect.html#ZOMBIE_CONVERTED_VILLAGER",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -159034,7 +159199,11 @@
           {
             "kind": "METHOD",
             "name": "getDespawnInPeacefulOverride()",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Mob.html#getDespawnInPeacefulOverride()"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Mob.html#getDespawnInPeacefulOverride()",
+            "deprecated": {
+              "since": "26.2",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "METHOD",
@@ -159223,7 +159392,11 @@
                 "name": "state"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Mob.html#setDespawnInPeacefulOverride(TriState)"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Mob.html#setDespawnInPeacefulOverride(TriState)",
+            "deprecated": {
+              "since": "26.2",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "METHOD",
@@ -161047,6 +161220,11 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#asHoverEvent(UnaryOperator)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "asObjectContents()",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#asObjectContents()"
           },
           {
             "kind": "METHOD",

@@ -211,6 +211,7 @@
     "com.destroystokyo.paper.entity.ai.VanillaGoal",
     "com.destroystokyo.paper.event.entity.CreeperIgniteEvent",
     "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.Completion",
+    "com.destroystokyo.paper.profile.PlayerProfile",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.event.RegistryEvents",
@@ -248,6 +249,7 @@
     "org.bukkit.damage.DamageType",
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.MagmaCube",
+    "org.bukkit.entity.Player",
     "org.bukkit.entity.Slime",
     "org.bukkit.entity.Vex",
     "org.bukkit.event.entity.EntityPotionEffectEvent",
@@ -346,6 +348,9 @@
       "knockbackModifiers()",
       "soundSettings()"
     ],
+    "org.bukkit.entity.Player": [
+      "asObjectContents()"
+    ],
     "org.bukkit.inventory.meta.TropicalFishBucketMeta": [
       "hasBodyColor()",
       "hasPattern()",
@@ -384,7 +389,21 @@
       "SULFUR_CUBE_TEMPT"
     ],
     "org.bukkit.Effect": [
-      "SOUND_SULFUR_SPIKE_LAND"
+      "BRUSH_BLOCK_COMPLETE",
+      "DESTROY_BLOCK",
+      "DISPENSER_DISPENSE",
+      "DISPENSER_FAIL",
+      "DISPENSER_PROJECTILE_LAUNCH",
+      "ENDER_DRAGON_BREATH",
+      "ENDER_DRAGON_GROWL",
+      "ENDER_DRAGON_SHOOT",
+      "RECORD_STOP",
+      "SCULK_SHRIEK",
+      "SMOKE_SHOOT",
+      "SULFUR_SPIKE_LAND",
+      "WHITE_SMOKE_SHOOT",
+      "WIND_CHARGE_SHOOT",
+      "ZOMBIE_CONVERTED_TO_VILLAGER"
     ],
     "org.bukkit.UnsafeValues": [
       "nextEntityId(World)"
