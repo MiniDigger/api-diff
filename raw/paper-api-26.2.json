@@ -151936,6 +151936,11 @@
           },
           {
             "kind": "METHOD",
+            "name": "getSoundCategory()",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#getSoundCategory()"
+          },
+          {
+            "kind": "METHOD",
             "name": "getSpawnCategory()",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#getSpawnCategory()"
           },
@@ -157781,6 +157786,17 @@
           },
           {
             "kind": "METHOD",
+            "name": "getHurtSound(DamageSource)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "damageSource"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#getHurtSound(DamageSource)"
+          },
+          {
+            "kind": "METHOD",
             "name": "getItemInUse()",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#getItemInUse()",
             "deprecated": {
@@ -157922,6 +157938,16 @@
             "kind": "METHOD",
             "name": "getSidewaysMovement()",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#getSidewaysMovement()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getSoundPitch()",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#getSoundPitch()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getSoundVolume()",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#getSoundVolume()"
           },
           {
             "kind": "METHOD",

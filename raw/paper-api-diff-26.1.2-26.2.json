@@ -247,7 +247,9 @@
     "org.bukkit.command.CommandSender",
     "org.bukkit.command.ProxiedCommandSender",
     "org.bukkit.damage.DamageType",
+    "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.LivingEntity",
     "org.bukkit.entity.MagmaCube",
     "org.bukkit.entity.Player",
     "org.bukkit.entity.Slime",
@@ -442,6 +444,9 @@
       "FRICTION_MODIFIER",
       "NAME_TAG_DISTANCE"
     ],
+    "org.bukkit.entity.Entity": [
+      "getSoundCategory()"
+    ],
     "org.bukkit.Particle.AbstractGeyser": [
       "AbstractGeyser(int)",
       "getWaterBlocks()",
@@ -529,6 +534,11 @@
     ],
     "org.bukkit.event.entity.EntityPotionEffectEvent": [
       "entitySource"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "getHurtSound(DamageSource)",
+      "getSoundPitch()",
+      "getSoundVolume()"
     ],
     "org.bukkit.entity.EntityType": [
       "SULFUR_CUBE"
