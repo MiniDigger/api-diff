@@ -11,6 +11,8 @@ import jdk.javadoc.doclet.Reporter;
 
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
+import javax.lang.model.element.ElementKind;
+import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.util.ElementScanner14;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -96,6 +98,11 @@ public class ApiExportDoclet implements Doclet {
             Set<Map<String, Object>> children = new TreeSet<>(comparator);
             element.put("kind", e.getKind());
             element.put("name", e.toString());
+            if (e.getKind() == ElementKind.METHOD) {
+                element.put("return_type", ((ExecutableElement) e).getReturnType().toString());
+            } else if (e.getKind() == ElementKind.FIELD) {
+                element.put("type", e.asType().toString());
+            }
             element.put("children", children);
 
             // total jank but gets rid of annotations on params
