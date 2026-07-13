@@ -183,6 +183,7 @@
   "classesAdded": [
     "io.papermc.paper.datacomponent.item.SulfurCubeContent",
     "io.papermc.paper.event.entity.EntityIgniteEvent",
+    "io.papermc.paper.event.server.AsyncServerDataFixerRemoveBlockEntityEvent",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.AttributeEntry",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.Builder",
@@ -190,6 +191,10 @@
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.ExplosionSettings",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.KnockbackModifiers",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.SoundSettings",
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry",
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry.Builder",
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry",
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry.Builder",
     "io.papermc.paper.registry.keys.SulfurCubeArchetypeKeys",
     "org.bukkit.Particle.AbstractGeyser",
     "org.bukkit.Particle.Geyser",
@@ -212,8 +217,10 @@
     "com.destroystokyo.paper.event.entity.CreeperIgniteEvent",
     "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.Completion",
     "com.destroystokyo.paper.profile.PlayerProfile",
+    "io.papermc.paper.connection.PlayerCommonConnection",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.registry.RegistryKey",
+    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider",
     "io.papermc.paper.registry.event.RegistryEvents",
     "io.papermc.paper.registry.keys.AttributeKeys",
     "io.papermc.paper.registry.keys.BiomeKeys",
@@ -239,6 +246,7 @@
     "org.bukkit.Sound",
     "org.bukkit.Tag",
     "org.bukkit.UnsafeValues",
+    "org.bukkit.World",
     "org.bukkit.WorldType",
     "org.bukkit.attribute.Attribute",
     "org.bukkit.block.Biome",
@@ -261,85 +269,22 @@
     "org.bukkit.inventory.ItemType",
     "org.bukkit.inventory.meta.BookMeta",
     "org.bukkit.inventory.meta.TropicalFishBucketMeta",
+    "org.bukkit.inventory.meta.trim.TrimMaterial",
+    "org.bukkit.inventory.meta.trim.TrimPattern",
     "org.bukkit.tag.DamageTypeTags"
   ],
   "membersAdded": {
-    "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
-      "SULFUR_CUBE_CONTENT"
-    ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.SoundSettings": [
       "of(TypedKey,TypedKey,float,float)",
       "pushSound()",
       "pushSoundCooldown()",
       "pushSoundImpulseThreshold()"
     ],
-    "org.bukkit.Tag": [
-      "CAUSES_CONTINUOUS_GEYSER_ERUPTIONS",
-      "CAUSES_PERIODIC_GEYSER_ERUPTIONS",
-      "CONCRETE",
-      "CONCRETE_POWDERS",
-      "DEFAULT_IMMUNE_TO",
-      "FOX_IMMUNE_TO",
-      "POLAR_BEAR_IMMUNE_TO",
-      "SHEARS_EXTREME_BREAKING_SPEED",
-      "SHEARS_MAJOR_BREAKING_SPEED",
-      "SHEARS_MINOR_BREAKING_SPEED",
-      "SNOW_GOLEM_IMMUNE_TO",
-      "SPELEOTHEMS",
-      "STRAY_IMMUNE_TO",
-      "SULFUR_SPIKE_REPLACEABLE_BLOCKS",
-      "SUPPRESSES_BOUNCE",
-      "WITHER_SKELETON_IMMUNE_TO",
-      "ENTITY_TYPES_NOT_AFFECTED_BY_GEYSERS",
-      "ITEMS_CONCRETE",
-      "ITEMS_CONCRETE_POWDERS",
-      "ITEMS_GLAZED_TERRACOTTA",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_BOUNCY",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_EXPLOSIVE",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_FAST_FLAT",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_FAST_SLIDING",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_HIGH_RESISTANCE",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_HOT",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_LIGHT",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_REGULAR",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_SLOW_BOUNCY",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_SLOW_FLAT",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_SLOW_SLIDING",
-      "ITEMS_SULFUR_CUBE_ARCHETYPE_STICKY",
-      "ITEMS_SULFUR_CUBE_FOOD",
-      "ITEMS_SULFUR_CUBE_SWALLOWABLE"
-    ],
-    "org.bukkit.command.ProxiedCommandSender": [
-      "sendMessage(Component)",
-      "sendMessage(Component,Bound)",
-      "sendMessage(SignedMessage,Bound)"
-    ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.ExplosionSettings": [
       "fuseTicks()",
       "incendiary()",
       "of(int,boolean,int)",
       "power()"
-    ],
-    "org.bukkit.inventory.meta.BookMeta": [
-      "pages(List)"
-    ],
-    "org.bukkit.entity.SulfurCube.Archetype": [
-      "BOUNCY",
-      "EXPLOSIVE",
-      "FAST_FLAT",
-      "FAST_SLIDING",
-      "HIGH_RESISTANCE",
-      "HOT",
-      "REGULAR",
-      "SLOW_BOUNCY",
-      "SLOW_FLAT",
-      "SLOW_SLIDING",
-      "getArchetype(String)"
-    ],
-    "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.KnockbackModifiers": [
-      "horizontalPower()",
-      "of(float,float)",
-      "verticalPower()"
     ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry": [
       "attributeModifiers()",
@@ -353,19 +298,12 @@
     "org.bukkit.entity.Player": [
       "asObjectContents()"
     ],
-    "org.bukkit.inventory.meta.TropicalFishBucketMeta": [
-      "hasBodyColor()",
-      "hasPattern()",
-      "hasPatternColor()"
-    ],
     "org.bukkit.entity.SulfurCube": [
       "canExplode()",
       "ignite(boolean)"
     ],
-    "org.bukkit.Particle.GeyserBase": [
-      "GeyserBase(int,float)",
-      "burstImpulse",
-      "getBurstImpulse()"
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry": [
+      "decal()"
     ],
     "org.bukkit.block.data.type.PotentSulfur.State": [
       "CONTINUOUS",
@@ -390,22 +328,17 @@
       "SULFUR_CUBE_SEARCH_FOR_ITEMS",
       "SULFUR_CUBE_TEMPT"
     ],
-    "org.bukkit.Effect": [
-      "BRUSH_BLOCK_COMPLETE",
-      "DESTROY_BLOCK",
-      "DISPENSER_DISPENSE",
-      "DISPENSER_FAIL",
-      "DISPENSER_PROJECTILE_LAUNCH",
-      "ENDER_DRAGON_BREATH",
-      "ENDER_DRAGON_GROWL",
-      "ENDER_DRAGON_SHOOT",
-      "RECORD_STOP",
-      "SCULK_SHRIEK",
-      "SMOKE_SHOOT",
-      "SULFUR_SPIKE_LAND",
-      "WHITE_SMOKE_SHOOT",
-      "WIND_CHARGE_SHOOT",
-      "ZOMBIE_CONVERTED_TO_VILLAGER"
+    "io.papermc.paper.event.server.AsyncServerDataFixerRemoveBlockEntityEvent": [
+      "blockEntityType",
+      "blockPosition",
+      "getBlockEntityType()",
+      "getBlockPosition()",
+      "getPersistentDataContainerView()",
+      "persistentDataContainerView",
+      "worldKey"
+    ],
+    "org.bukkit.World": [
+      "setAllowMonsterSpawning(boolean)"
     ],
     "org.bukkit.UnsafeValues": [
       "nextEntityId(World)"
@@ -413,9 +346,6 @@
     "org.bukkit.block.data.type.PotentSulfur": [
       "getPotentSulfurState()",
       "setPotentSulfurState(State)"
-    ],
-    "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.AttributeEntry": [
-      "of(TypedKey,AttributeModifier)"
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "SULFUR_CUBE_ARCHETYPE_BOUNCY",
@@ -433,19 +363,15 @@
       "SULFUR_CUBE_FOOD",
       "SULFUR_CUBE_SWALLOWABLE"
     ],
-    "io.papermc.paper.datacomponent.item.SulfurCubeContent": [
-      "absorbedItem()",
-      "sulfurCubeContent(ItemStack)"
-    ],
-    "org.bukkit.attribute.Attribute": [
-      "AIR_DRAG_MODIFIER",
-      "BELOW_NAME_DISTANCE",
-      "BOUNCINESS",
-      "FRICTION_MODIFIER",
-      "NAME_TAG_DISTANCE"
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry.Builder": [
+      "assetPathOverrides(Map)",
+      "baseAssetPath(String)"
     ],
     "org.bukkit.entity.Entity": [
       "getSoundCategory()"
+    ],
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry.Builder": [
+      "decal(boolean)"
     ],
     "org.bukkit.Particle.AbstractGeyser": [
       "AbstractGeyser(int)",
@@ -532,9 +458,6 @@
       "knockbackModifiers(KnockbackModifiers)",
       "soundSettings(SoundSettings)"
     ],
-    "org.bukkit.event.entity.EntityPotionEffectEvent": [
-      "entitySource"
-    ],
     "org.bukkit.entity.LivingEntity": [
       "getHurtSound(DamageSource)",
       "getSoundPitch()",
@@ -545,6 +468,129 @@
     ],
     "org.bukkit.Particle.Geyser": [
       "Geyser(int)"
+    ],
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry": [
+      "assetPathOverrides()",
+      "baseAssetPath()"
+    ],
+    "org.bukkit.damage.DamageType": [
+      "SULFUR_CUBE_HOT"
+    ],
+    "org.bukkit.JukeboxSong": [
+      "BOUNCE"
+    ],
+    "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
+      "SULFUR_CUBE_CONTENT"
+    ],
+    "org.bukkit.Tag": [
+      "CAUSES_CONTINUOUS_GEYSER_ERUPTIONS",
+      "CAUSES_PERIODIC_GEYSER_ERUPTIONS",
+      "CONCRETE",
+      "CONCRETE_POWDERS",
+      "DEFAULT_IMMUNE_TO",
+      "FOX_IMMUNE_TO",
+      "POLAR_BEAR_IMMUNE_TO",
+      "SHEARS_EXTREME_BREAKING_SPEED",
+      "SHEARS_MAJOR_BREAKING_SPEED",
+      "SHEARS_MINOR_BREAKING_SPEED",
+      "SNOW_GOLEM_IMMUNE_TO",
+      "SPELEOTHEMS",
+      "STRAY_IMMUNE_TO",
+      "SULFUR_SPIKE_REPLACEABLE_BLOCKS",
+      "SUPPRESSES_BOUNCE",
+      "WITHER_SKELETON_IMMUNE_TO",
+      "ENTITY_TYPES_NOT_AFFECTED_BY_GEYSERS",
+      "ITEMS_CONCRETE",
+      "ITEMS_CONCRETE_POWDERS",
+      "ITEMS_GLAZED_TERRACOTTA",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_BOUNCY",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_EXPLOSIVE",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_FAST_FLAT",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_FAST_SLIDING",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_HIGH_RESISTANCE",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_HOT",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_LIGHT",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_REGULAR",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_SLOW_BOUNCY",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_SLOW_FLAT",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_SLOW_SLIDING",
+      "ITEMS_SULFUR_CUBE_ARCHETYPE_STICKY",
+      "ITEMS_SULFUR_CUBE_FOOD",
+      "ITEMS_SULFUR_CUBE_SWALLOWABLE"
+    ],
+    "org.bukkit.command.ProxiedCommandSender": [
+      "sendMessage(Component)",
+      "sendMessage(Component,Bound)",
+      "sendMessage(SignedMessage,Bound)"
+    ],
+    "org.bukkit.inventory.meta.BookMeta": [
+      "pages(List)"
+    ],
+    "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
+      "createTrimMaterial(Consumer)",
+      "createTrimPattern(Consumer)"
+    ],
+    "org.bukkit.entity.SulfurCube.Archetype": [
+      "BOUNCY",
+      "EXPLOSIVE",
+      "FAST_FLAT",
+      "FAST_SLIDING",
+      "HIGH_RESISTANCE",
+      "HOT",
+      "REGULAR",
+      "SLOW_BOUNCY",
+      "SLOW_FLAT",
+      "SLOW_SLIDING",
+      "getArchetype(String)"
+    ],
+    "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.KnockbackModifiers": [
+      "horizontalPower()",
+      "of(float,float)",
+      "verticalPower()"
+    ],
+    "org.bukkit.inventory.meta.TropicalFishBucketMeta": [
+      "hasBodyColor()",
+      "hasPattern()",
+      "hasPatternColor()"
+    ],
+    "org.bukkit.Particle.GeyserBase": [
+      "GeyserBase(int,float)",
+      "burstImpulse",
+      "getBurstImpulse()"
+    ],
+    "org.bukkit.Effect": [
+      "BRUSH_BLOCK_COMPLETE",
+      "DESTROY_BLOCK",
+      "DISPENSER_DISPENSE",
+      "DISPENSER_FAIL",
+      "DISPENSER_PROJECTILE_LAUNCH",
+      "ENDER_DRAGON_BREATH",
+      "ENDER_DRAGON_GROWL",
+      "ENDER_DRAGON_SHOOT",
+      "RECORD_STOP",
+      "SCULK_SHRIEK",
+      "SMOKE_SHOOT",
+      "SULFUR_SPIKE_LAND",
+      "WHITE_SMOKE_SHOOT",
+      "WIND_CHARGE_SHOOT",
+      "ZOMBIE_CONVERTED_TO_VILLAGER"
+    ],
+    "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.AttributeEntry": [
+      "of(TypedKey,AttributeModifier)"
+    ],
+    "io.papermc.paper.datacomponent.item.SulfurCubeContent": [
+      "absorbedItem()",
+      "sulfurCubeContent(ItemStack)"
+    ],
+    "org.bukkit.attribute.Attribute": [
+      "AIR_DRAG_MODIFIER",
+      "BELOW_NAME_DISTANCE",
+      "BOUNCINESS",
+      "FRICTION_MODIFIER",
+      "NAME_TAG_DISTANCE"
+    ],
+    "org.bukkit.event.entity.EntityPotionEffectEvent": [
+      "entitySource"
     ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "NOT_AFFECTED_BY_GEYSERS"
@@ -606,12 +652,6 @@
       "MUSIC_DISC_BOUNCE",
       "SULFUR_CUBE_BUCKET",
       "SULFUR_CUBE_SPAWN_EGG"
-    ],
-    "org.bukkit.damage.DamageType": [
-      "SULFUR_CUBE_HOT"
-    ],
-    "org.bukkit.JukeboxSong": [
-      "BOUNCE"
     ]
   },
   "membersRemoved": {

@@ -225351,11 +225351,6 @@
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/plugin/SimplePluginManager.html#updateDirectory"
           },
           {
-            "kind": "FIELD",
-            "name": "useTimings",
-            "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/plugin/SimplePluginManager.html#useTimings"
-          },
-          {
             "kind": "METHOD",
             "name": "useTimings()",
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/plugin/SimplePluginManager.html#useTimings()"
@@ -225642,7 +225637,11 @@
             "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/plugin/TimedRegisteredListener.html#totalTime"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/plugin/TimedRegisteredListener.html"
+        "link": "https://jd.papermc.io/paper/26.1.2/org/bukkit/plugin/TimedRegisteredListener.html",
+        "deprecated": {
+          "forRemoval": "true",
+          "deprecated": "true"
+        }
       },
       {
         "kind": "CLASS",

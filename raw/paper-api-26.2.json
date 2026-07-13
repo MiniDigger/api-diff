@@ -491,7 +491,11 @@
           {
             "kind": "FIELD",
             "name": "CONCRETES",
-            "link": "https://jd.papermc.io/paper/26.2/com/destroystokyo/paper/MaterialTags.html#CONCRETES"
+            "link": "https://jd.papermc.io/paper/26.2/com/destroystokyo/paper/MaterialTags.html#CONCRETES",
+            "deprecated": {
+              "since": "26.2",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "FIELD",
@@ -13813,6 +13817,11 @@
           },
           {
             "kind": "METHOD",
+            "name": "getClientBrandName()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/connection/PlayerCommonConnection.html#getClientBrandName()"
+          },
+          {
+            "kind": "METHOD",
             "name": "sendLinks(ServerLinks)",
             "children": [
               {
@@ -25981,6 +25990,68 @@
     "children": [
       {
         "kind": "CLASS",
+        "name": "io.papermc.paper.event.server.AsyncServerDataFixerRemoveBlockEntityEvent",
+        "children": [
+          {
+            "kind": "FIELD",
+            "name": "HANDLER_LIST",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#HANDLER_LIST"
+          },
+          {
+            "kind": "FIELD",
+            "name": "blockEntityType",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#blockEntityType"
+          },
+          {
+            "kind": "FIELD",
+            "name": "blockPosition",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#blockPosition"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getBlockEntityType()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#getBlockEntityType()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getBlockPosition()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#getBlockPosition()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlerList()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#getHandlerList()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlers()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#getHandlers()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getPersistentDataContainerView()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#getPersistentDataContainerView()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getWorldKey()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#getWorldKey()"
+          },
+          {
+            "kind": "FIELD",
+            "name": "persistentDataContainerView",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#persistentDataContainerView"
+          },
+          {
+            "kind": "FIELD",
+            "name": "worldKey",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html#worldKey"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html"
+      },
+      {
+        "kind": "CLASS",
         "name": "io.papermc.paper.event.server.ServerResourcesReloadedEvent",
         "children": [
           {
@@ -30948,6 +31019,28 @@
           },
           {
             "kind": "METHOD",
+            "name": "createTrimMaterial(Consumer)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "value"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/InlinedRegistryBuilderProvider.html#createTrimMaterial(Consumer)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "createTrimPattern(Consumer)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "value"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/InlinedRegistryBuilderProvider.html#createTrimPattern(Consumer)"
+          },
+          {
+            "kind": "METHOD",
             "name": "instance()",
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/InlinedRegistryBuilderProvider.html#instance()"
           }
@@ -31743,6 +31836,134 @@
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry.html",
+        "apiStatus": "NonExtendable"
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "io.papermc.paper.registry.data.TrimMaterialRegistryEntry",
+        "children": [
+          {
+            "kind": "METHOD",
+            "name": "assetPathOverrides()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry.html#assetPathOverrides()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "baseAssetPath()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry.html#baseAssetPath()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "description()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry.html#description()"
+          },
+          {
+            "kind": "INTERFACE",
+            "name": "io.papermc.paper.registry.data.TrimMaterialRegistryEntry.Builder",
+            "children": [
+              {
+                "kind": "METHOD",
+                "name": "assetPathOverrides(Map)",
+                "children": [
+                  {
+                    "kind": "PARAMETER",
+                    "name": "assetPathOverrides"
+                  }
+                ],
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry/Builder.html#assetPathOverrides(Map)"
+              },
+              {
+                "kind": "METHOD",
+                "name": "baseAssetPath(String)",
+                "children": [
+                  {
+                    "kind": "PARAMETER",
+                    "name": "baseAssetPath"
+                  }
+                ],
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry/Builder.html#baseAssetPath(String)"
+              },
+              {
+                "kind": "METHOD",
+                "name": "description(Component)",
+                "children": [
+                  {
+                    "kind": "PARAMETER",
+                    "name": "description"
+                  }
+                ],
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry/Builder.html#description(Component)"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry/Builder.html",
+            "apiStatus": "NonExtendable"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimMaterialRegistryEntry.html",
+        "apiStatus": "NonExtendable"
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "io.papermc.paper.registry.data.TrimPatternRegistryEntry",
+        "children": [
+          {
+            "kind": "METHOD",
+            "name": "assetId()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry.html#assetId()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "decal()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry.html#decal()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "description()",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry.html#description()"
+          },
+          {
+            "kind": "INTERFACE",
+            "name": "io.papermc.paper.registry.data.TrimPatternRegistryEntry.Builder",
+            "children": [
+              {
+                "kind": "METHOD",
+                "name": "assetId(Key)",
+                "children": [
+                  {
+                    "kind": "PARAMETER",
+                    "name": "assetId"
+                  }
+                ],
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry/Builder.html#assetId(Key)"
+              },
+              {
+                "kind": "METHOD",
+                "name": "decal(boolean)",
+                "children": [
+                  {
+                    "kind": "PARAMETER",
+                    "name": "decal"
+                  }
+                ],
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry/Builder.html#decal(boolean)"
+              },
+              {
+                "kind": "METHOD",
+                "name": "description(Component)",
+                "children": [
+                  {
+                    "kind": "PARAMETER",
+                    "name": "description"
+                  }
+                ],
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry/Builder.html#description(Component)"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry/Builder.html",
+            "apiStatus": "NonExtendable"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/TrimPatternRegistryEntry.html",
         "apiStatus": "NonExtendable"
       },
       {
@@ -33978,6 +34199,16 @@
             "kind": "FIELD",
             "name": "SULFUR_CUBE_ARCHETYPE",
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/event/RegistryEvents.html#SULFUR_CUBE_ARCHETYPE"
+          },
+          {
+            "kind": "FIELD",
+            "name": "TRIM_MATERIAL",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/event/RegistryEvents.html#TRIM_MATERIAL"
+          },
+          {
+            "kind": "FIELD",
+            "name": "TRIM_PATTERN",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/event/RegistryEvents.html#TRIM_PATTERN"
           },
           {
             "kind": "FIELD",
@@ -115851,7 +116082,12 @@
           {
             "kind": "METHOD",
             "name": "getAllowAnimals()",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/World.html#getAllowAnimals()"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/World.html#getAllowAnimals()",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "METHOD",
@@ -118849,6 +119085,17 @@
           },
           {
             "kind": "METHOD",
+            "name": "setAllowMonsterSpawning(boolean)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "allowMonsters"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/World.html#setAllowMonsterSpawning(boolean)"
+          },
+          {
+            "kind": "METHOD",
             "name": "setAmbientSpawnLimit(int)",
             "children": [
               {
@@ -119089,7 +119336,12 @@
                 "name": "allowMonsters"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/World.html#setSpawnFlags(boolean,boolean)"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/World.html#setSpawnFlags(boolean,boolean)",
+            "deprecated": {
+              "since": "26.2",
+              "forRemoval": "true",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "METHOD",
@@ -213105,6 +213357,18 @@
           },
           {
             "kind": "METHOD",
+            "name": "create(Consumer)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "value"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimMaterial.html#create(Consumer)",
+            "apiStatus": "Experimental"
+          },
+          {
+            "kind": "METHOD",
             "name": "description()",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimMaterial.html#description()"
           },
@@ -213244,6 +213508,18 @@
             "kind": "FIELD",
             "name": "WILD",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimPattern.html#WILD"
+          },
+          {
+            "kind": "METHOD",
+            "name": "create(Consumer)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "value"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimPattern.html#create(Consumer)",
+            "apiStatus": "Experimental"
           },
           {
             "kind": "METHOD",
@@ -227989,11 +228265,6 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/SimplePluginManager.html#updateDirectory"
           },
           {
-            "kind": "FIELD",
-            "name": "useTimings",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/SimplePluginManager.html#useTimings"
-          },
-          {
             "kind": "METHOD",
             "name": "useTimings()",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/SimplePluginManager.html#useTimings()"
@@ -228280,7 +228551,11 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/TimedRegisteredListener.html#totalTime"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/TimedRegisteredListener.html"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/TimedRegisteredListener.html",
+        "deprecated": {
+          "forRemoval": "true",
+          "deprecated": "true"
+        }
       },
       {
         "kind": "CLASS",

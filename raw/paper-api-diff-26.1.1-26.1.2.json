@@ -217,6 +217,7 @@
     "org.bukkit.event.vehicle.VehicleDestroyEvent",
     "org.bukkit.event.world.TimeSkipEvent",
     "org.bukkit.generator.WorldInfo",
+    "org.bukkit.plugin.SimplePluginManager",
     "org.bukkit.potion.PotionEffectTypeWrapper"
   ],
   "membersAdded": {
@@ -289,6 +290,14 @@
       "POINT_OF_INTEREST_TYPE"
     ]
   },
-  "membersRemoved": {},
-  "membersChanged": {}
+  "membersRemoved": {
+    "org.bukkit.plugin.SimplePluginManager": [
+      "useTimings"
+    ]
+  },
+  "membersChanged": {
+    "org.bukkit.plugin.SimplePluginManager": [
+      "useTimings"
+    ]
+  }
 }

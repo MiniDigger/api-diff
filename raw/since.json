@@ -603,6 +603,7 @@
     "io.papermc.paper.event.player.PlayerTradeEvent": "1.16.4",
     "io.papermc.paper.event.player.PlayerUntrackEntityEvent": "1.19.2",
     "io.papermc.paper.event.player.PrePlayerAttackEntityEvent": "1.19.2",
+    "io.papermc.paper.event.server.AsyncServerDataFixerRemoveBlockEntityEvent": "26.2",
     "io.papermc.paper.event.server.ServerResourcesReloadedEvent": "1.16.4",
     "io.papermc.paper.event.server.ServerResourcesReloadedEvent.Cause": "1.16.4",
     "io.papermc.paper.event.server.WhitelistStateUpdateEvent": "1.20.1",
@@ -712,6 +713,10 @@
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.ExplosionSettings": "26.2",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.KnockbackModifiers": "26.2",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.SoundSettings": "26.2",
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry": "26.2",
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry.Builder": "26.2",
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry": "26.2",
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry.Builder": "26.2",
     "io.papermc.paper.registry.data.WolfVariantRegistryEntry": "1.21.5",
     "io.papermc.paper.registry.data.WolfVariantRegistryEntry.Builder": "1.21.5",
     "io.papermc.paper.registry.data.ZombieNautilusVariantRegistryEntry": "1.21.11",
@@ -4266,6 +4271,7 @@
     },
     "io.papermc.paper.connection.PlayerCommonConnection": {
       "\u003cT\u003egetClientOption(ClientOption)": "1.15.2",
+      "getClientBrandName()": "1.16.1",
       "sendLinks(ServerLinks)": "1.21",
       "sendReportDetails(Map)": "1.21.7",
       "transfer(String,int)": "1.20.5"
@@ -6273,6 +6279,19 @@
       "willAttack": "1.19.2",
       "willAttack()": "1.19.2"
     },
+    "io.papermc.paper.event.server.AsyncServerDataFixerRemoveBlockEntityEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "blockEntityType": "26.2",
+      "blockPosition": "26.2",
+      "getBlockEntityType()": "26.2",
+      "getBlockPosition()": "26.2",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getPersistentDataContainerView()": "26.2",
+      "getWorldKey()": "26.1.2",
+      "persistentDataContainerView": "26.2",
+      "worldKey": "26.2"
+    },
     "io.papermc.paper.event.server.ServerResourcesReloadedEvent": {
       "HANDLER_LIST": "1.16.4",
       "cause": "basically forever",
@@ -6983,6 +7002,8 @@
     "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": {
       "createDialog(Consumer)": "1.21.7",
       "createInstrument(Consumer)": "1.21.7",
+      "createTrimMaterial(Consumer)": "26.2",
+      "createTrimPattern(Consumer)": "26.2",
       "instance()": "1.21.4"
     },
     "io.papermc.paper.registry.data.InstrumentRegistryEntry": {
@@ -7099,6 +7120,26 @@
       "pushSound()": "26.2",
       "pushSoundCooldown()": "26.2",
       "pushSoundImpulseThreshold()": "26.2"
+    },
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry": {
+      "assetPathOverrides()": "26.2",
+      "baseAssetPath()": "26.2",
+      "description()": "1.17.1"
+    },
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry.Builder": {
+      "assetPathOverrides(Map)": "26.2",
+      "baseAssetPath(String)": "26.2",
+      "description(Component)": "1.21"
+    },
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry": {
+      "assetId()": "1.21.3",
+      "decal()": "26.2",
+      "description()": "1.17.1"
+    },
+    "io.papermc.paper.registry.data.TrimPatternRegistryEntry.Builder": {
+      "assetId(Key)": "1.21.3",
+      "decal(boolean)": "26.2",
+      "description(Component)": "1.21"
     },
     "io.papermc.paper.registry.data.WolfVariantRegistryEntry": {
       "angryClientTextureAsset()": "1.21.5",
@@ -7401,6 +7442,8 @@
       "PIG_VARIANT": "1.21.5",
       "RegistryEvents()": "1.21",
       "SULFUR_CUBE_ARCHETYPE": "26.2",
+      "TRIM_MATERIAL": "1.19.4",
+      "TRIM_PATTERN": "1.19.4",
       "WOLF_VARIANT": "1.20.5",
       "ZOMBIE_NAUTILUS_VARIANT": "1.21.11"
     },
@@ -21645,6 +21688,7 @@
       "save()": "basically forever",
       "save(boolean)": "1.21.4",
       "sendGameEvent(Entity,GameEvent,Vector)": "1.17.1",
+      "setAllowMonsterSpawning(boolean)": "26.2",
       "setAmbientSpawnLimit(int)": "basically forever",
       "setAnimalSpawnLimit(int)": "basically forever",
       "setAutoSave(boolean)": "basically forever",
@@ -35710,6 +35754,7 @@
       "QUARTZ": "basically forever",
       "REDSTONE": "basically forever",
       "RESIN": "1.21.4",
+      "create(Consumer)": "1.21.4",
       "description()": "1.17.1",
       "getKey()": "1.12",
       "getTranslationKey()": "1.16.2",
@@ -35735,6 +35780,7 @@
       "WARD": "1.19.4",
       "WAYFINDER": "1.20",
       "WILD": "1.17",
+      "create(Consumer)": "1.21.4",
       "description()": "1.17.1",
       "getKey()": "1.12",
       "getTranslationKey()": "1.16.2",
@@ -37634,7 +37680,6 @@
       "unsubscribeFromDefaultPerms(boolean,Permissible)": "basically forever",
       "unsubscribeFromPermission(String,Permissible)": "basically forever",
       "updateDirectory": "basically forever",
-      "useTimings": "basically forever",
       "useTimings()": "basically forever",
       "useTimings(boolean)": "basically forever"
     },
