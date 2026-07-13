@@ -13,6 +13,9 @@ import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.ExecutableElement;
+import javax.lang.model.element.TypeElement;
+import javax.lang.model.type.NoType;
+import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.ElementScanner14;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -102,6 +105,15 @@ public class ApiExportDoclet implements Doclet {
                 element.put("return_type", ((ExecutableElement) e).getReturnType().toString());
             } else if (e.getKind() == ElementKind.FIELD) {
                 element.put("type", e.asType().toString());
+            } else if (e instanceof TypeElement type) {
+                if (!type.getInterfaces().isEmpty()) {
+                    element.put("interfaces", type.getInterfaces().stream()
+                      .map(TypeMirror::toString)
+                      .toList());
+                }
+                if (!(type.getSuperclass() instanceof NoType)) {
+                    element.put("superclass", type.getSuperclass().toString());
+                }
             }
             element.put("children", children);
 
