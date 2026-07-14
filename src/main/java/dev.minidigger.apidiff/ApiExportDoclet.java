@@ -111,7 +111,8 @@ public class ApiExportDoclet implements Doclet {
                       .map(TypeMirror::toString)
                       .toList());
                 }
-                if (!(type.getSuperclass() instanceof NoType)) {
+                String superclass = type.getSuperclass().toString();
+                if (!superclass.equals("none") && !superclass.equals("java.lang.Object") && !superclass.startsWith("java.lang.Enum")) {
                     element.put("superclass", type.getSuperclass().toString());
                 }
             }
