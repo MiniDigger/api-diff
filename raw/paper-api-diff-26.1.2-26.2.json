@@ -182,8 +182,11 @@
   ],
   "classesAdded": [
     "io.papermc.paper.datacomponent.item.SulfurCubeContent",
+    "io.papermc.paper.event.connection.configuration.PlayerCodeOfConductSendEvent",
     "io.papermc.paper.event.entity.EntityIgniteEvent",
     "io.papermc.paper.event.server.AsyncServerDataFixerRemoveBlockEntityEvent",
+    "io.papermc.paper.math.Angle",
+    "io.papermc.paper.math.AngleImpl",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.AttributeEntry",
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.Builder",
@@ -251,6 +254,7 @@
     "org.bukkit.attribute.Attribute",
     "org.bukkit.block.Biome",
     "org.bukkit.block.BlockType",
+    "org.bukkit.block.CreakingHeart",
     "org.bukkit.block.data.type.PointedDripstone",
     "org.bukkit.command.CommandSender",
     "org.bukkit.command.ProxiedCommandSender",
@@ -296,7 +300,9 @@
       "soundSettings()"
     ],
     "org.bukkit.entity.Player": [
-      "asObjectContents()"
+      "asObjectContents()",
+      "playSound(Sound,Position)",
+      "setRotation(Angle,Angle)"
     ],
     "org.bukkit.entity.SulfurCube": [
       "canExplode()",
@@ -548,6 +554,13 @@
       "of(float,float)",
       "verticalPower()"
     ],
+    "io.papermc.paper.math.AngleImpl": [
+      "degrees()",
+      "relative()",
+      "AngleImpl(float,boolean)",
+      "degrees",
+      "relative"
+    ],
     "org.bukkit.inventory.meta.TropicalFishBucketMeta": [
       "hasBodyColor()",
       "hasPattern()",
@@ -577,6 +590,17 @@
     ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.AttributeEntry": [
       "of(TypedKey,AttributeModifier)"
+    ],
+    "org.bukkit.block.CreakingHeart": [
+      "getCreaking()",
+      "setCreaking(Creaking)",
+      "spawnCreaking()",
+      "spreadResin()"
+    ],
+    "io.papermc.paper.event.connection.configuration.PlayerCodeOfConductSendEvent": [
+      "codeOfConduct",
+      "getCodeOfConduct()",
+      "setCodeOfConduct(String)"
     ],
     "io.papermc.paper.datacomponent.item.SulfurCubeContent": [
       "absorbedItem()",
@@ -613,6 +637,10 @@
       "getFuseTime()",
       "setFuseTime(int)",
       "fuseTime"
+    ],
+    "io.papermc.paper.math.Angle": [
+      "absolute(float)",
+      "relative(float)"
     ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.ContactDamage": [
       "amount()",

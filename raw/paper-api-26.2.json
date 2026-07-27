@@ -23921,6 +23921,68 @@
       },
       {
         "kind": "CLASS",
+        "name": "io.papermc.paper.event.connection.configuration.PlayerCodeOfConductSendEvent",
+        "superclass": "org.bukkit.event.Event",
+        "children": [
+          {
+            "kind": "FIELD",
+            "name": "HANDLER_LIST",
+            "type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#HANDLER_LIST"
+          },
+          {
+            "kind": "FIELD",
+            "name": "codeOfConduct",
+            "type": "java.lang.@org.jspecify.annotations.Nullable String",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#codeOfConduct"
+          },
+          {
+            "kind": "FIELD",
+            "name": "connection",
+            "type": "io.papermc.paper.connection.PlayerCommonConnection",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#connection"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getCodeOfConduct()",
+            "return_type": "java.lang.@org.jspecify.annotations.Nullable String",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#getCodeOfConduct()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getConnection()",
+            "return_type": "io.papermc.paper.connection.PlayerCommonConnection",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#getConnection()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlerList()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#getHandlerList()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlers()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#getHandlers()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setCodeOfConduct(String)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "codeOfConduct"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html#setCodeOfConduct(String)"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html"
+      },
+      {
+        "kind": "CLASS",
         "name": "io.papermc.paper.event.connection.configuration.PlayerConnectionInitialConfigureEvent",
         "superclass": "org.bukkit.event.Event",
         "children": [
@@ -31131,6 +31193,121 @@
     "kind": "PACKAGE",
     "name": "io.papermc.paper.math",
     "children": [
+      {
+        "kind": "INTERFACE",
+        "name": "io.papermc.paper.math.Angle",
+        "children": [
+          {
+            "kind": "METHOD",
+            "name": "absolute(float)",
+            "return_type": "io.papermc.paper.math.Angle",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "degrees"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/Angle.html#absolute(float)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "degrees()",
+            "return_type": "float",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/Angle.html#degrees()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "relative()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/Angle.html#relative()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "relative(float)",
+            "return_type": "io.papermc.paper.math.Angle",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "degrees"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/Angle.html#relative(float)"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/Angle.html"
+      },
+      {
+        "kind": "RECORD",
+        "name": "io.papermc.paper.math.AngleImpl",
+        "interfaces": [
+          "io.papermc.paper.math.Angle"
+        ],
+        "superclass": "java.lang.Record",
+        "children": [
+          {
+            "kind": "CONSTRUCTOR",
+            "name": "AngleImpl(float,boolean)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "degrees"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "relative"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#AngleImpl(float,boolean)"
+          },
+          {
+            "kind": "RECORD_COMPONENT",
+            "name": "degrees",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#degrees"
+          },
+          {
+            "kind": "METHOD",
+            "name": "degrees()",
+            "return_type": "float",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#degrees()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "equals(Object)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "o"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#equals(Object)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "hashCode()",
+            "return_type": "int",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#hashCode()"
+          },
+          {
+            "kind": "RECORD_COMPONENT",
+            "name": "relative",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#relative"
+          },
+          {
+            "kind": "METHOD",
+            "name": "relative()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#relative()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "toString()",
+            "return_type": "java.lang.String",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html#toString()"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/math/AngleImpl.html"
+      },
       {
         "kind": "INTERFACE",
         "name": "io.papermc.paper.math.BlockPosition",
@@ -134673,6 +134850,22 @@
           },
           {
             "kind": "METHOD",
+            "name": "playSound(Sound,Position)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "pos"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "sound"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/World.html#playSound(Sound,Position)"
+          },
+          {
+            "kind": "METHOD",
             "name": "rayTrace(Consumer)",
             "return_type": "org.bukkit.util.@org.jetbrains.annotations.Nullable RayTraceResult",
             "children": [
@@ -148529,6 +148722,38 @@
         "name": "org.bukkit.block.CreakingHeart",
         "interfaces": [
           "org.bukkit.block.TileState"
+        ],
+        "children": [
+          {
+            "kind": "METHOD",
+            "name": "getCreaking()",
+            "return_type": "org.bukkit.entity.@org.jspecify.annotations.Nullable Creaking",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/CreakingHeart.html#getCreaking()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setCreaking(Creaking)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "creaking"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/CreakingHeart.html#setCreaking(Creaking)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "spawnCreaking()",
+            "return_type": "org.bukkit.entity.@org.jspecify.annotations.Nullable Creaking",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/CreakingHeart.html#spawnCreaking()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "spreadResin()",
+            "return_type": "org.bukkit.@org.jspecify.annotations.Nullable Location",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/CreakingHeart.html#spreadResin()"
+          }
         ],
         "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/CreakingHeart.html"
       },
@@ -173517,6 +173742,22 @@
           },
           {
             "kind": "METHOD",
+            "name": "setRotation(Angle,Angle)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "pitch"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "yaw"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#setRotation(Angle,Angle)"
+          },
+          {
+            "kind": "METHOD",
             "name": "setRotation(float,float)",
             "return_type": "void",
             "children": [
@@ -173529,7 +173770,8 @@
                 "name": "yaw"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#setRotation(float,float)"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#setRotation(float,float)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -185001,6 +185243,22 @@
           },
           {
             "kind": "METHOD",
+            "name": "playSound(Sound,Position)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "pos"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "sound"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#playSound(Sound,Position)"
+          },
+          {
+            "kind": "METHOD",
             "name": "playerListFooter()",
             "return_type": "net.kyori.adventure.text.@org.jspecify.annotations.Nullable Component",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#playerListFooter()"
@@ -186549,6 +186807,22 @@
           },
           {
             "kind": "METHOD",
+            "name": "setRotation(Angle,Angle)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "pitch"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "yaw"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#setRotation(Angle,Angle)"
+          },
+          {
+            "kind": "METHOD",
             "name": "setRotation(float,float)",
             "return_type": "void",
             "children": [
@@ -186561,7 +186835,8 @@
                 "name": "yaw"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#setRotation(float,float)"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#setRotation(float,float)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",

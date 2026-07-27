@@ -523,6 +523,7 @@
     "io.papermc.paper.event.block.VaultChangeStateEvent": "1.21.5",
     "io.papermc.paper.event.connection.PlayerConnectionValidateLoginEvent": "1.21.7",
     "io.papermc.paper.event.connection.configuration.AsyncPlayerConnectionConfigureEvent": "1.21.7",
+    "io.papermc.paper.event.connection.configuration.PlayerCodeOfConductSendEvent": "26.2",
     "io.papermc.paper.event.connection.configuration.PlayerConnectionInitialConfigureEvent": "1.21.7",
     "io.papermc.paper.event.connection.configuration.PlayerConnectionReconfigureEvent": "1.21.7",
     "io.papermc.paper.event.entity.ElderGuardianAppearanceEvent": "1.16.5",
@@ -621,6 +622,8 @@
     "io.papermc.paper.inventory.tooltip.TooltipContext": "1.20.4",
     "io.papermc.paper.inventory.tooltip.TooltipContextImpl": "1.20.4",
     "io.papermc.paper.item.MapPostProcessing": "1.21.3",
+    "io.papermc.paper.math.Angle": "26.2",
+    "io.papermc.paper.math.AngleImpl": "26.2",
     "io.papermc.paper.math.BlockPosition": "1.19.3",
     "io.papermc.paper.math.BlockPositionImpl": "1.19.3",
     "io.papermc.paper.math.FinePosition": "1.19.3",
@@ -5385,6 +5388,16 @@
       "getHandlerList()": "basically forever",
       "getHandlers()": "basically forever"
     },
+    "io.papermc.paper.event.connection.configuration.PlayerCodeOfConductSendEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "codeOfConduct": "26.2",
+      "connection": "1.21.7",
+      "getCodeOfConduct()": "26.2",
+      "getConnection()": "1.21.7",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "setCodeOfConduct(String)": "26.2"
+    },
     "io.papermc.paper.event.connection.configuration.PlayerConnectionInitialConfigureEvent": {
       "HANDLER_LIST": "1.16.4",
       "connection": "1.21.7",
@@ -6475,6 +6488,22 @@
       "SCALE": "1.21.3",
       "valueOf(String)": "basically forever",
       "values()": "basically forever"
+    },
+    "io.papermc.paper.math.Angle": {
+      "absolute(float)": "26.2",
+      "degrees()": "26.2",
+      "relative()": "26.2",
+      "relative(float)": "26.2"
+    },
+    "io.papermc.paper.math.AngleImpl": {
+      "AngleImpl(float,boolean)": "26.2",
+      "degrees": "26.2",
+      "degrees()": "26.2",
+      "equals(Object)": "basically forever",
+      "hashCode()": "basically forever",
+      "relative": "26.2",
+      "relative()": "26.2",
+      "toString()": "basically forever"
     },
     "io.papermc.paper.math.BlockPosition": {
       "isBlock()": "basically forever",
@@ -21669,6 +21698,7 @@
       "playSound(Location,String,SoundCategory,float,float)": "1.11.2",
       "playSound(Location,String,SoundCategory,float,float,long)": "1.20.2",
       "playSound(Location,String,float,float)": "basically forever",
+      "playSound(Sound,Position)": "26.2",
       "rayTrace(Consumer)": "1.21.4",
       "rayTrace(Location,Vector,double,FluidCollisionMode,boolean,double,Predicate)": "1.13.2",
       "rayTrace(Position,Vector,double,FluidCollisionMode,boolean,double,Predicate,Predicate)": "1.20.2",
@@ -23585,6 +23615,12 @@
       "setCraftingTicks(int)": "1.20.4",
       "setSlotDisabled(int,boolean)": "1.20.4",
       "setTriggered(boolean)": "1.13"
+    },
+    "org.bukkit.block.CreakingHeart": {
+      "getCreaking()": "1.21.3",
+      "setCreaking(Creaking)": "1.21.3",
+      "spawnCreaking()": "26.2",
+      "spreadResin()": "26.2"
     },
     "org.bukkit.block.CreatureSpawner": {
       "getCreatureTypeName()": "basically forever",
@@ -26547,6 +26583,7 @@
       "setPortalCooldown(int)": "1.10.2",
       "setPose(Pose)": "1.20.1",
       "setPose(Pose,boolean)": "1.20.1",
+      "setRotation(Angle,Angle)": "26.2",
       "setRotation(float,float)": "1.13.2",
       "setSilent(boolean)": "basically forever",
       "setSneaking(boolean)": "basically forever",
@@ -27784,6 +27821,7 @@
       "playSound(Location,String,SoundCategory,float,float)": "1.11.2",
       "playSound(Location,String,SoundCategory,float,float,long)": "1.20.2",
       "playSound(Location,String,float,float)": "basically forever",
+      "playSound(Sound,Position)": "26.2",
       "playerListFooter()": "1.16.5",
       "playerListHeader()": "1.16.5",
       "playerListName()": "1.16.5",
@@ -27883,6 +27921,7 @@
       "setResourcePack(UUID,String,String,Component,boolean)": "1.20.4",
       "setRespawnLocation(Location)": "basically forever",
       "setRespawnLocation(Location,boolean)": "1.20.4",
+      "setRotation(Angle,Angle)": "26.2",
       "setRotation(float,float)": "1.13.2",
       "setScoreboard(Scoreboard)": "basically forever",
       "setSendViewDistance(int)": "1.17.1",
