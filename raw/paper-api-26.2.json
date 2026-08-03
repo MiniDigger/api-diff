@@ -2901,6 +2901,22 @@
           },
           {
             "kind": "METHOD",
+            "name": "findPath(Entity,int)",
+            "return_type": "com.destroystokyo.paper.entity.Pathfinder.@org.jspecify.annotations.Nullable PathResult",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "reachRange"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "target"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/com/destroystokyo/paper/entity/Pathfinder.html#findPath(Entity,int)"
+          },
+          {
+            "kind": "METHOD",
             "name": "findPath(LivingEntity)",
             "return_type": "com.destroystokyo.paper.entity.Pathfinder.@org.jspecify.annotations.Nullable PathResult",
             "children": [
@@ -2922,6 +2938,22 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.2/com/destroystokyo/paper/entity/Pathfinder.html#findPath(Location)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "findPath(Location,int)",
+            "return_type": "com.destroystokyo.paper.entity.Pathfinder.@org.jspecify.annotations.Nullable PathResult",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "loc"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "reachRange"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/com/destroystokyo/paper/entity/Pathfinder.html#findPath(Location,int)"
           },
           {
             "kind": "METHOD",
@@ -14447,6 +14479,12 @@
         "children": [
           {
             "kind": "METHOD",
+            "name": "getEntityOrThrow()",
+            "return_type": "org.bukkit.entity.Entity",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/command/brigadier/CommandSourceStack.html#getEntityOrThrow()"
+          },
+          {
+            "kind": "METHOD",
             "name": "getExecutor()",
             "return_type": "org.bukkit.entity.@org.jspecify.annotations.Nullable Entity",
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/command/brigadier/CommandSourceStack.html#getExecutor()"
@@ -14456,6 +14494,12 @@
             "name": "getLocation()",
             "return_type": "org.bukkit.Location",
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/command/brigadier/CommandSourceStack.html#getLocation()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getPlayerOrThrow()",
+            "return_type": "org.bukkit.entity.Player",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/command/brigadier/CommandSourceStack.html#getPlayerOrThrow()"
           },
           {
             "kind": "METHOD",
@@ -81075,6 +81119,12 @@
             "name": "getEntity()",
             "return_type": "org.bukkit.entity.LivingEntity",
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/world/damagesource/CombatTracker.html#getEntity()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getLastDamageTime()",
+            "return_type": "int",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/world/damagesource/CombatTracker.html#getLastDamageTime()"
           },
           {
             "kind": "METHOD",
@@ -185341,6 +185391,12 @@
           },
           {
             "kind": "METHOD",
+            "name": "resetFlyingTicks()",
+            "return_type": "void",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#resetFlyingTicks()"
+          },
+          {
+            "kind": "METHOD",
             "name": "resetIdleDuration()",
             "return_type": "void",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#resetIdleDuration()"
@@ -187568,6 +187624,12 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#unlistPlayer(Player)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "unsetFixedPose()",
+            "return_type": "void",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#unsetFixedPose()"
           },
           {
             "kind": "METHOD",

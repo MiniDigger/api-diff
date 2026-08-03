@@ -2597,8 +2597,10 @@
       "canOpenDoors()": "1.15.2",
       "canPassDoors()": "1.15.2",
       "findPath(Entity)": "1.21.11",
+      "findPath(Entity,int)": "26.2",
       "findPath(LivingEntity)": "1.13.1",
       "findPath(Location)": "1.13.1",
+      "findPath(Location,int)": "26.2",
       "getCurrentPath()": "basically forever",
       "getEntity()": "basically forever",
       "hasPath()": "1.13.1",
@@ -4147,8 +4149,10 @@
       "suggest(CommandSourceStack,String...)": "1.20.6"
     },
     "io.papermc.paper.command.brigadier.CommandSourceStack": {
+      "getEntityOrThrow()": "26.2",
       "getExecutor()": "basically forever",
       "getLocation()": "basically forever",
+      "getPlayerOrThrow()": "26.2",
       "getSender()": "basically forever",
       "withExecutor(Entity)": "1.21.4",
       "withLocation(Location)": "1.21.4"
@@ -14256,6 +14260,7 @@
       "getCombatEntries()": "1.21.5",
       "getDeathMessage()": "basically forever",
       "getEntity()": "basically forever",
+      "getLastDamageTime()": "26.2",
       "isInCombat()": "1.21.5",
       "isTakingDamage()": "1.21.5",
       "resetCombatState()": "1.21.5",
@@ -27831,6 +27836,7 @@
       "removeResourcePack(UUID)": "1.20.4",
       "removeResourcePacks()": "1.20.4",
       "resetCooldown()": "1.13.1",
+      "resetFlyingTicks()": "26.2",
       "resetIdleDuration()": "1.20.2",
       "resetPlayerTime()": "basically forever",
       "resetPlayerWeather()": "basically forever",
@@ -27968,6 +27974,7 @@
       "storeCookie(NamespacedKey,byte...)": "1.20.5",
       "transfer(String,int)": "1.20.5",
       "unlistPlayer(Player)": "1.20.1",
+      "unsetFixedPose()": "26.2",
       "updateCommands()": "1.13",
       "updateInventory()": "basically forever",
       "updateTitle(Title)": "basically forever"

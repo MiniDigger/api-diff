@@ -216,10 +216,12 @@
     "org.bukkit.inventory.meta.BookMeta.BookMetaBuilder"
   ],
   "classesChanged": [
+    "com.destroystokyo.paper.entity.Pathfinder",
     "com.destroystokyo.paper.entity.ai.VanillaGoal",
     "com.destroystokyo.paper.event.entity.CreeperIgniteEvent",
     "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.Completion",
     "com.destroystokyo.paper.profile.PlayerProfile",
+    "io.papermc.paper.command.brigadier.CommandSourceStack",
     "io.papermc.paper.connection.PlayerCommonConnection",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.registry.RegistryKey",
@@ -239,6 +241,7 @@
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
     "io.papermc.paper.text.PaperComponents",
+    "io.papermc.paper.world.damagesource.CombatTracker",
     "org.bukkit.Bukkit",
     "org.bukkit.Effect",
     "org.bukkit.GameEvent",
@@ -278,6 +281,10 @@
     "org.bukkit.tag.DamageTypeTags"
   ],
   "membersAdded": {
+    "com.destroystokyo.paper.entity.Pathfinder": [
+      "findPath(Entity,int)",
+      "findPath(Location,int)"
+    ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.SoundSettings": [
       "of(TypedKey,TypedKey,float,float)",
       "pushSound()",
@@ -302,7 +309,9 @@
     "org.bukkit.entity.Player": [
       "asObjectContents()",
       "playSound(Sound,Position)",
-      "setRotation(Angle,Angle)"
+      "setRotation(Angle,Angle)",
+      "resetFlyingTicks()",
+      "unsetFixedPose()"
     ],
     "org.bukkit.entity.SulfurCube": [
       "canExplode()",
@@ -571,6 +580,10 @@
       "burstImpulse",
       "getBurstImpulse()"
     ],
+    "io.papermc.paper.command.brigadier.CommandSourceStack": [
+      "getEntityOrThrow()",
+      "getPlayerOrThrow()"
+    ],
     "org.bukkit.Effect": [
       "BRUSH_BLOCK_COMPLETE",
       "DESTROY_BLOCK",
@@ -622,6 +635,9 @@
     "org.bukkit.WorldType": [
       "DEBUG_ALL_BLOCK_STATES",
       "SINGLE_BIOME_SURFACE"
+    ],
+    "io.papermc.paper.world.damagesource.CombatTracker": [
+      "getLastDamageTime()"
     ],
     "org.bukkit.Particle": [
       "GEYSER",
