@@ -13657,8 +13657,7 @@
                 "name": "brandId"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/ServerBuildInfo.html#isBrandCompatible(Key)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/ServerBuildInfo.html#isBrandCompatible(Key)"
           },
           {
             "kind": "METHOD",
@@ -13838,6 +13837,15 @@
   {
     "kind": "PACKAGE",
     "name": "io.papermc.paper.annotation",
+    "children": [
+      {
+        "kind": "ANNOTATION_TYPE",
+        "name": "io.papermc.paper.annotation.MinecraftVersionDependent",
+        "interfaces": [
+          "java.lang.annotation.Annotation"
+        ]
+      }
+    ],
     "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/annotation/package-summary.html"
   },
   {
@@ -14030,7 +14038,7 @@
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/block/bed/BedEnterAction.html",
-        "apiStatus": "Experimental"
+        "apiStatus": "NonExtendable"
       },
       {
         "kind": "INTERFACE",
@@ -14074,7 +14082,7 @@
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/block/bed/BedEnterProblem.html",
-        "apiStatus": "Experimental"
+        "apiStatus": "NonExtendable"
       },
       {
         "kind": "INTERFACE",
@@ -14105,8 +14113,7 @@
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/block/bed/BedRuleResult.html#success()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/block/bed/BedRuleResult.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/block/bed/BedRuleResult.html"
       }
     ],
     "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/block/bed/package-summary.html"
@@ -14566,8 +14573,7 @@
             "kind": "METHOD",
             "name": "getDispatcher()",
             "return_type": "com.mojang.brigadier.CommandDispatcher\u003cio.papermc.paper.command.brigadier.CommandSourceStack\u003e",
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/command/brigadier/Commands.html#getDispatcher()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/command/brigadier/Commands.html#getDispatcher()"
           },
           {
             "kind": "METHOD",
@@ -16008,8 +16014,7 @@
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/connection/WritablePlayerCookieConnection.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/connection/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/connection/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -16080,8 +16085,7 @@
                 "name": "valueBuilder"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentHolder.html#\u003cT\u003esetData(Valued,DataComponentBuilder)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentHolder.html#\u003cT\u003esetData(Valued,DataComponentBuilder)"
           },
           {
             "kind": "METHOD",
@@ -16101,8 +16105,7 @@
                 "name": "value"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentHolder.html#\u003cT\u003esetData(Valued,T)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentHolder.html#\u003cT\u003esetData(Valued,T)"
           },
           {
             "kind": "METHOD",
@@ -16114,8 +16117,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentHolder.html#setData(NonValued)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentHolder.html#setData(NonValued)"
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentHolder.html",
@@ -16812,8 +16814,7 @@
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentTypes.html#unvalued(String)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentTypes.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentTypes.html"
       },
       {
         "kind": "INTERFACE",
@@ -16833,8 +16834,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentView.html#\u003cT\u003egetData(Valued)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentView.html#\u003cT\u003egetData(Valued)"
           },
           {
             "kind": "METHOD",
@@ -16854,8 +16854,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentView.html#\u003cT\u003egetDataOrDefault(Valued,T)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentView.html#\u003cT\u003egetDataOrDefault(Valued,T)"
           },
           {
             "kind": "METHOD",
@@ -16867,8 +16866,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentView.html#hasData(DataComponentType)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentView.html#hasData(DataComponentType)"
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/DataComponentView.html",
@@ -19200,7 +19198,7 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/item/MapDecorations/Builder.html",
-            "apiStatus": "Experimental"
+            "apiStatus": "NonExtendable"
           },
           {
             "kind": "INTERFACE",
@@ -19280,7 +19278,7 @@
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/item/MapId.html",
-        "apiStatus": "Experimental"
+        "apiStatus": "NonExtendable"
       },
       {
         "kind": "INTERFACE",
@@ -21491,8 +21489,7 @@
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/item/consumable/ItemUseAnimation.html#values()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/item/consumable/ItemUseAnimation.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/item/consumable/ItemUseAnimation.html"
       }
     ],
     "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datacomponent/item/consumable/package-summary.html"
@@ -21861,7 +21858,7 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/datapack/DatapackRegistrar/Configurer.html",
-            "apiStatus": "Experimental"
+            "apiStatus": "NonExtendable"
           },
           {
             "kind": "METHOD",
@@ -22027,8 +22024,7 @@
                 "name": "value"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/dialog/Dialog.html#create(Consumer)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/dialog/Dialog.html#create(Consumer)"
           },
           {
             "kind": "METHOD",
@@ -22440,6 +22436,95 @@
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/PlayerGiveResult.html"
+      },
+      {
+        "kind": "ENUM",
+        "name": "io.papermc.paper.entity.RemovalReason",
+        "children": [
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "CHANGED_DIMENSION",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#CHANGED_DIMENSION"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "DISCARDED",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#DISCARDED"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "KILLED",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#KILLED"
+          },
+          {
+            "kind": "CONSTRUCTOR",
+            "name": "RemovalReason(boolean,boolean)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "destroy"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "save"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#RemovalReason(boolean,boolean)"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "UNLOADED_TO_CHUNK",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#UNLOADED_TO_CHUNK"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "UNLOADED_WITH_PLAYER",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#UNLOADED_WITH_PLAYER"
+          },
+          {
+            "kind": "FIELD",
+            "name": "destroy",
+            "type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#destroy"
+          },
+          {
+            "kind": "FIELD",
+            "name": "save",
+            "type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#save"
+          },
+          {
+            "kind": "METHOD",
+            "name": "shouldDestroy()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#shouldDestroy()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "shouldSave()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#shouldSave()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "valueOf(String)",
+            "return_type": "io.papermc.paper.entity.RemovalReason",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "name"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#valueOf(String)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "values()",
+            "return_type": "io.papermc.paper.entity.RemovalReason[]",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html#values()"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/entity/RemovalReason.html"
       },
       {
         "kind": "INTERFACE",
@@ -23918,8 +24003,7 @@
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/PlayerConnectionValidateLoginEvent.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -24102,8 +24186,7 @@
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerConnectionReconfigureEvent.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -24339,6 +24422,71 @@
       },
       {
         "kind": "CLASS",
+        "name": "io.papermc.paper.event.entity.EntityCollideWithEntityEvent",
+        "interfaces": [
+          "org.bukkit.event.Cancellable"
+        ],
+        "superclass": "org.bukkit.event.Event",
+        "children": [
+          {
+            "kind": "FIELD",
+            "name": "HANDLER_LIST",
+            "type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#HANDLER_LIST"
+          },
+          {
+            "kind": "FIELD",
+            "name": "cancelled",
+            "type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#cancelled"
+          },
+          {
+            "kind": "FIELD",
+            "name": "entities",
+            "type": "java.util.List\u003corg.bukkit.entity.Entity\u003e",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#entities"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getEntities()",
+            "return_type": "java.util.@org.jetbrains.annotations.NotNull List\u003corg.bukkit.entity.Entity\u003e",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#getEntities()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlerList()",
+            "return_type": "org.bukkit.event.@org.jetbrains.annotations.NotNull HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#getHandlerList()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlers()",
+            "return_type": "org.bukkit.event.@org.jetbrains.annotations.NotNull HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#getHandlers()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "isCancelled()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#isCancelled()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setCancelled(boolean)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "cancel"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html#setCancelled(boolean)"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html"
+      },
+      {
+        "kind": "CLASS",
         "name": "io.papermc.paper.event.entity.EntityCompostItemEvent",
         "interfaces": [
           "org.bukkit.event.Cancellable"
@@ -24383,6 +24531,71 @@
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCompostItemEvent.html"
+      },
+      {
+        "kind": "CLASS",
+        "name": "io.papermc.paper.event.entity.EntityConstructEvent",
+        "interfaces": [
+          "org.bukkit.event.Cancellable"
+        ],
+        "superclass": "org.bukkit.event.entity.EntityEvent",
+        "children": [
+          {
+            "kind": "FIELD",
+            "name": "HANDLER_LIST",
+            "type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#HANDLER_LIST"
+          },
+          {
+            "kind": "FIELD",
+            "name": "blocks",
+            "type": "java.util.List\u003corg.bukkit.block.Block\u003e",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#blocks"
+          },
+          {
+            "kind": "FIELD",
+            "name": "cancelled",
+            "type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#cancelled"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getBlocks()",
+            "return_type": "java.util.@org.jetbrains.annotations.Unmodifiable List\u003corg.bukkit.block.Block\u003e",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#getBlocks()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlerList()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#getHandlerList()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlers()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#getHandlers()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "isCancelled()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#isCancelled()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setCancelled(boolean)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "cancel"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html#setCancelled(boolean)"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html"
       },
       {
         "kind": "CLASS",
@@ -25927,6 +26140,113 @@
       },
       {
         "kind": "CLASS",
+        "name": "io.papermc.paper.event.entity.SulfurCubeSwallowItemEvent",
+        "interfaces": [
+          "org.bukkit.event.Cancellable"
+        ],
+        "superclass": "org.bukkit.event.entity.EntityEvent",
+        "children": [
+          {
+            "kind": "FIELD",
+            "name": "HANDLER_LIST",
+            "type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#HANDLER_LIST"
+          },
+          {
+            "kind": "FIELD",
+            "name": "cancelled",
+            "type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#cancelled"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getEntity()",
+            "return_type": "org.bukkit.entity.SulfurCube",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#getEntity()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlerList()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#getHandlerList()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlers()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#getHandlers()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getNewItem()",
+            "return_type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#getNewItem()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getOldItem()",
+            "return_type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#getOldItem()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getPlayer()",
+            "return_type": "org.bukkit.entity.Player",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#getPlayer()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "isCancelled()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#isCancelled()"
+          },
+          {
+            "kind": "FIELD",
+            "name": "newItem",
+            "type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#newItem"
+          },
+          {
+            "kind": "FIELD",
+            "name": "oldItem",
+            "type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#oldItem"
+          },
+          {
+            "kind": "FIELD",
+            "name": "player",
+            "type": "org.bukkit.entity.Player",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#player"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setCancelled(boolean)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "cancel"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#setCancelled(boolean)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setNewItem(ItemStack)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "newItem"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html#setNewItem(ItemStack)"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html"
+      },
+      {
+        "kind": "CLASS",
         "name": "io.papermc.paper.event.entity.TameableDeathMessageEvent",
         "interfaces": [
           "org.bukkit.event.Cancellable"
@@ -26481,8 +26801,7 @@
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/packet/UncheckedSignChangeEvent.html#side"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/packet/UncheckedSignChangeEvent.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/packet/UncheckedSignChangeEvent.html"
       }
     ],
     "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/packet/package-summary.html"
@@ -26987,8 +27306,7 @@
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/AsyncPlayerSpawnLocationEvent.html#spawnLocation"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/AsyncPlayerSpawnLocationEvent.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/AsyncPlayerSpawnLocationEvent.html"
       },
       {
         "kind": "CLASS",
@@ -27089,8 +27407,7 @@
             "kind": "METHOD",
             "name": "enterAction()",
             "return_type": "io.papermc.paper.block.bed.BedEnterAction",
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html#enterAction()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html#enterAction()"
           },
           {
             "kind": "FIELD",
@@ -28917,6 +29234,12 @@
           },
           {
             "kind": "METHOD",
+            "name": "getItem()",
+            "return_type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/PlayerPickItemEvent.html#getItem()"
+          },
+          {
+            "kind": "METHOD",
             "name": "getSourceSlot()",
             "return_type": "@org.jetbrains.annotations.Range(from\u003d-1L, to\u003d35L) int",
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/PlayerPickItemEvent.html#getSourceSlot()"
@@ -28944,6 +29267,12 @@
             "name": "isIncludeData()",
             "return_type": "boolean",
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/PlayerPickItemEvent.html#isIncludeData()"
+          },
+          {
+            "kind": "FIELD",
+            "name": "item",
+            "type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/player/PlayerPickItemEvent.html#item"
           },
           {
             "kind": "METHOD",
@@ -36406,7 +36735,8 @@
                 "kind": "METHOD",
                 "name": "amount()",
                 "return_type": "@org.checkerframework.checker.index.qual.NonNegative float",
-                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/ContactDamage.html#amount()"
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/ContactDamage.html#amount()",
+                "apiStatus": "Experimental"
               },
               {
                 "kind": "METHOD",
@@ -36438,7 +36768,8 @@
                     "name": "damageType"
                   }
                 ],
-                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/ContactDamage.html#of(TypedKey,float,boolean)"
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/ContactDamage.html#of(TypedKey,float,boolean)",
+                "apiStatus": "Experimental"
               }
             ],
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/ContactDamage.html",
@@ -36534,7 +36865,8 @@
                 "kind": "METHOD",
                 "name": "hitSound()",
                 "return_type": "io.papermc.paper.registry.TypedKey\u003corg.bukkit.Sound\u003e",
-                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/SoundSettings.html#hitSound()"
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/SoundSettings.html#hitSound()",
+                "apiStatus": "Experimental"
               },
               {
                 "kind": "METHOD",
@@ -36558,13 +36890,15 @@
                     "name": "pushSoundImpulseThreshold"
                   }
                 ],
-                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/SoundSettings.html#of(TypedKey,TypedKey,float,float)"
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/SoundSettings.html#of(TypedKey,TypedKey,float,float)",
+                "apiStatus": "Experimental"
               },
               {
                 "kind": "METHOD",
                 "name": "pushSound()",
                 "return_type": "io.papermc.paper.registry.TypedKey\u003corg.bukkit.Sound\u003e",
-                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/SoundSettings.html#pushSound()"
+                "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/SulfurCubeArchetypeRegistryEntry/SoundSettings.html#pushSound()",
+                "apiStatus": "Experimental"
               },
               {
                 "kind": "METHOD",
@@ -37562,8 +37896,7 @@
         "apiStatus": "NonExtendable"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -37714,8 +38047,7 @@
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/action/DialogActionCallback.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/action/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/action/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -37944,8 +38276,7 @@
         "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/body/PlainMessageDialogBody.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/body/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/body/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -38649,8 +38980,7 @@
         "apiStatus": "NonExtendable"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/input/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/input/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -39007,8 +39337,7 @@
         "apiStatus": "NonExtendable"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/type/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/data/dialog/type/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -39326,8 +39655,7 @@
         "apiStatus": "NonExtendable"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/event/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/event/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -39410,8 +39738,7 @@
         "apiStatus": "NonExtendable"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/event/type/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/registry/event/type/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -79884,8 +80211,7 @@
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/text/Filtered.html#raw()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/text/Filtered.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/text/Filtered.html"
       },
       {
         "kind": "CLASS",
@@ -81228,8 +81554,7 @@
             "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/world/damagesource/FallLocationType.html#translationKey()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/world/damagesource/FallLocationType.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/world/damagesource/FallLocationType.html"
       },
       {
         "kind": "RECORD",
@@ -83782,8 +84107,7 @@
             "kind": "METHOD",
             "name": "getServerLinks()",
             "return_type": "org.bukkit.@org.jetbrains.annotations.NotNull ServerLinks",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Bukkit.html#getServerLinks()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Bukkit.html#getServerLinks()"
           },
           {
             "kind": "METHOD",
@@ -88243,8 +88567,7 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/ExplosionResult.html#values()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/ExplosionResult.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/ExplosionResult.html"
       },
       {
         "kind": "INTERFACE",
@@ -106317,8 +106640,7 @@
                 "name": "value"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/MusicInstrument.html#create(Consumer)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/MusicInstrument.html#create(Consumer)"
           },
           {
             "kind": "METHOD",
@@ -109908,8 +110230,7 @@
             "kind": "FIELD",
             "name": "MENU",
             "type": "org.bukkit.Registry\u003corg.bukkit.inventory.MenuType\u003e",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#MENU",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#MENU"
           },
           {
             "kind": "FIELD",
@@ -110129,8 +110450,7 @@
                 "name": "key"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#getTag(TagKey)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#getTag(TagKey)"
           },
           {
             "kind": "METHOD",
@@ -110142,15 +110462,13 @@
                 "name": "key"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#getTagValues(TagKey)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#getTagValues(TagKey)"
           },
           {
             "kind": "METHOD",
             "name": "getTags()",
             "return_type": "java.util.Collection\u003cio.papermc.paper.registry.tag.Tag\u003cT\u003e\u003e",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#getTags()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Registry.html#getTags()"
           },
           {
             "kind": "METHOD",
@@ -111543,8 +111861,7 @@
             "kind": "METHOD",
             "name": "getLevelDirectory()",
             "return_type": "java.nio.file.@org.jetbrains.annotations.NotNull Path",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Server.html#getLevelDirectory()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Server.html#getLevelDirectory()"
           },
           {
             "kind": "METHOD",
@@ -111884,8 +112201,7 @@
             "kind": "METHOD",
             "name": "getServerLinks()",
             "return_type": "org.bukkit.@org.jetbrains.annotations.NotNull ServerLinks",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Server.html#getServerLinks()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/Server.html#getServerLinks()"
           },
           {
             "kind": "METHOD",
@@ -113159,8 +113475,7 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/ServerLinks.html#setLink(Type,URI)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/ServerLinks.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/ServerLinks.html"
       },
       {
         "kind": "INTERFACE",
@@ -130233,8 +130548,28 @@
           },
           {
             "kind": "METHOD",
+            "name": "loadAdvancement(Key,String,boolean)",
+            "return_type": "org.bukkit.advancement.@org.jetbrains.annotations.Nullable Advancement",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "advancement"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "key"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "persist"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/UnsafeValues.html#loadAdvancement(Key,String,boolean)"
+          },
+          {
+            "kind": "METHOD",
             "name": "loadAdvancement(NamespacedKey,String)",
-            "return_type": "org.bukkit.advancement.Advancement",
+            "return_type": "org.bukkit.advancement.@org.jetbrains.annotations.Nullable Advancement",
             "children": [
               {
                 "kind": "PARAMETER",
@@ -130246,6 +130581,22 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/UnsafeValues.html#loadAdvancement(NamespacedKey,String)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "loadAdvancements(Map,boolean)",
+            "return_type": "java.util.List\u003corg.bukkit.advancement.Advancement\u003e",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "advancements"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "persist"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/UnsafeValues.html#loadAdvancements(Map,boolean)"
           },
           {
             "kind": "METHOD",
@@ -148216,8 +148567,7 @@
             "kind": "METHOD",
             "name": "getRecipeBrewTime()",
             "return_type": "@org.jetbrains.annotations.Range(from\u003d1L, to\u003d2147483647L) int",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/BrewingStand.html#getRecipeBrewTime()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/BrewingStand.html#getRecipeBrewTime()"
           },
           {
             "kind": "METHOD",
@@ -148259,8 +148609,7 @@
                 "name": "recipeBrewTime"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/BrewingStand.html#setRecipeBrewTime(int)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/BrewingStand.html#setRecipeBrewTime(int)"
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/org/bukkit/block/BrewingStand.html"
@@ -166315,6 +166664,13 @@
           },
           {
             "kind": "METHOD",
+            "name": "getDamageContext()",
+            "return_type": "net.kyori.adventure.pointer.@org.jetbrains.annotations.NotNull Pointers",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/damage/DamageSource.html#getDamageContext()",
+            "apiStatus": "Experimental"
+          },
+          {
+            "kind": "METHOD",
             "name": "getDamageLocation()",
             "return_type": "org.bukkit.@org.jetbrains.annotations.Nullable Location",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/damage/DamageSource.html#getDamageLocation()"
@@ -166370,6 +166726,19 @@
                   }
                 ],
                 "link": "https://jd.papermc.io/paper/26.2/org/bukkit/damage/DamageSource/Builder.html#withCausingEntity(Entity)"
+              },
+              {
+                "kind": "METHOD",
+                "name": "withDamageContext(Consumer)",
+                "return_type": "org.bukkit.damage.DamageSource.@org.jetbrains.annotations.NotNull Builder",
+                "children": [
+                  {
+                    "kind": "PARAMETER",
+                    "name": "consumer"
+                  }
+                ],
+                "link": "https://jd.papermc.io/paper/26.2/org/bukkit/damage/DamageSource/Builder.html#withDamageContext(Consumer)",
+                "apiStatus": "Experimental"
               },
               {
                 "kind": "METHOD",
@@ -173151,6 +173520,18 @@
           },
           {
             "kind": "METHOD",
+            "name": "getRemovalReason()",
+            "return_type": "io.papermc.paper.entity.@org.jetbrains.annotations.Nullable RemovalReason",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#getRemovalReason()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getRemoveEventCause()",
+            "return_type": "org.bukkit.event.entity.EntityRemoveEvent.Cause",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#getRemoveEventCause()"
+          },
+          {
+            "kind": "METHOD",
             "name": "getScheduler()",
             "return_type": "io.papermc.paper.threadedregions.scheduler.EntityScheduler",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#getScheduler()"
@@ -173820,8 +174201,7 @@
                 "name": "yaw"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#setRotation(float,float)",
-            "apiStatus": "Obsolete"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Entity.html#setRotation(float,float)"
           },
           {
             "kind": "METHOD",
@@ -175149,6 +175529,12 @@
               "since": "1.6.2",
               "deprecated": "true"
             }
+          },
+          {
+            "kind": "METHOD",
+            "name": "getSpawnCategory()",
+            "return_type": "org.bukkit.entity.@org.jetbrains.annotations.NotNull SpawnCategory",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/EntityType.html#getSpawnCategory()"
           },
           {
             "kind": "METHOD",
@@ -179422,8 +179808,7 @@
             "kind": "METHOD",
             "name": "completeUsingActiveItem()",
             "return_type": "void",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#completeUsingActiveItem()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#completeUsingActiveItem()"
           },
           {
             "kind": "METHOD",
@@ -179553,8 +179938,7 @@
             "kind": "METHOD",
             "name": "getCombatTracker()",
             "return_type": "io.papermc.paper.world.damagesource.@org.jetbrains.annotations.NotNull CombatTracker",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#getCombatTracker()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#getCombatTracker()"
           },
           {
             "kind": "METHOD",
@@ -180755,8 +181139,7 @@
                 "name": "hand"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#startUsingItem(EquipmentSlot)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/LivingEntity.html#startUsingItem(EquipmentSlot)"
           },
           {
             "kind": "METHOD",
@@ -184014,8 +184397,7 @@
             "kind": "METHOD",
             "name": "getConnection()",
             "return_type": "io.papermc.paper.connection.PlayerGameConnection",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getConnection()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getConnection()"
           },
           {
             "kind": "METHOD",
@@ -184060,8 +184442,7 @@
             "kind": "METHOD",
             "name": "getEnderPearls()",
             "return_type": "java.util.Collection\u003corg.bukkit.entity.EnderPearl\u003e",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getEnderPearls()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getEnderPearls()"
           },
           {
             "kind": "METHOD",
@@ -184243,15 +184624,13 @@
             "kind": "METHOD",
             "name": "getSentChunkKeys()",
             "return_type": "java.util.@org.jetbrains.annotations.Unmodifiable Set\u003cjava.lang.Long\u003e",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getSentChunkKeys()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getSentChunkKeys()"
           },
           {
             "kind": "METHOD",
             "name": "getSentChunks()",
             "return_type": "java.util.@org.jetbrains.annotations.Unmodifiable Set\u003corg.bukkit.Chunk\u003e",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getSentChunks()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#getSentChunks()"
           },
           {
             "kind": "METHOD",
@@ -184718,8 +185097,7 @@
                 "name": "side"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#openVirtualSign(Position,Side)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#openVirtualSign(Position,Side)"
           },
           {
             "kind": "CLASS",
@@ -186891,8 +187269,7 @@
                 "name": "yaw"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#setRotation(float,float)",
-            "apiStatus": "Obsolete"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/entity/Player.html#setRotation(float,float)"
           },
           {
             "kind": "METHOD",
@@ -195822,8 +196199,7 @@
             "kind": "METHOD",
             "name": "getRecipeBrewTime()",
             "return_type": "@org.jetbrains.annotations.Range(from\u003d1L, to\u003d2147483647L) int",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BrewingStartEvent.html#getRecipeBrewTime()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BrewingStartEvent.html#getRecipeBrewTime()"
           },
           {
             "kind": "METHOD",
@@ -195864,8 +196240,7 @@
                 "name": "recipeBrewTime"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BrewingStartEvent.html#setRecipeBrewTime(int)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BrewingStartEvent.html#setRecipeBrewTime(int)"
           },
           {
             "kind": "METHOD",
@@ -195885,8 +196260,7 @@
             }
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BrewingStartEvent.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/BrewingStartEvent.html"
       },
       {
         "kind": "CLASS",
@@ -195930,8 +196304,7 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/CampfireStartEvent.html#setTotalCookTime(int)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/CampfireStartEvent.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/block/CampfireStartEvent.html"
       },
       {
         "kind": "CLASS",
@@ -204829,8 +205202,7 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/entity/TrialSpawnerSpawnEvent.html#spawner"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/entity/TrialSpawnerSpawnEvent.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/entity/TrialSpawnerSpawnEvent.html"
       },
       {
         "kind": "CLASS",
@@ -208007,8 +208379,7 @@
             "kind": "METHOD",
             "name": "getConnection()",
             "return_type": "io.papermc.paper.connection.@org.jetbrains.annotations.NotNull PlayerLoginConnection",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getConnection()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getConnection()"
           },
           {
             "kind": "METHOD",
@@ -208682,8 +209053,7 @@
             "kind": "METHOD",
             "name": "enterAction()",
             "return_type": "io.papermc.paper.block.bed.@org.jetbrains.annotations.NotNull BedEnterAction",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerBedEnterEvent.html#enterAction()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerBedEnterEvent.html#enterAction()"
           },
           {
             "kind": "METHOD",
@@ -212078,8 +212448,7 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerLinksSendEvent.html#links"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerLinksSendEvent.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/player/PlayerLinksSendEvent.html"
       },
       {
         "kind": "CLASS",
@@ -223791,8 +224160,7 @@
             "kind": "METHOD",
             "name": "getMenuType()",
             "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.Nullable MenuType",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/InventoryView.html#getMenuType()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/InventoryView.html#getMenuType()"
           },
           {
             "kind": "METHOD",
@@ -224705,8 +225073,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003egetData(Valued)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003egetData(Valued)"
           },
           {
             "kind": "METHOD",
@@ -224726,8 +225093,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003egetDataOrDefault(Valued,T)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003egetDataOrDefault(Valued,T)"
           },
           {
             "kind": "METHOD",
@@ -224747,8 +225113,7 @@
                 "name": "valueBuilder"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003esetData(Valued,DataComponentBuilder)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003esetData(Valued,DataComponentBuilder)"
           },
           {
             "kind": "METHOD",
@@ -224768,8 +225133,7 @@
                 "name": "value"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003esetData(Valued,T)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#\u003cT\u003esetData(Valued,T)"
           },
           {
             "kind": "FIELD",
@@ -225049,8 +225413,7 @@
                 "name": "source"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#copyDataFrom(ItemStack,Predicate)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#copyDataFrom(ItemStack,Predicate)"
           },
           {
             "kind": "FIELD",
@@ -225249,8 +225612,7 @@
             "kind": "METHOD",
             "name": "getDataTypes()",
             "return_type": "java.util.@org.jetbrains.annotations.Unmodifiable Set\u003cio.papermc.paper.datacomponent.@org.jetbrains.annotations.NotNull DataComponentType\u003e",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#getDataTypes()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#getDataTypes()"
           },
           {
             "kind": "METHOD",
@@ -225381,8 +225743,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#hasData(DataComponentType)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#hasData(DataComponentType)"
           },
           {
             "kind": "METHOD",
@@ -225418,8 +225779,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#isDataOverridden(DataComponentType)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#isDataOverridden(DataComponentType)"
           },
           {
             "kind": "METHOD",
@@ -225483,8 +225843,7 @@
                 "name": "item"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#matchesWithoutData(ItemStack,Set)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#matchesWithoutData(ItemStack,Set)"
           },
           {
             "kind": "METHOD",
@@ -225504,8 +225863,7 @@
                 "name": "item"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#matchesWithoutData(ItemStack,Set,boolean)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#matchesWithoutData(ItemStack,Set,boolean)"
           },
           {
             "kind": "METHOD",
@@ -225575,8 +225933,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#resetData(DataComponentType)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#resetData(DataComponentType)"
           },
           {
             "kind": "METHOD",
@@ -225653,8 +226010,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#setData(NonValued)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#setData(NonValued)"
           },
           {
             "kind": "METHOD",
@@ -225754,8 +226110,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#unsetData(DataComponentType)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemStack.html#unsetData(DataComponentType)"
           },
           {
             "kind": "METHOD",
@@ -235186,8 +235541,7 @@
                 "name": "type"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemType.html#hasDefaultData(DataComponentType)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/ItemType.html#hasDefaultData(DataComponentType)"
           },
           {
             "kind": "METHOD",
@@ -235841,8 +236195,7 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/MenuType.html#typed()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/MenuType.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/MenuType.html"
       },
       {
         "kind": "INTERFACE",
@@ -243086,8 +243439,7 @@
                 "name": "value"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimMaterial.html#create(Consumer)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimMaterial.html#create(Consumer)"
           },
           {
             "kind": "METHOD",
@@ -243268,8 +243620,7 @@
                 "name": "value"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimPattern.html#create(Consumer)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/meta/trim/TrimPattern.html#create(Consumer)"
           },
           {
             "kind": "METHOD",
@@ -243608,8 +243959,7 @@
             "kind": "METHOD",
             "name": "getRecipeBrewTime()",
             "return_type": "@org.jetbrains.annotations.Range(from\u003d1L, to\u003d2147483647L) int",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/BrewingStandView.html#getRecipeBrewTime()",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/BrewingStandView.html#getRecipeBrewTime()"
           },
           {
             "kind": "METHOD",
@@ -243651,8 +244001,7 @@
                 "name": "recipeBrewTime"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/BrewingStandView.html#setRecipeBrewTime(int)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/BrewingStandView.html#setRecipeBrewTime(int)"
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/BrewingStandView.html"
@@ -243944,8 +244293,7 @@
         "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/StonecutterView.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -243990,8 +244338,7 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/InventoryViewBuilder.html#title(Component)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/InventoryViewBuilder.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/InventoryViewBuilder.html"
       },
       {
         "kind": "INTERFACE",
@@ -244104,12 +244451,10 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/MerchantInventoryViewBuilder.html#title(Component)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/MerchantInventoryViewBuilder.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/MerchantInventoryViewBuilder.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/view/builder/package-summary.html"
   },
   {
     "kind": "PACKAGE",
@@ -260649,8 +260994,7 @@
                 "name": "source"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/messaging/Messenger.html#dispatchIncomingMessage(PlayerConnection,String,byte...)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/messaging/Messenger.html#dispatchIncomingMessage(PlayerConnection,String,byte...)"
           },
           {
             "kind": "METHOD",
@@ -260981,8 +261325,7 @@
                 "name": "message"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/messaging/PluginMessageListener.html#onPluginMessageReceived(String,PlayerConnection,byte...)",
-            "apiStatus": "Experimental"
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/messaging/PluginMessageListener.html#onPluginMessageReceived(String,PlayerConnection,byte...)"
           }
         ],
         "link": "https://jd.papermc.io/paper/26.2/org/bukkit/plugin/messaging/PluginMessageListener.html"
@@ -267583,12 +267926,10 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/tag/DamageTypeTags.html#getTag(String)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/tag/DamageTypeTags.html",
-        "apiStatus": "Experimental"
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/tag/DamageTypeTags.html"
       }
     ],
-    "link": "https://jd.papermc.io/paper/26.2/org/bukkit/tag/package-summary.html",
-    "apiStatus": "Experimental"
+    "link": "https://jd.papermc.io/paper/26.2/org/bukkit/tag/package-summary.html"
   },
   {
     "kind": "PACKAGE",

@@ -26,6 +26,7 @@
     "com.destroystokyo.paper.utils",
     "io.papermc.paper",
     "io.papermc.paper.advancement",
+    "io.papermc.paper.annotation",
     "io.papermc.paper.ban",
     "io.papermc.paper.block",
     "io.papermc.paper.block.bed",
@@ -181,9 +182,14 @@
     "org.spigotmc.event.player"
   ],
   "classesAdded": [
+    "io.papermc.paper.annotation.MinecraftVersionDependent",
     "io.papermc.paper.datacomponent.item.SulfurCubeContent",
+    "io.papermc.paper.entity.RemovalReason",
     "io.papermc.paper.event.connection.configuration.PlayerCodeOfConductSendEvent",
+    "io.papermc.paper.event.entity.EntityCollideWithEntityEvent",
+    "io.papermc.paper.event.entity.EntityConstructEvent",
     "io.papermc.paper.event.entity.EntityIgniteEvent",
+    "io.papermc.paper.event.entity.SulfurCubeSwallowItemEvent",
     "io.papermc.paper.event.server.AsyncServerDataFixerRemoveBlockEntityEvent",
     "io.papermc.paper.math.Angle",
     "io.papermc.paper.math.AngleImpl",
@@ -221,9 +227,16 @@
     "com.destroystokyo.paper.event.entity.CreeperIgniteEvent",
     "com.destroystokyo.paper.event.server.AsyncTabCompleteEvent.Completion",
     "com.destroystokyo.paper.profile.PlayerProfile",
+    "io.papermc.paper.ServerBuildInfo",
     "io.papermc.paper.command.brigadier.CommandSourceStack",
+    "io.papermc.paper.command.brigadier.Commands",
     "io.papermc.paper.connection.PlayerCommonConnection",
+    "io.papermc.paper.datacomponent.DataComponentHolder",
     "io.papermc.paper.datacomponent.DataComponentTypes",
+    "io.papermc.paper.datacomponent.DataComponentView",
+    "io.papermc.paper.dialog.Dialog",
+    "io.papermc.paper.event.player.PlayerBedFailEnterEvent",
+    "io.papermc.paper.event.player.PlayerPickItemEvent",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider",
     "io.papermc.paper.registry.event.RegistryEvents",
@@ -247,8 +260,11 @@
     "org.bukkit.GameEvent",
     "org.bukkit.JukeboxSong",
     "org.bukkit.Material",
+    "org.bukkit.MusicInstrument",
     "org.bukkit.Particle",
     "org.bukkit.RegionAccessor",
+    "org.bukkit.Registry",
+    "org.bukkit.Server",
     "org.bukkit.Sound",
     "org.bukkit.Tag",
     "org.bukkit.UnsafeValues",
@@ -257,10 +273,13 @@
     "org.bukkit.attribute.Attribute",
     "org.bukkit.block.Biome",
     "org.bukkit.block.BlockType",
+    "org.bukkit.block.BrewingStand",
     "org.bukkit.block.CreakingHeart",
     "org.bukkit.block.data.type.PointedDripstone",
     "org.bukkit.command.CommandSender",
     "org.bukkit.command.ProxiedCommandSender",
+    "org.bukkit.damage.DamageSource",
+    "org.bukkit.damage.DamageSource.Builder",
     "org.bukkit.damage.DamageType",
     "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
@@ -269,15 +288,23 @@
     "org.bukkit.entity.Player",
     "org.bukkit.entity.Slime",
     "org.bukkit.entity.Vex",
+    "org.bukkit.event.block.BrewingStartEvent",
     "org.bukkit.event.entity.EntityPotionEffectEvent",
     "org.bukkit.event.entity.PigZapEvent",
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerBedEnterEvent",
     "org.bukkit.event.player.PlayerKickEvent.Cause",
     "org.bukkit.generator.LimitedRegion",
+    "org.bukkit.inventory.InventoryView",
+    "org.bukkit.inventory.ItemStack",
     "org.bukkit.inventory.ItemType",
     "org.bukkit.inventory.meta.BookMeta",
     "org.bukkit.inventory.meta.TropicalFishBucketMeta",
     "org.bukkit.inventory.meta.trim.TrimMaterial",
     "org.bukkit.inventory.meta.trim.TrimPattern",
+    "org.bukkit.inventory.view.BrewingStandView",
+    "org.bukkit.plugin.messaging.Messenger",
+    "org.bukkit.plugin.messaging.PluginMessageListener",
     "org.bukkit.tag.DamageTypeTags"
   ],
   "membersAdded": {
@@ -320,6 +347,9 @@
     "io.papermc.paper.registry.data.TrimPatternRegistryEntry": [
       "decal()"
     ],
+    "org.bukkit.damage.DamageSource.Builder": [
+      "withDamageContext(Consumer)"
+    ],
     "org.bukkit.block.data.type.PotentSulfur.State": [
       "CONTINUOUS",
       "DRY",
@@ -356,6 +386,8 @@
       "setAllowMonsterSpawning(boolean)"
     ],
     "org.bukkit.UnsafeValues": [
+      "loadAdvancement(Key,String,boolean)",
+      "loadAdvancements(Map,boolean)",
       "nextEntityId(World)"
     ],
     "org.bukkit.block.data.type.PotentSulfur": [
@@ -383,6 +415,8 @@
       "baseAssetPath(String)"
     ],
     "org.bukkit.entity.Entity": [
+      "getRemovalReason()",
+      "getRemoveEventCause()",
       "getSoundCategory()"
     ],
     "io.papermc.paper.registry.data.TrimPatternRegistryEntry.Builder": [
@@ -472,6 +506,17 @@
       "items(RegistryKeySet)",
       "knockbackModifiers(KnockbackModifiers)",
       "soundSettings(SoundSettings)"
+    ],
+    "io.papermc.paper.entity.RemovalReason": [
+      "CHANGED_DIMENSION",
+      "KILLED",
+      "RemovalReason(boolean,boolean)",
+      "UNLOADED_TO_CHUNK",
+      "UNLOADED_WITH_PLAYER",
+      "destroy",
+      "save",
+      "shouldDestroy()",
+      "shouldSave()"
     ],
     "org.bukkit.entity.LivingEntity": [
       "getHurtSound(DamageSource)",
@@ -584,6 +629,9 @@
       "getEntityOrThrow()",
       "getPlayerOrThrow()"
     ],
+    "org.bukkit.damage.DamageSource": [
+      "getDamageContext()"
+    ],
     "org.bukkit.Effect": [
       "BRUSH_BLOCK_COMPLETE",
       "DESTROY_BLOCK",
@@ -600,6 +648,9 @@
       "WHITE_SMOKE_SHOOT",
       "WIND_CHARGE_SHOOT",
       "ZOMBIE_CONVERTED_TO_VILLAGER"
+    ],
+    "io.papermc.paper.event.entity.SulfurCubeSwallowItemEvent": [
+      "setNewItem(ItemStack)"
     ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry.AttributeEntry": [
       "of(TypedKey,AttributeModifier)"
