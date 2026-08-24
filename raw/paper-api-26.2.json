@@ -193417,12 +193417,6 @@
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/Event.html#isAsynchronous()"
           },
           {
-            "kind": "FIELD",
-            "name": "name",
-            "type": "java.lang.String",
-            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/event/Event.html#name"
-          },
-          {
             "kind": "ENUM",
             "name": "org.bukkit.event.Event.Result",
             "children": [

@@ -288,6 +288,7 @@
     "org.bukkit.entity.Player",
     "org.bukkit.entity.Slime",
     "org.bukkit.entity.Vex",
+    "org.bukkit.event.Event",
     "org.bukkit.event.block.BrewingStartEvent",
     "org.bukkit.event.entity.EntityPotionEffectEvent",
     "org.bukkit.event.entity.PigZapEvent",

@@ -28735,8 +28735,7 @@
       "getEventName()": "basically forever",
       "getHandlers()": "basically forever",
       "isAsync": "1.21.5",
-      "isAsynchronous()": "basically forever",
-      "name": "basically forever"
+      "isAsynchronous()": "basically forever"
     },
     "org.bukkit.event.Event.Result": {
       "ALLOW": "basically forever",
