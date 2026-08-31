@@ -1968,11 +1968,13 @@
     "org.bukkit.inventory.MerchantRecipe": "basically forever",
     "org.bukkit.inventory.MountInventory": "1.21.11",
     "org.bukkit.inventory.PlayerInventory": "basically forever",
+    "org.bukkit.inventory.PredicateRecipeChoiceImpl": "26.2",
     "org.bukkit.inventory.Recipe": "basically forever",
     "org.bukkit.inventory.RecipeChoice": "1.13.1",
     "org.bukkit.inventory.RecipeChoice.ExactChoice": "1.13.2",
     "org.bukkit.inventory.RecipeChoice.ItemTypeChoice": "1.21.11",
     "org.bukkit.inventory.RecipeChoice.MaterialChoice": "1.13.1",
+    "org.bukkit.inventory.RecipeChoice.PredicateChoice": "26.2",
     "org.bukkit.inventory.SaddledHorseInventory": "1.12",
     "org.bukkit.inventory.SaddledMountInventory": "1.21.11",
     "org.bukkit.inventory.ShapedRecipe": "basically forever",
@@ -35163,15 +35165,32 @@
       "setItemInOffHand(ItemStack)": "basically forever",
       "setLeggings(ItemStack)": "basically forever"
     },
+    "org.bukkit.inventory.PredicateRecipeChoiceImpl": {
+      "PredicateRecipeChoiceImpl(Predicate,ItemStack)": "26.2",
+      "clone()": "basically forever",
+      "equals(Object)": "basically forever",
+      "exampleStack": "26.2",
+      "exampleStack()": "26.2",
+      "getItemStack()": "basically forever",
+      "hashCode()": "basically forever",
+      "stackPredicate": "26.2",
+      "stackPredicate()": "26.2",
+      "test(ItemStack)": "1.13.1",
+      "toString()": "basically forever",
+      "validate(boolean)": "1.20.6"
+    },
     "org.bukkit.inventory.Recipe": {
       "getResult()": "basically forever"
     },
     "org.bukkit.inventory.RecipeChoice": {
       "clone()": "basically forever",
       "empty()": "1.20.1",
+      "exactChoice(ItemStack,ItemStack...)": "26.2",
+      "exactChoice(List)": "26.2",
       "getItemStack()": "basically forever",
       "itemType(ItemType,ItemType...)": "1.21.11",
       "itemType(RegistryKeySet)": "1.21.11",
+      "predicateChoice(Predicate,ItemStack)": "26.2",
       "test(ItemStack)": "1.13.1"
     },
     "org.bukkit.inventory.RecipeChoice.ExactChoice": {

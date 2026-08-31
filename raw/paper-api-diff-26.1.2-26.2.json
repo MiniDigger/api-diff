@@ -215,7 +215,9 @@
     "org.bukkit.block.data.type.Speleothem.Thickness",
     "org.bukkit.entity.AbstractCubeMob",
     "org.bukkit.entity.SulfurCube",
-    "org.bukkit.entity.SulfurCube.Archetype"
+    "org.bukkit.entity.SulfurCube.Archetype",
+    "org.bukkit.inventory.PredicateRecipeChoiceImpl",
+    "org.bukkit.inventory.RecipeChoice.PredicateChoice"
   ],
   "classesRemoved": [
     "org.bukkit.block.data.type.PointedDripstone.Thickness",
@@ -299,6 +301,7 @@
     "org.bukkit.inventory.InventoryView",
     "org.bukkit.inventory.ItemStack",
     "org.bukkit.inventory.ItemType",
+    "org.bukkit.inventory.RecipeChoice",
     "org.bukkit.inventory.meta.BookMeta",
     "org.bukkit.inventory.meta.TropicalFishBucketMeta",
     "org.bukkit.inventory.meta.trim.TrimMaterial",
@@ -324,6 +327,13 @@
       "incendiary()",
       "of(int,boolean,int)",
       "power()"
+    ],
+    "org.bukkit.inventory.PredicateRecipeChoiceImpl": [
+      "PredicateRecipeChoiceImpl(Predicate,ItemStack)",
+      "exampleStack",
+      "exampleStack()",
+      "stackPredicate",
+      "stackPredicate()"
     ],
     "io.papermc.paper.registry.data.SulfurCubeArchetypeRegistryEntry": [
       "attributeModifiers()",
@@ -590,6 +600,11 @@
     "io.papermc.paper.registry.data.InlinedRegistryBuilderProvider": [
       "createTrimMaterial(Consumer)",
       "createTrimPattern(Consumer)"
+    ],
+    "org.bukkit.inventory.RecipeChoice": [
+      "exactChoice(ItemStack,ItemStack...)",
+      "exactChoice(List)",
+      "predicateChoice(Predicate,ItemStack)"
     ],
     "org.bukkit.entity.SulfurCube.Archetype": [
       "BOUNCY",

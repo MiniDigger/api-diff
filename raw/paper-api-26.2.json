@@ -33999,7 +33999,11 @@
                 "name": "stackPredicate"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/potion/PotionMix.html#createPredicateChoice(Predicate)"
+            "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/potion/PotionMix.html#createPredicateChoice(Predicate)",
+            "deprecated": {
+              "since": "26.2",
+              "deprecated": "true"
+            }
           },
           {
             "kind": "METHOD",
@@ -237024,6 +237028,114 @@
         "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PlayerInventory.html"
       },
       {
+        "kind": "RECORD",
+        "name": "org.bukkit.inventory.PredicateRecipeChoiceImpl",
+        "interfaces": [
+          "org.bukkit.inventory.RecipeChoice.PredicateChoice"
+        ],
+        "superclass": "java.lang.Record",
+        "children": [
+          {
+            "kind": "CONSTRUCTOR",
+            "name": "PredicateRecipeChoiceImpl(Predicate,ItemStack)",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "exampleStack"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "stackPredicate"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#PredicateRecipeChoiceImpl(Predicate,ItemStack)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "clone()",
+            "return_type": "org.bukkit.inventory.PredicateRecipeChoiceImpl",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#clone()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "equals(Object)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "o"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#equals(Object)"
+          },
+          {
+            "kind": "RECORD_COMPONENT",
+            "name": "exampleStack",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#exampleStack"
+          },
+          {
+            "kind": "METHOD",
+            "name": "exampleStack()",
+            "return_type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#exampleStack()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getItemStack()",
+            "return_type": "org.bukkit.inventory.ItemStack",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#getItemStack()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "hashCode()",
+            "return_type": "int",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#hashCode()"
+          },
+          {
+            "kind": "RECORD_COMPONENT",
+            "name": "stackPredicate",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#stackPredicate"
+          },
+          {
+            "kind": "METHOD",
+            "name": "stackPredicate()",
+            "return_type": "java.util.function.Predicate\u003c? super org.bukkit.inventory.ItemStack\u003e",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#stackPredicate()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "test(ItemStack)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "itemStack"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#test(ItemStack)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "toString()",
+            "return_type": "java.lang.String",
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#toString()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "validate(boolean)",
+            "return_type": "org.bukkit.inventory.RecipeChoice",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "allowEmptyRecipes"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html#validate(boolean)"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/PredicateRecipeChoiceImpl.html"
+      },
+      {
         "kind": "INTERFACE",
         "name": "org.bukkit.inventory.Recipe",
         "children": [
@@ -237055,6 +237167,34 @@
             "name": "empty()",
             "return_type": "org.bukkit.inventory.RecipeChoice",
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice.html#empty()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "exactChoice(ItemStack,ItemStack...)",
+            "return_type": "org.bukkit.inventory.RecipeChoice.ExactChoice",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "first"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "others"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice.html#exactChoice(ItemStack,ItemStack...)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "exactChoice(List)",
+            "return_type": "org.bukkit.inventory.RecipeChoice.ExactChoice",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "stacks"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice.html#exactChoice(List)"
           },
           {
             "kind": "METHOD",
@@ -237110,7 +237250,12 @@
                     "name": "stack"
                   }
                 ],
-                "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/ExactChoice.html#ExactChoice(ItemStack)"
+                "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/ExactChoice.html#ExactChoice(ItemStack)",
+                "deprecated": {
+                  "since": "26.2",
+                  "forRemoval": "true",
+                  "deprecated": "true"
+                }
               },
               {
                 "kind": "CONSTRUCTOR",
@@ -237121,7 +237266,12 @@
                     "name": "stacks"
                   }
                 ],
-                "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/ExactChoice.html#ExactChoice(ItemStack...)"
+                "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/ExactChoice.html#ExactChoice(ItemStack...)",
+                "deprecated": {
+                  "since": "26.2",
+                  "forRemoval": "true",
+                  "deprecated": "true"
+                }
               },
               {
                 "kind": "CONSTRUCTOR",
@@ -237132,7 +237282,12 @@
                     "name": "choices"
                   }
                 ],
-                "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/ExactChoice.html#ExactChoice(List)"
+                "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/ExactChoice.html#ExactChoice(List)",
+                "deprecated": {
+                  "since": "26.2",
+                  "forRemoval": "true",
+                  "deprecated": "true"
+                }
               },
               {
                 "kind": "FIELD",
@@ -237364,6 +237519,31 @@
             ],
             "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/MaterialChoice.html",
             "apiStatus": "Obsolete"
+          },
+          {
+            "kind": "INTERFACE",
+            "name": "org.bukkit.inventory.RecipeChoice.PredicateChoice",
+            "interfaces": [
+              "org.bukkit.inventory.RecipeChoice"
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice/PredicateChoice.html",
+            "apiStatus": "NonExtendable"
+          },
+          {
+            "kind": "METHOD",
+            "name": "predicateChoice(Predicate,ItemStack)",
+            "return_type": "org.bukkit.inventory.RecipeChoice.PredicateChoice",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "exampleStack"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "stackPredicate"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.2/org/bukkit/inventory/RecipeChoice.html#predicateChoice(Predicate,ItemStack)"
           },
           {
             "kind": "METHOD",
