@@ -353,7 +353,10 @@
     ],
     "org.bukkit.entity.SulfurCube": [
       "canExplode()",
-      "ignite(boolean)"
+      "getEquipped()",
+      "ignite(boolean)",
+      "setEquipped(ItemStack)",
+      "swallow(ItemStack)"
     ],
     "io.papermc.paper.registry.data.TrimPatternRegistryEntry": [
       "decal()"
