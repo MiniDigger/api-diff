@@ -193,6 +193,7 @@
     "io.papermc.paper.datacomponent.item.attribute.AttributeModifierDisplayBridge",
     "io.papermc.paper.datacomponent.item.blocksattacks.BlocksAttacksBridge",
     "io.papermc.paper.datacomponent.item.consumable.ConsumableTypesBridge",
+    "io.papermc.paper.entity.PlayerPostEffects",
     "io.papermc.paper.event.entity.EntityBreakByEntityEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent.RemoveCause",
@@ -239,10 +240,12 @@
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.PotionTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.StructureTagKeys",
+    "org.bukkit.Bukkit",
     "org.bukkit.Effect",
     "org.bukkit.EntityEffect",
     "org.bukkit.Material",
     "org.bukkit.Particle",
+    "org.bukkit.Server",
     "org.bukkit.Sound",
     "org.bukkit.Statistic",
     "org.bukkit.Tag",
@@ -251,6 +254,8 @@
     "org.bukkit.World",
     "org.bukkit.block.Biome",
     "org.bukkit.block.BlockType",
+    "org.bukkit.command.CommandExecutor",
+    "org.bukkit.command.TabCompleter",
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.Player",
     "org.bukkit.entity.memory.MemoryKey",
@@ -258,9 +263,15 @@
     "org.bukkit.inventory.ItemType",
     "org.bukkit.loot.LootTables",
     "org.bukkit.map.MapCursor.Type",
+    "org.bukkit.plugin.java.JavaPlugin",
     "org.bukkit.tag.DamageTypeTags"
   ],
   "membersAdded": {
+    "io.papermc.paper.entity.PlayerPostEffects": [
+      "add(Key)",
+      "remove(Key)",
+      "set(SequencedCollection)"
+    ],
     "org.bukkit.TreeType": [
       "POPLAR"
     ],
@@ -366,7 +377,8 @@
       "RandomizationType()"
     ],
     "org.bukkit.entity.Player": [
-      "\u003cT\u003espawnParticle(Particle,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)"
+      "\u003cT\u003espawnParticle(Particle,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)",
+      "postEffects()"
     ],
     "io.papermc.paper.registry.keys.tags.FluidTagKeys": [
       "AXOLOTL_TRIES_TO_FIND",

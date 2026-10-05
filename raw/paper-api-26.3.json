@@ -23560,6 +23560,61 @@
         "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerGiveResult.html"
       },
       {
+        "kind": "INTERFACE",
+        "name": "io.papermc.paper.entity.PlayerPostEffects",
+        "children": [
+          {
+            "kind": "METHOD",
+            "name": "add(Key)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "effect"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#add(Key)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "clear()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#clear()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "remove(Key)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "effect"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#remove(Key)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "set(SequencedCollection)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "postEffects"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#set(SequencedCollection)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "values()",
+            "return_type": "java.util.@org.jetbrains.annotations.Unmodifiable List\u003cnet.kyori.adventure.key.Key\u003e",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#values()"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html"
+      },
+      {
         "kind": "ENUM",
         "name": "io.papermc.paper.entity.RemovalReason",
         "children": [
@@ -87309,7 +87364,8 @@
             "kind": "METHOD",
             "name": "getCommandMap()",
             "return_type": "org.bukkit.command.CommandMap",
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#getCommandMap()"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#getCommandMap()",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -87653,7 +87709,8 @@
                 "name": "name"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#getPluginCommand(String)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#getPluginCommand(String)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -116132,7 +116189,8 @@
             "kind": "METHOD",
             "name": "getCommandMap()",
             "return_type": "org.bukkit.command.CommandMap",
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#getCommandMap()"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#getCommandMap()",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -116482,7 +116540,8 @@
                 "name": "name"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#getPluginCommand(String)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#getPluginCommand(String)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -153884,6 +153943,12 @@
           },
           {
             "kind": "METHOD",
+            "name": "getInstrument()",
+            "return_type": "org.bukkit.Instrument",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/block/BlockType.html#getInstrument()"
+          },
+          {
+            "kind": "METHOD",
             "name": "getItemType()",
             "return_type": "org.bukkit.inventory.ItemType",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/block/BlockType.html#getItemType()"
@@ -164568,7 +164633,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/Command.html#usageMessage"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/Command.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/Command.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "CLASS",
@@ -164635,10 +164701,12 @@
                 "name": "sender"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandExecutor.html#onCommand(CommandSender,Command,String,String...)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandExecutor.html#onCommand(CommandSender,Command,String,String...)",
+            "apiStatus": "Obsolete"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandExecutor.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandExecutor.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "INTERFACE",
@@ -164773,7 +164841,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandMap.html#tabComplete(CommandSender,String,Location)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandMap.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandMap.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "INTERFACE",
@@ -165170,7 +165239,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/FormattedCommandAlias.html#inRange(int,int,int)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/FormattedCommandAlias.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/FormattedCommandAlias.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "INTERFACE",
@@ -165469,7 +165539,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/MultipleCommandAlias.html#getCommands()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/MultipleCommandAlias.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/MultipleCommandAlias.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "CLASS",
@@ -165601,7 +165672,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginCommand.html#toString()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginCommand.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginCommand.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "CLASS",
@@ -165625,7 +165697,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginCommandYamlParser.html#parse(Plugin)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginCommandYamlParser.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginCommandYamlParser.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "INTERFACE",
@@ -165638,7 +165711,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginIdentifiableCommand.html#getPlugin()"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginIdentifiableCommand.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/PluginIdentifiableCommand.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "INTERFACE",
@@ -165925,7 +165999,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/SimpleCommandMap.html#tabComplete(CommandSender,String,Location)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/SimpleCommandMap.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/SimpleCommandMap.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "INTERFACE",
@@ -165953,10 +166028,12 @@
                 "name": "sender"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/TabCompleter.html#onTabComplete(CommandSender,Command,String,String...)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/TabCompleter.html#onTabComplete(CommandSender,Command,String,String...)",
+            "apiStatus": "Obsolete"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/TabCompleter.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/TabCompleter.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "INTERFACE",
@@ -165965,7 +166042,8 @@
           "org.bukkit.command.TabCompleter",
           "org.bukkit.command.CommandExecutor"
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/TabExecutor.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/TabExecutor.html",
+        "apiStatus": "Obsolete"
       }
     ],
     "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/package-summary.html"
@@ -166014,7 +166092,8 @@
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/defaults/BukkitCommand.html#BukkitCommand(String,String,String,List)"
           }
         ],
-        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/defaults/BukkitCommand.html"
+        "link": "https://jd.papermc.io/paper/26.3/org/bukkit/command/defaults/BukkitCommand.html",
+        "apiStatus": "Obsolete"
       },
       {
         "kind": "CLASS",
@@ -187197,11 +187276,7 @@
             "kind": "METHOD",
             "name": "getDespawnInPeacefulOverride()",
             "return_type": "net.kyori.adventure.util.TriState",
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Mob.html#getDespawnInPeacefulOverride()",
-            "deprecated": {
-              "since": "26.2",
-              "deprecated": "true"
-            }
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Mob.html#getDespawnInPeacefulOverride()"
           },
           {
             "kind": "METHOD",
@@ -187409,11 +187484,7 @@
                 "name": "state"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Mob.html#setDespawnInPeacefulOverride(TriState)",
-            "deprecated": {
-              "since": "26.2",
-              "deprecated": "true"
-            }
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Mob.html#setDespawnInPeacefulOverride(TriState)"
           },
           {
             "kind": "METHOD",
@@ -191313,6 +191384,12 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#playerListName(Component)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "postEffects()",
+            "return_type": "io.papermc.paper.entity.PlayerPostEffects",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#postEffects()"
           },
           {
             "kind": "METHOD",
@@ -267028,7 +267105,8 @@
                 "name": "name"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html#getCommand(String)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html#getCommand(String)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -267303,7 +267381,8 @@
                 "name": "sender"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html#onCommand(CommandSender,Command,String,String...)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html#onCommand(CommandSender,Command,String,String...)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "METHOD",
@@ -267345,7 +267424,8 @@
                 "name": "sender"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html#onTabComplete(CommandSender,Command,String,String...)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html#onTabComplete(CommandSender,Command,String,String...)",
+            "apiStatus": "Obsolete"
           },
           {
             "kind": "CLASS",

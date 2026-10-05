@@ -508,6 +508,7 @@
     "io.papermc.paper.entity.Leashable": "1.21.1",
     "io.papermc.paper.entity.LookAnchor": "1.19",
     "io.papermc.paper.entity.PlayerGiveResult": "1.21.4",
+    "io.papermc.paper.entity.PlayerPostEffects": "26.3",
     "io.papermc.paper.entity.RemovalReason": "26.2",
     "io.papermc.paper.entity.SchoolableFish": "1.19.2",
     "io.papermc.paper.entity.Shearable": "1.19.4",
@@ -5328,6 +5329,13 @@
     "io.papermc.paper.entity.PlayerGiveResult": {
       "drops()": "1.21.4",
       "leftovers()": "1.21.4"
+    },
+    "io.papermc.paper.entity.PlayerPostEffects": {
+      "add(Key)": "26.3",
+      "clear()": "basically forever",
+      "remove(Key)": "26.3",
+      "set(SequencedCollection)": "26.3",
+      "values()": "basically forever"
     },
     "io.papermc.paper.entity.RemovalReason": {
       "CHANGED_DIMENSION": "26.2",
@@ -24493,6 +24501,7 @@
       "getBlastResistance()": "1.13",
       "getBlockDataClass()": "1.21.3",
       "getHardness()": "1.13",
+      "getInstrument()": "basically forever",
       "getItemType()": "basically forever",
       "getSlipperiness()": "1.17",
       "getTranslationKey()": "1.16.2",
@@ -28800,6 +28809,7 @@
       "playerListHeader()": "1.16.5",
       "playerListName()": "1.16.5",
       "playerListName(Component)": "1.16.5",
+      "postEffects()": "26.3",
       "removeAdditionalChatCompletions(Collection)": "1.19.1",
       "removeCustomChatCompletions(Collection)": "1.19.4",
       "removeResourcePack(UUID)": "1.20.4",
