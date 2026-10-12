@@ -15081,6 +15081,18 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/Commands.html#restricted(Predicate)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "unrestricted(Predicate)",
+            "return_type": "java.util.function.Predicate\u003cio.papermc.paper.command.brigadier.CommandSourceStack\u003e",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "predicate"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/Commands.html#unrestricted(Predicate)"
           }
         ],
         "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/Commands.html",
@@ -23604,6 +23616,12 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#set(SequencedCollection)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "update()",
+            "return_type": "void",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#update()"
           },
           {
             "kind": "METHOD",
@@ -34023,6 +34041,42 @@
         "children": [
           {
             "kind": "METHOD",
+            "name": "\u003cC\u003eget(PersistentDataKey)",
+            "return_type": "@org.jspecify.annotations.Nullable C",
+            "children": [
+              {
+                "kind": "TYPE_PARAMETER",
+                "name": "C"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "dataKey"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#\u003cC\u003eget(PersistentDataKey)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "\u003cC\u003egetOrDefault(PersistentDataKey,C)",
+            "return_type": "C",
+            "children": [
+              {
+                "kind": "TYPE_PARAMETER",
+                "name": "C"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "dataKey"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "defaultValue"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#\u003cC\u003egetOrDefault(PersistentDataKey,C)"
+          },
+          {
+            "kind": "METHOD",
             "name": "\u003cP,C\u003eget(NamespacedKey,PersistentDataType)",
             "return_type": "@org.jspecify.annotations.Nullable C",
             "children": [
@@ -34145,6 +34199,18 @@
           },
           {
             "kind": "METHOD",
+            "name": "has(PersistentDataKey)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "dataKey"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#has(PersistentDataKey)"
+          },
+          {
+            "kind": "METHOD",
             "name": "isEmpty()",
             "return_type": "boolean",
             "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#isEmpty()"
@@ -34158,6 +34224,49 @@
         ],
         "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html",
         "apiStatus": "NonExtendable"
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "io.papermc.paper.persistence.PersistentDataKey",
+        "children": [
+          {
+            "kind": "METHOD",
+            "name": "\u003cC\u003eof(Key,PersistentDataType)",
+            "return_type": "io.papermc.paper.persistence.PersistentDataKey\u003cC\u003e",
+            "children": [
+              {
+                "kind": "TYPE_PARAMETER",
+                "name": "C"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "key"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "type"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html#\u003cC\u003eof(Key,PersistentDataType)"
+          },
+          {
+            "kind": "TYPE_PARAMETER",
+            "name": "C"
+          },
+          {
+            "kind": "METHOD",
+            "name": "dataType()",
+            "return_type": "org.bukkit.persistence.PersistentDataType\u003c?,C\u003e",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html#dataType()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "key()",
+            "return_type": "org.bukkit.NamespacedKey",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html#key()"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html"
       },
       {
         "kind": "INTERFACE",
@@ -86499,7 +86608,23 @@
                 "name": "resendRecipes"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#addRecipe(Recipe,boolean)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#addRecipe(Recipe,boolean)",
+            "deprecated": {
+              "since": "26.3",
+              "deprecated": "true"
+            }
+          },
+          {
+            "kind": "METHOD",
+            "name": "addRecipes(Iterable)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "recipes"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#addRecipes(Iterable)"
           },
           {
             "kind": "METHOD",
@@ -88130,6 +88255,18 @@
           },
           {
             "kind": "METHOD",
+            "name": "hasRecipe(NamespacedKey)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "key"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#hasRecipe(NamespacedKey)"
+          },
+          {
+            "kind": "METHOD",
             "name": "hasWhitelist()",
             "return_type": "boolean",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#hasWhitelist()"
@@ -88488,7 +88625,23 @@
                 "name": "resendRecipes"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#removeRecipe(NamespacedKey,boolean)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#removeRecipe(NamespacedKey,boolean)",
+            "deprecated": {
+              "since": "26.3",
+              "deprecated": "true"
+            }
+          },
+          {
+            "kind": "METHOD",
+            "name": "removeRecipes(Iterable)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "keys"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#removeRecipes(Iterable)"
           },
           {
             "kind": "METHOD",
@@ -115308,7 +115461,23 @@
                 "name": "resendRecipes"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#addRecipe(Recipe,boolean)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#addRecipe(Recipe,boolean)",
+            "deprecated": {
+              "since": "26.3",
+              "deprecated": "true"
+            }
+          },
+          {
+            "kind": "METHOD",
+            "name": "addRecipes(Iterable)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "recipes"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#addRecipes(Iterable)"
           },
           {
             "kind": "METHOD",
@@ -116955,6 +117124,18 @@
           },
           {
             "kind": "METHOD",
+            "name": "hasRecipe(NamespacedKey)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "key"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#hasRecipe(NamespacedKey)"
+          },
+          {
+            "kind": "METHOD",
             "name": "hasWhitelist()",
             "return_type": "boolean",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#hasWhitelist()"
@@ -117416,7 +117597,23 @@
                 "name": "resendRecipes"
               }
             ],
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#removeRecipe(NamespacedKey,boolean)"
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#removeRecipe(NamespacedKey,boolean)",
+            "deprecated": {
+              "since": "26.3",
+              "deprecated": "true"
+            }
+          },
+          {
+            "kind": "METHOD",
+            "name": "removeRecipes(Iterable)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "keys"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#removeRecipes(Iterable)"
           },
           {
             "kind": "METHOD",
@@ -178946,6 +179143,12 @@
           },
           {
             "kind": "METHOD",
+            "name": "getAirDrag()",
+            "return_type": "float",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getAirDrag()"
+          },
+          {
+            "kind": "METHOD",
             "name": "getAsString()",
             "return_type": "java.lang.@org.jetbrains.annotations.Nullable String",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getAsString()",
@@ -178962,6 +179165,12 @@
             "name": "getChunk()",
             "return_type": "org.bukkit.@org.jetbrains.annotations.NotNull Chunk",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getChunk()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getDefaultGravity()",
+            "return_type": "double",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getDefaultGravity()"
           },
           {
             "kind": "METHOD",
@@ -178998,6 +179207,12 @@
             "name": "getFreezeTicks()",
             "return_type": "int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getFreezeTicks()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getGravity()",
+            "return_type": "double",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getGravity()"
           },
           {
             "kind": "METHOD",
@@ -179229,6 +179444,12 @@
             "name": "getVisualFire()",
             "return_type": "net.kyori.adventure.util.@org.jetbrains.annotations.NotNull TriState",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getVisualFire()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getWeapon()",
+            "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.Nullable ItemStack",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getWeapon()"
           },
           {
             "kind": "METHOD",
@@ -263578,6 +263799,26 @@
         "children": [
           {
             "kind": "METHOD",
+            "name": "\u003cC\u003eset(PersistentDataKey,C)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "TYPE_PARAMETER",
+                "name": "C"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "dataKey"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "value"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#\u003cC\u003eset(PersistentDataKey,C)"
+          },
+          {
+            "kind": "METHOD",
             "name": "\u003cP,C\u003eset(NamespacedKey,PersistentDataType,C)",
             "return_type": "void",
             "children": [
@@ -263643,6 +263884,18 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#remove(NamespacedKey)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "remove(PersistentDataKey)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "dataKey"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#remove(PersistentDataKey)"
           }
         ],
         "link": "https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html"

@@ -197,6 +197,7 @@
     "io.papermc.paper.event.entity.EntityBreakByEntityEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent.RemoveCause",
+    "io.papermc.paper.persistence.PersistentDataKey",
     "io.papermc.paper.registry.data.DecoratedPotPatternRegistryEntry",
     "io.papermc.paper.registry.data.DecoratedPotPatternRegistryEntry.Builder",
     "io.papermc.paper.registry.keys.DecoratedPotPatternKeys",
@@ -215,10 +216,12 @@
   "classesChanged": [
     "com.destroystokyo.paper.ParticleBuilder",
     "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "io.papermc.paper.command.brigadier.Commands",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect",
     "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.TeleportRandomly",
     "io.papermc.paper.event.block.CompostItemEvent",
+    "io.papermc.paper.persistence.PersistentDataContainerView",
     "io.papermc.paper.registry.RegistryKey",
     "io.papermc.paper.registry.data.InstrumentRegistryEntry",
     "io.papermc.paper.registry.data.InstrumentRegistryEntry.Builder",
@@ -256,6 +259,7 @@
     "org.bukkit.block.BlockType",
     "org.bukkit.command.CommandExecutor",
     "org.bukkit.command.TabCompleter",
+    "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.Player",
     "org.bukkit.entity.memory.MemoryKey",
@@ -263,17 +267,163 @@
     "org.bukkit.inventory.ItemType",
     "org.bukkit.loot.LootTables",
     "org.bukkit.map.MapCursor.Type",
+    "org.bukkit.persistence.PersistentDataContainer",
     "org.bukkit.plugin.java.JavaPlugin",
     "org.bukkit.tag.DamageTypeTags"
   ],
   "membersAdded": {
+    "org.bukkit.TreeType": [
+      "POPLAR"
+    ],
+    "org.bukkit.EntityEffect": [
+      "BOAT_LAUNCH",
+      "BOAT_SINK"
+    ],
+    "org.bukkit.Statistic": [
+      "SLEEP_IN_STRAW_BED"
+    ],
+    "io.papermc.paper.registry.keys.tags.PotionTypeTagKeys": [
+      "DOUSES_FIRE",
+      "EXTINGUISHES_ENTITIES",
+      "HURTS_WATER_SENSITIVE_ENTITIES",
+      "REHYDRATES_AXOLOTLS"
+    ],
+    "org.bukkit.entity.Player": [
+      "\u003cT\u003espawnParticle(Particle,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)",
+      "postEffects()"
+    ],
+    "io.papermc.paper.registry.keys.tags.FluidTagKeys": [
+      "AXOLOTL_TRIES_TO_FIND",
+      "DOLPHIN_TRIES_TO_FIND",
+      "ENTITY_FLOATABLE",
+      "FROG_TRIES_TO_FIND_LAND_NEAR"
+    ],
+    "org.bukkit.block.Biome": [
+      "DAPPLED_FOREST"
+    ],
+    "org.bukkit.inventory.BrewingRecipe": [
+      "BrewingRecipe(NamespacedKey,ItemStack,RecipeChoice,RecipeChoice)"
+    ],
+    "org.bukkit.tag.DamageTypeTags": [
+      "BYPASSES_COOLDOWN",
+      "NO_WOLF_RETALIATION"
+    ],
+    "io.papermc.paper.block.pot.PotPatternTypes": [
+      "PotPatternTypes()"
+    ],
+    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
+      "CAT_LIE_ON_BLOCK",
+      "DOLPHIN_MOVE_TO_ITEM",
+      "TRY_FIND_LIQUID"
+    ],
+    "org.bukkit.World": [
+      "\u003cT\u003espawnParticle(Particle,List,Player,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)"
+    ],
+    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
+      "BREWING_POTION_INPUTS",
+      "CLONABLE_MAPS",
+      "CUSHIONS",
+      "DOUSES_CAMPFIRES",
+      "EXTENDABLE_MAPS",
+      "FURNACE_FUEL_BOTTOM_TAKEABLE"
+    ],
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry.Builder": [
+      "paletteId(Key)"
+    ],
+    "org.bukkit.persistence.PersistentDataContainer": [
+      "\u003cC\u003eset(PersistentDataKey,C)",
+      "remove(PersistentDataKey)"
+    ],
+    "org.bukkit.loot.LootTables": [
+      "ABANDONED_CAMP_BARREL",
+      "ABANDONED_CAMP_COMMON_CHEST",
+      "ABANDONED_CAMP_SECRET_CHEST",
+      "TILL_ROOTED_DIRT"
+    ],
+    "io.papermc.paper.datacomponent.item.SignText.Builder": [
+      "color(DyeColor)",
+      "hasGlowingText(boolean)",
+      "line(int,ComponentLike)"
+    ],
+    "org.bukkit.entity.Entity": [
+      "getAirDrag()",
+      "getDefaultGravity()",
+      "getGravity()"
+    ],
+    "io.papermc.paper.command.brigadier.Commands": [
+      "unrestricted(Predicate)"
+    ],
+    "org.bukkit.map.MapCursor.Type": [
+      "ABANDONED_CAMP"
+    ],
+    "io.papermc.paper.registry.event.RegistryEvents": [
+      "DECORATED_POT_PATTERN"
+    ],
+    "io.papermc.paper.persistence.PersistentDataContainerView": [
+      "\u003cC\u003eget(PersistentDataKey)",
+      "\u003cC\u003egetOrDefault(PersistentDataKey,C)",
+      "has(PersistentDataKey)"
+    ],
+    "org.bukkit.Sound": [
+      "BLOCK_POPLAR_LEAVES_AMBIENT",
+      "BLOCK_POPLAR_LEAVES_BREAK",
+      "BLOCK_POPLAR_LEAVES_FALL",
+      "BLOCK_POPLAR_LEAVES_HIT",
+      "BLOCK_POPLAR_LEAVES_PLACE",
+      "BLOCK_POPLAR_LEAVES_STEP",
+      "BLOCK_RED_SHRUB_BREAK",
+      "BLOCK_RED_SHRUB_PLACE",
+      "BLOCK_SHELF_MUSHROOM_BOUNCE",
+      "BLOCK_SHELF_MUSHROOM_BREAK",
+      "BLOCK_SHELF_MUSHROOM_FALL",
+      "BLOCK_SHELF_MUSHROOM_PLACE",
+      "BLOCK_SHELF_MUSHROOM_STEP",
+      "BLOCK_STRAW_BED_BREAK",
+      "BLOCK_STRAW_BED_BREAK_LEAVE",
+      "BLOCK_STRAW_BED_FALL",
+      "BLOCK_STRAW_BED_HIT",
+      "BLOCK_STRAW_BED_PLACE",
+      "BLOCK_STRAW_BED_STEP",
+      "ENTITY_CUSHION_BREAK",
+      "ENTITY_CUSHION_GET_UP",
+      "ENTITY_CUSHION_PLACE",
+      "ENTITY_CUSHION_SIT"
+    ],
+    "org.bukkit.entity.EntityType": [
+      "CUSHION"
+    ],
+    "org.bukkit.generator.structure.Structure": [
+      "ABANDONED_CAMP_BAMBOO_JUNGLE",
+      "ABANDONED_CAMP_BIRCH_FOREST",
+      "ABANDONED_CAMP_CHERRY_GROVE",
+      "ABANDONED_CAMP_DAPPLED_FOREST",
+      "ABANDONED_CAMP_FLOWER_FOREST",
+      "ABANDONED_CAMP_FOREST",
+      "ABANDONED_CAMP_MEADOW",
+      "ABANDONED_CAMP_OLD_GROWTH_BIRCH_FOREST",
+      "ABANDONED_CAMP_OLD_GROWTH_PINE_TAIGA",
+      "ABANDONED_CAMP_OLD_GROWTH_SPRUCE_TAIGA",
+      "ABANDONED_CAMP_PALE_GARDEN",
+      "ABANDONED_CAMP_SAVANNA",
+      "ABANDONED_CAMP_SNOWY_TAIGA",
+      "ABANDONED_CAMP_SPARSE_JUNGLE",
+      "ABANDONED_CAMP_SWAMP",
+      "ABANDONED_CAMP_TAIGA",
+      "ABANDONED_CAMP_WINDSWEPT_FOREST",
+      "ABANDONED_CAMP_WOODED_BADLANDS"
+    ],
+    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry": [
+      "paletteId()"
+    ],
+    "io.papermc.paper.datacomponent.item.MobVisibility": [
+      "mobVisibility(RegistryKeySet,float)",
+      "targetingEntityTypes()",
+      "visibility()"
+    ],
     "io.papermc.paper.entity.PlayerPostEffects": [
       "add(Key)",
       "remove(Key)",
       "set(SequencedCollection)"
-    ],
-    "org.bukkit.TreeType": [
-      "POPLAR"
     ],
     "io.papermc.paper.registry.keys.DataComponentTypeKeys": [
       "ATTACK_ANIMATION",
@@ -288,10 +438,6 @@
       "BLOCK_TRANSFORMER",
       "COMPOSTABLE",
       "COOKING_FUEL"
-    ],
-    "org.bukkit.EntityEffect": [
-      "BOAT_LAUNCH",
-      "BOAT_SINK"
     ],
     "org.bukkit.Tag": [
       "BLOCKS_DOLPHIN_JUMP",
@@ -349,6 +495,10 @@
       "ITEMS_WOOL_SLABS",
       "ITEMS_WOOL_STAIRS"
     ],
+    "io.papermc.paper.persistence.PersistentDataKey": [
+      "\u003cC\u003eof(Key,PersistentDataType)",
+      "dataType()"
+    ],
     "com.destroystokyo.paper.ParticleBuilder": [
       "randomizationType",
       "randomizationType()",
@@ -362,38 +512,16 @@
       "speedZ",
       "speedZ()"
     ],
-    "org.bukkit.Statistic": [
-      "SLEEP_IN_STRAW_BED"
-    ],
-    "io.papermc.paper.registry.keys.tags.PotionTypeTagKeys": [
-      "DOUSES_FIRE",
-      "EXTINGUISHES_ENTITIES",
-      "HURTS_WATER_SENSITIVE_ENTITIES",
-      "REHYDRATES_AXOLOTLS"
-    ],
     "org.bukkit.Particle.RandomizationType": [
       "ALTERNATIVE",
       "ALTERNATIVE_WITH_SPEED",
       "RandomizationType()"
-    ],
-    "org.bukkit.entity.Player": [
-      "\u003cT\u003espawnParticle(Particle,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)",
-      "postEffects()"
-    ],
-    "io.papermc.paper.registry.keys.tags.FluidTagKeys": [
-      "AXOLOTL_TRIES_TO_FIND",
-      "DOLPHIN_TRIES_TO_FIND",
-      "ENTITY_FLOATABLE",
-      "FROG_TRIES_TO_FIND_LAND_NEAR"
     ],
     "io.papermc.paper.datacomponent.item.consumable.ConsumableTypesBridge": [
       "BRIDGE",
       "bridge()",
       "playSoundEffect(Key)",
       "removeStatusEffects(RegistryKeySet)"
-    ],
-    "org.bukkit.block.Biome": [
-      "DAPPLED_FOREST"
     ],
     "io.papermc.paper.event.block.CompostItemEvent": [
       "getLevelsToRaise()",
@@ -406,23 +534,8 @@
     "org.bukkit.Warning": [
       "propagate()"
     ],
-    "org.bukkit.inventory.BrewingRecipe": [
-      "BrewingRecipe(NamespacedKey,ItemStack,RecipeChoice,RecipeChoice)"
-    ],
     "io.papermc.paper.registry.data.InstrumentRegistryEntry": [
       "durabilityDamage()"
-    ],
-    "org.bukkit.tag.DamageTypeTags": [
-      "BYPASSES_COOLDOWN",
-      "NO_WOLF_RETALIATION"
-    ],
-    "io.papermc.paper.block.pot.PotPatternTypes": [
-      "PotPatternTypes()"
-    ],
-    "com.destroystokyo.paper.entity.ai.VanillaGoal": [
-      "CAT_LIE_ON_BLOCK",
-      "DOLPHIN_MOVE_TO_ITEM",
-      "TRY_FIND_LIQUID"
     ],
     "org.bukkit.Effect": [
       "CONSUME_EFFECT_TELEPORT",
@@ -438,8 +551,10 @@
     "io.papermc.paper.registry.data.InstrumentRegistryEntry.Builder": [
       "durabilityDamage(int)"
     ],
-    "org.bukkit.World": [
-      "\u003cT\u003espawnParticle(Particle,List,Player,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)"
+    "org.bukkit.Server": [
+      "addRecipes(Iterable)",
+      "hasRecipe(NamespacedKey)",
+      "removeRecipes(Iterable)"
     ],
     "io.papermc.paper.registry.keys.tags.BiomeTagKeys": [
       "HAS_STRUCTURE_ABANDONED_CAMP_BAMBOO_JUNGLE",
@@ -461,42 +576,14 @@
       "HAS_STRUCTURE_ABANDONED_CAMP_WINDSWEPT_FOREST",
       "HAS_STRUCTURE_ABANDONED_CAMP_WOODED_BADLANDS"
     ],
-    "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
-      "BREWING_POTION_INPUTS",
-      "CLONABLE_MAPS",
-      "CUSHIONS",
-      "DOUSES_CAMPFIRES",
-      "EXTENDABLE_MAPS",
-      "FURNACE_FUEL_BOTTOM_TAKEABLE"
-    ],
-    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry.Builder": [
-      "paletteId(Key)"
-    ],
     "io.papermc.paper.datacomponent.item.blocksattacks.BlocksAttacksBridge": [
       "blocksAttacksDamageReduction()",
       "blocksAttacksItemDamageFunction()"
-    ],
-    "org.bukkit.loot.LootTables": [
-      "ABANDONED_CAMP_BARREL",
-      "ABANDONED_CAMP_COMMON_CHEST",
-      "ABANDONED_CAMP_SECRET_CHEST",
-      "TILL_ROOTED_DIRT"
     ],
     "io.papermc.paper.datacomponent.item.SignText": [
       "signText()",
       "hasGlowingText()",
       "signText(List)"
-    ],
-    "io.papermc.paper.datacomponent.item.SignText.Builder": [
-      "color(DyeColor)",
-      "hasGlowingText(boolean)",
-      "line(int,ComponentLike)"
-    ],
-    "org.bukkit.map.MapCursor.Type": [
-      "ABANDONED_CAMP"
-    ],
-    "io.papermc.paper.registry.event.RegistryEvents": [
-      "DECORATED_POT_PATTERN"
     ],
     "io.papermc.paper.datacomponent.item.ItemComponentTypesBridge": [
       "emptySkinPatch()",
@@ -506,36 +593,8 @@
       "ominousBottleAmplifier(int)",
       "toolRule(RegistryKeySet,Float,TriState)"
     ],
-    "org.bukkit.Sound": [
-      "BLOCK_POPLAR_LEAVES_AMBIENT",
-      "BLOCK_POPLAR_LEAVES_BREAK",
-      "BLOCK_POPLAR_LEAVES_FALL",
-      "BLOCK_POPLAR_LEAVES_HIT",
-      "BLOCK_POPLAR_LEAVES_PLACE",
-      "BLOCK_POPLAR_LEAVES_STEP",
-      "BLOCK_RED_SHRUB_BREAK",
-      "BLOCK_RED_SHRUB_PLACE",
-      "BLOCK_SHELF_MUSHROOM_BOUNCE",
-      "BLOCK_SHELF_MUSHROOM_BREAK",
-      "BLOCK_SHELF_MUSHROOM_FALL",
-      "BLOCK_SHELF_MUSHROOM_PLACE",
-      "BLOCK_SHELF_MUSHROOM_STEP",
-      "BLOCK_STRAW_BED_BREAK",
-      "BLOCK_STRAW_BED_BREAK_LEAVE",
-      "BLOCK_STRAW_BED_FALL",
-      "BLOCK_STRAW_BED_HIT",
-      "BLOCK_STRAW_BED_PLACE",
-      "BLOCK_STRAW_BED_STEP",
-      "ENTITY_CUSHION_BREAK",
-      "ENTITY_CUSHION_GET_UP",
-      "ENTITY_CUSHION_PLACE",
-      "ENTITY_CUSHION_SIT"
-    ],
     "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect.TeleportRandomly": [
       "directionalParticles()"
-    ],
-    "org.bukkit.entity.EntityType": [
-      "CUSHION"
     ],
     "io.papermc.paper.registry.keys.tags.EntityTypeTagKeys": [
       "CANNOT_BE_DISMOUNTED_BY_ITEM_USAGE"
@@ -566,26 +625,6 @@
       "POPLAR_WALL_SIGN",
       "POTTED_POPLAR_SAPLING"
     ],
-    "org.bukkit.generator.structure.Structure": [
-      "ABANDONED_CAMP_BAMBOO_JUNGLE",
-      "ABANDONED_CAMP_BIRCH_FOREST",
-      "ABANDONED_CAMP_CHERRY_GROVE",
-      "ABANDONED_CAMP_DAPPLED_FOREST",
-      "ABANDONED_CAMP_FLOWER_FOREST",
-      "ABANDONED_CAMP_FOREST",
-      "ABANDONED_CAMP_MEADOW",
-      "ABANDONED_CAMP_OLD_GROWTH_BIRCH_FOREST",
-      "ABANDONED_CAMP_OLD_GROWTH_PINE_TAIGA",
-      "ABANDONED_CAMP_OLD_GROWTH_SPRUCE_TAIGA",
-      "ABANDONED_CAMP_PALE_GARDEN",
-      "ABANDONED_CAMP_SAVANNA",
-      "ABANDONED_CAMP_SNOWY_TAIGA",
-      "ABANDONED_CAMP_SPARSE_JUNGLE",
-      "ABANDONED_CAMP_SWAMP",
-      "ABANDONED_CAMP_TAIGA",
-      "ABANDONED_CAMP_WINDSWEPT_FOREST",
-      "ABANDONED_CAMP_WOODED_BADLANDS"
-    ],
     "io.papermc.paper.registry.keys.tags.StructureTagKeys": [
       "ON_ABANDONED_CAMP_BAMBOO_JUNGLE",
       "ON_ABANDONED_CAMP_BIRCH_FOREST",
@@ -605,16 +644,8 @@
       "ON_SWAMP_HUT_MAPS",
       "ON_WOODLAND_MANSION_MAPS"
     ],
-    "io.papermc.paper.registry.data.TrimMaterialRegistryEntry": [
-      "paletteId()"
-    ],
     "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect": [
       "teleportRandomlyEffect(float,boolean)"
-    ],
-    "io.papermc.paper.datacomponent.item.MobVisibility": [
-      "mobVisibility(RegistryKeySet,float)",
-      "targetingEntityTypes()",
-      "visibility()"
     ],
     "org.bukkit.inventory.ItemType": [
       "BLACK_CONCRETE_SLAB",

@@ -2185,6 +2185,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/Commands.html#register(String,String,BasicCommand)">register(String,String,BasicCommand) (since: 1.20.6)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/Commands.html#register(String,String,Collection,BasicCommand)">register(String,String,Collection,BasicCommand) (since: 1.20.6)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/Commands.html#restricted(Predicate)">restricted(Predicate) (since: 1.21.6)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/Commands.html#unrestricted(Predicate)">unrestricted(Predicate) (since: 26.3)</a></li>
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/MessageComponentSerializer.html">io.papermc.paper.command.brigadier.MessageComponentSerializer (since: 1.20.6)</a></h2>
 <ul>
@@ -3509,6 +3510,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#clear()">clear() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#remove(Key)">remove(Key) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#set(SequencedCollection)">set(SequencedCollection) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#update()">update() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/PlayerPostEffects.html#values()">values() (since: basically forever)</a></li>
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/entity/RemovalReason.html">io.papermc.paper.entity.RemovalReason (since: 26.2)</a></h2>
@@ -5217,6 +5219,8 @@ a:hover {
 <h2><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/package-summary.html">io.papermc.paper.persistence (since: 1.21)</a></h2>
 <h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html">io.papermc.paper.persistence.PersistentDataContainerView (since: 1.21)</a></h2>
 <ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#<C>get(PersistentDataKey)">&lt;C&gt;get(PersistentDataKey) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#<C>getOrDefault(PersistentDataKey,C)">&lt;C&gt;getOrDefault(PersistentDataKey,C) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#<P,C>get(NamespacedKey,PersistentDataType)">&lt;P,C&gt;get(NamespacedKey,PersistentDataType) (since: 1.20.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#<P,C>getOrDefault(NamespacedKey,PersistentDataType,C)">&lt;P,C&gt;getOrDefault(NamespacedKey,PersistentDataType,C) (since: 1.20.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#<P,C>has(NamespacedKey,PersistentDataType)">&lt;P,C&gt;has(NamespacedKey,PersistentDataType) (since: 1.20.4)</a></li>
@@ -5225,8 +5229,15 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#getKeys()">getKeys() (since: 1.16.1)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#getSize()">getSize() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#has(NamespacedKey)">has(NamespacedKey) (since: 1.18.1)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#has(PersistentDataKey)">has(PersistentDataKey) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#isEmpty()">isEmpty() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#serializeToBytes()">serializeToBytes() (since: 1.19.2)</a></li>
+</ul>
+<h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html">io.papermc.paper.persistence.PersistentDataKey (since: 26.3)</a></h2>
+<ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html#<C>of(Key,PersistentDataType)">&lt;C&gt;of(Key,PersistentDataType) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html#dataType()">dataType() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataKey.html#key()">key() (since: 1.16.5)</a></li>
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataViewHolder.html">io.papermc.paper.persistence.PersistentDataViewHolder (since: 1.21)</a></h2>
 <ul>
@@ -13703,6 +13714,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#Bukkit()">Bukkit() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#addRecipe(Recipe)">addRecipe(Recipe) (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#addRecipe(Recipe,boolean)">addRecipe(Recipe,boolean) (since: 1.20.1)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#addRecipes(Iterable)">addRecipes(Iterable) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#advancementIterator()">advancementIterator() (since: 1.12)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#banIP(InetAddress)">banIP(InetAddress) (since: 1.20.1)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#banIP(String)">banIP(String) (since: basically forever)</a></li>
@@ -13859,6 +13871,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#getWorldContainer()">getWorldContainer() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#getWorldType()">getWorldType() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#getWorlds()">getWorlds() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#hasRecipe(NamespacedKey)">hasRecipe(NamespacedKey) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#hasWhitelist()">hasWhitelist() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#isAcceptingTransfers()">isAcceptingTransfers() (since: 1.20.5)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#isEnforcingSecureProfiles()">isEnforcingSecureProfiles() (since: 1.19)</a></li>
@@ -13894,6 +13907,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#removeBossBar(NamespacedKey)">removeBossBar(NamespacedKey) (since: 1.13.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#removeRecipe(NamespacedKey)">removeRecipe(NamespacedKey) (since: 1.15.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#removeRecipe(NamespacedKey,boolean)">removeRecipe(NamespacedKey,boolean) (since: 1.20.1)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#removeRecipes(Iterable)">removeRecipes(Iterable) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#resetRecipes()">resetRecipes() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#restart()">restart() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#savePlayers()">savePlayers() (since: basically forever)</a></li>
@@ -17841,6 +17855,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#BROADCAST_CHANNEL_USERS">BROADCAST_CHANNEL_USERS (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#addRecipe(Recipe)">addRecipe(Recipe) (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#addRecipe(Recipe,boolean)">addRecipe(Recipe,boolean) (since: 1.20.1)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#addRecipes(Iterable)">addRecipes(Iterable) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#advancementIterator()">advancementIterator() (since: 1.12)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#allowPausing(Plugin,boolean)">allowPausing(Plugin,boolean) (since: 1.21.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#banIP(InetAddress)">banIP(InetAddress) (since: 1.20.1)</a></li>
@@ -17998,6 +18013,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#getWorldContainer()">getWorldContainer() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#getWorldType()">getWorldType() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#getWorlds()">getWorlds() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#hasRecipe(NamespacedKey)">hasRecipe(NamespacedKey) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#hasWhitelist()">hasWhitelist() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#isAcceptingTransfers()">isAcceptingTransfers() (since: 1.20.5)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#isEnforcingSecureProfiles()">isEnforcingSecureProfiles() (since: 1.19)</a></li>
@@ -18034,6 +18050,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#removeBossBar(NamespacedKey)">removeBossBar(NamespacedKey) (since: 1.13.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#removeRecipe(NamespacedKey)">removeRecipe(NamespacedKey) (since: 1.15.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#removeRecipe(NamespacedKey,boolean)">removeRecipe(NamespacedKey,boolean) (since: 1.20.1)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#removeRecipes(Iterable)">removeRecipes(Iterable) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#resetRecipes()">resetRecipes() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#restart()">restart() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#savePlayers()">savePlayers() (since: basically forever)</a></li>
@@ -26764,15 +26781,18 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#createSnapshot()">createSnapshot() (since: 1.20.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#eject()">eject() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#fromMobSpawner()">fromMobSpawner() (since: 1.12)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getAirDrag()">getAirDrag() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getAsString()">getAsString() (since: 1.13)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getBoundingBox()">getBoundingBox() (since: 1.13.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getChunk()">getChunk() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getDefaultGravity()">getDefaultGravity() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getEntityId()">getEntityId() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getEntitySpawnReason()">getEntitySpawnReason() (since: 1.13.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getFacing()">getFacing() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getFallDistance()">getFallDistance() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getFireTicks()">getFireTicks() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getFreezeTicks()">getFreezeTicks() (since: 1.17)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getGravity()">getGravity() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getHeight()">getHeight() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getLastDamageCause()">getLastDamageCause() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getLocation()">getLocation() (since: basically forever)</a></li>
@@ -26807,6 +26827,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getVehicle()">getVehicle() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getVelocity()">getVelocity() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getVisualFire()">getVisualFire() (since: 1.21.5)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getWeapon()">getWeapon() (since: 1.21)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getWidth()">getWidth() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getWorld()">getWorld() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getX()">getX() (since: basically forever)</a></li>
@@ -38820,10 +38841,12 @@ a:hover {
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html">org.bukkit.persistence.PersistentDataContainer (since: 1.14)</a></h2>
 <ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#<C>set(PersistentDataKey,C)">&lt;C&gt;set(PersistentDataKey,C) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#<P,C>set(NamespacedKey,PersistentDataType,C)">&lt;P,C&gt;set(NamespacedKey,PersistentDataType,C) (since: 1.20.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#readFromBytes(Array,boolean)">readFromBytes(Array,boolean) (since: 1.19.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#readFromBytes(byte...)">readFromBytes(byte...) (since: 1.19.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#remove(NamespacedKey)">remove(NamespacedKey) (since: 1.14)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataContainer.html#remove(PersistentDataKey)">remove(PersistentDataKey) (since: 26.3)</a></li>
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/org/bukkit/persistence/PersistentDataHolder.html">org.bukkit.persistence.PersistentDataHolder (since: 1.14)</a></h2>
 <ul>

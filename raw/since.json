@@ -652,6 +652,7 @@
     "io.papermc.paper.math.Rotations": "1.19.2",
     "io.papermc.paper.math.RotationsImpl": "1.19.2",
     "io.papermc.paper.persistence.PersistentDataContainerView": "1.21",
+    "io.papermc.paper.persistence.PersistentDataKey": "26.3",
     "io.papermc.paper.persistence.PersistentDataViewHolder": "1.21",
     "io.papermc.paper.plugin.PermissionManager": "1.19.3",
     "io.papermc.paper.plugin.bootstrap.BootstrapContext": "1.19.4",
@@ -4237,7 +4238,8 @@
       "register(String,Collection,BasicCommand)": "1.20.6",
       "register(String,String,BasicCommand)": "1.20.6",
       "register(String,String,Collection,BasicCommand)": "1.20.6",
-      "restricted(Predicate)": "1.21.6"
+      "restricted(Predicate)": "1.21.6",
+      "unrestricted(Predicate)": "26.3"
     },
     "io.papermc.paper.command.brigadier.MessageComponentSerializer": {
       "message()": "1.16.5"
@@ -5335,6 +5337,7 @@
       "clear()": "basically forever",
       "remove(Key)": "26.3",
       "set(SequencedCollection)": "26.3",
+      "update()": "basically forever",
       "values()": "basically forever"
     },
     "io.papermc.paper.entity.RemovalReason": {
@@ -6879,6 +6882,8 @@
       "z()": "1.19.2"
     },
     "io.papermc.paper.persistence.PersistentDataContainerView": {
+      "\u003cC\u003eget(PersistentDataKey)": "26.3",
+      "\u003cC\u003egetOrDefault(PersistentDataKey,C)": "26.3",
       "\u003cP,C\u003eget(NamespacedKey,PersistentDataType)": "1.20.4",
       "\u003cP,C\u003egetOrDefault(NamespacedKey,PersistentDataType,C)": "1.20.4",
       "\u003cP,C\u003ehas(NamespacedKey,PersistentDataType)": "1.20.4",
@@ -6887,8 +6892,14 @@
       "getKeys()": "1.16.1",
       "getSize()": "basically forever",
       "has(NamespacedKey)": "1.18.1",
+      "has(PersistentDataKey)": "26.3",
       "isEmpty()": "basically forever",
       "serializeToBytes()": "1.19.2"
+    },
+    "io.papermc.paper.persistence.PersistentDataKey": {
+      "\u003cC\u003eof(Key,PersistentDataType)": "26.3",
+      "dataType()": "26.3",
+      "key()": "1.16.5"
     },
     "io.papermc.paper.persistence.PersistentDataViewHolder": {
       "getPersistentDataContainer()": "1.14"
@@ -15068,6 +15079,7 @@
       "Bukkit()": "basically forever",
       "addRecipe(Recipe)": "basically forever",
       "addRecipe(Recipe,boolean)": "1.20.1",
+      "addRecipes(Iterable)": "26.3",
       "advancementIterator()": "1.12",
       "banIP(InetAddress)": "1.20.1",
       "banIP(String)": "basically forever",
@@ -15224,6 +15236,7 @@
       "getWorldContainer()": "basically forever",
       "getWorldType()": "basically forever",
       "getWorlds()": "basically forever",
+      "hasRecipe(NamespacedKey)": "26.3",
       "hasWhitelist()": "basically forever",
       "isAcceptingTransfers()": "1.20.5",
       "isEnforcingSecureProfiles()": "1.19",
@@ -15259,6 +15272,7 @@
       "removeBossBar(NamespacedKey)": "1.13.2",
       "removeRecipe(NamespacedKey)": "1.15.2",
       "removeRecipe(NamespacedKey,boolean)": "1.20.1",
+      "removeRecipes(Iterable)": "26.3",
       "resetRecipes()": "basically forever",
       "restart()": "basically forever",
       "savePlayers()": "basically forever",
@@ -19151,6 +19165,7 @@
       "BROADCAST_CHANNEL_USERS": "basically forever",
       "addRecipe(Recipe)": "basically forever",
       "addRecipe(Recipe,boolean)": "1.20.1",
+      "addRecipes(Iterable)": "26.3",
       "advancementIterator()": "1.12",
       "allowPausing(Plugin,boolean)": "1.21.3",
       "banIP(InetAddress)": "1.20.1",
@@ -19308,6 +19323,7 @@
       "getWorldContainer()": "basically forever",
       "getWorldType()": "basically forever",
       "getWorlds()": "basically forever",
+      "hasRecipe(NamespacedKey)": "26.3",
       "hasWhitelist()": "basically forever",
       "isAcceptingTransfers()": "1.20.5",
       "isEnforcingSecureProfiles()": "1.19",
@@ -19344,6 +19360,7 @@
       "removeBossBar(NamespacedKey)": "1.13.2",
       "removeRecipe(NamespacedKey)": "1.15.2",
       "removeRecipe(NamespacedKey,boolean)": "1.20.1",
+      "removeRecipes(Iterable)": "26.3",
       "resetRecipes()": "basically forever",
       "restart()": "basically forever",
       "savePlayers()": "basically forever",
@@ -27459,15 +27476,18 @@
       "createSnapshot()": "1.20.4",
       "eject()": "basically forever",
       "fromMobSpawner()": "1.12",
+      "getAirDrag()": "26.3",
       "getAsString()": "1.13",
       "getBoundingBox()": "1.13.2",
       "getChunk()": "basically forever",
+      "getDefaultGravity()": "26.3",
       "getEntityId()": "basically forever",
       "getEntitySpawnReason()": "1.13.2",
       "getFacing()": "basically forever",
       "getFallDistance()": "basically forever",
       "getFireTicks()": "basically forever",
       "getFreezeTicks()": "1.17",
+      "getGravity()": "26.3",
       "getHeight()": "basically forever",
       "getLastDamageCause()": "basically forever",
       "getLocation()": "basically forever",
@@ -27502,6 +27522,7 @@
       "getVehicle()": "basically forever",
       "getVelocity()": "basically forever",
       "getVisualFire()": "1.21.5",
+      "getWeapon()": "1.21",
       "getWidth()": "basically forever",
       "getWorld()": "basically forever",
       "getX()": "basically forever",
@@ -38544,10 +38565,12 @@
       "newPersistentDataContainer()": "1.14"
     },
     "org.bukkit.persistence.PersistentDataContainer": {
+      "\u003cC\u003eset(PersistentDataKey,C)": "26.3",
       "\u003cP,C\u003eset(NamespacedKey,PersistentDataType,C)": "1.20.4",
       "readFromBytes(Array,boolean)": "1.19.2",
       "readFromBytes(byte...)": "1.19.2",
-      "remove(NamespacedKey)": "1.14"
+      "remove(NamespacedKey)": "1.14",
+      "remove(PersistentDataKey)": "26.3"
     },
     "org.bukkit.persistence.PersistentDataHolder": {
       "getPersistentDataContainer()": "1.14"
