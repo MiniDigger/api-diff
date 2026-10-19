@@ -1327,6 +1327,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html#getIpAddress()">getIpAddress() (since: 1.13.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html#getPlayerName()">getPlayerName() (since: 1.13.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html#getPlayerUniqueId()">getPlayerUniqueId() (since: 1.13.2)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html#getSocketAddress()">getSocketAddress() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html#ipAddress">ipAddress (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html#playerName">playerName (since: 1.13.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html#playerUniqueId">playerUniqueId (since: 1.13.2)</a></li>
@@ -1896,6 +1897,7 @@ a:hover {
 <ul>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/network/NetworkClient.html#getAddress()">getAddress() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/network/NetworkClient.html#getProtocolVersion()">getProtocolVersion() (since: 1.12.2)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/network/NetworkClient.html#getSocketAddress()">getSocketAddress() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/network/NetworkClient.html#getVirtualHost()">getVirtualHost() (since: 1.12.2)</a></li>
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/network/StatusClient.html">com.destroystokyo.paper.network.StatusClient (since: 1.12.2)</a></h2>
@@ -4138,6 +4140,19 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/FishHookStateChangeEvent.html#getNewHookState()">getNewHookState() (since: 1.21.5)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/FishHookStateChangeEvent.html#newHookState">newHookState (since: 1.21.5)</a></li>
 </ul>
+<h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html">io.papermc.paper.event.entity.ItemTransportingEntitySortEvent (since: 26.3)</a></h2>
+<ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#HANDLER_LIST">HANDLER_LIST (since: 1.16.4)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#containerInventory">containerInventory (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#getContainerInventory()">getContainerInventory() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#getHandlerList()">getHandlerList() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#getHandlers()">getHandlers() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#getItemStack()">getItemStack() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#getResult()">getResult() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#itemStack">itemStack (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#result">result (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html#setResult(Result)">setResult(Result) (since: basically forever)</a></li>
+</ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntityValidateTargetEvent.html">io.papermc.paper.event.entity.ItemTransportingEntityValidateTargetEvent (since: 1.21.9)</a></h2>
 <ul>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntityValidateTargetEvent.html#HANDLER_LIST">HANDLER_LIST (since: 1.16.4)</a></li>
@@ -4246,6 +4261,56 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/ItemCraftedEvent.html#getHandlers()">getHandlers() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/ItemCraftedEvent.html#getPlayer()">getPlayer() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/ItemCraftedEvent.html#player">player (since: basically forever)</a></li>
+</ul>
+<h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html">io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent (since: 26.3)</a></h2>
+<ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#HANDLER_LIST">HANDLER_LIST (since: 1.16.4)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#bundle">bundle (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#direction">direction (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getBundle()">getBundle() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getDirection()">getDirection() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getHandlerList()">getHandlerList() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getHandlers()">getHandlers() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getPlayer()">getPlayer() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getPreviousIndex()">getPreviousIndex() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getPreviousItem()">getPreviousItem() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getRawSlot()">getRawSlot() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getSelectedIndex()">getSelectedIndex() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getSelectedItem()">getSelectedItem() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#getSlot()">getSlot() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#previousIndex">previousIndex (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#previousItem">previousItem (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#rawSlot">rawSlot (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#selectedIndex">selectedIndex (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#selectedItem">selectedItem (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html#slot">slot (since: basically forever)</a></li>
+</ul>
+<h4><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html">io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent.Direction (since: 26.3)</a></h2>
+<ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#BACKWARD">BACKWARD (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#Direction(OptionalInt)">Direction(OptionalInt) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#FORWARD">FORWARD (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#UNKNOWN">UNKNOWN (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#delta">delta (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#flip()">flip() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#getDelta()">getDelta() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#valueOf(String)">valueOf(String) (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent/Direction.html#values()">values() (since: basically forever)</a></li>
+</ul>
+<h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html">io.papermc.paper.event.inventory.PrepareHopperTransferEvent (since: 26.3)</a></h2>
+<ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#HANDLER_LIST">HANDLER_LIST (since: 1.16.4)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#destination">destination (since: 1.17)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#didSourceInitiate">didSourceInitiate (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#disallowedSlots">disallowedSlots (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#getDestination()">getDestination() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#getHandlerList()">getHandlerList() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#getHandlers()">getHandlers() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#getInitiator()">getInitiator() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#getSource()">getSource() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#isSlotAllowed(int)">isSlotAllowed(int) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#setSlotAllowed(int,boolean)">setSlotAllowed(int,boolean) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html#source">source (since: basically forever)</a></li>
 </ul>
 <h2><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/packet/package-summary.html">io.papermc.paper.event.packet (since: 1.16.4)</a></h2>
 <h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/event/packet/ClientTickEndEvent.html">io.papermc.paper.event.packet.ClientTickEndEvent (since: 1.21.4)</a></h2>
@@ -13523,6 +13588,17 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/WeatheringCopperState.html#valueOf(String)">valueOf(String) (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/WeatheringCopperState.html#values()">values() (since: basically forever)</a></li>
 </ul>
+<h2><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/package-summary.html">io.papermc.paper.world.chunk (since: 26.3)</a></h2>
+<h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html">io.papermc.paper.world.chunk.ChunkGenerationState (since: 26.3)</a></h2>
+<ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html#ChunkGenerationState()">ChunkGenerationState() (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html#GENERATED">GENERATED (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html#NOT_GENERATED">NOT_GENERATED (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html#OUTDATED">OUTDATED (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html#PARTIAL">PARTIAL (since: 1.17)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html#valueOf(String)">valueOf(String) (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/chunk/ChunkGenerationState.html#values()">values() (since: basically forever)</a></li>
+</ul>
 <h2><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/damagesource/package-summary.html">io.papermc.paper.world.damagesource (since: 1.21.5)</a></h2>
 <h3><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/world/damagesource/CombatEntry.html">io.papermc.paper.world.damagesource.CombatEntry (since: 1.21.5)</a></h2>
 <ul>
@@ -21171,6 +21247,8 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getChunkAtAsyncUrgently(Location,boolean)">getChunkAtAsyncUrgently(Location,boolean) (since: 1.15.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getChunkAtAsyncUrgently(int,int)">getChunkAtAsyncUrgently(int,int) (since: 1.15.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getChunkCount()">getChunkCount() (since: 1.11.2)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getChunkGenerationState(int,int)">getChunkGenerationState(int,int) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getChunkGenerationStateAsync(int,int)">getChunkGenerationStateAsync(int,int) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getChunksAtAsync(int,int,int,int,boolean,Runnable)">getChunksAtAsync(int,int,int,int,boolean,Runnable) (since: 1.21.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getClearWeatherDuration()">getClearWeatherDuration() (since: 1.16.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/World.html#getCoordinateScale()">getCoordinateScale() (since: 1.16.5)</a></li>
@@ -23830,6 +23908,10 @@ a:hover {
 <ul>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/block/data/Attachable.html#isAttached()">isAttached() (since: 1.13)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/block/data/Attachable.html#setAttached(boolean)">setAttached(boolean) (since: 1.13)</a></li>
+</ul>
+<h3><a href="https://jd.papermc.io/paper/26.3/org/bukkit/block/data/AttachableDirectional.html">org.bukkit.block.data.AttachableDirectional (since: 26.3)</a></h2>
+<ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/block/data/AttachableDirectional.html#getAttachedBlockFace()">getAttachedBlockFace() (since: 26.3)</a></li>
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/org/bukkit/block/data/Bisected.html">org.bukkit.block.data.Bisected (since: 1.13)</a></h2>
 <ul>
@@ -26771,6 +26853,7 @@ a:hover {
 </ul>
 <h3><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html">org.bukkit.entity.Entity (since: basically forever)</a></h2>
 <ul>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#addAdditionalAlliedRule(Key,Predicate)">addAdditionalAlliedRule(Key,Predicate) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#addPassenger(Entity)">addPassenger(Entity) (since: 1.11.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#addScoreboardTag(String)">addScoreboardTag(String) (since: 1.10.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#asHoverEvent(UnaryOperator)">asHoverEvent(UnaryOperator) (since: 1.16.5)</a></li>
@@ -26781,6 +26864,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#createSnapshot()">createSnapshot() (since: 1.20.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#eject()">eject() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#fromMobSpawner()">fromMobSpawner() (since: 1.12)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getAdditionalAlliedRules()">getAdditionalAlliedRules() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getAirDrag()">getAirDrag() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getAsString()">getAsString() (since: 1.13)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#getBoundingBox()">getBoundingBox() (since: 1.13.2)</a></li>
@@ -26837,6 +26921,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#hasFixedPose()">hasFixedPose() (since: 1.20.1)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#hasGravity()">hasGravity() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#hasNoPhysics()">hasNoPhysics() (since: 1.18.2)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isAlliedTo(Entity)">isAlliedTo(Entity) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isCustomNameVisible()">isCustomNameVisible() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isDead()">isDead() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isEmpty()">isEmpty() (since: basically forever)</a></li>
@@ -26855,6 +26940,8 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isInsideVehicle()">isInsideVehicle() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isInvisible()">isInvisible() (since: 1.12.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isInvulnerable()">isInvulnerable() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isInvulnerableTo(DamageSource)">isInvulnerableTo(DamageSource) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isMarkedInvulnerable()">isMarkedInvulnerable() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isOnGround()">isOnGround() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isPersistent()">isPersistent() (since: 1.13)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#isSilent()">isSilent() (since: basically forever)</a></li>
@@ -26871,6 +26958,8 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#lookAt(double,double,double,LookAnchor)">lookAt(double,double,double,LookAnchor) (since: 1.19)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#playEffect(EntityEffect)">playEffect(EntityEffect) (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#remove()">remove() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#removeAdditionalAlliedRule(Key)">removeAdditionalAlliedRule(Key) (since: 26.3)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#removeAdditionalAlliedRule(Namespaced)">removeAdditionalAlliedRule(Namespaced) (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#removePassenger(Entity)">removePassenger(Entity) (since: 1.11.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#removeScoreboardTag(String)">removeScoreboardTag(String) (since: 1.10.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Entity.html#setCustomNameVisible(boolean)">setCustomNameVisible(boolean) (since: basically forever)</a></li>
@@ -28193,6 +28282,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#getSentChunkKeys()">getSentChunkKeys() (since: 1.20.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#getSentChunks()">getSentChunks() (since: 1.20.4)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#getSimulationDistance()">getSimulationDistance() (since: 1.18)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#getSocketAddress()">getSocketAddress() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#getSpectatorTarget()">getSpectatorTarget() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#getTotalExperience()">getTotalExperience() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/entity/Player.html#getViewDistance()">getViewDistance() (since: basically forever)</a></li>
@@ -29348,6 +29438,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/HandlerList.html#getRegisteredListeners(Plugin)">getRegisteredListeners(Plugin) (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/HandlerList.html#handlers">handlers (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/HandlerList.html#handlerslots">handlerslots (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/HandlerList.html#hasListeners()">hasListeners() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/HandlerList.html#register(RegisteredListener)">register(RegisteredListener) (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/HandlerList.html#registerAll(Collection)">registerAll(Collection) (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/HandlerList.html#unregister(Listener)">unregister(Listener) (since: basically forever)</a></li>
@@ -31830,6 +31921,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getName()">getName() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getPlayerProfile()">getPlayerProfile() (since: 1.12.2)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getRawAddress()">getRawAddress() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getRawSocketAddress()">getRawSocketAddress() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getResult()">getResult() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#getUniqueId()">getUniqueId() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html#hostname">hostname (since: basically forever)</a></li>
@@ -32512,6 +32604,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/PlayerLoginEvent.html#getHostname()">getHostname() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/PlayerLoginEvent.html#getKickMessage()">getKickMessage() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/PlayerLoginEvent.html#getRealAddress()">getRealAddress() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/PlayerLoginEvent.html#getRealSocketAddress()">getRealSocketAddress() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/PlayerLoginEvent.html#getResult()">getResult() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/PlayerLoginEvent.html#hostname">hostname (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/player/PlayerLoginEvent.html#kickMessage()">kickMessage() (since: 1.16.5)</a></li>
@@ -33115,6 +33208,7 @@ a:hover {
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/ServerListPingEvent.html#getMaxPlayers()">getMaxPlayers() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/ServerListPingEvent.html#getMotd()">getMotd() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/ServerListPingEvent.html#getNumPlayers()">getNumPlayers() (since: basically forever)</a></li>
+  <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/ServerListPingEvent.html#getSocketAddress()">getSocketAddress() (since: 26.3)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/ServerListPingEvent.html#hostname">hostname (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/ServerListPingEvent.html#iterator()">iterator() (since: basically forever)</a></li>
   <li><a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/ServerListPingEvent.html#maxPlayers">maxPlayers (since: basically forever)</a></li>

@@ -105,6 +105,7 @@
     "io.papermc.paper.threadedregions.scheduler": "1.20.1",
     "io.papermc.paper.util": "1.16.5",
     "io.papermc.paper.world": "1.16.2",
+    "io.papermc.paper.world.chunk": "26.3",
     "io.papermc.paper.world.damagesource": "1.21.5",
     "io.papermc.paper.world.flag": "1.21.1",
     "org.bukkit": "basically forever",
@@ -564,6 +565,7 @@
     "io.papermc.paper.event.entity.EntityPushedByEntityAttackEvent": "1.19.3",
     "io.papermc.paper.event.entity.EntityToggleSitEvent": "1.19.2",
     "io.papermc.paper.event.entity.FishHookStateChangeEvent": "1.21.5",
+    "io.papermc.paper.event.entity.ItemTransportingEntitySortEvent": "26.3",
     "io.papermc.paper.event.entity.ItemTransportingEntityValidateTargetEvent": "1.21.9",
     "io.papermc.paper.event.entity.PufferFishStateChangeEvent": "1.16.5",
     "io.papermc.paper.event.entity.ShulkerDuplicateEvent": "1.20.4",
@@ -572,6 +574,9 @@
     "io.papermc.paper.event.entity.WardenAngerChangeEvent": "1.19",
     "io.papermc.paper.event.entity.WaterBottleSplashEvent": "1.19.3",
     "io.papermc.paper.event.inventory.ItemCraftedEvent": "1.21.11",
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent": "26.3",
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent.Direction": "26.3",
+    "io.papermc.paper.event.inventory.PrepareHopperTransferEvent": "26.3",
     "io.papermc.paper.event.packet.ClientTickEndEvent": "1.21.4",
     "io.papermc.paper.event.packet.PlayerChunkLoadEvent": "1.16.4",
     "io.papermc.paper.event.packet.PlayerChunkUnloadEvent": "1.16.4",
@@ -880,6 +885,7 @@
     "io.papermc.paper.util.Tick": "1.19.2",
     "io.papermc.paper.world.MoonPhase": "1.16.2",
     "io.papermc.paper.world.WeatheringCopperState": "1.21.9",
+    "io.papermc.paper.world.chunk.ChunkGenerationState": "26.3",
     "io.papermc.paper.world.damagesource.CombatEntry": "1.21.5",
     "io.papermc.paper.world.damagesource.CombatTracker": "1.21.5",
     "io.papermc.paper.world.damagesource.FallLocationType": "1.21.5",
@@ -1062,6 +1068,7 @@
     "org.bukkit.block.data.Ageable": "1.13",
     "org.bukkit.block.data.AnaloguePowerable": "1.13",
     "org.bukkit.block.data.Attachable": "1.13",
+    "org.bukkit.block.data.AttachableDirectional": "26.3",
     "org.bukkit.block.data.Bisected": "1.13",
     "org.bukkit.block.data.Bisected.Half": "1.13",
     "org.bukkit.block.data.BlockData": "1.13",
@@ -3487,6 +3494,7 @@
       "getIpAddress()": "1.13.2",
       "getPlayerName()": "1.13.2",
       "getPlayerUniqueId()": "1.13.2",
+      "getSocketAddress()": "26.3",
       "ipAddress": "basically forever",
       "playerName": "1.13.2",
       "playerUniqueId": "1.13.2"
@@ -4005,6 +4013,7 @@
     "com.destroystokyo.paper.network.NetworkClient": {
       "getAddress()": "basically forever",
       "getProtocolVersion()": "1.12.2",
+      "getSocketAddress()": "26.3",
       "getVirtualHost()": "1.12.2"
     },
     "com.destroystokyo.paper.network.StatusClient": {
@@ -5901,6 +5910,18 @@
       "getNewHookState()": "1.21.5",
       "newHookState": "1.21.5"
     },
+    "io.papermc.paper.event.entity.ItemTransportingEntitySortEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "containerInventory": "26.3",
+      "getContainerInventory()": "26.3",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getItemStack()": "basically forever",
+      "getResult()": "basically forever",
+      "itemStack": "basically forever",
+      "result": "basically forever",
+      "setResult(Result)": "basically forever"
+    },
     "io.papermc.paper.event.entity.ItemTransportingEntityValidateTargetEvent": {
       "HANDLER_LIST": "1.16.4",
       "allowed": "1.20.1",
@@ -5999,6 +6020,53 @@
       "getHandlers()": "basically forever",
       "getPlayer()": "basically forever",
       "player": "basically forever"
+    },
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "bundle": "26.3",
+      "direction": "basically forever",
+      "getBundle()": "26.3",
+      "getDirection()": "basically forever",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getPlayer()": "basically forever",
+      "getPreviousIndex()": "26.3",
+      "getPreviousItem()": "26.3",
+      "getRawSlot()": "basically forever",
+      "getSelectedIndex()": "26.3",
+      "getSelectedItem()": "26.3",
+      "getSlot()": "basically forever",
+      "previousIndex": "26.3",
+      "previousItem": "26.3",
+      "rawSlot": "basically forever",
+      "selectedIndex": "26.3",
+      "selectedItem": "26.3",
+      "slot": "basically forever"
+    },
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent.Direction": {
+      "BACKWARD": "26.3",
+      "Direction(OptionalInt)": "26.3",
+      "FORWARD": "26.3",
+      "UNKNOWN": "basically forever",
+      "delta": "26.3",
+      "flip()": "26.3",
+      "getDelta()": "26.3",
+      "valueOf(String)": "basically forever",
+      "values()": "basically forever"
+    },
+    "io.papermc.paper.event.inventory.PrepareHopperTransferEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "destination": "1.17",
+      "didSourceInitiate": "basically forever",
+      "disallowedSlots": "26.3",
+      "getDestination()": "basically forever",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "getInitiator()": "basically forever",
+      "getSource()": "basically forever",
+      "isSlotAllowed(int)": "26.3",
+      "setSlotAllowed(int,boolean)": "26.3",
+      "source": "basically forever"
     },
     "io.papermc.paper.event.packet.ClientTickEndEvent": {
       "HANDLER_LIST": "1.16.4",
@@ -14904,6 +14972,15 @@
       "valueOf(String)": "basically forever",
       "values()": "basically forever"
     },
+    "io.papermc.paper.world.chunk.ChunkGenerationState": {
+      "ChunkGenerationState()": "26.3",
+      "GENERATED": "26.3",
+      "NOT_GENERATED": "26.3",
+      "OUTDATED": "26.3",
+      "PARTIAL": "1.17",
+      "valueOf(String)": "basically forever",
+      "values()": "basically forever"
+    },
     "io.papermc.paper.world.damagesource.CombatEntry": {
       "combatEntry(DamageSource,float,FallLocationType,float)": "1.21.5",
       "combatEntry(LivingEntity,DamageSource,float)": "1.21.5",
@@ -22453,6 +22530,8 @@
       "getChunkAtAsyncUrgently(Location,boolean)": "1.15.2",
       "getChunkAtAsyncUrgently(int,int)": "1.15.2",
       "getChunkCount()": "1.11.2",
+      "getChunkGenerationState(int,int)": "26.3",
+      "getChunkGenerationStateAsync(int,int)": "26.3",
       "getChunksAtAsync(int,int,int,int,boolean,Runnable)": "1.21.3",
       "getClearWeatherDuration()": "1.16.4",
       "getCoordinateScale()": "1.16.5",
@@ -24985,6 +25064,9 @@
       "isAttached()": "1.13",
       "setAttached(boolean)": "1.13"
     },
+    "org.bukkit.block.data.AttachableDirectional": {
+      "getAttachedBlockFace()": "26.3"
+    },
     "org.bukkit.block.data.Bisected": {
       "getHalf()": "1.13",
       "setHalf(Half)": "1.13"
@@ -27466,6 +27548,7 @@
       "setPlayerSpawned(boolean)": "1.13.2"
     },
     "org.bukkit.entity.Entity": {
+      "addAdditionalAlliedRule(Key,Predicate)": "26.3",
       "addPassenger(Entity)": "1.11.2",
       "addScoreboardTag(String)": "1.10.2",
       "asHoverEvent(UnaryOperator)": "1.16.5",
@@ -27476,6 +27559,7 @@
       "createSnapshot()": "1.20.4",
       "eject()": "basically forever",
       "fromMobSpawner()": "1.12",
+      "getAdditionalAlliedRules()": "26.3",
       "getAirDrag()": "26.3",
       "getAsString()": "1.13",
       "getBoundingBox()": "1.13.2",
@@ -27532,6 +27616,7 @@
       "hasFixedPose()": "1.20.1",
       "hasGravity()": "basically forever",
       "hasNoPhysics()": "1.18.2",
+      "isAlliedTo(Entity)": "26.3",
       "isCustomNameVisible()": "basically forever",
       "isDead()": "basically forever",
       "isEmpty()": "basically forever",
@@ -27550,6 +27635,8 @@
       "isInsideVehicle()": "basically forever",
       "isInvisible()": "1.12.2",
       "isInvulnerable()": "basically forever",
+      "isInvulnerableTo(DamageSource)": "26.3",
+      "isMarkedInvulnerable()": "26.3",
       "isOnGround()": "basically forever",
       "isPersistent()": "1.13",
       "isSilent()": "basically forever",
@@ -27566,6 +27653,8 @@
       "lookAt(double,double,double,LookAnchor)": "1.19",
       "playEffect(EntityEffect)": "basically forever",
       "remove()": "basically forever",
+      "removeAdditionalAlliedRule(Key)": "26.3",
+      "removeAdditionalAlliedRule(Namespaced)": "26.3",
       "removePassenger(Entity)": "1.11.2",
       "removeScoreboardTag(String)": "1.10.2",
       "setCustomNameVisible(boolean)": "basically forever",
@@ -28762,6 +28851,7 @@
       "getSentChunkKeys()": "1.20.4",
       "getSentChunks()": "1.20.4",
       "getSimulationDistance()": "1.18",
+      "getSocketAddress()": "26.3",
       "getSpectatorTarget()": "basically forever",
       "getTotalExperience()": "basically forever",
       "getViewDistance()": "basically forever",
@@ -29720,6 +29810,7 @@
       "getRegisteredListeners(Plugin)": "basically forever",
       "handlers": "basically forever",
       "handlerslots": "basically forever",
+      "hasListeners()": "26.3",
       "register(RegisteredListener)": "basically forever",
       "registerAll(Collection)": "basically forever",
       "unregister(Listener)": "basically forever",
@@ -32008,6 +32099,7 @@
       "getName()": "basically forever",
       "getPlayerProfile()": "1.12.2",
       "getRawAddress()": "basically forever",
+      "getRawSocketAddress()": "26.3",
       "getResult()": "basically forever",
       "getUniqueId()": "basically forever",
       "hostname": "basically forever",
@@ -32640,6 +32732,7 @@
       "getHostname()": "basically forever",
       "getKickMessage()": "basically forever",
       "getRealAddress()": "basically forever",
+      "getRealSocketAddress()": "26.3",
       "getResult()": "basically forever",
       "hostname": "basically forever",
       "kickMessage()": "1.16.5",
@@ -33185,6 +33278,7 @@
       "getMaxPlayers()": "basically forever",
       "getMotd()": "basically forever",
       "getNumPlayers()": "basically forever",
+      "getSocketAddress()": "26.3",
       "hostname": "basically forever",
       "iterator()": "basically forever",
       "maxPlayers": "basically forever",

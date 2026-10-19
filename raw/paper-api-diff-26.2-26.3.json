@@ -2,7 +2,8 @@
   "versionA": "26.2",
   "versionB": "26.3",
   "packagesAdded": [
-    "io.papermc.paper.block.pot"
+    "io.papermc.paper.block.pot",
+    "io.papermc.paper.world.chunk"
   ],
   "packagesRemoved": [],
   "packagesChanged": [
@@ -197,11 +198,17 @@
     "io.papermc.paper.event.entity.EntityBreakByEntityEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent.RemoveCause",
+    "io.papermc.paper.event.entity.ItemTransportingEntitySortEvent",
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent",
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent.Direction",
+    "io.papermc.paper.event.inventory.PrepareHopperTransferEvent",
     "io.papermc.paper.persistence.PersistentDataKey",
     "io.papermc.paper.registry.data.DecoratedPotPatternRegistryEntry",
     "io.papermc.paper.registry.data.DecoratedPotPatternRegistryEntry.Builder",
     "io.papermc.paper.registry.keys.DecoratedPotPatternKeys",
+    "io.papermc.paper.world.chunk.ChunkGenerationState",
     "org.bukkit.Particle.RandomizationType",
+    "org.bukkit.block.data.AttachableDirectional",
     "org.bukkit.block.data.type.ShelfMushroom",
     "org.bukkit.entity.Cushion",
     "org.bukkit.entity.boat.PoplarBoat",
@@ -216,6 +223,8 @@
   "classesChanged": [
     "com.destroystokyo.paper.ParticleBuilder",
     "com.destroystokyo.paper.entity.ai.VanillaGoal",
+    "com.destroystokyo.paper.event.player.PlayerConnectionCloseEvent",
+    "com.destroystokyo.paper.network.NetworkClient",
     "io.papermc.paper.command.brigadier.Commands",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect",
@@ -263,6 +272,10 @@
     "org.bukkit.entity.EntityType",
     "org.bukkit.entity.Player",
     "org.bukkit.entity.memory.MemoryKey",
+    "org.bukkit.event.HandlerList",
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent",
+    "org.bukkit.event.player.PlayerLoginEvent",
+    "org.bukkit.event.server.ServerListPingEvent",
     "org.bukkit.generator.structure.Structure",
     "org.bukkit.inventory.ItemType",
     "org.bukkit.loot.LootTables",
@@ -304,6 +317,9 @@
     "org.bukkit.inventory.BrewingRecipe": [
       "BrewingRecipe(NamespacedKey,ItemStack,RecipeChoice,RecipeChoice)"
     ],
+    "org.bukkit.event.player.AsyncPlayerPreLoginEvent": [
+      "getRawSocketAddress()"
+    ],
     "org.bukkit.tag.DamageTypeTags": [
       "BYPASSES_COOLDOWN",
       "NO_WOLF_RETALIATION"
@@ -317,7 +333,9 @@
       "TRY_FIND_LIQUID"
     ],
     "org.bukkit.World": [
-      "\u003cT\u003espawnParticle(Particle,List,Player,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)"
+      "\u003cT\u003espawnParticle(Particle,List,Player,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)",
+      "getChunkGenerationState(int,int)",
+      "getChunkGenerationStateAsync(int,int)"
     ],
     "io.papermc.paper.registry.keys.tags.ItemTypeTagKeys": [
       "BREWING_POTION_INPUTS",
@@ -345,16 +363,38 @@
       "hasGlowingText(boolean)",
       "line(int,ComponentLike)"
     ],
+    "org.bukkit.event.player.PlayerLoginEvent": [
+      "getRealSocketAddress()"
+    ],
     "org.bukkit.entity.Entity": [
+      "addAdditionalAlliedRule(Key,Predicate)",
+      "getAdditionalAlliedRules()",
       "getAirDrag()",
       "getDefaultGravity()",
-      "getGravity()"
+      "getGravity()",
+      "isAlliedTo(Entity)",
+      "isInvulnerableTo(DamageSource)",
+      "isMarkedInvulnerable()",
+      "removeAdditionalAlliedRule(Key)",
+      "removeAdditionalAlliedRule(Namespaced)"
     ],
     "io.papermc.paper.command.brigadier.Commands": [
       "unrestricted(Predicate)"
     ],
     "org.bukkit.map.MapCursor.Type": [
       "ABANDONED_CAMP"
+    ],
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent": [
+      "bundle",
+      "getBundle()",
+      "getPreviousIndex()",
+      "getPreviousItem()",
+      "getSelectedIndex()",
+      "getSelectedItem()",
+      "previousIndex",
+      "previousItem",
+      "selectedIndex",
+      "selectedItem"
     ],
     "io.papermc.paper.registry.event.RegistryEvents": [
       "DECORATED_POT_PATTERN"
@@ -363,6 +403,15 @@
       "\u003cC\u003eget(PersistentDataKey)",
       "\u003cC\u003egetOrDefault(PersistentDataKey,C)",
       "has(PersistentDataKey)"
+    ],
+    "io.papermc.paper.world.chunk.ChunkGenerationState": [
+      "ChunkGenerationState()",
+      "GENERATED",
+      "NOT_GENERATED",
+      "OUTDATED"
+    ],
+    "org.bukkit.block.data.AttachableDirectional": [
+      "getAttachedBlockFace()"
     ],
     "org.bukkit.Sound": [
       "BLOCK_POPLAR_LEAVES_AMBIENT",
@@ -412,6 +461,14 @@
       "ABANDONED_CAMP_WINDSWEPT_FOREST",
       "ABANDONED_CAMP_WOODED_BADLANDS"
     ],
+    "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent.Direction": [
+      "BACKWARD",
+      "Direction(OptionalInt)",
+      "FORWARD",
+      "delta",
+      "flip()",
+      "getDelta()"
+    ],
     "io.papermc.paper.registry.data.TrimMaterialRegistryEntry": [
       "paletteId()"
     ],
@@ -419,6 +476,14 @@
       "mobVisibility(RegistryKeySet,float)",
       "targetingEntityTypes()",
       "visibility()"
+    ],
+    "io.papermc.paper.event.inventory.PrepareHopperTransferEvent": [
+      "disallowedSlots",
+      "isSlotAllowed(int)",
+      "setSlotAllowed(int,boolean)"
+    ],
+    "org.bukkit.event.HandlerList": [
+      "hasListeners()"
     ],
     "io.papermc.paper.entity.PlayerPostEffects": [
       "add(Key)",
@@ -517,6 +582,10 @@
       "ALTERNATIVE_WITH_SPEED",
       "RandomizationType()"
     ],
+    "io.papermc.paper.event.entity.ItemTransportingEntitySortEvent": [
+      "containerInventory",
+      "getContainerInventory()"
+    ],
     "io.papermc.paper.datacomponent.item.consumable.ConsumableTypesBridge": [
       "BRIDGE",
       "bridge()",
@@ -550,6 +619,9 @@
     ],
     "io.papermc.paper.registry.data.InstrumentRegistryEntry.Builder": [
       "durabilityDamage(int)"
+    ],
+    "org.bukkit.event.server.ServerListPingEvent": [
+      "getSocketAddress()"
     ],
     "org.bukkit.Server": [
       "addRecipes(Iterable)",
