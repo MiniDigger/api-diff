@@ -14815,6 +14815,106 @@
           },
           {
             "kind": "METHOD",
+            "name": "sendFailure(ComponentLike)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "message"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/CommandSourceStack.html#sendFailure(ComponentLike)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "sendReply(ComponentLike)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "message"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/CommandSourceStack.html#sendReply(ComponentLike)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "sendRichFailure(String,TagResolver...)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "message"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "resolvers"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/CommandSourceStack.html#sendRichFailure(String,TagResolver...)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "sendRichReply(String,TagResolver...)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "message"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "resolvers"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/CommandSourceStack.html#sendRichReply(String,TagResolver...)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "sendRichSuccess(String,TagResolver...)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "message"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "resolvers"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/CommandSourceStack.html#sendRichSuccess(String,TagResolver...)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "sendSuccess(ComponentLike)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "message"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/CommandSourceStack.html#sendSuccess(ComponentLike)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "sendSuccess(ComponentLike,boolean)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "allowInformingAdmins"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "message"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/CommandSourceStack.html#sendSuccess(ComponentLike,boolean)"
+          },
+          {
+            "kind": "METHOD",
             "name": "withExecutor(Entity)",
             "return_type": "io.papermc.paper.command.brigadier.CommandSourceStack",
             "children": [
@@ -27146,6 +27246,68 @@
           }
         ],
         "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPortalReadyEvent.html"
+      },
+      {
+        "kind": "CLASS",
+        "name": "io.papermc.paper.event.entity.EntityPotentSulfurLaunchEvent",
+        "superclass": "org.bukkit.event.entity.EntityEvent",
+        "children": [
+          {
+            "kind": "FIELD",
+            "name": "HANDLER_LIST",
+            "type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#HANDLER_LIST"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlerList()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#getHandlerList()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlers()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#getHandlers()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getLaunchVelocity()",
+            "return_type": "org.bukkit.util.Vector",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#getLaunchVelocity()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getSourceLocation()",
+            "return_type": "org.bukkit.Location",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#getSourceLocation()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getSulfurBlock()",
+            "return_type": "org.bukkit.block.Block",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#getSulfurBlock()"
+          },
+          {
+            "kind": "FIELD",
+            "name": "launchVelocity",
+            "type": "org.bukkit.util.Vector",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#launchVelocity"
+          },
+          {
+            "kind": "FIELD",
+            "name": "sourceLocation",
+            "type": "org.bukkit.Location",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#sourceLocation"
+          },
+          {
+            "kind": "FIELD",
+            "name": "sulfurBlock",
+            "type": "org.bukkit.block.Block",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html#sulfurBlock"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html"
       },
       {
         "kind": "CLASS",
@@ -87400,6 +87562,62 @@
           },
           {
             "kind": "METHOD",
+            "name": "createExplorerMap(World,Location,Structure,Type)",
+            "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.Nullable ItemStack",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "location"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "mapIcon"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "structure"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "world"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#createExplorerMap(World,Location,Structure,Type)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "createExplorerMap(World,Location,Structure,Type,int,boolean)",
+            "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.Nullable ItemStack",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "findUnexplored"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "location"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "mapIcon"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "radius"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "structure"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "world"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Bukkit.html#createExplorerMap(World,Location,Structure,Type,int,boolean)"
+          },
+          {
+            "kind": "METHOD",
             "name": "createExplorerMap(World,Location,StructureType)",
             "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.NotNull ItemStack",
             "children": [
@@ -90450,7 +90668,8 @@
         "kind": "CLASS",
         "name": "org.bukkit.Color",
         "interfaces": [
-          "org.bukkit.configuration.serialization.ConfigurationSerializable"
+          "org.bukkit.configuration.serialization.ConfigurationSerializable",
+          "net.kyori.adventure.util.ARGBLike"
         ],
         "children": [
           {
@@ -90617,6 +90836,12 @@
           },
           {
             "kind": "METHOD",
+            "name": "alpha()",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#alpha()"
+          },
+          {
+            "kind": "METHOD",
             "name": "asARGB()",
             "return_type": "int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#asARGB()"
@@ -90674,6 +90899,12 @@
             "name": "blue",
             "type": "byte",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#blue"
+          },
+          {
+            "kind": "METHOD",
+            "name": "blue()",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#blue()"
           },
           {
             "kind": "METHOD",
@@ -90802,25 +91033,25 @@
           {
             "kind": "METHOD",
             "name": "getAlpha()",
-            "return_type": "int",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#getAlpha()"
           },
           {
             "kind": "METHOD",
             "name": "getBlue()",
-            "return_type": "int",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#getBlue()"
           },
           {
             "kind": "METHOD",
             "name": "getGreen()",
-            "return_type": "int",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#getGreen()"
           },
           {
             "kind": "METHOD",
             "name": "getRed()",
-            "return_type": "int",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#getRed()"
           },
           {
@@ -90828,6 +91059,12 @@
             "name": "green",
             "type": "byte",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#green"
+          },
+          {
+            "kind": "METHOD",
+            "name": "green()",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#green()"
           },
           {
             "kind": "METHOD",
@@ -90864,6 +91101,12 @@
             "name": "red",
             "type": "byte",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#red"
+          },
+          {
+            "kind": "METHOD",
+            "name": "red()",
+            "return_type": "@org.jetbrains.annotations.Range(from\u003d0L, to\u003d255L) int",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Color.html#red()"
           },
           {
             "kind": "METHOD",
@@ -116269,6 +116512,62 @@
           },
           {
             "kind": "METHOD",
+            "name": "createExplorerMap(World,Location,Structure,Type)",
+            "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.Nullable ItemStack",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "location"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "mapIcon"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "structure"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "world"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#createExplorerMap(World,Location,Structure,Type)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "createExplorerMap(World,Location,Structure,Type,int,boolean)",
+            "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.Nullable ItemStack",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "findUnexplored"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "location"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "mapIcon"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "radius"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "structure"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "world"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/Server.html#createExplorerMap(World,Location,Structure,Type,int,boolean)"
+          },
+          {
+            "kind": "METHOD",
             "name": "createExplorerMap(World,Location,StructureType)",
             "return_type": "org.bukkit.inventory.@org.jetbrains.annotations.NotNull ItemStack",
             "children": [
@@ -135797,6 +136096,11 @@
           },
           {
             "kind": "ENUM_CONSTANT",
+            "name": "ORANGE_POPLAR",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#ORANGE_POPLAR"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
             "name": "PALE_OAK",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#PALE_OAK"
           },
@@ -135807,11 +136111,6 @@
           },
           {
             "kind": "ENUM_CONSTANT",
-            "name": "POPLAR",
-            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#POPLAR"
-          },
-          {
-            "kind": "ENUM_CONSTANT",
             "name": "REDWOOD",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#REDWOOD"
           },
@@ -135819,6 +136118,11 @@
             "kind": "ENUM_CONSTANT",
             "name": "RED_MUSHROOM",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#RED_MUSHROOM"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "RED_POPLAR",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#RED_POPLAR"
           },
           {
             "kind": "ENUM_CONSTANT",
@@ -135859,6 +136163,11 @@
             "kind": "ENUM_CONSTANT",
             "name": "WARPED_FUNGUS",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#WARPED_FUNGUS"
+          },
+          {
+            "kind": "ENUM_CONSTANT",
+            "name": "YELLOW_POPLAR",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/TreeType.html#YELLOW_POPLAR"
           },
           {
             "kind": "METHOD",
@@ -174066,6 +174375,18 @@
           },
           {
             "kind": "METHOD",
+            "name": "equals(Object)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "o"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/enchantments/EnchantmentOffer.html#equals(Object)"
+          },
+          {
+            "kind": "METHOD",
             "name": "getCost()",
             "return_type": "int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/enchantments/EnchantmentOffer.html#getCost()"
@@ -174073,7 +174394,7 @@
           {
             "kind": "METHOD",
             "name": "getEnchantment()",
-            "return_type": "org.bukkit.enchantments.@org.jetbrains.annotations.NotNull Enchantment",
+            "return_type": "org.bukkit.enchantments.Enchantment",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/enchantments/EnchantmentOffer.html#getEnchantment()"
           },
           {
@@ -174081,6 +174402,36 @@
             "name": "getEnchantmentLevel()",
             "return_type": "int",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/enchantments/EnchantmentOffer.html#getEnchantmentLevel()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "hashCode()",
+            "return_type": "int",
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/enchantments/EnchantmentOffer.html#hashCode()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "rollEnchantmentOffers(ItemStack,int,int,int)",
+            "return_type": "org.bukkit.enchantments.@org.jspecify.annotations.Nullable EnchantmentOffer[]",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "bookshelfCount"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "offerAmount"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "seed"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "targetStack"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/enchantments/EnchantmentOffer.html#rollEnchantmentOffers(ItemStack,int,int,int)"
           },
           {
             "kind": "METHOD",
@@ -184221,6 +184572,18 @@
         "children": [
           {
             "kind": "METHOD",
+            "name": "canCriticalAttack(Entity)",
+            "return_type": "boolean",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "entity"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/HumanEntity.html#canCriticalAttack(Entity)"
+          },
+          {
+            "kind": "METHOD",
             "name": "closeInventory()",
             "return_type": "void",
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/HumanEntity.html#closeInventory()"
@@ -187546,6 +187909,22 @@
               }
             ],
             "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/LivingEntity.html#swingHand(EquipmentSlot)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "swingHand(EquipmentSlot,SwingAnimation)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "hand"
+              },
+              {
+                "kind": "PARAMETER",
+                "name": "swingAnimation"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/org/bukkit/entity/LivingEntity.html#swingHand(EquipmentSlot,SwingAnimation)"
           },
           {
             "kind": "METHOD",

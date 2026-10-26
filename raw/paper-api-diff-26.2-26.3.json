@@ -198,6 +198,7 @@
     "io.papermc.paper.event.entity.EntityBreakByEntityEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent.RemoveCause",
+    "io.papermc.paper.event.entity.EntityPotentSulfurLaunchEvent",
     "io.papermc.paper.event.entity.ItemTransportingEntitySortEvent",
     "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent",
     "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent.Direction",
@@ -225,6 +226,7 @@
     "com.destroystokyo.paper.entity.ai.VanillaGoal",
     "com.destroystokyo.paper.event.player.PlayerConnectionCloseEvent",
     "com.destroystokyo.paper.network.NetworkClient",
+    "io.papermc.paper.command.brigadier.CommandSourceStack",
     "io.papermc.paper.command.brigadier.Commands",
     "io.papermc.paper.datacomponent.DataComponentTypes",
     "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect",
@@ -253,6 +255,7 @@
     "io.papermc.paper.registry.keys.tags.PotionTypeTagKeys",
     "io.papermc.paper.registry.keys.tags.StructureTagKeys",
     "org.bukkit.Bukkit",
+    "org.bukkit.Color",
     "org.bukkit.Effect",
     "org.bukkit.EntityEffect",
     "org.bukkit.Material",
@@ -268,8 +271,11 @@
     "org.bukkit.block.BlockType",
     "org.bukkit.command.CommandExecutor",
     "org.bukkit.command.TabCompleter",
+    "org.bukkit.enchantments.EnchantmentOffer",
     "org.bukkit.entity.Entity",
     "org.bukkit.entity.EntityType",
+    "org.bukkit.entity.HumanEntity",
+    "org.bukkit.entity.LivingEntity",
     "org.bukkit.entity.Player",
     "org.bukkit.entity.memory.MemoryKey",
     "org.bukkit.event.HandlerList",
@@ -286,7 +292,9 @@
   ],
   "membersAdded": {
     "org.bukkit.TreeType": [
-      "POPLAR"
+      "ORANGE_POPLAR",
+      "RED_POPLAR",
+      "YELLOW_POPLAR"
     ],
     "org.bukkit.EntityEffect": [
       "BOAT_LAUNCH",
@@ -331,6 +339,13 @@
       "CAT_LIE_ON_BLOCK",
       "DOLPHIN_MOVE_TO_ITEM",
       "TRY_FIND_LIQUID"
+    ],
+    "io.papermc.paper.event.entity.EntityPotentSulfurLaunchEvent": [
+      "getLaunchVelocity()",
+      "getSulfurBlock()",
+      "launchVelocity",
+      "sourceLocation",
+      "sulfurBlock"
     ],
     "org.bukkit.World": [
       "\u003cT\u003espawnParticle(Particle,List,Player,double,double,double,int,double,double,double,double,double,double,T,boolean,RandomizationType)",
@@ -437,6 +452,9 @@
       "ENTITY_CUSHION_GET_UP",
       "ENTITY_CUSHION_PLACE",
       "ENTITY_CUSHION_SIT"
+    ],
+    "org.bukkit.entity.LivingEntity": [
+      "swingHand(EquipmentSlot,SwingAnimation)"
     ],
     "org.bukkit.entity.EntityType": [
       "CUSHION"
@@ -606,6 +624,15 @@
     "io.papermc.paper.registry.data.InstrumentRegistryEntry": [
       "durabilityDamage()"
     ],
+    "io.papermc.paper.command.brigadier.CommandSourceStack": [
+      "sendFailure(ComponentLike)",
+      "sendReply(ComponentLike)",
+      "sendRichFailure(String,TagResolver...)",
+      "sendRichReply(String,TagResolver...)",
+      "sendRichSuccess(String,TagResolver...)",
+      "sendSuccess(ComponentLike)",
+      "sendSuccess(ComponentLike,boolean)"
+    ],
     "org.bukkit.Effect": [
       "CONSUME_EFFECT_TELEPORT",
       "DESTROY_BLOCK_WITH_SOUND",
@@ -625,6 +652,8 @@
     ],
     "org.bukkit.Server": [
       "addRecipes(Iterable)",
+      "createExplorerMap(World,Location,Structure,Type)",
+      "createExplorerMap(World,Location,Structure,Type,int,boolean)",
       "hasRecipe(NamespacedKey)",
       "removeRecipes(Iterable)"
     ],
@@ -651,6 +680,15 @@
     "io.papermc.paper.datacomponent.item.blocksattacks.BlocksAttacksBridge": [
       "blocksAttacksDamageReduction()",
       "blocksAttacksItemDamageFunction()"
+    ],
+    "org.bukkit.Color": [
+      "alpha()",
+      "blue()",
+      "green()",
+      "red()"
+    ],
+    "org.bukkit.entity.HumanEntity": [
+      "canCriticalAttack(Entity)"
     ],
     "io.papermc.paper.datacomponent.item.SignText": [
       "signText()",
@@ -715,6 +753,9 @@
       "ON_OCEAN_RUIN_WARM_MAPS",
       "ON_SWAMP_HUT_MAPS",
       "ON_WOODLAND_MANSION_MAPS"
+    ],
+    "org.bukkit.enchantments.EnchantmentOffer": [
+      "rollEnchantmentOffers(ItemStack,int,int,int)"
     ],
     "io.papermc.paper.datacomponent.item.consumable.ConsumeEffect": [
       "teleportRandomlyEffect(float,boolean)"
