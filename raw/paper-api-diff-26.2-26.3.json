@@ -198,6 +198,7 @@
     "io.papermc.paper.event.entity.EntityBreakByEntityEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent",
     "io.papermc.paper.event.entity.EntityBreakEvent.RemoveCause",
+    "io.papermc.paper.event.entity.EntityLandEvent",
     "io.papermc.paper.event.entity.EntityPotentSulfurLaunchEvent",
     "io.papermc.paper.event.entity.ItemTransportingEntitySortEvent",
     "io.papermc.paper.event.inventory.PlayerBundleItemSelectEvent",
@@ -417,6 +418,7 @@
     "io.papermc.paper.persistence.PersistentDataContainerView": [
       "\u003cC\u003eget(PersistentDataKey)",
       "\u003cC\u003egetOrDefault(PersistentDataKey,C)",
+      "getPrimitiveStorageType(Key)",
       "has(PersistentDataKey)"
     ],
     "io.papermc.paper.world.chunk.ChunkGenerationState": [
@@ -486,6 +488,10 @@
       "delta",
       "flip()",
       "getDelta()"
+    ],
+    "io.papermc.paper.event.entity.EntityLandEvent": [
+      "fallDistance",
+      "setFallDistance(double)"
     ],
     "io.papermc.paper.registry.data.TrimMaterialRegistryEntry": [
       "paletteId()"

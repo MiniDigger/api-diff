@@ -26827,6 +26827,95 @@
       },
       {
         "kind": "CLASS",
+        "name": "io.papermc.paper.event.entity.EntityLandEvent",
+        "interfaces": [
+          "org.bukkit.event.Cancellable"
+        ],
+        "superclass": "org.bukkit.event.entity.EntityEvent",
+        "children": [
+          {
+            "kind": "FIELD",
+            "name": "HANDLER_LIST",
+            "type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#HANDLER_LIST"
+          },
+          {
+            "kind": "FIELD",
+            "name": "block",
+            "type": "org.bukkit.block.Block",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#block"
+          },
+          {
+            "kind": "FIELD",
+            "name": "cancelled",
+            "type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#cancelled"
+          },
+          {
+            "kind": "FIELD",
+            "name": "fallDistance",
+            "type": "double",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#fallDistance"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getBlock()",
+            "return_type": "org.bukkit.block.Block",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#getBlock()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getFallDistance()",
+            "return_type": "double",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#getFallDistance()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlerList()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#getHandlerList()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getHandlers()",
+            "return_type": "org.bukkit.event.HandlerList",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#getHandlers()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "isCancelled()",
+            "return_type": "boolean",
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#isCancelled()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setCancelled(boolean)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "cancel"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#setCancelled(boolean)"
+          },
+          {
+            "kind": "METHOD",
+            "name": "setFallDistance(double)",
+            "return_type": "void",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "fallDistance"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html#setFallDistance(double)"
+          }
+        ],
+        "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html"
+      },
+      {
+        "kind": "CLASS",
         "name": "io.papermc.paper.event.entity.EntityLoadCrossbowEvent",
         "interfaces": [
           "org.bukkit.event.Cancellable"
@@ -34719,6 +34808,18 @@
             "name": "getKeys()",
             "return_type": "java.util.Set\u003corg.bukkit.NamespacedKey\u003e",
             "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#getKeys()"
+          },
+          {
+            "kind": "METHOD",
+            "name": "getPrimitiveStorageType(Key)",
+            "return_type": "org.bukkit.persistence.@org.jspecify.annotations.Nullable PersistentDataType\u003c?,?\u003e",
+            "children": [
+              {
+                "kind": "PARAMETER",
+                "name": "key"
+              }
+            ],
+            "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/persistence/PersistentDataContainerView.html#getPrimitiveStorageType(Key)"
           },
           {
             "kind": "METHOD",

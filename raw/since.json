@@ -558,6 +558,7 @@
     "io.papermc.paper.event.entity.EntityInsideBlockEvent": "1.16.5",
     "io.papermc.paper.event.entity.EntityKnockbackEvent": "1.20.6",
     "io.papermc.paper.event.entity.EntityKnockbackEvent.Cause": "1.20.6",
+    "io.papermc.paper.event.entity.EntityLandEvent": "26.3",
     "io.papermc.paper.event.entity.EntityLoadCrossbowEvent": "1.16.4",
     "io.papermc.paper.event.entity.EntityLungeEvent": "26.1.2",
     "io.papermc.paper.event.entity.EntityMoveEvent": "1.16.5",
@@ -5833,6 +5834,19 @@
       "valueOf(String)": "basically forever",
       "values()": "basically forever"
     },
+    "io.papermc.paper.event.entity.EntityLandEvent": {
+      "HANDLER_LIST": "1.16.4",
+      "block": "basically forever",
+      "cancelled": "basically forever",
+      "fallDistance": "26.3",
+      "getBlock()": "basically forever",
+      "getFallDistance()": "basically forever",
+      "getHandlerList()": "basically forever",
+      "getHandlers()": "basically forever",
+      "isCancelled()": "basically forever",
+      "setCancelled(boolean)": "basically forever",
+      "setFallDistance(double)": "26.3"
+    },
     "io.papermc.paper.event.entity.EntityLoadCrossbowEvent": {
       "HANDLER_LIST": "1.16.4",
       "cancelled": "basically forever",
@@ -6977,6 +6991,7 @@
       "copyTo(PersistentDataContainer,boolean)": "1.20.4",
       "getAdapterContext()": "1.13.2",
       "getKeys()": "1.16.1",
+      "getPrimitiveStorageType(Key)": "26.3",
       "getSize()": "basically forever",
       "has(NamespacedKey)": "1.18.1",
       "has(PersistentDataKey)": "26.3",
